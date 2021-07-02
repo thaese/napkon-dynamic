@@ -1,1 +1,10 @@
-#---
+---
+ feedback:
+   - active: true
+     dashboard:
+       label: Issues
+       url: https://github.com/BIH-CEI/napkon-dynamic/projects/1
+   - active: true
+     dashboard:
+       label: Submit an issue
+       url: https://github.com/BIH-CEI/napkon-dynamic/issues/new
