@@ -1,0 +1,14 @@
+﻿NAPKON-BIH : Validation Results
+=========================================
+
+err = 1, warn = 1, info = 0
+IG Publisher Version: 1.1.76
+Generated Fri Jul 02 06:55:42 UTC 2021. FHIR version 4.0.1 for hl7.de.fhir.napkon-bih#0.1.0-test (canonical = http://fhir.de/napkon-bih)
+
+ Build Errors : 0 / 0 / 0
+ /github/workspace/input/napkon-bih : 1 / 1 / 1
+</table>
+== n/a ==
+== /github/workspace/input/napkon-bih.xml ==
+WARNING: ImplementationGuide/hl7.de.fhir.napkon-bih: ImplementationGuide: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: ImplementationGuide/hl7.de.fhir.napkon-bih: ImplementationGuide.definition: ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ImplementationGuide)

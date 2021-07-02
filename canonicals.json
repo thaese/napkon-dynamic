@@ -1,0 +1,9 @@
+[
+  {
+    "id": "hl7.de.fhir.napkon-bih",
+    "type": "ImplementationGuide",
+    "url": "http://fhir.de/napkon-bih/ImplementationGuide/hl7.de.fhir.napkon-bih",
+    "version": "0.1.0-test",
+    "name": "NAPKON-BIH"
+  }
+]
