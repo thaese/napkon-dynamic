@@ -1,10 +1,10 @@
 :root {
 
   --ig-status-text-color: maroon; /* 1. IG Title and status text color */
-  --navbar-bg-color: #ad1f2f; /* 2. Header container color */
+  --navbar-bg-color: #c01d75; /* 2. Header container color */
   --footer-bg-color: #707070; /* 3. Footer background color*/
-  --footer-container-color: #ad1f2f; /* 4. Footer container color */
-  --stripe-bg-color: #999999; /* 5. Header strip color */
+  --footer-container-color: #c01d75; /* 4. Footer container color */
+  --stripe-bg-color: #feffff; /* 5. Header strip color */
 
   --btn-hover-color: #790713;  /* 6. Menu button hover color */
   --btn-active-color: #da0c23; /* 7. Menu button active color */
@@ -40,4 +40,3 @@
   --dragon-text-color: #101020; /* 30. Dragon font color */
 
 }
-
