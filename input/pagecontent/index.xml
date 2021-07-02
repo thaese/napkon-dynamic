@@ -1,10 +1,10 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd" lang="en">
   <a name="scope">  </a>
 	<p>
-    This is our FHIR Implementation Guide. It contains the specifications developed by our community. 
+    This is our FHIR Implementation Guide. It contains the specifications developed by our community.
    </p>
 	<blockquote class="stu-note">
-	<strong>This documentation and set of artefacts are still undergoing development.</strong>
+	<strong>This documentation and set of artefacts are still undergoing development by the BIH CEI FHIR Profiling Team.</strong>
 	This content is only for demonstrative purposes.
 	</blockquote>
 	<p> </p>
@@ -22,16 +22,16 @@
 	<a name="ip"> </a>
 	<h3>Intellectual Property Considerations</h3>
 	<p>
-    While this implementation guide and the underlying FHIR are licensed as public domain, this guide includes examples making use of terminologies such 
-    as LOINC, SNOMED CT and others which have more restrictive licensing requirements. Implementers should make themselves familiar with licensing and 
-    any other constraints of terminologies, questionnaires, and other components used as part of their implementation process. In some cases, 
+    While this implementation guide and the underlying FHIR are licensed as public domain, this guide includes examples making use of terminologies such
+    as LOINC, SNOMED CT and others which have more restrictive licensing requirements. Implementers should make themselves familiar with licensing and
+    any other constraints of terminologies, questionnaires, and other components used as part of their implementation process. In some cases,
     licensing requirements may limit the systems that data captured using certain questionnaires may be shared with.
   </p>
 
 	<a name="disclaimer"> </a>
 	<h3>Disclaimer</h3>
 	<p>
-    The specification herewith documented is a demo working specification, and may not be used for any implementation purposes. 
+    The specification herewith documented is a demo working specification, and may not be used for any implementation purposes.
     This draft is provided without warranty of completeness or consistency, and the official publication supersedes this draft.
     No liability can be inferred from the use or misuse of this specification, or its consequences.
   </p>
