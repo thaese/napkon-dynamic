@@ -19,8 +19,11 @@ Kanban board:  __https://github.com/BIH-CEI/napkon-dynamic/issues/new__
 ### Authors
 
 Hassan Sami Adnan
+  
 Sally Lucie Brose
+  
 Thomas Haese
+  
 Larissa Röhrig
   
 ---
