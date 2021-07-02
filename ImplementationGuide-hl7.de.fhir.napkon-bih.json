@@ -11,7 +11,7 @@
   "title": "NAPKON Implementation Guide by BIH",
   "status": "draft",
   "experimental": false,
-  "date": "2021-07-02T07:37:13+00:00",
+  "date": "2021-07-02T08:12:54+00:00",
   "publisher": "Berlin Institute of Health @ Charité",
   "contact": [
     {
@@ -49,7 +49,7 @@
           },
           {
             "url": "value",
-            "valueString": "2019+"
+            "valueString": "2021+"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"

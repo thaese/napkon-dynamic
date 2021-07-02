@@ -12,7 +12,7 @@
   <title value="NAPKON Implementation Guide by BIH"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-07-02T07:37:13+00:00"/>
+  <date value="2021-07-02T08:12:54+00:00"/>
   <publisher value="Berlin Institute of Health @ Charit&#xE9;"/>
   <contact>
     <telecom>
@@ -36,7 +36,7 @@
         <valueString value="copyrightyear"/>
       </extension>
       <extension url="value">
-        <valueString value="2019+"/>
+        <valueString value="2021+"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
