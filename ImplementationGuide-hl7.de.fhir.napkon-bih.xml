@@ -12,7 +12,7 @@
   <title value="NAPKON Implementation Guide by BIH"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-07-08T10:28:58+00:00"/>
+  <date value="2021-07-08T11:06:38+00:00"/>
   <publisher value="Berlin Institute of Health @ Charit&#xE9;"/>
   <contact>
     <telecom>
@@ -215,6 +215,11 @@
         <nameUrl value="index.html"/>
         <title value="NAPKON Implementation Guide"/>
         <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="about.html"/>
+        <title value="About NAPKON Implementation Guide"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="downloads.html"/>
