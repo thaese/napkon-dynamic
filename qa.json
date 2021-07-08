@@ -3,7 +3,7 @@
   "name": "NAPKON-BIH",
   "package-id": "hl7.de.fhir.napkon-bih",
   "ig-ver": "0.1.0-test",
-  "date": "Fri, 02 Jul, 2021 13:15:29 +0000",
+  "date": "Thu, 08 Jul, 2021 10:28:58 +0000",
   "errs": 1,
   "warnings": 1,
   "hints": 0,
