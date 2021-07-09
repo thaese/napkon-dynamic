@@ -11,7 +11,7 @@
   "title": "NAPKON Implementation Guide by BIH",
   "status": "draft",
   "experimental": false,
-  "date": "2021-07-09T13:37:08+00:00",
+  "date": "2021-07-09T14:04:56+00:00",
   "publisher": "Berlin Institute of Health @ Charité",
   "contact": [
     {
@@ -326,6 +326,125 @@
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      }
+    ],
+    "resource": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/gecco-observation-heart-rate"
+        },
+        "name": "Heart Rate",
+        "description": "Heart rate of a patient"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/gecco-observation-body-weight"
+        },
+        "name": "Body Weight",
+        "description": "Body Weight of a patient"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/gecco-observation-oxygen-saturation"
+        },
+        "name": "Oxygen Saturation",
+        "description": "Oxygen saturation of a patient"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/gecco-observation-blood-pressure"
+        },
+        "name": "Blood Pressure",
+        "description": "The blood pressure of a patient."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/1.2.276.0.76.11.467--20200409000000"
+        },
+        "name": "SARS-CoV-2-Symptoms",
+        "description": "Symptoms for SARS-CoV-2 infection"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/gecco-observation-body-height"
+        },
+        "name": "Body Height",
+        "description": "Body Height of a patient"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/gecco-observation-body-temperature"
+        },
+        "name": "Body Temperature",
+        "description": "Body Temperature of a patient"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/gecco-vital-signs-base"
+        },
+        "name": "Vital Signs Base Profile",
+        "description": "Vital signs base definition profile"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/gecco-observation-respiratory-rate"
+        },
+        "name": "Respiratory Rate",
+        "description": "Respiratory rate of a patient"
       }
     ],
     "page": {

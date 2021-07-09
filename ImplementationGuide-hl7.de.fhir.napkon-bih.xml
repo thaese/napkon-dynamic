@@ -12,7 +12,7 @@
   <title value="NAPKON Implementation Guide by BIH"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-07-09T13:37:08+00:00"/>
+  <date value="2021-07-09T14:04:56+00:00"/>
   <publisher value="Berlin Institute of Health @ Charit&#xE9;"/>
   <contact>
     <telecom>
@@ -207,6 +207,96 @@
         <valueString value="true"/>
       </extension>
     </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/gecco-observation-heart-rate"/>
+      </reference>
+      <name value="Heart Rate"/>
+      <description value="Heart rate of a patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/gecco-observation-body-weight"/>
+      </reference>
+      <name value="Body Weight"/>
+      <description value="Body Weight of a patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/gecco-observation-oxygen-saturation"/>
+      </reference>
+      <name value="Oxygen Saturation"/>
+      <description value="Oxygen saturation of a patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/gecco-observation-blood-pressure"/>
+      </reference>
+      <name value="Blood Pressure"/>
+      <description value="The blood pressure of a patient."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/1.2.276.0.76.11.467--20200409000000"/>
+      </reference>
+      <name value="SARS-CoV-2-Symptoms"/>
+      <description value="Symptoms for SARS-CoV-2 infection"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/gecco-observation-body-height"/>
+      </reference>
+      <name value="Body Height"/>
+      <description value="Body Height of a patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/gecco-observation-body-temperature"/>
+      </reference>
+      <name value="Body Temperature"/>
+      <description value="Body Temperature of a patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/gecco-vital-signs-base"/>
+      </reference>
+      <name value="Vital Signs Base Profile"/>
+      <description value="Vital signs base definition profile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/gecco-observation-respiratory-rate"/>
+      </reference>
+      <name value="Respiratory Rate"/>
+      <description value="Respiratory rate of a patient"/>
+    </resource>
     <page>
       <nameUrl value="toc.html"/>
       <title value="Table of Contents"/>

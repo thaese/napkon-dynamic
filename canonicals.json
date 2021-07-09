@@ -5,5 +5,68 @@
     "url": "http://fhir.de/napkon-bih/ImplementationGuide/hl7.de.fhir.napkon-bih",
     "version": "0.1.0-test",
     "name": "NAPKON-BIH"
+  },
+  {
+    "id": "gecco-observation-blood-pressure",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/blood-pressure",
+    "version": "0.1.0-test",
+    "name": "BloodPressure"
+  },
+  {
+    "id": "gecco-observation-body-height",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-height",
+    "version": "0.1.0-test",
+    "name": "BodyHeight"
+  },
+  {
+    "id": "gecco-observation-body-temperature",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-temperature",
+    "version": "0.1.0-test",
+    "name": "BodyTemperature"
+  },
+  {
+    "id": "gecco-observation-body-weight",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-weight",
+    "version": "0.1.0-test",
+    "name": "BodyWeight"
+  },
+  {
+    "id": "gecco-observation-heart-rate",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/heart-rate",
+    "version": "0.1.0-test",
+    "name": "HeartRate"
+  },
+  {
+    "id": "gecco-observation-oxygen-saturation",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/oxygen-saturation",
+    "version": "0.1.0-test",
+    "name": "OxygenSaturation"
+  },
+  {
+    "id": "gecco-observation-respiratory-rate",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/respiratory-rate",
+    "version": "0.1.0-test",
+    "name": "RespiratoryRate"
+  },
+  {
+    "id": "gecco-vital-signs-base",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vital-signs-base",
+    "version": "0.1.0-test",
+    "name": "VitalSignsBase"
+  },
+  {
+    "id": "1.2.276.0.76.11.467--20200409000000",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sars-cov-2-symptoms",
+    "version": "0.1.0-test",
+    "name": "SARSCoV2Symptoms"
   }
 ]

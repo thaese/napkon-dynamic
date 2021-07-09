@@ -1,9 +1,615 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="cec87071-ab8e-413f-891b-934c640835e6"/>
+  <id value="ad973af4-894a-48fa-8bbf-107de63d49c5"/>
   <meta>
-    <lastUpdated value="2021-07-09T13:37:08.295+00:00"/>
+    <lastUpdated value="2021-07-09T14:04:56.921+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sars-cov-2-symptoms"/>
+    <resource>
+      <ValueSet>
+        <id value="1.2.276.0.76.11.467--20200409000000"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 40 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jan 2021</p>
+            <p>All codes from system 
+              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-21522001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=21522001">21522001</a>
+                </td>
+                <td>Bauchschmerzen</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-84387000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=84387000">84387000</a>
+                </td>
+                <td>Asymptomatisch</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-131148009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=131148009">131148009</a>
+                </td>
+                <td>Blutung</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-29857009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=29857009">29857009</a>
+                </td>
+                <td>Brustschmerzen</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-43724002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=43724002">43724002</a>
+                </td>
+                <td>Schüttelfrost</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-9826008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=9826008">9826008</a>
+                </td>
+                <td>Konjunktivitis</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-49727002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=49727002">49727002</a>
+                </td>
+                <td>Husten</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-62315008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=62315008">62315008</a>
+                </td>
+                <td>Durchfall</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-3006004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=3006004">3006004</a>
+                </td>
+                <td>Bewusstseinsstörung</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-267036007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=267036007">267036007</a>
+                </td>
+                <td>Atemnot</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-271807003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=271807003">271807003</a>
+                </td>
+                <td>Hautausschlag</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-84229001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=84229001">84229001</a>
+                </td>
+                <td>Müdigkeit</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-103001002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=103001002">103001002</a>
+                </td>
+                <td>Fieberigkeit</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-386661006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=386661006">386661006</a>
+                </td>
+                <td>Fieber</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-25064002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=25064002">25064002</a>
+                </td>
+                <td>Kopfschmerzen</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-66857006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=66857006">66857006</a>
+                </td>
+                <td>Bluthusten</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-248567008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=248567008">248567008</a>
+                </td>
+                <td>Hauteinziehungen des Brustkorbs bei der Einatmung</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-57676002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=57676002">57676002</a>
+                </td>
+                <td>Gelenkschmerz</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-79890006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=79890006">79890006</a>
+                </td>
+                <td>Appetitverlust</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-44169009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=44169009">44169009</a>
+                </td>
+                <td>Geruchverlust</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-36955009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=36955009">36955009</a>
+                </td>
+                <td>Geschmackverlust</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-30746006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=30746006">30746006</a>
+                </td>
+                <td>Lymphadenopathie</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-367391008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=367391008">367391008</a>
+                </td>
+                <td>Unwohlsein</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-68962001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=68962001">68962001</a>
+                </td>
+                <td>Muskelschmerzen</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-68235000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=68235000">68235000</a>
+                </td>
+                <td>Verstopfte Nase</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-64531003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=64531003">64531003</a>
+                </td>
+                <td>Laufende Nase</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-422587007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=422587007">422587007</a>
+                </td>
+                <td>Übelkeit</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-162397003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=162397003">162397003</a>
+                </td>
+                <td>Halsschmerzen</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-38880002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=38880002">38880002</a>
+                </td>
+                <td>Starre</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-91175000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=91175000">91175000</a>
+                </td>
+                <td>Krampfanfall</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-46742003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=46742003">46742003</a>
+                </td>
+                <td>Hautgeschwüre</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-282145008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=282145008">282145008</a>
+                </td>
+                <td>Unfähig zu gehen</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-422400008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=422400008">422400008</a>
+                </td>
+                <td>Erbrechen</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-56018004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=56018004">56018004</a>
+                </td>
+                <td>Keuchen</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-426000000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=426000000">426000000</a>
+                </td>
+                <td>Fieber über 38° Celsius</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-13791008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=13791008">13791008</a>
+                </td>
+                <td>Schwächegefühl</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-22253000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=22253000">22253000</a>
+                </td>
+                <td>Schmerzen</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-28743005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=28743005">28743005</a>
+                </td>
+                <td>Produktiver Husten</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-11833005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=11833005">11833005</a>
+                </td>
+                <td>Trockener Husten</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-40917007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=40917007">40917007</a>
+                </td>
+                <td>Bewusstseinstrübung</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+          <valuePeriod>
+            <start value="2020-04-09T00:00:00+02:00"/>
+          </valuePeriod>
+        </extension>
+        <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sars-cov-2-symptoms"/>
+        <identifier>
+          <use value="official"/>
+          <system value="http://art-decor.org/ns/oids/vs"/>
+          <value value="1.2.276.0.76.11.563"/>
+        </identifier>
+        <version value="0.1.0-test"/>
+        <name value="SARSCoV2Symptoms"/>
+        <title value="SARS-CoV-2-Symptoms"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2021-07-09T14:04:56+00:00"/>
+        <publisher value="Berlin Institute of Health @ Charit&#xE9;"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="https://bihealth.org"/>
+          </telecom>
+        </contact>
+        <description value="Symptoms for SARS-CoV-2 infection"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="false"/>
+        <copyright value="This artefact includes content from SNOMED Clinical Terms&#xAE; (SNOMED CT&#xAE;) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
+        <expansion>
+          <identifier value="urn:uuid:8bd2097a-b2ca-43a3-9b2e-686700d29c6f"/>
+          <timestamp value="2021-07-09T14:05:15+00:00"/>
+          <total value="40"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="21522001"/>
+            <display value="Bauchschmerzen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="84387000"/>
+            <display value="Asymptomatisch"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="131148009"/>
+            <display value="Blutung"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="29857009"/>
+            <display value="Brustschmerzen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="43724002"/>
+            <display value="Sch&#xFC;ttelfrost"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="9826008"/>
+            <display value="Konjunktivitis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="49727002"/>
+            <display value="Husten"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="62315008"/>
+            <display value="Durchfall"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="3006004"/>
+            <display value="Bewusstseinsst&#xF6;rung"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="267036007"/>
+            <display value="Atemnot"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="271807003"/>
+            <display value="Hautausschlag"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="84229001"/>
+            <display value="M&#xFC;digkeit"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="103001002"/>
+            <display value="Fieberigkeit"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="386661006"/>
+            <display value="Fieber"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="25064002"/>
+            <display value="Kopfschmerzen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="66857006"/>
+            <display value="Bluthusten"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="248567008"/>
+            <display value="Hauteinziehungen des Brustkorbs bei der Einatmung"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="57676002"/>
+            <display value="Gelenkschmerz"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="79890006"/>
+            <display value="Appetitverlust"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="44169009"/>
+            <display value="Geruchverlust"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="36955009"/>
+            <display value="Geschmackverlust"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="30746006"/>
+            <display value="Lymphadenopathie"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="367391008"/>
+            <display value="Unwohlsein"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68962001"/>
+            <display value="Muskelschmerzen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68235000"/>
+            <display value="Verstopfte Nase"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="64531003"/>
+            <display value="Laufende Nase"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="422587007"/>
+            <display value="&#xDC;belkeit"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="162397003"/>
+            <display value="Halsschmerzen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="38880002"/>
+            <display value="Starre"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="91175000"/>
+            <display value="Krampfanfall"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="46742003"/>
+            <display value="Hautgeschw&#xFC;re"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="282145008"/>
+            <display value="Unf&#xE4;hig zu gehen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="422400008"/>
+            <display value="Erbrechen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="56018004"/>
+            <display value="Keuchen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="426000000"/>
+            <display value="Fieber &#xFC;ber 38&#xB0; Celsius"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="13791008"/>
+            <display value="Schw&#xE4;chegef&#xFC;hl"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="22253000"/>
+            <display value="Schmerzen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="28743005"/>
+            <display value="Produktiver Husten"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="11833005"/>
+            <display value="Trockener Husten"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="40917007"/>
+            <display value="Bewusstseinstr&#xFC;bung"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
 </Bundle>
