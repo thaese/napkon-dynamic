@@ -1,4 +1,4 @@
-lias:   $sct = http://snomed.info/sct
+Alias:   $sct = http://snomed.info/sct
 Alias: $CardiologyImagingCodes = https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/EcgCodes
 
 
