@@ -17,6 +17,6 @@ Description:  "Vaccine type used in the case of a vaccination in the context of 
 * ^compose.include[0].system = "http://snomed.info/sct"
 * ^compose.include[0].concept[1].code = #1119305005
 * ^compose.include[0].concept[1].display = "Vaccine product containing only Severe acute respiratory syndrome coronavirus 2 antigen (medicinal product)"
-* ^compose.include[0].concept[1].designation[1].language = #de-DE
-* ^compose.include[0].concept[1].designation[1].use = #900000000000013009 "Synonym"
-* ^compose.include[0].concept[1].designation[1].value = "Antigen-Impfstoff"
+* ^compose.include[0].concept[1].designation[0].language = #de-DE
+* ^compose.include[0].concept[1].designation[0].use = #900000000000013009 "Synonym"
+* ^compose.include[0].concept[1].designation[0].value = "Antigen-Impfstoff"
