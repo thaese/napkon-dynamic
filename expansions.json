@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "ad973af4-894a-48fa-8bbf-107de63d49c5",
+  "id" : "f257157a-2939-4970-a2ad-55a0f551fe6a",
   "meta" : {
-    "lastUpdated" : "2021-07-09T14:04:56.921+00:00"
+    "lastUpdated" : "2021-07-14T08:54:24.734+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -34,7 +34,7 @@
       "title" : "SARS-CoV-2-Symptoms",
       "status" : "active",
       "experimental" : false,
-      "date" : "2021-07-09T14:04:56+00:00",
+      "date" : "2021-07-14T08:54:24+00:00",
       "publisher" : "Berlin Institute of Health @ Charité",
       "contact" : [{
         "telecom" : [{
@@ -52,8 +52,8 @@
       "immutable" : false,
       "copyright" : "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.",
       "expansion" : {
-        "identifier" : "urn:uuid:8bd2097a-b2ca-43a3-9b2e-686700d29c6f",
-        "timestamp" : "2021-07-09T14:05:15+00:00",
+        "identifier" : "urn:uuid:7e9cc284-5b7b-4857-b8a6-a49db2c84681",
+        "timestamp" : "2021-07-14T08:54:45+00:00",
         "total" : 40,
         "parameter" : [{
           "name" : "excludeNested",

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="ad973af4-894a-48fa-8bbf-107de63d49c5"/>
+  <id value="f257157a-2939-4970-a2ad-55a0f551fe6a"/>
   <meta>
-    <lastUpdated value="2021-07-09T14:04:56.921+00:00"/>
+    <lastUpdated value="2021-07-14T08:54:24.734+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -375,7 +375,7 @@
         <title value="SARS-CoV-2-Symptoms"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2021-07-09T14:04:56+00:00"/>
+        <date value="2021-07-14T08:54:24+00:00"/>
         <publisher value="Berlin Institute of Health @ Charit&#xE9;"/>
         <contact>
           <telecom>
@@ -393,8 +393,8 @@
         <immutable value="false"/>
         <copyright value="This artefact includes content from SNOMED Clinical Terms&#xAE; (SNOMED CT&#xAE;) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
         <expansion>
-          <identifier value="urn:uuid:8bd2097a-b2ca-43a3-9b2e-686700d29c6f"/>
-          <timestamp value="2021-07-09T14:05:15+00:00"/>
+          <identifier value="urn:uuid:7e9cc284-5b7b-4857-b8a6-a49db2c84681"/>
+          <timestamp value="2021-07-14T08:54:45+00:00"/>
           <total value="40"/>
           <parameter>
             <name value="excludeNested"/>
