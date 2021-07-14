@@ -1,11 +1,299 @@
 {
   "resourceType" : "Bundle",
-  "id" : "f257157a-2939-4970-a2ad-55a0f551fe6a",
+  "id" : "7ec34a8d-20c2-48cb-9d17-1b9e90bcd130",
   "meta" : {
-    "lastUpdated" : "2021-07-14T08:54:24.734+00:00"
+    "lastUpdated" : "2021-07-14T13:29:39.543+00:00"
   },
   "type" : "collection",
   "entry" : [{
+    "fullUrl" : "http://example.org/fhir/ValueSet/vs-non-pulmonary-bacterial-coinfection-pediatrics",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-non-pulmonary-bacterial-coinfection-pediatrics",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 11 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jan 2021</p><p>All codes from system <a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-406602003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=406602003\">406602003</a></td><td>Staphylococcus aureus</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-9861002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=9861002\">9861002</a></td><td>Streptococcus pneumoniae</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-108661000119109\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=108661000119109\">108661000119109</a></td><td>Streptococcus viridans</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-302809008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=302809008\">302809008</a></td><td>Streptococcus pyogenes</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-426933007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=426933007\">426933007</a></td><td>Streptococcus agalactiae</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-406574007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=406574007\">406574007</a></td><td>Genus Enterococcus</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-23511006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=23511006\">23511006</a></td><td>Neisseria meningitidis</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-91428005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=91428005\">91428005</a></td><td>Haemophilus influenzae</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-71057007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=71057007\">71057007</a></td><td>Escherichia coli</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-721756002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=721756002\">721756002</a></td><td>Genus Klebsiella</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-11218009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=11218009\">11218009</a></td><td>Pseudomonas aeruginosa</td><td/></tr></table></div>"
+      },
+      "url" : "http://example.org/fhir/ValueSet/vs-non-pulmonary-bacterial-coinfection-pediatrics",
+      "version" : "0.1.0-test",
+      "name" : "NonPulmonaryBacterialCoinfectionPediatrics",
+      "title" : "ValuesetNonPulmonaryBacterialCoinfectionPediatrics",
+      "status" : "draft",
+      "date" : "2021-07-14T13:29:39+00:00",
+      "publisher" : "Berlin Institute of Health @ Charité",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://bihealth.org"
+        }]
+      }],
+      "description" : "Non-pulmonary bacterial co-infection the context of pediatrics and Covid-19",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:318036ca-904a-432c-aec4-92c20cf8c67e",
+        "timestamp" : "2021-07-14T13:29:54+00:00",
+        "total" : 11,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "406602003",
+          "display" : "Staphylococcus aureus"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "9861002",
+          "display" : "Streptococcus pneumoniae"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "108661000119109",
+          "display" : "Streptococcus viridans"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "302809008",
+          "display" : "Streptococcus pyogenes"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "426933007",
+          "display" : "Streptococcus agalactiae"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "406574007",
+          "display" : "Genus Enterococcus"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "23511006",
+          "display" : "Neisseria meningitidis"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "91428005",
+          "display" : "Haemophilus influenzae"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "71057007",
+          "display" : "Escherichia coli"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "721756002",
+          "display" : "Genus Klebsiella"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "11218009",
+          "display" : "Pseudomonas aeruginosa"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/fhir/ValueSet/syndromic-diseases-pediatrics",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "syndromic-diseases-pediatrics",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
+      },
+      "url" : "http://example.org/fhir/ValueSet/syndromic-diseases-pediatrics",
+      "version" : "0.1.0-test",
+      "name" : "SyndromicDiseasesPediatrics",
+      "title" : "Syndromic diseases Pediatrics",
+      "status" : "draft",
+      "date" : "2021-07-14T13:29:39+00:00",
+      "publisher" : "Berlin Institute of Health @ Charité",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://bihealth.org"
+        }]
+      }],
+      "description" : "Syndromic diseases in the context of Covid-19 and Pediatrics",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:c075a165-6c55-4a3a-aa85-a058eae79cad",
+        "timestamp" : "2021-07-14T13:29:58+00:00",
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/fhir/ValueSet/vaccine-type-covid-pediatrics",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vaccine-type-covid-pediatrics",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jan 2021</p><p>All codes from system <a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-1119349007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1119349007\">1119349007</a></td><td>MRNA-Impfstoff</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-1119305005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1119305005\">1119305005</a></td><td>Antigen-Impfstoff</td><td/></tr></table></div>"
+      },
+      "url" : "http://example.org/fhir/ValueSet/vaccine-type-covid-pediatrics",
+      "version" : "0.1.0-test",
+      "name" : "VaccineTypCovidPediatrics",
+      "title" : "ValueSetVaccineTypeCovidPediatrics",
+      "status" : "draft",
+      "date" : "2021-07-14T13:29:39+00:00",
+      "publisher" : "Berlin Institute of Health @ Charité",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://bihealth.org"
+        }]
+      }],
+      "description" : "Vaccine type used in the case of a vaccination in the context of Covid-19 and Pediatrics",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:507e65cd-bb95-4659-a388-5d96607a90ad",
+        "timestamp" : "2021-07-14T13:29:58+00:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "1119349007",
+          "display" : "MRNA-Impfstoff"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "1119305005",
+          "display" : "Antigen-Impfstoff"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/fhir/ValueSet/chronic-haematologic-diseases-pediatrics",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "chronic-haematologic-diseases-pediatrics",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 8 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jan 2021</p><p>All codes from system <a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-61261009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=61261009\">61261009</a></td><td>Haemolytische Anaemie</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-40108008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=40108008\">40108008</a></td><td>Thalassämie</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-127040003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=127040003\">127040003</a></td><td>Sichelzellanämie</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-62403005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=62403005\">62403005</a></td><td>G6PD-Mangel-Anämie</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-87522002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=87522002\">87522002</a></td><td>Eisenmangelanämie</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-248693006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=248693006\">248693006</a></td><td>Chronische Neutropenie</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-109995007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=109995007\">109995007</a></td><td>Myelodysplastisches Syndrom</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-64779008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=64779008\">64779008</a></td><td>Gerinnungsstörung</td><td/></tr></table></div>"
+      },
+      "url" : "http://example.org/fhir/ValueSet/chronic-haematologic-diseases-pediatrics",
+      "version" : "0.1.0-test",
+      "name" : "ChronicHaematologicDiseasesPediatrics",
+      "title" : "ChronicHaematologicDiseasesPediatricsVS",
+      "status" : "draft",
+      "date" : "2021-07-14T13:29:39+00:00",
+      "publisher" : "Berlin Institute of Health @ Charité",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://bihealth.org"
+        }]
+      }],
+      "description" : "Chronic haematologic diseases the context of pediatrics and Covid-19",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:9ac9944a-8f61-4860-8ccc-bd6f8d0f3a3f",
+        "timestamp" : "2021-07-14T13:29:59+00:00",
+        "total" : 8,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "61261009",
+          "display" : "Haemolytische Anaemie"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "40108008",
+          "display" : "Thalassämie"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "127040003",
+          "display" : "Sichelzellanämie"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "62403005",
+          "display" : "G6PD-Mangel-Anämie"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "87522002",
+          "display" : "Eisenmangelanämie"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "248693006",
+          "display" : "Chronische Neutropenie"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "109995007",
+          "display" : "Myelodysplastisches Syndrom"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "64779008",
+          "display" : "Gerinnungsstörung"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sars-cov-2-symptoms",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -34,7 +322,7 @@
       "title" : "SARS-CoV-2-Symptoms",
       "status" : "active",
       "experimental" : false,
-      "date" : "2021-07-14T08:54:24+00:00",
+      "date" : "2021-07-14T13:29:39+00:00",
       "publisher" : "Berlin Institute of Health @ Charité",
       "contact" : [{
         "telecom" : [{
@@ -52,8 +340,8 @@
       "immutable" : false,
       "copyright" : "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.",
       "expansion" : {
-        "identifier" : "urn:uuid:7e9cc284-5b7b-4857-b8a6-a49db2c84681",
-        "timestamp" : "2021-07-14T08:54:45+00:00",
+        "identifier" : "urn:uuid:5a40440e-5770-466d-b10e-bd1cc5b831a0",
+        "timestamp" : "2021-07-14T13:30:00+00:00",
         "total" : 40,
         "parameter" : [{
           "name" : "excludeNested",
@@ -266,6 +554,221 @@
           "system" : "http://snomed.info/sct",
           "code" : "40917007",
           "display" : "Bewusstseinstrübung"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/fhir/ValueSet/vs-antibiotic-therapy-procedure-pediatrics",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-antibiotic-therapy-procedure-pediatrics",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 18 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jan 2021</p><p>All codes from system <a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-281789004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=281789004\">281789004</a></td><td>Antibiotic therapy</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-170450005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=170450005\">170450005</a></td><td>Meningococcus prophylaxis</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-230864006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=230864006\">230864006</a></td><td>Injection of antibiotic into brain abscess</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-268502007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=268502007\">268502007</a></td><td>Leptospirosis prophylaxis</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-275843000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=275843000\">275843000</a></td><td>Weil's disease prophylaxis</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-281790008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=281790008\">281790008</a></td><td>Intravenous antibiotic therapy</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-281791007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=281791007\">281791007</a></td><td>Oral antibiotic therapy</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-300041008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=300041008\">300041008</a></td><td>Penicillin prophylaxis</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-307520009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=307520009\">307520009</a></td><td>Intramuscular antibiotic therapy</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-371070000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=371070000\">371070000</a></td><td>Empirical antibiotic therapy</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-422181004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=422181004\">422181004</a></td><td>Antibiotic prophylaxis (procedure)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-426931009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=426931009\">426931009</a></td><td>Subacute bacterial endocarditis prophylaxis (procedure)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-443199009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=443199009\">443199009</a></td><td>Instillation of mitomycin C into bladder (procedure)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-699618001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=699618001\">699618001</a></td><td>Tuberculosis prophylaxis</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-717856000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=717856000\">717856000</a></td><td>Sulfasalazine therapy (procedure)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-722482005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=722482005\">722482005</a></td><td>Doxorubicin, bleomycin, vinblastine and dacarbazine chemotherapy regimen (regime/therapy)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-724053002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=724053002\">724053002</a></td><td>Antibiotic therapy for prevention of recurrent infection (procedure)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-726599006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=726599006\">726599006</a></td><td>Sirolimus therapy (procedure)</td><td/></tr></table></div>"
+      },
+      "url" : "http://example.org/fhir/ValueSet/vs-antibiotic-therapy-procedure-pediatrics",
+      "version" : "0.1.0-test",
+      "name" : "AntibioticTherapyProcedure",
+      "title" : "Antibiotic Therapy Procedure PediatricsVS",
+      "status" : "draft",
+      "date" : "2021-05-28",
+      "publisher" : "Berlin Institute of Health @ Charité",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://bihealth.org"
+        }]
+      }],
+      "description" : "Antibiotic Therapy the context of pediatrics and Covid-19",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
+          "valueBoolean" : true
+        }],
+        "identifier" : "urn:uuid:74bbff5c-d7d8-4505-9861-22fd79270656",
+        "timestamp" : "2021-07-14T13:30:02+00:00",
+        "total" : 18,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "281789004",
+          "display" : "Antibiotic therapy"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "170450005",
+          "display" : "Meningococcus prophylaxis"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "230864006",
+          "display" : "Injection of antibiotic into brain abscess"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "268502007",
+          "display" : "Leptospirosis prophylaxis"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "275843000",
+          "display" : "Weil's disease prophylaxis"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "281790008",
+          "display" : "Intravenous antibiotic therapy"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "281791007",
+          "display" : "Oral antibiotic therapy"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "300041008",
+          "display" : "Penicillin prophylaxis"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "307520009",
+          "display" : "Intramuscular antibiotic therapy"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "371070000",
+          "display" : "Empirical antibiotic therapy"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "422181004",
+          "display" : "Antibiotic prophylaxis (procedure)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "426931009",
+          "display" : "Subacute bacterial endocarditis prophylaxis (procedure)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "443199009",
+          "display" : "Instillation of mitomycin C into bladder (procedure)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "699618001",
+          "display" : "Tuberculosis prophylaxis"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "717856000",
+          "display" : "Sulfasalazine therapy (procedure)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "722482005",
+          "display" : "Doxorubicin, bleomycin, vinblastine and dacarbazine chemotherapy regimen (regime/therapy)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "724053002",
+          "display" : "Antibiotic therapy for prevention of recurrent infection (procedure)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "726599006",
+          "display" : "Sirolimus therapy (procedure)"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/fhir/ValueSet/gastrointestinal-diseases-pediatrics",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "gastrointestinal-diseases-pediatrics",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jan 2021</p><p>All codes from system <a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-236069009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=236069009\">236069009</a></td><td>Chronische Obstipation</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-6382002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=6382002\">6382002</a></td><td>Chronisch entzündliche Darmerkrankung</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-396331005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=396331005\">396331005</a></td><td>Zölikalie</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-782555009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=782555009\">782555009</a></td><td>Kuhmilchproteinallergie</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-118926004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=118926004\">118926004</a></td><td>Gallengangserkrankung</td><td/></tr></table></div>"
+      },
+      "url" : "http://example.org/fhir/ValueSet/gastrointestinal-diseases-pediatrics",
+      "version" : "0.1.0-test",
+      "name" : "GastrointestinalDiseasesPediatrics",
+      "title" : "VSGastrointestinal Diseases Pediatrics",
+      "status" : "draft",
+      "date" : "2021-07-14T13:29:39+00:00",
+      "publisher" : "Berlin Institute of Health @ Charité",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://bihealth.org"
+        }]
+      }],
+      "description" : "Gastrointestinal diseases in the context of pediatrics and Covid-19",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:f1b09e46-5895-4e28-b403-40ab5bb1f326",
+        "timestamp" : "2021-07-14T13:30:02+00:00",
+        "total" : 5,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "236069009",
+          "display" : "Chronische Obstipation"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "6382002",
+          "display" : "Chronisch entzündliche Darmerkrankung"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "396331005",
+          "display" : "Zölikalie"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "782555009",
+          "display" : "Kuhmilchproteinallergie"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "118926004",
+          "display" : "Gallengangserkrankung"
         }]
       }
     }

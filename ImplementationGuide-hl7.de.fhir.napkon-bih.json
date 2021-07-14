@@ -11,7 +11,7 @@
   "title": "NAPKON Implementation Guide by BIH",
   "status": "draft",
   "experimental": false,
-  "date": "2021-07-14T08:54:24+00:00",
+  "date": "2021-07-14T13:29:39+00:00",
   "publisher": "Berlin Institute of Health @ Charité",
   "contact": [
     {
@@ -333,6 +333,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-non-pulmonary-bacterial-coinfection-pediatrics"
+        },
+        "name": "ValuesetNonPulmonaryBacterialCoinfectionPediatrics",
+        "description": "Non-pulmonary bacterial co-infection the context of pediatrics and Covid-19"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
           }
         ],
@@ -341,6 +354,19 @@
         },
         "name": "Heart Rate",
         "description": "Heart rate of a patient"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/chronic-haematologic-diseases-pediatrics-icd"
+        },
+        "name": "ChronicHaematologicDiseasesPediatricsICD-VS",
+        "description": "Chronic haematologic diseases the context of pediatrics and Covid-19"
       },
       {
         "extension": [
@@ -359,6 +385,32 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/syndromic-diseases-pediatrics"
+        },
+        "name": "Syndromic diseases Pediatrics",
+        "description": "Syndromic diseases in the context of Covid-19 and Pediatrics"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vaccine-type-covid-pediatrics"
+        },
+        "name": "ValueSetVaccineTypeCovidPediatrics",
+        "description": "Vaccine type used in the case of a vaccination in the context of Covid-19 and Pediatrics"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
           }
         ],
@@ -367,6 +419,19 @@
         },
         "name": "Oxygen Saturation",
         "description": "Oxygen saturation of a patient"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/chronic-haematologic-diseases-pediatrics"
+        },
+        "name": "ChronicHaematologicDiseasesPediatricsVS",
+        "description": "Chronic haematologic diseases the context of pediatrics and Covid-19"
       },
       {
         "extension": [
@@ -432,6 +497,45 @@
         },
         "name": "Vital Signs Base Profile",
         "description": "Vital signs base definition profile"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-antibiotic-therapy-procedure-pediatrics"
+        },
+        "name": "Antibiotic Therapy Procedure PediatricsVS",
+        "description": "Antibiotic Therapy the context of pediatrics and Covid-19"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/gastrointestinal-diseases-pediatrics-icd"
+        },
+        "name": "Gastrointestinal Diseases Pediatrics ICD-VS",
+        "description": "Gastrointestinal diseases in the context of pediatrics and Covid-19"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/gastrointestinal-diseases-pediatrics"
+        },
+        "name": "VSGastrointestinal Diseases Pediatrics",
+        "description": "Gastrointestinal diseases in the context of pediatrics and Covid-19"
       },
       {
         "extension": [

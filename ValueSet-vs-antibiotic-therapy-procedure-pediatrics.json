@@ -1,0 +1,50 @@
+{
+  "resourceType": "ValueSet",
+  "id": "vs-antibiotic-therapy-procedure-pediatrics",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  281789004 (Antibiotic therapy)</li></ul></div>"
+  },
+  "url": "http://example.org/fhir/ValueSet/vs-antibiotic-therapy-procedure-pediatrics",
+  "version": "0.1.0-test",
+  "name": "AntibioticTherapyProcedure",
+  "title": "Antibiotic Therapy Procedure PediatricsVS",
+  "status": "draft",
+  "date": "2021-05-28",
+  "publisher": "Berlin Institute of Health @ Charité",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://bihealth.org"
+        }
+      ]
+    }
+  ],
+  "description": "Antibiotic Therapy the context of pediatrics and Covid-19",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "281789004"
+          }
+        ]
+      }
+    ]
+  }
+}

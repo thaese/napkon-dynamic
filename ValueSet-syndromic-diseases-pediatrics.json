@@ -1,0 +1,36 @@
+{
+  "resourceType": "ValueSet",
+  "id": "syndromic-diseases-pediatrics",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul/></div>"
+  },
+  "url": "http://example.org/fhir/ValueSet/syndromic-diseases-pediatrics",
+  "version": "0.1.0-test",
+  "name": "SyndromicDiseasesPediatrics",
+  "title": "Syndromic diseases Pediatrics",
+  "status": "draft",
+  "date": "2021-07-14T13:29:39+00:00",
+  "publisher": "Berlin Institute of Health @ Charité",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://bihealth.org"
+        }
+      ]
+    }
+  ],
+  "description": "Syndromic diseases in the context of Covid-19 and Pediatrics",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ]
+}

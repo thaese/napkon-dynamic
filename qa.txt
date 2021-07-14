@@ -1,9 +1,9 @@
 ﻿NAPKON-BIH : Validation Results
 =========================================
 
-err = 18, warn = 9, info = 0
+err = 34, warn = 44, info = 0
 IG Publisher Version: 1.1.76
-Generated Wed Jul 14 08:55:00 UTC 2021. FHIR version 4.0.1 for hl7.de.fhir.napkon-bih#0.1.0-test (canonical = http://fhir.de/napkon-bih)
+Generated Wed Jul 14 13:30:16 UTC 2021. FHIR version 4.0.1 for hl7.de.fhir.napkon-bih#0.1.0-test (canonical = http://fhir.de/napkon-bih)
 
  Build Errors : 0 / 0 / 0
  /github/workspace/fsh-generated/resources/StructureDefinition-gecco-observation-blood-pressure : 2 / 1 / 1
@@ -15,6 +15,14 @@ Generated Wed Jul 14 08:55:00 UTC 2021. FHIR version 4.0.1 for hl7.de.fhir.napko
  /github/workspace/fsh-generated/resources/StructureDefinition-gecco-observation-respiratory-rate : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-gecco-vital-signs-base : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-1.2.276.0.76.11.467--20200409000000 : 2 / 0 / 2
+ /github/workspace/fsh-generated/resources/ValueSet-chronic-haematologic-diseases-pediatrics : 2 / 8 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-chronic-haematologic-diseases-pediatrics-icd : 2 / 3 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-gastrointestinal-diseases-pediatrics : 2 / 5 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-gastrointestinal-diseases-pediatrics-icd : 2 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-syndromic-diseases-pediatrics : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vaccine-type-covid-pediatrics : 2 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-antibiotic-therapy-procedure-pediatrics : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-non-pulmonary-bacterial-coinfection-pediatrics : 2 / 15 / 1
  /github/workspace/input/napkon-bih : 0 / 1 / 1
 </table>
 == n/a ==
@@ -53,5 +61,64 @@ ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-gecco-vital
 == /github/workspace/fsh-generated/resources/ValueSet-1.2.276.0.76.11.467--20200409000000.json ==
 ERROR: ValueSet.where(url = 'https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sars-cov-2-symptoms'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-1.2.276.0.76.11.467--20200409000000.json - the canonical URL (http://fhir.de/napkon-bih/ValueSet/1.2.276.0.76.11.467--20200409000000) does not match the URL (https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sars-cov-2-symptoms)
 ERROR: /github/workspace/fsh-generated/resources/ValueSet-1.2.276.0.76.11.467--20200409000000: URL Mismatch http://fhir.de/napkon-bih/ValueSet/1.2.276.0.76.11.467--20200409000000 vs https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sars-cov-2-symptoms
+== /github/workspace/fsh-generated/resources/ValueSet-chronic-haematologic-diseases-pediatrics.json ==
+ERROR: ValueSet.where(url = 'http://example.org/fhir/ValueSet/chronic-haematologic-diseases-pediatrics'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-chronic-haematologic-diseases-pediatrics.json - the canonical URL (http://fhir.de/napkon-bih/ValueSet/chronic-haematologic-diseases-pediatrics) does not match the URL (http://example.org/fhir/ValueSet/chronic-haematologic-diseases-pediatrics)
+WARNING: ValueSet/chronic-haematologic-diseases-pediatrics: ValueSet.compose.include[0].concept[0].designation[0].use: A code with no system has no defined meaning. A system should be provided
+WARNING: ValueSet/chronic-haematologic-diseases-pediatrics: ValueSet.compose.include[0].concept[1].designation[0].use: A code with no system has no defined meaning. A system should be provided
+WARNING: ValueSet/chronic-haematologic-diseases-pediatrics: ValueSet.compose.include[0].concept[2].designation[0].use: A code with no system has no defined meaning. A system should be provided
+WARNING: ValueSet/chronic-haematologic-diseases-pediatrics: ValueSet.compose.include[0].concept[3].designation[0].use: A code with no system has no defined meaning. A system should be provided
+WARNING: ValueSet/chronic-haematologic-diseases-pediatrics: ValueSet.compose.include[0].concept[4].designation[0].use: A code with no system has no defined meaning. A system should be provided
+WARNING: ValueSet/chronic-haematologic-diseases-pediatrics: ValueSet.compose.include[0].concept[5].designation[0].use: A code with no system has no defined meaning. A system should be provided
+WARNING: ValueSet/chronic-haematologic-diseases-pediatrics: ValueSet.compose.include[0].concept[6].designation[0].use: A code with no system has no defined meaning. A system should be provided
+WARNING: ValueSet/chronic-haematologic-diseases-pediatrics: ValueSet.compose.include[0].concept[7].designation[0].use: A code with no system has no defined meaning. A system should be provided
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-chronic-haematologic-diseases-pediatrics: URL Mismatch http://fhir.de/napkon-bih/ValueSet/chronic-haematologic-diseases-pediatrics vs http://example.org/fhir/ValueSet/chronic-haematologic-diseases-pediatrics
+== /github/workspace/fsh-generated/resources/ValueSet-chronic-haematologic-diseases-pediatrics-icd.json ==
+ERROR: ValueSet.where(url = 'http://example.org/fhir/ValueSet/chronic-haematologic-diseases-pediatrics-icd'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-chronic-haematologic-diseases-pediatrics-icd.json - the canonical URL (http://fhir.de/napkon-bih/ValueSet/chronic-haematologic-diseases-pediatrics-icd) does not match the URL (http://example.org/fhir/ValueSet/chronic-haematologic-diseases-pediatrics-icd)
+WARNING: ValueSet/chronic-haematologic-diseases-pediatrics-icd: ValueSet.compose.include[0].concept[2].display: value should not start or finish with whitespace
+WARNING: ValueSet/chronic-haematologic-diseases-pediatrics-icd: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet.where(id = 'chronic-haematologic-diseases-pediatrics-icd'): Error from server: Unable to provide support for code system http://fhir.de/CodeSystem/dimdi/icd-10-gm
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-chronic-haematologic-diseases-pediatrics-icd: URL Mismatch http://fhir.de/napkon-bih/ValueSet/chronic-haematologic-diseases-pediatrics-icd vs http://example.org/fhir/ValueSet/chronic-haematologic-diseases-pediatrics-icd
+== /github/workspace/fsh-generated/resources/ValueSet-gastrointestinal-diseases-pediatrics.json ==
+ERROR: ValueSet.where(url = 'http://example.org/fhir/ValueSet/gastrointestinal-diseases-pediatrics'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-gastrointestinal-diseases-pediatrics.json - the canonical URL (http://fhir.de/napkon-bih/ValueSet/gastrointestinal-diseases-pediatrics) does not match the URL (http://example.org/fhir/ValueSet/gastrointestinal-diseases-pediatrics)
+WARNING: ValueSet/gastrointestinal-diseases-pediatrics: ValueSet.compose.include[0].concept[0].designation[0].use: A code with no system has no defined meaning. A system should be provided
+WARNING: ValueSet/gastrointestinal-diseases-pediatrics: ValueSet.compose.include[0].concept[1].designation[0].use: A code with no system has no defined meaning. A system should be provided
+WARNING: ValueSet/gastrointestinal-diseases-pediatrics: ValueSet.compose.include[0].concept[2].designation[0].use: A code with no system has no defined meaning. A system should be provided
+WARNING: ValueSet/gastrointestinal-diseases-pediatrics: ValueSet.compose.include[0].concept[3].designation[0].use: A code with no system has no defined meaning. A system should be provided
+WARNING: ValueSet/gastrointestinal-diseases-pediatrics: ValueSet.compose.include[0].concept[4].designation[0].use: A code with no system has no defined meaning. A system should be provided
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-gastrointestinal-diseases-pediatrics: URL Mismatch http://fhir.de/napkon-bih/ValueSet/gastrointestinal-diseases-pediatrics vs http://example.org/fhir/ValueSet/gastrointestinal-diseases-pediatrics
+== /github/workspace/fsh-generated/resources/ValueSet-gastrointestinal-diseases-pediatrics-icd.json ==
+ERROR: ValueSet.where(url = 'http://example.org/fhir/ValueSet/gastrointestinal-diseases-pediatrics-icd'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-gastrointestinal-diseases-pediatrics-icd.json - the canonical URL (http://fhir.de/napkon-bih/ValueSet/gastrointestinal-diseases-pediatrics-icd) does not match the URL (http://example.org/fhir/ValueSet/gastrointestinal-diseases-pediatrics-icd)
+WARNING: ValueSet/gastrointestinal-diseases-pediatrics-icd: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet.where(id = 'gastrointestinal-diseases-pediatrics-icd'): Error from server: Unable to provide support for code system http://fhir.de/CodeSystem/dimdi/icd-10-gm
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-gastrointestinal-diseases-pediatrics-icd: URL Mismatch http://fhir.de/napkon-bih/ValueSet/gastrointestinal-diseases-pediatrics-icd vs http://example.org/fhir/ValueSet/gastrointestinal-diseases-pediatrics-icd
+== /github/workspace/fsh-generated/resources/ValueSet-syndromic-diseases-pediatrics.json ==
+ERROR: ValueSet.where(url = 'http://example.org/fhir/ValueSet/syndromic-diseases-pediatrics'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-syndromic-diseases-pediatrics.json - the canonical URL (http://fhir.de/napkon-bih/ValueSet/syndromic-diseases-pediatrics) does not match the URL (http://example.org/fhir/ValueSet/syndromic-diseases-pediatrics)
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-syndromic-diseases-pediatrics: URL Mismatch http://fhir.de/napkon-bih/ValueSet/syndromic-diseases-pediatrics vs http://example.org/fhir/ValueSet/syndromic-diseases-pediatrics
+== /github/workspace/fsh-generated/resources/ValueSet-vaccine-type-covid-pediatrics.json ==
+ERROR: ValueSet.where(url = 'http://example.org/fhir/ValueSet/vaccine-type-covid-pediatrics'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-vaccine-type-covid-pediatrics.json - the canonical URL (http://fhir.de/napkon-bih/ValueSet/vaccine-type-covid-pediatrics) does not match the URL (http://example.org/fhir/ValueSet/vaccine-type-covid-pediatrics)
+WARNING: ValueSet/vaccine-type-covid-pediatrics: ValueSet.compose.include[0].concept[0].designation[0].use: A code with no system has no defined meaning. A system should be provided
+WARNING: ValueSet/vaccine-type-covid-pediatrics: ValueSet.compose.include[0].concept[1].designation[0].use: A code with no system has no defined meaning. A system should be provided
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-vaccine-type-covid-pediatrics: URL Mismatch http://fhir.de/napkon-bih/ValueSet/vaccine-type-covid-pediatrics vs http://example.org/fhir/ValueSet/vaccine-type-covid-pediatrics
+== /github/workspace/fsh-generated/resources/ValueSet-vs-antibiotic-therapy-procedure-pediatrics.json ==
+ERROR: ValueSet.where(url = 'http://example.org/fhir/ValueSet/vs-antibiotic-therapy-procedure-pediatrics'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-vs-antibiotic-therapy-procedure-pediatrics.json - the canonical URL (http://fhir.de/napkon-bih/ValueSet/vs-antibiotic-therapy-procedure-pediatrics) does not match the URL (http://example.org/fhir/ValueSet/vs-antibiotic-therapy-procedure-pediatrics)
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-vs-antibiotic-therapy-procedure-pediatrics: URL Mismatch http://fhir.de/napkon-bih/ValueSet/vs-antibiotic-therapy-procedure-pediatrics vs http://example.org/fhir/ValueSet/vs-antibiotic-therapy-procedure-pediatrics
+== /github/workspace/fsh-generated/resources/ValueSet-vs-non-pulmonary-bacterial-coinfection-pediatrics.json ==
+ERROR: ValueSet.where(url = 'http://example.org/fhir/ValueSet/vs-non-pulmonary-bacterial-coinfection-pediatrics'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-vs-non-pulmonary-bacterial-coinfection-pediatrics.json - the canonical URL (http://fhir.de/napkon-bih/ValueSet/vs-non-pulmonary-bacterial-coinfection-pediatrics) does not match the URL (http://example.org/fhir/ValueSet/vs-non-pulmonary-bacterial-coinfection-pediatrics)
+WARNING: ValueSet/vs-non-pulmonary-bacterial-coinfection-pediatrics: ValueSet.compose.include[0].concept[0].display: value should not start or finish with whitespace
+WARNING: ValueSet/vs-non-pulmonary-bacterial-coinfection-pediatrics: ValueSet.compose.include[0].concept[0].designation[0].use: A code with no system has no defined meaning. A system should be provided
+WARNING: ValueSet/vs-non-pulmonary-bacterial-coinfection-pediatrics: ValueSet.compose.include[0].concept[1].designation[0].use: A code with no system has no defined meaning. A system should be provided
+WARNING: ValueSet/vs-non-pulmonary-bacterial-coinfection-pediatrics: ValueSet.compose.include[0].concept[2].designation[0].use: A code with no system has no defined meaning. A system should be provided
+WARNING: ValueSet/vs-non-pulmonary-bacterial-coinfection-pediatrics: ValueSet.compose.include[0].concept[3].display: value should not start or finish with whitespace
+WARNING: ValueSet/vs-non-pulmonary-bacterial-coinfection-pediatrics: ValueSet.compose.include[0].concept[3].designation[0].use: A code with no system has no defined meaning. A system should be provided
+WARNING: ValueSet/vs-non-pulmonary-bacterial-coinfection-pediatrics: ValueSet.compose.include[0].concept[4].designation[0].use: A code with no system has no defined meaning. A system should be provided
+WARNING: ValueSet/vs-non-pulmonary-bacterial-coinfection-pediatrics: ValueSet.compose.include[0].concept[5].designation[0].use: A code with no system has no defined meaning. A system should be provided
+WARNING: ValueSet/vs-non-pulmonary-bacterial-coinfection-pediatrics: ValueSet.compose.include[0].concept[6].designation[0].use: A code with no system has no defined meaning. A system should be provided
+WARNING: ValueSet/vs-non-pulmonary-bacterial-coinfection-pediatrics: ValueSet.compose.include[0].concept[7].designation[0].use: A code with no system has no defined meaning. A system should be provided
+WARNING: ValueSet/vs-non-pulmonary-bacterial-coinfection-pediatrics: ValueSet.compose.include[0].concept[8].display: value should not start or finish with whitespace
+WARNING: ValueSet/vs-non-pulmonary-bacterial-coinfection-pediatrics: ValueSet.compose.include[0].concept[8].designation[0].use: A code with no system has no defined meaning. A system should be provided
+WARNING: ValueSet/vs-non-pulmonary-bacterial-coinfection-pediatrics: ValueSet.compose.include[0].concept[9].display: value should not start or finish with whitespace
+WARNING: ValueSet/vs-non-pulmonary-bacterial-coinfection-pediatrics: ValueSet.compose.include[0].concept[9].designation[0].use: A code with no system has no defined meaning. A system should be provided
+WARNING: ValueSet/vs-non-pulmonary-bacterial-coinfection-pediatrics: ValueSet.compose.include[0].concept[10].designation[0].use: A code with no system has no defined meaning. A system should be provided
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-vs-non-pulmonary-bacterial-coinfection-pediatrics: URL Mismatch http://fhir.de/napkon-bih/ValueSet/vs-non-pulmonary-bacterial-coinfection-pediatrics vs http://example.org/fhir/ValueSet/vs-non-pulmonary-bacterial-coinfection-pediatrics
 == /github/workspace/input/napkon-bih.xml ==
 WARNING: ImplementationGuide/hl7.de.fhir.napkon-bih: ImplementationGuide: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed

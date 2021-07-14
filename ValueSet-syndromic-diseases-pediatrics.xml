@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="syndromic-diseases-pediatrics"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul/></div>
+  </text>
+  <url value="http://example.org/fhir/ValueSet/syndromic-diseases-pediatrics"/>
+  <version value="0.1.0-test"/>
+  <name value="SyndromicDiseasesPediatrics"/>
+  <title value="Syndromic diseases Pediatrics"/>
+  <status value="draft"/>
+  <date value="2021-07-14T13:29:39+00:00"/>
+  <publisher value="Berlin Institute of Health @ Charit&#xE9;"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://bihealth.org"/>
+    </telecom>
+  </contact>
+  <description value="Syndromic diseases in the context of Covid-19 and Pediatrics"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+</ValueSet>

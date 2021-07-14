@@ -1,11 +1,549 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="f257157a-2939-4970-a2ad-55a0f551fe6a"/>
+  <id value="7ec34a8d-20c2-48cb-9d17-1b9e90bcd130"/>
   <meta>
-    <lastUpdated value="2021-07-14T08:54:24.734+00:00"/>
+    <lastUpdated value="2021-07-14T13:29:39.543+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="http://example.org/fhir/ValueSet/vs-non-pulmonary-bacterial-coinfection-pediatrics"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-non-pulmonary-bacterial-coinfection-pediatrics"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 11 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jan 2021</p>
+            <p>All codes from system 
+              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-406602003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=406602003">406602003</a>
+                </td>
+                <td>Staphylococcus aureus</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-9861002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=9861002">9861002</a>
+                </td>
+                <td>Streptococcus pneumoniae</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-108661000119109"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=108661000119109">108661000119109</a>
+                </td>
+                <td>Streptococcus viridans</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-302809008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=302809008">302809008</a>
+                </td>
+                <td>Streptococcus pyogenes</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-426933007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=426933007">426933007</a>
+                </td>
+                <td>Streptococcus agalactiae</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-406574007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=406574007">406574007</a>
+                </td>
+                <td>Genus Enterococcus</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-23511006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=23511006">23511006</a>
+                </td>
+                <td>Neisseria meningitidis</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-91428005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=91428005">91428005</a>
+                </td>
+                <td>Haemophilus influenzae</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-71057007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=71057007">71057007</a>
+                </td>
+                <td>Escherichia coli</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-721756002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=721756002">721756002</a>
+                </td>
+                <td>Genus Klebsiella</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-11218009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=11218009">11218009</a>
+                </td>
+                <td>Pseudomonas aeruginosa</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.org/fhir/ValueSet/vs-non-pulmonary-bacterial-coinfection-pediatrics"/>
+        <version value="0.1.0-test"/>
+        <name value="NonPulmonaryBacterialCoinfectionPediatrics"/>
+        <title value="ValuesetNonPulmonaryBacterialCoinfectionPediatrics"/>
+        <status value="draft"/>
+        <date value="2021-07-14T13:29:39+00:00"/>
+        <publisher value="Berlin Institute of Health @ Charit&#xE9;"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="https://bihealth.org"/>
+          </telecom>
+        </contact>
+        <description value="Non-pulmonary bacterial co-infection the context of pediatrics and Covid-19"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:318036ca-904a-432c-aec4-92c20cf8c67e"/>
+          <timestamp value="2021-07-14T13:29:54+00:00"/>
+          <total value="11"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="406602003"/>
+            <display value="Staphylococcus aureus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="9861002"/>
+            <display value="Streptococcus pneumoniae"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="108661000119109"/>
+            <display value="Streptococcus viridans"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="302809008"/>
+            <display value="Streptococcus pyogenes"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="426933007"/>
+            <display value="Streptococcus agalactiae"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="406574007"/>
+            <display value="Genus Enterococcus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="23511006"/>
+            <display value="Neisseria meningitidis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="91428005"/>
+            <display value="Haemophilus influenzae"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="71057007"/>
+            <display value="Escherichia coli"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="721756002"/>
+            <display value="Genus Klebsiella"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="11218009"/>
+            <display value="Pseudomonas aeruginosa"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/fhir/ValueSet/syndromic-diseases-pediatrics"/>
+    <resource>
+      <ValueSet>
+        <id value="syndromic-diseases-pediatrics"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 0 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.org/fhir/ValueSet/syndromic-diseases-pediatrics"/>
+        <version value="0.1.0-test"/>
+        <name value="SyndromicDiseasesPediatrics"/>
+        <title value="Syndromic diseases Pediatrics"/>
+        <status value="draft"/>
+        <date value="2021-07-14T13:29:39+00:00"/>
+        <publisher value="Berlin Institute of Health @ Charit&#xE9;"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="https://bihealth.org"/>
+          </telecom>
+        </contact>
+        <description value="Syndromic diseases in the context of Covid-19 and Pediatrics"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:c075a165-6c55-4a3a-aa85-a058eae79cad"/>
+          <timestamp value="2021-07-14T13:29:58+00:00"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/fhir/ValueSet/vaccine-type-covid-pediatrics"/>
+    <resource>
+      <ValueSet>
+        <id value="vaccine-type-covid-pediatrics"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jan 2021</p>
+            <p>All codes from system 
+              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-1119349007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1119349007">1119349007</a>
+                </td>
+                <td>MRNA-Impfstoff</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-1119305005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1119305005">1119305005</a>
+                </td>
+                <td>Antigen-Impfstoff</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.org/fhir/ValueSet/vaccine-type-covid-pediatrics"/>
+        <version value="0.1.0-test"/>
+        <name value="VaccineTypCovidPediatrics"/>
+        <title value="ValueSetVaccineTypeCovidPediatrics"/>
+        <status value="draft"/>
+        <date value="2021-07-14T13:29:39+00:00"/>
+        <publisher value="Berlin Institute of Health @ Charit&#xE9;"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="https://bihealth.org"/>
+          </telecom>
+        </contact>
+        <description value="Vaccine type used in the case of a vaccination in the context of Covid-19 and Pediatrics"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:507e65cd-bb95-4659-a388-5d96607a90ad"/>
+          <timestamp value="2021-07-14T13:29:58+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119349007"/>
+            <display value="MRNA-Impfstoff"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119305005"/>
+            <display value="Antigen-Impfstoff"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/fhir/ValueSet/chronic-haematologic-diseases-pediatrics"/>
+    <resource>
+      <ValueSet>
+        <id value="chronic-haematologic-diseases-pediatrics"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 8 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jan 2021</p>
+            <p>All codes from system 
+              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-61261009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=61261009">61261009</a>
+                </td>
+                <td>Haemolytische Anaemie</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-40108008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=40108008">40108008</a>
+                </td>
+                <td>Thalassämie</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-127040003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=127040003">127040003</a>
+                </td>
+                <td>Sichelzellanämie</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-62403005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=62403005">62403005</a>
+                </td>
+                <td>G6PD-Mangel-Anämie</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-87522002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=87522002">87522002</a>
+                </td>
+                <td>Eisenmangelanämie</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-248693006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=248693006">248693006</a>
+                </td>
+                <td>Chronische Neutropenie</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-109995007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=109995007">109995007</a>
+                </td>
+                <td>Myelodysplastisches Syndrom</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-64779008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=64779008">64779008</a>
+                </td>
+                <td>Gerinnungsstörung</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.org/fhir/ValueSet/chronic-haematologic-diseases-pediatrics"/>
+        <version value="0.1.0-test"/>
+        <name value="ChronicHaematologicDiseasesPediatrics"/>
+        <title value="ChronicHaematologicDiseasesPediatricsVS"/>
+        <status value="draft"/>
+        <date value="2021-07-14T13:29:39+00:00"/>
+        <publisher value="Berlin Institute of Health @ Charit&#xE9;"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="https://bihealth.org"/>
+          </telecom>
+        </contact>
+        <description value="Chronic haematologic diseases the context of pediatrics and Covid-19"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:9ac9944a-8f61-4860-8ccc-bd6f8d0f3a3f"/>
+          <timestamp value="2021-07-14T13:29:59+00:00"/>
+          <total value="8"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="61261009"/>
+            <display value="Haemolytische Anaemie"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="40108008"/>
+            <display value="Thalass&#xE4;mie"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="127040003"/>
+            <display value="Sichelzellan&#xE4;mie"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="62403005"/>
+            <display value="G6PD-Mangel-An&#xE4;mie"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="87522002"/>
+            <display value="Eisenmangelan&#xE4;mie"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="248693006"/>
+            <display value="Chronische Neutropenie"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="109995007"/>
+            <display value="Myelodysplastisches Syndrom"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="64779008"/>
+            <display value="Gerinnungsst&#xF6;rung"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
   <entry>
     <fullUrl value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sars-cov-2-symptoms"/>
     <resource>
@@ -375,7 +913,7 @@
         <title value="SARS-CoV-2-Symptoms"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2021-07-14T08:54:24+00:00"/>
+        <date value="2021-07-14T13:29:39+00:00"/>
         <publisher value="Berlin Institute of Health @ Charit&#xE9;"/>
         <contact>
           <telecom>
@@ -393,8 +931,8 @@
         <immutable value="false"/>
         <copyright value="This artefact includes content from SNOMED Clinical Terms&#xAE; (SNOMED CT&#xAE;) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
         <expansion>
-          <identifier value="urn:uuid:7e9cc284-5b7b-4857-b8a6-a49db2c84681"/>
-          <timestamp value="2021-07-14T08:54:45+00:00"/>
+          <identifier value="urn:uuid:5a40440e-5770-466d-b10e-bd1cc5b831a0"/>
+          <timestamp value="2021-07-14T13:30:00+00:00"/>
           <total value="40"/>
           <parameter>
             <name value="excludeNested"/>
@@ -607,6 +1145,448 @@
             <system value="http://snomed.info/sct"/>
             <code value="40917007"/>
             <display value="Bewusstseinstr&#xFC;bung"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/fhir/ValueSet/vs-antibiotic-therapy-procedure-pediatrics"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-antibiotic-therapy-procedure-pediatrics"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 18 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jan 2021</p>
+            <p>All codes from system 
+              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-281789004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=281789004">281789004</a>
+                </td>
+                <td>Antibiotic therapy</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-170450005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=170450005">170450005</a>
+                </td>
+                <td>Meningococcus prophylaxis</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-230864006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=230864006">230864006</a>
+                </td>
+                <td>Injection of antibiotic into brain abscess</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-268502007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=268502007">268502007</a>
+                </td>
+                <td>Leptospirosis prophylaxis</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-275843000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=275843000">275843000</a>
+                </td>
+                <td>Weil&#39;s disease prophylaxis</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-281790008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=281790008">281790008</a>
+                </td>
+                <td>Intravenous antibiotic therapy</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-281791007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=281791007">281791007</a>
+                </td>
+                <td>Oral antibiotic therapy</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-300041008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=300041008">300041008</a>
+                </td>
+                <td>Penicillin prophylaxis</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-307520009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=307520009">307520009</a>
+                </td>
+                <td>Intramuscular antibiotic therapy</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-371070000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=371070000">371070000</a>
+                </td>
+                <td>Empirical antibiotic therapy</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-422181004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=422181004">422181004</a>
+                </td>
+                <td>Antibiotic prophylaxis (procedure)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-426931009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=426931009">426931009</a>
+                </td>
+                <td>Subacute bacterial endocarditis prophylaxis (procedure)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-443199009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=443199009">443199009</a>
+                </td>
+                <td>Instillation of mitomycin C into bladder (procedure)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-699618001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=699618001">699618001</a>
+                </td>
+                <td>Tuberculosis prophylaxis</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-717856000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=717856000">717856000</a>
+                </td>
+                <td>Sulfasalazine therapy (procedure)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-722482005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=722482005">722482005</a>
+                </td>
+                <td>Doxorubicin, bleomycin, vinblastine and dacarbazine chemotherapy regimen (regime/therapy)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-724053002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=724053002">724053002</a>
+                </td>
+                <td>Antibiotic therapy for prevention of recurrent infection (procedure)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-726599006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=726599006">726599006</a>
+                </td>
+                <td>Sirolimus therapy (procedure)</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.org/fhir/ValueSet/vs-antibiotic-therapy-procedure-pediatrics"/>
+        <version value="0.1.0-test"/>
+        <name value="AntibioticTherapyProcedure"/>
+        <title value="Antibiotic Therapy Procedure PediatricsVS"/>
+        <status value="draft"/>
+        <date value="2021-05-28"/>
+        <publisher value="Berlin Institute of Health @ Charit&#xE9;"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="https://bihealth.org"/>
+          </telecom>
+        </contact>
+        <description value="Antibiotic Therapy the context of pediatrics and Covid-19"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
+            <valueBoolean value="true"/>
+          </extension>
+          <identifier value="urn:uuid:74bbff5c-d7d8-4505-9861-22fd79270656"/>
+          <timestamp value="2021-07-14T13:30:02+00:00"/>
+          <total value="18"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="281789004"/>
+            <display value="Antibiotic therapy"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="170450005"/>
+            <display value="Meningococcus prophylaxis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="230864006"/>
+            <display value="Injection of antibiotic into brain abscess"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="268502007"/>
+            <display value="Leptospirosis prophylaxis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="275843000"/>
+            <display value="Weil&#39;s disease prophylaxis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="281790008"/>
+            <display value="Intravenous antibiotic therapy"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="281791007"/>
+            <display value="Oral antibiotic therapy"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="300041008"/>
+            <display value="Penicillin prophylaxis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="307520009"/>
+            <display value="Intramuscular antibiotic therapy"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="371070000"/>
+            <display value="Empirical antibiotic therapy"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="422181004"/>
+            <display value="Antibiotic prophylaxis (procedure)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="426931009"/>
+            <display value="Subacute bacterial endocarditis prophylaxis (procedure)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="443199009"/>
+            <display value="Instillation of mitomycin C into bladder (procedure)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="699618001"/>
+            <display value="Tuberculosis prophylaxis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="717856000"/>
+            <display value="Sulfasalazine therapy (procedure)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="722482005"/>
+            <display value="Doxorubicin, bleomycin, vinblastine and dacarbazine chemotherapy regimen (regime/therapy)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="724053002"/>
+            <display value="Antibiotic therapy for prevention of recurrent infection (procedure)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="726599006"/>
+            <display value="Sirolimus therapy (procedure)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/fhir/ValueSet/gastrointestinal-diseases-pediatrics"/>
+    <resource>
+      <ValueSet>
+        <id value="gastrointestinal-diseases-pediatrics"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 5 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jan 2021</p>
+            <p>All codes from system 
+              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-236069009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=236069009">236069009</a>
+                </td>
+                <td>Chronische Obstipation</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-6382002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=6382002">6382002</a>
+                </td>
+                <td>Chronisch entzündliche Darmerkrankung</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-396331005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=396331005">396331005</a>
+                </td>
+                <td>Zölikalie</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-782555009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=782555009">782555009</a>
+                </td>
+                <td>Kuhmilchproteinallergie</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-118926004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=118926004">118926004</a>
+                </td>
+                <td>Gallengangserkrankung</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.org/fhir/ValueSet/gastrointestinal-diseases-pediatrics"/>
+        <version value="0.1.0-test"/>
+        <name value="GastrointestinalDiseasesPediatrics"/>
+        <title value="VSGastrointestinal Diseases Pediatrics"/>
+        <status value="draft"/>
+        <date value="2021-07-14T13:29:39+00:00"/>
+        <publisher value="Berlin Institute of Health @ Charit&#xE9;"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="https://bihealth.org"/>
+          </telecom>
+        </contact>
+        <description value="Gastrointestinal diseases in the context of pediatrics and Covid-19"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:f1b09e46-5895-4e28-b403-40ab5bb1f326"/>
+          <timestamp value="2021-07-14T13:30:02+00:00"/>
+          <total value="5"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="236069009"/>
+            <display value="Chronische Obstipation"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="6382002"/>
+            <display value="Chronisch entz&#xFC;ndliche Darmerkrankung"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="396331005"/>
+            <display value="Z&#xF6;likalie"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="782555009"/>
+            <display value="Kuhmilchproteinallergie"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="118926004"/>
+            <display value="Gallengangserkrankung"/>
           </contains>
         </expansion>
       </ValueSet>

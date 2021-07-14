@@ -1,5 +1,61 @@
 [
   {
+    "id": "chronic-haematologic-diseases-pediatrics",
+    "type": "ValueSet",
+    "url": "http://example.org/fhir/ValueSet/chronic-haematologic-diseases-pediatrics",
+    "version": "0.1.0-test",
+    "name": "ChronicHaematologicDiseasesPediatrics"
+  },
+  {
+    "id": "chronic-haematologic-diseases-pediatrics-icd",
+    "type": "ValueSet",
+    "url": "http://example.org/fhir/ValueSet/chronic-haematologic-diseases-pediatrics-icd",
+    "version": "0.1.0-test",
+    "name": "ChronicHaematologicDiseasesPediatricsICD"
+  },
+  {
+    "id": "gastrointestinal-diseases-pediatrics",
+    "type": "ValueSet",
+    "url": "http://example.org/fhir/ValueSet/gastrointestinal-diseases-pediatrics",
+    "version": "0.1.0-test",
+    "name": "GastrointestinalDiseasesPediatrics"
+  },
+  {
+    "id": "gastrointestinal-diseases-pediatrics-icd",
+    "type": "ValueSet",
+    "url": "http://example.org/fhir/ValueSet/gastrointestinal-diseases-pediatrics-icd",
+    "version": "0.1.0-test",
+    "name": "GastrointestinalDiseasesPediatricsICD"
+  },
+  {
+    "id": "syndromic-diseases-pediatrics",
+    "type": "ValueSet",
+    "url": "http://example.org/fhir/ValueSet/syndromic-diseases-pediatrics",
+    "version": "0.1.0-test",
+    "name": "SyndromicDiseasesPediatrics"
+  },
+  {
+    "id": "vaccine-type-covid-pediatrics",
+    "type": "ValueSet",
+    "url": "http://example.org/fhir/ValueSet/vaccine-type-covid-pediatrics",
+    "version": "0.1.0-test",
+    "name": "VaccineTypCovidPediatrics"
+  },
+  {
+    "id": "vs-antibiotic-therapy-procedure-pediatrics",
+    "type": "ValueSet",
+    "url": "http://example.org/fhir/ValueSet/vs-antibiotic-therapy-procedure-pediatrics",
+    "version": "0.1.0-test",
+    "name": "AntibioticTherapyProcedure"
+  },
+  {
+    "id": "vs-non-pulmonary-bacterial-coinfection-pediatrics",
+    "type": "ValueSet",
+    "url": "http://example.org/fhir/ValueSet/vs-non-pulmonary-bacterial-coinfection-pediatrics",
+    "version": "0.1.0-test",
+    "name": "NonPulmonaryBacterialCoinfectionPediatrics"
+  },
+  {
     "id": "hl7.de.fhir.napkon-bih",
     "type": "ImplementationGuide",
     "url": "http://fhir.de/napkon-bih/ImplementationGuide/hl7.de.fhir.napkon-bih",

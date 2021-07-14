@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="gastrointestinal-diseases-pediatrics-icd"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>http://fhir.de/CodeSystem/dimdi/icd-10-gm</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>K59.9</td><td>Funktionelle Darmstörung, nicht näher bezeichnet</td></tr><tr><td>K90.0</td><td>Zöliakie</td></tr><tr><td>Z91.0</td><td>Kuhmilchproteinallergie</td></tr><tr><td>K83.9</td><td>Gallengangserkrankung</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://example.org/fhir/ValueSet/gastrointestinal-diseases-pediatrics-icd"/>
+  <version value="0.1.0-test"/>
+  <name value="GastrointestinalDiseasesPediatricsICD"/>
+  <title value="Gastrointestinal Diseases Pediatrics ICD-VS"/>
+  <status value="draft"/>
+  <date value="2021-07-14T13:29:39+00:00"/>
+  <publisher value="Berlin Institute of Health @ Charit&#xE9;"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://bihealth.org"/>
+    </telecom>
+  </contact>
+  <description value="Gastrointestinal diseases in the context of pediatrics and Covid-19"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+      <concept>
+        <code value="K59.9"/>
+        <display value="Funktionelle Darmst&#xF6;rung, nicht n&#xE4;her bezeichnet"/>
+      </concept>
+      <concept>
+        <code value="K90.0"/>
+        <display value="Z&#xF6;liakie"/>
+      </concept>
+      <concept>
+        <code value="Z91.0"/>
+        <display value="Kuhmilchproteinallergie"/>
+      </concept>
+      <concept>
+        <code value="K83.9"/>
+        <display value="Gallengangserkrankung"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
