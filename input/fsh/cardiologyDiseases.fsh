@@ -76,7 +76,7 @@ set of data to query and retrieve diseases related to the field of Cardiology."
 
 // Profile INSTANCE
 Instance: CardiologyDiseasesInstance
-InstanceOf: CardiologyDiseases
+InstanceOf: cardiovascular-diseases //CardiologyDiseases
 Usage: #example
 * code[sct] = sct#84114007
 * subject = Reference(Patient/example)
