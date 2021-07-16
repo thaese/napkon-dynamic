@@ -24,11 +24,12 @@ Alias: $cardiovascular-diseases = https://www.netzwerk-universitaetsmedizin.de/f
 
 // Profile HEADER
 Profile: CardiologyDiseases
-Parent: https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-base-condition
+Parent: gecco-base-condition
 Id: napkon-cardiology-diseases
 Title: "Disorders (Cardiology)"
 Description: "Defines constraints and extensions on the conditions resource for the minimal
 set of data to query and retrieve diseases related to the field of Cardiology."
+* url = "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-base-condition"
 * ^publisher = "BIH@Charité"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
@@ -76,8 +77,9 @@ set of data to query and retrieve diseases related to the field of Cardiology."
 
 // Profile INSTANCE
 Instance: CardiologyDiseasesInstance
-InstanceOf: cardiovascular-diseases //CardiologyDiseases
+InstanceOf: CardiologyDiseases
 Usage: #example
+* url = "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-base-condition"
 * code[sct] = sct#84114007
 * subject = Reference(Patient/example)
 
