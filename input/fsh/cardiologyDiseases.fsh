@@ -25,7 +25,7 @@ Alias: $CardiologyDiseases = https://www.netzwerk-universitaetsmedizin.de/fhir/S
 
 // Profile HEADER
 Profile: CardiologyDiseases
-Parent: gecco-base-condition
+Parent: $gecco-base-condition
 Id: napkon-cardiology-diseases
 Title: "Disorders (Cardiology)"
 Description: "Defines constraints and extensions on the conditions resource for the minimal
@@ -78,7 +78,7 @@ set of data to query and retrieve diseases related to the field of Cardiology."
 
 // Profile INSTANCE
 Instance: CardiologyDiseasesInstance
-InstanceOf: CardiologyDiseases
+InstanceOf: $CardiologyDiseases
 Usage: #example
 * code[sct] = sct#84114007
 * subject = Reference(Patient/example)
