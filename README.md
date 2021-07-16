@@ -27,10 +27,11 @@ Larissa Röhrig\
 
 ### Branch overview
 
-.
+```
 +-- master      This is the main branch that is connected to github pages
 +-- fsh-l       Test branch for Larissa
 +-- fsh-s       Test branch for Sami
 +-- fsh-t       Test branch for Thomas
 +-- fsh-b       Test branch for Sally
 +-- fsh-090721  Misc. Test branch
+```
