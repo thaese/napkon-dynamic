@@ -1,9 +1,9 @@
 ﻿NAPKON-BIH : Validation Results
 =========================================
 
-err = 34, warn = 44, info = 0
+err = 36, warn = 44, info = 0
 IG Publisher Version: 1.1.76
-Generated Fri Jul 16 07:32:58 UTC 2021. FHIR version 4.0.1 for hl7.de.fhir.napkon-bih#0.1.0-test (canonical = http://fhir.de/napkon-bih)
+Generated Fri Jul 16 11:33:15 UTC 2021. FHIR version 4.0.1 for hl7.de.fhir.napkon-bih#0.1.0-test (canonical = http://fhir.de/napkon-bih)
 
  Build Errors : 0 / 0 / 0
  /github/workspace/fsh-generated/resources/StructureDefinition-gecco-observation-blood-pressure : 2 / 1 / 1
@@ -15,6 +15,7 @@ Generated Fri Jul 16 07:32:58 UTC 2021. FHIR version 4.0.1 for hl7.de.fhir.napko
  /github/workspace/fsh-generated/resources/StructureDefinition-gecco-observation-respiratory-rate : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-gecco-vital-signs-base : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-1.2.276.0.76.11.467--20200409000000 : 2 / 0 / 2
+ /github/workspace/fsh-generated/resources/ValueSet-cardiology-diseases-codes : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-chronic-haematologic-diseases-pediatrics : 2 / 8 / 1
  /github/workspace/fsh-generated/resources/ValueSet-chronic-haematologic-diseases-pediatrics-icd : 2 / 3 / 1
  /github/workspace/fsh-generated/resources/ValueSet-gastrointestinal-diseases-pediatrics : 2 / 5 / 1
@@ -61,6 +62,9 @@ ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-gecco-vital
 == /github/workspace/fsh-generated/resources/ValueSet-1.2.276.0.76.11.467--20200409000000.json ==
 ERROR: ValueSet.where(url = 'https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sars-cov-2-symptoms'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-1.2.276.0.76.11.467--20200409000000.json - the canonical URL (http://fhir.de/napkon-bih/ValueSet/1.2.276.0.76.11.467--20200409000000) does not match the URL (https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sars-cov-2-symptoms)
 ERROR: /github/workspace/fsh-generated/resources/ValueSet-1.2.276.0.76.11.467--20200409000000: URL Mismatch http://fhir.de/napkon-bih/ValueSet/1.2.276.0.76.11.467--20200409000000 vs https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sars-cov-2-symptoms
+== /github/workspace/fsh-generated/resources/ValueSet-cardiology-diseases-codes.json ==
+ERROR: ValueSet.where(url = 'https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/CardiologyDiseasesCodes'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-cardiology-diseases-codes.json - the canonical URL (http://fhir.de/napkon-bih/ValueSet/cardiology-diseases-codes) does not match the URL (https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/CardiologyDiseasesCodes)
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-cardiology-diseases-codes: URL Mismatch http://fhir.de/napkon-bih/ValueSet/cardiology-diseases-codes vs https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/CardiologyDiseasesCodes
 == /github/workspace/fsh-generated/resources/ValueSet-chronic-haematologic-diseases-pediatrics.json ==
 ERROR: ValueSet.where(url = 'http://example.org/fhir/ValueSet/chronic-haematologic-diseases-pediatrics'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-chronic-haematologic-diseases-pediatrics.json - the canonical URL (http://fhir.de/napkon-bih/ValueSet/chronic-haematologic-diseases-pediatrics) does not match the URL (http://example.org/fhir/ValueSet/chronic-haematologic-diseases-pediatrics)
 WARNING: ValueSet/chronic-haematologic-diseases-pediatrics: ValueSet.compose.include[0].concept[0].designation[0].use: A code with no system has no defined meaning. A system should be provided

@@ -119,6 +119,13 @@
     "name": "VitalSignsBase"
   },
   {
+    "id": "cardiology-diseases-codes",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/CardiologyDiseasesCodes",
+    "version": "0.1.0-test",
+    "name": "CardiologyDiseasesCodes"
+  },
+  {
     "id": "1.2.276.0.76.11.467--20200409000000",
     "type": "ValueSet",
     "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sars-cov-2-symptoms",

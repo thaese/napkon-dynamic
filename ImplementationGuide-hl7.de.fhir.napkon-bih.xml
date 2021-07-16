@@ -12,7 +12,7 @@
   <title value="NAPKON Implementation Guide by BIH"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-07-16T07:32:21+00:00"/>
+  <date value="2021-07-16T11:32:36+00:00"/>
   <publisher value="Berlin Institute of Health @ Charit&#xE9;"/>
   <contact>
     <telecom>
@@ -286,6 +286,16 @@
       </reference>
       <name value="ChronicHaematologicDiseasesPediatricsVS"/>
       <description value="Chronic haematologic diseases the context of pediatrics and Covid-19"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cardiology-diseases-codes"/>
+      </reference>
+      <name value="ValueSet for Cardiology Module"/>
+      <description value="Codes related to the Cardiology Module."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

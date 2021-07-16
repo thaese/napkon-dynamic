@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cardiology-diseases-codes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=195080001">195080001</a></td><td>Atrial fibrillation and flutter (disorder)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=49436004">49436004</a></td><td>Atrial fibrillation (disorder)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=5370000">5370000</a></td><td>Atrial flutter (disorder)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=84114007">84114007</a></td><td>Heart failure (disorder)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=85898001">85898001</a></td><td>Cardiomyopathy (disorder)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=59494005">59494005</a></td><td>Congenital septal defect of heart (disorder)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=13213009">13213009</a></td><td>Congenital heart disease (disorder)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=17338001">17338001</a></td><td>Ventricular premature beats (disorder)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=63593006">63593006</a></td><td>Supraventricular premature beats (disorder)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=233917008">233917008</a></td><td>Atrioventricular block (disorder)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=6374002">6374002</a></td><td>Bundle branch block (disorder)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=266249003">266249003</a></td><td>Ventricular hypertrophy (disorder)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373945007">373945007</a></td><td>Pericardial effusion (disorder)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=60234000">60234000</a></td><td>Aortic valve regurgitation (disorder)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=60573004">60573004</a></td><td>Aortic valve stenosis (disorder)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=48724000">48724000</a></td><td>Mitral valve regurgitation (disorder)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=79619009">79619009</a></td><td>Mitral valve stenosis (disorder)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=111287006">111287006</a></td><td>Tricuspid valve regurgitation (disorder)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=49915006">49915006</a></td><td>Tricuspid valve stenosis (disorder)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=91434003">91434003</a></td><td>Pulmonic valve regurgitation (disorder)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=56786000">56786000</a></td><td>Pulmonic valve stenosis (disorder)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=459055004">459055004</a></td><td>Vegetation of heart (disorder)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=164950005">164950005</a></td><td>QRS complex normal (finding)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=713427006">713427006</a></td><td>Electrocardiographic complete right bundle branch block (finding)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=164929001">164929001</a></td><td>Electrocardiogram: ST interval normal (finding)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=164955000">164955000</a></td><td>Electrocardiogram: Q-T interval normal (finding)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=164877000">164877000</a></td><td>Electrocardiographic right ventricular hypertrophy (finding)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=426783006">426783006</a></td><td>Electrocardiogram: sinus rhythm (finding)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=59931005">59931005</a></td><td>Inverted T wave (finding)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=251146004">251146004</a></td><td>Low QRS voltages (finding)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=366170001">366170001</a></td><td>Finding of electrocardiogram QRS Axis (finding)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=713655003">713655003</a></td><td>Dependence on non-invasive ventilation (finding)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=26141007">26141007</a></td><td>ST segment depression (finding)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=258351006">258351006</a></td><td>Grade 1 (qualifier value)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=258353009">258353009</a></td><td>Grade 3 (qualifier value)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373066001">373066001</a></td><td>Yes (qualifier value)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373067005">373067005</a></td><td>No (qualifier value)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261665006">261665006</a></td><td>Unknown (qualifier value)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=74964007">74964007</a></td><td>Other (qualifier value)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=297183000">297183000</a></td><td>Revascularization - action (qualifier value)</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/CardiologyDiseasesCodes"/>
+  <version value="0.1.0-test"/>
+  <name value="CardiologyDiseasesCodes"/>
+  <title value="ValueSet for Cardiology Module"/>
+  <status value="active"/>
+  <date value="2021-07-16T11:32:36+00:00"/>
+  <publisher value="Berlin Institute of Health @ Charit&#xE9;"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://bihealth.org"/>
+    </telecom>
+  </contact>
+  <description value="Codes related to the Cardiology Module."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="195080001"/>
+        <display value="Atrial fibrillation and flutter (disorder)"/>
+      </concept>
+      <concept>
+        <code value="49436004"/>
+        <display value="Atrial fibrillation (disorder)"/>
+      </concept>
+      <concept>
+        <code value="5370000"/>
+        <display value="Atrial flutter (disorder)"/>
+      </concept>
+      <concept>
+        <code value="84114007"/>
+        <display value="Heart failure (disorder)"/>
+      </concept>
+      <concept>
+        <code value="85898001"/>
+        <display value="Cardiomyopathy (disorder)"/>
+      </concept>
+      <concept>
+        <code value="59494005"/>
+        <display value="Congenital septal defect of heart (disorder)"/>
+      </concept>
+      <concept>
+        <code value="13213009"/>
+        <display value="Congenital heart disease (disorder)"/>
+      </concept>
+      <concept>
+        <code value="17338001"/>
+        <display value="Ventricular premature beats (disorder)"/>
+      </concept>
+      <concept>
+        <code value="63593006"/>
+        <display value="Supraventricular premature beats (disorder)"/>
+      </concept>
+      <concept>
+        <code value="233917008"/>
+        <display value="Atrioventricular block (disorder)"/>
+      </concept>
+      <concept>
+        <code value="6374002"/>
+        <display value="Bundle branch block (disorder)"/>
+      </concept>
+      <concept>
+        <code value="266249003"/>
+        <display value="Ventricular hypertrophy (disorder)"/>
+      </concept>
+      <concept>
+        <code value="373945007"/>
+        <display value="Pericardial effusion (disorder)"/>
+      </concept>
+      <concept>
+        <code value="60234000"/>
+        <display value="Aortic valve regurgitation (disorder)"/>
+      </concept>
+      <concept>
+        <code value="60573004"/>
+        <display value="Aortic valve stenosis (disorder)"/>
+      </concept>
+      <concept>
+        <code value="48724000"/>
+        <display value="Mitral valve regurgitation (disorder)"/>
+      </concept>
+      <concept>
+        <code value="79619009"/>
+        <display value="Mitral valve stenosis (disorder)"/>
+      </concept>
+      <concept>
+        <code value="111287006"/>
+        <display value="Tricuspid valve regurgitation (disorder)"/>
+      </concept>
+      <concept>
+        <code value="49915006"/>
+        <display value="Tricuspid valve stenosis (disorder)"/>
+      </concept>
+      <concept>
+        <code value="91434003"/>
+        <display value="Pulmonic valve regurgitation (disorder)"/>
+      </concept>
+      <concept>
+        <code value="56786000"/>
+        <display value="Pulmonic valve stenosis (disorder)"/>
+      </concept>
+      <concept>
+        <code value="459055004"/>
+        <display value="Vegetation of heart (disorder)"/>
+      </concept>
+      <concept>
+        <code value="164950005"/>
+        <display value="QRS complex normal (finding)"/>
+      </concept>
+      <concept>
+        <code value="713427006"/>
+        <display value="Electrocardiographic complete right bundle branch block (finding)"/>
+      </concept>
+      <concept>
+        <code value="164929001"/>
+        <display value="Electrocardiogram: ST interval normal (finding)"/>
+      </concept>
+      <concept>
+        <code value="164955000"/>
+        <display value="Electrocardiogram: Q-T interval normal (finding)"/>
+      </concept>
+      <concept>
+        <code value="164877000"/>
+        <display value="Electrocardiographic right ventricular hypertrophy (finding)"/>
+      </concept>
+      <concept>
+        <code value="426783006"/>
+        <display value="Electrocardiogram: sinus rhythm (finding)"/>
+      </concept>
+      <concept>
+        <code value="59931005"/>
+        <display value="Inverted T wave (finding)"/>
+      </concept>
+      <concept>
+        <code value="251146004"/>
+        <display value="Low QRS voltages (finding)"/>
+      </concept>
+      <concept>
+        <code value="366170001"/>
+        <display value="Finding of electrocardiogram QRS Axis (finding)"/>
+      </concept>
+      <concept>
+        <code value="713655003"/>
+        <display value="Dependence on non-invasive ventilation (finding)"/>
+      </concept>
+      <concept>
+        <code value="26141007"/>
+        <display value="ST segment depression (finding)"/>
+      </concept>
+      <concept>
+        <code value="258351006"/>
+        <display value="Grade 1 (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="258353009"/>
+        <display value="Grade 3 (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="373066001"/>
+        <display value="Yes (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="373067005"/>
+        <display value="No (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="261665006"/>
+        <display value="Unknown (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="74964007"/>
+        <display value="Other (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="297183000"/>
+        <display value="Revascularization - action (qualifier value)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

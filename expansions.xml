@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="da0adfe4-559d-44a7-8d59-ebea2fc21a03"/>
+  <id value="46f42b59-3689-4f5e-a0ce-a1d18b8943ba"/>
   <meta>
-    <lastUpdated value="2021-07-16T07:32:21.977+00:00"/>
+    <lastUpdated value="2021-07-16T11:32:36.055+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -129,7 +129,7 @@
         <name value="NonPulmonaryBacterialCoinfectionPediatrics"/>
         <title value="ValuesetNonPulmonaryBacterialCoinfectionPediatrics"/>
         <status value="draft"/>
-        <date value="2021-07-16T07:32:21+00:00"/>
+        <date value="2021-07-16T11:32:36+00:00"/>
         <publisher value="Berlin Institute of Health @ Charit&#xE9;"/>
         <contact>
           <telecom>
@@ -145,8 +145,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6d39289c-963d-4011-9902-12f35dce157c"/>
-          <timestamp value="2021-07-16T07:32:35+00:00"/>
+          <identifier value="urn:uuid:651fe789-fbd5-4e7b-a8b1-864af2ca1677"/>
+          <timestamp value="2021-07-16T11:32:51+00:00"/>
           <total value="11"/>
           <parameter>
             <name value="excludeNested"/>
@@ -248,7 +248,7 @@
         <name value="SyndromicDiseasesPediatrics"/>
         <title value="Syndromic diseases Pediatrics"/>
         <status value="draft"/>
-        <date value="2021-07-16T07:32:21+00:00"/>
+        <date value="2021-07-16T11:32:36+00:00"/>
         <publisher value="Berlin Institute of Health @ Charit&#xE9;"/>
         <contact>
           <telecom>
@@ -264,8 +264,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ff9e62f5-39b7-401d-bdd2-6f22c102eec3"/>
-          <timestamp value="2021-07-16T07:32:39+00:00"/>
+          <identifier value="urn:uuid:3fe293c0-f71f-4ffe-b0f1-7957df47bce1"/>
+          <timestamp value="2021-07-16T11:32:55+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -325,7 +325,7 @@
         <name value="VaccineTypCovidPediatrics"/>
         <title value="ValueSetVaccineTypeCovidPediatrics"/>
         <status value="draft"/>
-        <date value="2021-07-16T07:32:21+00:00"/>
+        <date value="2021-07-16T11:32:36+00:00"/>
         <publisher value="Berlin Institute of Health @ Charit&#xE9;"/>
         <contact>
           <telecom>
@@ -341,8 +341,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8efb8b40-9f3f-46d2-ad88-72ba05925d16"/>
-          <timestamp value="2021-07-16T07:32:39+00:00"/>
+          <identifier value="urn:uuid:eced4203-a97e-4322-a8ec-b3c030fb8124"/>
+          <timestamp value="2021-07-16T11:32:55+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -469,7 +469,7 @@
         <name value="ChronicHaematologicDiseasesPediatrics"/>
         <title value="ChronicHaematologicDiseasesPediatricsVS"/>
         <status value="draft"/>
-        <date value="2021-07-16T07:32:21+00:00"/>
+        <date value="2021-07-16T11:32:36+00:00"/>
         <publisher value="Berlin Institute of Health @ Charit&#xE9;"/>
         <contact>
           <telecom>
@@ -485,8 +485,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1b7d6bbe-521c-4148-ad13-e03173860a77"/>
-          <timestamp value="2021-07-16T07:32:40+00:00"/>
+          <identifier value="urn:uuid:2579862d-16e8-4a42-985a-021220e65366"/>
+          <timestamp value="2021-07-16T11:32:55+00:00"/>
           <total value="8"/>
           <parameter>
             <name value="excludeNested"/>
@@ -539,6 +539,596 @@
             <system value="http://snomed.info/sct"/>
             <code value="64779008"/>
             <display value="Gerinnungsst&#xF6;rung"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/CardiologyDiseasesCodes"/>
+    <resource>
+      <ValueSet>
+        <id value="cardiology-diseases-codes"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 40 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jan 2021</p>
+            <p>All codes from system 
+              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-195080001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=195080001">195080001</a>
+                </td>
+                <td>Atrial fibrillation and flutter</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-49436004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=49436004">49436004</a>
+                </td>
+                <td>Atrial fibrillation</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-5370000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=5370000">5370000</a>
+                </td>
+                <td>Atrial flutter</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-84114007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=84114007">84114007</a>
+                </td>
+                <td>Heart failure</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-85898001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=85898001">85898001</a>
+                </td>
+                <td>Cardiomyopathy</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-59494005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=59494005">59494005</a>
+                </td>
+                <td>Congenital septal defect of heart</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-13213009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=13213009">13213009</a>
+                </td>
+                <td>Congenital heart disease</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-17338001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=17338001">17338001</a>
+                </td>
+                <td>Ventricular premature beats</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-63593006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=63593006">63593006</a>
+                </td>
+                <td>Supraventricular premature beats</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-233917008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=233917008">233917008</a>
+                </td>
+                <td>AVB - Atrioventricular block</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-6374002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=6374002">6374002</a>
+                </td>
+                <td>Bundle branch block</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-266249003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=266249003">266249003</a>
+                </td>
+                <td>Ventricular hypertrophy</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-373945007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373945007">373945007</a>
+                </td>
+                <td>Pericardial effusion (disorder)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-60234000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=60234000">60234000</a>
+                </td>
+                <td>Aortic valve regurgitation</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-60573004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=60573004">60573004</a>
+                </td>
+                <td>Aortic valve stenosis</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-48724000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=48724000">48724000</a>
+                </td>
+                <td>Mitral valve regurgitation</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-79619009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=79619009">79619009</a>
+                </td>
+                <td>Mitral valve stenosis</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-111287006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=111287006">111287006</a>
+                </td>
+                <td>Tricuspid valve regurgitation</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-49915006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=49915006">49915006</a>
+                </td>
+                <td>Tricuspid valve stenosis</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-91434003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=91434003">91434003</a>
+                </td>
+                <td>Pulmonic valve regurgitation</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-56786000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=56786000">56786000</a>
+                </td>
+                <td>Pulmonic valve stenosis</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-459055004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=459055004">459055004</a>
+                </td>
+                <td>Vegetation of heart</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-164950005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=164950005">164950005</a>
+                </td>
+                <td>ECG: QRS complex normal</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-713427006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=713427006">713427006</a>
+                </td>
+                <td>Electrocardiographic complete right bundle branch block (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-164929001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=164929001">164929001</a>
+                </td>
+                <td>ECG: S-T interval normal</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-164955000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=164955000">164955000</a>
+                </td>
+                <td>ECG: Q-T interval normal</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-164877000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=164877000">164877000</a>
+                </td>
+                <td>ECG: right ventricle hypertrophy</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-426783006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=426783006">426783006</a>
+                </td>
+                <td>Electrocardiogram: sinus rhythm (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-59931005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=59931005">59931005</a>
+                </td>
+                <td>Inverted T wave</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-251146004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=251146004">251146004</a>
+                </td>
+                <td>Low QRS voltages</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-366170001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=366170001">366170001</a>
+                </td>
+                <td>QRS Axis - finding</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-713655003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=713655003">713655003</a>
+                </td>
+                <td>Dependence on non-invasive ventilation</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-26141007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=26141007">26141007</a>
+                </td>
+                <td>ST segment depression</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-258351006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=258351006">258351006</a>
+                </td>
+                <td>Grade 1</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-258353009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=258353009">258353009</a>
+                </td>
+                <td>Grade 3</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-373066001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373066001">373066001</a>
+                </td>
+                <td>Yes (qualifier value)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-373067005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373067005">373067005</a>
+                </td>
+                <td>No (qualifier value)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-261665006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261665006">261665006</a>
+                </td>
+                <td>Unknown</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-74964007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=74964007">74964007</a>
+                </td>
+                <td>Other</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-297183000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=297183000">297183000</a>
+                </td>
+                <td>Revascularization</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/CardiologyDiseasesCodes"/>
+        <version value="0.1.0-test"/>
+        <name value="CardiologyDiseasesCodes"/>
+        <title value="ValueSet for Cardiology Module"/>
+        <status value="active"/>
+        <date value="2021-07-16T11:32:36+00:00"/>
+        <publisher value="Berlin Institute of Health @ Charit&#xE9;"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="https://bihealth.org"/>
+          </telecom>
+        </contact>
+        <description value="Codes related to the Cardiology Module."/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:4686b182-3d21-46e8-be62-a70def9095ce"/>
+          <timestamp value="2021-07-16T11:32:55+00:00"/>
+          <total value="40"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="195080001"/>
+            <display value="Atrial fibrillation and flutter"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="49436004"/>
+            <display value="Atrial fibrillation"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="5370000"/>
+            <display value="Atrial flutter"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="84114007"/>
+            <display value="Heart failure"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="85898001"/>
+            <display value="Cardiomyopathy"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="59494005"/>
+            <display value="Congenital septal defect of heart"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="13213009"/>
+            <display value="Congenital heart disease"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="17338001"/>
+            <display value="Ventricular premature beats"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="63593006"/>
+            <display value="Supraventricular premature beats"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="233917008"/>
+            <display value="AVB - Atrioventricular block"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="6374002"/>
+            <display value="Bundle branch block"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="266249003"/>
+            <display value="Ventricular hypertrophy"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="373945007"/>
+            <display value="Pericardial effusion (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="60234000"/>
+            <display value="Aortic valve regurgitation"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="60573004"/>
+            <display value="Aortic valve stenosis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="48724000"/>
+            <display value="Mitral valve regurgitation"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="79619009"/>
+            <display value="Mitral valve stenosis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="111287006"/>
+            <display value="Tricuspid valve regurgitation"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="49915006"/>
+            <display value="Tricuspid valve stenosis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="91434003"/>
+            <display value="Pulmonic valve regurgitation"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="56786000"/>
+            <display value="Pulmonic valve stenosis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="459055004"/>
+            <display value="Vegetation of heart"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="164950005"/>
+            <display value="ECG: QRS complex normal"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="713427006"/>
+            <display value="Electrocardiographic complete right bundle branch block (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="164929001"/>
+            <display value="ECG: S-T interval normal"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="164955000"/>
+            <display value="ECG: Q-T interval normal"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="164877000"/>
+            <display value="ECG: right ventricle hypertrophy"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="426783006"/>
+            <display value="Electrocardiogram: sinus rhythm (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="59931005"/>
+            <display value="Inverted T wave"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="251146004"/>
+            <display value="Low QRS voltages"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="366170001"/>
+            <display value="QRS Axis - finding"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="713655003"/>
+            <display value="Dependence on non-invasive ventilation"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="26141007"/>
+            <display value="ST segment depression"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="258351006"/>
+            <display value="Grade 1"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="258353009"/>
+            <display value="Grade 3"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="373066001"/>
+            <display value="Yes (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="373067005"/>
+            <display value="No (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="261665006"/>
+            <display value="Unknown"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="74964007"/>
+            <display value="Other"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="297183000"/>
+            <display value="Revascularization"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -913,7 +1503,7 @@
         <title value="SARS-CoV-2-Symptoms"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2021-07-16T07:32:21+00:00"/>
+        <date value="2021-07-16T11:32:36+00:00"/>
         <publisher value="Berlin Institute of Health @ Charit&#xE9;"/>
         <contact>
           <telecom>
@@ -931,8 +1521,8 @@
         <immutable value="false"/>
         <copyright value="This artefact includes content from SNOMED Clinical Terms&#xAE; (SNOMED CT&#xAE;) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
         <expansion>
-          <identifier value="urn:uuid:3c4d3852-03f6-4530-ac80-0a36a651daa1"/>
-          <timestamp value="2021-07-16T07:32:41+00:00"/>
+          <identifier value="urn:uuid:b3115b52-4907-410f-a1d5-e1520cb4ac44"/>
+          <timestamp value="2021-07-16T11:32:57+00:00"/>
           <total value="40"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1348,8 +1938,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:a0a4bc79-8c7f-4e17-905c-f8d8cdc2394b"/>
-          <timestamp value="2021-07-16T07:32:43+00:00"/>
+          <identifier value="urn:uuid:f270cd5c-8fab-4676-9441-81501697f882"/>
+          <timestamp value="2021-07-16T11:32:59+00:00"/>
           <total value="18"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1532,7 +2122,7 @@
         <name value="GastrointestinalDiseasesPediatrics"/>
         <title value="VSGastrointestinal Diseases Pediatrics"/>
         <status value="draft"/>
-        <date value="2021-07-16T07:32:21+00:00"/>
+        <date value="2021-07-16T11:32:36+00:00"/>
         <publisher value="Berlin Institute of Health @ Charit&#xE9;"/>
         <contact>
           <telecom>
@@ -1548,8 +2138,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f2efe779-23d0-46a7-80f9-c8a17bfd6a3b"/>
-          <timestamp value="2021-07-16T07:32:43+00:00"/>
+          <identifier value="urn:uuid:a58f4cd6-08ba-4d03-bee6-7e6527f73709"/>
+          <timestamp value="2021-07-16T11:32:59+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
