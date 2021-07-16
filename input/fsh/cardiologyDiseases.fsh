@@ -24,7 +24,7 @@ Alias: $cardiovascular-diseases = https://www.netzwerk-universitaetsmedizin.de/f
 
 // Profile HEADER
 Profile: CardiologyDiseases
-Parent: gecco-base-condition
+Parent: https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-base-condition
 Id: napkon-cardiology-diseases
 Title: "Disorders (Cardiology)"
 Description: "Defines constraints and extensions on the conditions resource for the minimal
