@@ -10,20 +10,21 @@ Id: imaging-procedures
 Title: "Imaging Procedures"
 Description: "Defines constraints and methods on imaging procedures performed on the patient."
 * ^publisher = "Charité"
+* ^status = #active
 * category ^slicing.discriminator[0].type = #pattern
 * category ^slicing.discriminator[0].path = "$this"
 * category ^slicing.rules = #open
-* category contains sct 0..1
+* category contains sct 1..1
+* category[sct] = http://snomed.info/sct#71388002
 // setting the rules for having to be some kind of procedure specific to an organ?
-* category.coding[sct] from $imaging-category-sct (preferred)
-* category.coding[sct] ^patternCoding.system = "http://snomed.info/sct"
-* category.coding[sct].system 1.. MS
-* category.coding[sct].code 1.. MS
-* code.coding ^slicing.discriminator.type = #pattern
-* code.coding ^slicing.discriminator.path = "system"
-* code.coding ^slicing.rules = #open
-* code.coding contains sct 0..1
-* code.coding[sct] from $imaging-category-sct (required)
+* code ^slicing.discriminator[0].type = #pattern
+* code ^slicing.discriminator[0].path = "$this"
+* code ^slicing.rules = #open
+* code contains sct 1..1
+* code[sct] from $imaging-category-sct (required)
+* performed[x] 1..1
+* subject only Reference(Patient)
+
 
 
 // value set has to cover all the different organs or types of procedures 
@@ -39,9 +40,7 @@ Id: imaging-category-sct
 //* ^compose.include[=].concept[=].designation.use = $sct#900000000000013009 "Synonym"
 //* ^compose.include[=].concept[=].designation.value = "Durchgeführte 12-Kanal-EKG-Untersuchung"
 
-//* ^compose.include[1].system = "http://snomed.info/sct"
-* ^compose.include[=].concept[+].code = #118797008
-* ^compose.include[=].concept[=].display = "Procedure on lung (procedure)"
+
 
 
 
