@@ -46,3 +46,12 @@ Title: "viral-infection-instance"
 Description: "Example of a viral infection"
 * code =  $sct#105631009  "Disease caused by Paramyxoviridae (disorder)"
 * subject = Reference(ExamplePatient)
+
+
+Instance: viral-infection-instance2
+InstanceOf: viral-infection
+Usage: #example
+Title: "viral-infection-instance"
+Description: "Example of a viral infection"
+* code =  $sct#261665006  "Unknown (qualifier value)"
+* subject = Reference(ExamplePatient)
