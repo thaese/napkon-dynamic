@@ -8,7 +8,8 @@ Id: cardiology-imaging-procedure
 Title: "Cardiology Imaging Procedure"
 Description: "Defines constraints and extensions on the Cardiology Imaging procedures"
 
-* ^status = #active
+* insert napkon-metadata(2021-05-28, #draft, 0.1.0)
+
 * category ^slicing.discriminator[0].type = #pattern
 * category ^slicing.discriminator[0].path = "$this"
 * category ^slicing.rules = #open
@@ -26,7 +27,9 @@ Description: "Defines constraints and extensions on the Cardiology Imaging proce
 
 ValueSet: CardiologyImagingCodes
 Id: cardiology-imaging-procedures-valueset
-* ^status = #draft
+
+* insert napkon-metadata(2021-05-28, #draft, 0.1.0)
+
 * ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/EcgCodes"
 
 * ^compose.include[0].system = "http://snomed.info/sct"
@@ -48,5 +51,3 @@ Id: cardiology-imaging-procedures-valueset
 * ^compose.include[=].concept[=].designation.language = #de-DE
 * ^compose.include[=].concept[=].designation.use = $sct#900000000000013009 "Synonym"
 * ^compose.include[=].concept[=].designation.value = "Transthorakale Echokardiographie"
-
-

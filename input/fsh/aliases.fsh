@@ -4,6 +4,8 @@ Alias: $snomed = http://snomed.info/sct
 Alias: $sct = http://snomed.info/sct
 Alias: $ops = http://fhir.de/CodeSystem/bfarm/ops
 Alias: $atcde = http://fhir.de/CodeSystem/bfarm/atc
+Alias: $icd10-gm = http://fhir.de/CodeSystem/dimdi/icd-10-gm
+
 
 // HL7 / FHIR specific code systems
 Alias: $shareablevalueset = http://hl7.org/fhir/StructureDefinition/shareablevalueset
