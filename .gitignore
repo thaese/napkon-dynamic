@@ -10,6 +10,8 @@ fsh-generated
 ###########################################
 /input-cache/publisher.jar
 
+validator_cli.jar
+
 # Windows generated files #
 ###########################
 Thumbs.db
@@ -23,3 +25,6 @@ Thumbs.db
 # backup files #
 ################
 *.bak
+
+# IDE folders
+.vscode
