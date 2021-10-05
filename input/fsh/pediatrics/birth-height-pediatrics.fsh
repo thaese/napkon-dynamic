@@ -1,7 +1,7 @@
 //Author: Thomas Haese
 
-Alias: $loinc = http://loinc.org
-Alias: $sct = http://snomed.info/sct
+//Alias: $loinc = http://loinc.org
+//Alias: $sct = http://snomed.info/sct
 
 Profile: BirthHeightPediatrics
 Parent: Observation
@@ -9,11 +9,7 @@ Id: observation-birth-height-pediatrics
 Title: "Birth Height"
 Description: "Birth Height of a patient in context of Pediatrics"
 
-* ^experimental = false
-* ^date = "2021-08-10"
-* ^publisher = "Charité"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
+* insert napkon-metadata(2021-10-01, #draft, 0.1.0)
 
 * code ^short = "Birth Height"
 * code ^definition = "Birth Height"
@@ -36,11 +32,7 @@ Description: "Birth Height of a patient in context of Pediatrics"
 * valueQuantity 0..1
 * valueQuantity.value 1.. MS
 * valueQuantity.unit 1.. MS
-//Percentile
-* valueQuantity.system 1.. MS
-* valueQuantity.system = "http://unitsofmeasure.org"
+
 //cm
 * valueQuantity.code 1.. MS
 * valueQuantity.code from http://hl7.org/fhir/ValueSet/ucum-bodylength|4.0.1 (required)
-
-* dataAbsentReason MS
