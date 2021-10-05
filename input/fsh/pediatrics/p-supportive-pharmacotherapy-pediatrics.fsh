@@ -1,6 +1,6 @@
 // Author: Thomas Haese
 
-Alias: $SupportivePharmacotherapy = https://www.netzwerk-universitaetsmedizin.de/fhir//ValueSet/vs-supportive-pharmacotherapy-pediatrics
+Alias: $SupportivePharmacotherapy = https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/vs-supportive-pharmacotherapy-pediatrics
 
 Profile: SupportivePharmacotherapy
 Parent: Condition

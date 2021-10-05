@@ -6,11 +6,11 @@ Id: covid19-complication-pediatrics
 Title: "Covid19 complication"
 Description: "Complication due to COVID19"
 * insert napkon-metadata(2021-09-22, #draft, 0.1.0)
-* category ^slicing.discriminator[0].type = #pattern
-* category ^slicing.discriminator[0].path = "$this"
-* category ^slicing.rules = #open
-* category contains sct 1..1 MS
-* category[sct] = $sct#116223007:42752001=840539006 "Complication where Due to = Disease caused by 2019 novel coronavirus"
+* category.coding ^slicing.discriminator[0].type = #pattern
+* category.coding ^slicing.discriminator[0].path = "$this"
+* category.coding ^slicing.rules = #open
+* category.coding contains sct 1..1 MS
+* category.coding[sct] = $sct#116223007:42752001=840539006 "Complication where Due to = Disease caused by 2019 novel coronavirus"
 * code 1..1 MS
 * code from Covid19Complications (required)
 

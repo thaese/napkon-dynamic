@@ -1,7 +1,7 @@
 // Author: Thomas Haese
 
-Alias: $ChronicHaematologicDiseasesPediatricsICD = https://www.netzwerk-universitaetsmedizin.de/fhir//ValueSet/chronic-haematologic-diseases-pediatrics-icd
-Alias: $ChronicHaematologicDiseasesPediatrics = https://www.netzwerk-universitaetsmedizin.de/fhir//ValueSet/chronic-haematologic-diseases-pediatrics
+Alias: $ChronicHaematologicDiseasesPediatricsICD = https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-haematologic-diseases-pediatrics-icd
+Alias: $ChronicHaematologicDiseasesPediatrics = https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-haematologic-diseases-pediatrics
 
 Profile: ChronicHaematologicDiseases
 Parent: Condition
