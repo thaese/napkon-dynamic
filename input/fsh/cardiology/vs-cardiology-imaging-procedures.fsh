@@ -12,14 +12,14 @@ Description:  "Imaging procedures related to cardiology"
 * ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/EcgCodes"
 * ^publisher = "Berlin Institute of Health | Charité"
 
-* ^compose.include[0].system = "http://snomed.info/sct"
+* ^compose.include[0].system = $sct
 * ^compose.include[=].concept[0].code = #268400002
 * ^compose.include[=].concept[=].display = "12 lead electrocardiogram (procedure)"
 * ^compose.include[=].concept[=].designation.language = #de-DE
 * ^compose.include[=].concept[=].designation.use = $sct#900000000000013009 "Synonym"
 * ^compose.include[=].concept[=].designation.value = "Durchgeführte 12-Kanal-EKG-Untersuchung"
 
-* ^compose.include[1].system = "http://snomed.info/sct"
+* ^compose.include[1].system = $sct
 * ^compose.include[=].concept[+].code = #40701008
 * ^compose.include[=].concept[=].display = "Echocardiography (procedure)"
 * ^compose.include[=].concept[=].designation.language = #de-DE

@@ -18,7 +18,6 @@ Description: "Defines constraints and methods on pediatry infectious complicatio
 * code[sct] from $infectious-complications-sct (required)
 * subject only Reference(Patient)
 
-// TODO: instance missing
 Instance: InfectionsComplicationPediatrics
 InstanceOf: infectious-complications-pediatrics
 Usage: #example

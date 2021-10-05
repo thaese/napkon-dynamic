@@ -1,6 +1,4 @@
-Alias:   $sct = http://snomed.info/sct
 Alias: $CardiologyImagingCodes = https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/EcgCodes
-
 
 Profile: CardiologyImagingProcedures
 Parent: Procedure
@@ -14,7 +12,7 @@ Description: "Defines constraints and extensions on the Cardiology Imaging proce
 * category ^slicing.discriminator[0].path = "$this"
 * category ^slicing.rules = #open
 * category contains sct 1..1
-* category[sct] = http://snomed.info/sct#363679005
+* category[sct] = $sct#363679005
 
 * code ^slicing.discriminator[0].type = #pattern
 * code ^slicing.discriminator[0].path = "$this"
