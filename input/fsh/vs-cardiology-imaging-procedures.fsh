@@ -4,10 +4,10 @@
 
 // ValueSet
 ValueSet: CardiologyImagingCodes
-Id: cardiology-imaging-procedures-valueset
+Id: cardiology-imaging-procedures
 Title: "Cardiology Imaging Procedures ValueSet"
 Description:  "Imaging procedures related to cardiology"
-* insert napkon-metadata(2021-09-24, draft)
+* insert napkon-metadata(2021-09-24, #draft, 0.1.0)
 
 * ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/EcgCodes"
 * ^publisher = "Berlin Institute of Health | Charité"
@@ -32,5 +32,5 @@ Description:  "Imaging procedures related to cardiology"
 * ^compose.include[=].concept[=].designation.use = $sct#900000000000013009 "Synonym"
 * ^compose.include[=].concept[=].designation.value = "Transthorakale Echokardiographie"
 
-* include codes from system sct where concept descendent-of #71388002 // redundency for Procedures
+* include codes from system sct where concept descendent-of $sct#71388002 "Procedure (procedure)" // redundency for Procedures
 

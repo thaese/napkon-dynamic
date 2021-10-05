@@ -1,6 +1,5 @@
 // Author: Sami Adnan
 // Berlin Institute of Health | Charité
-// This is an FSH profiling file under development. See sushi documentation for usage.
 
 Profile: ElectrocardiographicECGProcedure
 Parent: Procedure
@@ -8,20 +7,19 @@ Id: electrocardiographic-ecg-procedure
 Title: "ECG procedure"
 Description: "Defines constraints and extensions on the Cardiology ECG procedures"
 
-* insert napkon-metadata(2021-09-24, draft)
+* insert napkon-metadata(2021-09-24, #draft, 0.1.0)
 
 * category ^slicing.discriminator[0].type = #pattern
 * category ^slicing.discriminator[0].path = "$this"
 * category ^slicing.rules = #open
 * category contains sct 1..1
-* category[sct] = http://snomed.info/sct#276341003 // Cardiovascular investigation (procedure)
+* category[sct] = $sct#276341003 "Cardiovascular investigation (procedure)"
 
 * code ^slicing.discriminator[0].type = #pattern
 * code ^slicing.discriminator[0].path = "$this"
 * code ^slicing.rules = #open
 * code contains sct 1..1
 * code[sct] from $CardiologyImagingCodes (required)
-* performed[x] 0..1
 * subject only Reference(Patient)
 
 

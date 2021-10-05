@@ -4,7 +4,7 @@
 
 // ValueSet ECG Expressions
 ValueSet: ECGExpressions
-Id: ecg-expressions-valueset
+Id: ecg-expressions
 Title: "Cardiology ECG Expressions ValueSet"
 Description:  "ValueSet for ECG expressions such as findings, disorders, observable entities etc."
 * insert napkon-metadata(2021-10-01, draft)
@@ -37,4 +37,4 @@ Description:  "ValueSet for ECG expressions such as findings, disorders, observa
 
 
 // Redundency for Procedures
-* include codes from system sct where concept descendent-of #71388002 
+* include codes from system sct where concept descendent-of $sct#71388002 "Procedure (procedure)"
