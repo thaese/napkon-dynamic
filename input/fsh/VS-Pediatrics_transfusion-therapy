@@ -21,4 +21,4 @@ Description:  "Codes related to the Pediatric Module."
 * ^url = $PediatricsDrugTherapyCodes // Path declared as Alias
 
 // Codes for TRANSFUSION THERAPY
-is a *sct#116859006 "Transfusion of blood product (procedure)" 
+*sct where concept is-a #116859006 "Transfusion of blood product (procedure)" 
