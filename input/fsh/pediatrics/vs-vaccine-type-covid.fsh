@@ -1,11 +1,9 @@
-Alias: §sct = http://snomed.info/sct
-
 ValueSet: VaccineTypCovidPediatrics
 Id: vaccine-type-covid-pediatrics
 Title: "ValueSetVaccineTypeCovidPediatrics"
 Description:  "Vaccine type used in the case of a vaccination in the context of Covid-19 and Pediatrics"
 
-* ^status = #draft
+* insert napkon-metadata(2021-05-28, #draft, 0.1.0)
 
 * ^compose.include[0].system = "http://snomed.info/sct"
 * ^compose.include[0].concept[0].code = #1119349007

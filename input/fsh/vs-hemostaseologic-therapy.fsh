@@ -2,13 +2,13 @@
 // Berlin Institute of Health | Charité
 // This is an FSH profiling file under development. See sushi documentation for usage.
 
-Alias: §sct = http://snomed.info/sct
-
+//GL: valuesets already exist
+/*
 ValueSet: DrugTherapyPediatrics
 Id: drug-therapy-pediatrics
 Title: "ValueSetDrugTherapyPediatrics"
 Description:  "Drug thereapy used in the case of a of Covid-19 infection and Pediatrics"
-
+* insert napkon-metadata(2021-05-28, #draft, 0.1.0)
 // CAUTION! //
 // Add Pediatric codes in this ValueSet, devide sections by commenting HEADER
 
@@ -18,13 +18,14 @@ Id: pediatric-drug-therapy-codes
 Title: "ValueSet for Pediatric Module"
 Description:  "Codes related to the Pediatric Module."
 
+* insert napkon-metadata(2021-05-28, #draft, 0.1.0)
+
 * ^url = $PediatricsDrugTherapyCodes // Path declared as Alias
 
 // Codes for HEMOSTASEOLOGIC THERAPY
-is a *sct#346447007 "Fresh frozen plasma (product)" 
-is a *sct#12719002 "Platelet transfusion (procedure)"
-
-
+* include codes from system SNOMED_CT where concept is-a $sct#346447007 "Fresh frozen plasma (product)" 
+* include codes from system SNOMED_CT where concept is-a $sct#12719002 "Platelet transfusion (procedure)"
 
 //anderes ValueSet bauen 
-is a *sct#1003715001 "Product containing coagulation protein (product)"
+* include codes from system SNOMED_CT where concept is-a $sct#1003715001 "Product containing coagulation protein (product)"
+*/

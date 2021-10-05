@@ -1,14 +1,13 @@
-Alias:   $sct = http://snomed.info/sct
 Alias: $CardiologyImagingCodes = https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/EcgCodes
 
-
-Profile: CardiologyImagingProcedures
+Profile: ImagingProceduresCardiology
 Parent: Procedure
-Id: cardiology-imaging-procedure
+Id: imaging-procedure-cardiology
 Title: "Cardiology Imaging Procedure"
 Description: "Defines constraints and extensions on the Cardiology Imaging procedures"
 
-* ^status = #active
+* insert napkon-metadata(2021-05-28, #draft, 0.1.0)
+
 * category ^slicing.discriminator[0].type = #pattern
 * category ^slicing.discriminator[0].path = "$this"
 * category ^slicing.rules = #open
@@ -24,10 +23,11 @@ Description: "Defines constraints and extensions on the Cardiology Imaging proce
 * subject only Reference(Patient)
 
 
-ValueSet: CardiologyImagingCodes
-Id: cardiology-imaging-procedures-valueset
-* ^status = #draft
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/EcgCodes"
+ValueSet: ImagingCodes
+Id: imaging-procedures-cardiology
+* insert napkon-metadata(2021-05-28, #draft, 0.1.0)
+
+* ^url = $CardiologyImagingCodes
 
 * ^compose.include[0].system = "http://snomed.info/sct"
 * ^compose.include[=].concept[0].code = #268400002
@@ -36,7 +36,6 @@ Id: cardiology-imaging-procedures-valueset
 * ^compose.include[=].concept[=].designation.use = $sct#900000000000013009 "Synonym"
 * ^compose.include[=].concept[=].designation.value = "Durchgeführte 12-Kanal-EKG-Untersuchung"
 
-//* ^compose.include[1].system = "http://snomed.info/sct"
 * ^compose.include[=].concept[+].code = #40701008
 * ^compose.include[=].concept[=].display = "Echocardiography (procedure)"
 * ^compose.include[=].concept[=].designation.language = #de-DE

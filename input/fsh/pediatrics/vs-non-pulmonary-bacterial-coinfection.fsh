@@ -1,15 +1,13 @@
-Alias: §sct = http://snomed.info/sct
-
 ValueSet: NonPulmonaryBacterialCoinfectionPediatrics
 Id: vs-non-pulmonary-bacterial-coinfection-pediatrics
 Title: "ValuesetNonPulmonaryBacterialCoinfectionPediatrics"
 Description:  "Non-pulmonary bacterial co-infection the context of pediatrics and Covid-19"
 
-* ^status = #draft
+* insert napkon-metadata(2021-05-28, #draft, 0.1.0)
 
 * ^compose.include[0].system = "http://snomed.info/sct"
 * ^compose.include[0].concept[0].code = #406602003
-* ^compose.include[0].concept[0].display = " Infection caused by Staphylococcus aureus (disorder)"
+* ^compose.include[0].concept[0].display = "Infection caused by Staphylococcus aureus (disorder)"
 * ^compose.include[0].concept[0].designation[0].language = #de-DE
 * ^compose.include[0].concept[0].designation[0].use = #900000000000013009 "Synonym"
 * ^compose.include[0].concept[0].designation[0].value = "Staphylococcus aureus"
