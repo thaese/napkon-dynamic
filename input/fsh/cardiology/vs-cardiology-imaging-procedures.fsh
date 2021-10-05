@@ -33,4 +33,3 @@ Description:  "Imaging procedures related to cardiology"
 * ^compose.include[=].concept[=].designation.value = "Transthorakale Echokardiographie"
 
 * include codes from system $sct where concept descendent-of #71388002 "Procedure (procedure)" // redundency for Procedures
-

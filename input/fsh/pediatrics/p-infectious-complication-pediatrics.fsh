@@ -1,15 +1,11 @@
-Alias: $infectious-complications-sct = https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/infectious-complications-sct
-
-
+// Author: Gregor Lichtner
+// Berlin Institute of Health | Charité
 Profile: InfectiousComplicationPediatrics
-//Procedure on the basis of MEI 
-Parent: Condition 
+Parent: Condition
 Id: infectious-complications-pediatrics
 Title: "Pediatry Infectious Complications"
 Description: "Defines constraints and methods on pediatry infectious complications"
-
 * insert napkon-metadata(2021-07-30, #draft, 0.1.0)
-
 * category ^slicing.discriminator[0].type = #pattern
 * category ^slicing.discriminator[0].path = "$this"
 * category ^slicing.rules = #open
@@ -22,4 +18,11 @@ Description: "Defines constraints and methods on pediatry infectious complicatio
 * code[sct] from $infectious-complications-sct (required)
 * subject only Reference(Patient)
 
-
+// TODO: instance missing
+Instance: InfectionsComplicationPediatrics
+InstanceOf: infectious-complications-pediatrics
+Usage: #example
+Title: "InfectionsComplicationPediatrics"
+Description: "Example instance of infectious-complications-pediatrics"
+* code = $sct#235859005:246112005=386134007 "Liver disorder due to infection where Severity = Significant"
+* subject = Reference(ExamplePatient)
