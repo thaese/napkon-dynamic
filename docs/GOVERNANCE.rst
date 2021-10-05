@@ -1,8 +1,6 @@
 FHIR – Governance
 #################
 
-.. include:: <isonum.txt>
-
 Dieses Dokument betreibt den Workflow und die Konventionen zur Erstellung von FHIR Profilen im NAPKON Projekt.
 
 Workflow
@@ -15,7 +13,7 @@ Workflow
 2. In Verantwortlichkeitstabelle zu bearbeitende Items heraussuchen und als “in Progress” markieren
 3. FSH Profildatei in Verzeichnis ``input/fsh`` erstellen (siehe `FSH Dateien Konventionen`_ )
 4. Profil & *mindestens* eine Instance pro verwendeter Terminologie (SNOMED, LOINC etc) spezifizieren
-5. Grundlegende Übersetzbarkeit FSH |rarr| JSON testen durch Aufruf von sushi
+5. Grundlegende Übersetzbarkeit FSH → JSON testen durch Aufruf von sushi
 
   a. Ggf. Fehler beheben bis sushi fehlerfrei durchläuft
 
