@@ -22,9 +22,5 @@ Description:  "Codes related to the Pediatric Module."
 * ^url = $PediatricsDrugTherapyCodes // Path declared as Alias
 
 // Codes for TRANSFUSION THERAPY
-<<<<<<< HEAD:input/fsh/VS-Pediatrics_transfusion-therapy
-*sct where concept is-a #116859006 "Transfusion of blood product (procedure)" 
-=======
 * include codes from system SNOMED_CT where concept is-a $sct#116859006 "Transfusion of blood product (procedure)"
 */
->>>>>>> origin/staging:input/fsh/pediatrics/vs-pediatrics-transfusion-therapy.fsh
