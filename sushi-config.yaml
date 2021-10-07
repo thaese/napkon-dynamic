@@ -17,7 +17,7 @@ dependencies:
   de.medizininformatikinitiative.kerndatensatz.prozedur:
     id: prozedur
     uri: https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure
-    version: 2.0.0-alpha2
+    version: 2.0.0-alpha3
   de.medizininformatikinitiative.kerndatensatz.person:
     id: person
     uri: https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient
