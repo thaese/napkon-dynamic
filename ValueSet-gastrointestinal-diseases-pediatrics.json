@@ -3,110 +3,36 @@
   "id": "gastrointestinal-diseases-pediatrics",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Deutsch (Deutschland) (German (Germany), de)</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=236069009\">236069009</a></td><td>Chronic constipation (disorder)</td><td>Chronische Obstipation</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=6382002\">6382002</a></td><td>Chronic inflammatory small bowel disease (disorder)</td><td>Chronisch entzündliche Darmerkrankung</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=396331005\">396331005</a></td><td>Celiac disease (disorder)</td><td>Zölikalie</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=782555009\">782555009</a></td><td>Allergy to cow's milk protein (finding)</td><td>Kuhmilchproteinallergie</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=118926004\">118926004</a></td><td>Disorder of bile duct (disorder)</td><td>Gallengangserkrankung</td></tr></table></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  119292006 (Disorder of gastrointestinal tract (disorder))</li></ul></div>"
   },
-  "url": "http://example.org/fhir/ValueSet/gastrointestinal-diseases-pediatrics",
-  "version": "0.1.0-test",
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/gastrointestinal-diseases-pediatrics",
+  "version": "0.1.0",
   "name": "GastrointestinalDiseasesPediatrics",
   "title": "VSGastrointestinal Diseases Pediatrics",
   "status": "draft",
-  "date": "2021-07-16T11:49:43+00:00",
-  "publisher": "Berlin Institute of Health @ Charité",
+  "date": "2021-08-11",
+  "publisher": "BIH @ Charité",
   "contact": [
     {
+      "name": "BIH @ Charité",
       "telecom": [
         {
           "system": "url",
-          "value": "https://bihealth.org"
+          "value": "https://www.netzwerk-universitaetsmedizin.de"
         }
       ]
     }
   ],
   "description": "Gastrointestinal diseases in the context of pediatrics and Covid-19",
-  "jurisdiction": [
-    {
-      "coding": [
-        {
-          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code": "001"
-        }
-      ]
-    }
-  ],
   "compose": {
     "include": [
       {
         "system": "http://snomed.info/sct",
-        "concept": [
+        "filter": [
           {
-            "code": "236069009",
-            "display": "Chronic constipation (disorder)",
-            "designation": [
-              {
-                "language": "de-DE",
-                "use": {
-                  "code": "900000000000013009",
-                  "display": "Synonym"
-                },
-                "value": "Chronische Obstipation"
-              }
-            ]
-          },
-          {
-            "code": "6382002",
-            "display": "Chronic inflammatory small bowel disease (disorder)",
-            "designation": [
-              {
-                "language": "de-DE",
-                "use": {
-                  "code": "900000000000013009",
-                  "display": "Synonym"
-                },
-                "value": "Chronisch entzündliche Darmerkrankung"
-              }
-            ]
-          },
-          {
-            "code": "396331005",
-            "display": "Celiac disease (disorder)",
-            "designation": [
-              {
-                "language": "de-DE",
-                "use": {
-                  "code": "900000000000013009",
-                  "display": "Synonym"
-                },
-                "value": "Zölikalie"
-              }
-            ]
-          },
-          {
-            "code": "782555009",
-            "display": "Allergy to cow's milk protein (finding)",
-            "designation": [
-              {
-                "language": "de-DE",
-                "use": {
-                  "code": "900000000000013009",
-                  "display": "Synonym"
-                },
-                "value": "Kuhmilchproteinallergie"
-              }
-            ]
-          },
-          {
-            "code": "118926004",
-            "display": "Disorder of bile duct (disorder)",
-            "designation": [
-              {
-                "language": "de-DE",
-                "use": {
-                  "code": "900000000000013009",
-                  "display": "Synonym"
-                },
-                "value": "Gallengangserkrankung"
-              }
-            ]
+            "property": "concept",
+            "op": "is-a",
+            "value": "119292006"
           }
         ]
       }

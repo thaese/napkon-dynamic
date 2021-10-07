@@ -5,152 +5,46 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.de/napkon-bih/ValueSet/chronic-haematologic-diseases-pediatrics> a fhir:ValueSet;
+<https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-haematologic-diseases-pediatrics> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "chronic-haematologic-diseases-pediatrics"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Deutsch (Deutschland) (German (Germany), de)</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=61261009\">61261009</a></td><td>Hemolytic anemia (disorder)</td><td>Haemolytische Anaemie</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=40108008\">40108008</a></td><td>Thalassemia (disorder)</td><td>Thalassämie</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=127040003\">127040003</a></td><td>Sickle cell-hemoglobin SS disease (disorder)</td><td>Sichelzellanämie</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=62403005\">62403005</a></td><td>Glucose-6-phosphate dehydrogenase deficiency anemia (disorder)</td><td>G6PD-Mangel-Anämie</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=87522002\">87522002</a></td><td>Iron deficiency anemia (disorder)</td><td>Eisenmangelanämie</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=248693006\">248693006</a></td><td>Chronic idiopathic neutropenia (disorder)</td><td>Chronische Neutropenie</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=109995007\">109995007</a></td><td>Myelodysplastic syndrome (disorder)</td><td>Myelodysplastisches Syndrom</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=64779008\">64779008</a></td><td>Blood coagulation disorder (disorder)</td><td>Gerinnungsstörung</td></tr></table></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  394803006 (Clinical hematology)</li></ul></div>"
   ];
-  fhir:ValueSet.url [ fhir:value "http://example.org/fhir/ValueSet/chronic-haematologic-diseases-pediatrics"];
-  fhir:ValueSet.version [ fhir:value "0.1.0-test"];
+  fhir:ValueSet.url [ fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-haematologic-diseases-pediatrics"];
+  fhir:ValueSet.version [ fhir:value "0.1.0"];
   fhir:ValueSet.name [ fhir:value "ChronicHaematologicDiseasesPediatrics"];
   fhir:ValueSet.title [ fhir:value "ChronicHaematologicDiseasesPediatricsVS"];
   fhir:ValueSet.status [ fhir:value "draft"];
-  fhir:ValueSet.date [ fhir:value "2021-07-16T11:49:43+00:00"^^xsd:dateTime];
-  fhir:ValueSet.publisher [ fhir:value "Berlin Institute of Health @ Charité"];
+  fhir:ValueSet.date [ fhir:value "2021-08-04"^^xsd:date];
+  fhir:ValueSet.publisher [ fhir:value "BIH @ Charité"];
   fhir:ValueSet.contact [
      fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "BIH @ Charité" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://bihealth.org" ]
+       fhir:ContactPoint.value [ fhir:value "https://www.netzwerk-universitaetsmedizin.de" ]
      ]
   ];
   fhir:ValueSet.description [ fhir:value "Chronic haematologic diseases the context of pediatrics and Covid-19"];
-  fhir:ValueSet.jurisdiction [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
-       fhir:Coding.code [ fhir:value "001" ]
-     ]
-  ];
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
        fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
-       fhir:ValueSet.compose.include.concept [
+       fhir:ValueSet.compose.include.filter [
          fhir:index 0;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "61261009" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hemolytic anemia (disorder)" ];
-         fhir:ValueSet.compose.include.concept.designation [
-           fhir:index 0;
-           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de-DE" ];
-           fhir:ValueSet.compose.include.concept.designation.use [
-             fhir:Coding.code [ fhir:value "900000000000013009" ];
-             fhir:Coding.display [ fhir:value "Synonym" ]
-           ];
-           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Haemolytische Anaemie" ]
-         ]
-       ], [
-         fhir:index 1;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "40108008" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Thalassemia (disorder)" ];
-         fhir:ValueSet.compose.include.concept.designation [
-           fhir:index 0;
-           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de-DE" ];
-           fhir:ValueSet.compose.include.concept.designation.use [
-             fhir:Coding.code [ fhir:value "900000000000013009" ];
-             fhir:Coding.display [ fhir:value "Synonym" ]
-           ];
-           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Thalassämie" ]
-         ]
-       ], [
-         fhir:index 2;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "127040003" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sickle cell-hemoglobin SS disease (disorder)" ];
-         fhir:ValueSet.compose.include.concept.designation [
-           fhir:index 0;
-           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de-DE" ];
-           fhir:ValueSet.compose.include.concept.designation.use [
-             fhir:Coding.code [ fhir:value "900000000000013009" ];
-             fhir:Coding.display [ fhir:value "Synonym" ]
-           ];
-           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Sichelzellanämie" ]
-         ]
-       ], [
-         fhir:index 3;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "62403005" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Glucose-6-phosphate dehydrogenase deficiency anemia (disorder)" ];
-         fhir:ValueSet.compose.include.concept.designation [
-           fhir:index 0;
-           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de-DE" ];
-           fhir:ValueSet.compose.include.concept.designation.use [
-             fhir:Coding.code [ fhir:value "900000000000013009" ];
-             fhir:Coding.display [ fhir:value "Synonym" ]
-           ];
-           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "G6PD-Mangel-Anämie" ]
-         ]
-       ], [
-         fhir:index 4;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "87522002" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Iron deficiency anemia (disorder)" ];
-         fhir:ValueSet.compose.include.concept.designation [
-           fhir:index 0;
-           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de-DE" ];
-           fhir:ValueSet.compose.include.concept.designation.use [
-             fhir:Coding.code [ fhir:value "900000000000013009" ];
-             fhir:Coding.display [ fhir:value "Synonym" ]
-           ];
-           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Eisenmangelanämie" ]
-         ]
-       ], [
-         fhir:index 5;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "248693006" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chronic idiopathic neutropenia (disorder)" ];
-         fhir:ValueSet.compose.include.concept.designation [
-           fhir:index 0;
-           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de-DE" ];
-           fhir:ValueSet.compose.include.concept.designation.use [
-             fhir:Coding.code [ fhir:value "900000000000013009" ];
-             fhir:Coding.display [ fhir:value "Synonym" ]
-           ];
-           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Chronische Neutropenie" ]
-         ]
-       ], [
-         fhir:index 6;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "109995007" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Myelodysplastic syndrome (disorder)" ];
-         fhir:ValueSet.compose.include.concept.designation [
-           fhir:index 0;
-           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de-DE" ];
-           fhir:ValueSet.compose.include.concept.designation.use [
-             fhir:Coding.code [ fhir:value "900000000000013009" ];
-             fhir:Coding.display [ fhir:value "Synonym" ]
-           ];
-           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Myelodysplastisches Syndrom" ]
-         ]
-       ], [
-         fhir:index 7;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "64779008" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Blood coagulation disorder (disorder)" ];
-         fhir:ValueSet.compose.include.concept.designation [
-           fhir:index 0;
-           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de-DE" ];
-           fhir:ValueSet.compose.include.concept.designation.use [
-             fhir:Coding.code [ fhir:value "900000000000013009" ];
-             fhir:Coding.display [ fhir:value "Synonym" ]
-           ];
-           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Gerinnungsstörung" ]
-         ]
+         fhir:ValueSet.compose.include.filter.property [ fhir:value "concept" ];
+         fhir:ValueSet.compose.include.filter.op [ fhir:value "is-a" ];
+         fhir:ValueSet.compose.include.filter.value [ fhir:value "394803006" ]
        ]
      ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://fhir.de/napkon-bih/ValueSet/chronic-haematologic-diseases-pediatrics.ttl> a owl:Ontology;
+<https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-haematologic-diseases-pediatrics.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

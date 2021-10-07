@@ -1,0 +1,27 @@
+{
+  "resourceType": "Observation",
+  "id": "instance-body-mass-index-pediatrics",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/observation-body-mass-index-pediatrics"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 39156-5}\">Body mass index (BMI) [Ratio]</span></p><p><b>value</b>: 25 BMI</p></div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "39156-5"
+      }
+    ]
+  },
+  "valueQuantity": {
+    "value": 25,
+    "unit": "BMI",
+    "system": "http://unitsofmeasure.org"
+  }
+}

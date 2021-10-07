@@ -1,0 +1,35 @@
+{
+  "resourceType": "Condition",
+  "id": "instance-supportive-pharmacotherapy-pediatrics",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/supportive-pharmacotherapy-pediatrics"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>category</b>: <span title=\"Codes: {http://snomed.info/sct 169414008}\">Supportive pharmacotherapy</span></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 127784009}\">Inhaled bronchodilator therapy (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: id: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p></div>"
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "169414008"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "127784009",
+        "display": "Inhaled bronchodilator therapy (procedure)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ExamplePatient"
+  }
+}

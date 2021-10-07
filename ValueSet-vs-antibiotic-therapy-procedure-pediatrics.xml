@@ -5,26 +5,21 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  281789004 (Antibiotic therapy)</li></ul></div>
   </text>
-  <url value="http://example.org/fhir/ValueSet/vs-antibiotic-therapy-procedure-pediatrics"/>
-  <version value="0.1.0-test"/>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/vs-antibiotic-therapy-procedure-pediatrics"/>
+  <version value="0.1.0"/>
   <name value="AntibioticTherapyProcedure"/>
   <title value="Antibiotic Therapy Procedure PediatricsVS"/>
   <status value="draft"/>
   <date value="2021-05-28"/>
-  <publisher value="Berlin Institute of Health @ Charit&#xE9;"/>
+  <publisher value="BIH @ Charité"/>
   <contact>
+    <name value="BIH @ Charité"/>
     <telecom>
       <system value="url"/>
-      <value value="https://bihealth.org"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
     </telecom>
   </contact>
   <description value="Antibiotic Therapy the context of pediatrics and Covid-19"/>
-  <jurisdiction>
-    <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
-    </coding>
-  </jurisdiction>
   <compose>
     <include>
       <system value="http://snomed.info/sct"/>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="total-length-of-stay-instance"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/total-length-of-stay-pediatrics"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {http://loinc.org 78033-8}">Hospital stay duration</span></p><p><b>value</b>: 10 day</p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="78033-8"/>
+      <display value="Hospital stay duration"/>
+    </coding>
+  </code>
+  <valueQuantity>
+    <value value="10"/>
+    <unit value="day"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="d"/>
+  </valueQuantity>
+</Observation>

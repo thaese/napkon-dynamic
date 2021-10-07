@@ -5,24 +5,19 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul/></div>
   </text>
-  <url value="http://example.org/fhir/ValueSet/syndromic-diseases-pediatrics"/>
-  <version value="0.1.0-test"/>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/syndromic-diseases-pediatrics"/>
+  <version value="0.1.0"/>
   <name value="SyndromicDiseasesPediatrics"/>
   <title value="Syndromic diseases Pediatrics"/>
   <status value="draft"/>
-  <date value="2021-07-16T11:49:43+00:00"/>
-  <publisher value="Berlin Institute of Health @ Charit&#xE9;"/>
+  <date value="2021-05-28"/>
+  <publisher value="BIH @ Charité"/>
   <contact>
+    <name value="BIH @ Charité"/>
     <telecom>
       <system value="url"/>
-      <value value="https://bihealth.org"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
     </telecom>
   </contact>
   <description value="Syndromic diseases in the context of Covid-19 and Pediatrics"/>
-  <jurisdiction>
-    <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
-    </coding>
-  </jurisdiction>
 </ValueSet>

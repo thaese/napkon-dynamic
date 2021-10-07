@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="instance-head-circumference-pediatrics"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/observation-head-circumference-pediatrics"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {http://loinc.org 9843-4}">Head Occipital-frontal circumference</span></p><p><b>value</b>: 10 cm</p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="9843-4"/>
+    </coding>
+  </code>
+  <valueQuantity>
+    <value value="10"/>
+    <unit value="cm"/>
+    <system value="http://unitsofmeasure.org"/>
+  </valueQuantity>
+</Observation>

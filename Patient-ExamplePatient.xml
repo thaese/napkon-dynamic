@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="ExamplePatient"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: napkon-example-patient</p><p><b>name</b>: maxi musterperson (OFFICIAL)</p><p><b>gender</b>: unknown</p><p><b>birthDate</b>: 1990-08-08</p><p><b>address</b>: Charitéplatz 1 Berlin 10117 DE </p></div>
+  </text>
+  <identifier>
+    <value value="napkon-example-patient"/>
+  </identifier>
+  <name>
+    <use value="official"/>
+    <family value="musterperson"/>
+    <given value="maxi"/>
+  </name>
+  <gender value="unknown"/>
+  <birthDate value="1990-08-08"/>
+  <address>
+    <type value="physical"/>
+    <line value="Charitéplatz 1"/>
+    <city value="Berlin"/>
+    <postalCode value="10117"/>
+    <country value="DE"/>
+  </address>
+</Patient>

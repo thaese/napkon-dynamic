@@ -1,135 +1,317 @@
 [
   {
-    "id": "chronic-haematologic-diseases-pediatrics",
-    "type": "ValueSet",
-    "url": "http://example.org/fhir/ValueSet/chronic-haematologic-diseases-pediatrics",
-    "version": "0.1.0-test",
-    "name": "ChronicHaematologicDiseasesPediatrics"
+    "id": "napkon-immunosuppresive-medications",
+    "type": "CodeSystem",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-immunosuppresive-medications",
+    "version": "0.1.0",
+    "name": "NapkonImmunosuppresiveMedications"
   },
   {
-    "id": "chronic-haematologic-diseases-pediatrics-icd",
-    "type": "ValueSet",
-    "url": "http://example.org/fhir/ValueSet/chronic-haematologic-diseases-pediatrics-icd",
-    "version": "0.1.0-test",
-    "name": "ChronicHaematologicDiseasesPediatricsICD"
+    "id": "napkon-bih",
+    "type": "ImplementationGuide",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ImplementationGuide/napkon-bih",
+    "version": "0.1.0",
+    "name": "NAPKONBIH"
+  },
+  {
+    "id": "cardiology-imaging-procedure",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/cardiology-imaging-procedure",
+    "version": "0.1.0",
+    "name": "CardiologyImagingProcedures"
+  },
+  {
+    "id": "chronic-haematologic-diseases-pediatrics",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-haematologic-diseases-pediatrics",
+    "version": "0.1.0",
+    "name": "ChronicHaematologicDiseases"
+  },
+  {
+    "id": "covid19-complication-pediatrics",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/covid19-complication-pediatrics",
+    "version": "0.1.0",
+    "name": "Covid19ComplicationPediatrics"
+  },
+  {
+    "id": "electrocardiographic-ecg-procedure",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/electrocardiographic-ecg-procedure",
+    "version": "0.1.0",
+    "name": "ElectrocardiographicECGProcedure"
+  },
+  {
+    "id": "fungal-infection-pediatrics",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/fungal-infection-pediatrics",
+    "version": "0.1.0",
+    "name": "FungalInfectionPediatrics"
   },
   {
     "id": "gastrointestinal-diseases-pediatrics",
-    "type": "ValueSet",
-    "url": "http://example.org/fhir/ValueSet/gastrointestinal-diseases-pediatrics",
-    "version": "0.1.0-test",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gastrointestinal-diseases-pediatrics",
+    "version": "0.1.0",
     "name": "GastrointestinalDiseasesPediatrics"
   },
   {
-    "id": "gastrointestinal-diseases-pediatrics-icd",
-    "type": "ValueSet",
-    "url": "http://example.org/fhir/ValueSet/gastrointestinal-diseases-pediatrics-icd",
-    "version": "0.1.0-test",
-    "name": "GastrointestinalDiseasesPediatricsICD"
-  },
-  {
-    "id": "syndromic-diseases-pediatrics",
-    "type": "ValueSet",
-    "url": "http://example.org/fhir/ValueSet/syndromic-diseases-pediatrics",
-    "version": "0.1.0-test",
-    "name": "SyndromicDiseasesPediatrics"
-  },
-  {
-    "id": "vaccine-type-covid-pediatrics",
-    "type": "ValueSet",
-    "url": "http://example.org/fhir/ValueSet/vaccine-type-covid-pediatrics",
-    "version": "0.1.0-test",
-    "name": "VaccineTypCovidPediatrics"
-  },
-  {
-    "id": "vs-antibiotic-therapy-procedure-pediatrics",
-    "type": "ValueSet",
-    "url": "http://example.org/fhir/ValueSet/vs-antibiotic-therapy-procedure-pediatrics",
-    "version": "0.1.0-test",
-    "name": "AntibioticTherapyProcedure"
-  },
-  {
-    "id": "vs-non-pulmonary-bacterial-coinfection-pediatrics",
-    "type": "ValueSet",
-    "url": "http://example.org/fhir/ValueSet/vs-non-pulmonary-bacterial-coinfection-pediatrics",
-    "version": "0.1.0-test",
-    "name": "NonPulmonaryBacterialCoinfectionPediatrics"
-  },
-  {
-    "id": "hl7.de.fhir.napkon-bih",
-    "type": "ImplementationGuide",
-    "url": "http://fhir.de/napkon-bih/ImplementationGuide/hl7.de.fhir.napkon-bih",
-    "version": "0.1.0-test",
-    "name": "NAPKON-BIH"
-  },
-  {
-    "id": "gecco-observation-blood-pressure",
+    "id": "imaging-procedure-cardiology",
     "type": "StructureDefinition",
-    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/blood-pressure",
-    "version": "0.1.0-test",
-    "name": "BloodPressure"
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/imaging-procedure-cardiology",
+    "version": "0.1.0",
+    "name": "ImagingProceduresCardiology"
   },
   {
-    "id": "gecco-observation-body-height",
+    "id": "imaging-procedures",
     "type": "StructureDefinition",
-    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-height",
-    "version": "0.1.0-test",
-    "name": "BodyHeight"
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/imaging-procedures",
+    "version": "0.1.0",
+    "name": "ImagingProcedures"
   },
   {
-    "id": "gecco-observation-body-temperature",
+    "id": "immunosuppresive-permanent-medication-pediatrics",
     "type": "StructureDefinition",
-    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-temperature",
-    "version": "0.1.0-test",
-    "name": "BodyTemperature"
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunosuppresive-permanent-medication-pediatrics",
+    "version": "0.1.0",
+    "name": "ImmunosuppresivePermanentMedicationPediatrics"
   },
   {
-    "id": "gecco-observation-body-weight",
+    "id": "infectious-complications-pediatrics",
     "type": "StructureDefinition",
-    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-weight",
-    "version": "0.1.0-test",
-    "name": "BodyWeight"
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/infectious-complications-pediatrics",
+    "version": "0.1.0",
+    "name": "InfectiousComplicationPediatrics"
   },
   {
-    "id": "gecco-observation-heart-rate",
+    "id": "intensive-care-treatment-duration-pediatrics",
     "type": "StructureDefinition",
-    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/heart-rate",
-    "version": "0.1.0-test",
-    "name": "HeartRate"
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/intensive-care-treatment-duration-pediatrics",
+    "version": "0.1.0",
+    "name": "IntensiveCareTreatmentDurationPediatrics"
   },
   {
-    "id": "gecco-observation-oxygen-saturation",
+    "id": "observation-birth-height-pediatrics",
     "type": "StructureDefinition",
-    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/oxygen-saturation",
-    "version": "0.1.0-test",
-    "name": "OxygenSaturation"
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/observation-birth-height-pediatrics",
+    "version": "0.1.0",
+    "name": "BirthHeightPediatrics"
   },
   {
-    "id": "gecco-observation-respiratory-rate",
+    "id": "observation-body-mass-index-pediatrics",
     "type": "StructureDefinition",
-    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/respiratory-rate",
-    "version": "0.1.0-test",
-    "name": "RespiratoryRate"
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/observation-body-mass-index-pediatrics",
+    "version": "0.1.0",
+    "name": "BodyMassIndexPediatrics"
   },
   {
-    "id": "gecco-vital-signs-base",
+    "id": "observation-head-circumference-pediatrics",
     "type": "StructureDefinition",
-    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vital-signs-base",
-    "version": "0.1.0-test",
-    "name": "VitalSignsBase"
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/observation-head-circumference-pediatrics",
+    "version": "0.1.0",
+    "name": "HeadCircumferencePediatrics"
+  },
+  {
+    "id": "supportive-pharmacotherapy-pediatrics",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/supportive-pharmacotherapy-pediatrics",
+    "version": "0.1.0",
+    "name": "SupportivePharmacotherapy"
+  },
+  {
+    "id": "thoracic-drainage-pediatrics",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/thoracic-drainage-pediatrics",
+    "version": "0.1.0",
+    "name": "ThoracicDrainagePediatrics"
+  },
+  {
+    "id": "total-length-of-stay-pediatrics",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/total-length-of-stay-pediatrics",
+    "version": "0.1.0",
+    "name": "TotalLengthOfStayPediatrics"
   },
   {
     "id": "cardiology-diseases-codes",
     "type": "ValueSet",
     "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/CardiologyDiseasesCodes",
-    "version": "0.1.0-test",
+    "version": "0.1.0",
     "name": "CardiologyDiseasesCodes"
   },
   {
-    "id": "1.2.276.0.76.11.467--20200409000000",
+    "id": "cardiology-imaging-procedures",
     "type": "ValueSet",
-    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sars-cov-2-symptoms",
-    "version": "0.1.0-test",
-    "name": "SARSCoV2Symptoms"
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/EcgCodes",
+    "version": "0.1.0",
+    "name": "CardiologyImagingCodes"
+  },
+  {
+    "id": "ecg-expressions",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/EcgCodes",
+    "version": "0.1.0",
+    "name": "ECGExpressions"
+  },
+  {
+    "id": "imaging-procedures-cardiology",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/EcgCodes",
+    "version": "0.1.0",
+    "name": "ImagingCodes"
+  },
+  {
+    "id": "chronic-haematologic-diseases-pediatrics",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-haematologic-diseases-pediatrics",
+    "version": "0.1.0",
+    "name": "ChronicHaematologicDiseasesPediatrics"
+  },
+  {
+    "id": "chronic-haematologic-diseases-pediatrics-icd",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-haematologic-diseases-pediatrics-icd",
+    "version": "0.1.0",
+    "name": "ChronicHaematologicDiseasesPediatricsICD"
+  },
+  {
+    "id": "covid19-complications",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/covid19-complications",
+    "version": "0.1.0",
+    "name": "Covid19Complications"
+  },
+  {
+    "id": "drug-therapy-pediatrics",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/drug-therapy-pediatrics",
+    "version": "0.1.0",
+    "name": "DrugTherapyPediatrics"
+  },
+  {
+    "id": "fungal-infections",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/fungal-infections",
+    "version": "0.1.0",
+    "name": "FungalInfections"
+  },
+  {
+    "id": "gastrointestinal-diseases-pediatrics",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/gastrointestinal-diseases-pediatrics",
+    "version": "0.1.0",
+    "name": "GastrointestinalDiseasesPediatrics"
+  },
+  {
+    "id": "gastrointestinal-diseases-pediatrics-icd",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/gastrointestinal-diseases-pediatrics-icd",
+    "version": "0.1.0",
+    "name": "GastrointestinalDiseasesPediatricsICD"
+  },
+  {
+    "id": "bacterial-infectious-complications-sct",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/imaging-category-sct",
+    "version": "0.1.0",
+    "name": "BacterialInfectiousDiseases"
+  },
+  {
+    "id": "imaging-category-sct",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/imaging-category-sct",
+    "version": "0.1.0",
+    "name": "ImagingCategorySnomed"
+  },
+  {
+    "id": "viral-infectious-complications-sct",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/imaging-category-sct",
+    "version": "0.1.0",
+    "name": "ViralInfectiousDiseases"
+  },
+  {
+    "id": "imaging-pediatrics",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/imaging-pediatrics",
+    "version": "0.1.0",
+    "name": "ImagingPediatrics"
+  },
+  {
+    "id": "immunosuppressive-permament-medications",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/immunosuppressive-permament-medications",
+    "version": "0.1.0",
+    "name": "ImmunosuppressivePermanentMedications"
+  },
+  {
+    "id": "medication-pediatrics",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/medication-pediatrics",
+    "version": "0.1.0",
+    "name": "MedicationPediatrics"
+  },
+  {
+    "id": "pediatric-drug-therapy-codes",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/pediatric-drug-therapy-codes",
+    "version": "0.1.0",
+    "name": "PediatricsDrugTherapyCodes"
+  },
+  {
+    "id": "pediatric-imaging-codes",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/pediatric-imaging-codes",
+    "version": "0.1.0",
+    "name": "PediatricsImagingCodes"
+  },
+  {
+    "id": "pediatric-medication-codes",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/pediatric-medication-codes",
+    "version": "0.1.0",
+    "name": "PediatricMedicationCodes"
+  },
+  {
+    "id": "restricted-event-status",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/restricted-event-status",
+    "version": "0.1.0",
+    "name": "RestrictedEventStatus"
+  },
+  {
+    "id": "syndromic-diseases-pediatrics",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/syndromic-diseases-pediatrics",
+    "version": "0.1.0",
+    "name": "SyndromicDiseasesPediatrics"
+  },
+  {
+    "id": "vaccine-type-covid-pediatrics",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/vaccine-type-covid-pediatrics",
+    "version": "0.1.0",
+    "name": "VaccineTypCovidPediatrics"
+  },
+  {
+    "id": "vs-antibiotic-therapy-procedure-pediatrics",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/vs-antibiotic-therapy-procedure-pediatrics",
+    "version": "0.1.0",
+    "name": "AntibioticTherapyProcedure"
+  },
+  {
+    "id": "vs-non-pulmonary-bacterial-coinfection-pediatrics",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/vs-non-pulmonary-bacterial-coinfection-pediatrics",
+    "version": "0.1.0",
+    "name": "NonPulmonaryBacterialCoinfectionPediatrics"
+  },
+  {
+    "id": "vs-supportive-pharmacotherapy-pediatrics",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/vs-supportive-pharmacotherapy-pediatrics",
+    "version": "0.1.0",
+    "name": "SupportivePharmacotherapy"
   }
 ]

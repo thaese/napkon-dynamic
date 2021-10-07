@@ -5,48 +5,43 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>http://fhir.de/CodeSystem/dimdi/icd-10-gm</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>D58.9</td><td>Hereditäre hämolytische Anämie, nicht näher bezeichnet</td></tr><tr><td>D56.9</td><td>Thalassämie, nicht näher bezeichnet</td></tr><tr><td>D57.1</td><td>	Sichelzellenanämie ohne Krisen</td></tr><tr><td>D55.0</td><td>Anämie durch Glukose-6-Phosphat-Dehydrogenase[G6PD]-Mangel</td></tr><tr><td>D50.9</td><td>Eisenmangelanämie, nicht näher bezeichnet</td></tr><tr><td>D70</td><td>Agranulozytose und Neutropenie</td></tr><tr><td>D46.9</td><td>Myelodysplastisches Syndrom, nicht näher bezeichnet</td></tr><tr><td>D68.9</td><td>Koagulopathie, nicht näher bezeichnet</td></tr></table></li></ul></div>
   </text>
-  <url value="http://example.org/fhir/ValueSet/chronic-haematologic-diseases-pediatrics-icd"/>
-  <version value="0.1.0-test"/>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-haematologic-diseases-pediatrics-icd"/>
+  <version value="0.1.0"/>
   <name value="ChronicHaematologicDiseasesPediatricsICD"/>
   <title value="ChronicHaematologicDiseasesPediatricsICD-VS"/>
   <status value="draft"/>
-  <date value="2021-07-16T11:49:43+00:00"/>
-  <publisher value="Berlin Institute of Health @ Charit&#xE9;"/>
+  <date value="2021-08-04"/>
+  <publisher value="BIH @ Charité"/>
   <contact>
+    <name value="BIH @ Charité"/>
     <telecom>
       <system value="url"/>
-      <value value="https://bihealth.org"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
     </telecom>
   </contact>
   <description value="Chronic haematologic diseases the context of pediatrics and Covid-19"/>
-  <jurisdiction>
-    <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
-    </coding>
-  </jurisdiction>
   <compose>
     <include>
       <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
       <concept>
         <code value="D58.9"/>
-        <display value="Heredit&#xE4;re h&#xE4;molytische An&#xE4;mie, nicht n&#xE4;her bezeichnet"/>
+        <display value="Hereditäre hämolytische Anämie, nicht näher bezeichnet"/>
       </concept>
       <concept>
         <code value="D56.9"/>
-        <display value="Thalass&#xE4;mie, nicht n&#xE4;her bezeichnet"/>
+        <display value="Thalassämie, nicht näher bezeichnet"/>
       </concept>
       <concept>
         <code value="D57.1"/>
-        <display value="&#x9;Sichelzellenan&#xE4;mie ohne Krisen"/>
+        <display value="&#x9;Sichelzellenanämie ohne Krisen"/>
       </concept>
       <concept>
         <code value="D55.0"/>
-        <display value="An&#xE4;mie durch Glukose-6-Phosphat-Dehydrogenase[G6PD]-Mangel"/>
+        <display value="Anämie durch Glukose-6-Phosphat-Dehydrogenase[G6PD]-Mangel"/>
       </concept>
       <concept>
         <code value="D50.9"/>
-        <display value="Eisenmangelan&#xE4;mie, nicht n&#xE4;her bezeichnet"/>
+        <display value="Eisenmangelanämie, nicht näher bezeichnet"/>
       </concept>
       <concept>
         <code value="D70"/>
@@ -54,11 +49,11 @@
       </concept>
       <concept>
         <code value="D46.9"/>
-        <display value="Myelodysplastisches Syndrom, nicht n&#xE4;her bezeichnet"/>
+        <display value="Myelodysplastisches Syndrom, nicht näher bezeichnet"/>
       </concept>
       <concept>
         <code value="D68.9"/>
-        <display value="Koagulopathie, nicht n&#xE4;her bezeichnet"/>
+        <display value="Koagulopathie, nicht näher bezeichnet"/>
       </concept>
     </include>
   </compose>

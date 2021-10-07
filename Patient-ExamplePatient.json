@@ -1,0 +1,40 @@
+{
+  "resourceType": "Patient",
+  "id": "ExamplePatient",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: napkon-example-patient</p><p><b>name</b>: maxi musterperson (OFFICIAL)</p><p><b>gender</b>: unknown</p><p><b>birthDate</b>: 1990-08-08</p><p><b>address</b>: Charitéplatz 1 Berlin 10117 DE </p></div>"
+  },
+  "identifier": [
+    {
+      "value": "napkon-example-patient"
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "family": "musterperson",
+      "given": [
+        "maxi"
+      ]
+    }
+  ],
+  "gender": "unknown",
+  "birthDate": "1990-08-08",
+  "address": [
+    {
+      "type": "physical",
+      "line": [
+        "Charitéplatz 1"
+      ],
+      "city": "Berlin",
+      "postalCode": "10117",
+      "country": "DE"
+    }
+  ]
+}

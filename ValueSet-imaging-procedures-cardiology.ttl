@@ -1,0 +1,90 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/imaging-procedures-cardiology> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "imaging-procedures-cardiology"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Deutsch (Deutschland) (German (Germany), de)</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=268400002\">268400002</a></td><td>12 lead electrocardiogram (procedure)</td><td>Durchgeführte 12-Kanal-EKG-Untersuchung</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=40701008\">40701008</a></td><td>Echocardiography (procedure)</td><td>Durchgeführte Echokardiographie</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=433236007\">433236007</a></td><td>Transthoracic echocardiography (procedure)</td><td>Transthorakale Echokardiographie</td></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/EcgCodes"];
+  fhir:ValueSet.version [ fhir:value "0.1.0"];
+  fhir:ValueSet.name [ fhir:value "ImagingCodes"];
+  fhir:ValueSet.status [ fhir:value "draft"];
+  fhir:ValueSet.date [ fhir:value "2021-05-28"^^xsd:date];
+  fhir:ValueSet.publisher [ fhir:value "BIH @ Charité"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "BIH @ Charité" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.netzwerk-universitaetsmedizin.de" ]
+     ]
+  ];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "268400002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "12 lead electrocardiogram (procedure)" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de-DE" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             a sct:900000000000013009;
+             fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+             fhir:Coding.code [ fhir:value "900000000000013009" ];
+             fhir:Coding.display [ fhir:value "Synonym" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Durchgeführte 12-Kanal-EKG-Untersuchung" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "40701008" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Echocardiography (procedure)" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de-DE" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             a sct:900000000000013009;
+             fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+             fhir:Coding.code [ fhir:value "900000000000013009" ];
+             fhir:Coding.display [ fhir:value "Synonym" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Durchgeführte Echokardiographie" ]
+         ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "433236007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Transthoracic echocardiography (procedure)" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de-DE" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             a sct:900000000000013009;
+             fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+             fhir:Coding.code [ fhir:value "900000000000013009" ];
+             fhir:Coding.display [ fhir:value "Synonym" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Transthorakale Echokardiographie" ]
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/imaging-procedures-cardiology.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

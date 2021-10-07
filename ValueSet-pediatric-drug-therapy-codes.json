@@ -1,0 +1,61 @@
+{
+  "resourceType": "ValueSet",
+  "id": "pediatric-drug-therapy-codes",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  346447007 (FFP - Fresh frozen plasma)</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  12719002 (Platelet transfusion)</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  1003715001 (Coagulation protein-containing product)</li></ul></div>"
+  },
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/pediatric-drug-therapy-codes",
+  "version": "0.1.0",
+  "name": "PediatricsDrugTherapyCodes",
+  "title": "ValueSet for Pediatric Module",
+  "status": "draft",
+  "date": "2021-05-28",
+  "publisher": "BIH @ Charité",
+  "contact": [
+    {
+      "name": "BIH @ Charité",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.netzwerk-universitaetsmedizin.de"
+        }
+      ]
+    }
+  ],
+  "description": "Codes related to the Pediatric Module.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "346447007"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "12719002"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "1003715001"
+          }
+        ]
+      }
+    ]
+  }
+}

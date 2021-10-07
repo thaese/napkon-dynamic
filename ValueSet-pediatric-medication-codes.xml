@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="pediatric-medication-codes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=387458008">387458008</a></td><td>Aspirin (substance)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=333710000">333710000</a></td><td>Product containing immunoglobulin (product)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=444648007">444648007</a></td><td>Tocilizumab (substance)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=385549000">385549000</a></td><td>Anakinra (substance)</td></tr></table></li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  373213009 (Inotropic agent (substance))</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  870406003 (Vasopressor)</li></ul></div>
+  </text>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/pediatric-medication-codes"/>
+  <version value="0.1.0"/>
+  <name value="PediatricMedicationCodes"/>
+  <title value="ValueSet for Pediatric Module"/>
+  <status value="draft"/>
+  <date value="2021-05-28"/>
+  <publisher value="BIH @ Charité"/>
+  <contact>
+    <name value="BIH @ Charité"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </telecom>
+  </contact>
+  <description value="Codes related to the Pediatric Module."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="387458008"/>
+        <display value="Aspirin (substance)"/>
+      </concept>
+      <concept>
+        <code value="333710000"/>
+        <display value="Product containing immunoglobulin (product)"/>
+      </concept>
+      <concept>
+        <code value="444648007"/>
+        <display value="Tocilizumab (substance)"/>
+      </concept>
+      <concept>
+        <code value="385549000"/>
+        <display value="Anakinra (substance)"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="373213009"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="870406003"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

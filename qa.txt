@@ -1,113 +1,239 @@
-﻿NAPKON-BIH : Validation Results
+﻿NAPKONBIH : Validation Results
 =========================================
 
-err = 36, warn = 44, info = 0
-IG Publisher Version: 1.1.76
-Generated Fri Jul 16 11:50:21 UTC 2021. FHIR version 4.0.1 for hl7.de.fhir.napkon-bih#0.1.0-test (canonical = http://fhir.de/napkon-bih)
-
- Build Errors : 0 / 0 / 0
- /github/workspace/fsh-generated/resources/StructureDefinition-gecco-observation-blood-pressure : 2 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-gecco-observation-body-height : 2 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-gecco-observation-body-temperature : 2 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-gecco-observation-body-weight : 2 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-gecco-observation-heart-rate : 2 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-gecco-observation-oxygen-saturation : 2 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-gecco-observation-respiratory-rate : 2 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-gecco-vital-signs-base : 2 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-1.2.276.0.76.11.467--20200409000000 : 2 / 0 / 2
- /github/workspace/fsh-generated/resources/ValueSet-cardiology-diseases-codes : 2 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-chronic-haematologic-diseases-pediatrics : 2 / 8 / 1
- /github/workspace/fsh-generated/resources/ValueSet-chronic-haematologic-diseases-pediatrics-icd : 2 / 3 / 1
- /github/workspace/fsh-generated/resources/ValueSet-gastrointestinal-diseases-pediatrics : 2 / 5 / 1
- /github/workspace/fsh-generated/resources/ValueSet-gastrointestinal-diseases-pediatrics-icd : 2 / 2 / 1
- /github/workspace/fsh-generated/resources/ValueSet-syndromic-diseases-pediatrics : 2 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vaccine-type-covid-pediatrics : 2 / 2 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-antibiotic-therapy-procedure-pediatrics : 2 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-non-pulmonary-bacterial-coinfection-pediatrics : 2 / 15 / 1
- /github/workspace/input/napkon-bih : 0 / 1 / 1
+err = 13, warn = 46, info = 9
+IG Publisher Version: 1.1.81
+Generated Thu Oct 07 16:57:11 UTC 2021. FHIR version 4.0.1 for napkon-bih#0.1.0 (canonical = https://www.netzwerk-universitaetsmedizin.de/fhir)
+ Build Errors : 63 / 9 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-napkon-immunosuppresive-medications : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Condition-InfectionsComplicationPediatrics : 1 / 0 / 2
+ /github/workspace/fsh-generated/resources/Condition-covid19-complication-instance : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Condition-fungal-infection-instance : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Condition-instance-gastrointestinal-diseases-pediatrics : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Condition-instance-gastrointestinal-diseases-pediatrics-icd10 : 0 / 0 / 3
+ /github/workspace/fsh-generated/resources/Condition-instance-supportive-pharmacotherapy-pediatrics : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-napkon-bih : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/MedicationStatement-immunosuppresive-permanent-medication-instance : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-instance-body-mass-index-pediatrics : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-instance-head-circumference-pediatrics : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-intensive-care-treatment-duration-instance : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-total-length-of-stay-instance : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Patient-ExamplePatient : 0 / 0 / 4
+ /github/workspace/fsh-generated/resources/Procedure-electrocardiographic-ecg-procedure-instance : 2 / 0 / 3
+ /github/workspace/fsh-generated/resources/Procedure-thoracic-drainage-instance : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-cardiology-imaging-procedure : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-chronic-haematologic-diseases-pediatrics : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-covid19-complication-pediatrics : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-electrocardiographic-ecg-procedure : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-fungal-infection-pediatrics : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-gastrointestinal-diseases-pediatrics : 0 / 4 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-imaging-procedure-cardiology : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-imaging-procedures : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-immunosuppresive-permanent-medication-pediatrics : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-infectious-complications-pediatrics : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-intensive-care-treatment-duration-pediatrics : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-observation-birth-height-pediatrics : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-observation-body-mass-index-pediatrics : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-observation-head-circumference-pediatrics : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-supportive-pharmacotherapy-pediatrics : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-thoracic-drainage-pediatrics : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-total-length-of-stay-pediatrics : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-bacterial-infectious-complications-sct : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-cardiology-diseases-codes : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-cardiology-imaging-procedures : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-chronic-haematologic-diseases-pediatrics : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-chronic-haematologic-diseases-pediatrics-icd : 0 / 3 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-covid19-complications : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-drug-therapy-pediatrics : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-ecg-expressions : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-fungal-infections : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-gastrointestinal-diseases-pediatrics : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-gastrointestinal-diseases-pediatrics-icd : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-imaging-category-sct : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-imaging-pediatrics : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-imaging-procedures-cardiology : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-immunosuppressive-permament-medications : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-medication-pediatrics : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-pediatric-drug-therapy-codes : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-pediatric-imaging-codes : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-pediatric-medication-codes : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-restricted-event-status : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-syndromic-diseases-pediatrics : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vaccine-type-covid-pediatrics : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-viral-infectious-complications-sct : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-antibiotic-therapy-procedure-pediatrics : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-non-pulmonary-bacterial-coinfection-pediatrics : 0 / 15 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-supportive-pharmacotherapy-pediatrics : 0 / 2 / 1
 </table>
 == n/a ==
-== /github/workspace/fsh-generated/resources/StructureDefinition-gecco-observation-blood-pressure.json ==
-ERROR: StructureDefinition.where(url = 'https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/blood-pressure'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-gecco-observation-blood-pressure.json - the canonical URL (http://fhir.de/napkon-bih/StructureDefinition/gecco-observation-blood-pressure) does not match the URL (https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/blood-pressure)
-WARNING: StructureDefinition.where(url = 'https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/blood-pressure'): The Implementation Guide contains no examples for this profile
-ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-gecco-observation-blood-pressure: URL Mismatch http://fhir.de/napkon-bih/StructureDefinition/gecco-observation-blood-pressure vs https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/blood-pressure
-== /github/workspace/fsh-generated/resources/StructureDefinition-gecco-observation-body-height.json ==
-ERROR: StructureDefinition.where(url = 'https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-height'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-gecco-observation-body-height.json - the canonical URL (http://fhir.de/napkon-bih/StructureDefinition/gecco-observation-body-height) does not match the URL (https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-height)
-WARNING: StructureDefinition.where(url = 'https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-height'): The Implementation Guide contains no examples for this profile
-ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-gecco-observation-body-height: URL Mismatch http://fhir.de/napkon-bih/StructureDefinition/gecco-observation-body-height vs https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-height
-== /github/workspace/fsh-generated/resources/StructureDefinition-gecco-observation-body-temperature.json ==
-ERROR: StructureDefinition.where(url = 'https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-temperature'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-gecco-observation-body-temperature.json - the canonical URL (http://fhir.de/napkon-bih/StructureDefinition/gecco-observation-body-temperature) does not match the URL (https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-temperature)
-WARNING: StructureDefinition.where(url = 'https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-temperature'): The Implementation Guide contains no examples for this profile
-ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-gecco-observation-body-temperature: URL Mismatch http://fhir.de/napkon-bih/StructureDefinition/gecco-observation-body-temperature vs https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-temperature
-== /github/workspace/fsh-generated/resources/StructureDefinition-gecco-observation-body-weight.json ==
-ERROR: StructureDefinition.where(url = 'https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-weight'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-gecco-observation-body-weight.json - the canonical URL (http://fhir.de/napkon-bih/StructureDefinition/gecco-observation-body-weight) does not match the URL (https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-weight)
-WARNING: StructureDefinition.where(url = 'https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-weight'): The Implementation Guide contains no examples for this profile
-ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-gecco-observation-body-weight: URL Mismatch http://fhir.de/napkon-bih/StructureDefinition/gecco-observation-body-weight vs https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-weight
-== /github/workspace/fsh-generated/resources/StructureDefinition-gecco-observation-heart-rate.json ==
-ERROR: StructureDefinition.where(url = 'https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/heart-rate'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-gecco-observation-heart-rate.json - the canonical URL (http://fhir.de/napkon-bih/StructureDefinition/gecco-observation-heart-rate) does not match the URL (https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/heart-rate)
-WARNING: StructureDefinition.where(url = 'https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/heart-rate'): The Implementation Guide contains no examples for this profile
-ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-gecco-observation-heart-rate: URL Mismatch http://fhir.de/napkon-bih/StructureDefinition/gecco-observation-heart-rate vs https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/heart-rate
-== /github/workspace/fsh-generated/resources/StructureDefinition-gecco-observation-oxygen-saturation.json ==
-ERROR: StructureDefinition.where(url = 'https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/oxygen-saturation'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-gecco-observation-oxygen-saturation.json - the canonical URL (http://fhir.de/napkon-bih/StructureDefinition/gecco-observation-oxygen-saturation) does not match the URL (https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/oxygen-saturation)
-WARNING: StructureDefinition.where(url = 'https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/oxygen-saturation'): The Implementation Guide contains no examples for this profile
-ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-gecco-observation-oxygen-saturation: URL Mismatch http://fhir.de/napkon-bih/StructureDefinition/gecco-observation-oxygen-saturation vs https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/oxygen-saturation
-== /github/workspace/fsh-generated/resources/StructureDefinition-gecco-observation-respiratory-rate.json ==
-ERROR: StructureDefinition.where(url = 'https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/respiratory-rate'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-gecco-observation-respiratory-rate.json - the canonical URL (http://fhir.de/napkon-bih/StructureDefinition/gecco-observation-respiratory-rate) does not match the URL (https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/respiratory-rate)
-WARNING: StructureDefinition.where(url = 'https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/respiratory-rate'): The Implementation Guide contains no examples for this profile
-ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-gecco-observation-respiratory-rate: URL Mismatch http://fhir.de/napkon-bih/StructureDefinition/gecco-observation-respiratory-rate vs https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/respiratory-rate
-== /github/workspace/fsh-generated/resources/StructureDefinition-gecco-vital-signs-base.json ==
-ERROR: StructureDefinition.where(url = 'https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vital-signs-base'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-gecco-vital-signs-base.json - the canonical URL (http://fhir.de/napkon-bih/StructureDefinition/gecco-vital-signs-base) does not match the URL (https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vital-signs-base)
-WARNING: StructureDefinition.where(url = 'https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vital-signs-base'): The Implementation Guide contains no examples for this profile
-ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-gecco-vital-signs-base: URL Mismatch http://fhir.de/napkon-bih/StructureDefinition/gecco-vital-signs-base vs https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vital-signs-base
-== /github/workspace/fsh-generated/resources/ValueSet-1.2.276.0.76.11.467--20200409000000.json ==
-ERROR: ValueSet.where(url = 'https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sars-cov-2-symptoms'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-1.2.276.0.76.11.467--20200409000000.json - the canonical URL (http://fhir.de/napkon-bih/ValueSet/1.2.276.0.76.11.467--20200409000000) does not match the URL (https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sars-cov-2-symptoms)
-ERROR: /github/workspace/fsh-generated/resources/ValueSet-1.2.276.0.76.11.467--20200409000000: URL Mismatch http://fhir.de/napkon-bih/ValueSet/1.2.276.0.76.11.467--20200409000000 vs https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sars-cov-2-symptoms
-== /github/workspace/fsh-generated/resources/ValueSet-cardiology-diseases-codes.json ==
-ERROR: ValueSet.where(url = 'https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/CardiologyDiseasesCodes'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-cardiology-diseases-codes.json - the canonical URL (http://fhir.de/napkon-bih/ValueSet/cardiology-diseases-codes) does not match the URL (https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/CardiologyDiseasesCodes)
-ERROR: /github/workspace/fsh-generated/resources/ValueSet-cardiology-diseases-codes: URL Mismatch http://fhir.de/napkon-bih/ValueSet/cardiology-diseases-codes vs https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/CardiologyDiseasesCodes
-== /github/workspace/fsh-generated/resources/ValueSet-chronic-haematologic-diseases-pediatrics.json ==
-ERROR: ValueSet.where(url = 'http://example.org/fhir/ValueSet/chronic-haematologic-diseases-pediatrics'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-chronic-haematologic-diseases-pediatrics.json - the canonical URL (http://fhir.de/napkon-bih/ValueSet/chronic-haematologic-diseases-pediatrics) does not match the URL (http://example.org/fhir/ValueSet/chronic-haematologic-diseases-pediatrics)
-WARNING: ValueSet/chronic-haematologic-diseases-pediatrics: ValueSet.compose.include[0].concept[0].designation[0].use: A code with no system has no defined meaning. A system should be provided
-WARNING: ValueSet/chronic-haematologic-diseases-pediatrics: ValueSet.compose.include[0].concept[1].designation[0].use: A code with no system has no defined meaning. A system should be provided
-WARNING: ValueSet/chronic-haematologic-diseases-pediatrics: ValueSet.compose.include[0].concept[2].designation[0].use: A code with no system has no defined meaning. A system should be provided
-WARNING: ValueSet/chronic-haematologic-diseases-pediatrics: ValueSet.compose.include[0].concept[3].designation[0].use: A code with no system has no defined meaning. A system should be provided
-WARNING: ValueSet/chronic-haematologic-diseases-pediatrics: ValueSet.compose.include[0].concept[4].designation[0].use: A code with no system has no defined meaning. A system should be provided
-WARNING: ValueSet/chronic-haematologic-diseases-pediatrics: ValueSet.compose.include[0].concept[5].designation[0].use: A code with no system has no defined meaning. A system should be provided
-WARNING: ValueSet/chronic-haematologic-diseases-pediatrics: ValueSet.compose.include[0].concept[6].designation[0].use: A code with no system has no defined meaning. A system should be provided
-WARNING: ValueSet/chronic-haematologic-diseases-pediatrics: ValueSet.compose.include[0].concept[7].designation[0].use: A code with no system has no defined meaning. A system should be provided
-ERROR: /github/workspace/fsh-generated/resources/ValueSet-chronic-haematologic-diseases-pediatrics: URL Mismatch http://fhir.de/napkon-bih/ValueSet/chronic-haematologic-diseases-pediatrics vs http://example.org/fhir/ValueSet/chronic-haematologic-diseases-pediatrics
-== /github/workspace/fsh-generated/resources/ValueSet-chronic-haematologic-diseases-pediatrics-icd.json ==
-ERROR: ValueSet.where(url = 'http://example.org/fhir/ValueSet/chronic-haematologic-diseases-pediatrics-icd'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-chronic-haematologic-diseases-pediatrics-icd.json - the canonical URL (http://fhir.de/napkon-bih/ValueSet/chronic-haematologic-diseases-pediatrics-icd) does not match the URL (http://example.org/fhir/ValueSet/chronic-haematologic-diseases-pediatrics-icd)
+WARNING: ImplementationGuide.dependency[0].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+WARNING: ImplementationGuide.dependency[1].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+WARNING: ImplementationGuide.dependency[2].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+INFORMATION: ImplementationGuide.dependency[2].url: The correct canonical URL for this dependency is https://simplifier.net/guide/medizininformatikinitiative-modulmedikation-implementationguide
+ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/CodingOPS could not be resolved
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/bacterial-infectious-complications-sct.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/imaging-category-sct.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/imaging-procedures-cardiology.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/immunosuppressive-permament-medications.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/viral-infectious-complications-sct.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/ExamplePatient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum could not be resolved
+ERROR: ?pkp-1?: The reference https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht could not be resolved
+ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/seitenlokalisation could not be resolved
+ERROR: /github/workspace/output/StructureDefinition-immunosuppresive-permanent-medication-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 312, column 279: The link 'http.html#read' for "read" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-immunosuppresive-permanent-medication-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 317, column 126: The link 'provenance.html#' for "Provenance" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-immunosuppresive-permanent-medication-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 328, column 69: The link 'structuredefinition.html#' for "StructureDefinition" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-immunosuppresive-permanent-medication-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 328, column 207: The link 'structuredefinition-definitions.html#StructureDefinition.url' for "StructureDefinition.url" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-immunosuppresive-permanent-medication-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 419, column 357: The link 'extensibility.html#modifierExtension' for "definition of modifier extensions" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-immunosuppresive-permanent-medication-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 532, column 151: The link '' for "MII-Reference" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-immunosuppresive-permanent-medication-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 652, column 357: The link 'extensibility.html#modifierExtension' for "definition of modifier extensions" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-immunosuppresive-permanent-medication-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 741, column 168: The link 'extension-bodysite.html' for "bodySite" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-immunosuppresive-permanent-medication-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 779, column 108: The link 'file://C:\GitHub\hl7.fhir.uv.ips#1.0.0\output/ValueSet-target-site-uv-ips.html' for "Target Site - IPS" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-immunosuppresive-permanent-medication-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 922, column 116: The link 'file://C:\GitHub\hl7.fhir.uv.ips#1.0.0\output/ValueSet-medicine-route-of-administration.html' for "Medicine Route of Administration - IPS" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-immunosuppresive-permanent-medication-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 306, column 44: The link '' for "ProfileMedicationStatementMedikation" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-immunosuppresive-permanent-medication-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 321, column 44: The link '' for "ProfileMedicationStatementMedikation" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-immunosuppresive-permanent-medication-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 392, column 2111: The link 'file://C:\GitHub\hl7.fhir.uv.ips#1.0.0\output/ValueSet-target-site-uv-ips.html' for "Target Site - IPS" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-immunosuppresive-permanent-medication-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 412, column 2239: The link 'file://C:\GitHub\hl7.fhir.uv.ips#1.0.0\output/ValueSet-medicine-route-of-administration.html' for "Medicine Route of Administration - IPS" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-immunosuppresive-permanent-medication-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 638, column 2103: The link 'file://C:\GitHub\hl7.fhir.uv.ips#1.0.0\output/ValueSet-medicine-route-of-administration.html' for "Medicine Route of Administration - IPS" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-immunosuppresive-permanent-medication-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 661, column 44: The link '' for "ProfileMedicationStatementMedikation" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-immunosuppresive-permanent-medication-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 675, column 44: The link '' for "ProfileMedicationStatementMedikation" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-immunosuppresive-permanent-medication-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 746, column 2111: The link 'file://C:\GitHub\hl7.fhir.uv.ips#1.0.0\output/ValueSet-target-site-uv-ips.html' for "Target Site - IPS" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-immunosuppresive-permanent-medication-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 766, column 2239: The link 'file://C:\GitHub\hl7.fhir.uv.ips#1.0.0\output/ValueSet-medicine-route-of-administration.html' for "Medicine Route of Administration - IPS" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-immunosuppresive-permanent-medication-pediatrics.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 984, column 206: The link '#dose-form-null' for "null" cannot be resolved (valid targets: 268 targets)
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 300, column 279: The link 'http.html#read' for "read" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 305, column 126: The link 'provenance.html#' for "Provenance" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 316, column 69: The link 'structuredefinition.html#' for "StructureDefinition" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 316, column 207: The link 'structuredefinition-definitions.html#StructureDefinition.url' for "StructureDefinition.url" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 405, column 154: The link '' for "ExtensionProzedurDokumentationsdatum" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 417, column 154: The link '' for "Extension_MII_Durchfuehrungsabsicht" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 431, column 357: The link 'extensibility.html#modifierExtension' for "definition of modifier extensions" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 447, column 95: The link 'resource.html#identifiers' for "discussion" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 456, column 37: The link 'references.html#canonical' for "Canonical References" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 561, column 116: The link '' for "ValueSet_MII_SnomedProcedure-Category" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 704, column 115: The link '' for "OpsVS" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 705, column 144: The link '' for "CodingOPS" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 735, column 154: The link '' for "ExtensionSeitenlokalisation" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 746, column 154: The link '' for "ExtensionSeitenlokalisation" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 819, column 115: The link '' for "ValueSet_MII_SnomedProcedureCodes" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 917, column 151: The link '' for "MII-Reference" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 992, column 357: The link 'extensibility.html#modifierExtension' for "definition of modifier extensions" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 1077, column 168: The link 'extension-procedure-targetbodystructure.html' for "procedure-targetbodystructure" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 1177, column 357: The link 'extensibility.html#modifierExtension' for "definition of modifier extensions" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 306, column 44: The link '' for "Profile_MII_ProcedureProzedur" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/div/ul/li/a at Line 317, column 7: The link '' for "MII-Reference (https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference)" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 328, column 44: The link '' for "Profile_MII_ProcedureProzedur" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 339, column 1477: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 409, column 1790: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 646, column 1664: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 675, column 44: The link '' for "Profile_MII_ProcedureProzedur" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/div/ul/li/a at Line 685, column 7: The link '' for "MII-Reference (https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference)" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 696, column 44: The link '' for "Profile_MII_ProcedureProzedur" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 707, column 1477: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 777, column 1790: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-pediatrics.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1011, column 157: The link '#CodeSystemOPS2021-8-144' for "8-144" cannot be resolved (valid targets: 285 targets)
+ERROR: /github/workspace/output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/ul/li/table/tr/td/a at Line 236, column 2982: The link '?ngen-14?.html#CodeSystemATC2021-L01EG' for "L01EG" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/ul/li/table/tr/td/a at Line 236, column 3122: The link '?ngen-14?.html#CodeSystemATC2021-L01B' for "L01B" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/ul/li/table/tr/td/a at Line 236, column 3220: The link '?ngen-14?.html#CodeSystemATC2021-L04AB' for "L04AB" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/ul/li/table/tr/td/a at Line 236, column 3353: The link '?ngen-14?.html#CodeSystemATC2021-L01EJ' for "L01EJ" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 242, column 4374: The link '?ngen-14?.html#CodeSystemATC2021-L01EG' for "L01EG" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 242, column 4646: The link '?ngen-14?.html#CodeSystemATC2021-L01B' for "L01B" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 242, column 4877: The link '?ngen-14?.html#CodeSystemATC2021-L04AB' for "L04AB" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 242, column 5143: The link '?ngen-14?.html#CodeSystemATC2021-L01EJ' for "L01EJ" cannot be resolved
+== fsh-generated/resources/CodeSystem-napkon-immunosuppresive-medications.json ==
+== fsh-generated/resources/Condition-InfectionsComplicationPediatrics.json ==
+INFORMATION: Condition/InfectionsComplicationPediatrics: Condition.code.coding[0]: This element does not match any known slice defined in the profile https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/infectious-complications-pediatrics
+ERROR: Condition/InfectionsComplicationPediatrics: Condition.code: Condition.code.coding:sct: minimum required = 1, but only found 0 (from https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/infectious-complications-pediatrics)
+== fsh-generated/resources/Condition-covid19-complication-instance.json ==
+== fsh-generated/resources/Condition-fungal-infection-instance.json ==
+== fsh-generated/resources/Condition-instance-gastrointestinal-diseases-pediatrics.json ==
+INFORMATION: Condition/instance-gastrointestinal-diseases-pediatrics: Condition.code.coding[0]: This element does not match any known slice defined in the profile https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gastrointestinal-diseases-pediatrics
+== fsh-generated/resources/Condition-instance-gastrointestinal-diseases-pediatrics-icd10.json ==
+INFORMATION: Condition/instance-gastrointestinal-diseases-pediatrics-icd10: Condition.code.coding[0]: Code System URI 'http://fhir.de/CodeSystem/dimdi/icd-10-gm' is unknown so the code cannot be validated
+INFORMATION: Condition/instance-gastrointestinal-diseases-pediatrics-icd10: Condition.code.coding[0]: This element does not match any known slice defined in the profile https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gastrointestinal-diseases-pediatrics
+== fsh-generated/resources/Condition-instance-supportive-pharmacotherapy-pediatrics.json ==
+== fsh-generated/resources/ImplementationGuide-napkon-bih.json ==
+== fsh-generated/resources/MedicationStatement-immunosuppresive-permanent-medication-instance.json ==
+== fsh-generated/resources/Observation-instance-body-mass-index-pediatrics.json ==
+== fsh-generated/resources/Observation-instance-head-circumference-pediatrics.json ==
+== fsh-generated/resources/Observation-intensive-care-treatment-duration-instance.json ==
+== fsh-generated/resources/Observation-total-length-of-stay-instance.json ==
+== fsh-generated/resources/Patient-ExamplePatient.json ==
+INFORMATION: Patient/ExamplePatient: Patient.identifier[0]: This element does not match any known slice defined in the profile https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient
+INFORMATION: Patient/ExamplePatient: Patient.address[0]: This element does not match any known slice defined in the profile https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient
+== fsh-generated/resources/Procedure-electrocardiographic-ecg-procedure-instance.json ==
+INFORMATION: Procedure/electrocardiographic-ecg-procedure-instance: Procedure.category.coding[0]: This element does not match any known slice defined in the profile https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/electrocardiographic-ecg-procedure
+ERROR: Procedure/electrocardiographic-ecg-procedure-instance: Procedure.category: Procedure.category.coding:sct: minimum required = 1, but only found 0 (from https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/electrocardiographic-ecg-procedure)
+INFORMATION: Procedure/electrocardiographic-ecg-procedure-instance: Procedure.code.coding[0]: This element does not match any known slice defined in the profile https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/electrocardiographic-ecg-procedure
+ERROR: Procedure/electrocardiographic-ecg-procedure-instance: Procedure.code: Procedure.code.coding:sct: minimum required = 1, but only found 0 (from https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/electrocardiographic-ecg-procedure)
+== fsh-generated/resources/Procedure-thoracic-drainage-instance.json ==
+== fsh-generated/resources/StructureDefinition-cardiology-imaging-procedure.json ==
+WARNING: StructureDefinition.where(url = 'https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/cardiology-imaging-procedure'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-chronic-haematologic-diseases-pediatrics.json ==
+WARNING: StructureDefinition.where(url = 'https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-haematologic-diseases-pediatrics'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-covid19-complication-pediatrics.json ==
+== fsh-generated/resources/StructureDefinition-electrocardiographic-ecg-procedure.json ==
+== fsh-generated/resources/StructureDefinition-fungal-infection-pediatrics.json ==
+== fsh-generated/resources/StructureDefinition-gastrointestinal-diseases-pediatrics.json ==
+WARNING: StructureDefinition/gastrointestinal-diseases-pediatrics: StructureDefinition.differential.element[7].binding: The valueSet reference https://www.netzwerk-universitaetsmedizin.de/fhir//ValueSet/gastrointestinal-diseases-pediatrics-icd on element Condition.code.coding could not be resolved
+WARNING: StructureDefinition/gastrointestinal-diseases-pediatrics: StructureDefinition.differential.element[8].binding: The valueSet reference https://www.netzwerk-universitaetsmedizin.de/fhir//ValueSet/gastrointestinal-diseases-pediatrics on element Condition.code.coding could not be resolved
+WARNING: StructureDefinition/gastrointestinal-diseases-pediatrics: StructureDefinition.snapshot.element[30].binding: The valueSet reference https://www.netzwerk-universitaetsmedizin.de/fhir//ValueSet/gastrointestinal-diseases-pediatrics-icd on element Condition.code.coding could not be resolved
+WARNING: StructureDefinition/gastrointestinal-diseases-pediatrics: StructureDefinition.snapshot.element[31].binding: The valueSet reference https://www.netzwerk-universitaetsmedizin.de/fhir//ValueSet/gastrointestinal-diseases-pediatrics on element Condition.code.coding could not be resolved
+== fsh-generated/resources/StructureDefinition-imaging-procedure-cardiology.json ==
+WARNING: StructureDefinition.where(url = 'https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/imaging-procedure-cardiology'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-imaging-procedures.json ==
+WARNING: StructureDefinition.where(url = 'https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/imaging-procedures'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-immunosuppresive-permanent-medication-pediatrics.json ==
+== fsh-generated/resources/StructureDefinition-infectious-complications-pediatrics.json ==
+WARNING: StructureDefinition/infectious-complications-pediatrics: StructureDefinition.differential.element[4].binding: The valueSet reference https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/infectious-complications-sct on element Condition.code.coding could not be resolved
+WARNING: StructureDefinition/infectious-complications-pediatrics: StructureDefinition.snapshot.element[23].binding: The valueSet reference https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/infectious-complications-sct on element Condition.code.coding could not be resolved
+== fsh-generated/resources/StructureDefinition-intensive-care-treatment-duration-pediatrics.json ==
+== fsh-generated/resources/StructureDefinition-observation-birth-height-pediatrics.json ==
+WARNING: StructureDefinition.where(url = 'https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/observation-birth-height-pediatrics'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-observation-body-mass-index-pediatrics.json ==
+== fsh-generated/resources/StructureDefinition-observation-head-circumference-pediatrics.json ==
+== fsh-generated/resources/StructureDefinition-supportive-pharmacotherapy-pediatrics.json ==
+== fsh-generated/resources/StructureDefinition-thoracic-drainage-pediatrics.json ==
+== fsh-generated/resources/StructureDefinition-total-length-of-stay-pediatrics.json ==
+== fsh-generated/resources/ValueSet-bacterial-infectious-complications-sct.json ==
+ERROR: ValueSet.url: Resource id/url mismatch: bacterial-infectious-complications-sct/https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/imaging-category-sct
+== fsh-generated/resources/ValueSet-cardiology-diseases-codes.json ==
+ERROR: ValueSet.url: Resource id/url mismatch: cardiology-diseases-codes/https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/CardiologyDiseasesCodes
+== fsh-generated/resources/ValueSet-cardiology-imaging-procedures.json ==
+ERROR: ValueSet.url: Resource id/url mismatch: cardiology-imaging-procedures/https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/EcgCodes
+== fsh-generated/resources/ValueSet-chronic-haematologic-diseases-pediatrics.json ==
+== fsh-generated/resources/ValueSet-chronic-haematologic-diseases-pediatrics-icd.json ==
 WARNING: ValueSet/chronic-haematologic-diseases-pediatrics-icd: ValueSet.compose.include[0].concept[2].display: value should not start or finish with whitespace
 WARNING: ValueSet/chronic-haematologic-diseases-pediatrics-icd: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
 WARNING: ValueSet.where(id = 'chronic-haematologic-diseases-pediatrics-icd'): Error from server: Unable to provide support for code system http://fhir.de/CodeSystem/dimdi/icd-10-gm
-ERROR: /github/workspace/fsh-generated/resources/ValueSet-chronic-haematologic-diseases-pediatrics-icd: URL Mismatch http://fhir.de/napkon-bih/ValueSet/chronic-haematologic-diseases-pediatrics-icd vs http://example.org/fhir/ValueSet/chronic-haematologic-diseases-pediatrics-icd
-== /github/workspace/fsh-generated/resources/ValueSet-gastrointestinal-diseases-pediatrics.json ==
-ERROR: ValueSet.where(url = 'http://example.org/fhir/ValueSet/gastrointestinal-diseases-pediatrics'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-gastrointestinal-diseases-pediatrics.json - the canonical URL (http://fhir.de/napkon-bih/ValueSet/gastrointestinal-diseases-pediatrics) does not match the URL (http://example.org/fhir/ValueSet/gastrointestinal-diseases-pediatrics)
-WARNING: ValueSet/gastrointestinal-diseases-pediatrics: ValueSet.compose.include[0].concept[0].designation[0].use: A code with no system has no defined meaning. A system should be provided
-WARNING: ValueSet/gastrointestinal-diseases-pediatrics: ValueSet.compose.include[0].concept[1].designation[0].use: A code with no system has no defined meaning. A system should be provided
-WARNING: ValueSet/gastrointestinal-diseases-pediatrics: ValueSet.compose.include[0].concept[2].designation[0].use: A code with no system has no defined meaning. A system should be provided
-WARNING: ValueSet/gastrointestinal-diseases-pediatrics: ValueSet.compose.include[0].concept[3].designation[0].use: A code with no system has no defined meaning. A system should be provided
-WARNING: ValueSet/gastrointestinal-diseases-pediatrics: ValueSet.compose.include[0].concept[4].designation[0].use: A code with no system has no defined meaning. A system should be provided
-ERROR: /github/workspace/fsh-generated/resources/ValueSet-gastrointestinal-diseases-pediatrics: URL Mismatch http://fhir.de/napkon-bih/ValueSet/gastrointestinal-diseases-pediatrics vs http://example.org/fhir/ValueSet/gastrointestinal-diseases-pediatrics
-== /github/workspace/fsh-generated/resources/ValueSet-gastrointestinal-diseases-pediatrics-icd.json ==
-ERROR: ValueSet.where(url = 'http://example.org/fhir/ValueSet/gastrointestinal-diseases-pediatrics-icd'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-gastrointestinal-diseases-pediatrics-icd.json - the canonical URL (http://fhir.de/napkon-bih/ValueSet/gastrointestinal-diseases-pediatrics-icd) does not match the URL (http://example.org/fhir/ValueSet/gastrointestinal-diseases-pediatrics-icd)
+== fsh-generated/resources/ValueSet-covid19-complications.json ==
+WARNING: ValueSet/covid19-complications: ValueSet.compose[0].include[0].concept[8]: The code 11479008 is not valid in the system http://snomed.info/sct
+== fsh-generated/resources/ValueSet-drug-therapy-pediatrics.json ==
+== fsh-generated/resources/ValueSet-ecg-expressions.json ==
+ERROR: ValueSet.url: Resource id/url mismatch: ecg-expressions/https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/EcgCodes
+== fsh-generated/resources/ValueSet-fungal-infections.json ==
+== fsh-generated/resources/ValueSet-gastrointestinal-diseases-pediatrics.json ==
+== fsh-generated/resources/ValueSet-gastrointestinal-diseases-pediatrics-icd.json ==
 WARNING: ValueSet/gastrointestinal-diseases-pediatrics-icd: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
 WARNING: ValueSet.where(id = 'gastrointestinal-diseases-pediatrics-icd'): Error from server: Unable to provide support for code system http://fhir.de/CodeSystem/dimdi/icd-10-gm
-ERROR: /github/workspace/fsh-generated/resources/ValueSet-gastrointestinal-diseases-pediatrics-icd: URL Mismatch http://fhir.de/napkon-bih/ValueSet/gastrointestinal-diseases-pediatrics-icd vs http://example.org/fhir/ValueSet/gastrointestinal-diseases-pediatrics-icd
-== /github/workspace/fsh-generated/resources/ValueSet-syndromic-diseases-pediatrics.json ==
-ERROR: ValueSet.where(url = 'http://example.org/fhir/ValueSet/syndromic-diseases-pediatrics'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-syndromic-diseases-pediatrics.json - the canonical URL (http://fhir.de/napkon-bih/ValueSet/syndromic-diseases-pediatrics) does not match the URL (http://example.org/fhir/ValueSet/syndromic-diseases-pediatrics)
-ERROR: /github/workspace/fsh-generated/resources/ValueSet-syndromic-diseases-pediatrics: URL Mismatch http://fhir.de/napkon-bih/ValueSet/syndromic-diseases-pediatrics vs http://example.org/fhir/ValueSet/syndromic-diseases-pediatrics
-== /github/workspace/fsh-generated/resources/ValueSet-vaccine-type-covid-pediatrics.json ==
-ERROR: ValueSet.where(url = 'http://example.org/fhir/ValueSet/vaccine-type-covid-pediatrics'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-vaccine-type-covid-pediatrics.json - the canonical URL (http://fhir.de/napkon-bih/ValueSet/vaccine-type-covid-pediatrics) does not match the URL (http://example.org/fhir/ValueSet/vaccine-type-covid-pediatrics)
+== fsh-generated/resources/ValueSet-imaging-category-sct.json ==
+WARNING: ValueSet/imaging-category-sct: ValueSet.compose.include[0].concept[0].display: value should not start or finish with whitespace
+== fsh-generated/resources/ValueSet-imaging-pediatrics.json ==
+== fsh-generated/resources/ValueSet-imaging-procedures-cardiology.json ==
+ERROR: ValueSet.url: Resource id/url mismatch: imaging-procedures-cardiology/https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/EcgCodes
+== fsh-generated/resources/ValueSet-immunosuppressive-permament-medications.json ==
+== fsh-generated/resources/ValueSet-medication-pediatrics.json ==
+== fsh-generated/resources/ValueSet-pediatric-drug-therapy-codes.json ==
+== fsh-generated/resources/ValueSet-pediatric-imaging-codes.json ==
+== fsh-generated/resources/ValueSet-pediatric-medication-codes.json ==
+== fsh-generated/resources/ValueSet-restricted-event-status.json ==
+== fsh-generated/resources/ValueSet-syndromic-diseases-pediatrics.json ==
+== fsh-generated/resources/ValueSet-vaccine-type-covid-pediatrics.json ==
 WARNING: ValueSet/vaccine-type-covid-pediatrics: ValueSet.compose.include[0].concept[0].designation[0].use: A code with no system has no defined meaning. A system should be provided
 WARNING: ValueSet/vaccine-type-covid-pediatrics: ValueSet.compose.include[0].concept[1].designation[0].use: A code with no system has no defined meaning. A system should be provided
-ERROR: /github/workspace/fsh-generated/resources/ValueSet-vaccine-type-covid-pediatrics: URL Mismatch http://fhir.de/napkon-bih/ValueSet/vaccine-type-covid-pediatrics vs http://example.org/fhir/ValueSet/vaccine-type-covid-pediatrics
-== /github/workspace/fsh-generated/resources/ValueSet-vs-antibiotic-therapy-procedure-pediatrics.json ==
-ERROR: ValueSet.where(url = 'http://example.org/fhir/ValueSet/vs-antibiotic-therapy-procedure-pediatrics'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-vs-antibiotic-therapy-procedure-pediatrics.json - the canonical URL (http://fhir.de/napkon-bih/ValueSet/vs-antibiotic-therapy-procedure-pediatrics) does not match the URL (http://example.org/fhir/ValueSet/vs-antibiotic-therapy-procedure-pediatrics)
-ERROR: /github/workspace/fsh-generated/resources/ValueSet-vs-antibiotic-therapy-procedure-pediatrics: URL Mismatch http://fhir.de/napkon-bih/ValueSet/vs-antibiotic-therapy-procedure-pediatrics vs http://example.org/fhir/ValueSet/vs-antibiotic-therapy-procedure-pediatrics
-== /github/workspace/fsh-generated/resources/ValueSet-vs-non-pulmonary-bacterial-coinfection-pediatrics.json ==
-ERROR: ValueSet.where(url = 'http://example.org/fhir/ValueSet/vs-non-pulmonary-bacterial-coinfection-pediatrics'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-vs-non-pulmonary-bacterial-coinfection-pediatrics.json - the canonical URL (http://fhir.de/napkon-bih/ValueSet/vs-non-pulmonary-bacterial-coinfection-pediatrics) does not match the URL (http://example.org/fhir/ValueSet/vs-non-pulmonary-bacterial-coinfection-pediatrics)
+== fsh-generated/resources/ValueSet-viral-infectious-complications-sct.json ==
+ERROR: ValueSet.url: Resource id/url mismatch: viral-infectious-complications-sct/https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/imaging-category-sct
+== fsh-generated/resources/ValueSet-vs-antibiotic-therapy-procedure-pediatrics.json ==
+== fsh-generated/resources/ValueSet-vs-non-pulmonary-bacterial-coinfection-pediatrics.json ==
 WARNING: ValueSet/vs-non-pulmonary-bacterial-coinfection-pediatrics: ValueSet.compose.include[0].concept[0].display: value should not start or finish with whitespace
 WARNING: ValueSet/vs-non-pulmonary-bacterial-coinfection-pediatrics: ValueSet.compose.include[0].concept[0].designation[0].use: A code with no system has no defined meaning. A system should be provided
 WARNING: ValueSet/vs-non-pulmonary-bacterial-coinfection-pediatrics: ValueSet.compose.include[0].concept[1].designation[0].use: A code with no system has no defined meaning. A system should be provided
@@ -123,6 +249,6 @@ WARNING: ValueSet/vs-non-pulmonary-bacterial-coinfection-pediatrics: ValueSet.co
 WARNING: ValueSet/vs-non-pulmonary-bacterial-coinfection-pediatrics: ValueSet.compose.include[0].concept[9].display: value should not start or finish with whitespace
 WARNING: ValueSet/vs-non-pulmonary-bacterial-coinfection-pediatrics: ValueSet.compose.include[0].concept[9].designation[0].use: A code with no system has no defined meaning. A system should be provided
 WARNING: ValueSet/vs-non-pulmonary-bacterial-coinfection-pediatrics: ValueSet.compose.include[0].concept[10].designation[0].use: A code with no system has no defined meaning. A system should be provided
-ERROR: /github/workspace/fsh-generated/resources/ValueSet-vs-non-pulmonary-bacterial-coinfection-pediatrics: URL Mismatch http://fhir.de/napkon-bih/ValueSet/vs-non-pulmonary-bacterial-coinfection-pediatrics vs http://example.org/fhir/ValueSet/vs-non-pulmonary-bacterial-coinfection-pediatrics
-== /github/workspace/input/napkon-bih.xml ==
-WARNING: ImplementationGuide/hl7.de.fhir.napkon-bih: ImplementationGuide: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/ValueSet-vs-supportive-pharmacotherapy-pediatrics.json ==
+WARNING: ValueSet/vs-supportive-pharmacotherapy-pediatrics: ValueSet.compose.include[0].concept[0].designation[0].use: A code with no system has no defined meaning. A system should be provided
+WARNING: ValueSet/vs-supportive-pharmacotherapy-pediatrics: ValueSet.compose.include[0].concept[1].designation[0].use: A code with no system has no defined meaning. A system should be provided

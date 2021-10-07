@@ -1,12 +1,12 @@
 {
-  "url": "http://fhir.de/napkon-bih/ImplementationGuide/napkon-bih",
-  "name": "NAPKON-BIH",
-  "package-id": "hl7.de.fhir.napkon-bih",
-  "ig-ver": "0.1.0-test",
-  "date": "Fri, 16 Jul, 2021 11:49:43 +0000",
-  "errs": 36,
-  "warnings": 44,
-  "hints": 0,
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ImplementationGuide/napkon-bih",
+  "name": "NAPKONBIH",
+  "package-id": "napkon-bih",
+  "ig-ver": "0.1.0",
+  "date": "Thu, 07 Oct, 2021 16:55:37 +0000",
+  "errs": 13,
+  "warnings": 46,
+  "hints": 9,
   "version": "4.0.1",
   "tool": "4.6.0 (3)"
 }

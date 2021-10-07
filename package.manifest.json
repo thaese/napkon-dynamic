@@ -1,6 +1,6 @@
 {
-  "version": "0.1.0-test",
+  "version": "0.1.0",
   "fhirVersion": "[4.0.1]",
-  "date": "20210716114914",
-  "name": "hl7.de.fhir.napkon-bih"
+  "date": "20211007165443",
+  "name": "napkon-bih"
 }

@@ -1,0 +1,74 @@
+{
+  "resourceType": "ValueSet",
+  "id": "bacterial-infectious-complications-sct",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=91428005\">91428005</a></td><td>Haemophilus influenzae infection (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=77116006\">77116006</a></td><td>Infection caused by Bordetella parapertussis (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=186464008\">186464008</a></td><td>Mycoplasma infection (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=105629000\">105629000</a></td><td>Chlamydial infection (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=26726000\">26726000</a></td><td>Legionella infection (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=95883001\">95883001</a></td><td>Bacterial meningitis (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=48245008\">48245008</a></td><td>Bacterial arthritis (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=61011009\">61011009</a></td><td>Bacterial osteomyelitis (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=45816000\">45816000</a></td><td>Pyelonephritis (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=301183007\">301183007</a></td><td>Bacterial endocarditis (disorder)</td></tr></table></li></ul></div>"
+  },
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/imaging-category-sct",
+  "version": "0.1.0",
+  "name": "BacterialInfectiousDiseases",
+  "status": "draft",
+  "date": "2021-10-04",
+  "publisher": "BIH @ Charité",
+  "contact": [
+    {
+      "name": "BIH @ Charité",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.netzwerk-universitaetsmedizin.de"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "91428005",
+            "display": "Haemophilus influenzae infection (disorder)"
+          },
+          {
+            "code": "77116006",
+            "display": "Infection caused by Bordetella parapertussis (disorder)"
+          },
+          {
+            "code": "186464008",
+            "display": "Mycoplasma infection (disorder)"
+          },
+          {
+            "code": "105629000",
+            "display": "Chlamydial infection (disorder)"
+          },
+          {
+            "code": "26726000",
+            "display": "Legionella infection (disorder)"
+          },
+          {
+            "code": "95883001",
+            "display": "Bacterial meningitis (disorder)"
+          },
+          {
+            "code": "48245008",
+            "display": "Bacterial arthritis (disorder)"
+          },
+          {
+            "code": "61011009",
+            "display": "Bacterial osteomyelitis (disorder)"
+          },
+          {
+            "code": "45816000",
+            "display": "Pyelonephritis (disorder)"
+          },
+          {
+            "code": "301183007",
+            "display": "Bacterial endocarditis (disorder)"
+          }
+        ]
+      }
+    ]
+  }
+}

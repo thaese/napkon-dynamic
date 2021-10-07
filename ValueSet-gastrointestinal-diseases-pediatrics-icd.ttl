@@ -5,37 +5,30 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.de/napkon-bih/ValueSet/gastrointestinal-diseases-pediatrics-icd> a fhir:ValueSet;
+<https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/gastrointestinal-diseases-pediatrics-icd> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "gastrointestinal-diseases-pediatrics-icd"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>http://fhir.de/CodeSystem/dimdi/icd-10-gm</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>K59.9</td><td>Funktionelle Darmstörung, nicht näher bezeichnet</td></tr><tr><td>K90.0</td><td>Zöliakie</td></tr><tr><td>Z91.0</td><td>Kuhmilchproteinallergie</td></tr><tr><td>K83.9</td><td>Gallengangserkrankung</td></tr></table></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>http://fhir.de/CodeSystem/dimdi/icd-10-gm</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>K59.9</td><td>Funktionelle Darmstörung, nicht näher bezeichnet</td></tr><tr><td>K52.9</td><td>Nichtinfektiöse Gastroenteritis und Kolitis, nicht näher bezeichnet</td></tr><tr><td>K90.0</td><td>Zöliakie</td></tr><tr><td>Z91.0</td><td>Kuhmilchproteinallergie</td></tr><tr><td>K83.9</td><td>Gallengangserkrankung</td></tr></table></li></ul></div>"
   ];
-  fhir:ValueSet.url [ fhir:value "http://example.org/fhir/ValueSet/gastrointestinal-diseases-pediatrics-icd"];
-  fhir:ValueSet.version [ fhir:value "0.1.0-test"];
+  fhir:ValueSet.url [ fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/gastrointestinal-diseases-pediatrics-icd"];
+  fhir:ValueSet.version [ fhir:value "0.1.0"];
   fhir:ValueSet.name [ fhir:value "GastrointestinalDiseasesPediatricsICD"];
   fhir:ValueSet.title [ fhir:value "Gastrointestinal Diseases Pediatrics ICD-VS"];
   fhir:ValueSet.status [ fhir:value "draft"];
-  fhir:ValueSet.date [ fhir:value "2021-07-16T11:49:43+00:00"^^xsd:dateTime];
-  fhir:ValueSet.publisher [ fhir:value "Berlin Institute of Health @ Charité"];
+  fhir:ValueSet.date [ fhir:value "2021-09-10"^^xsd:date];
+  fhir:ValueSet.publisher [ fhir:value "BIH @ Charité"];
   fhir:ValueSet.contact [
      fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "BIH @ Charité" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://bihealth.org" ]
+       fhir:ContactPoint.value [ fhir:value "https://www.netzwerk-universitaetsmedizin.de" ]
      ]
   ];
   fhir:ValueSet.description [ fhir:value "Gastrointestinal diseases in the context of pediatrics and Covid-19"];
-  fhir:ValueSet.jurisdiction [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
-       fhir:Coding.code [ fhir:value "001" ]
-     ]
-  ];
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
@@ -46,14 +39,18 @@
          fhir:ValueSet.compose.include.concept.display [ fhir:value "Funktionelle Darmstörung, nicht näher bezeichnet" ]
        ], [
          fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "K52.9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nichtinfektiöse Gastroenteritis und Kolitis, nicht näher bezeichnet" ]
+       ], [
+         fhir:index 2;
          fhir:ValueSet.compose.include.concept.code [ fhir:value "K90.0" ];
          fhir:ValueSet.compose.include.concept.display [ fhir:value "Zöliakie" ]
        ], [
-         fhir:index 2;
+         fhir:index 3;
          fhir:ValueSet.compose.include.concept.code [ fhir:value "Z91.0" ];
          fhir:ValueSet.compose.include.concept.display [ fhir:value "Kuhmilchproteinallergie" ]
        ], [
-         fhir:index 3;
+         fhir:index 4;
          fhir:ValueSet.compose.include.concept.code [ fhir:value "K83.9" ];
          fhir:ValueSet.compose.include.concept.display [ fhir:value "Gallengangserkrankung" ]
        ]
@@ -62,7 +59,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://fhir.de/napkon-bih/ValueSet/gastrointestinal-diseases-pediatrics-icd.ttl> a owl:Ontology;
+<https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/gastrointestinal-diseases-pediatrics-icd.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
