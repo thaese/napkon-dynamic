@@ -1,0 +1,69 @@
+{
+  "resourceType": "ValueSet",
+  "id": "regular-alcohol-intake",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-napkon-vaccination-module.html\"><code>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-8001\">8001</a></td><td>Einmal im Monat oder seltener</td></tr><tr><td><a href=\"CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-8002\">8002</a></td><td>2-4 Mal im Monat</td></tr><tr><td><a href=\"CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-8003\">8003</a></td><td>2-3 Mal pro Woche</td></tr><tr><td><a href=\"CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-8004\">8004</a></td><td>4 Mal oder öfter die Woche</td></tr><tr><td><a href=\"CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-8005\">8005</a></td><td>Nicht mehr (früher gelegentlich)</td></tr></table></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373067005\">373067005</a></td><td>No (qualifier value)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373068000\">373068000</a></td><td>Undetermined (qualifier value)</td></tr></table></li></ul></div>"
+  },
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/regular-alcohol-intake",
+  "version": "0.1.0",
+  "name": "RegularAlcoholIntake",
+  "title": "Regular Alcohol Intake",
+  "status": "active",
+  "date": "2021-10-07T21:11:53+00:00",
+  "publisher": "BIH @ Charité",
+  "contact": [
+    {
+      "name": "BIH @ Charité",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.netzwerk-universitaetsmedizin.de"
+        }
+      ]
+    }
+  ],
+  "description": "Frequency of alcoholic beverage intake",
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module",
+        "concept": [
+          {
+            "code": "8001",
+            "display": "Einmal im Monat oder seltener"
+          },
+          {
+            "code": "8002",
+            "display": "2-4 Mal im Monat"
+          },
+          {
+            "code": "8003",
+            "display": "2-3 Mal pro Woche"
+          },
+          {
+            "code": "8004",
+            "display": "4 Mal oder öfter die Woche"
+          },
+          {
+            "code": "8005",
+            "display": "Nicht mehr (früher gelegentlich)"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "373067005",
+            "display": "No (qualifier value)"
+          },
+          {
+            "code": "373068000",
+            "display": "Undetermined (qualifier value)"
+          }
+        ]
+      }
+    ]
+  }
+}

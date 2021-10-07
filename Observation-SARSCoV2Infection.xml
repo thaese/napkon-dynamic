@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="SARSCoV2Infection"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov2-infection-vaccination"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 1240581000000104}">Severe acute respiratory syndrome coronavirus 2 detected (finding)</span></p><p><b>effective</b>: Oct 1, 2021, 11:06:00 AM</p><p><b>value</b>: <span title="Codes: {http://snomed.info/sct 260415000}">Not detected (qualifier value)</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="20210731"/>
+      <code value="1240581000000104"/>
+      <display value="Severe acute respiratory syndrome coronavirus 2 detected (finding)"/>
+    </coding>
+  </code>
+  <effectiveDateTime value="2021-10-01T13:06:00+02:00"/>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="260415000"/>
+      <display value="Not detected (qualifier value)"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

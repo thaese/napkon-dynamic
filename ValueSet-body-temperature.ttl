@@ -1,0 +1,78 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/body-temperature> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "body-temperature"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373068000\">373068000</a></td><td>Undetermined (qualifier value)</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-napkon-vaccination-module.html\"><code>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-7001\">7001</a></td><td>Weniger als 37,5°C</td></tr><tr><td><a href=\"CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-7002\">7002</a></td><td>37,5°C bis 37,9°C</td></tr><tr><td><a href=\"CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-7003\">7003</a></td><td>38,0°C bis 38,4°C</td></tr><tr><td><a href=\"CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-7004\">7004</a></td><td>38,5°C bis 38,9°C</td></tr><tr><td><a href=\"CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-7005\">7005</a></td><td>39,0°C bis 40,0°C</td></tr><tr><td><a href=\"CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-7006\">7006</a></td><td>Mehr als 40°C</td></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/body-temperature"];
+  fhir:ValueSet.version [ fhir:value "0.1.0"];
+  fhir:ValueSet.name [ fhir:value "BodyTemperature"];
+  fhir:ValueSet.title [ fhir:value "Body Temperature"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2021-10-07T21:11:53+00:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "BIH @ Charité"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "BIH @ Charité" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.netzwerk-universitaetsmedizin.de" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "Body temperature categories"];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "373068000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Undetermined (qualifier value)" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "7001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Weniger als 37,5°C" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "7002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "37,5°C bis 37,9°C" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "7003" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "38,0°C bis 38,4°C" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "7004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "38,5°C bis 38,9°C" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "7005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "39,0°C bis 40,0°C" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "7006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mehr als 40°C" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/body-temperature.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

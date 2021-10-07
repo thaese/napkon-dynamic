@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="SARSCoV2Variant"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov2-variant"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {http://loinc.org 96741-4}">SARS-CoV-2 (COVID-19) variant [Type] in Specimen by Sequencing</span></p><p><b>value</b>: B.1.617.2</p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="96741-4"/>
+      <display value="SARS-CoV-2 (COVID-19) variant [Type] in Specimen by Sequencing"/>
+    </coding>
+  </code>
+  <valueString value="B.1.617.2"/>
+</Observation>

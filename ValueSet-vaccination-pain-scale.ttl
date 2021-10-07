@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/vaccination-pain-scale> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "vaccination-pain-scale"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=81765008\">81765008</a></td><td>No pain (situation)</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-napkon-vaccination-module.html\"><code>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-3001\">3001</a></td><td>Leichte Schmerzen, diese stören nicht bei täglichen Aktivitäten</td></tr><tr><td><a href=\"CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-3002\">3002</a></td><td>Mäßige Schmerzen, diese stören bei täglichen Aktivitäten</td></tr><tr><td><a href=\"CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-3003\">3003</a></td><td>Sehr starke Schmerzen, die dazu führen, dass täglichen Aktivitäten nicht mehr durchgeführt werden können</td></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/vaccination-pain-scale"];
+  fhir:ValueSet.version [ fhir:value "0.1.0"];
+  fhir:ValueSet.name [ fhir:value "VaccinationPainScale"];
+  fhir:ValueSet.title [ fhir:value "Vaccination pain scale"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2021-10-07T21:11:53+00:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "BIH @ Charité"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "BIH @ Charité" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.netzwerk-universitaetsmedizin.de" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "Pain intensity at vaccine injection site"];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "81765008" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "No pain (situation)" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Leichte Schmerzen, diese stören nicht bei täglichen Aktivitäten" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mäßige Schmerzen, diese stören bei täglichen Aktivitäten" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3003" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sehr starke Schmerzen, die dazu führen, dass täglichen Aktivitäten nicht mehr durchgeführt werden können" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/vaccination-pain-scale.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

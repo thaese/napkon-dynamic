@@ -1,0 +1,26 @@
+{
+  "resourceType": "Condition",
+  "id": "GeneralComplaintsAfterVaccination",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/general-complaints-after-vaccination"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 43724002}\">Chill (finding)</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: id: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>recordedDate</b>: Feb 19, 2021, 8:30:35 AM</p></div>"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "43724002",
+        "display": "Chill (finding)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ExamplePatient"
+  },
+  "recordedDate": "2021-02-19T09:30:35+01:00"
+}

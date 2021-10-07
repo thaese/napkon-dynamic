@@ -1,0 +1,34 @@
+{
+  "resourceType": "Observation",
+  "id": "SARSCoV2Infection",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov2-infection-vaccination"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 1240581000000104}\">Severe acute respiratory syndrome coronavirus 2 detected (finding)</span></p><p><b>effective</b>: Oct 1, 2021, 11:06:00 AM</p><p><b>value</b>: <span title=\"Codes: {http://snomed.info/sct 260415000}\">Not detected (qualifier value)</span></p></div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "20210731",
+        "code": "1240581000000104",
+        "display": "Severe acute respiratory syndrome coronavirus 2 detected (finding)"
+      }
+    ]
+  },
+  "effectiveDateTime": "2021-10-01T13:06:00+02:00",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "260415000",
+        "display": "Not detected (qualifier value)"
+      }
+    ]
+  }
+}

@@ -4,6 +4,34 @@
   "fhirVersion": "4.0.1",
   "extensions": [],
   "profiles": {
+    "Observation": [
+      {
+        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/total-length-of-stay-pediatrics",
+        "title": "Total length of stay"
+      },
+      {
+        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vaccination-injection-site-erythema",
+        "title": "Vaccination Injection Site Erythema"
+      },
+      {
+        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vaccination-injection-site-pain-movement",
+        "title": "Vaccination Injection Site Pain Movement"
+      },
+      {
+        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vaccination-injection-site-pain-rest",
+        "title": "Vaccination Injection Site Pain Rest"
+      },
+      {
+        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vaccination-injection-site-swelling",
+        "title": "Vaccination Injection Site Swelling"
+      }
+    ],
+    "MedicationStatement": [
+      {
+        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunosuppresive-permanent-medication-pediatrics",
+        "title": "Immunosuppresive Permanent Medication"
+      }
+    ],
     "Procedure": [
       {
         "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/thoracic-drainage-pediatrics",
@@ -16,16 +44,10 @@
         "title": "Supportive Pharmacotherapy"
       }
     ],
-    "MedicationStatement": [
+    "Immunization": [
       {
-        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunosuppresive-permanent-medication-pediatrics",
-        "title": "Immunosuppresive Permanent Medication"
-      }
-    ],
-    "Observation": [
-      {
-        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/total-length-of-stay-pediatrics",
-        "title": "Total length of stay"
+        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/covid-vaccination",
+        "title": "CovidVaccination"
       }
     ]
   },
@@ -33,8 +55,22 @@
     "http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum": [
       "Procedure"
     ],
+    "http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit": [
+      "Condition.code.coding"
+    ],
+    "http://fhir.de/StructureDefinition/icd-10-gm-mehrfachcodierungs-kennzeichen": [
+      "Condition.code.coding"
+    ],
+    "http://fhir.de/StructureDefinition/lebensphase": [
+      "Condition.onset[x].end",
+      "Condition.onset[x].start"
+    ],
     "http://fhir.de/StructureDefinition/seitenlokalisation": [
+      "Condition.code.coding",
       "Procedure.code.coding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/condition-related": [
+      "Condition"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
@@ -53,6 +89,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"

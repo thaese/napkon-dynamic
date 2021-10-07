@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="ImmunosuppressiveTherapy"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunosuppressive-therapy"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: not-done</p><p><b>subject</b>: <a href="Patient-ExamplePatient.html">Generated Summary: id: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p></div>
+  </text>
+  <status value="not-done"/>
+  <subject>
+    <reference value="Patient/ExamplePatient"/>
+  </subject>
+</Procedure>

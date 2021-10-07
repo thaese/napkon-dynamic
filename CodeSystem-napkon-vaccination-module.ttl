@@ -1,0 +1,222 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "napkon-vaccination-module"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">q1001<a name=\"napkon-vaccination-module-q1001\"> </a></td><td>Willingness for additional SARS-CoV-2 vaccination if recommended</td></tr><tr><td style=\"white-space:nowrap\">q1004<a name=\"napkon-vaccination-module-q1004\"> </a></td><td>Medical treatment for actual or potential adverse events</td></tr><tr><td style=\"white-space:nowrap\">q1005<a name=\"napkon-vaccination-module-q1005\"> </a></td><td>General complaints after vaccination</td></tr><tr><td style=\"white-space:nowrap\">q1006<a name=\"napkon-vaccination-module-q1006\"> </a></td><td>Course of SARS-CoV-2 Infection</td></tr><tr><td style=\"white-space:nowrap\">q1007<a name=\"napkon-vaccination-module-q1007\"> </a></td><td>Injection site pain at rest (finding)</td></tr><tr><td style=\"white-space:nowrap\">q1008<a name=\"napkon-vaccination-module-q1008\"> </a></td><td>Injection site pain with pressure or movement (finding)</td></tr><tr><td style=\"white-space:nowrap\">0001<a name=\"napkon-vaccination-module-0001\"> </a></td><td>Comirnaty (BioNTech/Pfizer)</td></tr><tr><td style=\"white-space:nowrap\">0002<a name=\"napkon-vaccination-module-0002\"> </a></td><td>COVID-19 Vaccine Moderna (Moderna Biotech)</td></tr><tr><td style=\"white-space:nowrap\">0003<a name=\"napkon-vaccination-module-0003\"> </a></td><td>Vaxzevria (AstraZeneca AB)</td></tr><tr><td style=\"white-space:nowrap\">0004<a name=\"napkon-vaccination-module-0004\"> </a></td><td>COVID-19 Vaccine Janssen (Janssen-Cilag/Johnson &amp; Johnson)</td></tr><tr><td style=\"white-space:nowrap\">1001<a name=\"napkon-vaccination-module-1001\"> </a></td><td>Nicht erkrankt (keine Symptome)</td></tr><tr><td style=\"white-space:nowrap\">1002<a name=\"napkon-vaccination-module-1002\"> </a></td><td>Erkrankt und zu Hause</td></tr><tr><td style=\"white-space:nowrap\">1003<a name=\"napkon-vaccination-module-1003\"> </a></td><td>Erkrankt und im Krankenhaus ohne Sauerstofftherapie</td></tr><tr><td style=\"white-space:nowrap\">1004<a name=\"napkon-vaccination-module-1004\"> </a></td><td>Erkrankt und im Krankenhaus mit Sauerstofftherapie</td></tr><tr><td style=\"white-space:nowrap\">1005<a name=\"napkon-vaccination-module-1005\"> </a></td><td>Erkrankt und im Krankenhaus auf einer Intensivstation</td></tr><tr><td style=\"white-space:nowrap\">2001<a name=\"napkon-vaccination-module-2001\"> </a></td><td>Um mich vor einer Infektion mit SARS-CoV-2 bzw. vor COVID-19 zu schützen</td></tr><tr><td style=\"white-space:nowrap\">2002<a name=\"napkon-vaccination-module-2002\"> </a></td><td>Um mein privates Umfeld vor einer Infektion mit SARS-CoV-2 bzw. COVID-19 zu schützen</td></tr><tr><td style=\"white-space:nowrap\">2003<a name=\"napkon-vaccination-module-2003\"> </a></td><td>Um mein Arbetsfeld vor einer Infektion mit SARS-CoV-2 bzw. COVID-19 zu schützen</td></tr><tr><td style=\"white-space:nowrap\">2004<a name=\"napkon-vaccination-module-2004\"> </a></td><td>Weil alle sich impfen lassen</td></tr><tr><td style=\"white-space:nowrap\">2005<a name=\"napkon-vaccination-module-2005\"> </a></td><td>Weil ich befürchte aufgrund meines Impfstatus' benachteiligt zu werden (z.B. Reiseverbot, Arbeitsverbot)</td></tr><tr><td style=\"white-space:nowrap\">3001<a name=\"napkon-vaccination-module-3001\"> </a></td><td>Leichte Schmerzen, diese stören nicht bei täglichen Aktivitäten</td></tr><tr><td style=\"white-space:nowrap\">3002<a name=\"napkon-vaccination-module-3002\"> </a></td><td>Mäßige Schmerzen, diese stören bei täglichen Aktivitäten</td></tr><tr><td style=\"white-space:nowrap\">3003<a name=\"napkon-vaccination-module-3003\"> </a></td><td>Sehr starke Schmerzen, die dazu führen, dass täglichen Aktivitäten nicht mehr durchgeführt werden können</td></tr><tr><td style=\"white-space:nowrap\">4001<a name=\"napkon-vaccination-module-4001\"> </a></td><td>Kleiner als 2,5 Zentimeter</td></tr><tr><td style=\"white-space:nowrap\">4002<a name=\"napkon-vaccination-module-4002\"> </a></td><td>Zwischen 2,5 und 5 Zentimeter</td></tr><tr><td style=\"white-space:nowrap\">4003<a name=\"napkon-vaccination-module-4003\"> </a></td><td>Zwischen 5,1 und 10 Zentimeter</td></tr><tr><td style=\"white-space:nowrap\">4004<a name=\"napkon-vaccination-module-4004\"> </a></td><td>Größer als 10 Zentimeter</td></tr><tr><td style=\"white-space:nowrap\">6001<a name=\"napkon-vaccination-module-6001\"> </a></td><td>Ja, Behandlung in Arztpraxis oder Rettungsstelle</td></tr><tr><td style=\"white-space:nowrap\">6002<a name=\"napkon-vaccination-module-6002\"> </a></td><td>Ja, Behandlung mit Aufnahme im Krankenhaus</td></tr><tr><td style=\"white-space:nowrap\">7001<a name=\"napkon-vaccination-module-7001\"> </a></td><td>Weniger als 37,5°C</td></tr><tr><td style=\"white-space:nowrap\">7002<a name=\"napkon-vaccination-module-7002\"> </a></td><td>37,5°C bis 37,9°C</td></tr><tr><td style=\"white-space:nowrap\">7003<a name=\"napkon-vaccination-module-7003\"> </a></td><td>38,0°C bis 38,4°C</td></tr><tr><td style=\"white-space:nowrap\">7004<a name=\"napkon-vaccination-module-7004\"> </a></td><td>38,5°C bis 38,9°C</td></tr><tr><td style=\"white-space:nowrap\">7005<a name=\"napkon-vaccination-module-7005\"> </a></td><td>39,0°C bis 40,0°C</td></tr><tr><td style=\"white-space:nowrap\">7006<a name=\"napkon-vaccination-module-7006\"> </a></td><td>Mehr als 40°C</td></tr><tr><td style=\"white-space:nowrap\">8001<a name=\"napkon-vaccination-module-8001\"> </a></td><td>Einmal im Monat oder seltener</td></tr><tr><td style=\"white-space:nowrap\">8002<a name=\"napkon-vaccination-module-8002\"> </a></td><td>2-4 Mal im Monat</td></tr><tr><td style=\"white-space:nowrap\">8003<a name=\"napkon-vaccination-module-8003\"> </a></td><td>2-3 Mal pro Woche</td></tr><tr><td style=\"white-space:nowrap\">8004<a name=\"napkon-vaccination-module-8004\"> </a></td><td>4 Mal oder öfter die Woche</td></tr><tr><td style=\"white-space:nowrap\">8005<a name=\"napkon-vaccination-module-8005\"> </a></td><td>Nicht mehr (früher gelegentlich)</td></tr><tr><td style=\"white-space:nowrap\">9001<a name=\"napkon-vaccination-module-9001\"> </a></td><td>0,5 bis 1 alkoholische Getränke pro Tag</td></tr><tr><td style=\"white-space:nowrap\">9002<a name=\"napkon-vaccination-module-9002\"> </a></td><td>1,5 bis 2 alkoholische Getränke pro Tag</td></tr><tr><td style=\"white-space:nowrap\">9003<a name=\"napkon-vaccination-module-9003\"> </a></td><td>2,5 bis 3 alkoholische Getränke pro Tag</td></tr><tr><td style=\"white-space:nowrap\">9004<a name=\"napkon-vaccination-module-9004\"> </a></td><td>3,5 bis 4,5 alkoholische Getränke pro Tag</td></tr><tr><td style=\"white-space:nowrap\">9005<a name=\"napkon-vaccination-module-9005\"> </a></td><td>5 oder mehr alkoholische Getränke pro Tag</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "NapkonVaccinationModule"];
+  fhir:CodeSystem.title [ fhir:value "NapkonVaccinationModule"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2021-10-07T21:11:53+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "BIH @ Charité"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "BIH @ Charité" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.netzwerk-universitaetsmedizin.de" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "NAPKON Vaccination Module Code System - Collection of vaccination module-specific codes that are missing from common terminologies such as SNOMED CT"];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "45"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "q1001" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Willingness for additional SARS-CoV-2 vaccination if recommended" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "q1004" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Medical treatment for actual or potential adverse events" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "q1005" ];
+     fhir:CodeSystem.concept.display [ fhir:value "General complaints after vaccination" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "q1006" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Course of SARS-CoV-2 Infection" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "q1007" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Injection site pain at rest (finding)" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "q1008" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Injection site pain with pressure or movement (finding)" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "0001" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Comirnaty (BioNTech/Pfizer)" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "0002" ];
+     fhir:CodeSystem.concept.display [ fhir:value "COVID-19 Vaccine Moderna (Moderna Biotech)" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "0003" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Vaxzevria (AstraZeneca AB)" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "0004" ];
+     fhir:CodeSystem.concept.display [ fhir:value "COVID-19 Vaccine Janssen (Janssen-Cilag/Johnson & Johnson)" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "1001" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nicht erkrankt (keine Symptome)" ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "1002" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Erkrankt und zu Hause" ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "1003" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Erkrankt und im Krankenhaus ohne Sauerstofftherapie" ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "1004" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Erkrankt und im Krankenhaus mit Sauerstofftherapie" ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "1005" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Erkrankt und im Krankenhaus auf einer Intensivstation" ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "2001" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Um mich vor einer Infektion mit SARS-CoV-2 bzw. vor COVID-19 zu schützen" ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "2002" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Um mein privates Umfeld vor einer Infektion mit SARS-CoV-2 bzw. COVID-19 zu schützen" ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "2003" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Um mein Arbetsfeld vor einer Infektion mit SARS-CoV-2 bzw. COVID-19 zu schützen" ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "2004" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Weil alle sich impfen lassen" ]
+  ], [
+     fhir:index 19;
+     fhir:CodeSystem.concept.code [ fhir:value "2005" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Weil ich befürchte aufgrund meines Impfstatus' benachteiligt zu werden (z.B. Reiseverbot, Arbeitsverbot)" ]
+  ], [
+     fhir:index 20;
+     fhir:CodeSystem.concept.code [ fhir:value "3001" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Leichte Schmerzen, diese stören nicht bei täglichen Aktivitäten" ]
+  ], [
+     fhir:index 21;
+     fhir:CodeSystem.concept.code [ fhir:value "3002" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mäßige Schmerzen, diese stören bei täglichen Aktivitäten" ]
+  ], [
+     fhir:index 22;
+     fhir:CodeSystem.concept.code [ fhir:value "3003" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sehr starke Schmerzen, die dazu führen, dass täglichen Aktivitäten nicht mehr durchgeführt werden können" ]
+  ], [
+     fhir:index 23;
+     fhir:CodeSystem.concept.code [ fhir:value "4001" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Kleiner als 2,5 Zentimeter" ]
+  ], [
+     fhir:index 24;
+     fhir:CodeSystem.concept.code [ fhir:value "4002" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Zwischen 2,5 und 5 Zentimeter" ]
+  ], [
+     fhir:index 25;
+     fhir:CodeSystem.concept.code [ fhir:value "4003" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Zwischen 5,1 und 10 Zentimeter" ]
+  ], [
+     fhir:index 26;
+     fhir:CodeSystem.concept.code [ fhir:value "4004" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Größer als 10 Zentimeter" ]
+  ], [
+     fhir:index 27;
+     fhir:CodeSystem.concept.code [ fhir:value "6001" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ja, Behandlung in Arztpraxis oder Rettungsstelle" ]
+  ], [
+     fhir:index 28;
+     fhir:CodeSystem.concept.code [ fhir:value "6002" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ja, Behandlung mit Aufnahme im Krankenhaus" ]
+  ], [
+     fhir:index 29;
+     fhir:CodeSystem.concept.code [ fhir:value "7001" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Weniger als 37,5°C" ]
+  ], [
+     fhir:index 30;
+     fhir:CodeSystem.concept.code [ fhir:value "7002" ];
+     fhir:CodeSystem.concept.display [ fhir:value "37,5°C bis 37,9°C" ]
+  ], [
+     fhir:index 31;
+     fhir:CodeSystem.concept.code [ fhir:value "7003" ];
+     fhir:CodeSystem.concept.display [ fhir:value "38,0°C bis 38,4°C" ]
+  ], [
+     fhir:index 32;
+     fhir:CodeSystem.concept.code [ fhir:value "7004" ];
+     fhir:CodeSystem.concept.display [ fhir:value "38,5°C bis 38,9°C" ]
+  ], [
+     fhir:index 33;
+     fhir:CodeSystem.concept.code [ fhir:value "7005" ];
+     fhir:CodeSystem.concept.display [ fhir:value "39,0°C bis 40,0°C" ]
+  ], [
+     fhir:index 34;
+     fhir:CodeSystem.concept.code [ fhir:value "7006" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mehr als 40°C" ]
+  ], [
+     fhir:index 35;
+     fhir:CodeSystem.concept.code [ fhir:value "8001" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Einmal im Monat oder seltener" ]
+  ], [
+     fhir:index 36;
+     fhir:CodeSystem.concept.code [ fhir:value "8002" ];
+     fhir:CodeSystem.concept.display [ fhir:value "2-4 Mal im Monat" ]
+  ], [
+     fhir:index 37;
+     fhir:CodeSystem.concept.code [ fhir:value "8003" ];
+     fhir:CodeSystem.concept.display [ fhir:value "2-3 Mal pro Woche" ]
+  ], [
+     fhir:index 38;
+     fhir:CodeSystem.concept.code [ fhir:value "8004" ];
+     fhir:CodeSystem.concept.display [ fhir:value "4 Mal oder öfter die Woche" ]
+  ], [
+     fhir:index 39;
+     fhir:CodeSystem.concept.code [ fhir:value "8005" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nicht mehr (früher gelegentlich)" ]
+  ], [
+     fhir:index 40;
+     fhir:CodeSystem.concept.code [ fhir:value "9001" ];
+     fhir:CodeSystem.concept.display [ fhir:value "0,5 bis 1 alkoholische Getränke pro Tag" ]
+  ], [
+     fhir:index 41;
+     fhir:CodeSystem.concept.code [ fhir:value "9002" ];
+     fhir:CodeSystem.concept.display [ fhir:value "1,5 bis 2 alkoholische Getränke pro Tag" ]
+  ], [
+     fhir:index 42;
+     fhir:CodeSystem.concept.code [ fhir:value "9003" ];
+     fhir:CodeSystem.concept.display [ fhir:value "2,5 bis 3 alkoholische Getränke pro Tag" ]
+  ], [
+     fhir:index 43;
+     fhir:CodeSystem.concept.code [ fhir:value "9004" ];
+     fhir:CodeSystem.concept.display [ fhir:value "3,5 bis 4,5 alkoholische Getränke pro Tag" ]
+  ], [
+     fhir:index 44;
+     fhir:CodeSystem.concept.code [ fhir:value "9005" ];
+     fhir:CodeSystem.concept.display [ fhir:value "5 oder mehr alkoholische Getränke pro Tag" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

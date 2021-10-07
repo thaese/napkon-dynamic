@@ -1,0 +1,17 @@
+{
+  "resourceType": "Procedure",
+  "id": "ImmunosuppressiveTherapy",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunosuppressive-therapy"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: not-done</p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: id: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p></div>"
+  },
+  "status": "not-done",
+  "subject": {
+    "reference": "Patient/ExamplePatient"
+  }
+}

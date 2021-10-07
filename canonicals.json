@@ -7,11 +7,46 @@
     "name": "NapkonImmunosuppresiveMedications"
   },
   {
+    "id": "napkon-vaccination-module",
+    "type": "CodeSystem",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module",
+    "version": "0.1.0",
+    "name": "NapkonVaccinationModule"
+  },
+  {
     "id": "napkon-bih",
     "type": "ImplementationGuide",
     "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ImplementationGuide/napkon-bih",
     "version": "0.1.0",
     "name": "NAPKONBIH"
+  },
+  {
+    "id": "additional-vaccination-willingness",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/additional-vaccination-willingness",
+    "version": "0.1.0",
+    "name": "AdditionalVaccinationWillingness"
+  },
+  {
+    "id": "allergic-reaction-to-vaccination",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/allergic-reaction-to-vaccination",
+    "version": "0.1.0",
+    "name": "AllergicReactionToVaccination"
+  },
+  {
+    "id": "analgesic-antipyretic-intake-after-vaccination",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/analgesic-antipyretic-intake-after-vaccination",
+    "version": "0.1.0",
+    "name": "AnalgesicAntipyreticIntakeAfterVaccination"
+  },
+  {
+    "id": "body-temperature-after-vaccination",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-temperature-after-vaccination",
+    "version": "0.1.0",
+    "name": "BodyTemperatureAfterVaccination"
   },
   {
     "id": "cardiology-imaging-procedure",
@@ -21,11 +56,25 @@
     "name": "CardiologyImagingProcedures"
   },
   {
+    "id": "chemotherapy",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chemotherapy",
+    "version": "0.1.0",
+    "name": "Chemotherapy"
+  },
+  {
     "id": "chronic-haematologic-diseases-pediatrics",
     "type": "StructureDefinition",
     "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-haematologic-diseases-pediatrics",
     "version": "0.1.0",
     "name": "ChronicHaematologicDiseases"
+  },
+  {
+    "id": "covid-vaccination",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/covid-vaccination",
+    "version": "0.1.0",
+    "name": "CovidVaccination"
   },
   {
     "id": "covid19-complication-pediatrics",
@@ -56,6 +105,13 @@
     "name": "GastrointestinalDiseasesPediatrics"
   },
   {
+    "id": "general-complaints-after-vaccination",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/general-complaints-after-vaccination",
+    "version": "0.1.0",
+    "name": "GeneralComplaintsAfterVaccination"
+  },
+  {
     "id": "imaging-procedure-cardiology",
     "type": "StructureDefinition",
     "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/imaging-procedure-cardiology",
@@ -77,6 +133,13 @@
     "name": "ImmunosuppresivePermanentMedicationPediatrics"
   },
   {
+    "id": "immunosuppressive-therapy",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunosuppressive-therapy",
+    "version": "0.1.0",
+    "name": "ImmunosuppressiveTherapy"
+  },
+  {
     "id": "infectious-complications-pediatrics",
     "type": "StructureDefinition",
     "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/infectious-complications-pediatrics",
@@ -89,6 +152,20 @@
     "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/intensive-care-treatment-duration-pediatrics",
     "version": "0.1.0",
     "name": "IntensiveCareTreatmentDurationPediatrics"
+  },
+  {
+    "id": "medical-treatment-for-vaccination-adverse-reaction",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/medical-treatment-for-vaccination-adverse-reaction",
+    "version": "0.1.0",
+    "name": "MedicalTreatmentForVaccinationAdverseReaction"
+  },
+  {
+    "id": "medical-treatment-reason",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/medical-treatment-reason",
+    "version": "0.1.0",
+    "name": "MedicalTreatmentReason"
   },
   {
     "id": "observation-birth-height-pediatrics",
@@ -112,6 +189,41 @@
     "name": "HeadCircumferencePediatrics"
   },
   {
+    "id": "regular-alcohol-intake",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/regular-alcohol-intake",
+    "version": "0.1.0",
+    "name": "RegularAlcoholIntake"
+  },
+  {
+    "id": "regular-alcohol-intake-quantity",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/regular-alcohol-intake-quantity",
+    "version": "0.1.0",
+    "name": "RegularAlcoholIntakeQuantity"
+  },
+  {
+    "id": "sars-cov2-infection-course-vaccination",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov2-infection-course-vaccination",
+    "version": "0.1.0",
+    "name": "SARSCoV2InfectionCourse"
+  },
+  {
+    "id": "sars-cov2-infection-vaccination",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov2-infection-vaccination",
+    "version": "0.1.0",
+    "name": "SARSCoV2Infection"
+  },
+  {
+    "id": "sars-cov2-variant",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov2-variant",
+    "version": "0.1.0",
+    "name": "SARSCoV2Variant"
+  },
+  {
     "id": "supportive-pharmacotherapy-pediatrics",
     "type": "StructureDefinition",
     "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/supportive-pharmacotherapy-pediatrics",
@@ -131,6 +243,34 @@
     "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/total-length-of-stay-pediatrics",
     "version": "0.1.0",
     "name": "TotalLengthOfStayPediatrics"
+  },
+  {
+    "id": "vaccination-injection-site-erythema",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vaccination-injection-site-erythema",
+    "version": "0.1.0",
+    "name": "VaccinationInjectionSiteErythema"
+  },
+  {
+    "id": "vaccination-injection-site-pain-movement",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vaccination-injection-site-pain-movement",
+    "version": "0.1.0",
+    "name": "VaccinationInjectionSitePainMovement"
+  },
+  {
+    "id": "vaccination-injection-site-pain-rest",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vaccination-injection-site-pain-rest",
+    "version": "0.1.0",
+    "name": "VaccinationInjectionSitePainRest"
+  },
+  {
+    "id": "vaccination-injection-site-swelling",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vaccination-injection-site-swelling",
+    "version": "0.1.0",
+    "name": "VaccinationInjectionSiteSwelling"
   },
   {
     "id": "cardiology-diseases-codes",
@@ -161,6 +301,20 @@
     "name": "ImagingCodes"
   },
   {
+    "id": "analgesics-antipyretics",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/analgesics-antipyretics",
+    "version": "0.1.0",
+    "name": "AnalgesicsAntipyretics"
+  },
+  {
+    "id": "body-temperature",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/body-temperature",
+    "version": "0.1.0",
+    "name": "BodyTemperature"
+  },
+  {
     "id": "chronic-haematologic-diseases-pediatrics",
     "type": "ValueSet",
     "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-haematologic-diseases-pediatrics",
@@ -175,11 +329,39 @@
     "name": "ChronicHaematologicDiseasesPediatricsICD"
   },
   {
+    "id": "covid-vaccination-codes",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/covid-vaccination-codes",
+    "version": "0.1.0",
+    "name": "CovidVaccinationCodes"
+  },
+  {
+    "id": "covid-vaccination-contraindications",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/covid-vaccination-contraindications",
+    "version": "0.1.0",
+    "name": "CovidVaccinationContraindications"
+  },
+  {
+    "id": "covid-vaccination-reasons",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/covid-vaccination-reasons",
+    "version": "0.1.0",
+    "name": "CovidVaccinationReasons"
+  },
+  {
     "id": "covid19-complications",
     "type": "ValueSet",
     "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/covid19-complications",
     "version": "0.1.0",
     "name": "Covid19Complications"
+  },
+  {
+    "id": "detected-not-detected-unknown-undetermined",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/detected-not-detected-unknown-undetermined",
+    "version": "0.1.0",
+    "name": "DetectedNotDetectedUnknownUndetermined"
   },
   {
     "id": "drug-therapy-pediatrics",
@@ -208,6 +390,13 @@
     "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/gastrointestinal-diseases-pediatrics-icd",
     "version": "0.1.0",
     "name": "GastrointestinalDiseasesPediatricsICD"
+  },
+  {
+    "id": "general-complaints-after-vaccination",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/general-complaints-after-vaccination",
+    "version": "0.1.0",
+    "name": "GeneralComplaintsAfterVaccination"
   },
   {
     "id": "bacterial-infectious-complications-sct",
@@ -245,6 +434,13 @@
     "name": "ImmunosuppressivePermanentMedications"
   },
   {
+    "id": "medical-treatment-for-vaccination-adverse-reaction",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/medical-treatment-for-vaccination-adverse-reaction",
+    "version": "0.1.0",
+    "name": "MedicalTreatmentForVaccinationAdverseReaction"
+  },
+  {
     "id": "medication-pediatrics",
     "type": "ValueSet",
     "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/medication-pediatrics",
@@ -273,6 +469,27 @@
     "name": "PediatricMedicationCodes"
   },
   {
+    "id": "present-not-present-undetermined-other",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/present-not-present-undetermined-other",
+    "version": "0.1.0",
+    "name": "PresentNotPresentUndeterminedOther"
+  },
+  {
+    "id": "regular-alcohol-intake",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/regular-alcohol-intake",
+    "version": "0.1.0",
+    "name": "RegularAlcoholIntake"
+  },
+  {
+    "id": "regular-alcohol-intake-quantity",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/regular-alcohol-intake-quantity",
+    "version": "0.1.0",
+    "name": "RegularAlcoholIntakeQuantity"
+  },
+  {
     "id": "restricted-event-status",
     "type": "ValueSet",
     "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/restricted-event-status",
@@ -280,11 +497,39 @@
     "name": "RestrictedEventStatus"
   },
   {
+    "id": "sars-cov2-infection-course",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sars-cov2-infection-course",
+    "version": "0.1.0",
+    "name": "SARSCov2InfectionCourse"
+  },
+  {
     "id": "syndromic-diseases-pediatrics",
     "type": "ValueSet",
     "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/syndromic-diseases-pediatrics",
     "version": "0.1.0",
     "name": "SyndromicDiseasesPediatrics"
+  },
+  {
+    "id": "vaccination-injection-site-erythema-size",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/vaccination-injection-site-erythema-size",
+    "version": "0.1.0",
+    "name": "VaccinationInjectionSiteErythemaSize"
+  },
+  {
+    "id": "vaccination-injection-site-swelling-size",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/vaccination-injection-site-swelling-size",
+    "version": "0.1.0",
+    "name": "VaccinationInjectionSiteSwellingSize"
+  },
+  {
+    "id": "vaccination-pain-scale",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/vaccination-pain-scale",
+    "version": "0.1.0",
+    "name": "VaccinationPainScale"
   },
   {
     "id": "vaccine-type-covid-pediatrics",
@@ -313,5 +558,12 @@
     "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/vs-supportive-pharmacotherapy-pediatrics",
     "version": "0.1.0",
     "name": "SupportivePharmacotherapy"
+  },
+  {
+    "id": "yes-no-unknown",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/yes-no-unknown",
+    "version": "0.1.0",
+    "name": "YesNoUnknown"
   }
 ]
