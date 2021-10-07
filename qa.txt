@@ -3,7 +3,7 @@
 
 err = 18, warn = 54, info = 9
 IG Publisher Version: 1.1.81
-Generated Thu Oct 07 21:14:07 UTC 2021. FHIR version 4.0.1 for napkon-bih#0.1.0 (canonical = https://www.netzwerk-universitaetsmedizin.de/fhir)
+Generated Thu Oct 07 21:16:43 UTC 2021. FHIR version 4.0.1 for napkon-bih#0.1.0 (canonical = https://www.netzwerk-universitaetsmedizin.de/fhir)
  Build Errors : 299 / 9 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-napkon-immunosuppresive-medications : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-napkon-vaccination-module : 0 / 0 / 1
