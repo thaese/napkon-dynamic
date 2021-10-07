@@ -26,7 +26,7 @@ jobs:
       - name: setup python
         uses: actions/setup-python@v2
         with:
-          python-version: 3.8 #install the python needed
+          python-version: 3.8
 
       - name: Install Python dependencies
         uses: py-actions/py-dependency-install@v2
@@ -36,6 +36,16 @@ jobs:
         with:
           java-version: 1.8
 
+      - name: Setup NodeJS
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install fsh-sushi
+        run: npm install && npm install -g fsh-sushi
+
+      - name: Untar FHIR packages to package repository
+        run: ./packages/untar_packages.sh
+
       - name: Execute validator
-        run: |
-          python validate_profile.py --all
+        run: python validate_profile.py --all

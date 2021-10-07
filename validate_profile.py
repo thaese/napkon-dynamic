@@ -7,6 +7,7 @@ Process:
 - Run FHIR Java validator for each instance defined in FSH file
 """
 from typing import Dict, Tuple, List, Union, Optional
+import sys
 import subprocess  # nosec
 from pathlib import Path
 import json
@@ -36,7 +37,9 @@ class bcolors:
     UNDERLINE = "\033[4m"
 
 
-def print_box(message: str, min_length: int = 100, print_str: bool = True) -> str:
+def print_box(
+    message: str, min_length: int = 100, print_str: bool = True, col=bcolors.OKBLUE
+) -> str:
     """
     Print a string in a neat box.
 
@@ -49,16 +52,17 @@ def print_box(message: str, min_length: int = 100, print_str: bool = True) -> st
     padding = " " * (min_length - strlen)
     message += padding
 
-    s = ""
-
-    s += "=" * (max(min_length, strlen) + 4) + "\n"
-    s += f"* {message} *" + "\n"
-    s += "=" * (max(min_length, strlen) + 4) + "\n"
+    s = [
+        "=" * (max(min_length, strlen) + 4),
+        f"* {message} *",
+        "=" * (max(min_length, strlen) + 4),
+    ]
 
     if print_str:
-        printc(s, col=bcolors.OKBLUE, end="")
+        for line in s:
+            printc(line, col=col)
 
-    return s
+    return "\n".join(s)
 
 
 class CommandNotSuccessfulException(Exception):
@@ -78,6 +82,127 @@ class CommandNotSuccessfulException(Exception):
         """
         args = tuple([msg] + list(args))
         super().__init__(*args)
+
+
+class ValidatorStatus:
+    """Status information of FHIR Validator run."""
+
+    def __init__(
+        self,
+        output: Optional[List[str]] = None,
+        status: str = "not-initialized",
+        errors: Optional[List[str]] = None,
+        profile: str = "",
+        instance: str = "",
+    ):
+        """
+        Status information of FHIR Validator run.
+
+        :param output: Full validator output
+        :param status: status string
+        :param errors: list of errors during parsing
+        :param profile: name of profile against which validation was performed
+        :param instance: name of instance that was validated
+        """
+
+        def list_if_none(v: Optional[List]) -> List:
+            return [] if v is None else v
+
+        self.status = status
+
+        self.errors = list_if_none(errors)
+        self.warnings: List[str] = []
+        self.notes: List[str] = []
+
+        self.n_errors = len(self.errors)
+        self.n_warnings = len(self.warnings)
+        self.n_notes = len(self.notes)
+
+        self.output = list_if_none(output)
+
+        self.profile = profile
+        self.instance = instance
+
+    def parse(self, output: List[str]) -> "ValidatorStatus":
+        """
+        Parse FHIR Validator output.
+
+        :param output: Output of a validator run
+        :return: None
+        """
+        pattern_status = re.compile(
+            r"(?P<status>\*FAILURE\*|Success): (?P<n_errors>\d+) errors, (?P<n_warnings>\d+) warnings, (?P<n_notes>\d+) notes"
+        )
+        pattern_error = re.compile(r"  (Error @ .*)")
+        pattern_warn = re.compile(r"  (Warning @ .*)")
+        pattern_note = re.compile(r"  (Information @ .*)")
+
+        self.output = output
+
+        output_s = "".join(output)
+
+        m = pattern_status.search(output_s)
+
+        self.status = m.group(1)  # type: ignore
+        self.n_errors, self.n_warnings, self.n_notes = (
+            int(m.group(i + 2)) for i in range(3)  # type: ignore
+        )
+        self.errors = [m.group().strip() for m in pattern_error.finditer(output_s)]  # type: ignore
+        self.warnings = [m.group().strip() for m in pattern_warn.finditer(output_s)]  # type: ignore
+        self.notes = [m.group().strip() for m in pattern_note.finditer(output_s)]  # type: ignore
+
+        return self
+
+    def pretty_print(self, with_header: bool = False) -> None:
+        """
+        Format and print the parsed output of fhir java validator to console.
+
+        :param with_header: If true, print a header with information about the profile being validated
+        :return: None
+        """
+        if with_header:
+            print_box(f"Profile {self.profile}")
+
+        if self.n_errors > 0:
+            col = bcolors.FAIL
+        elif self.n_warnings > 0:
+            col = bcolors.WARNING
+        else:
+            col = bcolors.OKGREEN
+
+        printc(
+            f"{bcolors.BOLD}{self.status}: {self.n_errors} errors, {self.n_warnings} warnings, {self.n_notes} notes",
+            col,
+        )
+
+        for msg in self.errors:
+            printc(f"  {msg}", bcolors.FAIL)
+
+        for msg in self.warnings:
+            printc(f"  {msg}", bcolors.WARNING)
+
+        for msg in self.notes:
+            print(f"  {msg}")
+
+        sys.stdout.flush()
+
+    def to_frame(self) -> pd.DataFrame:
+        """
+        Get status as pandas DataFrame.
+
+        :return: Status as DataFrame
+        """
+        return pd.DataFrame(
+            dict(
+                status=self.status,
+                n_errors=self.n_errors,
+                n_warnings=self.n_warnings,
+                n_notes=self.n_notes,
+                instance=self.instance,
+                profile=self.profile,
+            ),
+            index=[0],
+        )
 
 
 def download_validator(fname_validator: Path) -> None:
@@ -207,7 +332,7 @@ def get_paths(base_path: str) -> Tuple[Path, Path]:
 
 def _validate_fsh_files(
     path_output: Path, fnames: List[Path], fname_validator: str, verbose: bool = False
-) -> List[Dict]:
+) -> List[ValidatorStatus]:
     """
     Validate FSH files.
 
@@ -219,23 +344,37 @@ def _validate_fsh_files(
     :param fnames: FSH file names to validate (full paths)
     :param fname_validator: full path to FHIR Java validator file
     :param verbose: Print more information
-    :return: List of validation result dicts containing
-      - status: parsed output from parse_validator_output()
-      - output: full output from validator execution
-      - instance: processed instance
-      - profile: processed profile
+    :return: ValidatorStatus objects
     """
     sdefs, instances, deps, vs, cs = parse_fsh_generated(path_output)
 
     results = []
-    for fname in fnames:
+
+    for i, fname in enumerate(fnames):
 
         if not fname.exists():
             raise FileNotFoundError(fname)
 
         fsh_profiles, fsh_instances = parse_fsh(fname)
+        percent = (i + 1) / len(fnames) * 100
+        print(
+            f"[{percent: 5.1f}%] Processing file {fname} with {len(fsh_profiles)} profiles and {len(fsh_instances)} instances ({i+1}/{len(fnames)})"
+        )
+        profiles_without_instance = check_instances_availability(
+            fsh_profiles, fsh_instances
+        )
 
-        assert_instances_availability(fsh_profiles, fsh_instances)
+        if len(profiles_without_instance):
+            for p in profiles_without_instance:
+                status = ValidatorStatus(
+                    status="*FAILURE*",
+                    errors=[f"No instances defined for profile {p}"],
+                    profile=p,
+                )
+                status.pretty_print(with_header=True)
+                results.append(status)
+            continue
+
         results += run_validation(
             fname_validator,
             fsh_profiles,
@@ -253,7 +392,7 @@ def _validate_fsh_files(
 
 def validate_fsh(
     base_path: str, fname: str, fname_validator: str, verbose: bool = False
-) -> List[Dict]:
+) -> List[ValidatorStatus]:
     """
     Validate a single FSH file.
 
@@ -265,7 +404,7 @@ def validate_fsh(
     :param fname: FSH file name (just basename, path is inferred from base_path)
     :param fname_validator: full path to FHIR Java validator file
     :param verbose: Print more information
-    :return: List of validation result dicts containing validation status, full output and instance and profile names
+    :return: List of validation status, full output and instance and profile names
     """
     path_input, path_output = get_paths(base_path)
 
@@ -281,7 +420,7 @@ def validate_fsh(
 
 def validate_all_fsh(
     base_path: str, subdir: str, fname_validator: str, verbose: bool = False
-) -> List[Dict]:
+) -> List[ValidatorStatus]:
     """
     Validate all FSH files in a given subdir.
 
@@ -293,7 +432,7 @@ def validate_all_fsh(
     :param subdir: subdirectory of profiles
     :param fname_validator: full path to FHIR Java validator file
     :param verbose: Print more information
-    :return: List of validation result dicts containing validation status, full output and instance and profile names
+    :return: List of validation status, full output and instance and profile names
     """
     path_input, path_output = get_paths(base_path)
 
@@ -304,6 +443,8 @@ def validate_all_fsh(
 
     fnames = list(path_full.rglob("*.fsh"))
 
+    sys.stdout.flush()
+
     return _validate_fsh_files(
         path_output=path_output,
         fnames=fnames,
@@ -312,20 +453,23 @@ def validate_all_fsh(
     )
 
 
-def assert_instances_availability(
+def check_instances_availability(
     fsh_profiles: List[Dict], fsh_instances: List[Dict]
-) -> None:
+) -> List[str]:
     """
-    Assert that at least one instance exists for each defined profile extracted from FSH file.
+    Check if at least one instance exists for each defined profile extracted from FSH file.
 
     :param fsh_profiles: List of profile defined in FSH file
     :param fsh_instances: List of instances defined in FSH file
-    :return:
+    :return: List of profiles without instances
     """
+    profiles_without_instance = []
+
     for p in fsh_profiles:
-        assert any(
-            i["instanceof"] == p["id"] for i in fsh_instances
-        ), f"Could not find any instance for profile \"{p['id']}\""
+        if not any(i["instanceof"] == p["id"] for i in fsh_instances):
+            profiles_without_instance.append(p["id"])
+
+    return profiles_without_instance
 
 
 def run_validation(
@@ -338,7 +482,7 @@ def run_validation(
     vs: Dict,
     cs: Dict,
     verbose: bool,
-) -> List[Dict]:
+) -> List[ValidatorStatus]:
     """
     Run FHIR Java validator for each instance defined in FSH file.
 
@@ -376,17 +520,14 @@ def run_validation(
 
     results = []
 
-    for fsh_instance in cmds:
-        print_box(f'Validating {fsh_instance} against profile {instance["profile"]}')
-        status, output = execute_validator(cmds[fsh_instance], verbose=verbose)
-        results.append(
-            {
-                "status": status,
-                "output": output,
-                "instance": fsh_instance,
-                "profile": instance["profile"],
-            }
+    for fsh_instance_name in cmds:
+        print_box(
+            f'Validating {fsh_instance_name} against profile {instance["profile"]}'
         )
+        status = execute_validator(cmds[fsh_instance_name], verbose=verbose)
+        status.instance = fsh_instance_name
+        status.profile = instance["profile"]
+        results.append(status)
 
     return results
 
@@ -409,34 +550,6 @@ def run_command(cmd: Union[str, List[str]]) -> None:
         raise CommandNotSuccessfulException()
 
 
-def parse_validator_output(output: List[str]) -> Dict:
-    """
-    Parse output of Java FHIR validator to extract status and errors, warnings.
-
-    :param output: Output lines of validator run
-    :return: Dict with parsed information from validator output:
-        - status: Success or *FAILURE*
-        - n_errors: number of detected errors
-        - n_warnings: number of detected warnings
-        - n_notes: number of detected notes
-        - errors: error messages
-        - warnings: warning messages
-    """
-    pattern_status = re.compile(
-        r"(?P<status>\*FAILURE\*|Success): (?P<n_errors>\d+) errors, (?P<n_warnings>\d+) warnings, (?P<n_notes>\d+) notes"
-    )
-    pattern_error = re.compile(r"  (Error @ .*)")
-    pattern_warn = re.compile(r"  (Warning @ .*)")
-
-    output_s = "".join(output)
-
-    status = pattern_status.search(output_s).groupdict()  # type: ignore
-    status["errors"] = [m.group().strip() for m in pattern_error.finditer(output_s)]  # type: ignore
-    status["warnings"] = [m.group().strip() for m in pattern_warn.finditer(output_s)]  # type: ignore
-
-    return status
-
-
 def printc(msg: str, col: str, end: str = "\n") -> None:
     """
     Print a message in color to console.
@@ -446,44 +559,18 @@ def printc(msg: str, col: str, end: str = "\n") -> None:
     :param end: end of line character(s)
     :return: None
     """
-    print(f"{col}{msg}{bcolors.ENDC}", end=end)
-
-
-def pretty_print_status(status: Dict) -> None:
-    """
-    Format and print the parsed output of fhir java validator to console.
-
-    :param status: Status dictionary as returned by parse_validator_output()
-    :return: None
-    """
-    if int(status["n_errors"]) > 0:
-        col = bcolors.FAIL
-    elif int(status["n_warnings"]) > 0:
-        col = bcolors.WARNING
-    else:
-        col = bcolors.OKGREEN
-
-    printc(
-        f"{bcolors.BOLD}{status['status']}: {status['n_errors']} errors, {status['n_warnings']} warnings, {status['n_notes']} notes",
-        col,
-    )
-
-    for msg in status["errors"]:
-        printc(msg, bcolors.FAIL)
-
-    for msg in status["warnings"]:
-        printc(msg, bcolors.WARNING)
+    print(f"{col}{msg}{bcolors.ENDC}", end=end, flush=True)
 
 
 def execute_validator(
     cmd: Union[str, List[str]], verbose: bool = False
-) -> Tuple[Dict, List[str]]:
+) -> ValidatorStatus:
     """
     Execute the Java FHIR validator and parse it's output.
 
     :param cmd: Command to execute
     :param verbose: If true, all output from the validator will be printed to stdout.
-    :return: Parsed status (see parse_validator_output) and output from validator execution.
+    :return: ValidatorStatus object
     """
     if isinstance(cmd, list):
         cmd = "  ".join([str(s) for s in cmd])
@@ -493,57 +580,62 @@ def execute_validator(
     )
 
     if popen.stdout is None:
-        return {"status": "popen failed"}, []
+        return ValidatorStatus(status="*FAILURE*", errors=["popen failed"])
 
     output = []
 
     for line in popen.stdout:
         if verbose or line.strip() in ["Loading", "Validating"]:
             printc(line, col=bcolors.HEADER, end="")
+            sys.stdout.flush()
 
         output.append(line)
     popen.stdout.close()
     popen.wait()
 
     try:
-        status = parse_validator_output(output)
-        pretty_print_status(status)
+        status = ValidatorStatus().parse(output)
+        status.pretty_print()
     except Exception:
-        print("Could not parse validator output:")
-        print("".join(output))
-        status = {"status": "Error during validator execution"}
+        print("Could not parse validator output:", flush=True)
+        print("".join(output), flush=True)
+        status = ValidatorStatus(
+            status="*FAILURE*",
+            errors=["Error during validator execution"],
+            output=output,
+        )
 
-    return status, output
+    return status
 
 
-def store_log(results: List[Dict], log_path: Path) -> None:
+def store_log(results: List[ValidatorStatus], log_path: Path) -> None:
     """
     Store parsed and full output from validator run to files.
 
     Parsed output will be saved to an excel file in tabular format, full output to a text file.
 
-    :param results: List of dicts with as returned by _validate_fsh_files()
+    :param results: List of ValidatorStatus objects as returned by _validate_fsh_files()
     :param log_path: Path where log files are stored
     :return: None
     """
     dfs = []
     output = ""
 
-    for d in results:
-        dr = {k: v for k, v in d["status"].items() if k not in ["errors", "warnings"]}
-        dr["instance"] = d["instance"]
-        dr["profile"] = d["profile"]
+    for status in results:
+        dfs.append(status.to_frame())
 
-        df = pd.DataFrame(dr, index=[0])
-        dfs.append(df)
+        if status.instance != "":
+            output += print_box(
+                f"Validating {status.instance} on profile {status.profile}",
+                print_str=False,
+            )
+        else:
+            output += print_box(f"Profile {status.profile}", print_str=False)
 
-        output += print_box(
-            f"Validating {d['instance']} on profile {d['profile']}", print_str=False
-        )
-        output += "".join(d["output"])
+        output += "".join(status.output)
         output += "\n\n"
 
-    df = pd.concat(dfs).reset_index(drop=True)
+    df = pd.concat([s.to_frame() for s in results]).reset_index(drop=True)
 
     log_basename = "validation_" + datetime.now().strftime("%y%m%dT%H%M%S")
 
@@ -588,7 +680,7 @@ if __name__ == "__main__":
         type=str,
         help="Specifies the subdirectory (relative to input/fsh/) in which to search for profiles if --all is set",
         required=False,
-        default="/",
+        default="",
     )
 
     parser.add_argument(
@@ -664,4 +756,9 @@ if __name__ == "__main__":
             log_path.mkdir()
         store_log(results, log_path)
 
-    print_box("All profiles validated - check output for errors / warnings!")
+    if any([r.status != "Success" for r in results]):
+        print_box("Errors during profile validation", col=bcolors.FAIL)
+        sys.exit(1)
+    else:
+        print_box("All profiles successfully validated", col=bcolors.OKGREEN)
+        sys.exit(0)
