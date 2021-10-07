@@ -1,224 +1,55 @@
 FHIR – Governance
 #################
 
-Dieses Dokument betreibt den Workflow und die Konventionen zur Erstellung von FHIR Profilen im NAPKON Projekt.
+This document describes the workflow and conventions for creating FHIR profiles in the NAPKON project.
 
 Workflow
 ========
 
-Übersicht
+Overview
 ---------
 
-1. napkon-dynamic git repository lokal clonen (wenn noch nicht geschehen)
-2. In Verantwortlichkeitstabelle zu bearbeitende Items heraussuchen und als “in Progress” markieren
-3. FSH Profildatei in Verzeichnis ``input/fsh`` erstellen (siehe `FSH Dateien Konventionen`_ )
-4. Profil & *mindestens* eine Instance pro verwendeter Terminologie (SNOMED, LOINC etc) spezifizieren
-5. Grundlegende Übersetzbarkeit FSH → JSON testen durch Aufruf von sushi
+1. Clone napkon-dynamic git repository locally (if not already done).
+2. Pick items to be edited in the responsibility table and mark them as "in progress"
+3. Create FSH profile file in directory ``input/fsh`` (see `FSH File Conventions`_ )
+4. Specify profile & *at least* one instance per terminology used (SNOMED, LOINC etc)
+5. Test basic FSH → JSON translatability by calling sushi
 
-  a. Ggf. Fehler beheben bis sushi fehlerfrei durchläuft
+  a. If necessary, fix errors until sushi runs without errors
 
-6. Profil mit Instanz(en) validieren durch Aufruf des Java FHIR Validators
+6. Validate profile with instance(s) by calling Java FHIR validator
 
-  a. Ggf. Fehler beheben bis der Validator fehlerfrei durchläuft
+  a. If necessary, fix errors until the validator runs without errors.
 
-7. Geänderte Dateien ins repository commiten (in den persönlichen Branch, nicht in staging oder master)
-8. Branch pushen und pull request in **staging** Branch erstellen
-9. Gemeinsame Begutachtung und Freigabe des Pull Requests in den **staging** Branch (mit externem Reviewer)
-10. Verantwortlichkeitstabelle aktualisieren (Status = "done")
-11. Pull request in **master** branch - review durch gefyra Berater und finale Freigabe (durch merge mit **master** branch)
+7. Commit changed files into repository (into personal branch, not into staging or master)
+8. Update responsibility table (status = "done")
+9. Push branch and create pull request for merge in **staging** branch
+10. Review and release pull request to **staging** branch together (with external reviewer)
+11. Pull request in **master** branch - review by external reviewer and final release (by merge with **master** branch)
+
 
 Details
 -------
+* The github repositoy "napkon-dynamic" is the central "point of truth" ( https://github.com/BIH-CEI/napkon-dynamic )
+* Newly created or changed profiles, ValueSets, etc. are committed and pushed to your own branch
+* Commits (& pushs) are usually performed as soon as a functional change has been completed, i.e. commits should not
+  contain non-functional intermediate work. Do not use git as a backup system.
+* As soon as a profile is considered finished by the person creating it, a pull request is created for merge to the
+  **staging** branch.
+* Pull requests are reviewed and added/released together in weekly meetings (TechMeet, Tuesdays 14-15).
+* `GitHub Issues <https://github.com/BIH-CEI/napkon-dynamic/issues>`_ are used for issue-tracking
+* To-dos and overview of the development are documented under `Projects > Core NAPKON <https://github.com/BIH-CEI/napkon-dynamic/projects/1>`_
 
-* Das github repositoy `napkon-dynamic <https://github.com/BIH-CEI/napkon-dynamic>`_ ist der zentrale "point of truth"
-* Neu erstellte oder geänderte Profile, ValueSets, usw. werden in den jeweiligen eigenen Branch commitet und gepusht (commit & push üblicherweise sobald eine konsistente & funktionierende Einheit (z.B. ein Profil) fertiggestellt ist).
-* Sobald ein Profil von der erstellenden Person als fertig betrachtet wird, wird ein Pull Request in den **staging** branch erstellt. 
-* Pull requests werden in wöchentlichen Meetings (TechMeet, Dienstags 14-15 Uhr) gemeinsam begutachtet und ergänzt/freigegeben
-* `GitHub Issues <https://github.com/BIH-CEI/napkon-dynamic/issues>`_ werden für issue-tracking benutzt
-* To-dos und Überblick der Entwicklung sind unter `Projects > Core NAPKON <https://github.com/BIH-CEI/napkon-dynamic/projects/1>`_ zu dokumentieren
-
-Allgemein
+General
 =========
 
-
-FSH Dateien Konventionen
-========================
-.. _FSH Dateien Konventionen: 
-
-Allgemein
----------
-* Profilierung in FSH durchführen (nicht Forge)
-* Codes aus Codesystemen immer mit Bezeichnung (“display”) angeben nach dem Format:
+* Perform profiling in FSH (not Forge).
+* Always specify codes from code systems with designation ("display") using the following short format:
   ``{CodeSystem}|{version}#{code} “{display}”``
- 
-  * Version ist optional
 
-* Beispiele
+  * Version is optional
 
-  * In ValueSet: ``* $sct#416798007 "Substance with calcineurin inhibitor mechanism of action (substance)"``
-  * In Profile:  ``* code.coding[ops] = $ops|"2021"#8-144 "Therapeutische Drainage der Pleurahöhle"``
-
-Profile
--------
-* Jedes Profil in eine eigene Datei
-* Zu jedem Profil mindestens eine Instance in dieselbe Datei
-* **Dateiname**: ``p-<profile-id>.fsh`` (profile-id Namenskonvention siehe unten)
-* Identischer „Dateikopf“ (Metadaten – Status, Date, Publisher etc)
-
-  * | Einfügen in die Datei mit dem ruleset ``“napkon-metadata(date, status, version)”``
-    | Beispiel:
-    | ``* insert napkon-metadata(2021-09-13, #draft, 0.1.0)``
-    | Dies fügt konsistent die Felder status, version, publisher, contact und date ein
-
-ValueSets
----------
-* Jedes ValueSet in eine eigene Datei
-* **Dateiname**: ``vs-<valueset-id>.fsh`` (valueset-id Namenskonvention siehe unten
-* Jedes ValueSet enthält nur eine Terminologie (zB nur ICD10 oder nur SNOMED CT)
-* ValueSets möglichst wiederverwenden, wenn schon definiert (auch außerhalb NAPKONs, zB in GECCO)
-
-Aliase
-------
-* Extra Datei zur Verwaltung übergreifender Aliase (**aliases.fsh**)
-
-Invarianten
------------
-* Analog zu Aliasen (mit **invariants.fsh**)
-
-Versionierung
---------------
-
-* Initialer Entwurf (erster github Push des funktionsfähigen Profils in den eigenen Branch):
-
-  * ``Status = #draft``
-  * ``Version = 0.1.0``
-
-* Für merge in master branch
-
-  * ``Status = #active``
-  * ``Version 1.0.0``
-
-
-FSH Namenskonventionen
-======================
-* Profile/Instance/ValueSet: CamelCase
-* Id: dash-case des Profil/Instance/ValueSets Namens
-* Dem Namen/id von **Profilen** (nicht ValueSets) ist der Name des Moduls hintenanstellen
-
-  * pediatrics (Pädiatriemodul)
-  * cardiology (Kardiologiemodul)
-  * vaccination (Impfmodul)
-  * longcovid (Long-Covid Modul)
-
-* Title = Wie Profilname ("Profile") mit Leerzeichen
-* Description nach eigenem Ermessen
-
-Beispiele
----------
-
-**Profile**
-
-.. code-block::
-
-  Profile: IntensiveCareTreatmentDuration
-  Parent: Observation
-  Id: intensive-care-treatment-duration
-  Title: "Intensive care treatment duration"
-  Description: "Duration of intensive care treatment"
-
-**Instance**
-
-.. code-block::
-
-  Instance: intensive-care-treatment-duration-instance
-  InstanceOf: intensive-care-treatment-duration
-  Usage: #example
-  Title: "intensive-care-treatment-duration-instance"
-  Description: "Example of an intensive care treatment duration"
-
-**ValueSet**
-
-.. code-block::
-
-  ValueSet: RestrictedEventStatus
-  Id: restricted-event-status
-  Title: "RestrictedEventStatus"
-  Description: "EventStatus value set restricted to codes not-done, completed and unknown"
-
-Appendix
-########
-
-Validierungsscript
-==================
-Das Python script “validate_profile.py” (aus dem napkon-dynamic github repository) ermöglicht die Validierung von Profiln durch Ausführung von sushi und des Java FHIR Validators. 
-
-Voraussetzungen
----------------
- * Python >= 3.5
- * jsonpath_ng library
-
-  * |  Installation durch:
-    | ``pip install --upgrade jsonpath-ng``
-    | oder
-    | ``conda install jsonpath-ng -c conda-forge``
-
-Aufruf
-------
-
-.. code-block:: shell
-  
-  python validate_profile.py [--base-path BASE_PATH] [--validator-path PATH_VALIDATOR] filename [filename ...]
-
-**Optionen**
-
-.. code-block:: shell
-  
-  --base-path = Pfad zum napkon-dynamic Wurzelverzeichnis (wenn nicht explizit angegeben, wird das aktuelle Verzeichnis verwendet)
-  --validator-path = Pfad zum Java Validator (ohne Dateiname) - wenn in diesem Pfad der Validator nicht vorhanden ist, wird er durch das Script heruntergeladen
-  filename = Dateiname einer Profil FSH Datei (Konventionen siehe oben). Diese Datei muss ein Profil sowie mindestens eine Instanz für das Profil beinhalten.
-
-**Beispiel-Aufruf**
-
-.. code-block:: shell
-
-  $ python validate_profile.py p-thoracic-drainage.fsh
-Namenskonvention)
-4. Profil + mindestens eine Instance pro verwendeter Terminologie (SNOMED, LOINC etc) spezifizieren
-5. Grundlegende Übersetzbarkeit FSH->JSON testen durch Aufruf von sushi
-
-  a. Ggf. Fehler beheben bis sushi fehlerfrei durchläuft
-
-6. Profil mit Instanz(en) validieren durch Aufruf des Java FHIR Validators
-
-  a. Ggf. Fehler beheben bis der Validator fehlerfrei durchläuft
-
-7. Geänderte Dateien ins repository commiten (in den persönlichen Branch, nicht in master)
-8. Branch pushen und pull request in staging Branch erstellen
-9. Gemeinsame Begutachtung und Freigabe des Pull Requests in den staging branch (mit Julian)
-10. Verantwortlichkeitstabelle aktualisieren (Status = “done”)
-11. Pull request in master branch - review durch gefyra Berater und finale Freigabe (durch merge mit Master)
-
-Details
--------
-
-* Das github repositoy “napkon-dynamic” ist der zentrale “Point of Truth” ( https://github.com/BIH-CEI/napkon-dynamic ) 
-* Neu erstellte oder geänderte Profile (ValueSets, …) werden in den jeweiligen eigenen Branch commitet und gepusht (commit & push üblicherweise sobald eine konsistente Einheit (zB Profil) fertiggestellt ist.
-* Sobald ein Profil von der erstellenden Person als fertig betrachtet wird, wird ein Pull Request in den staging branch erstellt. 
-* Pull requests werden in wöchentlichen Meetings (TechMeet, Dienstags 14-15 Uhr) gemeinsam begutachtet und ergänzt/freigegeben
-* GitHub Issues werden für issue-tracking benutzt: https://github.com/BIH-CEI/napkon-dynamic/issues
-* To-dos und Überblick der Entwicklung sind unter Projects > Core NAPKON zu dokumentieren: https://github.com/BIH-CEI/napkon-dynamic/projects/1
-
-
-Allgemein
-=========
-
-* Profilierung in FSH durchführen (nicht Forge)
-* Codes aus Codesystemen immer mit Bezeichnung (“display”) angeben nach dem Format:
-  ``{CodeSystem}|{version}#{code} “{display}”``
- 
-  * Version ist optional
-
-* Beispiele
+* Examples
 
   * In ValueSet: ``* $sct#416798007 "Substance with calcineurin inhibitor mechanism of action (substance)"``
   * In Profile:  ``* code.coding[ops] = $ops|"2021"#8-144 "Therapeutische Drainage der Pleurahöhle"``
@@ -228,66 +59,67 @@ Links
 * napkon-dynamic repository: https://github.com/BIH-CEI/napkon-dynamic
 * Issues: https://github.com/BIH-CEI/napkon-dynamic/issues
 
-Versionierung
+Versioning
 -------------
 
-* Initialer Entwurf (erster github Push des funktionsfähigen Profils in den eigenen Branch):
+* Initial draft (first github push of the functional & validated profile to the own branch):
 
   * ``Status = #draft``
   * ``Version = 0.1.0``
 
-* Für merge in master branch
+* For merge in master branch
 
   * ``Status = #active``
   * ``Version 1.0.0``
 
-FSH Dateien Konventionen
-========================
+FSH File Conventions
+=====================
+.. _FSH File Conventions:
 
-Profile
--------
-* Jedes Profil in eine eigene Datei
-* Zu jedem Profil mindestens eine Instance in dieselbe Datei
-* **Dateiname**: ``p-<profile-id>.fsh`` (profile-id Namenskonvention siehe unten)
-* Identischer „Dateikopf“ (Metadaten – Status, Date, Publisher etc)
+Profiles
+--------
+* Each profile in a separate file
+* At least one instance of each profile in the same file.
+* **Filename**: ``p-<profile-id>.fsh`` (profile-id naming convention see below)
+* Identical "file header" (metadata - status, date, publisher etc).
 
-  * | Einfügen in die Datei mit dem ruleset ``“napkon-metadata(date, status, version)”``
-    | Beispiel:
+  * | Insert common "file header" into a profile (valueset etc) using the ruleset ``"napkon-metadata(date, status, version)"``
+    | Example:
     | ``* insert napkon-metadata(2021-09-13, #draft, 0.1.0)``
-    | Dies fügt konsistent die Felder status, version, publisher, contact und date ein
+    | This consistently inserts the fields status, version, publisher, contact and date
 
 ValueSets
 ---------
-* Jedes ValueSet in eine eigene Datei
-* **Dateiname**: ``vs-<valueset-id>.fsh`` (valueset-id Namenskonvention siehe unten
-* Jedes ValueSet enthält nur eine Terminologie (zB nur ICD10 oder nur SNOMED CT)
-* ValueSets möglichst wiederverwenden, wenn schon definiert (auch außerhalb NAPKONs, zB in GECCO)
+* Each ValueSet into a separate file
+* **Filename**: ``vs-<valueset-id>.fsh`` (valueset-id naming convention see below).
+* Each ValueSet contains only one terminology (e.g. only ICD10 or only SNOMED CT)
+* Reuse ValueSets if possible, if already defined (also outside NAPKONs, e.g. in GECCO)
 
 Aliase
 ------
-* Extra Datei zur Verwaltung übergreifender Aliase (**aliases.fsh**)
+* Extra file for managing all aliases (**aliases.fsh**)
 
 Invarianten
 -----------
-* Analog zu Aliasen (mit **invariants.fsh**)
+* Like Aliases (with file **invariants.fsh**)
 
 
 
-FSH Namenskonventionen
+FSH Naming conventions
 ======================
 * Profile/Instance/ValueSet: CamelCase
-* Id: dash-case des Profil/Instance/ValueSets Namens
-* Dem Namen/id von **Profilen** (nicht ValueSets) ist der Name des Moduls hintenanstellen
+* Id: dash-case of the Profil/Instance/ValueSets name
+* The name/id of **Profiles** (not ValueSets) must be followed by the name of the module:
 
   * pediatrics (Pädiatriemodul)
   * cardiology (Kardiologiemodul)
   * vaccination (Impfmodul)
   * longcovid (Long-Covid Modul)
 
-* Title = Wie Profilname ("Profile") mit Leerzeichen
-* Description nach eigenem Ermessen
+* Title = As profile name ("Profile") but with spaces
+* Description at one's own discretion
 
-Beispiele
+Examples
 ---------
 
 **Profile**
@@ -326,70 +158,94 @@ Beispiele
 Appendix
 ########
 
-Validierungsscript
+Validation script
 ==================
-Das Python script “validate_profile.py” (aus dem napkon-dynamic github repository) ermöglicht die Validierung von Profiln durch Ausführung von sushi und des Java FHIR Validators. 
+The Python script "validate_profile.py" (from the napkon-dynamic github repository) allows validation of profiles by
+running sushi and the Java FHIR validator.
 
-Voraussetzungen
+Requirements
 ---------------
  * Python >= 3.5
  * jsonpath_ng library
 
-  * |  Installation durch:
+  * |  Install via
     | ``pip install --upgrade jsonpath-ng``
-    | oder
+    | or
     | ``conda install jsonpath-ng -c conda-forge``
 
-Aufruf
+ * pandas
+
+Run
 ------
 
 .. code-block:: shell
-  
-  python validate_profile.py [--base-path BASE_PATH] [--validator-path PATH_VALIDATOR] filename [filename ...]
 
-**Optionen**
+  validate_profile.py [-h] [--all] [--subdir SUBDIR] [--base-path BASE_PATH] [--validator-path PATH_VALIDATOR] [--verbose] [--log-path LOG_PATH] [filename [filename ...]]
+
+**Options**
 
 .. code-block:: shell
-  
-  --base-path = Pfad zum napkon-dynamic Wurzelverzeichnis (wenn nicht explizit angegeben, wird das aktuelle Verzeichnis verwendet)
-  --validator-path = Pfad zum Java Validator (ohne Dateiname) - wenn in diesem Pfad der Validator nicht vorhanden ist, wird er durch das Script heruntergeladen
-  filename = Dateiname einer Profil FSH Datei (Konventionen siehe oben). Diese Datei muss ein Profil sowie mindestens eine Instanz für das Profil beinhalten.
 
-**Beispiel-Aufruf**
+    positional arguments:
+      filename              fsh file names (basename only - no path)
+
+    optional arguments:
+      -h, --help            show this help message and exit
+      --all                 if set, all detected profiles will be validated
+      --subdir SUBDIR       Specifies the subdirectory (relative to input/fsh/) in which to search for profiles if --all is set
+      --base-path BASE_PATH
+                            base path (containing input/fsh/ directory)
+      --validator-path PATH_VALIDATOR
+                            path to validator
+      --verbose             Be verbose
+      --log-path LOG_PATH   log file path - if supplied, log files will be written
+
+**Example call to validate a *single* profile**
 
 .. code-block:: shell
 
   $ python validate_profile.py p-thoracic-drainage.fsh
 
+**Example call to validate *all* profiles**
+The following call validates all profiles in the subdirectory "vaccination/" and writes the results of the validation
+log files in the directory logs/.
+
+
+.. code-block:: shell
+
+  $ python validate_profile.py --all --subdir vaccination/ --log-path logs/
 
 FHIR Java Validator
 ===================
-Nachstehend wird die Syntax für den FHIR Java Validator zur Validierung eines Profils anhand einer Instanz beschrieben. Dies kann automatisch durch das Python Validierungsskript erfolgen (siehe oben).
+The syntax for the FHIR Java Validator to validate a profile against an instance is described below.
+This can be done automatically by the Python validation script (see above).
 
-Voraussetzungen
+Requirements
 ---------------
-* Aktuelles Java muss installiert sein.
-* Aktuelle Version des Validators hier herunterladen: https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar
+* Java must be installed.
+* Download the latest version of the validator here: https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar
 
 
-Aufruf
+Run
 ------
-Aufruf des Validators zur Validierung einer Instanz an einem Profil nach folgendem Muster:
+Calling the validator to validate an instance on a profile according to the following pattern:
 
 .. code-block:: shell
 
   java –jar <path-to-validator>/validator_cli.jar \
     -version 4.0.1 \
-    -ig <Dateiname-der-profil-StructureDefinition-Datei> \
-    -ig <canonical-name-von-dependenciens> \	# optional
-    -ig <Dateiname-von-ValueSets> \  			# optional
-    -profile <url-des-zu-validierenden-profils> \
-  <Dateiname-der-Instanz-Datei>
+    -ig <filename-of-profile-StructureDefinition-file> \
+    -ig <canonical-name-of-dependencies> \	# optional
+    -ig <filename-of-ValueSets> \  			# optional
+    -profile <url-of-profile-to-validate-against> \
+  <filename-of-instance-file>
 
 
 
-**Beispiel 1**
-Validierung des Profils https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/intensive-care-treatment-duration (definiert in StructureDefinition-intensive-care-treatment-duration.json) durch die Instanz definiert in “Observation-intensive-care-treatment-duration-instance.json”
+**Example 1**
+Validate the profile https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/intensive-care-treatment-duration
+(defined in StructureDefinition-intensive-care-treatment-duration.json)
+with the instance defined in “Observation-intensive-care-treatment-duration-instance.json”
 
 .. code-block:: shell
 
@@ -399,10 +255,14 @@ Validierung des Profils https://www.netzwerk-universitaetsmedizin.de/fhir/Struct
   -profile https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/intensive-care-treatment-duration \
   Observation-intensive-care-treatment-duration-instance.json
 
- 
 
-**Beispiel 2**
-Validierung des Profils https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/thoracic-drainage (definiert in StructureDefinition-thoracic-drainage.json) durch die Instanz definiert in “Procedure-thoracic-drainage-instance.json”  unter Verwendung der Dependency “de.medizininformatikinitiative.kerndatensatz.prozedur#2.0.0-alpha2” und des ValueSets definiert in “ValueSet-restricted-event-status.json”
+
+**Example 2**
+Validate profile https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/thoracic-drainage
+(defined in StructureDefinition-thoracic-drainage.json)
+with the instance defined in “Procedure-thoracic-drainage-instance.json”
+using the dependency “de.medizininformatikinitiative.kerndatensatz.prozedur#2.0.0-alpha2”
+and the ValueSet defined in “ValueSet-restricted-event-status.json”
 
 .. code-block:: shell
 
@@ -415,54 +275,5 @@ Validierung des Profils https://www.netzwerk-universitaetsmedizin.de/fhir/Struct
   Procedure-thoracic-drainage-instance.json
 
 
-FHIR Java Validator
-===================
-Nachstehend wird die Syntax für den FHIR Java Validator zur Validierung eines Profils anhand einer Instanz beschrieben. Dies kann automatisch durch das Python Validierungsskript erfolgen (siehe oben).
-
-Voraussetzungen
----------------
-* Aktuelles Java muss installiert sein.
-* Aktuelle Version des Validators hier herunterladen: https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar
-
-
-Aufruf
-------
-Aufruf des Validators zur Validierung einer Instanz an einem Profil nach folgendem Muster:
-
-.. code-block:: shell
-
-  java –jar <path-to-validator>/validator_cli.jar \
-    -version 4.0.1 \
-    -ig <Dateiname-der-profil-StructureDefinition-Datei> \
-    -ig <canonical-name-von-dependenciens> \	# optional
-    -ig <Dateiname-von-ValueSets> \  			# optional
-    -profile <url-des-zu-validierenden-profils> \
-  <Dateiname-der-Instanz-Datei>
-
-
-
-**Beispiel 1**
-Validierung des Profils https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/intensive-care-treatment-duration (definiert in StructureDefinition-intensive-care-treatment-duration.json) durch die Instanz definiert in “Observation-intensive-care-treatment-duration-instance.json”
-
-.. code-block:: shell
-
-  java -jar ~/projects/BIH-CEI/fhir-validator/validator_cli.jar \
-  -version 4.0.1\
-  -ig StructureDefinition-intensive-care-treatment-duration.json \
-  -profile https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/intensive-care-treatment-duration \
-  Observation-intensive-care-treatment-duration-instance.json
-
- 
-
-**Beispiel 2**
-Validierung des Profils https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/thoracic-drainage (definiert in StructureDefinition-thoracic-drainage.json) durch die Instanz definiert in “Procedure-thoracic-drainage-instance.json”  unter Verwendung der Dependency “de.medizininformatikinitiative.kerndatensatz.prozedur#2.0.0-alpha2” und des ValueSets definiert in “ValueSet-restricted-event-status.json”
-
-.. code-block:: shell
-
-  java -jar ~/projects/BIH-CEI/fhir-validator/validator_cli.jar \
-  -version 4.0.1\
-  -ig de.medizininformatikinitiative.kerndatensatz.prozedur#2.0.0-alpha2 \
-  -ig StructureDefinition-thoracic-drainage.json \
-  -ig ValueSet-restricted-event-status.json \
-  -profile https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/thoracic-drainage \
-  Procedure-thoracic-drainage-instance.json
+**More information**
+* https://confluence.hl7.org/display/FHIR/Using+the+FHIR+Validator
