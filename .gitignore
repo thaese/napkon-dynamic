@@ -8,7 +8,8 @@ fsh-generated
 
 # Don't commit this because it's so large #
 ###########################################
-/input-cache/publisher.jar
+validator_cli.jar
+publisher.jar
 
 # Windows generated files #
 ###########################
@@ -18,7 +19,23 @@ Thumbs.db
 ######################
 .DS_Store
 .DS_Store?
+.idea
 
 # backup files #
 ################
 *.bak
+
+# IDE folders
+.vscode
+
+# nodejs files/directories
+package.json
+package-lock.json
+node_modules/
+
+# cache folders
+__pycache__/
+
+# non-project folders
+logs/
+notebooks/

@@ -52,6 +52,11 @@
         <generation value="html"/>
       </page>
       <page>
+        <nameUrl value="about.html"/>
+        <title value="About NAPKON Implementation Guide"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
         <nameUrl value="downloads.html"/>
         <title value="Useful Downloads"/>
         <generation value="html"/>
