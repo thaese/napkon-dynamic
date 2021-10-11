@@ -15,7 +15,7 @@ Description: "Defines constraints and methods on pediatry infectious complicatio
 * code.coding ^slicing.discriminator[0].path = "$this"
 * code.coding ^slicing.rules = #open
 * code.coding contains sct 1..1
-* code.coding[sct] from $infectious-complications-sct (required)
+* code.coding[sct] from Covid19Complications (required)
 * subject only Reference(Patient)
 
 Instance: InfectionsComplicationPediatrics
@@ -23,5 +23,5 @@ InstanceOf: infectious-complications-pediatrics
 Usage: #example
 Title: "InfectionsComplicationPediatrics"
 Description: "Example instance of infectious-complications-pediatrics"
-* code = $sct#235859005:246112005=386134007 "Liver disorder due to infection where Severity = Significant"
+* code.coding[sct] = $sct#235859005:246112005=386134007 "Liver disorder due to infection where Severity = Significant"
 * subject = Reference(ExamplePatient)
