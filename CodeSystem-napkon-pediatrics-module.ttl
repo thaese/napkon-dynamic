@@ -1,0 +1,78 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "napkon-pediatrics-module"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">000001<a name=\"napkon-pediatrics-module-000001\"> </a></td><td>Sphingosine analogue (substance)</td></tr><tr><td style=\"white-space:nowrap\">000002<a name=\"napkon-pediatrics-module-000002\"> </a></td><td>Substance with interleukin 2 receptor antagonist mechanism of action (substance)</td></tr><tr><td style=\"white-space:nowrap\">000003<a name=\"napkon-pediatrics-module-000003\"> </a></td><td>Substance with interleukin 17 receptor antagonist mechanism of action (substance)</td></tr><tr><td style=\"white-space:nowrap\">000004<a name=\"napkon-pediatrics-module-000004\"> </a></td><td>Anti-CD20 antibody (substance)</td></tr><tr><td style=\"white-space:nowrap\">000005<a name=\"napkon-pediatrics-module-000005\"> </a></td><td>Anti-CD52 antibody (substance)</td></tr><tr><td style=\"white-space:nowrap\">000006<a name=\"napkon-pediatrics-module-000006\"> </a></td><td>Anti-CD3 antibody (substance)</td></tr><tr><td style=\"white-space:nowrap\">000007<a name=\"napkon-pediatrics-module-000007\"> </a></td><td>Anti-CD3/CD19 antibody (substance)</td></tr><tr><td style=\"white-space:nowrap\">000008<a name=\"napkon-pediatrics-module-000008\"> </a></td><td>Substance with Integrin inhibitor mechanism of action (substance)</td></tr><tr><td style=\"white-space:nowrap\">000009<a name=\"napkon-pediatrics-module-000009\"> </a></td><td>Substance with B cell activating factor inhibitor mechanism of action (substance)</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "NapkonPediatricsModule"];
+  fhir:CodeSystem.title [ fhir:value "NapkonPediatricsModule"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2021-10-11T22:52:28+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "BIH @ Charité"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "BIH @ Charité" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.netzwerk-universitaetsmedizin.de" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "NAPKON Pediatrics Module Code System - Collection of pediatrics module-specific codes that are missing from common terminologies such as SNOMED CT"];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "9"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "000001" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sphingosine analogue (substance)" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "000002" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Substance with interleukin 2 receptor antagonist mechanism of action (substance)" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "000003" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Substance with interleukin 17 receptor antagonist mechanism of action (substance)" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "000004" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Anti-CD20 antibody (substance)" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "000005" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Anti-CD52 antibody (substance)" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "000006" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Anti-CD3 antibody (substance)" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "000007" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Anti-CD3/CD19 antibody (substance)" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "000008" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Substance with Integrin inhibitor mechanism of action (substance)" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "000009" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Substance with B cell activating factor inhibitor mechanism of action (substance)" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

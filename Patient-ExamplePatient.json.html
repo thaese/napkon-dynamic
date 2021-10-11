@@ -51,8 +51,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"7.1"}
-    h3,h4,h5,h6{--heading-prefix:"7.1"}</style>
+    <style type="text/css">h2{--heading-prefix:"7.13"}
+    h3,h4,h5,h6{--heading-prefix:"7.13"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Left logo - typically the publisher's logo - project or affiliate -->
@@ -224,10 +224,19 @@
   },
   "<a href="http://hl7.org/fhir/R4/patient.html#Patient.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: napkon-example-patient&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: maxi musterperson (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;gender&lt;/b&gt;: unknown&lt;/p&gt;&lt;p&gt;&lt;b&gt;birthDate&lt;/b&gt;: 1990-08-08&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: Charitéplatz 1 Berlin 10117 DE &lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Medical record number: napkon-example-patient&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: maxi musterperson (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;gender&lt;/b&gt;: unknown&lt;/p&gt;&lt;p&gt;&lt;b&gt;birthDate&lt;/b&gt;: 1990-08-08&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: Charitéplatz 1 Berlin 10117 DE &lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">identifier</a>" : [
     {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "MR"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "https://netzwerk-universitätsmedizin/fhir/napkon-example-system",
       "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "napkon-example-patient"
     }
   ],
@@ -244,7 +253,7 @@
   "<a href="http://hl7.org/fhir/R4/patient.html#Patient.birthDate">birthDate</a>" : "1990-08-08",
   "<a href="http://hl7.org/fhir/R4/patient.html#Patient.address">address</a>" : [
     {
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.type">type</a>" : "physical",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.type">type</a>" : "both",
       "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.line">line</a>" : [
         "Charitéplatz 1"
       ],
@@ -281,7 +290,7 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a href="https://www.netzwerk-universitaetsmedizin.de">BIH @ Charité</a>.  Package napkon-bih#0.1.0 based on <a href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 11, 2021 22:38+0000">2021-10-11</span>
+          IG &#169; 2021+ <a href="https://www.netzwerk-universitaetsmedizin.de">BIH @ Charité</a>.  Package napkon-bih#0.1.0 based on <a href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 11, 2021 22:52+0000">2021-10-11</span>
           <br/>
           <span style="color: #FFFF77">
             <p style="color: white">

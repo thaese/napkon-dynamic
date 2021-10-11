@@ -17,10 +17,18 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: napkon-example-patient</p><p><b>name</b>: maxi musterperson (OFFICIAL)</p><p><b>gender</b>: unknown</p><p><b>birthDate</b>: 1990-08-08</p><p><b>address</b>: Charitéplatz 1 Berlin 10117 DE </p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Medical record number: napkon-example-patient</p><p><b>name</b>: maxi musterperson (OFFICIAL)</p><p><b>gender</b>: unknown</p><p><b>birthDate</b>: 1990-08-08</p><p><b>address</b>: Charitéplatz 1 Berlin 10117 DE </p></div>"
   ];
   fhir:Patient.identifier [
      fhir:index 0;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "MR" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "https://netzwerk-universitätsmedizin/fhir/napkon-example-system" ];
      fhir:Identifier.value [ fhir:value "napkon-example-patient" ]
   ];
   fhir:Patient.name [
@@ -36,7 +44,7 @@
   fhir:Patient.birthDate [ fhir:value "1990-08-08"^^xsd:date];
   fhir:Patient.address [
      fhir:index 0;
-     fhir:Address.type [ fhir:value "physical" ];
+     fhir:Address.type [ fhir:value "both" ];
      fhir:Address.line [
        fhir:value "Charitéplatz 1";
        fhir:index 0

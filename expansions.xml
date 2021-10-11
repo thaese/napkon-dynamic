@@ -1,9 +1,932 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="b8bea0e6-d6ef-4753-848a-42cda8335f46"/>
+  <id value="4ad188f7-c769-41b9-a8ee-b4cfbd9fda32"/>
   <meta>
-    <lastUpdated value="2021-10-11T22:38:50.854+00:00"/>
+    <lastUpdated value="2021-10-11T22:52:28.271+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/covid19-complications"/>
+    <resource>
+      <ValueSet>
+        <id value="covid19-complications"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 13 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-52702003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=52702003">52702003</a>
+                </td>
+                <td>Iceland disease</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-32398004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=32398004">32398004</a>
+                </td>
+                <td>Bronchitis</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-233981004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=233981004">233981004</a>
+                </td>
+                <td>Arterial aneurysm</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-304252001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=304252001">304252001</a>
+                </td>
+                <td>For resuscitation</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-235859005-246112005-386134007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=235859005:246112005=386134007">235859005:246112005=386134007</a>
+                </td>
+                <td>Liver disorder due to infection where Severity = Significant</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-230431001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=230431001">230431001</a>
+                </td>
+                <td>Situation-related seizures</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-271594007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=271594007">271594007</a>
+                </td>
+                <td>Syncope attack</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-271737000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=271737000">271737000</a>
+                </td>
+                <td>Anemia</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-1119303003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1119303003">1119303003</a>
+                </td>
+                <td>Post-acute COVID-19</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-64226004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=64226004">64226004</a>
+                </td>
+                <td>Colitis</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-52457000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=52457000">52457000</a>
+                </td>
+                <td>Ileitis</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-48661000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=48661000">48661000</a>
+                </td>
+                <td>Peritonitis</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-389026000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=389026000">389026000</a>
+                </td>
+                <td>Ascites (disorder)</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/covid19-complications"/>
+        <version value="0.1.0"/>
+        <name value="Covid19Complications"/>
+        <title value="Covid19 complications"/>
+        <status value="draft"/>
+        <date value="2020-10-05"/>
+        <publisher value="BIH @ Charité"/>
+        <contact>
+          <name value="BIH @ Charité"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+          </telecom>
+        </contact>
+        <description value="Complications due to COVID19"/>
+        <expansion>
+          <identifier value="urn:uuid:38f590e0-4178-447b-8539-a33704c8f368"/>
+          <timestamp value="2021-10-11T22:52:49+00:00"/>
+          <total value="13"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="52702003"/>
+            <display value="Iceland disease"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="32398004"/>
+            <display value="Bronchitis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="233981004"/>
+            <display value="Arterial aneurysm"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="304252001"/>
+            <display value="For resuscitation"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="235859005:246112005=386134007"/>
+            <display value="Liver disorder due to infection where Severity = Significant"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="230431001"/>
+            <display value="Situation-related seizures"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="271594007"/>
+            <display value="Syncope attack"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="271737000"/>
+            <display value="Anemia"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119303003"/>
+            <display value="Post-acute COVID-19"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="64226004"/>
+            <display value="Colitis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="52457000"/>
+            <display value="Ileitis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="48661000"/>
+            <display value="Peritonitis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="389026000"/>
+            <display value="Ascites (disorder)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/fungal-infections"/>
+    <resource>
+      <ValueSet>
+        <id value="fungal-infections"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 5 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-53326005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=53326005">53326005</a>
+                </td>
+                <td>Candida albicans</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-2429008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=2429008">2429008</a>
+                </td>
+                <td>Aspergillus</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-74964007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=74964007">74964007</a>
+                </td>
+                <td>Other</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-260413007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260413007">260413007</a>
+                </td>
+                <td>None</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-261665006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261665006">261665006</a>
+                </td>
+                <td>Unknown</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/fungal-infections"/>
+        <version value="0.1.0"/>
+        <name value="FungalInfections"/>
+        <title value="Fungal Infections"/>
+        <status value="draft"/>
+        <date value="2020-10-05"/>
+        <publisher value="BIH @ Charité"/>
+        <contact>
+          <name value="BIH @ Charité"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+          </telecom>
+        </contact>
+        <description value="Value set of fungal infections"/>
+        <expansion>
+          <identifier value="urn:uuid:0ec7daab-8d7e-43ee-be8f-cfc740c87ce0"/>
+          <timestamp value="2021-10-11T22:52:50+00:00"/>
+          <total value="5"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="53326005"/>
+            <display value="Candida albicans"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="2429008"/>
+            <display value="Aspergillus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="74964007"/>
+            <display value="Other"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="260413007"/>
+            <display value="None"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="261665006"/>
+            <display value="Unknown"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/immunosuppressive-permament-medications"/>
+    <resource>
+      <ValueSet>
+        <id value="immunosuppressive-permament-medications"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 27 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-napkon-pediatrics-module.html">NapkonPediatricsModule v0.1.0 (CodeSystem)</a>
+                </li>
+                <li>SNOMED CT International edition 31-Jul 2021</li>
+                <li>http://fhir.de/CodeSystem/bfarm/atc v2021 (CodeSystem)</li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-116566001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=116566001">116566001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Steroid</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-416798007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=416798007">416798007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Calcineurin inhibitor</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-372669002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=372669002">372669002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Alkylating agent (substance)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-430866006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=430866006">430866006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Interleukin 1 receptor antagonist</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-784015001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=784015001">784015001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Interleukin 6 receptor antagonist</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-771592004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=771592004">771592004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Substance with interleukin 23 receptor antagonist mechanism of action (substance)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-870401008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=870401008">870401008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Cytotoxic T-lymphocyte-associated protein 4 inhibitor</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-768651008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=768651008">768651008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Antithymocyte immunoglobulin</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-372917005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=372917005">372917005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Protein-tyrosine kinase inhibitor</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-48583005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=48583005">48583005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Immunoglobulin E</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-49327004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=49327004">49327004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Interferon</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-74964007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=74964007">74964007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Other</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-260413007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260413007">260413007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>None</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-261665006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261665006">261665006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Unknown</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---fhir.de-CodeSystem-bfarm-atc-L01EG"> </a>
+                  <a href="?ngen-14?.html#CodeSystemATC2021-L01EG">L01EG</a>
+                </td>
+                <td>http://fhir.de/CodeSystem/bfarm/atc</td>
+                <td>Mammalian target of rapamycin (mTOR)-Kinase-Inhibitoren</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---fhir.de-CodeSystem-bfarm-atc-L01B"> </a>
+                  <a href="?ngen-14?.html#CodeSystemATC2021-L01B">L01B</a>
+                </td>
+                <td>http://fhir.de/CodeSystem/bfarm/atc</td>
+                <td>ANTIMETABOLITEN</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---fhir.de-CodeSystem-bfarm-atc-L04AB"> </a>
+                  <a href="?ngen-14?.html#CodeSystemATC2021-L04AB">L04AB</a>
+                </td>
+                <td>http://fhir.de/CodeSystem/bfarm/atc</td>
+                <td>Tumornekrosefaktor alpha (TNF-alpha)-Inhibitoren</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---fhir.de-CodeSystem-bfarm-atc-L01EJ"> </a>
+                  <a href="?ngen-14?.html#CodeSystemATC2021-L01EJ">L01EJ</a>
+                </td>
+                <td>http://fhir.de/CodeSystem/bfarm/atc</td>
+                <td>Janus-assoziierte Kinase (JAK)-Inhibitoren</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-pediatrics-module-000001"> </a>
+                  <a href="CodeSystem-napkon-pediatrics-module.html#napkon-pediatrics-module-000001">000001</a>
+                </td>
+                <td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module</td>
+                <td>Sphingosine analogue (substance)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-pediatrics-module-000002"> </a>
+                  <a href="CodeSystem-napkon-pediatrics-module.html#napkon-pediatrics-module-000002">000002</a>
+                </td>
+                <td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module</td>
+                <td>Substance with interleukin 2 receptor antagonist mechanism of action (substance)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-pediatrics-module-000003"> </a>
+                  <a href="CodeSystem-napkon-pediatrics-module.html#napkon-pediatrics-module-000003">000003</a>
+                </td>
+                <td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module</td>
+                <td>Substance with interleukin 17 receptor antagonist mechanism of action (substance)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-pediatrics-module-000004"> </a>
+                  <a href="CodeSystem-napkon-pediatrics-module.html#napkon-pediatrics-module-000004">000004</a>
+                </td>
+                <td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module</td>
+                <td>Anti-CD20 antibody (substance)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-pediatrics-module-000005"> </a>
+                  <a href="CodeSystem-napkon-pediatrics-module.html#napkon-pediatrics-module-000005">000005</a>
+                </td>
+                <td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module</td>
+                <td>Anti-CD52 antibody (substance)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-pediatrics-module-000006"> </a>
+                  <a href="CodeSystem-napkon-pediatrics-module.html#napkon-pediatrics-module-000006">000006</a>
+                </td>
+                <td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module</td>
+                <td>Anti-CD3 antibody (substance)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-pediatrics-module-000007"> </a>
+                  <a href="CodeSystem-napkon-pediatrics-module.html#napkon-pediatrics-module-000007">000007</a>
+                </td>
+                <td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module</td>
+                <td>Anti-CD3/CD19 antibody (substance)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-pediatrics-module-000008"> </a>
+                  <a href="CodeSystem-napkon-pediatrics-module.html#napkon-pediatrics-module-000008">000008</a>
+                </td>
+                <td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module</td>
+                <td>Substance with Integrin inhibitor mechanism of action (substance)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-pediatrics-module-000009"> </a>
+                  <a href="CodeSystem-napkon-pediatrics-module.html#napkon-pediatrics-module-000009">000009</a>
+                </td>
+                <td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module</td>
+                <td>Substance with B cell activating factor inhibitor mechanism of action (substance)</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/immunosuppressive-permament-medications"/>
+        <version value="0.1.0"/>
+        <name value="ImmunosuppressivePermanentMedications"/>
+        <title value="Immunosuppressive Permanent Medications"/>
+        <status value="draft"/>
+        <date value="2021-10-05"/>
+        <publisher value="BIH @ Charité"/>
+        <contact>
+          <name value="BIH @ Charité"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+          </telecom>
+        </contact>
+        <expansion>
+          <identifier value="urn:uuid:70d75a58-4779-46d1-ba3a-4b0213be5a18"/>
+          <timestamp value="2021-10-11T22:52:50+00:00"/>
+          <total value="27"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://fhir.de/CodeSystem/bfarm/atc|2021"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="116566001"/>
+            <display value="Steroid"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="416798007"/>
+            <display value="Calcineurin inhibitor"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="372669002"/>
+            <display value="Alkylating agent (substance)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="430866006"/>
+            <display value="Interleukin 1 receptor antagonist"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="784015001"/>
+            <display value="Interleukin 6 receptor antagonist"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="771592004"/>
+            <display value="Substance with interleukin 23 receptor antagonist mechanism of action (substance)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="870401008"/>
+            <display value="Cytotoxic T-lymphocyte-associated protein 4 inhibitor"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="768651008"/>
+            <display value="Antithymocyte immunoglobulin"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="372917005"/>
+            <display value="Protein-tyrosine kinase inhibitor"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="48583005"/>
+            <display value="Immunoglobulin E"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="49327004"/>
+            <display value="Interferon"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="74964007"/>
+            <display value="Other"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="260413007"/>
+            <display value="None"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="261665006"/>
+            <display value="Unknown"/>
+          </contains>
+          <contains>
+            <system value="http://fhir.de/CodeSystem/bfarm/atc"/>
+            <code value="L01EG"/>
+            <display value="Mammalian target of rapamycin (mTOR)-Kinase-Inhibitoren"/>
+          </contains>
+          <contains>
+            <system value="http://fhir.de/CodeSystem/bfarm/atc"/>
+            <code value="L01B"/>
+            <display value="ANTIMETABOLITEN"/>
+          </contains>
+          <contains>
+            <system value="http://fhir.de/CodeSystem/bfarm/atc"/>
+            <code value="L04AB"/>
+            <display value="Tumornekrosefaktor alpha (TNF-alpha)-Inhibitoren"/>
+          </contains>
+          <contains>
+            <system value="http://fhir.de/CodeSystem/bfarm/atc"/>
+            <code value="L01EJ"/>
+            <display value="Janus-assoziierte Kinase (JAK)-Inhibitoren"/>
+          </contains>
+          <contains>
+            <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module"/>
+            <code value="000001"/>
+            <display value="Sphingosine analogue (substance)"/>
+          </contains>
+          <contains>
+            <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module"/>
+            <code value="000002"/>
+            <display value="Substance with interleukin 2 receptor antagonist mechanism of action (substance)"/>
+          </contains>
+          <contains>
+            <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module"/>
+            <code value="000003"/>
+            <display value="Substance with interleukin 17 receptor antagonist mechanism of action (substance)"/>
+          </contains>
+          <contains>
+            <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module"/>
+            <code value="000004"/>
+            <display value="Anti-CD20 antibody (substance)"/>
+          </contains>
+          <contains>
+            <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module"/>
+            <code value="000005"/>
+            <display value="Anti-CD52 antibody (substance)"/>
+          </contains>
+          <contains>
+            <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module"/>
+            <code value="000006"/>
+            <display value="Anti-CD3 antibody (substance)"/>
+          </contains>
+          <contains>
+            <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module"/>
+            <code value="000007"/>
+            <display value="Anti-CD3/CD19 antibody (substance)"/>
+          </contains>
+          <contains>
+            <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module"/>
+            <code value="000008"/>
+            <display value="Substance with Integrin inhibitor mechanism of action (substance)"/>
+          </contains>
+          <contains>
+            <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module"/>
+            <code value="000009"/>
+            <display value="Substance with B cell activating factor inhibitor mechanism of action (substance)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/restricted-event-status"/>
+    <resource>
+      <ValueSet>
+        <id value="restricted-event-status"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="http://hl7.org/fhir/R4/codesystem-event-status.html">EventStatus v4.0.1 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="http://hl7.org/fhir/R4/codesystem-event-status.html">
+                <code>http://hl7.org/fhir/event-status</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-event-status-not-done"> </a>
+                  <a href="http://hl7.org/fhir/R4/codesystem-event-status.html#event-status-not-done">not-done</a>
+                </td>
+                <td>Not Done</td>
+                <td>The event was terminated prior to any activity beyond preparation.  I.e. The &#39;main&#39; activity has not yet begun.  The boundary between preparatory and the &#39;main&#39; activity is context-specific.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-event-status-completed"> </a>
+                  <a href="http://hl7.org/fhir/R4/codesystem-event-status.html#event-status-completed">completed</a>
+                </td>
+                <td>Completed</td>
+                <td>The event has now concluded.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-event-status-unknown"> </a>
+                  <a href="http://hl7.org/fhir/R4/codesystem-event-status.html#event-status-unknown">unknown</a>
+                </td>
+                <td>Unknown</td>
+                <td>The authoring/source system does not know which of the status values currently applies for this event.  Note: This concept is not to be used for &quot;other&quot; - one of the listed statuses is presumed to apply,  but the authoring/source system does not know which.</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/restricted-event-status"/>
+        <version value="0.1.0"/>
+        <name value="RestrictedEventStatus"/>
+        <title value="RestrictedEventStatus"/>
+        <status value="active"/>
+        <date value="2021-10-11T22:52:28+00:00"/>
+        <publisher value="BIH @ Charité"/>
+        <contact>
+          <name value="BIH @ Charité"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+          </telecom>
+        </contact>
+        <description value="EventStatus value set restricted to codes not-done, completed and unknown"/>
+        <expansion>
+          <identifier value="urn:uuid:48b10ddf-601c-4d1f-8a08-d1e2c5788d32"/>
+          <timestamp value="2021-10-11T22:52:50+00:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://hl7.org/fhir/event-status|4.0.1"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/event-status"/>
+            <code value="not-done"/>
+            <display value="Not Done"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/event-status"/>
+            <code value="completed"/>
+            <display value="Completed"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/event-status"/>
+            <code value="unknown"/>
+            <display value="Unknown"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
 </Bundle>

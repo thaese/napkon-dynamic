@@ -8,10 +8,19 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: napkon-example-patient</p><p><b>name</b>: maxi musterperson (OFFICIAL)</p><p><b>gender</b>: unknown</p><p><b>birthDate</b>: 1990-08-08</p><p><b>address</b>: Charitéplatz 1 Berlin 10117 DE </p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Medical record number: napkon-example-patient</p><p><b>name</b>: maxi musterperson (OFFICIAL)</p><p><b>gender</b>: unknown</p><p><b>birthDate</b>: 1990-08-08</p><p><b>address</b>: Charitéplatz 1 Berlin 10117 DE </p></div>"
   },
   "identifier": [
     {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "MR"
+          }
+        ]
+      },
+      "system": "https://netzwerk-universitätsmedizin/fhir/napkon-example-system",
       "value": "napkon-example-patient"
     }
   ],
@@ -28,7 +37,7 @@
   "birthDate": "1990-08-08",
   "address": [
     {
-      "type": "physical",
+      "type": "both",
       "line": [
         "Charitéplatz 1"
       ],

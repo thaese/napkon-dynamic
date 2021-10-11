@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="napkon-pediatrics-module"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">000001<a name="napkon-pediatrics-module-000001"> </a></td><td>Sphingosine analogue (substance)</td></tr><tr><td style="white-space:nowrap">000002<a name="napkon-pediatrics-module-000002"> </a></td><td>Substance with interleukin 2 receptor antagonist mechanism of action (substance)</td></tr><tr><td style="white-space:nowrap">000003<a name="napkon-pediatrics-module-000003"> </a></td><td>Substance with interleukin 17 receptor antagonist mechanism of action (substance)</td></tr><tr><td style="white-space:nowrap">000004<a name="napkon-pediatrics-module-000004"> </a></td><td>Anti-CD20 antibody (substance)</td></tr><tr><td style="white-space:nowrap">000005<a name="napkon-pediatrics-module-000005"> </a></td><td>Anti-CD52 antibody (substance)</td></tr><tr><td style="white-space:nowrap">000006<a name="napkon-pediatrics-module-000006"> </a></td><td>Anti-CD3 antibody (substance)</td></tr><tr><td style="white-space:nowrap">000007<a name="napkon-pediatrics-module-000007"> </a></td><td>Anti-CD3/CD19 antibody (substance)</td></tr><tr><td style="white-space:nowrap">000008<a name="napkon-pediatrics-module-000008"> </a></td><td>Substance with Integrin inhibitor mechanism of action (substance)</td></tr><tr><td style="white-space:nowrap">000009<a name="napkon-pediatrics-module-000009"> </a></td><td>Substance with B cell activating factor inhibitor mechanism of action (substance)</td></tr></table></div>
+  </text>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module"/>
+  <version value="0.1.0"/>
+  <name value="NapkonPediatricsModule"/>
+  <title value="NapkonPediatricsModule"/>
+  <status value="active"/>
+  <date value="2021-10-11T22:52:28+00:00"/>
+  <publisher value="BIH @ Charité"/>
+  <contact>
+    <name value="BIH @ Charité"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </telecom>
+  </contact>
+  <description value="NAPKON Pediatrics Module Code System - Collection of pediatrics module-specific codes that are missing from common terminologies such as SNOMED CT"/>
+  <content value="complete"/>
+  <count value="9"/>
+  <concept>
+    <code value="000001"/>
+    <display value="Sphingosine analogue (substance)"/>
+  </concept>
+  <concept>
+    <code value="000002"/>
+    <display value="Substance with interleukin 2 receptor antagonist mechanism of action (substance)"/>
+  </concept>
+  <concept>
+    <code value="000003"/>
+    <display value="Substance with interleukin 17 receptor antagonist mechanism of action (substance)"/>
+  </concept>
+  <concept>
+    <code value="000004"/>
+    <display value="Anti-CD20 antibody (substance)"/>
+  </concept>
+  <concept>
+    <code value="000005"/>
+    <display value="Anti-CD52 antibody (substance)"/>
+  </concept>
+  <concept>
+    <code value="000006"/>
+    <display value="Anti-CD3 antibody (substance)"/>
+  </concept>
+  <concept>
+    <code value="000007"/>
+    <display value="Anti-CD3/CD19 antibody (substance)"/>
+  </concept>
+  <concept>
+    <code value="000008"/>
+    <display value="Substance with Integrin inhibitor mechanism of action (substance)"/>
+  </concept>
+  <concept>
+    <code value="000009"/>
+    <display value="Substance with B cell activating factor inhibitor mechanism of action (substance)"/>
+  </concept>
+</CodeSystem>

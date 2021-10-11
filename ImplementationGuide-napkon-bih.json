@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "NAPKONBIH",
   "status": "draft",
-  "date": "2021-10-11T22:38:50+00:00",
+  "date": "2021-10-11T22:52:28+00:00",
   "publisher": "BIH @ Charité",
   "contact": [
     {
@@ -302,6 +302,173 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/covid19-complication-pediatrics"
+        },
+        "name": "Covid19 complication",
+        "description": "Complication due to COVID19",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/fungal-infection-pediatrics"
+        },
+        "name": "Fungal Infection",
+        "description": "Occurrence of a fungal infection",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/immunosuppresive-permanent-medication-pediatrics"
+        },
+        "name": "Immunosuppresive Permanent Medication",
+        "description": "Immunosuppresive Permanent Medication",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/infectious-complications-pediatrics"
+        },
+        "name": "Pediatry Infectious Complications",
+        "description": "Defines constraints and methods on pediatry infectious complications",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/intensive-care-treatment-duration-pediatrics"
+        },
+        "name": "Intensive care treatment duration",
+        "description": "Duration of intensive care treatment",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/thoracic-drainage-pediatrics"
+        },
+        "name": "Thoracic Drainge",
+        "description": "Application of a thoraric drainage",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/total-length-of-stay-pediatrics"
+        },
+        "name": "Total length of stay",
+        "description": "Total length of stay",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/covid19-complications"
+        },
+        "name": "Covid19 complications",
+        "description": "Complications due to COVID19",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/fungal-infections"
+        },
+        "name": "Fungal Infections",
+        "description": "Value set of fungal infections",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/immunosuppressive-permament-medications"
+        },
+        "name": "Immunosuppressive Permanent Medications",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/restricted-event-status"
+        },
+        "name": "RestrictedEventStatus",
+        "description": "EventStatus value set restricted to codes not-done, completed and unknown",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/napkon-pediatrics-module"
+        },
+        "name": "NapkonPediatricsModule",
+        "description": "NAPKON Pediatrics Module Code System - Collection of pediatrics module-specific codes that are missing from common terminologies such as SNOMED CT",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Patient"
           }
         ],
@@ -310,6 +477,104 @@
         },
         "name": "ExamplePatient",
         "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/InfectionsComplicationPediatrics"
+        },
+        "name": "InfectionsComplicationPediatrics",
+        "description": "Example instance of infectious-complications-pediatrics",
+        "exampleCanonical": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/infectious-complications-pediatrics"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/covid19-complication-instance"
+        },
+        "name": "covid19-complication-instance",
+        "description": "Example of a covid19 complication",
+        "exampleCanonical": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/covid19-complication-pediatrics"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/fungal-infection-instance"
+        },
+        "name": "fungal-infection-instance",
+        "description": "Example of a fungal infection",
+        "exampleCanonical": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/fungal-infection-pediatrics"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationStatement"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationStatement/immunosuppresive-permanent-medication-instance"
+        },
+        "name": "immunosuppresive-permanent-medication-instance",
+        "description": "Example of a Immunosuppresive Permanent Medication",
+        "exampleCanonical": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunosuppresive-permanent-medication-pediatrics"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/intensive-care-treatment-duration-instance"
+        },
+        "name": "intensive-care-treatment-duration-instance",
+        "description": "Example of an intensive care treatment duration",
+        "exampleCanonical": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/intensive-care-treatment-duration-pediatrics"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Procedure"
+          }
+        ],
+        "reference": {
+          "reference": "Procedure/thoracic-drainage-instance"
+        },
+        "name": "thoracic-drainage-instance",
+        "description": "Example of a thoracic drainage",
+        "exampleCanonical": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/thoracic-drainage-pediatrics"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/total-length-of-stay-instance"
+        },
+        "name": "total-length-of-stay-instance",
+        "description": "Example of an total length of stay",
+        "exampleCanonical": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/total-length-of-stay-pediatrics"
       }
     ],
     "page": {

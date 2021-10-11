@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 0, errors = 0, warn = 4, info = 3 -->
+<!-- broken links = 59, errors = 4, warn = 6, info = 1 -->
 <head>
   <title>NAPKONBIH : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for NAPKONBIH</h1>
- <p>Generated Mon Oct 11 22:38:58 UTC 2021, FHIR version 4.0.1 for napkon-bih#0.1.0 (canonical = <a href="https://www.netzwerk-universitaetsmedizin.de/fhir">https://www.netzwerk-universitaetsmedizin.de/fhir</a> (<a href="https://www.netzwerk-universitaetsmedizin.de/fhir/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
+ <p>Generated Mon Oct 11 22:53:03 UTC 2021, FHIR version 4.0.1 for napkon-bih#0.1.0 (canonical = <a href="https://www.netzwerk-universitaetsmedizin.de/fhir">https://www.netzwerk-universitaetsmedizin.de/fhir</a> (<a href="https://www.netzwerk-universitaetsmedizin.de/fhir/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.81</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = napkon-bih, Canonical = https://www.netzwerk-universitaetsmedizin.de/fhir</td></tr>
@@ -59,14 +59,17 @@
  <br/><br/>The copyrightYear parameter ('2021+') in the IG resource is good</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at https://www.netzwerk-universitaetsmedizin.de/fhir (Problem #1 with package-list.json at https://www.netzwerk-universitaetsmedizin.de/fhir: https://www.netzwerk-universitaetsmedizin.de/fhir/package-list.json)</td></tr>
- <tr><td>Summary:</td><td> broken links = 0, errors = 0, warn = 4, info = 3</td></tr>
+ <tr><td>Summary:</td><td> broken links = 59, errors = 4, warn = 6, info = 1</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>63</b></td><td><b>5</b></td><td><b>1</b></td>
+   </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>4</b></td><td><b>1</b></td>
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-covid19-complications"><b>/github/workspace/fsh-generated/resources/ValueSet-covid19-complications</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
 </table>
 <hr/>
@@ -86,8 +89,213 @@
    <tr style="background-color: #ffffe6">
      <td><b>ImplementationGuide.dependency[2].url</b></td><td><b>information</b></td><td title=""><b>The correct canonical URL for this dependency is https://simplifier.net/guide/medizininformatikinitiative-modulmedikation-implementationguide</b></td>
    </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>?pkp-1?</b></td><td><b>error</b></td><td title=""><b>The reference http://fhir.de/StructureDefinition/CodingOPS could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/immunosuppressive-permament-medications.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
    <tr style="background-color: #ffebcc">
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Patient/ExamplePatient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>?pkp-1?</b></td><td><b>error</b></td><td title=""><b>The reference http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>?pkp-1?</b></td><td><b>error</b></td><td title=""><b>The reference https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>?pkp-1?</b></td><td><b>error</b></td><td title=""><b>The reference http://fhir.de/StructureDefinition/seitenlokalisation could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-immunosuppresive-permanent-medication-pediatrics-definitions.html#l729">output/StructureDefinition-immunosuppresive-permanent-medication-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 312, column 279</a></b></td><td><b>error</b></td><td><b>The link 'http.html#read' for &quot;read&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-immunosuppresive-permanent-medication-pediatrics-definitions.html#l766">output/StructureDefinition-immunosuppresive-permanent-medication-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 317, column 126</a></b></td><td><b>error</b></td><td><b>The link 'provenance.html#' for &quot;Provenance&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-immunosuppresive-permanent-medication-pediatrics-definitions.html#l836">output/StructureDefinition-immunosuppresive-permanent-medication-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 328, column 69</a></b></td><td><b>error</b></td><td><b>The link 'structuredefinition.html#' for &quot;StructureDefinition&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-immunosuppresive-permanent-medication-pediatrics-definitions.html#l836">output/StructureDefinition-immunosuppresive-permanent-medication-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 328, column 207</a></b></td><td><b>error</b></td><td><b>The link 'structuredefinition-definitions.html#StructureDefinition.url' for &quot;StructureDefinition.url&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-immunosuppresive-permanent-medication-pediatrics-definitions.html#l1409">output/StructureDefinition-immunosuppresive-permanent-medication-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 419, column 357</a></b></td><td><b>error</b></td><td><b>The link 'extensibility.html#modifierExtension' for &quot;definition of modifier extensions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-immunosuppresive-permanent-medication-pediatrics-definitions.html#l2148">output/StructureDefinition-immunosuppresive-permanent-medication-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 532, column 151</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;MII-Reference&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-immunosuppresive-permanent-medication-pediatrics-definitions.html#l3008">output/StructureDefinition-immunosuppresive-permanent-medication-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 652, column 357</a></b></td><td><b>error</b></td><td><b>The link 'extensibility.html#modifierExtension' for &quot;definition of modifier extensions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-immunosuppresive-permanent-medication-pediatrics-definitions.html#l3542">output/StructureDefinition-immunosuppresive-permanent-medication-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 741, column 168</a></b></td><td><b>error</b></td><td><b>The link 'extension-bodysite.html' for &quot;bodySite&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-immunosuppresive-permanent-medication-pediatrics-definitions.html#l3799">output/StructureDefinition-immunosuppresive-permanent-medication-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 779, column 108</a></b></td><td><b>error</b></td><td><b>The link 'file://C:\GitHub\hl7.fhir.uv.ips#1.0.0\output/ValueSet-target-site-uv-ips.html' for &quot;Target Site - IPS&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-immunosuppresive-permanent-medication-pediatrics-definitions.html#l4694">output/StructureDefinition-immunosuppresive-permanent-medication-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 922, column 116</a></b></td><td><b>error</b></td><td><b>The link 'file://C:\GitHub\hl7.fhir.uv.ips#1.0.0\output/ValueSet-medicine-route-of-administration.html' for &quot;Medicine Route of Administration - IPS&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-immunosuppresive-permanent-medication-pediatrics.html#l465">output/StructureDefinition-immunosuppresive-permanent-medication-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 306, column 44</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;ProfileMedicationStatementMedikation&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-immunosuppresive-permanent-medication-pediatrics.html#l493">output/StructureDefinition-immunosuppresive-permanent-medication-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 321, column 44</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;ProfileMedicationStatementMedikation&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-immunosuppresive-permanent-medication-pediatrics.html#l2025">output/StructureDefinition-immunosuppresive-permanent-medication-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 392, column 2111</a></b></td><td><b>error</b></td><td><b>The link 'file://C:\GitHub\hl7.fhir.uv.ips#1.0.0\output/ValueSet-target-site-uv-ips.html' for &quot;Target Site - IPS&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-immunosuppresive-permanent-medication-pediatrics.html#l2543">output/StructureDefinition-immunosuppresive-permanent-medication-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 412, column 2239</a></b></td><td><b>error</b></td><td><b>The link 'file://C:\GitHub\hl7.fhir.uv.ips#1.0.0\output/ValueSet-medicine-route-of-administration.html' for &quot;Medicine Route of Administration - IPS&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-immunosuppresive-permanent-medication-pediatrics.html#l4421">output/StructureDefinition-immunosuppresive-permanent-medication-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 638, column 2103</a></b></td><td><b>error</b></td><td><b>The link 'file://C:\GitHub\hl7.fhir.uv.ips#1.0.0\output/ValueSet-medicine-route-of-administration.html' for &quot;Medicine Route of Administration - IPS&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-immunosuppresive-permanent-medication-pediatrics.html#l4806">output/StructureDefinition-immunosuppresive-permanent-medication-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 661, column 44</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;ProfileMedicationStatementMedikation&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-immunosuppresive-permanent-medication-pediatrics.html#l4831">output/StructureDefinition-immunosuppresive-permanent-medication-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 675, column 44</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;ProfileMedicationStatementMedikation&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-immunosuppresive-permanent-medication-pediatrics.html#l6363">output/StructureDefinition-immunosuppresive-permanent-medication-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 746, column 2111</a></b></td><td><b>error</b></td><td><b>The link 'file://C:\GitHub\hl7.fhir.uv.ips#1.0.0\output/ValueSet-target-site-uv-ips.html' for &quot;Target Site - IPS&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-immunosuppresive-permanent-medication-pediatrics.html#l6881">output/StructureDefinition-immunosuppresive-permanent-medication-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 766, column 2239</a></b></td><td><b>error</b></td><td><b>The link 'file://C:\GitHub\hl7.fhir.uv.ips#1.0.0\output/ValueSet-medicine-route-of-administration.html' for &quot;Medicine Route of Administration - IPS&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-immunosuppresive-permanent-medication-pediatrics.html#l8182">output/StructureDefinition-immunosuppresive-permanent-medication-pediatrics.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 984, column 206</a></b></td><td><b>error</b></td><td><b>The link '#dose-form-null' for &quot;null&quot; cannot be resolved (valid targets: 268 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-thoracic-drainage-pediatrics-definitions.html#l722">output/StructureDefinition-thoracic-drainage-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 300, column 279</a></b></td><td><b>error</b></td><td><b>The link 'http.html#read' for &quot;read&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-thoracic-drainage-pediatrics-definitions.html#l759">output/StructureDefinition-thoracic-drainage-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 305, column 126</a></b></td><td><b>error</b></td><td><b>The link 'provenance.html#' for &quot;Provenance&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-thoracic-drainage-pediatrics-definitions.html#l829">output/StructureDefinition-thoracic-drainage-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 316, column 69</a></b></td><td><b>error</b></td><td><b>The link 'structuredefinition.html#' for &quot;StructureDefinition&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-thoracic-drainage-pediatrics-definitions.html#l829">output/StructureDefinition-thoracic-drainage-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 316, column 207</a></b></td><td><b>error</b></td><td><b>The link 'structuredefinition-definitions.html#StructureDefinition.url' for &quot;StructureDefinition.url&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-thoracic-drainage-pediatrics-definitions.html#l1391">output/StructureDefinition-thoracic-drainage-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 405, column 154</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;ExtensionProzedurDokumentationsdatum&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-thoracic-drainage-pediatrics-definitions.html#l1479">output/StructureDefinition-thoracic-drainage-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 417, column 154</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Extension_MII_Durchfuehrungsabsicht&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-thoracic-drainage-pediatrics-definitions.html#l1578">output/StructureDefinition-thoracic-drainage-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 431, column 357</a></b></td><td><b>error</b></td><td><b>The link 'extensibility.html#modifierExtension' for &quot;definition of modifier extensions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-thoracic-drainage-pediatrics-definitions.html#l1687">output/StructureDefinition-thoracic-drainage-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 447, column 95</a></b></td><td><b>error</b></td><td><b>The link 'resource.html#identifiers' for &quot;discussion&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-thoracic-drainage-pediatrics-definitions.html#l1763">output/StructureDefinition-thoracic-drainage-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 456, column 37</a></b></td><td><b>error</b></td><td><b>The link 'references.html#canonical' for &quot;Canonical References&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-thoracic-drainage-pediatrics-definitions.html#l2452">output/StructureDefinition-thoracic-drainage-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 561, column 116</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;ValueSet_MII_SnomedProcedure-Category&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-thoracic-drainage-pediatrics-definitions.html#l3366">output/StructureDefinition-thoracic-drainage-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 704, column 115</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;OpsVS&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-thoracic-drainage-pediatrics-definitions.html#l3375">output/StructureDefinition-thoracic-drainage-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 705, column 144</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;CodingOPS&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-thoracic-drainage-pediatrics-definitions.html#l3590">output/StructureDefinition-thoracic-drainage-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 735, column 154</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;ExtensionSeitenlokalisation&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-thoracic-drainage-pediatrics-definitions.html#l3671">output/StructureDefinition-thoracic-drainage-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 746, column 154</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;ExtensionSeitenlokalisation&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-thoracic-drainage-pediatrics-definitions.html#l4125">output/StructureDefinition-thoracic-drainage-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 819, column 115</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;ValueSet_MII_SnomedProcedureCodes&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-thoracic-drainage-pediatrics-definitions.html#l4747">output/StructureDefinition-thoracic-drainage-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 917, column 151</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;MII-Reference&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-thoracic-drainage-pediatrics-definitions.html#l5309">output/StructureDefinition-thoracic-drainage-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 992, column 357</a></b></td><td><b>error</b></td><td><b>The link 'extensibility.html#modifierExtension' for &quot;definition of modifier extensions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-thoracic-drainage-pediatrics-definitions.html#l5863">output/StructureDefinition-thoracic-drainage-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 1077, column 168</a></b></td><td><b>error</b></td><td><b>The link 'extension-procedure-targetbodystructure.html' for &quot;procedure-targetbodystructure&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-thoracic-drainage-pediatrics-definitions.html#l6512">output/StructureDefinition-thoracic-drainage-pediatrics-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 1177, column 357</a></b></td><td><b>error</b></td><td><b>The link 'extensibility.html#modifierExtension' for &quot;definition of modifier extensions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-thoracic-drainage-pediatrics.html#l465">output/StructureDefinition-thoracic-drainage-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 306, column 44</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Profile_MII_ProcedureProzedur&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-thoracic-drainage-pediatrics.html#l494">output/StructureDefinition-thoracic-drainage-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/div/ul/li/a at Line 317, column 7</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;MII-Reference (https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-thoracic-drainage-pediatrics.html#l511">output/StructureDefinition-thoracic-drainage-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 328, column 44</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Profile_MII_ProcedureProzedur&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-thoracic-drainage-pediatrics.html#l748">output/StructureDefinition-thoracic-drainage-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 339, column 1477</a></b></td><td><b>error</b></td><td><b>The link 'unknown.html' for &quot;?pkp-2?&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-thoracic-drainage-pediatrics.html#l2363">output/StructureDefinition-thoracic-drainage-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 409, column 1790</a></b></td><td><b>error</b></td><td><b>The link 'unknown.html' for &quot;?pkp-2?&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-thoracic-drainage-pediatrics.html#l4604">output/StructureDefinition-thoracic-drainage-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 646, column 1664</a></b></td><td><b>error</b></td><td><b>The link 'unknown.html' for &quot;?pkp-2?&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-thoracic-drainage-pediatrics.html#l5150">output/StructureDefinition-thoracic-drainage-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 675, column 44</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Profile_MII_ProcedureProzedur&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-thoracic-drainage-pediatrics.html#l5176">output/StructureDefinition-thoracic-drainage-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/div/ul/li/a at Line 685, column 7</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;MII-Reference (https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-thoracic-drainage-pediatrics.html#l5193">output/StructureDefinition-thoracic-drainage-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 696, column 44</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Profile_MII_ProcedureProzedur&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-thoracic-drainage-pediatrics.html#l5430">output/StructureDefinition-thoracic-drainage-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 707, column 1477</a></b></td><td><b>error</b></td><td><b>The link 'unknown.html' for &quot;?pkp-2?&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-thoracic-drainage-pediatrics.html#l7045">output/StructureDefinition-thoracic-drainage-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 777, column 1790</a></b></td><td><b>error</b></td><td><b>The link 'unknown.html' for &quot;?pkp-2?&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-thoracic-drainage-pediatrics.html#l8916">output/StructureDefinition-thoracic-drainage-pediatrics.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1011, column 157</a></b></td><td><b>error</b></td><td><b>The link '#CodeSystemOPS2021-8-144' for &quot;8-144&quot; cannot be resolved (valid targets: 285 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-immunosuppressive-permament-medications.html#l514">output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/ul/li/table/tr/td/a at Line 236, column 2982</a></b></td><td><b>error</b></td><td><b>The link '?ngen-14?.html#CodeSystemATC2021-L01EG' for &quot;L01EG&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-immunosuppressive-permament-medications.html#l520">output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/ul/li/table/tr/td/a at Line 236, column 3122</a></b></td><td><b>error</b></td><td><b>The link '?ngen-14?.html#CodeSystemATC2021-L01B' for &quot;L01B&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-immunosuppressive-permament-medications.html#l526">output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/ul/li/table/tr/td/a at Line 236, column 3220</a></b></td><td><b>error</b></td><td><b>The link '?ngen-14?.html#CodeSystemATC2021-L04AB' for &quot;L04AB&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-immunosuppressive-permament-medications.html#l532">output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/ul/li/table/tr/td/a at Line 236, column 3353</a></b></td><td><b>error</b></td><td><b>The link '?ngen-14?.html#CodeSystemATC2021-L01EJ' for &quot;L01EJ&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-immunosuppressive-permament-medications.html#l797">output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 242, column 4330</a></b></td><td><b>error</b></td><td><b>The link '?ngen-14?.html#CodeSystemATC2021-L01EG' for &quot;L01EG&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-immunosuppressive-permament-medications.html#l808">output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 242, column 4602</a></b></td><td><b>error</b></td><td><b>The link '?ngen-14?.html#CodeSystemATC2021-L01B' for &quot;L01B&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-immunosuppressive-permament-medications.html#l819">output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 242, column 4833</a></b></td><td><b>error</b></td><td><b>The link '?ngen-14?.html#CodeSystemATC2021-L04AB' for &quot;L04AB&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-immunosuppressive-permament-medications.html#l830">output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 242, column 5099</a></b></td><td><b>error</b></td><td><b>The link '?ngen-14?.html#CodeSystemATC2021-L01EJ' for &quot;L01EJ&quot; cannot be resolved</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-covid19-complications"> </a>
+<h2><a href="ValueSet-covid19-complications.html">fsh-generated/resources/ValueSet-covid19-complications.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[8]</b></td><td><b>warning</b></td><td title=""><b>The code 11479008 is not valid in the system http://snomed.info/sct</b></td>
    </tr>
 </table>
 <a name="suppressed"> </a>

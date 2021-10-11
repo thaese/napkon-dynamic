@@ -1,9 +1,93 @@
 [
   {
+    "id": "napkon-pediatrics-module",
+    "type": "CodeSystem",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module",
+    "version": "0.1.0",
+    "name": "NapkonPediatricsModule"
+  },
+  {
     "id": "napkon-bih",
     "type": "ImplementationGuide",
     "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ImplementationGuide/napkon-bih",
     "version": "0.1.0",
     "name": "NAPKONBIH"
+  },
+  {
+    "id": "covid19-complication-pediatrics",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/covid19-complication-pediatrics",
+    "version": "0.1.0",
+    "name": "Covid19ComplicationPediatrics"
+  },
+  {
+    "id": "fungal-infection-pediatrics",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/fungal-infection-pediatrics",
+    "version": "0.1.0",
+    "name": "FungalInfectionPediatrics"
+  },
+  {
+    "id": "immunosuppresive-permanent-medication-pediatrics",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunosuppresive-permanent-medication-pediatrics",
+    "version": "0.1.0",
+    "name": "ImmunosuppresivePermanentMedicationPediatrics"
+  },
+  {
+    "id": "infectious-complications-pediatrics",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/infectious-complications-pediatrics",
+    "version": "0.1.0",
+    "name": "InfectiousComplicationPediatrics"
+  },
+  {
+    "id": "intensive-care-treatment-duration-pediatrics",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/intensive-care-treatment-duration-pediatrics",
+    "version": "0.1.0",
+    "name": "IntensiveCareTreatmentDurationPediatrics"
+  },
+  {
+    "id": "thoracic-drainage-pediatrics",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/thoracic-drainage-pediatrics",
+    "version": "0.1.0",
+    "name": "ThoracicDrainagePediatrics"
+  },
+  {
+    "id": "total-length-of-stay-pediatrics",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/total-length-of-stay-pediatrics",
+    "version": "0.1.0",
+    "name": "TotalLengthOfStayPediatrics"
+  },
+  {
+    "id": "covid19-complications",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/covid19-complications",
+    "version": "0.1.0",
+    "name": "Covid19Complications"
+  },
+  {
+    "id": "fungal-infections",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/fungal-infections",
+    "version": "0.1.0",
+    "name": "FungalInfections"
+  },
+  {
+    "id": "immunosuppressive-permament-medications",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/immunosuppressive-permament-medications",
+    "version": "0.1.0",
+    "name": "ImmunosuppressivePermanentMedications"
+  },
+  {
+    "id": "restricted-event-status",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/restricted-event-status",
+    "version": "0.1.0",
+    "name": "RestrictedEventStatus"
   }
 ]
