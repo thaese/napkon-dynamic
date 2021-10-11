@@ -1,3 +1,5 @@
+// Author: Gregor Lichtner
+// Berlin Institute of Health | Charité
 Alias: $eventStatus = http://hl7.org/fhir/event-status
 
 ValueSet: RestrictedEventStatus

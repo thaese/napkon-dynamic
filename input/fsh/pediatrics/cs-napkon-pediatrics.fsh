@@ -1,7 +1,9 @@
-CodeSystem: NapkonImmunosuppresiveMedications
-Id: napkon-immunosuppresive-medications
-Title: "Immunosuppresive medications (NAPKON pediatrics module)"
-Description: "Immunosuppresive medications not listed in SNOMED"
+CodeSystem: NapkonPediatricsModule
+Id: napkon-pediatrics-module
+Title: "NapkonPediatricsModule"
+Description: "NAPKON Pediatrics Module Code System - Collection of pediatrics module-specific codes that are missing from common terminologies such as SNOMED CT"
+
+// Immunosuppresive medications
 * #000001 "Sphingosine analogue (substance)"
 * #000002 "Substance with interleukin 2 receptor antagonist mechanism of action (substance)"
 * #000003 "Substance with interleukin 17 receptor antagonist mechanism of action (substance)"

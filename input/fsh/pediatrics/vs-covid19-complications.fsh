@@ -1,3 +1,5 @@
+// Author: Gregor Lichtner
+// Berlin Institute of Health | Charité
 ValueSet: Covid19Complications
 Id: covid19-complications
 Title: "Covid19 complications"

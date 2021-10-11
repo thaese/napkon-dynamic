@@ -1,3 +1,5 @@
+// Author: Gregor Lichtner
+// Berlin Institute of Health | Charité
 ValueSet: FungalInfections
 Id: fungal-infections
 Title: "Fungal Infections"
