@@ -14,11 +14,10 @@ Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation
 // ValueSets
 Alias: $cardiovascular-diseases-icd = https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/cardiovascular-diseases-icd
 Alias: $cardiovascular-diseases = https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/cardiovascular-diseases
-Alias: $infectious-complications-sct = https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/infectious-complications-sct
 
 // Resources
 Alias: $data-absent-reason = http://hl7.org/fhir/StructureDefinition/data-absent-reason
 Alias: $gecco-base-condition = https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-base-condition
 
 // Own code systems
-Alias: $nis = https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-immunosuppresive-medications
+Alias: $nis = https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module
