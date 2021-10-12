@@ -1,15 +1,15 @@
 // Author: Gregor Lichtner
 // Berlin Institute of Health | Charité
-Profile: ImmunosuppresivePermanentMedicationPediatrics
+Profile: ImmunosuppresivePermanentMedication
 Parent: ProfileMedicationStatementMedikation
-Id: immunosuppresive-permanent-medication-pediatrics
+Id: immunosuppresive-permanent-medication
 Title: "Immunosuppresive Permanent Medication"
 Description: "Immunosuppresive Permanent Medication"
 * insert napkon-metadata(2021-09-13, #draft, 0.1.0)
 * medicationCodeableConcept from immunosuppressive-permament-medications
 
 Instance: ImmunosuppresivePermanentMedication
-InstanceOf: immunosuppresive-permanent-medication-pediatrics
+InstanceOf: immunosuppresive-permanent-medication
 Usage: #example
 Title: "Immunosuppresive Permanent Medication"
 Description: "Example of a Immunosuppresive Permanent Medication"

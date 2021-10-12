@@ -1,8 +1,8 @@
 // Author: Gregor Lichtner
 // Berlin Institute of Health | Charité
-Profile: FungalInfectionPediatrics
+Profile: FungalInfection
 Parent: Condition
-Id: fungal-infection-pediatrics
+Id: fungal-infection
 Title: "Fungal Infection"
 Description: "Occurrence of a fungal infection"
 * insert napkon-metadata(2021-09-22, #draft, 0.1.0)
@@ -15,7 +15,7 @@ Description: "Occurrence of a fungal infection"
 * code from FungalInfections (required)
 
 Instance: FungalInfection
-InstanceOf: fungal-infection-pediatrics
+InstanceOf: fungal-infection
 Usage: #example
 Title: "fungal-infection-instance"
 Description: "Example of a fungal infection"

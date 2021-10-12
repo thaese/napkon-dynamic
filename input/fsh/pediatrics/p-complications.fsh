@@ -1,8 +1,8 @@
 // Author: Gregor Lichtner
 // Berlin Institute of Health | Charité
-Profile: Covid19ComplicationPediatrics
+Profile: Covid19Complication
 Parent: Condition
-Id: covid19-complication-pediatrics
+Id: covid19-complication
 Title: "Covid19 complication"
 Description: "Complication due to COVID19"
 * insert napkon-metadata(2021-09-22, #draft, 0.1.0)
@@ -15,7 +15,7 @@ Description: "Complication due to COVID19"
 * code from Covid19Complications (required)
 
 Instance: Covid19Complication
-InstanceOf: covid19-complication-pediatrics
+InstanceOf: covid19-complication
 Usage: #example
 Title: "Covid19 Complication"
 Description: "Example of a covid19 complication"

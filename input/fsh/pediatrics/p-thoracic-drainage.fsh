@@ -1,8 +1,8 @@
 // Author: Gregor Lichtner
 // Berlin Institute of Health | Charité
-Profile: ThoracicDrainagePediatrics
+Profile: ThoracicDrainage
 Parent: Profile-MII-Procedure-Prozedur
-Id: thoracic-drainage-pediatrics
+Id: thoracic-drainage
 Title: "Thoracic Drainge"
 Description: "Application of a thoraric drainage"
 * insert napkon-metadata(2021-09-13, #draft, 0.1.0)
@@ -15,7 +15,7 @@ Description: "Application of a thoraric drainage"
 
 
 Instance: ThoracicDrainage
-InstanceOf: thoracic-drainage-pediatrics
+InstanceOf: thoracic-drainage
 Usage: #example
 Title: "Thoracic Drainage"
 Description: "Example of a thoracic drainage"

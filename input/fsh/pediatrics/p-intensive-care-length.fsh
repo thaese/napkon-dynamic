@@ -1,8 +1,8 @@
 // Author: Gregor Lichtner
 // Berlin Institute of Health | Charité
-Profile: IntensiveCareTreatmentDurationPediatrics
+Profile: IntensiveCareTreatmentDuration
 Parent: Observation
-Id: intensive-care-treatment-duration-pediatrics
+Id: intensive-care-treatment-duration
 Title: "Intensive care treatment duration"
 Description: "Duration of intensive care treatment"
 * insert napkon-metadata(2021-09-15, #draft, 0.1.0)
@@ -28,7 +28,7 @@ Description: "Duration of intensive care treatment"
 * valueQuantity.code = #d
 
 Instance: IntensiveCareTreatmentDuration
-InstanceOf: intensive-care-treatment-duration-pediatrics
+InstanceOf: intensive-care-treatment-duration
 Usage: #example
 Title: "Intensive Care Treatment Duration"
 Description: "Example of an intensive care treatment duration"
