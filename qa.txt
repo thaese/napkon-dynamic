@@ -1,20 +1,20 @@
 ﻿NAPKONBIH : Validation Results
 =========================================
 
-err = 4, warn = 6, info = 1
+err = 4, warn = 5, info = 1
 IG Publisher Version: 1.1.81
-Generated Mon Oct 11 22:53:03 UTC 2021. FHIR version 4.0.1 for napkon-bih#0.1.0 (canonical = https://www.netzwerk-universitaetsmedizin.de/fhir)
- Build Errors : 63 / 5 / 1
+Generated Tue Oct 12 07:20:23 UTC 2021. FHIR version 4.0.1 for napkon-bih#0.1.0 (canonical = https://www.netzwerk-universitaetsmedizin.de/fhir)
+ Build Errors : 63 / 4 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-napkon-pediatrics-module : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Condition-Covid19Complication : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Condition-FungalInfection : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Condition-InfectionsComplicationPediatrics : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Condition-covid19-complication-instance : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Condition-fungal-infection-instance : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-napkon-bih : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/MedicationStatement-immunosuppresive-permanent-medication-instance : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Observation-intensive-care-treatment-duration-instance : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Observation-total-length-of-stay-instance : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/MedicationStatement-ImmunosuppresivePermanentMedication : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-IntensiveCareTreatmentDuration : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-TotalLengthOfStay : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-ExamplePatient : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/Procedure-thoracic-drainage-instance : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Procedure-ThoracicDrainage : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-covid19-complication-pediatrics : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-fungal-infection-pediatrics : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-immunosuppresive-permanent-medication-pediatrics : 0 / 0 / 1
@@ -33,7 +33,6 @@ WARNING: ImplementationGuide.dependency[1].url: The canonical URL for an Impleme
 WARNING: ImplementationGuide.dependency[2].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
 INFORMATION: ImplementationGuide.dependency[2].url: The correct canonical URL for this dependency is https://simplifier.net/guide/medizininformatikinitiative-modulmedikation-implementationguide
 ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/CodingOPS could not be resolved
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/immunosuppressive-permament-medications.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/ExamplePatient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum could not be resolved
 ERROR: ?pkp-1?: The reference https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht could not be resolved
@@ -89,24 +88,24 @@ ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-pediatrics
 ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 707, column 1477: The link 'unknown.html' for "?pkp-2?" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-pediatrics.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 777, column 1790: The link 'unknown.html' for "?pkp-2?" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-pediatrics.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1011, column 157: The link '#CodeSystemOPS2021-8-144' for "8-144" cannot be resolved (valid targets: 285 targets)
-ERROR: /github/workspace/output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/ul/li/table/tr/td/a at Line 236, column 2982: The link '?ngen-14?.html#CodeSystemATC2021-L01EG' for "L01EG" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/ul/li/table/tr/td/a at Line 236, column 3122: The link '?ngen-14?.html#CodeSystemATC2021-L01B' for "L01B" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/ul/li/table/tr/td/a at Line 236, column 3220: The link '?ngen-14?.html#CodeSystemATC2021-L04AB' for "L04AB" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/ul/li/table/tr/td/a at Line 236, column 3353: The link '?ngen-14?.html#CodeSystemATC2021-L01EJ' for "L01EJ" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 242, column 4330: The link '?ngen-14?.html#CodeSystemATC2021-L01EG' for "L01EG" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 242, column 4602: The link '?ngen-14?.html#CodeSystemATC2021-L01B' for "L01B" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 242, column 4833: The link '?ngen-14?.html#CodeSystemATC2021-L04AB' for "L04AB" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 242, column 5099: The link '?ngen-14?.html#CodeSystemATC2021-L01EJ' for "L01EJ" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/ul/li/table/tr/td/a at Line 238, column 2982: The link '?ngen-14?.html#CodeSystemATC2021-L01EG' for "L01EG" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/ul/li/table/tr/td/a at Line 238, column 3122: The link '?ngen-14?.html#CodeSystemATC2021-L01B' for "L01B" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/ul/li/table/tr/td/a at Line 238, column 3220: The link '?ngen-14?.html#CodeSystemATC2021-L04AB' for "L04AB" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/ul/li/table/tr/td/a at Line 238, column 3353: The link '?ngen-14?.html#CodeSystemATC2021-L01EJ' for "L01EJ" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 244, column 4330: The link '?ngen-14?.html#CodeSystemATC2021-L01EG' for "L01EG" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 244, column 4602: The link '?ngen-14?.html#CodeSystemATC2021-L01B' for "L01B" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 244, column 4833: The link '?ngen-14?.html#CodeSystemATC2021-L04AB' for "L04AB" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 244, column 5099: The link '?ngen-14?.html#CodeSystemATC2021-L01EJ' for "L01EJ" cannot be resolved
 == fsh-generated/resources/CodeSystem-napkon-pediatrics-module.json ==
+== fsh-generated/resources/Condition-Covid19Complication.json ==
+== fsh-generated/resources/Condition-FungalInfection.json ==
 == fsh-generated/resources/Condition-InfectionsComplicationPediatrics.json ==
-== fsh-generated/resources/Condition-covid19-complication-instance.json ==
-== fsh-generated/resources/Condition-fungal-infection-instance.json ==
 == fsh-generated/resources/ImplementationGuide-napkon-bih.json ==
-== fsh-generated/resources/MedicationStatement-immunosuppresive-permanent-medication-instance.json ==
-== fsh-generated/resources/Observation-intensive-care-treatment-duration-instance.json ==
-== fsh-generated/resources/Observation-total-length-of-stay-instance.json ==
+== fsh-generated/resources/MedicationStatement-ImmunosuppresivePermanentMedication.json ==
+== fsh-generated/resources/Observation-IntensiveCareTreatmentDuration.json ==
+== fsh-generated/resources/Observation-TotalLengthOfStay.json ==
 == fsh-generated/resources/Patient-ExamplePatient.json ==
-== fsh-generated/resources/Procedure-thoracic-drainage-instance.json ==
+== fsh-generated/resources/Procedure-ThoracicDrainage.json ==
 == fsh-generated/resources/StructureDefinition-covid19-complication-pediatrics.json ==
 == fsh-generated/resources/StructureDefinition-fungal-infection-pediatrics.json ==
 == fsh-generated/resources/StructureDefinition-immunosuppresive-permanent-medication-pediatrics.json ==

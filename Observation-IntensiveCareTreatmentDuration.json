@@ -1,0 +1,29 @@
+{
+  "resourceType": "Observation",
+  "id": "IntensiveCareTreatmentDuration",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/intensive-care-treatment-duration-pediatrics"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 74200-7}\">Days in intensive care unit</span></p><p><b>value</b>: 10 day</p></div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "74200-7",
+        "display": "Days in intensive care unit"
+      }
+    ]
+  },
+  "valueQuantity": {
+    "value": 10,
+    "unit": "day",
+    "system": "http://unitsofmeasure.org",
+    "code": "d"
+  }
+}

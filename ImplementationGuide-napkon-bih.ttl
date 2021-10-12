@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "NAPKONBIH"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-10-11T22:52:28+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-10-12T07:19:41+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "BIH @ Charité"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -429,6 +429,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/immunosuppressive-permament-medications" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Immunosuppressive Permanent Medications" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Immunosuppressive medications" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 10;
@@ -463,6 +464,23 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/Condition/Covid19Complication>;
+         fhir:Reference.reference [ fhir:value "Condition/Covid19Complication" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Covid19 Complication" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a covid19 complication" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/covid19-complication-pediatrics";
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/covid19-complication-pediatrics>
+       ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Patient" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -472,7 +490,41 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExamplePatient" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 13;
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/Condition/FungalInfection>;
+         fhir:Reference.reference [ fhir:value "Condition/FungalInfection" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fungal-infection-instance" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a fungal infection" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/fungal-infection-pediatrics";
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/fungal-infection-pediatrics>
+       ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MedicationStatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/MedicationStatement/ImmunosuppresivePermanentMedication>;
+         fhir:Reference.reference [ fhir:value "MedicationStatement/ImmunosuppresivePermanentMedication" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Immunosuppresive Permanent Medication" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a Immunosuppresive Permanent Medication" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunosuppresive-permanent-medication-pediatrics";
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunosuppresive-permanent-medication-pediatrics>
+       ]
+     ], [
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -489,57 +541,6 @@
          fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/infectious-complications-pediatrics>
        ]
      ], [
-       fhir:index 14;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Condition" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/Condition/covid19-complication-instance>;
-         fhir:Reference.reference [ fhir:value "Condition/covid19-complication-instance" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "covid19-complication-instance" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a covid19 complication" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/covid19-complication-pediatrics";
-         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/covid19-complication-pediatrics>
-       ]
-     ], [
-       fhir:index 15;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Condition" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/Condition/fungal-infection-instance>;
-         fhir:Reference.reference [ fhir:value "Condition/fungal-infection-instance" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fungal-infection-instance" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a fungal infection" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/fungal-infection-pediatrics";
-         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/fungal-infection-pediatrics>
-       ]
-     ], [
-       fhir:index 16;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "MedicationStatement" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/MedicationStatement/immunosuppresive-permanent-medication-instance>;
-         fhir:Reference.reference [ fhir:value "MedicationStatement/immunosuppresive-permanent-medication-instance" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "immunosuppresive-permanent-medication-instance" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a Immunosuppresive Permanent Medication" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunosuppresive-permanent-medication-pediatrics";
-         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunosuppresive-permanent-medication-pediatrics>
-       ]
-     ], [
        fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
@@ -547,10 +548,10 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/Observation/intensive-care-treatment-duration-instance>;
-         fhir:Reference.reference [ fhir:value "Observation/intensive-care-treatment-duration-instance" ]
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/Observation/IntensiveCareTreatmentDuration>;
+         fhir:Reference.reference [ fhir:value "Observation/IntensiveCareTreatmentDuration" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "intensive-care-treatment-duration-instance" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Intensive Care Treatment Duration" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of an intensive care treatment duration" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/intensive-care-treatment-duration-pediatrics";
@@ -564,10 +565,10 @@
          fhir:Extension.valueString [ fhir:value "Procedure" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/Procedure/thoracic-drainage-instance>;
-         fhir:Reference.reference [ fhir:value "Procedure/thoracic-drainage-instance" ]
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/Procedure/ThoracicDrainage>;
+         fhir:Reference.reference [ fhir:value "Procedure/ThoracicDrainage" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "thoracic-drainage-instance" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Thoracic Drainage" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a thoracic drainage" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/thoracic-drainage-pediatrics";
@@ -581,10 +582,10 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/Observation/total-length-of-stay-instance>;
-         fhir:Reference.reference [ fhir:value "Observation/total-length-of-stay-instance" ]
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/Observation/TotalLengthOfStay>;
+         fhir:Reference.reference [ fhir:value "Observation/TotalLengthOfStay" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "total-length-of-stay-instance" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Total Length of Stay" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of an total length of stay" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/total-length-of-stay-pediatrics";

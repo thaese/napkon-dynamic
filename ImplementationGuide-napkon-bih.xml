@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="NAPKONBIH"/>
   <status value="draft"/>
-  <date value="2021-10-11T22:52:28+00:00"/>
+  <date value="2021-10-12T07:19:41+00:00"/>
   <publisher value="BIH @ Charité"/>
   <contact>
     <name value="BIH @ Charité"/>
@@ -296,6 +296,7 @@
         <reference value="ValueSet/immunosuppressive-permament-medications"/>
       </reference>
       <name value="Immunosuppressive Permanent Medications"/>
+      <description value="Immunosuppressive medications"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -322,6 +323,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/Covid19Complication"/>
+      </reference>
+      <name value="Covid19 Complication"/>
+      <description value="Example of a covid19 complication"/>
+      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/covid19-complication-pediatrics"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <reference>
@@ -329,6 +341,28 @@
       </reference>
       <name value="ExamplePatient"/>
       <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/FungalInfection"/>
+      </reference>
+      <name value="fungal-infection-instance"/>
+      <description value="Example of a fungal infection"/>
+      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/fungal-infection-pediatrics"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationStatement"/>
+      </extension>
+      <reference>
+        <reference value="MedicationStatement/ImmunosuppresivePermanentMedication"/>
+      </reference>
+      <name value="Immunosuppresive Permanent Medication"/>
+      <description value="Example of a Immunosuppresive Permanent Medication"/>
+      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunosuppresive-permanent-medication-pediatrics"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -343,45 +377,12 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Condition"/>
-      </extension>
-      <reference>
-        <reference value="Condition/covid19-complication-instance"/>
-      </reference>
-      <name value="covid19-complication-instance"/>
-      <description value="Example of a covid19 complication"/>
-      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/covid19-complication-pediatrics"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Condition"/>
-      </extension>
-      <reference>
-        <reference value="Condition/fungal-infection-instance"/>
-      </reference>
-      <name value="fungal-infection-instance"/>
-      <description value="Example of a fungal infection"/>
-      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/fungal-infection-pediatrics"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="MedicationStatement"/>
-      </extension>
-      <reference>
-        <reference value="MedicationStatement/immunosuppresive-permanent-medication-instance"/>
-      </reference>
-      <name value="immunosuppresive-permanent-medication-instance"/>
-      <description value="Example of a Immunosuppresive Permanent Medication"/>
-      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunosuppresive-permanent-medication-pediatrics"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/intensive-care-treatment-duration-instance"/>
+        <reference value="Observation/IntensiveCareTreatmentDuration"/>
       </reference>
-      <name value="intensive-care-treatment-duration-instance"/>
+      <name value="Intensive Care Treatment Duration"/>
       <description value="Example of an intensive care treatment duration"/>
       <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/intensive-care-treatment-duration-pediatrics"/>
     </resource>
@@ -390,9 +391,9 @@
         <valueString value="Procedure"/>
       </extension>
       <reference>
-        <reference value="Procedure/thoracic-drainage-instance"/>
+        <reference value="Procedure/ThoracicDrainage"/>
       </reference>
-      <name value="thoracic-drainage-instance"/>
+      <name value="Thoracic Drainage"/>
       <description value="Example of a thoracic drainage"/>
       <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/thoracic-drainage-pediatrics"/>
     </resource>
@@ -401,9 +402,9 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/total-length-of-stay-instance"/>
+        <reference value="Observation/TotalLengthOfStay"/>
       </reference>
-      <name value="total-length-of-stay-instance"/>
+      <name value="Total Length of Stay"/>
       <description value="Example of an total length of stay"/>
       <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/total-length-of-stay-pediatrics"/>
     </resource>

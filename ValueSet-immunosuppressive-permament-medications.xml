@@ -19,6 +19,7 @@
       <value value="https://www.netzwerk-universitaetsmedizin.de"/>
     </telecom>
   </contact>
+  <description value="Immunosuppressive medications"/>
   <compose>
     <include>
       <system value="http://snomed.info/sct"/>

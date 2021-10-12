@@ -28,6 +28,7 @@
        fhir:ContactPoint.value [ fhir:value "https://www.netzwerk-universitaetsmedizin.de" ]
      ]
   ];
+  fhir:ValueSet.description [ fhir:value "Immunosuppressive medications"];
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;

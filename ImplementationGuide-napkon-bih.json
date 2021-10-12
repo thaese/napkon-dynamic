@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "NAPKONBIH",
   "status": "draft",
-  "date": "2021-10-11T22:52:28+00:00",
+  "date": "2021-10-12T07:19:41+00:00",
   "publisher": "BIH @ Charité",
   "contact": [
     {
@@ -435,6 +435,7 @@
           "reference": "ValueSet/immunosuppressive-permament-medications"
         },
         "name": "Immunosuppressive Permanent Medications",
+        "description": "Immunosuppressive medications",
         "exampleBoolean": false
       },
       {
@@ -469,6 +470,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/Covid19Complication"
+        },
+        "name": "Covid19 Complication",
+        "description": "Example of a covid19 complication",
+        "exampleCanonical": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/covid19-complication-pediatrics"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Patient"
           }
         ],
@@ -477,6 +492,34 @@
         },
         "name": "ExamplePatient",
         "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/FungalInfection"
+        },
+        "name": "fungal-infection-instance",
+        "description": "Example of a fungal infection",
+        "exampleCanonical": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/fungal-infection-pediatrics"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationStatement"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationStatement/ImmunosuppresivePermanentMedication"
+        },
+        "name": "Immunosuppresive Permanent Medication",
+        "description": "Example of a Immunosuppresive Permanent Medication",
+        "exampleCanonical": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunosuppresive-permanent-medication-pediatrics"
       },
       {
         "extension": [
@@ -496,55 +539,13 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Condition"
-          }
-        ],
-        "reference": {
-          "reference": "Condition/covid19-complication-instance"
-        },
-        "name": "covid19-complication-instance",
-        "description": "Example of a covid19 complication",
-        "exampleCanonical": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/covid19-complication-pediatrics"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Condition"
-          }
-        ],
-        "reference": {
-          "reference": "Condition/fungal-infection-instance"
-        },
-        "name": "fungal-infection-instance",
-        "description": "Example of a fungal infection",
-        "exampleCanonical": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/fungal-infection-pediatrics"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationStatement"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationStatement/immunosuppresive-permanent-medication-instance"
-        },
-        "name": "immunosuppresive-permanent-medication-instance",
-        "description": "Example of a Immunosuppresive Permanent Medication",
-        "exampleCanonical": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunosuppresive-permanent-medication-pediatrics"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Observation"
           }
         ],
         "reference": {
-          "reference": "Observation/intensive-care-treatment-duration-instance"
+          "reference": "Observation/IntensiveCareTreatmentDuration"
         },
-        "name": "intensive-care-treatment-duration-instance",
+        "name": "Intensive Care Treatment Duration",
         "description": "Example of an intensive care treatment duration",
         "exampleCanonical": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/intensive-care-treatment-duration-pediatrics"
       },
@@ -556,9 +557,9 @@
           }
         ],
         "reference": {
-          "reference": "Procedure/thoracic-drainage-instance"
+          "reference": "Procedure/ThoracicDrainage"
         },
-        "name": "thoracic-drainage-instance",
+        "name": "Thoracic Drainage",
         "description": "Example of a thoracic drainage",
         "exampleCanonical": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/thoracic-drainage-pediatrics"
       },
@@ -570,9 +571,9 @@
           }
         ],
         "reference": {
-          "reference": "Observation/total-length-of-stay-instance"
+          "reference": "Observation/TotalLengthOfStay"
         },
-        "name": "total-length-of-stay-instance",
+        "name": "Total Length of Stay",
         "description": "Example of an total length of stay",
         "exampleCanonical": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/total-length-of-stay-pediatrics"
       }

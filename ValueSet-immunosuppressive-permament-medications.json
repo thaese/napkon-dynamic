@@ -23,6 +23,7 @@
       ]
     }
   ],
+  "description": "Immunosuppressive medications",
   "compose": {
     "include": [
       {
