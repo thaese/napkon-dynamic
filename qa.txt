@@ -1,9 +1,9 @@
 ﻿NAPKONBIH : Validation Results
 =========================================
 
-err = 8, warn = 19, info = 1
+err = 8, warn = 25, info = 1
 IG Publisher Version: 1.1.81
-Generated Tue Oct 12 12:10:37 UTC 2021. FHIR version 4.0.1 for napkon-bih#0.1.0 (canonical = https://www.netzwerk-universitaetsmedizin.de/fhir)
+Generated Tue Oct 12 12:35:07 UTC 2021. FHIR version 4.0.1 for napkon-bih#0.1.0 (canonical = https://www.netzwerk-universitaetsmedizin.de/fhir)
  Build Errors : 241 / 6 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-napkon-pediatrics-module : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-napkon-vaccination-module : 0 / 0 / 1
@@ -26,8 +26,8 @@ Generated Tue Oct 12 12:10:37 UTC 2021. FHIR version 4.0.1 for napkon-bih#0.1.0 
  /github/workspace/fsh-generated/resources/Observation-SARSCoV2InfectionCourseInstance : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-SARSCoV2Variant : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-VaccinationInjectionSiteErythema : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/Observation-VaccinationInjectionSitePainMovement : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Observation-VaccinationInjectionSitePainRest : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-VaccinationInjectionSitePainMovement : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Observation-VaccinationInjectionSitePainRest : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Observation-VaccinationInjectionSiteSwelling : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-ExamplePatient : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Procedure-Chemotherapy : 0 / 0 / 1
@@ -49,8 +49,8 @@ Generated Tue Oct 12 12:10:37 UTC 2021. FHIR version 4.0.1 for napkon-bih#0.1.0 
  /github/workspace/fsh-generated/resources/StructureDefinition-sars-cov2-infection-vaccination : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-sars-cov2-variant : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-vaccination-injection-site-erythema : 0 / 2 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-vaccination-injection-site-pain-movement : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-vaccination-injection-site-pain-rest : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-vaccination-injection-site-pain-movement : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-vaccination-injection-site-pain-rest : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-vaccination-injection-site-swelling : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-analgesics-antipyretics : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-body-temperature : 0 / 0 / 1
@@ -349,7 +349,9 @@ WARNING: Observation/AllergicReactionToVaccinationInstanceOther: Observation.cod
 == fsh-generated/resources/Observation-VaccinationInjectionSiteErythema.json ==
 WARNING: Observation/VaccinationInjectionSiteErythema: Observation.code.coding[0]: The display "Erythema at injection site (disorder)" is not a valid display for the code {http://snomed.info/sct}213338000 - should be one of ['Erythema at injection site', 'Injection site erythema (disorder)', 'Injection site erythema'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#213338000'
 == fsh-generated/resources/Observation-VaccinationInjectionSitePainMovement.json ==
+WARNING: Observation/VaccinationInjectionSitePainMovement: Observation.code.coding[0]: Display Name for https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module#q1008 should be one of 'Injection site pain with pressure or movement' instead of 'Injection site pain with pressure or movement (finding)' for 'https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module#q1008'
 == fsh-generated/resources/Observation-VaccinationInjectionSitePainRest.json ==
+WARNING: Observation/VaccinationInjectionSitePainRest: Observation.code.coding[0]: Display Name for https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module#q1007 should be one of 'Injection site pain at rest' instead of 'Injection site pain at rest (finding)' for 'https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module#q1007'
 == fsh-generated/resources/Observation-VaccinationInjectionSiteSwelling.json ==
 == fsh-generated/resources/Patient-ExamplePatient.json ==
 == fsh-generated/resources/Procedure-Chemotherapy.json ==
@@ -376,7 +378,11 @@ WARNING: StructureDefinition/allergic-reaction-to-vaccination: StructureDefiniti
 WARNING: StructureDefinition/vaccination-injection-site-erythema: StructureDefinition.snapshot.element[18].pattern.ofType(Coding): The display "Erythema at injection site (disorder)" is not a valid display for the code {http://snomed.info/sct}213338000 - should be one of ['Erythema at injection site', 'Injection site erythema (disorder)', 'Injection site erythema'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#213338000'
 WARNING: StructureDefinition/vaccination-injection-site-erythema: StructureDefinition.differential.element[2].pattern.ofType(Coding): The display "Erythema at injection site (disorder)" is not a valid display for the code {http://snomed.info/sct}213338000 - should be one of ['Erythema at injection site', 'Injection site erythema (disorder)', 'Injection site erythema'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#213338000'
 == fsh-generated/resources/StructureDefinition-vaccination-injection-site-pain-movement.json ==
+WARNING: StructureDefinition/vaccination-injection-site-pain-movement: StructureDefinition.snapshot.element[18].pattern.ofType(Coding): Display Name for https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module#q1008 should be one of 'Injection site pain with pressure or movement' instead of 'Injection site pain with pressure or movement (finding)' for 'https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module#q1008'
+WARNING: StructureDefinition/vaccination-injection-site-pain-movement: StructureDefinition.differential.element[2].pattern.ofType(Coding): Display Name for https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module#q1008 should be one of 'Injection site pain with pressure or movement' instead of 'Injection site pain with pressure or movement (finding)' for 'https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module#q1008'
 == fsh-generated/resources/StructureDefinition-vaccination-injection-site-pain-rest.json ==
+WARNING: StructureDefinition/vaccination-injection-site-pain-rest: StructureDefinition.snapshot.element[18].pattern.ofType(Coding): Display Name for https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module#q1007 should be one of 'Injection site pain at rest' instead of 'Injection site pain at rest (finding)' for 'https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module#q1007'
+WARNING: StructureDefinition/vaccination-injection-site-pain-rest: StructureDefinition.differential.element[2].pattern.ofType(Coding): Display Name for https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module#q1007 should be one of 'Injection site pain at rest' instead of 'Injection site pain at rest (finding)' for 'https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module#q1007'
 == fsh-generated/resources/StructureDefinition-vaccination-injection-site-swelling.json ==
 == fsh-generated/resources/ValueSet-analgesics-antipyretics.json ==
 == fsh-generated/resources/ValueSet-body-temperature.json ==
