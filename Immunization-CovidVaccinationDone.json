@@ -1,0 +1,44 @@
+{
+  "resourceType": "Immunization",
+  "id": "CovidVaccinationDone",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/covid-vaccination"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title=\"Codes: {https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module 0001}\">Comirnaty (BioNTech/Pfizer)</span></p><p><b>patient</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>occurrence</b>: Oct 1, 2021, 11:06:00 AM</p><p><b>lotNumber</b>: batch-no #2465</p><p><b>reasonCode</b>: <span title=\"Codes: {https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module 2004}\">Weil alle sich impfen lassen</span></p><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td>-</td><td><b>DoseNumber[x]</b></td></tr><tr><td>*</td><td>4</td></tr></table></div>"
+  },
+  "status": "completed",
+  "vaccineCode": {
+    "coding": [
+      {
+        "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module",
+        "code": "0001",
+        "display": "Comirnaty (BioNTech/Pfizer)"
+      }
+    ]
+  },
+  "patient": {
+    "reference": "Patient/ExamplePatient"
+  },
+  "occurrenceDateTime": "2021-10-01T13:06:00+02:00",
+  "lotNumber": "batch-no #2465",
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module",
+          "code": "2004",
+          "display": "Weil alle sich impfen lassen"
+        }
+      ]
+    }
+  ],
+  "protocolApplied": [
+    {
+      "doseNumberPositiveInt": 4
+    }
+  ]
+}

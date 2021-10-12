@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/Observation/AdditionalVaccinationWillingness> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "AdditionalVaccinationWillingness"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/additional-vaccination-willingness";
+       fhir:index 0;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/additional-vaccination-willingness>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module q1001}\">Willingness for additional SARS-CoV-2 vaccination if recommended</span></p><p><b>value</b>: <span title=\"Codes: {http://snomed.info/sct 373066001}\">Yes (qualifier value)</span></p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module" ];
+       fhir:Coding.code [ fhir:value "q1001" ];
+       fhir:Coding.display [ fhir:value "Willingness for additional SARS-CoV-2 vaccination if recommended" ]
+     ]
+  ];
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:373066001;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "373066001" ];
+       fhir:Coding.display [ fhir:value "Yes (qualifier value)" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/Observation/AdditionalVaccinationWillingness.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

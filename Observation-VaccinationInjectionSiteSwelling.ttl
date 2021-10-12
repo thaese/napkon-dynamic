@@ -1,0 +1,49 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/Observation/VaccinationInjectionSiteSwelling> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "VaccinationInjectionSiteSwelling"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vaccination-injection-site-swelling";
+       fhir:index 0;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vaccination-injection-site-swelling>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 863910007}\">Vaccination site swelling (disorder)</span></p><p><b>value</b>: <span title=\"Codes: {https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module 4003}\">Zwischen 5,1 und 10 Zentimeter</span></p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:863910007;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.version [ fhir:value "20210731" ];
+       fhir:Coding.code [ fhir:value "863910007" ];
+       fhir:Coding.display [ fhir:value "Vaccination site swelling (disorder)" ]
+     ]
+  ];
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module" ];
+       fhir:Coding.code [ fhir:value "4003" ];
+       fhir:Coding.display [ fhir:value "Zwischen 5,1 und 10 Zentimeter" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/Observation/VaccinationInjectionSiteSwelling.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,33 @@
+{
+  "resourceType": "Observation",
+  "id": "VaccinationInjectionSiteSwelling",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vaccination-injection-site-swelling"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 863910007}\">Vaccination site swelling (disorder)</span></p><p><b>value</b>: <span title=\"Codes: {https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module 4003}\">Zwischen 5,1 und 10 Zentimeter</span></p></div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "20210731",
+        "code": "863910007",
+        "display": "Vaccination site swelling (disorder)"
+      }
+    ]
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module",
+        "code": "4003",
+        "display": "Zwischen 5,1 und 10 Zentimeter"
+      }
+    ]
+  }
+}

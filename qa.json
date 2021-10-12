@@ -3,9 +3,9 @@
   "name": "NAPKONBIH",
   "package-id": "napkon-bih",
   "ig-ver": "0.1.0",
-  "date": "Tue, 12 Oct, 2021 07:19:41 +0000",
-  "errs": 4,
-  "warnings": 5,
+  "date": "Tue, 12 Oct, 2021 09:47:10 +0000",
+  "errs": 8,
+  "warnings": 19,
   "hints": 1,
   "version": "4.0.1",
   "tool": "4.6.0 (3)"

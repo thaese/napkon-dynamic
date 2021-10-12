@@ -4,37 +4,93 @@
   "fhirVersion": "4.0.1",
   "extensions": [],
   "profiles": {
+    "Observation": [
+      {
+        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/medical-treatment-for-vaccination-adverse-reaction",
+        "title": "Medical Treatment For Vaccination Adverse Reaction"
+      },
+      {
+        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/medical-treatment-reason",
+        "title": "Medical Treatment Reason"
+      },
+      {
+        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/regular-alcohol-intake",
+        "title": "Regular Alcohol Intake"
+      },
+      {
+        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/regular-alcohol-intake-quantity",
+        "title": "Regular Alcohol Intake Quantity"
+      },
+      {
+        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov2-infection-course-vaccination",
+        "title": "SARS CoV2 Infection Course"
+      },
+      {
+        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov2-infection-vaccination",
+        "title": "SARS CoV2 Infection"
+      },
+      {
+        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov2-variant",
+        "title": "SARS CoV2 Variant"
+      },
+      {
+        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vaccination-injection-site-erythema",
+        "title": "Vaccination Injection Site Erythema"
+      },
+      {
+        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vaccination-injection-site-pain-movement",
+        "title": "Vaccination Injection Site Pain Movement"
+      },
+      {
+        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vaccination-injection-site-pain-rest",
+        "title": "Vaccination Injection Site Pain Rest"
+      },
+      {
+        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vaccination-injection-site-swelling",
+        "title": "Vaccination Injection Site Swelling"
+      }
+    ],
+    "MedicationStatement": [
+      {
+        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/analgesic-antipyretic-intake-after-vaccination",
+        "title": "Analgesic Antipyretic Intake After Vaccination"
+      }
+    ],
+    "Procedure": [
+      {
+        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunosuppressive-therapy",
+        "title": "Immunosuppressive Therapy"
+      }
+    ],
+    "Immunization": [
+      {
+        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/covid-vaccination",
+        "title": "CovidVaccination"
+      }
+    ],
     "Condition": [
       {
         "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/infectious-complications-pediatrics",
         "title": "Pediatry Infectious Complications"
       }
-    ],
-    "MedicationStatement": [
-      {
-        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunosuppresive-permanent-medication-pediatrics",
-        "title": "Immunosuppresive Permanent Medication"
-      }
-    ],
-    "Observation": [
-      {
-        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/total-length-of-stay-pediatrics",
-        "title": "Total length of stay"
-      }
-    ],
-    "Procedure": [
-      {
-        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/thoracic-drainage-pediatrics",
-        "title": "Thoracic Drainge"
-      }
     ]
   },
   "usage": {
-    "http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum": [
-      "Procedure"
+    "http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit": [
+      "Condition.code.coding"
+    ],
+    "http://fhir.de/StructureDefinition/icd-10-gm-mehrfachcodierungs-kennzeichen": [
+      "Condition.code.coding"
+    ],
+    "http://fhir.de/StructureDefinition/lebensphase": [
+      "Condition.onset[x].end",
+      "Condition.onset[x].start"
     ],
     "http://fhir.de/StructureDefinition/seitenlokalisation": [
-      "Procedure.code.coding"
+      "Condition.code.coding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/condition-related": [
+      "Condition"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
@@ -53,6 +109,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
@@ -77,9 +136,6 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
-    ],
-    "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht": [
-      "Procedure"
     ]
   }
 }

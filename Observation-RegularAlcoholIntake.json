@@ -1,0 +1,33 @@
+{
+  "resourceType": "Observation",
+  "id": "RegularAlcoholIntake",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/regular-alcohol-intake"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 897148007}\">Alcoholic beverage intake (observable entity)</span></p><p><b>value</b>: <span title=\"Codes: {http://snomed.info/sct 373067005}\">No (qualifier value)</span></p></div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "20210731",
+        "code": "897148007",
+        "display": "Alcoholic beverage intake (observable entity)"
+      }
+    ]
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "373067005",
+        "display": "No (qualifier value)"
+      }
+    ]
+  }
+}

@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "NAPKONBIH"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-10-12T07:19:41+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-10-12T09:47:10+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "BIH @ Charité"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -35,31 +35,49 @@
   ];
   fhir:ImplementationGuide.dependsOn [
      fhir:index 0;
-     fhir:Element.id [ fhir:value "prozedur" ];
+     fhir:Element.id [ fhir:value "de_medizininformatikinitiative_kerndatensatz_prozedur" ];
      fhir:ImplementationGuide.dependsOn.uri [
-       fhir:value "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure";
-       fhir:link <https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure>
+       fhir:value "https://simplifier.net/guide/medizininformatikinitiative-modulprozeduren-implementationguide";
+       fhir:link <https://simplifier.net/guide/medizininformatikinitiative-modulprozeduren-implementationguide>
      ];
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "de.medizininformatikinitiative.kerndatensatz.prozedur" ];
      fhir:ImplementationGuide.dependsOn.version [ fhir:value "2.0.0-alpha3" ]
   ], [
      fhir:index 1;
-     fhir:Element.id [ fhir:value "person" ];
+     fhir:Element.id [ fhir:value "de_medizininformatikinitiative_kerndatensatz_person" ];
      fhir:ImplementationGuide.dependsOn.uri [
-       fhir:value "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient";
-       fhir:link <https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient>
+       fhir:value "https://simplifier.net/guide/medizininformatikinitiative-modulperson-implementationguide";
+       fhir:link <https://simplifier.net/guide/medizininformatikinitiative-modulperson-implementationguide>
      ];
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "de.medizininformatikinitiative.kerndatensatz.person" ];
      fhir:ImplementationGuide.dependsOn.version [ fhir:value "2.0.0-alpha3" ]
   ], [
      fhir:index 2;
-     fhir:Element.id [ fhir:value "medikation" ];
+     fhir:Element.id [ fhir:value "de_medizininformatikinitiative_kerndatensatz_medikation" ];
      fhir:ImplementationGuide.dependsOn.uri [
-       fhir:value "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement";
-       fhir:link <https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement>
+       fhir:value "https://simplifier.net/guide/medizininformatikinitiative-modulmedikation-implementationguide";
+       fhir:link <https://simplifier.net/guide/medizininformatikinitiative-modulmedikation-implementationguide>
      ];
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "de.medizininformatikinitiative.kerndatensatz.medikation" ];
      fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.0.10" ]
+  ], [
+     fhir:index 3;
+     fhir:Element.id [ fhir:value "de_medizininformatikinitiative_kerndatensatz_diagnose" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "https://simplifier.net/guide/medizininformatikinitiative-moduldiagnosen-implementationguide";
+       fhir:link <https://simplifier.net/guide/medizininformatikinitiative-moduldiagnosen-implementationguide>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "de.medizininformatikinitiative.kerndatensatz.diagnose" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "2.0.0-alpha3" ]
+  ], [
+     fhir:index 4;
+     fhir:Element.id [ fhir:value "de_gecco" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "https://simplifier.net/guide/germancoronaconsensusdataset-implementationguide";
+       fhir:link <https://simplifier.net/guide/germancoronaconsensusdataset-implementationguide>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "de.gecco" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.0.5" ]
   ];
   fhir:ImplementationGuide.definition [
      fhir:Element.extension [
@@ -299,11 +317,11 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/covid19-complication-pediatrics>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/covid19-complication-pediatrics" ]
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/additional-vaccination-willingness>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/additional-vaccination-willingness" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Covid19 complication" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Complication due to COVID19" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Additional Vaccination Willingness" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Willingness of the patient to receive additional COVID-19 vaccination if officially recommended" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 1;
@@ -313,11 +331,11 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/fungal-infection-pediatrics>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/fungal-infection-pediatrics" ]
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/allergic-reaction-to-vaccination>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/allergic-reaction-to-vaccination" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Fungal Infection" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Occurrence of a fungal infection" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Allergic Reaction To Vaccination" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Whether a vaccination caused an allergic reaction" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 2;
@@ -327,14 +345,84 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunosuppresive-permanent-medication-pediatrics>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/immunosuppresive-permanent-medication-pediatrics" ]
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/analgesic-antipyretic-intake-after-vaccination>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/analgesic-antipyretic-intake-after-vaccination" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Immunosuppresive Permanent Medication" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Immunosuppresive Permanent Medication" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Analgesic Antipyretic Intake After Vaccination" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Whether a patient took analgesic or antipyretic drugs after a vaccination event" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-temperature-after-vaccination>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/body-temperature-after-vaccination" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Body Temperature After Vaccination" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Maximal body temperature after a vaccination event (indicating fever)" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chemotherapy>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/chemotherapy" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Chemotherapy" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Whether a patient is or has been receiving a chemotherapy within the last 3 months" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/covid-vaccination>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/covid-vaccination" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CovidVaccination" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "COVID-19 vaccination event" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/general-complaints-after-vaccination>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/general-complaints-after-vaccination" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "General Complaints After Vaccination" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "General complaints after a vaccination event" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunosuppressive-therapy>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/immunosuppressive-therapy" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Immunosuppressive Therapy" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Whether a patient is receiving an immunosuppressive or -modulatory therapy" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -348,49 +436,189 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Defines constraints and methods on pediatry infectious complications" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 4;
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/intensive-care-treatment-duration-pediatrics>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/intensive-care-treatment-duration-pediatrics" ]
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/medical-treatment-for-vaccination-adverse-reaction>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/medical-treatment-for-vaccination-adverse-reaction" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Intensive care treatment duration" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Duration of intensive care treatment" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medical Treatment For Vaccination Adverse Reaction" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Whether a patient underwent medical treatment for a potential or actual adverse reaction to a vaccination event" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 5;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/thoracic-drainage-pediatrics>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/thoracic-drainage-pediatrics" ]
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/medical-treatment-reason>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/medical-treatment-reason" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Thoracic Drainge" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Application of a thoraric drainage" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medical Treatment Reason" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Reason for a medical treatment for a potential or actual adverse reaction to a vaccination event (free text only)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 6;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/total-length-of-stay-pediatrics>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/total-length-of-stay-pediatrics" ]
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/regular-alcohol-intake>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/regular-alcohol-intake" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Total length of stay" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Total length of stay" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Regular Alcohol Intake" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Whether a patient regularly drinks alcohol" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 7;
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/regular-alcohol-intake-quantity>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/regular-alcohol-intake-quantity" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Regular Alcohol Intake Quantity" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "How many alcoholic drinks a patient usually drings per day" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov2-infection-vaccination>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/sars-cov2-infection-vaccination" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SARS CoV2 Infection" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Whether SARS CoV2 was detected in a patient" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov2-infection-course-vaccination>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/sars-cov2-infection-course-vaccination" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SARS CoV2 Infection Course" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Course of a SARS CoV2 infection" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov2-variant>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/sars-cov2-variant" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SARS CoV2 Variant" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Variant/strain of detected SARS CoV2 (Pango Cov-lineage)" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vaccination-injection-site-erythema>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/vaccination-injection-site-erythema" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Vaccination Injection Site Erythema" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Size of an erythema at a vaccine injection site" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vaccination-injection-site-pain-movement>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/vaccination-injection-site-pain-movement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Vaccination Injection Site Pain Movement" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Pain intensity at vaccine injection site during pressure or movement" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vaccination-injection-site-pain-rest>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/vaccination-injection-site-pain-rest" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Vaccination Injection Site Pain Rest" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Pain intensity at vaccine injection site at rest" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vaccination-injection-site-swelling>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/vaccination-injection-site-swelling" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Vaccination Injection Site Swelling" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Size of an swelling at a vaccine injection site" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/analgesics-antipyretics>;
+         fhir:Reference.reference [ fhir:value "ValueSet/analgesics-antipyretics" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Analgesics Antipyretics" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Analgetic and antipyretic drugs" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/body-temperature>;
+         fhir:Reference.reference [ fhir:value "ValueSet/body-temperature" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Body Temperature" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Body temperature categories" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 22;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -404,7 +632,63 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Complications due to COVID19" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 8;
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/covid-vaccination-codes>;
+         fhir:Reference.reference [ fhir:value "ValueSet/covid-vaccination-codes" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CovidVaccinationCodes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "COVID-19 vaccines" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/covid-vaccination-contraindications>;
+         fhir:Reference.reference [ fhir:value "ValueSet/covid-vaccination-contraindications" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "covid-vaccination-contraindications" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Contraindications precluding COVID-19 vaccination" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/covid-vaccination-reasons>;
+         fhir:Reference.reference [ fhir:value "ValueSet/covid-vaccination-reasons" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Covid Vaccination Reasons" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Individual reason for getting vaccinated against COVID-19" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/detected-not-detected-unknown-undetermined>;
+         fhir:Reference.reference [ fhir:value "ValueSet/detected-not-detected-unknown-undetermined" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Detected Not Detected Unknown Undetermined" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Values for laboratory observations" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 27;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -418,7 +702,21 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value set of fungal infections" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 9;
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/general-complaints-after-vaccination>;
+         fhir:Reference.reference [ fhir:value "ValueSet/general-complaints-after-vaccination" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "General Complaints After Vaccination" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "General complaints after vaccination" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 29;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -429,10 +727,66 @@
          fhir:Reference.reference [ fhir:value "ValueSet/immunosuppressive-permament-medications" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Immunosuppressive Permanent Medications" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Immunosuppressive medications" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Imunosuppresive medications" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 10;
+       fhir:index 30;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/medical-treatment-for-vaccination-adverse-reaction>;
+         fhir:Reference.reference [ fhir:value "ValueSet/medical-treatment-for-vaccination-adverse-reaction" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medical Treatment For Vaccination Adverse Reaction" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Types of medical treatments for potential or actual adverse reactions to a vaccination" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 31;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/present-not-present-undetermined-other>;
+         fhir:Reference.reference [ fhir:value "ValueSet/present-not-present-undetermined-other" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Present Not Present Undetermined Other" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Values for laboratory observations" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 32;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/regular-alcohol-intake>;
+         fhir:Reference.reference [ fhir:value "ValueSet/regular-alcohol-intake" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Regular Alcohol Intake" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Frequency of alcoholic beverage intake" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 33;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/regular-alcohol-intake-quantity>;
+         fhir:Reference.reference [ fhir:value "ValueSet/regular-alcohol-intake-quantity" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Regular Alcohol Intake Quantity" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Number of alcoholic beverages per day" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 34;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -446,7 +800,77 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "EventStatus value set restricted to codes not-done, completed and unknown" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 11;
+       fhir:index 35;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sars-cov2-infection-course>;
+         fhir:Reference.reference [ fhir:value "ValueSet/sars-cov2-infection-course" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SARS-CoV2 Infection Course" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Infection course of SARS-CoV2" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 36;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/vaccination-injection-site-erythema-size>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vaccination-injection-site-erythema-size" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Vaccination Injection Site Erythema Size" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Erythema size category at vaccine injection site" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 37;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/vaccination-injection-site-swelling-size>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vaccination-injection-site-swelling-size" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Vaccination Injection Site Swelling Size" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Swelling size category at vaccine injection site" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 38;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/vaccination-pain-scale>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vaccination-pain-scale" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Vaccination pain scale" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Pain intensity at vaccine injection site" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 39;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/yes-no-unknown>;
+         fhir:Reference.reference [ fhir:value "ValueSet/yes-no-unknown" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Yes No Unknown" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Yes / No / Unknown" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 40;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -460,24 +884,174 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "NAPKON Pediatrics Module Code System - Collection of pediatrics module-specific codes that are missing from common terminologies such as SNOMED CT" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 12;
+       fhir:index 41;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Condition" ]
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/Condition/Covid19Complication>;
-         fhir:Reference.reference [ fhir:value "Condition/Covid19Complication" ]
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/napkon-vaccination-module" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Covid19 Complication" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a covid19 complication" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NapkonVaccinationModule" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NAPKON Vaccination Module Code System - Collection of vaccination module-specific codes that are missing from common terminologies such as SNOMED CT" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 42;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/Observation/AdditionalVaccinationWillingness>;
+         fhir:Reference.reference [ fhir:value "Observation/AdditionalVaccinationWillingness" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Additional Vaccination Willingness" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a willingness for additional vaccinations item" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/covid19-complication-pediatrics";
-         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/covid19-complication-pediatrics>
+         fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/additional-vaccination-willingness";
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/additional-vaccination-willingness>
        ]
      ], [
-       fhir:index 13;
+       fhir:index 43;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/Observation/AllergicReactionToVaccinationInstance>;
+         fhir:Reference.reference [ fhir:value "Observation/AllergicReactionToVaccinationInstance" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Allergic Reaction To Vaccination Instance" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of an undetermined state of an allergic reaction cause by a vaccine" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/allergic-reaction-to-vaccination";
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/allergic-reaction-to-vaccination>
+       ]
+     ], [
+       fhir:index 44;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/Observation/AllergicReactionToVaccinationInstanceOther>;
+         fhir:Reference.reference [ fhir:value "Observation/AllergicReactionToVaccinationInstanceOther" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Allergic Reaction To Vaccination Instance" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a free-text answer to an allergic reaction caused by vaccination" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/allergic-reaction-to-vaccination";
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/allergic-reaction-to-vaccination>
+       ]
+     ], [
+       fhir:index 45;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MedicationStatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/MedicationStatement/AnalgesicAntipyreticIntakeAfterVaccination>;
+         fhir:Reference.reference [ fhir:value "MedicationStatement/AnalgesicAntipyreticIntakeAfterVaccination" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Analgesic Antipyretic Intake After Vaccination" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of an antipyretic drug taken after a vaccination event" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/analgesic-antipyretic-intake-after-vaccination";
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/analgesic-antipyretic-intake-after-vaccination>
+       ]
+     ], [
+       fhir:index 46;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/Observation/BodyTemperatureAfterVaccination>;
+         fhir:Reference.reference [ fhir:value "Observation/BodyTemperatureAfterVaccination" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Body Temperature After Vaccination" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of an elevated body temperature after vaccination" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-temperature-after-vaccination";
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-temperature-after-vaccination>
+       ]
+     ], [
+       fhir:index 47;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Procedure" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/Procedure/Chemotherapy>;
+         fhir:Reference.reference [ fhir:value "Procedure/Chemotherapy" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Chemotherapy" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a patient not receiving chemotherapy during the last 3 months" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chemotherapy";
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chemotherapy>
+       ]
+     ], [
+       fhir:index 48;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Immunization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/Immunization/CovidVaccinationDone>;
+         fhir:Reference.reference [ fhir:value "Immunization/CovidVaccinationDone" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Covid Vaccination Done" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a patient having received a vaccination" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/covid-vaccination";
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/covid-vaccination>
+       ]
+     ], [
+       fhir:index 49;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Immunization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/Immunization/CovidVaccinationNotDone>;
+         fhir:Reference.reference [ fhir:value "Immunization/CovidVaccinationNotDone" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Covid Vaccination Not Done" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a patient not receiving a vaccination due to pregnancy" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/covid-vaccination";
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/covid-vaccination>
+       ]
+     ], [
+       fhir:index 50;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Immunization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/Immunization/CovidVaccinationNotDoneReasonOther>;
+         fhir:Reference.reference [ fhir:value "Immunization/CovidVaccinationNotDoneReasonOther" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Covid Vaccination Not Done Reason Other" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a patient not receiving a vaccination due to a specified (free-text) 'other reason'" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/covid-vaccination";
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/covid-vaccination>
+       ]
+     ], [
+       fhir:index 51;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -490,41 +1064,41 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExamplePatient" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 14;
+       fhir:index 52;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Condition" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/Condition/FungalInfection>;
-         fhir:Reference.reference [ fhir:value "Condition/FungalInfection" ]
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/Condition/GeneralComplaintsAfterVaccination>;
+         fhir:Reference.reference [ fhir:value "Condition/GeneralComplaintsAfterVaccination" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fungal-infection-instance" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a fungal infection" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "General Complaints After Vaccination" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a chill after a vaccination event" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/fungal-infection-pediatrics";
-         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/fungal-infection-pediatrics>
+         fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/general-complaints-after-vaccination";
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/general-complaints-after-vaccination>
        ]
      ], [
-       fhir:index 15;
+       fhir:index 53;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "MedicationStatement" ]
+         fhir:Extension.valueString [ fhir:value "Procedure" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/MedicationStatement/ImmunosuppresivePermanentMedication>;
-         fhir:Reference.reference [ fhir:value "MedicationStatement/ImmunosuppresivePermanentMedication" ]
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/Procedure/ImmunosuppressiveTherapy>;
+         fhir:Reference.reference [ fhir:value "Procedure/ImmunosuppressiveTherapy" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Immunosuppresive Permanent Medication" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a Immunosuppresive Permanent Medication" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Immunosuppressive Therapy" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a patient not receiving an immunosuppresive therapy" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunosuppresive-permanent-medication-pediatrics";
-         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunosuppresive-permanent-medication-pediatrics>
+         fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunosuppressive-therapy";
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunosuppressive-therapy>
        ]
      ], [
-       fhir:index 16;
+       fhir:index 54;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -541,55 +1115,191 @@
          fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/infectious-complications-pediatrics>
        ]
      ], [
-       fhir:index 17;
+       fhir:index 55;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/Observation/IntensiveCareTreatmentDuration>;
-         fhir:Reference.reference [ fhir:value "Observation/IntensiveCareTreatmentDuration" ]
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/Observation/MedicalTreatmentForVaccinationAdverseReaction>;
+         fhir:Reference.reference [ fhir:value "Observation/MedicalTreatmentForVaccinationAdverseReaction" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Intensive Care Treatment Duration" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of an intensive care treatment duration" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medical Treatment For Vaccination Adverse Reaction" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a patient hospitalized for a potential or actual adverse reaction to a vaccination event" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/intensive-care-treatment-duration-pediatrics";
-         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/intensive-care-treatment-duration-pediatrics>
+         fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/medical-treatment-for-vaccination-adverse-reaction";
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/medical-treatment-for-vaccination-adverse-reaction>
        ]
      ], [
-       fhir:index 18;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Procedure" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/Procedure/ThoracicDrainage>;
-         fhir:Reference.reference [ fhir:value "Procedure/ThoracicDrainage" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Thoracic Drainage" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a thoracic drainage" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/thoracic-drainage-pediatrics";
-         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/thoracic-drainage-pediatrics>
-       ]
-     ], [
-       fhir:index 19;
+       fhir:index 56;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/Observation/TotalLengthOfStay>;
-         fhir:Reference.reference [ fhir:value "Observation/TotalLengthOfStay" ]
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/Observation/MedicalTreatmentReason>;
+         fhir:Reference.reference [ fhir:value "Observation/MedicalTreatmentReason" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Total Length of Stay" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of an total length of stay" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medical Treatment Reason" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a skin rash as a reason for a medical treatment for a potential or actual adverse reaction to a vaccination event" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/total-length-of-stay-pediatrics";
-         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/total-length-of-stay-pediatrics>
+         fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/medical-treatment-reason";
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/medical-treatment-reason>
+       ]
+     ], [
+       fhir:index 57;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/Observation/RegularAlcoholIntake>;
+         fhir:Reference.reference [ fhir:value "Observation/RegularAlcoholIntake" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Regular Alcohol Intake" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a patient who does not drink alcohol" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/regular-alcohol-intake";
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/regular-alcohol-intake>
+       ]
+     ], [
+       fhir:index 58;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/Observation/RegularAlcoholIntakeQuantity>;
+         fhir:Reference.reference [ fhir:value "Observation/RegularAlcoholIntakeQuantity" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Regular Alcohol Intake Quantity" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of intake of 5 or more alcoholic beverages per day" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/regular-alcohol-intake-quantity";
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/regular-alcohol-intake-quantity>
+       ]
+     ], [
+       fhir:index 59;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/Observation/SARSCoV2Infection>;
+         fhir:Reference.reference [ fhir:value "Observation/SARSCoV2Infection" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SARS CoV2 Infection" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a patient without detected SARS CoV2" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov2-infection-vaccination";
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov2-infection-vaccination>
+       ]
+     ], [
+       fhir:index 60;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/Observation/SARSCoV2InfectionCourseInstance>;
+         fhir:Reference.reference [ fhir:value "Observation/SARSCoV2InfectionCourseInstance" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SARS CoV2 Infection Course Instance" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a patient who suffered from COVID-19 and was treated on an intensive care unit" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov2-infection-course-vaccination";
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov2-infection-course-vaccination>
+       ]
+     ], [
+       fhir:index 61;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/Observation/SARSCoV2Variant>;
+         fhir:Reference.reference [ fhir:value "Observation/SARSCoV2Variant" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SARS CoV2 Variant" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a SARS CoV2 variant (Pango lineage)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov2-variant";
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov2-variant>
+       ]
+     ], [
+       fhir:index 62;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/Observation/VaccinationInjectionSiteErythema>;
+         fhir:Reference.reference [ fhir:value "Observation/VaccinationInjectionSiteErythema" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Vaccination Injection Site Erythema" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a 2.5-5 cm erythema at a vaccine injection site" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vaccination-injection-site-erythema";
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vaccination-injection-site-erythema>
+       ]
+     ], [
+       fhir:index 63;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/Observation/VaccinationInjectionSitePainMovement>;
+         fhir:Reference.reference [ fhir:value "Observation/VaccinationInjectionSitePainMovement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Vaccination Injection Site Pain Movement Instance" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of mild pain at vaccine injection site during pressure or movement" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vaccination-injection-site-pain-movement";
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vaccination-injection-site-pain-movement>
+       ]
+     ], [
+       fhir:index 64;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/Observation/VaccinationInjectionSitePainRest>;
+         fhir:Reference.reference [ fhir:value "Observation/VaccinationInjectionSitePainRest" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Vaccination Injection Site Pain Rest// alcoholic beverage intake" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of mild pain at vaccine injection site at rest" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vaccination-injection-site-pain-rest";
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vaccination-injection-site-pain-rest>
+       ]
+     ], [
+       fhir:index 65;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/Observation/VaccinationInjectionSiteSwelling>;
+         fhir:Reference.reference [ fhir:value "Observation/VaccinationInjectionSiteSwelling" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Vaccination Injection Site Swelling Instance" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a 5.1-10 cm swelling at a vaccine injection site" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vaccination-injection-site-swelling";
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vaccination-injection-site-swelling>
        ]
      ];
      fhir:ImplementationGuide.definition.page [

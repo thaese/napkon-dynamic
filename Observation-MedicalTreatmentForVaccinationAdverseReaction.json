@@ -1,0 +1,37 @@
+{
+  "resourceType": "Observation",
+  "id": "MedicalTreatmentForVaccinationAdverseReaction",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/medical-treatment-for-vaccination-adverse-reaction"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module q1004}\">Medical treatment for actual or potential adverse events</span></p><p><b>value</b>: <span title=\"Codes: {https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module 6002}\">Ja, Behandlung mit Aufnahme im Krankenhaus</span></p><p><b>derivedFrom</b>: <a href=\"Observation-MedicalTreatmentReason.html\">Generated Summary: <span title=\"Codes: {http://snomed.info/sct 408773008}\">Reasons for treatment (finding)</span>; value: Starker Hautausschlag</a></p></div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module",
+        "code": "q1004",
+        "display": "Medical treatment for actual or potential adverse events"
+      }
+    ]
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module",
+        "code": "6002",
+        "display": "Ja, Behandlung mit Aufnahme im Krankenhaus"
+      }
+    ]
+  },
+  "derivedFrom": [
+    {
+      "reference": "Observation/MedicalTreatmentReason"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/Observation/SARSCoV2Infection> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "SARSCoV2Infection"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov2-infection-vaccination";
+       fhir:index 0;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov2-infection-vaccination>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 1240581000000104}\">Severe acute respiratory syndrome coronavirus 2 detected (finding)</span></p><p><b>effective</b>: Oct 1, 2021, 11:06:00 AM</p><p><b>value</b>: <span title=\"Codes: {http://snomed.info/sct 260415000}\">Not detected (qualifier value)</span></p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:1240581000000104;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.version [ fhir:value "20210731" ];
+       fhir:Coding.code [ fhir:value "1240581000000104" ];
+       fhir:Coding.display [ fhir:value "Severe acute respiratory syndrome coronavirus 2 detected (finding)" ]
+     ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2021-10-01T13:06:00+02:00"^^xsd:dateTime];
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:260415000;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "260415000" ];
+       fhir:Coding.display [ fhir:value "Not detected (qualifier value)" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/Observation/SARSCoV2Infection.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

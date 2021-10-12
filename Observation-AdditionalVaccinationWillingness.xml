@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="AdditionalVaccinationWillingness"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/additional-vaccination-willingness"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module q1001}">Willingness for additional SARS-CoV-2 vaccination if recommended</span></p><p><b>value</b>: <span title="Codes: {http://snomed.info/sct 373066001}">Yes (qualifier value)</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module"/>
+      <code value="q1001"/>
+      <display value="Willingness for additional SARS-CoV-2 vaccination if recommended"/>
+    </coding>
+  </code>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="373066001"/>
+      <display value="Yes (qualifier value)"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>
