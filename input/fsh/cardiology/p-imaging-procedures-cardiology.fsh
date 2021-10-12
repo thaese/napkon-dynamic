@@ -8,17 +8,11 @@ Description: "Defines constraints and extensions on the Cardiology Imaging proce
 
 * insert napkon-metadata(2021-05-28, #draft, 0.1.0)
 
-* category ^slicing.discriminator[0].type = #pattern
-* category ^slicing.discriminator[0].path = "$this"
-* category ^slicing.rules = #open
-* category contains sct 1..1
-* category[sct] = http://snomed.info/sct#363679005
-
-* code ^slicing.discriminator[0].type = #pattern
-* code ^slicing.discriminator[0].path = "$this"
-* code ^slicing.rules = #open
-* code contains sct 1..1
-* code[sct] from $CardiologyImagingCodes (required)
+* category.coding ^slicing.discriminator[0].type = #pattern
+* category.coding ^slicing.discriminator[0].path = "$this"
+* category.coding ^slicing.rules = #open
+* category.coding = $sct#363679005
+* code from $CardiologyImagingCodes (required)
 * performed[x] 1..1
 * subject only Reference(Patient)
 
@@ -29,7 +23,7 @@ Id: imaging-procedures-cardiology
 
 * ^url = $CardiologyImagingCodes
 
-* ^compose.include[0].system = "http://snomed.info/sct"
+* ^compose.include[0].system = $sct
 * ^compose.include[=].concept[0].code = #268400002
 * ^compose.include[=].concept[=].display = "12 lead electrocardiogram (procedure)"
 * ^compose.include[=].concept[=].designation.language = #de-DE
@@ -47,5 +41,3 @@ Id: imaging-procedures-cardiology
 * ^compose.include[=].concept[=].designation.language = #de-DE
 * ^compose.include[=].concept[=].designation.use = $sct#900000000000013009 "Synonym"
 * ^compose.include[=].concept[=].designation.value = "Transthorakale Echokardiographie"
-
-

@@ -1,8 +1,6 @@
-// Author: Sally 
+// Author: Sally
 // Berlin Institute of Health | Charité
 // This is an FSH profiling file under development. See sushi documentation for usage.
-
-Alias: §sct = http://snomed.info/sct
 
 ValueSet: DrugTherapyPediatrics
 Id: drug-therapy-pediatrics
@@ -26,8 +24,8 @@ Description:  "Codes related to the Pediatric Module."
 //* ^url = $PediatricsDrugTherapyCodes // Path declared as Alias
 
 // Codes for HEMOSTASEOLOGIC THERAPY
-* include codes from system SNOMED_CT where concept is-a *sct#346447007 "Fresh frozen plasma (product)" 
+* include codes from system SNOMED_CT where concept is-a *sct#346447007 "Fresh frozen plasma (product)"
 * include codes from system SNOMED_CT where concept is-a *sct#12719002 "Platelet transfusion (procedure)"
 
-//anderes ValueSet bauen 
+//anderes ValueSet bauen
 * include codes from system SNOMED_CT where concept is-a *sct#1003715001 "Product containing coagulation protein (product)"
