@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "08758369-5ea3-4e8c-8ea1-173fe48da612",
+  "id" : "53d84f6e-c7e9-4442-a6d4-06a299888d08",
   "meta" : {
-    "lastUpdated" : "2021-10-12T09:47:10.977+00:00"
+    "lastUpdated" : "2021-10-12T12:09:14.085+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "AnalgesicsAntipyretics",
       "title" : "Analgesics Antipyretics",
       "status" : "active",
-      "date" : "2021-10-12T09:47:10+00:00",
+      "date" : "2021-10-12T12:09:14+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -30,8 +30,8 @@
       }],
       "description" : "Analgetic and antipyretic drugs",
       "expansion" : {
-        "identifier" : "urn:uuid:d1f7ab31-ce1d-4733-97bb-f000a123cc8a",
-        "timestamp" : "2021-10-12T09:47:51+00:00",
+        "identifier" : "urn:uuid:52c37f24-39c4-4f75-a755-f738462d8386",
+        "timestamp" : "2021-10-12T12:10:00+00:00",
         "total" : 194,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1028,7 +1028,7 @@
       "name" : "BodyTemperature",
       "title" : "Body Temperature",
       "status" : "active",
-      "date" : "2021-10-12T09:47:10+00:00",
+      "date" : "2021-10-12T12:09:14+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -1039,8 +1039,8 @@
       }],
       "description" : "Body temperature categories",
       "expansion" : {
-        "identifier" : "urn:uuid:27d8695a-3bb8-44f2-8ac7-91fa48907e44",
-        "timestamp" : "2021-10-12T09:47:51+00:00",
+        "identifier" : "urn:uuid:0b0e48d9-01f2-4686-9399-13044f885141",
+        "timestamp" : "2021-10-12T12:10:00+00:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1121,8 +1121,8 @@
       }],
       "description" : "Complications due to COVID19",
       "expansion" : {
-        "identifier" : "urn:uuid:bba4f93b-fd57-41d1-91ca-39d06a87f90d",
-        "timestamp" : "2021-10-12T09:47:52+00:00",
+        "identifier" : "urn:uuid:26110e16-130e-4b07-909d-3e27594d44b0",
+        "timestamp" : "2021-10-12T12:10:00+00:00",
         "total" : 13,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1218,7 +1218,7 @@
       "name" : "CovidVaccinationContraindications",
       "title" : "covid-vaccination-contraindications",
       "status" : "active",
-      "date" : "2021-10-12T09:47:10+00:00",
+      "date" : "2021-10-12T12:09:14+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -1229,8 +1229,8 @@
       }],
       "description" : "Contraindications precluding COVID-19 vaccination",
       "expansion" : {
-        "identifier" : "urn:uuid:dd7d5bc2-d757-4c56-aff4-e20fb4dc3061",
-        "timestamp" : "2021-10-12T09:47:53+00:00",
+        "identifier" : "urn:uuid:2fcdb499-11d2-472f-a062-aa335b8d502b",
+        "timestamp" : "2021-10-12T12:10:02+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1276,7 +1276,7 @@
       "name" : "CovidVaccinationReasons",
       "title" : "Covid Vaccination Reasons",
       "status" : "active",
-      "date" : "2021-10-12T09:47:10+00:00",
+      "date" : "2021-10-12T12:09:14+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -1287,8 +1287,8 @@
       }],
       "description" : "Individual reason for getting vaccinated against COVID-19",
       "expansion" : {
-        "identifier" : "urn:uuid:6fc771f0-76c8-4176-a244-39b74b6b6758",
-        "timestamp" : "2021-10-12T09:47:53+00:00",
+        "identifier" : "urn:uuid:33ecf070-1975-42d4-b755-b7ea222db9c7",
+        "timestamp" : "2021-10-12T12:10:03+00:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1362,7 +1362,7 @@
       "name" : "DetectedNotDetectedUnknownUndetermined",
       "title" : "Detected Not Detected Unknown Undetermined",
       "status" : "active",
-      "date" : "2021-10-12T09:47:10+00:00",
+      "date" : "2021-10-12T12:09:14+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -1373,8 +1373,8 @@
       }],
       "description" : "Values for laboratory observations",
       "expansion" : {
-        "identifier" : "urn:uuid:2ae9cf2f-aa81-4605-9b30-052b7de7dd31",
-        "timestamp" : "2021-10-12T09:47:53+00:00",
+        "identifier" : "urn:uuid:63ffa5be-0c2f-4b06-ad14-46d4e68601d4",
+        "timestamp" : "2021-10-12T12:10:03+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1436,8 +1436,8 @@
       }],
       "description" : "Value set of fungal infections",
       "expansion" : {
-        "identifier" : "urn:uuid:769bd9c1-8237-4457-ac6d-2503f255593f",
-        "timestamp" : "2021-10-12T09:47:53+00:00",
+        "identifier" : "urn:uuid:5329eedd-7f4e-4d89-9727-3f7967366e52",
+        "timestamp" : "2021-10-12T12:10:03+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1493,7 +1493,7 @@
       "name" : "GeneralComplaintsAfterVaccination",
       "title" : "General Complaints After Vaccination",
       "status" : "active",
-      "date" : "2021-10-12T09:47:10+00:00",
+      "date" : "2021-10-12T12:09:14+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -1504,8 +1504,8 @@
       }],
       "description" : "General complaints after vaccination",
       "expansion" : {
-        "identifier" : "urn:uuid:fe908cfd-721f-483d-a3fa-0fa5454f778b",
-        "timestamp" : "2021-10-12T09:47:54+00:00",
+        "identifier" : "urn:uuid:5a484e40-dba1-4128-b650-d79681189805",
+        "timestamp" : "2021-10-12T12:10:03+00:00",
         "total" : 14,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1606,7 +1606,7 @@
       "name" : "MedicalTreatmentForVaccinationAdverseReaction",
       "title" : "Medical Treatment For Vaccination Adverse Reaction",
       "status" : "active",
-      "date" : "2021-10-12T09:47:10+00:00",
+      "date" : "2021-10-12T12:09:14+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -1617,8 +1617,8 @@
       }],
       "description" : "Types of medical treatments for potential or actual adverse reactions to a vaccination",
       "expansion" : {
-        "identifier" : "urn:uuid:f290afb3-fd1d-40ec-b73f-8c789acaefec",
-        "timestamp" : "2021-10-12T09:47:56+00:00",
+        "identifier" : "urn:uuid:a84d2e5c-13a2-4741-b2ec-877e825b3e27",
+        "timestamp" : "2021-10-12T12:10:07+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1673,7 +1673,7 @@
       "name" : "PresentNotPresentUndeterminedOther",
       "title" : "Present Not Present Undetermined Other",
       "status" : "active",
-      "date" : "2021-10-12T09:47:10+00:00",
+      "date" : "2021-10-12T12:09:14+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -1684,8 +1684,8 @@
       }],
       "description" : "Values for laboratory observations",
       "expansion" : {
-        "identifier" : "urn:uuid:6acd2682-21b1-4e98-8857-89777246c412",
-        "timestamp" : "2021-10-12T09:47:56+00:00",
+        "identifier" : "urn:uuid:46f8f99e-36e8-4cb9-ba09-577f6b7f9beb",
+        "timestamp" : "2021-10-12T12:10:07+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1729,14 +1729,14 @@
       "id" : "regular-alcohol-intake",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 7 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-napkon-vaccination-module.html\">NapkonVaccinationModule v0.1.0 (CodeSystem)</a></li><li>SNOMED CT International edition 31-Jul 2021</li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-vaccination-module-8001\"> </a><a href=\"CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-8001\">8001</a></td><td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module</td><td>Einmal im Monat oder seltener</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-vaccination-module-8002\"> </a><a href=\"CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-8002\">8002</a></td><td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module</td><td>2-4 Mal im Monat</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-vaccination-module-8003\"> </a><a href=\"CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-8003\">8003</a></td><td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module</td><td>2-3 Mal pro Woche</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-vaccination-module-8004\"> </a><a href=\"CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-8004\">8004</a></td><td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module</td><td>4 Mal oder öfter die Woche</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-vaccination-module-8005\"> </a><a href=\"CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-8005\">8005</a></td><td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module</td><td>Nicht mehr (früher gelegentlich)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-373067005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373067005\">373067005</a></td><td>http://snomed.info/sct</td><td>No (qualifier value)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-373068000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373068000\">373068000</a></td><td>http://snomed.info/sct</td><td>Undetermined (qualifier value)</td><td/></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 7 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-napkon-vaccination-module.html\">NapkonVaccinationModule v0.1.0 (CodeSystem)</a></li><li>SNOMED CT International edition 31-Jul 2021</li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-vaccination-module-8001\"> </a><a href=\"CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-8001\">8001</a></td><td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module</td><td>Einmal im Monat oder seltener</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-vaccination-module-8002\"> </a><a href=\"CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-8002\">8002</a></td><td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module</td><td>2-4 Mal im Monat</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-vaccination-module-8003\"> </a><a href=\"CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-8003\">8003</a></td><td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module</td><td>2-3 Mal pro Woche</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-vaccination-module-8004\"> </a><a href=\"CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-8004\">8004</a></td><td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module</td><td>4 Mal oder öfter die Woche</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-vaccination-module-8005\"> </a><a href=\"CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-8005\">8005</a></td><td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module</td><td>Nicht mehr (früher gelegentlich)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-373067005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373067005\">373067005</a></td><td>http://snomed.info/sct</td><td>No (qualifier value)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-373068000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373068000\">373068000</a></td><td>http://snomed.info/sct</td><td>Undetermined (qualifier value)</td><td/></tr></table></div>"
       },
       "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/regular-alcohol-intake",
       "version" : "0.1.0",
       "name" : "RegularAlcoholIntake",
       "title" : "Regular Alcohol Intake",
       "status" : "active",
-      "date" : "2021-10-12T09:47:10+00:00",
+      "date" : "2021-10-12T12:09:14+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -1747,8 +1747,8 @@
       }],
       "description" : "Frequency of alcoholic beverage intake",
       "expansion" : {
-        "identifier" : "urn:uuid:834ec00b-10e0-4c5e-a556-67f5e6f541f1",
-        "timestamp" : "2021-10-12T09:47:57+00:00",
+        "identifier" : "urn:uuid:d4eec2b5-d756-4d03-8eda-237312b1795a",
+        "timestamp" : "2021-10-12T12:10:07+00:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1793,7 +1793,7 @@
         {
           "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module",
           "code" : "8005",
-          "display" : "Nicht mehr (früher gelegentlich)"
+          "display" : "Nicht mehr (früher gelegentlich)"
         },
         {
           "system" : "http://snomed.info/sct",
@@ -1822,7 +1822,7 @@
       "name" : "RegularAlcoholIntakeQuantity",
       "title" : "Regular Alcohol Intake Quantity",
       "status" : "active",
-      "date" : "2021-10-12T09:47:10+00:00",
+      "date" : "2021-10-12T12:09:14+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -1833,8 +1833,8 @@
       }],
       "description" : "Number of alcoholic beverages per day",
       "expansion" : {
-        "identifier" : "urn:uuid:107b6c97-f73d-4b90-898c-d11bed54bf95",
-        "timestamp" : "2021-10-12T09:47:57+00:00",
+        "identifier" : "urn:uuid:e38c920d-2b30-4ab6-ba8d-9fe5d2c454ef",
+        "timestamp" : "2021-10-12T12:10:08+00:00",
         "total" : 6,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1903,7 +1903,7 @@
       "name" : "RestrictedEventStatus",
       "title" : "RestrictedEventStatus",
       "status" : "active",
-      "date" : "2021-10-12T09:47:10+00:00",
+      "date" : "2021-10-12T12:09:14+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -1914,8 +1914,8 @@
       }],
       "description" : "EventStatus value set restricted to codes not-done, completed and unknown",
       "expansion" : {
-        "identifier" : "urn:uuid:f887e500-223f-42dc-9806-de40df81ae7c",
-        "timestamp" : "2021-10-12T09:47:57+00:00",
+        "identifier" : "urn:uuid:eee1d068-41bc-4edf-b727-03b745cfe88d",
+        "timestamp" : "2021-10-12T12:10:09+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1950,14 +1950,14 @@
       "id" : "sars-cov2-infection-course",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-napkon-vaccination-module.html\">NapkonVaccinationModule v0.1.0 (CodeSystem)</a></li><li>SNOMED CT International edition 31-Jul 2021</li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-vaccination-module-1001\"> </a><a href=\"CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-1001\">1001</a></td><td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module</td><td>Nicht erkrankt (keine Symptome)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-vaccination-module-1002\"> </a><a href=\"CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-1002\">1002</a></td><td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module</td><td>Erkrankt und zu Hause</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-vaccination-module-1003\"> </a><a href=\"CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-1003\">1003</a></td><td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module</td><td>Erkrankt und im Krankenhaus ohne Sauerstofftherapie</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-vaccination-module-1004\"> </a><a href=\"CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-1004\">1004</a></td><td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module</td><td>Erkrankt und im Krankenhaus mit Sauerstofftherapie</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-vaccination-module-1005\"> </a><a href=\"CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-1005\">1005</a></td><td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module</td><td>Erkrankt und im Krankenhaus auf einer Intensivstation</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-261665006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261665006\">261665006</a></td><td>http://snomed.info/sct</td><td>Unknown</td><td/></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-napkon-vaccination-module.html\">NapkonVaccinationModule v0.1.0 (CodeSystem)</a></li><li>SNOMED CT International edition 31-Jul 2021</li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-vaccination-module-1001\"> </a><a href=\"CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-1001\">1001</a></td><td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module</td><td>Nicht erkrankt (keine Symptome)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-vaccination-module-1002\"> </a><a href=\"CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-1002\">1002</a></td><td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module</td><td>Erkrankt und zu Hause</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-vaccination-module-1003\"> </a><a href=\"CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-1003\">1003</a></td><td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module</td><td>Erkrankt und im Krankenhaus ohne Sauerstofftherapie</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-vaccination-module-1004\"> </a><a href=\"CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-1004\">1004</a></td><td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module</td><td>Erkrankt und im Krankenhaus mit Sauerstofftherapie</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-vaccination-module-1005\"> </a><a href=\"CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-1005\">1005</a></td><td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module</td><td>Erkrankt und im Krankenhaus auf einer Intensivstation</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-261665006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261665006\">261665006</a></td><td>http://snomed.info/sct</td><td>Unknown</td><td/></tr></table></div>"
       },
       "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sars-cov2-infection-course",
       "version" : "0.1.0",
       "name" : "SARSCov2InfectionCourse",
       "title" : "SARS-CoV2 Infection Course",
       "status" : "active",
-      "date" : "2021-10-12T09:47:10+00:00",
+      "date" : "2021-10-12T12:09:14+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -1968,8 +1968,8 @@
       }],
       "description" : "Infection course of SARS-CoV2",
       "expansion" : {
-        "identifier" : "urn:uuid:3bcf9443-3054-401f-9147-2c885dbadaf3",
-        "timestamp" : "2021-10-12T09:47:57+00:00",
+        "identifier" : "urn:uuid:42dd9f7f-1aea-4257-b8a4-d823369ad68a",
+        "timestamp" : "2021-10-12T12:10:09+00:00",
         "total" : 6,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1999,22 +1999,22 @@
         {
           "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module",
           "code" : "1002",
-          "display" : "Erkrankt und zu Hause"
+          "display" : "Erkrankt und zu Hause"
         },
         {
           "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module",
           "code" : "1003",
-          "display" : "Erkrankt und im Krankenhaus ohne Sauerstofftherapie"
+          "display" : "Erkrankt und im Krankenhaus ohne Sauerstofftherapie"
         },
         {
           "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module",
           "code" : "1004",
-          "display" : "Erkrankt und im Krankenhaus mit Sauerstofftherapie"
+          "display" : "Erkrankt und im Krankenhaus mit Sauerstofftherapie"
         },
         {
           "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module",
           "code" : "1005",
-          "display" : "Erkrankt und im Krankenhaus auf einer Intensivstation"
+          "display" : "Erkrankt und im Krankenhaus auf einer Intensivstation"
         },
         {
           "system" : "http://snomed.info/sct",
@@ -2038,7 +2038,7 @@
       "name" : "VaccinationInjectionSiteErythemaSize",
       "title" : "Vaccination Injection Site Erythema Size",
       "status" : "active",
-      "date" : "2021-10-12T09:47:10+00:00",
+      "date" : "2021-10-12T12:09:14+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -2049,8 +2049,8 @@
       }],
       "description" : "Erythema size category at vaccine injection site",
       "expansion" : {
-        "identifier" : "urn:uuid:b4e4f755-0325-4acc-ba89-b495cf975e3b",
-        "timestamp" : "2021-10-12T09:47:57+00:00",
+        "identifier" : "urn:uuid:305fd247-bc5b-4906-9b9d-e1f9271252cf",
+        "timestamp" : "2021-10-12T12:10:09+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -2110,7 +2110,7 @@
       "name" : "VaccinationInjectionSiteSwellingSize",
       "title" : "Vaccination Injection Site Swelling Size",
       "status" : "active",
-      "date" : "2021-10-12T09:47:10+00:00",
+      "date" : "2021-10-12T12:09:14+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -2121,8 +2121,8 @@
       }],
       "description" : "Swelling size category at vaccine injection site",
       "expansion" : {
-        "identifier" : "urn:uuid:4305fde4-a3c4-4831-ba2a-567a308cfda8",
-        "timestamp" : "2021-10-12T09:47:58+00:00",
+        "identifier" : "urn:uuid:56a279f5-bb58-41f8-a023-6015535e13de",
+        "timestamp" : "2021-10-12T12:10:10+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -2182,7 +2182,7 @@
       "name" : "VaccinationPainScale",
       "title" : "Vaccination pain scale",
       "status" : "active",
-      "date" : "2021-10-12T09:47:10+00:00",
+      "date" : "2021-10-12T12:09:14+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -2193,8 +2193,8 @@
       }],
       "description" : "Pain intensity at vaccine injection site",
       "expansion" : {
-        "identifier" : "urn:uuid:a31797b3-15c1-4369-802c-35b0233f1561",
-        "timestamp" : "2021-10-12T09:47:58+00:00",
+        "identifier" : "urn:uuid:825de7be-3a26-427b-a0ad-92f6dc87a986",
+        "timestamp" : "2021-10-12T12:10:10+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -2249,7 +2249,7 @@
       "name" : "YesNoUnknown",
       "title" : "Yes No Unknown",
       "status" : "active",
-      "date" : "2021-10-12T09:47:10+00:00",
+      "date" : "2021-10-12T12:09:14+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -2260,8 +2260,8 @@
       }],
       "description" : "Yes / No / Unknown",
       "expansion" : {
-        "identifier" : "urn:uuid:1563f9d4-171e-403a-aabe-29bbac451c51",
-        "timestamp" : "2021-10-12T09:47:58+00:00",
+        "identifier" : "urn:uuid:60dc8fe8-e448-46a8-9c5e-cc39da3e3d21",
+        "timestamp" : "2021-10-12T12:10:10+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",

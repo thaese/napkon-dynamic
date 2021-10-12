@@ -17,7 +17,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module q1006}\">Course of SARS-CoV-2 Infection</span></p><p><b>value</b>: <span title=\"Codes: {https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module 1005}\">Erkrankt und im Krankenhaus auf einer Intensivstation</span></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module q1006}\">Course of SARS-CoV-2 Infection</span></p><p><b>value</b>: <span title=\"Codes: {https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module 1005}\">Erkrankt und im Krankenhaus auf einer Intensivstation</span></p></div>"
   ];
   fhir:Observation.status [ fhir:value "final"];
   fhir:Observation.code [
@@ -33,7 +33,7 @@
        fhir:index 0;
        fhir:Coding.system [ fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module" ];
        fhir:Coding.code [ fhir:value "1005" ];
-       fhir:Coding.display [ fhir:value "Erkrankt und im Krankenhaus auf einer Intensivstation" ]
+       fhir:Coding.display [ fhir:value "Erkrankt und im Krankenhaus auf einer Intensivstation" ]
      ]
   ] .
 

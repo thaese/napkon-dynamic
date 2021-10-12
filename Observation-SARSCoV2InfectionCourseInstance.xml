@@ -6,7 +6,7 @@
     <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov2-infection-course-vaccination"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module q1006}">Course of SARS-CoV-2 Infection</span></p><p><b>value</b>: <span title="Codes: {https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module 1005}">Erkrankt und im Krankenhaus auf einer Intensivstation</span></p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module q1006}">Course of SARS-CoV-2 Infection</span></p><p><b>value</b>: <span title="Codes: {https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module 1005}">Erkrankt und im Krankenhaus auf einer Intensivstation</span></p></div>
   </text>
   <status value="final"/>
   <code>
@@ -20,7 +20,7 @@
     <coding>
       <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module"/>
       <code value="1005"/>
-      <display value="Erkrankt und im Krankenhaus auf einer Intensivstation"/>
+      <display value="Erkrankt und im Krankenhaus auf einer Intensivstation"/>
     </coding>
   </valueCodeableConcept>
 </Observation>
