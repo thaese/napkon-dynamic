@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="NAPKONBIH"/>
   <status value="draft"/>
-  <date value="2021-10-12T18:03:57+00:00"/>
+  <date value="2021-10-12T18:15:52+00:00"/>
   <publisher value="BIH @ Charité"/>
   <contact>
     <name value="BIH @ Charité"/>
@@ -21,30 +21,20 @@
   <packageId value="napkon-bih"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
-  <dependsOn id="de_medizininformatikinitiative_kerndatensatz_prozedur">
-    <uri value="https://simplifier.net/guide/medizininformatikinitiative-modulprozeduren-implementationguide"/>
+  <dependsOn id="prozedur">
+    <uri value="https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure"/>
     <packageId value="de.medizininformatikinitiative.kerndatensatz.prozedur"/>
     <version value="2.0.0-alpha3"/>
   </dependsOn>
-  <dependsOn id="de_medizininformatikinitiative_kerndatensatz_person">
-    <uri value="https://simplifier.net/guide/medizininformatikinitiative-modulperson-implementationguide"/>
+  <dependsOn id="person">
+    <uri value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient"/>
     <packageId value="de.medizininformatikinitiative.kerndatensatz.person"/>
     <version value="2.0.0-alpha3"/>
   </dependsOn>
-  <dependsOn id="de_medizininformatikinitiative_kerndatensatz_medikation">
-    <uri value="https://simplifier.net/guide/medizininformatikinitiative-modulmedikation-implementationguide"/>
+  <dependsOn id="medikation">
+    <uri value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"/>
     <packageId value="de.medizininformatikinitiative.kerndatensatz.medikation"/>
     <version value="1.0.10"/>
-  </dependsOn>
-  <dependsOn id="de_medizininformatikinitiative_kerndatensatz_diagnose">
-    <uri value="https://simplifier.net/guide/medizininformatikinitiative-moduldiagnosen-implementationguide"/>
-    <packageId value="de.medizininformatikinitiative.kerndatensatz.diagnose"/>
-    <version value="2.0.0-alpha3"/>
-  </dependsOn>
-  <dependsOn id="de_gecco">
-    <uri value="https://simplifier.net/guide/germancoronaconsensusdataset-implementationguide"/>
-    <packageId value="de.gecco"/>
-    <version value="1.0.5"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -204,10 +194,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/additional-vaccination-willingness"/>
+        <reference value="StructureDefinition/covid19-complication"/>
       </reference>
-      <name value="Additional Vaccination Willingness"/>
-      <description value="Willingness of the patient to receive additional COVID-19 vaccination if officially recommended"/>
+      <name value="Covid19 complication"/>
+      <description value="Complication due to COVID19"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -215,10 +205,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/allergic-reaction-to-vaccination"/>
+        <reference value="StructureDefinition/fungal-infection"/>
       </reference>
-      <name value="Allergic Reaction To Vaccination"/>
-      <description value="Whether a vaccination caused an allergic reaction"/>
+      <name value="Fungal Infection"/>
+      <description value="Occurrence of a fungal infection"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -226,10 +216,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/analgesic-antipyretic-intake-after-vaccination"/>
+        <reference value="StructureDefinition/immunosuppresive-permanent-medication"/>
       </reference>
-      <name value="Analgesic Antipyretic Intake After Vaccination"/>
-      <description value="Whether a patient took analgesic or antipyretic drugs after a vaccination event"/>
+      <name value="Immunosuppresive Permanent Medication"/>
+      <description value="Immunosuppresive Permanent Medication"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -237,10 +227,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/body-temperature-after-vaccination"/>
+        <reference value="StructureDefinition/intensive-care-treatment-duration"/>
       </reference>
-      <name value="Body Temperature After Vaccination"/>
-      <description value="Maximal body temperature after a vaccination event (indicating fever)"/>
+      <name value="Intensive care treatment duration"/>
+      <description value="Duration of intensive care treatment"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -248,10 +238,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/chemotherapy"/>
+        <reference value="StructureDefinition/thoracic-drainage"/>
       </reference>
-      <name value="Chemotherapy"/>
-      <description value="Whether a patient is or has been receiving a chemotherapy within the last 3 months"/>
+      <name value="Thoracic Drainge"/>
+      <description value="Application of a thoraric drainage"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -259,153 +249,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/covid-vaccination"/>
+        <reference value="StructureDefinition/total-length-of-stay"/>
       </reference>
-      <name value="CovidVaccination"/>
-      <description value="COVID-19 vaccination event"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/general-complaints-after-vaccination"/>
-      </reference>
-      <name value="General Complaints After Vaccination"/>
-      <description value="General complaints after a vaccination event"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/immunosuppressive-therapy"/>
-      </reference>
-      <name value="Immunosuppressive Therapy"/>
-      <description value="Whether a patient is receiving an immunosuppressive or -modulatory therapy"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/medical-treatment-for-vaccination-adverse-reaction"/>
-      </reference>
-      <name value="Medical Treatment For Vaccination Adverse Reaction"/>
-      <description value="Whether a patient underwent medical treatment for a potential or actual adverse reaction to a vaccination event"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/medical-treatment-reason"/>
-      </reference>
-      <name value="Medical Treatment Reason"/>
-      <description value="Reason for a medical treatment for a potential or actual adverse reaction to a vaccination event (free text only)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/regular-alcohol-intake"/>
-      </reference>
-      <name value="Regular Alcohol Intake"/>
-      <description value="Whether a patient regularly drinks alcohol"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/regular-alcohol-intake-quantity"/>
-      </reference>
-      <name value="Regular Alcohol Intake Quantity"/>
-      <description value="How many alcoholic drinks a patient usually drings per day"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/sars-cov2-infection-vaccination"/>
-      </reference>
-      <name value="SARS CoV2 Infection"/>
-      <description value="Whether SARS CoV2 was detected in a patient"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/sars-cov2-infection-course-vaccination"/>
-      </reference>
-      <name value="SARS CoV2 Infection Course"/>
-      <description value="Course of a SARS CoV2 infection"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/sars-cov2-variant"/>
-      </reference>
-      <name value="SARS CoV2 Variant"/>
-      <description value="Variant/strain of detected SARS CoV2 (Pango Cov-lineage)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/vaccination-injection-site-erythema"/>
-      </reference>
-      <name value="Vaccination Injection Site Erythema"/>
-      <description value="Size of an erythema at a vaccine injection site"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/vaccination-injection-site-pain-movement"/>
-      </reference>
-      <name value="Vaccination Injection Site Pain Movement"/>
-      <description value="Pain intensity at vaccine injection site during pressure or movement"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/vaccination-injection-site-pain-rest"/>
-      </reference>
-      <name value="Vaccination Injection Site Pain Rest"/>
-      <description value="Pain intensity at vaccine injection site at rest"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/vaccination-injection-site-swelling"/>
-      </reference>
-      <name value="Vaccination Injection Site Swelling"/>
-      <description value="Size of an swelling at a vaccine injection site"/>
+      <name value="Total length of stay"/>
+      <description value="Total length of stay"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -413,10 +260,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/analgesics-antipyretics"/>
+        <reference value="ValueSet/covid19-complications"/>
       </reference>
-      <name value="Analgesics Antipyretics"/>
-      <description value="Analgetic and antipyretic drugs"/>
+      <name value="Covid19 complications"/>
+      <description value="Complications due to COVID19"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -424,10 +271,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/body-temperature"/>
+        <reference value="ValueSet/fungal-infections"/>
       </reference>
-      <name value="Body Temperature"/>
-      <description value="Body temperature categories"/>
+      <name value="Fungal Infections"/>
+      <description value="Value set of fungal infections"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -435,109 +282,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/complaint-intensity"/>
+        <reference value="ValueSet/immunosuppressive-permament-medications"/>
       </reference>
-      <name value="Complaint Intensity"/>
-      <description value="Intensity of general complaints"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/covid-vaccination-codes"/>
-      </reference>
-      <name value="CovidVaccinationCodes"/>
-      <description value="COVID-19 vaccines"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/covid-vaccination-contraindications"/>
-      </reference>
-      <name value="covid-vaccination-contraindications"/>
-      <description value="Contraindications precluding COVID-19 vaccination"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/covid-vaccination-reasons"/>
-      </reference>
-      <name value="Covid Vaccination Reasons"/>
-      <description value="Individual reason for getting vaccinated against COVID-19"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/detected-not-detected-unknown-undetermined"/>
-      </reference>
-      <name value="Detected Not Detected Unknown Undetermined"/>
-      <description value="Values for laboratory observations"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/general-complaints-after-vaccination"/>
-      </reference>
-      <name value="General Complaints After Vaccination"/>
-      <description value="General complaints after vaccination"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/medical-treatment-for-vaccination-adverse-reaction"/>
-      </reference>
-      <name value="Medical Treatment For Vaccination Adverse Reaction"/>
-      <description value="Types of medical treatments for potential or actual adverse reactions to a vaccination"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/present-not-present-undetermined-other"/>
-      </reference>
-      <name value="Present Not Present Undetermined Other"/>
-      <description value="Values for laboratory observations"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/regular-alcohol-intake"/>
-      </reference>
-      <name value="Regular Alcohol Intake"/>
-      <description value="Frequency of alcoholic beverage intake"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/regular-alcohol-intake-quantity"/>
-      </reference>
-      <name value="Regular Alcohol Intake Quantity"/>
-      <description value="Number of alcoholic beverages per day"/>
+      <name value="Immunosuppressive Permanent Medications"/>
+      <description value="Immunosuppressive medications"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -553,168 +301,25 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/sars-cov2-infection-course"/>
-      </reference>
-      <name value="SARS-CoV2 Infection Course"/>
-      <description value="Infection course of SARS-CoV2"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vaccination-injection-site-erythema-size"/>
-      </reference>
-      <name value="Vaccination Injection Site Erythema Size"/>
-      <description value="Erythema size category at vaccine injection site"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vaccination-injection-site-swelling-size"/>
-      </reference>
-      <name value="Vaccination Injection Site Swelling Size"/>
-      <description value="Swelling size category at vaccine injection site"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vaccination-pain-scale"/>
-      </reference>
-      <name value="Vaccination pain scale"/>
-      <description value="Pain intensity at vaccine injection site"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/yes-no-unknown"/>
-      </reference>
-      <name value="Yes No Unknown"/>
-      <description value="Yes / No / Unknown"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/napkon-vaccination-module"/>
+        <reference value="CodeSystem/napkon-pediatrics-module"/>
       </reference>
-      <name value="NapkonVaccinationModule"/>
-      <description value="NAPKON Vaccination Module Code System - Collection of vaccination module-specific codes that are missing from common terminologies such as SNOMED CT"/>
+      <name value="NapkonPediatricsModule"/>
+      <description value="NAPKON Pediatrics Module Code System - Collection of pediatrics module-specific codes that are missing from common terminologies such as SNOMED CT"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
+        <valueString value="Condition"/>
       </extension>
       <reference>
-        <reference value="Observation/AdditionalVaccinationWillingness"/>
+        <reference value="Condition/Covid19Complication"/>
       </reference>
-      <name value="Additional Vaccination Willingness"/>
-      <description value="Example of a willingness for additional vaccinations item"/>
-      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/additional-vaccination-willingness"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/AllergicReactionToVaccinationInstance"/>
-      </reference>
-      <name value="Allergic Reaction To Vaccination Instance"/>
-      <description value="Example of an undetermined state of an allergic reaction cause by a vaccine"/>
-      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/allergic-reaction-to-vaccination"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/AllergicReactionToVaccinationInstanceOther"/>
-      </reference>
-      <name value="Allergic Reaction To Vaccination Instance"/>
-      <description value="Example of a free-text answer to an allergic reaction caused by vaccination"/>
-      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/allergic-reaction-to-vaccination"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="MedicationStatement"/>
-      </extension>
-      <reference>
-        <reference value="MedicationStatement/AnalgesicAntipyreticIntakeAfterVaccination"/>
-      </reference>
-      <name value="Analgesic Antipyretic Intake After Vaccination"/>
-      <description value="Example of an antipyretic drug taken after a vaccination event"/>
-      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/analgesic-antipyretic-intake-after-vaccination"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/BodyTemperatureAfterVaccination"/>
-      </reference>
-      <name value="Body Temperature After Vaccination"/>
-      <description value="Example of an elevated body temperature after vaccination"/>
-      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-temperature-after-vaccination"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Procedure"/>
-      </extension>
-      <reference>
-        <reference value="Procedure/Chemotherapy"/>
-      </reference>
-      <name value="Chemotherapy"/>
-      <description value="Example of a patient not receiving chemotherapy during the last 3 months"/>
-      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chemotherapy"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/CovidVaccinationDone"/>
-      </reference>
-      <name value="Covid Vaccination Done"/>
-      <description value="Example of a patient having received a vaccination"/>
-      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/covid-vaccination"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/CovidVaccinationNotDone"/>
-      </reference>
-      <name value="Covid Vaccination Not Done"/>
-      <description value="Example of a patient not receiving a vaccination due to pregnancy"/>
-      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/covid-vaccination"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/CovidVaccinationNotDoneReasonOther"/>
-      </reference>
-      <name value="Covid Vaccination Not Done Reason Other"/>
-      <description value="Example of a patient not receiving a vaccination due to a specified (free-text) &#39;other reason&#39;"/>
-      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/covid-vaccination"/>
+      <name value="Covid19 Complication"/>
+      <description value="Example of a covid19 complication"/>
+      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/covid19-complication"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -731,143 +336,55 @@
         <valueString value="Condition"/>
       </extension>
       <reference>
-        <reference value="Condition/GeneralComplaintsAfterVaccination"/>
+        <reference value="Condition/FungalInfection"/>
       </reference>
-      <name value="General Complaints After Vaccination"/>
-      <description value="Example of a chill after a vaccination event"/>
-      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/general-complaints-after-vaccination"/>
+      <name value="fungal-infection-instance"/>
+      <description value="Example of a fungal infection"/>
+      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/fungal-infection"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationStatement"/>
+      </extension>
+      <reference>
+        <reference value="MedicationStatement/ImmunosuppresivePermanentMedication"/>
+      </reference>
+      <name value="Immunosuppresive Permanent Medication"/>
+      <description value="Example of a Immunosuppresive Permanent Medication"/>
+      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunosuppresive-permanent-medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/IntensiveCareTreatmentDuration"/>
+      </reference>
+      <name value="Intensive Care Treatment Duration"/>
+      <description value="Example of an intensive care treatment duration"/>
+      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/intensive-care-treatment-duration"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Procedure"/>
       </extension>
       <reference>
-        <reference value="Procedure/ImmunosuppressiveTherapy"/>
+        <reference value="Procedure/ThoracicDrainage"/>
       </reference>
-      <name value="Immunosuppressive Therapy"/>
-      <description value="Example of a patient not receiving an immunosuppresive therapy"/>
-      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunosuppressive-therapy"/>
+      <name value="Thoracic Drainage"/>
+      <description value="Example of a thoracic drainage"/>
+      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/thoracic-drainage"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/MedicalTreatmentForVaccinationAdverseReaction"/>
+        <reference value="Observation/TotalLengthOfStay"/>
       </reference>
-      <name value="Medical Treatment For Vaccination Adverse Reaction"/>
-      <description value="Example of a patient hospitalized for a potential or actual adverse reaction to a vaccination event"/>
-      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/medical-treatment-for-vaccination-adverse-reaction"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/MedicalTreatmentReason"/>
-      </reference>
-      <name value="Medical Treatment Reason"/>
-      <description value="Example of a skin rash as a reason for a medical treatment for a potential or actual adverse reaction to a vaccination event"/>
-      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/medical-treatment-reason"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/RegularAlcoholIntake"/>
-      </reference>
-      <name value="Regular Alcohol Intake"/>
-      <description value="Example of a patient who does not drink alcohol"/>
-      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/regular-alcohol-intake"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/RegularAlcoholIntakeQuantity"/>
-      </reference>
-      <name value="Regular Alcohol Intake Quantity"/>
-      <description value="Example of intake of 5 or more alcoholic beverages per day"/>
-      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/regular-alcohol-intake-quantity"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/SARSCoV2Infection"/>
-      </reference>
-      <name value="SARS CoV2 Infection"/>
-      <description value="Example of a patient without detected SARS CoV2"/>
-      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov2-infection-vaccination"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/SARSCoV2InfectionCourseInstance"/>
-      </reference>
-      <name value="SARS CoV2 Infection Course Instance"/>
-      <description value="Example of a patient who suffered from COVID-19 and was treated on an intensive care unit"/>
-      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov2-infection-course-vaccination"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/SARSCoV2Variant"/>
-      </reference>
-      <name value="SARS CoV2 Variant"/>
-      <description value="Example of a SARS CoV2 variant (Pango lineage)"/>
-      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov2-variant"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/VaccinationInjectionSiteErythema"/>
-      </reference>
-      <name value="Vaccination Injection Site Erythema"/>
-      <description value="Example of a 2.5-5 cm erythema at a vaccine injection site"/>
-      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vaccination-injection-site-erythema"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/VaccinationInjectionSitePainMovement"/>
-      </reference>
-      <name value="Vaccination Injection Site Pain Movement Instance"/>
-      <description value="Example of mild pain at vaccine injection site during pressure or movement"/>
-      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vaccination-injection-site-pain-movement"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/VaccinationInjectionSitePainRest"/>
-      </reference>
-      <name value="Vaccination Injection Site Pain Rest"/>
-      <description value="Example of mild pain at vaccine injection site at rest"/>
-      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vaccination-injection-site-pain-rest"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/VaccinationInjectionSiteSwelling"/>
-      </reference>
-      <name value="Vaccination Injection Site Swelling Instance"/>
-      <description value="Example of a 5.1-10 cm swelling at a vaccine injection site"/>
-      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vaccination-injection-site-swelling"/>
+      <name value="Total Length of Stay"/>
+      <description value="Example of an total length of stay"/>
+      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/total-length-of-stay"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>
