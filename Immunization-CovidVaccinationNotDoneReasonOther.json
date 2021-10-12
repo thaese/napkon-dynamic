@@ -53,6 +53,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
+              "version": "20210731",
               "code": "840539006",
               "display": "Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
             }

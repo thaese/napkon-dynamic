@@ -415,6 +415,7 @@ ref-1:SHALL have a contained resource if a local reference is provided {referenc
 ","Vaccine preventatable disease being targetted","The vaccine preventable disease the dose is being administered against.","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://snomed.info/sct""/>
+    <version value=""20210731""/>
     <code value=""840539006""/>
     <display value=""Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)""/>
   </coding>

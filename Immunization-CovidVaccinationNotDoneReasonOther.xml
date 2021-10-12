@@ -40,6 +40,7 @@
     <targetDisease>
       <coding>
         <system value="http://snomed.info/sct"/>
+        <version value="20210731"/>
         <code value="840539006"/>
         <display value="Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"/>
       </coding>

@@ -63,6 +63,7 @@
          fhir:index 0;
          a sct:840539006;
          fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.version [ fhir:value "20210731" ];
          fhir:Coding.code [ fhir:value "840539006" ];
          fhir:Coding.display [ fhir:value "Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)" ]
        ]
