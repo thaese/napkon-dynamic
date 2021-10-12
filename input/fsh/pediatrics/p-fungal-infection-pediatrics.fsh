@@ -14,7 +14,7 @@ Description: "Occurrence of a fungal infection"
 * code 1..1 MS
 * code from FungalInfections (required)
 
-Instance: fungal-infection-instance
+Instance: FungalInfection
 InstanceOf: fungal-infection-pediatrics
 Usage: #example
 Title: "fungal-infection-instance"

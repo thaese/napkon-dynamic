@@ -14,10 +14,10 @@ Description: "Complication due to COVID19"
 * code 1..1 MS
 * code from Covid19Complications (required)
 
-Instance: covid19-complication-instance
+Instance: Covid19Complication
 InstanceOf: covid19-complication-pediatrics
 Usage: #example
-Title: "covid19-complication-instance"
+Title: "Covid19 Complication"
 Description: "Example of a covid19 complication"
 * code = $sct#235859005:246112005=386134007 "Liver disorder due to infection where Severity = Significant"
 * subject = Reference(ExamplePatient)

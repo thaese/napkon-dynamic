@@ -27,10 +27,10 @@ Description: "Duration of intensive care treatment"
 * valueQuantity.code 1.. MS
 * valueQuantity.code = #d
 
-Instance: intensive-care-treatment-duration-instance
+Instance: IntensiveCareTreatmentDuration
 InstanceOf: intensive-care-treatment-duration-pediatrics
 Usage: #example
-Title: "intensive-care-treatment-duration-instance"
+Title: "Intensive Care Treatment Duration"
 Description: "Example of an intensive care treatment duration"
 * valueQuantity.value = 10
 * status = #final

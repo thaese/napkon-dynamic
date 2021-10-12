@@ -14,10 +14,10 @@ Description: "Application of a thoraric drainage"
 * subject MS
 
 
-Instance: thoracic-drainage-instance
+Instance: ThoracicDrainage
 InstanceOf: thoracic-drainage-pediatrics
 Usage: #example
-Title: "thoracic-drainage-instance"
+Title: "Thoracic Drainage"
 Description: "Example of a thoracic drainage"
 * status = #not-done
 * code = $sct#34193001 "Closed drainage of chest (procedure)"

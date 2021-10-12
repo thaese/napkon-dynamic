@@ -3,7 +3,7 @@
 ValueSet: ImmunosuppressivePermanentMedications
 Id: immunosuppressive-permament-medications
 Title: "Immunosuppressive Permanent Medications"
-Description: ""
+Description: "Immunosuppressive medications"
 
 * insert napkon-metadata(2021-10-05, #draft, 0.1.0)
 

@@ -27,10 +27,10 @@ Description: "Total length of stay"
 * valueQuantity.code 1.. MS
 * valueQuantity.code = #d
 
-Instance: total-length-of-stay-instance
+Instance: TotalLengthOfStay
 InstanceOf: total-length-of-stay-pediatrics
 Usage: #example
-Title: "total-length-of-stay-instance"
+Title: "Total Length of Stay"
 Description: "Example of an total length of stay"
 * valueQuantity.value = 10
 * status = #final
