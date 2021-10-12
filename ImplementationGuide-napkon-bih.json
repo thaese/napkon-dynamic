@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "NAPKONBIH",
   "status": "draft",
-  "date": "2021-10-12T12:33:34+00:00",
+  "date": "2021-10-12T17:20:00+00:00",
   "publisher": "BIH @ Charité",
   "contact": [
     {
@@ -430,20 +430,6 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/infectious-complications-pediatrics"
-        },
-        "name": "Pediatry Infectious Complications",
-        "description": "Defines constraints and methods on pediatry infectious complications",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
           "reference": "StructureDefinition/medical-treatment-for-vaccination-adverse-reaction"
         },
         "name": "Medical Treatment For Vaccination Adverse Reaction",
@@ -626,24 +612,10 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/covid19-complications"
+          "reference": "ValueSet/complaint-intensity"
         },
-        "name": "Covid19 complications",
-        "description": "Complications due to COVID19",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/covid-vaccination-codes"
-        },
-        "name": "CovidVaccinationCodes",
-        "description": "COVID-19 vaccines",
+        "name": "Complaint Intensity",
+        "description": "Intensity of general complaints",
         "exampleBoolean": false
       },
       {
@@ -696,38 +668,10 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/fungal-infections"
-        },
-        "name": "Fungal Infections",
-        "description": "Value set of fungal infections",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
           "reference": "ValueSet/general-complaints-after-vaccination"
         },
         "name": "General Complaints After Vaccination",
         "description": "General complaints after vaccination",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/immunosuppressive-permament-medications"
-        },
-        "name": "Immunosuppressive Permanent Medications",
-        "description": "Imunosuppresive medications",
         "exampleBoolean": false
       },
       {
@@ -868,20 +812,6 @@
         },
         "name": "Yes No Unknown",
         "description": "Yes / No / Unknown",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/napkon-pediatrics-module"
-        },
-        "name": "NapkonPediatricsModule",
-        "description": "NAPKON Pediatrics Module Code System - Collection of pediatrics module-specific codes that are missing from common terminologies such as SNOMED CT",
         "exampleBoolean": false
       },
       {
@@ -1069,20 +999,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Condition"
-          }
-        ],
-        "reference": {
-          "reference": "Condition/InfectionsComplicationPediatrics"
-        },
-        "name": "InfectionsComplicationPediatrics",
-        "description": "Example instance of infectious-complications-pediatrics",
-        "exampleCanonical": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/infectious-complications-pediatrics"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Observation"
           }
         ],
@@ -1215,7 +1131,7 @@
         "reference": {
           "reference": "Observation/VaccinationInjectionSitePainRest"
         },
-        "name": "Vaccination Injection Site Pain Rest// alcoholic beverage intake",
+        "name": "Vaccination Injection Site Pain Rest",
         "description": "Example of mild pain at vaccine injection site at rest",
         "exampleCanonical": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vaccination-injection-site-pain-rest"
       },

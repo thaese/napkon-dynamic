@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="38d451c0-c902-4fad-b9cc-72196d6222c4"/>
+  <id value="39c352cb-3788-4e13-8ca2-77cbe014abd6"/>
   <meta>
-    <lastUpdated value="2021-10-12T12:33:34.597+00:00"/>
+    <lastUpdated value="2021-10-12T17:20:00.817+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -1984,7 +1984,7 @@
         <name value="AnalgesicsAntipyretics"/>
         <title value="Analgesics Antipyretics"/>
         <status value="active"/>
-        <date value="2021-10-12T12:33:34+00:00"/>
+        <date value="2021-10-12T17:20:00+00:00"/>
         <publisher value="BIH @ Charité"/>
         <contact>
           <name value="BIH @ Charité"/>
@@ -1995,8 +1995,8 @@
         </contact>
         <description value="Analgetic and antipyretic drugs"/>
         <expansion>
-          <identifier value="urn:uuid:41d0180b-74c6-4ebe-b5ca-b8aa66e1e402"/>
-          <timestamp value="2021-10-12T12:34:26+00:00"/>
+          <identifier value="urn:uuid:ec9c1ca5-c306-4a24-89a3-79d859f080ba"/>
+          <timestamp value="2021-10-12T17:20:46+00:00"/>
           <total value="194"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3084,7 +3084,7 @@
         <name value="BodyTemperature"/>
         <title value="Body Temperature"/>
         <status value="active"/>
-        <date value="2021-10-12T12:33:34+00:00"/>
+        <date value="2021-10-12T17:20:00+00:00"/>
         <publisher value="BIH @ Charité"/>
         <contact>
           <name value="BIH @ Charité"/>
@@ -3095,8 +3095,8 @@
         </contact>
         <description value="Body temperature categories"/>
         <expansion>
-          <identifier value="urn:uuid:5f816ed4-604c-47d7-8476-4ef2210f015e"/>
-          <timestamp value="2021-10-12T12:34:26+00:00"/>
+          <identifier value="urn:uuid:1d61c59c-92a0-4674-9a29-666f1c052028"/>
+          <timestamp value="2021-10-12T17:20:46+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3154,18 +3154,20 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/covid19-complications"/>
+    <fullUrl value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/complaint-intensity"/>
     <resource>
       <ValueSet>
-        <id value="covid19-complications"/>
+        <id value="complaint-intensity"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 13 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
+            <p>This value set contains 4 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-napkon-vaccination-module.html">NapkonVaccinationModule v0.1.0 (CodeSystem)</a>
+            </p>
             <p>All codes in this table are from the system 
-              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html">
-                <code>http://snomed.info/sct</code>
+              <a href="CodeSystem-napkon-vaccination-module.html">
+                <code>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module</code>
               </a>
             </p>
             <table class="codes">
@@ -3182,117 +3184,45 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-52702003"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=52702003">52702003</a>
+                  <a name="https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-vaccination-module-11001"> </a>
+                  <a href="CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-11001">11001</a>
                 </td>
-                <td>Iceland disease</td>
+                <td>Ein wenig (keine Einschränkung täglicher Aktivitäten)</td>
                 <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-32398004"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=32398004">32398004</a>
+                  <a name="https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-vaccination-module-11002"> </a>
+                  <a href="CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-11002">11002</a>
                 </td>
-                <td>Bronchitis</td>
+                <td>Mäßig bis stark (Einschränkung täglicher Aktivitäten)</td>
                 <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-233981004"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=233981004">233981004</a>
+                  <a name="https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-vaccination-module-11003"> </a>
+                  <a href="CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-11003">11003</a>
                 </td>
-                <td>Arterial aneurysm</td>
+                <td>Sehr stark (tägliche Aktivitäten sind nicht mehr möglich)</td>
                 <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-304252001"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=304252001">304252001</a>
+                  <a name="https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-vaccination-module-11004"> </a>
+                  <a href="CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-11004">11004</a>
                 </td>
-                <td>For resuscitation</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-235859005-246112005-386134007"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=235859005:246112005=386134007">235859005:246112005=386134007</a>
-                </td>
-                <td>Liver disorder due to infection where Severity = Significant</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-230431001"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=230431001">230431001</a>
-                </td>
-                <td>Situation-related seizures</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-271594007"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=271594007">271594007</a>
-                </td>
-                <td>Syncope attack</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-271737000"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=271737000">271737000</a>
-                </td>
-                <td>Anemia</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-1119303003"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1119303003">1119303003</a>
-                </td>
-                <td>Post-acute COVID-19</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-64226004"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=64226004">64226004</a>
-                </td>
-                <td>Colitis</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-52457000"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=52457000">52457000</a>
-                </td>
-                <td>Ileitis</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-48661000"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=48661000">48661000</a>
-                </td>
-                <td>Peritonitis</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-389026000"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=389026000">389026000</a>
-                </td>
-                <td>Ascites (disorder)</td>
+                <td>Potenziell lebensbedrohlich (Behandlung in Rettungsstelle oder Hospitalisierung)</td>
                 <td/>
               </tr>
             </table>
           </div>
         </text>
-        <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/covid19-complications"/>
+        <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/complaint-intensity"/>
         <version value="0.1.0"/>
-        <name value="Covid19Complications"/>
-        <title value="Covid19 complications"/>
-        <status value="draft"/>
-        <date value="2020-10-05"/>
+        <name value="ComplaintIntensity"/>
+        <title value="Complaint Intensity"/>
+        <status value="active"/>
+        <date value="2021-10-12T17:20:00+00:00"/>
         <publisher value="BIH @ Charité"/>
         <contact>
           <name value="BIH @ Charité"/>
@@ -3301,87 +3231,38 @@
             <value value="https://www.netzwerk-universitaetsmedizin.de"/>
           </telecom>
         </contact>
-        <description value="Complications due to COVID19"/>
+        <description value="Intensity of general complaints"/>
         <expansion>
-          <identifier value="urn:uuid:657a7b8e-70b6-49bc-8073-2fae59b23046"/>
-          <timestamp value="2021-10-12T12:34:27+00:00"/>
-          <total value="13"/>
+          <identifier value="urn:uuid:8c71daa6-5478-411f-a92d-02bd704f0e4b"/>
+          <timestamp value="2021-10-12T17:20:47+00:00"/>
+          <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
             <name value="version"/>
-            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+            <valueUri value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module|0.1.0"/>
           </parameter>
           <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="52702003"/>
-            <display value="Iceland disease"/>
+            <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module"/>
+            <code value="11001"/>
+            <display value="Ein wenig (keine Einschränkung täglicher Aktivitäten)"/>
           </contains>
           <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="32398004"/>
-            <display value="Bronchitis"/>
+            <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module"/>
+            <code value="11002"/>
+            <display value="Mäßig bis stark (Einschränkung täglicher Aktivitäten)"/>
           </contains>
           <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="233981004"/>
-            <display value="Arterial aneurysm"/>
+            <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module"/>
+            <code value="11003"/>
+            <display value="Sehr stark (tägliche Aktivitäten sind nicht mehr möglich)"/>
           </contains>
           <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="304252001"/>
-            <display value="For resuscitation"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="235859005:246112005=386134007"/>
-            <display value="Liver disorder due to infection where Severity = Significant"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="230431001"/>
-            <display value="Situation-related seizures"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="271594007"/>
-            <display value="Syncope attack"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="271737000"/>
-            <display value="Anemia"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="1119303003"/>
-            <display value="Post-acute COVID-19"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="64226004"/>
-            <display value="Colitis"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="52457000"/>
-            <display value="Ileitis"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="48661000"/>
-            <display value="Peritonitis"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="389026000"/>
-            <display value="Ascites (disorder)"/>
+            <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module"/>
+            <code value="11004"/>
+            <display value="Potenziell lebensbedrohlich (Behandlung in Rettungsstelle oder Hospitalisierung)"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -3424,10 +3305,10 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-289908002"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=289908002">289908002</a>
+                  <a name="http---snomed.info-sct-77386006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=77386006">77386006</a>
                 </td>
-                <td>Pregnancy</td>
+                <td>Pregnancy not delivered</td>
                 <td/>
               </tr>
               <tr>
@@ -3446,7 +3327,7 @@
         <name value="CovidVaccinationContraindications"/>
         <title value="covid-vaccination-contraindications"/>
         <status value="active"/>
-        <date value="2021-10-12T12:33:34+00:00"/>
+        <date value="2021-10-12T17:20:00+00:00"/>
         <publisher value="BIH @ Charité"/>
         <contact>
           <name value="BIH @ Charité"/>
@@ -3457,8 +3338,8 @@
         </contact>
         <description value="Contraindications precluding COVID-19 vaccination"/>
         <expansion>
-          <identifier value="urn:uuid:ea3e2202-cc0d-417e-9c45-04714a3ab48d"/>
-          <timestamp value="2021-10-12T12:34:29+00:00"/>
+          <identifier value="urn:uuid:f96519a2-ef0e-4473-b74e-8d31e1cc2bcd"/>
+          <timestamp value="2021-10-12T17:20:47+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3479,8 +3360,8 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="289908002"/>
-            <display value="Pregnancy"/>
+            <code value="77386006"/>
+            <display value="Pregnancy not delivered"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -3595,7 +3476,7 @@
         <name value="CovidVaccinationReasons"/>
         <title value="Covid Vaccination Reasons"/>
         <status value="active"/>
-        <date value="2021-10-12T12:33:34+00:00"/>
+        <date value="2021-10-12T17:20:00+00:00"/>
         <publisher value="BIH @ Charité"/>
         <contact>
           <name value="BIH @ Charité"/>
@@ -3606,8 +3487,8 @@
         </contact>
         <description value="Individual reason for getting vaccinated against COVID-19"/>
         <expansion>
-          <identifier value="urn:uuid:4593b176-11c8-48c3-95b0-9ec6598e71ec"/>
-          <timestamp value="2021-10-12T12:34:29+00:00"/>
+          <identifier value="urn:uuid:0d7b728f-cc5b-4a1b-960b-8e6c66fc863e"/>
+          <timestamp value="2021-10-12T17:20:47+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3735,7 +3616,7 @@
         <name value="DetectedNotDetectedUnknownUndetermined"/>
         <title value="Detected Not Detected Unknown Undetermined"/>
         <status value="active"/>
-        <date value="2021-10-12T12:33:34+00:00"/>
+        <date value="2021-10-12T17:20:00+00:00"/>
         <publisher value="BIH @ Charité"/>
         <contact>
           <name value="BIH @ Charité"/>
@@ -3746,8 +3627,8 @@
         </contact>
         <description value="Values for laboratory observations"/>
         <expansion>
-          <identifier value="urn:uuid:814e9621-3a71-4aef-a24b-a3b8bc2c80de"/>
-          <timestamp value="2021-10-12T12:34:29+00:00"/>
+          <identifier value="urn:uuid:da799f58-3332-437e-b782-6e55709c9b15"/>
+          <timestamp value="2021-10-12T17:20:47+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3786,136 +3667,6 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/fungal-infections"/>
-    <resource>
-      <ValueSet>
-        <id value="fungal-infections"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 5 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
-            <p>All codes in this table are from the system 
-              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html">
-                <code>http://snomed.info/sct</code>
-              </a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-53326005"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=53326005">53326005</a>
-                </td>
-                <td>Candida albicans</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-2429008"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=2429008">2429008</a>
-                </td>
-                <td>Aspergillus</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-74964007"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=74964007">74964007</a>
-                </td>
-                <td>Other</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-260413007"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260413007">260413007</a>
-                </td>
-                <td>None</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-261665006"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261665006">261665006</a>
-                </td>
-                <td>Unknown</td>
-                <td/>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/fungal-infections"/>
-        <version value="0.1.0"/>
-        <name value="FungalInfections"/>
-        <title value="Fungal Infections"/>
-        <status value="draft"/>
-        <date value="2020-10-05"/>
-        <publisher value="BIH @ Charité"/>
-        <contact>
-          <name value="BIH @ Charité"/>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
-          </telecom>
-        </contact>
-        <description value="Value set of fungal infections"/>
-        <expansion>
-          <identifier value="urn:uuid:31c61bfb-26e6-4454-9120-c162db8e4849"/>
-          <timestamp value="2021-10-12T12:34:30+00:00"/>
-          <total value="5"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
-          </parameter>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="53326005"/>
-            <display value="Candida albicans"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="2429008"/>
-            <display value="Aspergillus"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="74964007"/>
-            <display value="Other"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="260413007"/>
-            <display value="None"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="261665006"/>
-            <display value="Unknown"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
     <fullUrl value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/general-complaints-after-vaccination"/>
     <resource>
       <ValueSet>
@@ -3923,17 +3674,23 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 14 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
-            <p>All codes in this table are from the system 
-              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html">
-                <code>http://snomed.info/sct</code>
-              </a>
-            </p>
+            <p>This value set contains 9 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-napkon-vaccination-module.html">NapkonVaccinationModule v0.1.0 (CodeSystem)</a>
+                </li>
+                <li>SNOMED CT International edition 31-Jul 2021</li>
+              </ul>
+            </div>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
                   <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
                 </td>
                 <td>
                   <b>Display</b>
@@ -3947,111 +3704,80 @@
                   <a name="http---snomed.info-sct-260413007"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260413007">260413007</a>
                 </td>
+                <td>http://snomed.info/sct</td>
                 <td>None</td>
                 <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-386661006"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=386661006">386661006</a>
+                  <a name="https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-vaccination-module-10001"> </a>
+                  <a href="CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-10001">10001</a>
                 </td>
-                <td>Fever (finding)</td>
+                <td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module</td>
+                <td>Fieber und/oder Schüttelfrost (inkl. Sich fiebrig fühlen)</td>
                 <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-43724002"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=43724002">43724002</a>
+                  <a name="https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-vaccination-module-10002"> </a>
+                  <a href="CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-10002">10002</a>
                 </td>
-                <td>Shivering</td>
+                <td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module</td>
+                <td>Abgeschlagenheit und/oder vermehrte Müdigkeit</td>
                 <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-103001002"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=103001002">103001002</a>
+                  <a name="https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-vaccination-module-10003"> </a>
+                  <a href="CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-10003">10003</a>
                 </td>
-                <td>Feeling feverish</td>
+                <td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module</td>
+                <td>Neu aufgetretene oder Verstärkung vorbestehender Muskelschmerzen</td>
                 <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-60119000"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=60119000">60119000</a>
+                  <a name="https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-vaccination-module-10004"> </a>
+                  <a href="CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-10004">10004</a>
                 </td>
-                <td>Exhaustion</td>
+                <td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module</td>
+                <td>Neu aufgetretene oder Verstärkung vorbestehender Gelenkschmerzen</td>
                 <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-84229001"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=84229001">84229001</a>
+                  <a name="https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-vaccination-module-10005"> </a>
+                  <a href="CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-10005">10005</a>
                 </td>
-                <td>Fatigue</td>
+                <td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module</td>
+                <td>Schwierigkeiten beim Atmen und/oder Luftnot</td>
                 <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-68962001"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=68962001">68962001</a>
+                  <a name="https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-vaccination-module-10006"> </a>
+                  <a href="CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-10006">10006</a>
                 </td>
-                <td>Myalgia</td>
+                <td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module</td>
+                <td>Übelkeit und/oder Erbrechen</td>
                 <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-57676002"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=57676002">57676002</a>
+                  <a name="https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-vaccination-module-10007"> </a>
+                  <a href="CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-10007">10007</a>
                 </td>
-                <td>Joint pain</td>
+                <td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module</td>
+                <td>Durchfall und/oder dünnerer Stuhl</td>
                 <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-230145002"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=230145002">230145002</a>
+                  <a name="https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-vaccination-module-10008"> </a>
+                  <a href="CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-10008">10008</a>
                 </td>
-                <td>Difficulty breathing</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-267036007"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=267036007">267036007</a>
-                </td>
-                <td>Dyspnea</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-422587007"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=422587007">422587007</a>
-                </td>
-                <td>Nausea (finding)</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-249497008"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=249497008">249497008</a>
-                </td>
-                <td>Vomiting symptom (finding)</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-62315008"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=62315008">62315008</a>
-                </td>
-                <td>Diarrhea</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-398032003"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=398032003">398032003</a>
-                </td>
-                <td>Loose stool (finding)</td>
+                <td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module</td>
+                <td>Abgeschlagenheit und/oder vermehrte Müdigkeit</td>
                 <td/>
               </tr>
             </table>
@@ -4062,7 +3788,7 @@
         <name value="GeneralComplaintsAfterVaccination"/>
         <title value="General Complaints After Vaccination"/>
         <status value="active"/>
-        <date value="2021-10-12T12:33:34+00:00"/>
+        <date value="2021-10-12T17:20:00+00:00"/>
         <publisher value="BIH @ Charité"/>
         <contact>
           <name value="BIH @ Charité"/>
@@ -4073,9 +3799,9 @@
         </contact>
         <description value="General complaints after vaccination"/>
         <expansion>
-          <identifier value="urn:uuid:59604ae5-88e2-41bb-bd64-8d8ab22ffc2d"/>
-          <timestamp value="2021-10-12T12:34:30+00:00"/>
-          <total value="14"/>
+          <identifier value="urn:uuid:3cac9ce9-edf8-4995-8e7d-d2483d8cb6ec"/>
+          <timestamp value="2021-10-12T17:20:48+00:00"/>
+          <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -4088,75 +3814,54 @@
             <name value="version"/>
             <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
           </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module|0.1.0"/>
+          </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="260413007"/>
             <display value="None"/>
           </contains>
           <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="386661006"/>
-            <display value="Fever (finding)"/>
+            <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module"/>
+            <code value="10001"/>
+            <display value="Fieber und/oder Schüttelfrost (inkl. Sich fiebrig fühlen)"/>
           </contains>
           <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="43724002"/>
-            <display value="Shivering"/>
+            <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module"/>
+            <code value="10002"/>
+            <display value="Abgeschlagenheit und/oder vermehrte Müdigkeit"/>
           </contains>
           <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="103001002"/>
-            <display value="Feeling feverish"/>
+            <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module"/>
+            <code value="10003"/>
+            <display value="Neu aufgetretene oder Verstärkung vorbestehender Muskelschmerzen"/>
           </contains>
           <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="60119000"/>
-            <display value="Exhaustion"/>
+            <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module"/>
+            <code value="10004"/>
+            <display value="Neu aufgetretene oder Verstärkung vorbestehender Gelenkschmerzen"/>
           </contains>
           <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="84229001"/>
-            <display value="Fatigue"/>
+            <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module"/>
+            <code value="10005"/>
+            <display value="Schwierigkeiten beim Atmen und/oder Luftnot"/>
           </contains>
           <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="68962001"/>
-            <display value="Myalgia"/>
+            <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module"/>
+            <code value="10006"/>
+            <display value="Übelkeit und/oder Erbrechen"/>
           </contains>
           <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="57676002"/>
-            <display value="Joint pain"/>
+            <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module"/>
+            <code value="10007"/>
+            <display value="Durchfall und/oder dünnerer Stuhl"/>
           </contains>
           <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="230145002"/>
-            <display value="Difficulty breathing"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="267036007"/>
-            <display value="Dyspnea"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="422587007"/>
-            <display value="Nausea (finding)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="249497008"/>
-            <display value="Vomiting symptom (finding)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="62315008"/>
-            <display value="Diarrhea"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="398032003"/>
-            <display value="Loose stool (finding)"/>
+            <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module"/>
+            <code value="10008"/>
+            <display value="Abgeschlagenheit und/oder vermehrte Müdigkeit"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -4239,7 +3944,7 @@
         <name value="MedicalTreatmentForVaccinationAdverseReaction"/>
         <title value="Medical Treatment For Vaccination Adverse Reaction"/>
         <status value="active"/>
-        <date value="2021-10-12T12:33:34+00:00"/>
+        <date value="2021-10-12T17:20:00+00:00"/>
         <publisher value="BIH @ Charité"/>
         <contact>
           <name value="BIH @ Charité"/>
@@ -4250,8 +3955,8 @@
         </contact>
         <description value="Types of medical treatments for potential or actual adverse reactions to a vaccination"/>
         <expansion>
-          <identifier value="urn:uuid:913ea1ee-262a-42de-83df-ad9ca54833c8"/>
-          <timestamp value="2021-10-12T12:34:35+00:00"/>
+          <identifier value="urn:uuid:99b81b69-4043-4013-9cdc-21f0a2ac8a7f"/>
+          <timestamp value="2021-10-12T17:20:48+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -4360,7 +4065,7 @@
         <name value="PresentNotPresentUndeterminedOther"/>
         <title value="Present Not Present Undetermined Other"/>
         <status value="active"/>
-        <date value="2021-10-12T12:33:34+00:00"/>
+        <date value="2021-10-12T17:20:00+00:00"/>
         <publisher value="BIH @ Charité"/>
         <contact>
           <name value="BIH @ Charité"/>
@@ -4371,8 +4076,8 @@
         </contact>
         <description value="Values for laboratory observations"/>
         <expansion>
-          <identifier value="urn:uuid:0de256b5-c0f3-42a1-9d5c-9b33b5f853e9"/>
-          <timestamp value="2021-10-12T12:34:36+00:00"/>
+          <identifier value="urn:uuid:ce84b94f-c420-463a-b8f4-98896543c6cf"/>
+          <timestamp value="2021-10-12T17:20:48+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -4514,7 +4219,7 @@
         <name value="RegularAlcoholIntake"/>
         <title value="Regular Alcohol Intake"/>
         <status value="active"/>
-        <date value="2021-10-12T12:33:34+00:00"/>
+        <date value="2021-10-12T17:20:00+00:00"/>
         <publisher value="BIH @ Charité"/>
         <contact>
           <name value="BIH @ Charité"/>
@@ -4525,8 +4230,8 @@
         </contact>
         <description value="Frequency of alcoholic beverage intake"/>
         <expansion>
-          <identifier value="urn:uuid:df9ff417-4540-4164-abe8-9c1152deb6c7"/>
-          <timestamp value="2021-10-12T12:34:36+00:00"/>
+          <identifier value="urn:uuid:2864d69d-b2c7-446a-834c-ae1e1f35b5a4"/>
+          <timestamp value="2021-10-12T17:20:48+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -4682,7 +4387,7 @@
         <name value="RegularAlcoholIntakeQuantity"/>
         <title value="Regular Alcohol Intake Quantity"/>
         <status value="active"/>
-        <date value="2021-10-12T12:33:34+00:00"/>
+        <date value="2021-10-12T17:20:00+00:00"/>
         <publisher value="BIH @ Charité"/>
         <contact>
           <name value="BIH @ Charité"/>
@@ -4693,8 +4398,8 @@
         </contact>
         <description value="Number of alcoholic beverages per day"/>
         <expansion>
-          <identifier value="urn:uuid:874fb81c-318b-4faf-80d1-8c060ae2a9bf"/>
-          <timestamp value="2021-10-12T12:34:37+00:00"/>
+          <identifier value="urn:uuid:d6f3c273-2f33-4f9b-a9bb-81637f7431f5"/>
+          <timestamp value="2021-10-12T17:20:49+00:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -4811,7 +4516,7 @@
         <name value="RestrictedEventStatus"/>
         <title value="RestrictedEventStatus"/>
         <status value="active"/>
-        <date value="2021-10-12T12:33:34+00:00"/>
+        <date value="2021-10-12T17:20:00+00:00"/>
         <publisher value="BIH @ Charité"/>
         <contact>
           <name value="BIH @ Charité"/>
@@ -4822,8 +4527,8 @@
         </contact>
         <description value="EventStatus value set restricted to codes not-done, completed and unknown"/>
         <expansion>
-          <identifier value="urn:uuid:4977f925-e3d3-4df4-86cb-b1c0a5d042cb"/>
-          <timestamp value="2021-10-12T12:34:37+00:00"/>
+          <identifier value="urn:uuid:b9feacba-aa0c-4fd9-8aa1-1b3cd908a36d"/>
+          <timestamp value="2021-10-12T17:20:49+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -4947,7 +4652,7 @@
         <name value="SARSCov2InfectionCourse"/>
         <title value="SARS-CoV2 Infection Course"/>
         <status value="active"/>
-        <date value="2021-10-12T12:33:34+00:00"/>
+        <date value="2021-10-12T17:20:00+00:00"/>
         <publisher value="BIH @ Charité"/>
         <contact>
           <name value="BIH @ Charité"/>
@@ -4958,8 +4663,8 @@
         </contact>
         <description value="Infection course of SARS-CoV2"/>
         <expansion>
-          <identifier value="urn:uuid:940164b8-e718-44e3-9542-3485b624178d"/>
-          <timestamp value="2021-10-12T12:34:37+00:00"/>
+          <identifier value="urn:uuid:36185657-4820-4001-adda-482d08c10ef9"/>
+          <timestamp value="2021-10-12T17:20:49+00:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -5101,7 +4806,7 @@
         <name value="VaccinationInjectionSiteErythemaSize"/>
         <title value="Vaccination Injection Site Erythema Size"/>
         <status value="active"/>
-        <date value="2021-10-12T12:33:34+00:00"/>
+        <date value="2021-10-12T17:20:00+00:00"/>
         <publisher value="BIH @ Charité"/>
         <contact>
           <name value="BIH @ Charité"/>
@@ -5112,8 +4817,8 @@
         </contact>
         <description value="Erythema size category at vaccine injection site"/>
         <expansion>
-          <identifier value="urn:uuid:e2fb51b2-74fb-43ee-843c-dd24a27b035b"/>
-          <timestamp value="2021-10-12T12:34:38+00:00"/>
+          <identifier value="urn:uuid:eb3dc9ca-4e95-4336-8d5d-86a7556f598b"/>
+          <timestamp value="2021-10-12T17:20:49+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -5246,7 +4951,7 @@
         <name value="VaccinationInjectionSiteSwellingSize"/>
         <title value="Vaccination Injection Site Swelling Size"/>
         <status value="active"/>
-        <date value="2021-10-12T12:33:34+00:00"/>
+        <date value="2021-10-12T17:20:00+00:00"/>
         <publisher value="BIH @ Charité"/>
         <contact>
           <name value="BIH @ Charité"/>
@@ -5257,8 +4962,8 @@
         </contact>
         <description value="Swelling size category at vaccine injection site"/>
         <expansion>
-          <identifier value="urn:uuid:dbcfc512-f9a7-437e-af40-9bf39baeb8d4"/>
-          <timestamp value="2021-10-12T12:34:38+00:00"/>
+          <identifier value="urn:uuid:4ad839c8-55f5-46da-8096-18d861416207"/>
+          <timestamp value="2021-10-12T17:20:50+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -5382,7 +5087,7 @@
         <name value="VaccinationPainScale"/>
         <title value="Vaccination pain scale"/>
         <status value="active"/>
-        <date value="2021-10-12T12:33:34+00:00"/>
+        <date value="2021-10-12T17:20:00+00:00"/>
         <publisher value="BIH @ Charité"/>
         <contact>
           <name value="BIH @ Charité"/>
@@ -5393,8 +5098,8 @@
         </contact>
         <description value="Pain intensity at vaccine injection site"/>
         <expansion>
-          <identifier value="urn:uuid:ba885197-a717-4c9c-8e01-95fddcd59f7a"/>
-          <timestamp value="2021-10-12T12:34:39+00:00"/>
+          <identifier value="urn:uuid:a36a5fdf-3c8a-43d8-b91f-21339508ebff"/>
+          <timestamp value="2021-10-12T17:20:50+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -5495,7 +5200,7 @@
         <name value="YesNoUnknown"/>
         <title value="Yes No Unknown"/>
         <status value="active"/>
-        <date value="2021-10-12T12:33:34+00:00"/>
+        <date value="2021-10-12T17:20:00+00:00"/>
         <publisher value="BIH @ Charité"/>
         <contact>
           <name value="BIH @ Charité"/>
@@ -5506,8 +5211,8 @@
         </contact>
         <description value="Yes / No / Unknown"/>
         <expansion>
-          <identifier value="urn:uuid:af344fca-bbed-4553-b348-20d1fef42e43"/>
-          <timestamp value="2021-10-12T12:34:39+00:00"/>
+          <identifier value="urn:uuid:ad68a353-c368-48a0-a38e-872a2eb588e7"/>
+          <timestamp value="2021-10-12T17:20:50+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>

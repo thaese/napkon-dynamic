@@ -1,7 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix sct: <http://snomed.info/id/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # - resource -------------------------------------------------------------------
@@ -18,15 +17,22 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 43724002}\">Chill (finding)</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>recordedDate</b>: Feb 19, 2021, 8:30:35 AM</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>severity</b>: <span title=\"Codes: {https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module 11003}\">Sehr stark (tägliche Aktivitäten sind nicht mehr möglich)</span></p><p><b>code</b>: <span title=\"Codes: {https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module 10004}\">Neu aufgetretene oder Verstärkung vorbestehender Gelenkschmerzen</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>recordedDate</b>: Feb 19, 2021, 8:30:35 AM</p></div>"
+  ];
+  fhir:Condition.severity [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module" ];
+       fhir:Coding.code [ fhir:value "11003" ];
+       fhir:Coding.display [ fhir:value "Sehr stark (tägliche Aktivitäten sind nicht mehr möglich)" ]
+     ]
   ];
   fhir:Condition.code [
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       a sct:43724002;
-       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-       fhir:Coding.code [ fhir:value "43724002" ];
-       fhir:Coding.display [ fhir:value "Chill (finding)" ]
+       fhir:Coding.system [ fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module" ];
+       fhir:Coding.code [ fhir:value "10004" ];
+       fhir:Coding.display [ fhir:value "Neu aufgetretene oder Verstärkung vorbestehender Gelenkschmerzen" ]
      ]
   ];
   fhir:Condition.subject [

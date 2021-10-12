@@ -70,8 +70,8 @@
     ],
     "Condition": [
       {
-        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/infectious-complications-pediatrics",
-        "title": "Pediatry Infectious Complications"
+        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/general-complaints-after-vaccination",
+        "title": "General Complaints After Vaccination"
       }
     ]
   },

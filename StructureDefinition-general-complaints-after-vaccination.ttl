@@ -1,4 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -10,14 +11,14 @@
   fhir:Resource.id [ fhir:value "general-complaints-after-vaccination"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-general-complaints-after-vaccination-definitions.html#Condition\">Condition</a><a name=\"Condition\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ProfileConditionDiagnose</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Detailed information about conditions, problems or diagnoses</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-general-complaints-after-vaccination-definitions.html#Condition.code\">code</a><a name=\"Condition.code\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Identification of the condition, problem or diagnosis</span><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-general-complaints-after-vaccination.html\">General Complaints After Vaccination</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\">required</a>)</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-general-complaints-after-vaccination-definitions.html#Condition\">Condition</a><a name=\"Condition\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ProfileConditionDiagnose</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Detailed information about conditions, problems or diagnoses</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-general-complaints-after-vaccination-definitions.html#Condition.category\">category</a><a name=\"Condition.category\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">problem-list-item | encounter-diagnosis</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">At least the following</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck101.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#CodeableConcept.coding\">coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Code defined by a terminology system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">(complex)</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.system\">system</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Identity of the terminology system<br/><span style=\"font-weight: bold\">Fixed Value: </span><a style=\"color: darkgreen\" href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-loinc.html\">http://loinc.org</a></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Symbol in syntax defined by the system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">31044-1</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.display\">display</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Representation defined by the system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">Immunization Reaction</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-general-complaints-after-vaccination-definitions.html#Condition.severity\">severity</a><a name=\"Condition.severity\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Subjective severity of condition</span><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-complaint-intensity.html\">Complaint Intensity</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\">required</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-general-complaints-after-vaccination-definitions.html#Condition.code\">code</a><a name=\"Condition.code\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck004.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-general-complaints-after-vaccination-definitions.html#Condition.code.coding:nvm\" title=\"Slice nvm\">coding:nvm</a><a name=\"Condition.code.coding\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Code defined by a terminology system</span><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-general-complaints-after-vaccination.html\">General Complaints After Vaccination</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\">required</a>)</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
   ];
   fhir:StructureDefinition.url [ fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/general-complaints-after-vaccination"];
   fhir:StructureDefinition.version [ fhir:value "0.1.0"];
   fhir:StructureDefinition.name [ fhir:value "GeneralComplaintsAfterVaccination"];
   fhir:StructureDefinition.title [ fhir:value "General Complaints After Vaccination"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-10-12T12:33:34+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-10-12T17:20:00+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "BIH @ Charité"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -1456,15 +1457,6 @@
      ], [
        fhir:index 21;
        fhir:Element.id [ fhir:value "Condition.category" ];
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status" ];
-         fhir:Extension.valueCode [ fhir:value "normative" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version" ];
-         fhir:Extension.valueCode [ fhir:value "4.0.0" ]
-       ];
        fhir:ElementDefinition.path [ fhir:value "Condition.category" ];
        fhir:ElementDefinition.short [ fhir:value "problem-list-item | encounter-diagnosis" ];
        fhir:ElementDefinition.definition [ fhir:value "A category assigned to the condition." ];
@@ -1479,6 +1471,15 @@
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ];
+       fhir:ElementDefinition.patternCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           a loinc:31044-1;
+           fhir:Coding.system [ fhir:value "http://loinc.org" ];
+           fhir:Coding.code [ fhir:value "31044-1" ];
+           fhir:Coding.display [ fhir:value "Immunization Reaction" ]
+         ]
        ];
        fhir:ElementDefinition.condition [
          fhir:value "ele-1";
@@ -1545,20 +1546,11 @@
      ], [
        fhir:index 22;
        fhir:Element.id [ fhir:value "Condition.severity" ];
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status" ];
-         fhir:Extension.valueCode [ fhir:value "normative" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version" ];
-         fhir:Extension.valueCode [ fhir:value "4.0.0" ]
-       ];
        fhir:ElementDefinition.path [ fhir:value "Condition.severity" ];
        fhir:ElementDefinition.short [ fhir:value "Subjective severity of condition" ];
        fhir:ElementDefinition.definition [ fhir:value "A subjective assessment of the severity of the condition as evaluated by the clinician." ];
        fhir:ElementDefinition.comment [ fhir:value "Coding of the severity with a terminology is preferred, where possible." ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
          fhir:ElementDefinition.base.path [ fhir:value "Condition.severity" ];
@@ -1585,17 +1577,12 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.binding [
-         fhir:Element.extension [
-           fhir:index 0;
-           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
-           fhir:Extension.valueString [ fhir:value "ConditionSeverity" ]
-         ];
-         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ];
-         fhir:ElementDefinition.binding.description [ fhir:value "A subjective assessment of the severity of the condition as evaluated by the clinician." ];
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/condition-severity";
-           fhir:link <http://hl7.org/fhir/ValueSet/condition-severity>
+           fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/complaint-intensity";
+           fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/complaint-intensity>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -1638,6 +1625,15 @@
      ], [
        fhir:index 23;
        fhir:Element.id [ fhir:value "Condition.code" ];
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status" ];
+         fhir:Extension.valueCode [ fhir:value "normative" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version" ];
+         fhir:Extension.valueCode [ fhir:value "4.0.0" ]
+       ];
        fhir:ElementDefinition.path [ fhir:value "Condition.code" ];
        fhir:ElementDefinition.short [ fhir:value "Identification of the condition, problem or diagnosis" ];
        fhir:ElementDefinition.definition [ fhir:value "Identification of the condition, problem or diagnosis." ];
@@ -1677,10 +1673,16 @@
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.binding [
-         fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
+           fhir:Extension.valueString [ fhir:value "ConditionKind" ]
+         ];
+         fhir:ElementDefinition.binding.strength [ fhir:value "example" ];
+         fhir:ElementDefinition.binding.description [ fhir:value "Identification of the condition or diagnosis." ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/general-complaints-after-vaccination";
-           fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/general-complaints-after-vaccination>
+           fhir:value "http://hl7.org/fhir/ValueSet/condition-code";
+           fhir:link <http://hl7.org/fhir/ValueSet/condition-code>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -4039,6 +4041,80 @@
        ]
      ], [
        fhir:index 62;
+       fhir:Element.id [ fhir:value "Condition.code.coding:nvm" ];
+       fhir:ElementDefinition.path [ fhir:value "Condition.code.coding" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "nvm" ];
+       fhir:ElementDefinition.short [ fhir:value "Code defined by a terminology system" ];
+       fhir:ElementDefinition.definition [ fhir:value "A reference to a code defined by a terminology system." ];
+       fhir:ElementDefinition.comment [ fhir:value "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." ];
+       fhir:ElementDefinition.requirements [ fhir:value "Allows for alternative encodings within a code system, and translations to other code systems." ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "CodeableConcept.coding" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ];
+       fhir:ElementDefinition.condition [
+         fhir:value "ele-1";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/general-complaints-after-vaccination";
+           fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/general-complaints-after-vaccination>
+         ]
+       ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "CE/CNE/CWE subset one of the sets of component 1-3 or 4-6" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "CV" ]
+       ], [
+         fhir:index 3;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "orim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding rdfs:subClassOf dt:CDCoding" ]
+       ], [
+         fhir:index 4;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "C*E.1-8, C*E.10-22" ]
+       ], [
+         fhir:index 5;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "union(., ./translation)" ]
+       ], [
+         fhir:index 6;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "orim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
+       ]
+     ], [
+       fhir:index 63;
        fhir:Element.id [ fhir:value "Condition.code.text" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -4096,7 +4172,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" ]
        ]
      ], [
-       fhir:index 63;
+       fhir:index 64;
        fhir:Element.id [ fhir:value "Condition.bodySite" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -4183,7 +4259,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "363698007" ]
        ]
      ], [
-       fhir:index 64;
+       fhir:index 65;
        fhir:Element.id [ fhir:value "Condition.bodySite.id" ];
        fhir:ElementDefinition.path [ fhir:value "Condition.bodySite.id" ];
        fhir:ElementDefinition.representation [
@@ -4214,7 +4290,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 65;
+       fhir:index 66;
        fhir:Element.id [ fhir:value "Condition.bodySite.extension" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -4293,7 +4369,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 66;
+       fhir:index 67;
        fhir:Element.id [ fhir:value "Condition.bodySite.coding" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -4376,7 +4452,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
        ]
      ], [
-       fhir:index 67;
+       fhir:index 68;
        fhir:Element.id [ fhir:value "Condition.bodySite.coding:snomed-ct" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -4452,7 +4528,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
        ]
      ], [
-       fhir:index 68;
+       fhir:index 69;
        fhir:Element.id [ fhir:value "Condition.bodySite.coding:snomed-ct.id" ];
        fhir:ElementDefinition.path [ fhir:value "Condition.bodySite.coding.id" ];
        fhir:ElementDefinition.representation [
@@ -4483,7 +4559,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 69;
+       fhir:index 70;
        fhir:Element.id [ fhir:value "Condition.bodySite.coding:snomed-ct.extension" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -4562,7 +4638,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 70;
+       fhir:index 71;
        fhir:Element.id [ fhir:value "Condition.bodySite.coding:snomed-ct.system" ];
        fhir:ElementDefinition.path [ fhir:value "Condition.bodySite.coding.system" ];
        fhir:ElementDefinition.short [ fhir:value "Identity of the terminology system" ];
@@ -4617,7 +4693,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" ]
        ]
      ], [
-       fhir:index 71;
+       fhir:index 72;
        fhir:Element.id [ fhir:value "Condition.bodySite.coding:snomed-ct.version" ];
        fhir:ElementDefinition.path [ fhir:value "Condition.bodySite.coding.version" ];
        fhir:ElementDefinition.short [ fhir:value "Version of the system - if relevant" ];
@@ -4669,7 +4745,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" ]
        ]
      ], [
-       fhir:index 72;
+       fhir:index 73;
        fhir:Element.id [ fhir:value "Condition.bodySite.coding:snomed-ct.code" ];
        fhir:ElementDefinition.path [ fhir:value "Condition.bodySite.coding.code" ];
        fhir:ElementDefinition.short [ fhir:value "Symbol in syntax defined by the system" ];
@@ -4722,7 +4798,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" ]
        ]
      ], [
-       fhir:index 73;
+       fhir:index 74;
        fhir:Element.id [ fhir:value "Condition.bodySite.coding:snomed-ct.display" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -4780,7 +4856,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" ]
        ]
      ], [
-       fhir:index 74;
+       fhir:index 75;
        fhir:Element.id [ fhir:value "Condition.bodySite.coding:snomed-ct.userSelected" ];
        fhir:ElementDefinition.path [ fhir:value "Condition.bodySite.coding.userSelected" ];
        fhir:ElementDefinition.short [ fhir:value "If this coding was chosen directly by the user" ];
@@ -4833,7 +4909,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]" ]
        ]
      ], [
-       fhir:index 75;
+       fhir:index 76;
        fhir:Element.id [ fhir:value "Condition.bodySite.text" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -4891,7 +4967,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" ]
        ]
      ], [
-       fhir:index 76;
+       fhir:index 77;
        fhir:Element.id [ fhir:value "Condition.subject" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -5005,7 +5081,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.subject" ]
        ]
      ], [
-       fhir:index 77;
+       fhir:index 78;
        fhir:Element.id [ fhir:value "Condition.encounter" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -5106,7 +5182,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".inboundRelationship[typeCode=COMP].source[classCode=ENC, moodCode=EVN]" ]
        ]
      ], [
-       fhir:index 78;
+       fhir:index 79;
        fhir:Element.id [ fhir:value "Condition.onset[x]" ];
        fhir:ElementDefinition.path [ fhir:value "Condition.onset[x]" ];
        fhir:ElementDefinition.slicing [
@@ -5174,7 +5250,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".effectiveTime.low or .inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=\"age at onset\"].value" ]
        ]
      ], [
-       fhir:index 79;
+       fhir:index 80;
        fhir:Element.id [ fhir:value "Condition.onset[x]:onsetPeriod" ];
        fhir:ElementDefinition.path [ fhir:value "Condition.onset[x]" ];
        fhir:ElementDefinition.sliceName [ fhir:value "onsetPeriod" ];
@@ -5232,7 +5308,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".effectiveTime.low or .inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=\"age at onset\"].value" ]
        ]
      ], [
-       fhir:index 80;
+       fhir:index 81;
        fhir:Element.id [ fhir:value "Condition.onset[x]:onsetPeriod.id" ];
        fhir:ElementDefinition.path [ fhir:value "Condition.onset[x].id" ];
        fhir:ElementDefinition.representation [
@@ -5263,7 +5339,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 81;
+       fhir:index 82;
        fhir:Element.id [ fhir:value "Condition.onset[x]:onsetPeriod.extension" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -5342,7 +5418,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 82;
+       fhir:index 83;
        fhir:Element.id [ fhir:value "Condition.onset[x]:onsetPeriod.start" ];
        fhir:ElementDefinition.path [ fhir:value "Condition.onset[x].start" ];
        fhir:ElementDefinition.short [ fhir:value "Starting time with inclusive boundary" ];
@@ -5394,7 +5470,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./low" ]
        ]
      ], [
-       fhir:index 83;
+       fhir:index 84;
        fhir:Element.id [ fhir:value "Condition.onset[x]:onsetPeriod.start.id" ];
        fhir:ElementDefinition.path [ fhir:value "Condition.onset[x].start.id" ];
        fhir:ElementDefinition.representation [
@@ -5425,7 +5501,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 84;
+       fhir:index 85;
        fhir:Element.id [ fhir:value "Condition.onset[x]:onsetPeriod.start.extension" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -5504,7 +5580,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 85;
+       fhir:index 86;
        fhir:Element.id [ fhir:value "Condition.onset[x]:onsetPeriod.start.extension:lebensphase-von" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -5581,7 +5657,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 86;
+       fhir:index 87;
        fhir:Element.id [ fhir:value "Condition.onset[x]:onsetPeriod.start.value" ];
        fhir:ElementDefinition.path [ fhir:value "Condition.onset[x].start.value" ];
        fhir:ElementDefinition.representation [
@@ -5611,7 +5687,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "http://hl7.org/fhirpath/System.DateTime" ]
        ]
      ], [
-       fhir:index 87;
+       fhir:index 88;
        fhir:Element.id [ fhir:value "Condition.onset[x]:onsetPeriod.end" ];
        fhir:ElementDefinition.path [ fhir:value "Condition.onset[x].end" ];
        fhir:ElementDefinition.short [ fhir:value "End time with inclusive boundary, if not ongoing" ];
@@ -5664,7 +5740,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./high" ]
        ]
      ], [
-       fhir:index 88;
+       fhir:index 89;
        fhir:Element.id [ fhir:value "Condition.onset[x]:onsetPeriod.end.id" ];
        fhir:ElementDefinition.path [ fhir:value "Condition.onset[x].end.id" ];
        fhir:ElementDefinition.representation [
@@ -5695,7 +5771,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 89;
+       fhir:index 90;
        fhir:Element.id [ fhir:value "Condition.onset[x]:onsetPeriod.end.extension" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -5774,7 +5850,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 90;
+       fhir:index 91;
        fhir:Element.id [ fhir:value "Condition.onset[x]:onsetPeriod.end.extension:lebensphase-bis" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -5851,7 +5927,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 91;
+       fhir:index 92;
        fhir:Element.id [ fhir:value "Condition.onset[x]:onsetPeriod.end.value" ];
        fhir:ElementDefinition.path [ fhir:value "Condition.onset[x].end.value" ];
        fhir:ElementDefinition.representation [
@@ -5881,7 +5957,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "http://hl7.org/fhirpath/System.DateTime" ]
        ]
      ], [
-       fhir:index 92;
+       fhir:index 93;
        fhir:Element.id [ fhir:value "Condition.onset[x]:onsetDateTime" ];
        fhir:ElementDefinition.path [ fhir:value "Condition.onset[x]" ];
        fhir:ElementDefinition.sliceName [ fhir:value "onsetDateTime" ];
@@ -5939,7 +6015,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".effectiveTime.low or .inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=\"age at onset\"].value" ]
        ]
      ], [
-       fhir:index 93;
+       fhir:index 94;
        fhir:Element.id [ fhir:value "Condition.abatement[x]" ];
        fhir:ElementDefinition.path [ fhir:value "Condition.abatement[x]" ];
        fhir:ElementDefinition.short [ fhir:value "When in resolution/remission" ];
@@ -6001,7 +6077,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".effectiveTime.high or .inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=\"age at remission\"].value or .inboundRelationship[typeCode=SUBJ]source[classCode=CONC, moodCode=EVN].status=completed" ]
        ]
      ], [
-       fhir:index 94;
+       fhir:index 95;
        fhir:Element.id [ fhir:value "Condition.recordedDate" ];
        fhir:ElementDefinition.path [ fhir:value "Condition.recordedDate" ];
        fhir:ElementDefinition.short [ fhir:value "Date record was first recorded" ];
@@ -6053,7 +6129,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".participation[typeCode=AUT].time" ]
        ]
      ], [
-       fhir:index 95;
+       fhir:index 96;
        fhir:Element.id [ fhir:value "Condition.recorder" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -6142,7 +6218,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".participation[typeCode=AUT].role" ]
        ]
      ], [
-       fhir:index 96;
+       fhir:index 97;
        fhir:Element.id [ fhir:value "Condition.asserter" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -6235,7 +6311,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".participation[typeCode=INF].role" ]
        ]
      ], [
-       fhir:index 97;
+       fhir:index 98;
        fhir:Element.id [ fhir:value "Condition.stage" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -6297,7 +6373,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=\"stage/grade\"]" ]
        ]
      ], [
-       fhir:index 98;
+       fhir:index 99;
        fhir:Element.id [ fhir:value "Condition.stage.id" ];
        fhir:ElementDefinition.path [ fhir:value "Condition.stage.id" ];
        fhir:ElementDefinition.representation [
@@ -6328,7 +6404,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 99;
+       fhir:index 100;
        fhir:Element.id [ fhir:value "Condition.stage.extension" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -6407,7 +6483,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 100;
+       fhir:index 101;
        fhir:Element.id [ fhir:value "Condition.stage.modifierExtension" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -6484,7 +6560,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 101;
+       fhir:index 102;
        fhir:Element.id [ fhir:value "Condition.stage.summary" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -6572,7 +6648,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".value" ]
        ]
      ], [
-       fhir:index 102;
+       fhir:index 103;
        fhir:Element.id [ fhir:value "Condition.stage.assessment" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -6655,7 +6731,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".self" ]
        ]
      ], [
-       fhir:index 103;
+       fhir:index 104;
        fhir:Element.id [ fhir:value "Condition.stage.type" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -6732,7 +6808,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=\"stage type\"]" ]
        ]
      ], [
-       fhir:index 104;
+       fhir:index 105;
        fhir:Element.id [ fhir:value "Condition.evidence" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -6795,7 +6871,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".outboundRelationship[typeCode=SPRT].target[classCode=OBS, moodCode=EVN]" ]
        ]
      ], [
-       fhir:index 105;
+       fhir:index 106;
        fhir:Element.id [ fhir:value "Condition.evidence.id" ];
        fhir:ElementDefinition.path [ fhir:value "Condition.evidence.id" ];
        fhir:ElementDefinition.representation [
@@ -6826,7 +6902,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 106;
+       fhir:index 107;
        fhir:Element.id [ fhir:value "Condition.evidence.extension" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -6905,7 +6981,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 107;
+       fhir:index 108;
        fhir:Element.id [ fhir:value "Condition.evidence.modifierExtension" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -6982,7 +7058,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 108;
+       fhir:index 109;
        fhir:Element.id [ fhir:value "Condition.evidence.code" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -7075,7 +7151,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "[code=\"diagnosis\"].value" ]
        ]
      ], [
-       fhir:index 109;
+       fhir:index 110;
        fhir:Element.id [ fhir:value "Condition.evidence.detail" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -7155,7 +7231,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".self" ]
        ]
      ], [
-       fhir:index 110;
+       fhir:index 111;
        fhir:Element.id [ fhir:value "Condition.note" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -7232,8 +7308,37 @@
        fhir:ElementDefinition.path [ fhir:value "Condition" ]
      ], [
        fhir:index 1;
-       fhir:Element.id [ fhir:value "Condition.code" ];
-       fhir:ElementDefinition.path [ fhir:value "Condition.code" ];
+       fhir:Element.id [ fhir:value "Condition.category" ];
+       fhir:ElementDefinition.path [ fhir:value "Condition.category" ];
+       fhir:ElementDefinition.patternCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           a loinc:31044-1;
+           fhir:Coding.system [ fhir:value "http://loinc.org" ];
+           fhir:Coding.code [ fhir:value "31044-1" ];
+           fhir:Coding.display [ fhir:value "Immunization Reaction" ]
+         ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:Element.id [ fhir:value "Condition.severity" ];
+       fhir:ElementDefinition.path [ fhir:value "Condition.severity" ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/complaint-intensity";
+           fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/complaint-intensity>
+         ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:Element.id [ fhir:value "Condition.code.coding:nvm" ];
+       fhir:ElementDefinition.path [ fhir:value "Condition.code.coding" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "nvm" ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [

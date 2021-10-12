@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>NAPKON-BIH\CovidVaccinationCodes - XML Representation - FHIR v4.0.1</title>
+    <title>NAPKON-BIH\Complaint Intensity - XML Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -51,8 +51,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"7.24"}
-    h3,h4,h5,h6{--heading-prefix:"7.24"}</style>
+    <style type="text/css">h2{--heading-prefix:"7.22"}
+    h3,h4,h5,h6{--heading-prefix:"7.22"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Left logo - typically the publisher's logo - project or affiliate -->
@@ -148,7 +148,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>CovidVaccinationCodes</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Complaint Intensity</b></li>
           
         </ul>
       </div>  <!-- /container -->
@@ -172,7 +172,7 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="ValueSet-covid-vaccination-codes.html">Narrative Content</a>
+    <a href="ValueSet-complaint-intensity.html">Narrative Content</a>
   </li>
 
 
@@ -185,14 +185,14 @@
 
   
     <li>
-      <a href="ValueSet-covid-vaccination-codes.json.html">JSON</a>
+      <a href="ValueSet-complaint-intensity.json.html">JSON</a>
     </li>
   
 
 
   
     <li>
-      <a href="ValueSet-covid-vaccination-codes.ttl.html">TTL</a>
+      <a href="ValueSet-complaint-intensity.ttl.html">TTL</a>
     </li>
   
 
@@ -204,9 +204,9 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: CovidVaccinationCodes - XML Representation</h2>
+<h2 id="root">: Complaint Intensity - XML Representation</h2>
 
-<p><a href="ValueSet-covid-vaccination-codes.xml" no-download="true">Raw xml</a> | <a href="ValueSet-covid-vaccination-codes.xml" download>Download</a></p>
+<p><a href="ValueSet-complaint-intensity.xml" no-download="true">Raw xml</a> | <a href="ValueSet-complaint-intensity.xml" download>Download</a></p>
 
   <!-- insert intro if present -->
   
@@ -216,18 +216,18 @@
   <pre class="xml"><code class="language-xml">
 
 &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">ValueSet</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;covid-vaccination-codes&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;complaint-intensity&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;This value set includes codes based on the following rules:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=&quot;CodeSystem-napkon-vaccination-module.html&quot;&gt;&lt;code&gt;https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module&lt;/code&gt;&lt;/a&gt;&lt;table class=&quot;none&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-0001&quot;&gt;0001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Comirnaty (BioNTech/Pfizer)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-0002&quot;&gt;0002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COVID-19 Vaccine Moderna (Moderna Biotech)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-0003&quot;&gt;0003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Vaxzevria (AstraZeneca AB)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-0004&quot;&gt;0004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COVID-19 Vaccine Janssen (Janssen-Cilag/Johnson &amp;amp; Johnson)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;li&gt;Include these codes as defined in &lt;a href=&quot;http://www.snomed.org/&quot;&gt;&lt;code&gt;http://snomed.info/sct&lt;/code&gt;&lt;/a&gt; version &lt;code&gt;20210731&lt;/code&gt;&lt;table class=&quot;none&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=28531000087107&quot;&gt;28531000087107&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Vaccine product against Severe acute respiratory syndrome coronavirus 2 (medicinal product)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;li&gt;Include these codes as defined in &lt;a href=&quot;http://www.snomed.org/&quot;&gt;&lt;code&gt;http://snomed.info/sct&lt;/code&gt;&lt;/a&gt;&lt;table class=&quot;none&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=74964007&quot;&gt;74964007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Other (qualifier value)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=&quot;CodeSystem-napkon-vaccination-module.html&quot;&gt;&lt;code&gt;https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module&lt;/code&gt;&lt;/a&gt;&lt;table class=&quot;none&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-11001&quot;&gt;11001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ein wenig (keine Einschränkung täglicher Aktivitäten)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-11002&quot;&gt;11002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mäßig bis stark (Einschränkung täglicher Aktivitäten)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-11003&quot;&gt;11003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sehr stark (tägliche Aktivitäten sind nicht mehr möglich)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-11004&quot;&gt;11004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Potenziell lebensbedrohlich (Behandlung in Rettungsstelle oder Hospitalisierung)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>
-       <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/covid-vaccination-codes&quot;/&gt;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/complaint-intensity&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0.1.0&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CovidVaccinationCodes&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CovidVaccinationCodes&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ComplaintIntensity&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Complaint Intensity&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2021-10-12T12:33:34+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2021-10-12T17:20:00+00:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;BIH @ Charité&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;BIH @ Charité&quot;/&gt;
@@ -236,43 +236,28 @@
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;https://www.netzwerk-universitaetsmedizin.de&quot;/&gt;
     &lt;/telecom&gt;
   &lt;/contact&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">description</a> <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;COVID-19 vaccines&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">description</a> <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Intensity of general complaints&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>
               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;0001&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Comirnaty (BioNTech/Pfizer)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;11001&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Ein wenig (keine Einschränkung täglicher Aktivitäten)&quot;/&gt;
       &lt;/concept&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;0002&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;COVID-19 Vaccine Moderna (Moderna Biotech)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;11002&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Mäßig bis stark (Einschränkung täglicher Aktivitäten)&quot;/&gt;
       &lt;/concept&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;0003&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Vaxzevria (AstraZeneca AB)&quot;/&gt;
-      &lt;/concept&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;0004&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;11003&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>
-                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;COVID-19 Vaccine Janssen (Janssen-Cilag/Johnson &amp;amp; Johnson)&quot;/&gt;
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Sehr stark (tägliche Aktivitäten sind nicht mehr möglich)&quot;/&gt;
       &lt;/concept&gt;
-    &lt;/include&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;20210731&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;28531000087107&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;11004&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>
-                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Vaccine product against Severe acute respiratory syndrome coronavirus 2 (medicinal product)&quot;/&gt;
-      &lt;/concept&gt;
-    &lt;/include&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;74964007&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Other (qualifier value)&quot;/&gt;
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Potenziell lebensbedrohlich (Behandlung in Rettungsstelle oder Hospitalisierung)&quot;/&gt;
       &lt;/concept&gt;
     &lt;/include&gt;
   &lt;/compose&gt;
@@ -304,7 +289,7 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a href="https://www.netzwerk-universitaetsmedizin.de">BIH @ Charité</a>.  Package napkon-bih#0.1.0 based on <a href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 12, 2021 12:33+0000">2021-10-12</span>
+          IG &#169; 2021+ <a href="https://www.netzwerk-universitaetsmedizin.de">BIH @ Charité</a>.  Package napkon-bih#0.1.0 based on <a href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 12, 2021 17:20+0000">2021-10-12</span>
           <br/>
           <span style="color: #FFFF77">
             <p style="color: white">

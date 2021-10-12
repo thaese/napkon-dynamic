@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="NAPKONBIH"/>
   <status value="draft"/>
-  <date value="2021-10-12T12:33:34+00:00"/>
+  <date value="2021-10-12T17:20:00+00:00"/>
   <publisher value="BIH @ Charité"/>
   <contact>
     <name value="BIH @ Charité"/>
@@ -292,17 +292,6 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/infectious-complications-pediatrics"/>
-      </reference>
-      <name value="Pediatry Infectious Complications"/>
-      <description value="Defines constraints and methods on pediatry infectious complications"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/medical-treatment-for-vaccination-adverse-reaction"/>
       </reference>
       <name value="Medical Treatment For Vaccination Adverse Reaction"/>
@@ -446,21 +435,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/covid19-complications"/>
+        <reference value="ValueSet/complaint-intensity"/>
       </reference>
-      <name value="Covid19 complications"/>
-      <description value="Complications due to COVID19"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/covid-vaccination-codes"/>
-      </reference>
-      <name value="CovidVaccinationCodes"/>
-      <description value="COVID-19 vaccines"/>
+      <name value="Complaint Intensity"/>
+      <description value="Intensity of general complaints"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -501,32 +479,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/fungal-infections"/>
-      </reference>
-      <name value="Fungal Infections"/>
-      <description value="Value set of fungal infections"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
         <reference value="ValueSet/general-complaints-after-vaccination"/>
       </reference>
       <name value="General Complaints After Vaccination"/>
       <description value="General complaints after vaccination"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/immunosuppressive-permament-medications"/>
-      </reference>
-      <name value="Immunosuppressive Permanent Medications"/>
-      <description value="Imunosuppresive medications"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -637,17 +593,6 @@
       </reference>
       <name value="Yes No Unknown"/>
       <description value="Yes / No / Unknown"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/napkon-pediatrics-module"/>
-      </reference>
-      <name value="NapkonPediatricsModule"/>
-      <description value="NAPKON Pediatrics Module Code System - Collection of pediatrics module-specific codes that are missing from common terminologies such as SNOMED CT"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -794,17 +739,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Condition"/>
-      </extension>
-      <reference>
-        <reference value="Condition/InfectionsComplicationPediatrics"/>
-      </reference>
-      <name value="InfectionsComplicationPediatrics"/>
-      <description value="Example instance of infectious-complications-pediatrics"/>
-      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/infectious-complications-pediatrics"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
@@ -909,7 +843,7 @@
       <reference>
         <reference value="Observation/VaccinationInjectionSitePainRest"/>
       </reference>
-      <name value="Vaccination Injection Site Pain Rest// alcoholic beverage intake"/>
+      <name value="Vaccination Injection Site Pain Rest"/>
       <description value="Example of mild pain at vaccine injection site at rest"/>
       <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vaccination-injection-site-pain-rest"/>
     </resource>

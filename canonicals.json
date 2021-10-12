@@ -1,12 +1,5 @@
 [
   {
-    "id": "napkon-pediatrics-module",
-    "type": "CodeSystem",
-    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module",
-    "version": "0.1.0",
-    "name": "NapkonPediatricsModule"
-  },
-  {
     "id": "napkon-vaccination-module",
     "type": "CodeSystem",
     "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module",
@@ -75,13 +68,6 @@
     "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunosuppressive-therapy",
     "version": "0.1.0",
     "name": "ImmunosuppressiveTherapy"
-  },
-  {
-    "id": "infectious-complications-pediatrics",
-    "type": "StructureDefinition",
-    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/infectious-complications-pediatrics",
-    "version": "0.1.0",
-    "name": "InfectiousComplicationPediatrics"
   },
   {
     "id": "medical-treatment-for-vaccination-adverse-reaction",
@@ -175,11 +161,11 @@
     "name": "BodyTemperature"
   },
   {
-    "id": "covid-vaccination-codes",
+    "id": "complaint-intensity",
     "type": "ValueSet",
-    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/covid-vaccination-codes",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/complaint-intensity",
     "version": "0.1.0",
-    "name": "CovidVaccinationCodes"
+    "name": "ComplaintIntensity"
   },
   {
     "id": "covid-vaccination-contraindications",
@@ -196,13 +182,6 @@
     "name": "CovidVaccinationReasons"
   },
   {
-    "id": "covid19-complications",
-    "type": "ValueSet",
-    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/covid19-complications",
-    "version": "0.1.0",
-    "name": "Covid19Complications"
-  },
-  {
     "id": "detected-not-detected-unknown-undetermined",
     "type": "ValueSet",
     "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/detected-not-detected-unknown-undetermined",
@@ -210,25 +189,11 @@
     "name": "DetectedNotDetectedUnknownUndetermined"
   },
   {
-    "id": "fungal-infections",
-    "type": "ValueSet",
-    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/fungal-infections",
-    "version": "0.1.0",
-    "name": "FungalInfections"
-  },
-  {
     "id": "general-complaints-after-vaccination",
     "type": "ValueSet",
     "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/general-complaints-after-vaccination",
     "version": "0.1.0",
     "name": "GeneralComplaintsAfterVaccination"
-  },
-  {
-    "id": "immunosuppressive-permament-medications",
-    "type": "ValueSet",
-    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/immunosuppressive-permament-medications",
-    "version": "0.1.0",
-    "name": "ImmunosuppressivePermanentMedications"
   },
   {
     "id": "medical-treatment-for-vaccination-adverse-reaction",

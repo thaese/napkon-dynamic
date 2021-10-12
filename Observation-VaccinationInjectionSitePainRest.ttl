@@ -17,7 +17,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module q1007}\">Injection site pain at rest (finding)</span></p><p><b>value</b>: <span title=\"Codes: {https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module 3001}\">Leichte Schmerzen, diese stören nicht bei täglichen Aktivitäten</span></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module q1007}\">Injection site pain at rest</span></p><p><b>value</b>: <span title=\"Codes: {https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module 3001}\">Leichte Schmerzen, diese stören nicht bei täglichen Aktivitäten</span></p></div>"
   ];
   fhir:Observation.status [ fhir:value "final"];
   fhir:Observation.code [
@@ -25,7 +25,7 @@
        fhir:index 0;
        fhir:Coding.system [ fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module" ];
        fhir:Coding.code [ fhir:value "q1007" ];
-       fhir:Coding.display [ fhir:value "Injection site pain at rest (finding)" ]
+       fhir:Coding.display [ fhir:value "Injection site pain at rest" ]
      ]
   ];
   fhir:Observation.valueCodeableConcept [

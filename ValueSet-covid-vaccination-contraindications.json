@@ -3,14 +3,14 @@
   "id": "covid-vaccination-contraindications",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=863903001\">863903001</a></td><td>Allergy to component of vaccine product (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=289908002\">289908002</a></td><td>Pregnancy, function (observable entity)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=74964007\">74964007</a></td><td>Other (qualifier value)</td></tr></table></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=863903001\">863903001</a></td><td>Allergy to component of vaccine product (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=77386006\">77386006</a></td><td>Pregnant (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=74964007\">74964007</a></td><td>Other (qualifier value)</td></tr></table></li></ul></div>"
   },
   "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/covid-vaccination-contraindications",
   "version": "0.1.0",
   "name": "CovidVaccinationContraindications",
   "title": "covid-vaccination-contraindications",
   "status": "active",
-  "date": "2021-10-12T12:33:34+00:00",
+  "date": "2021-10-12T17:20:00+00:00",
   "publisher": "BIH @ Charité",
   "contact": [
     {
@@ -34,8 +34,8 @@
             "display": "Allergy to component of vaccine product (finding)"
           },
           {
-            "code": "289908002",
-            "display": "Pregnancy, function (observable entity)"
+            "code": "77386006",
+            "display": "Pregnant (finding)"
           },
           {
             "code": "74964007",

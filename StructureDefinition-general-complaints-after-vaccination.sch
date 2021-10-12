@@ -13,6 +13,7 @@
     <sch:title>f:Condition</sch:title>
     <sch:rule context="f:Condition">
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/condition-related']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/condition-related': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:severity) &gt;= 1">severity: minimum cardinality of 'severity' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -162,6 +163,7 @@
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
