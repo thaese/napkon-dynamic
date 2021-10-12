@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="NAPKONBIH"/>
   <status value="draft"/>
-  <date value="2021-10-12T17:32:20+00:00"/>
+  <date value="2021-10-12T18:03:57+00:00"/>
   <publisher value="BIH @ Charité"/>
   <contact>
     <name value="BIH @ Charité"/>
@@ -439,6 +439,17 @@
       </reference>
       <name value="Complaint Intensity"/>
       <description value="Intensity of general complaints"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/covid-vaccination-codes"/>
+      </reference>
+      <name value="CovidVaccinationCodes"/>
+      <description value="COVID-19 vaccines"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

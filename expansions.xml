@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="e53a3aee-3a1f-4974-84e5-8a85f87021fc"/>
+  <id value="1bff2965-92b0-4401-8d6e-1c1eddb2a6dd"/>
   <meta>
-    <lastUpdated value="2021-10-12T17:32:20.327+00:00"/>
+    <lastUpdated value="2021-10-12T18:03:57.411+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -1984,7 +1984,7 @@
         <name value="AnalgesicsAntipyretics"/>
         <title value="Analgesics Antipyretics"/>
         <status value="active"/>
-        <date value="2021-10-12T17:32:20+00:00"/>
+        <date value="2021-10-12T18:03:57+00:00"/>
         <publisher value="BIH @ Charité"/>
         <contact>
           <name value="BIH @ Charité"/>
@@ -1995,8 +1995,8 @@
         </contact>
         <description value="Analgetic and antipyretic drugs"/>
         <expansion>
-          <identifier value="urn:uuid:369adcfd-65d4-4a0d-ba2b-1a6c4737a0b6"/>
-          <timestamp value="2021-10-12T17:32:58+00:00"/>
+          <identifier value="urn:uuid:e18fdf89-9392-4101-99e1-807c647eaff3"/>
+          <timestamp value="2021-10-12T18:04:39+00:00"/>
           <total value="194"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3084,7 +3084,7 @@
         <name value="BodyTemperature"/>
         <title value="Body Temperature"/>
         <status value="active"/>
-        <date value="2021-10-12T17:32:20+00:00"/>
+        <date value="2021-10-12T18:03:57+00:00"/>
         <publisher value="BIH @ Charité"/>
         <contact>
           <name value="BIH @ Charité"/>
@@ -3095,8 +3095,8 @@
         </contact>
         <description value="Body temperature categories"/>
         <expansion>
-          <identifier value="urn:uuid:06a27733-de37-40f7-a106-924dbef08104"/>
-          <timestamp value="2021-10-12T17:32:58+00:00"/>
+          <identifier value="urn:uuid:ad624cc6-3037-43e1-b6ee-2f3127d60fae"/>
+          <timestamp value="2021-10-12T18:04:40+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3222,7 +3222,7 @@
         <name value="ComplaintIntensity"/>
         <title value="Complaint Intensity"/>
         <status value="active"/>
-        <date value="2021-10-12T17:32:20+00:00"/>
+        <date value="2021-10-12T18:03:57+00:00"/>
         <publisher value="BIH @ Charité"/>
         <contact>
           <name value="BIH @ Charité"/>
@@ -3233,8 +3233,8 @@
         </contact>
         <description value="Intensity of general complaints"/>
         <expansion>
-          <identifier value="urn:uuid:61ca618f-2c0b-48d7-846b-105e9df352c6"/>
-          <timestamp value="2021-10-12T17:32:59+00:00"/>
+          <identifier value="urn:uuid:65ffb20c-fce4-4570-b704-bdd14fb1c0d3"/>
+          <timestamp value="2021-10-12T18:04:40+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3327,7 +3327,7 @@
         <name value="CovidVaccinationContraindications"/>
         <title value="covid-vaccination-contraindications"/>
         <status value="active"/>
-        <date value="2021-10-12T17:32:20+00:00"/>
+        <date value="2021-10-12T18:03:57+00:00"/>
         <publisher value="BIH @ Charité"/>
         <contact>
           <name value="BIH @ Charité"/>
@@ -3338,8 +3338,8 @@
         </contact>
         <description value="Contraindications precluding COVID-19 vaccination"/>
         <expansion>
-          <identifier value="urn:uuid:5fd8d068-d37d-4be6-bbeb-33057de80995"/>
-          <timestamp value="2021-10-12T17:32:59+00:00"/>
+          <identifier value="urn:uuid:ef9b7aa6-45b0-4d49-9b47-5fd28bb126ad"/>
+          <timestamp value="2021-10-12T18:04:41+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3476,7 +3476,7 @@
         <name value="CovidVaccinationReasons"/>
         <title value="Covid Vaccination Reasons"/>
         <status value="active"/>
-        <date value="2021-10-12T17:32:20+00:00"/>
+        <date value="2021-10-12T18:03:57+00:00"/>
         <publisher value="BIH @ Charité"/>
         <contact>
           <name value="BIH @ Charité"/>
@@ -3487,8 +3487,8 @@
         </contact>
         <description value="Individual reason for getting vaccinated against COVID-19"/>
         <expansion>
-          <identifier value="urn:uuid:7b4b33bb-46aa-49f0-8c12-4891830c00ff"/>
-          <timestamp value="2021-10-12T17:32:59+00:00"/>
+          <identifier value="urn:uuid:a484bcfd-af84-40e2-9eec-3586e023c092"/>
+          <timestamp value="2021-10-12T18:04:41+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3616,7 +3616,7 @@
         <name value="DetectedNotDetectedUnknownUndetermined"/>
         <title value="Detected Not Detected Unknown Undetermined"/>
         <status value="active"/>
-        <date value="2021-10-12T17:32:20+00:00"/>
+        <date value="2021-10-12T18:03:57+00:00"/>
         <publisher value="BIH @ Charité"/>
         <contact>
           <name value="BIH @ Charité"/>
@@ -3627,8 +3627,8 @@
         </contact>
         <description value="Values for laboratory observations"/>
         <expansion>
-          <identifier value="urn:uuid:50eac6da-c595-42bd-a4da-79397d26b5f8"/>
-          <timestamp value="2021-10-12T17:32:59+00:00"/>
+          <identifier value="urn:uuid:317beaca-6f10-4dbf-a0c0-0b572f08b34a"/>
+          <timestamp value="2021-10-12T18:04:42+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3788,7 +3788,7 @@
         <name value="GeneralComplaintsAfterVaccination"/>
         <title value="General Complaints After Vaccination"/>
         <status value="active"/>
-        <date value="2021-10-12T17:32:20+00:00"/>
+        <date value="2021-10-12T18:03:57+00:00"/>
         <publisher value="BIH @ Charité"/>
         <contact>
           <name value="BIH @ Charité"/>
@@ -3799,8 +3799,8 @@
         </contact>
         <description value="General complaints after vaccination"/>
         <expansion>
-          <identifier value="urn:uuid:9ae80da1-a432-47c0-80cc-c213c9da4e95"/>
-          <timestamp value="2021-10-12T17:33:00+00:00"/>
+          <identifier value="urn:uuid:b5e0179d-3273-433c-b084-80cdd2f40bcd"/>
+          <timestamp value="2021-10-12T18:04:42+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3944,7 +3944,7 @@
         <name value="MedicalTreatmentForVaccinationAdverseReaction"/>
         <title value="Medical Treatment For Vaccination Adverse Reaction"/>
         <status value="active"/>
-        <date value="2021-10-12T17:32:20+00:00"/>
+        <date value="2021-10-12T18:03:57+00:00"/>
         <publisher value="BIH @ Charité"/>
         <contact>
           <name value="BIH @ Charité"/>
@@ -3955,8 +3955,8 @@
         </contact>
         <description value="Types of medical treatments for potential or actual adverse reactions to a vaccination"/>
         <expansion>
-          <identifier value="urn:uuid:50a479a5-4c5c-4fb3-be72-e9eb007dae08"/>
-          <timestamp value="2021-10-12T17:33:00+00:00"/>
+          <identifier value="urn:uuid:961f3de0-9858-4c29-9649-2b7882fe6194"/>
+          <timestamp value="2021-10-12T18:04:42+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -4065,7 +4065,7 @@
         <name value="PresentNotPresentUndeterminedOther"/>
         <title value="Present Not Present Undetermined Other"/>
         <status value="active"/>
-        <date value="2021-10-12T17:32:20+00:00"/>
+        <date value="2021-10-12T18:03:57+00:00"/>
         <publisher value="BIH @ Charité"/>
         <contact>
           <name value="BIH @ Charité"/>
@@ -4076,8 +4076,8 @@
         </contact>
         <description value="Values for laboratory observations"/>
         <expansion>
-          <identifier value="urn:uuid:294a3a01-07c7-4285-81eb-ac98eaa25a6c"/>
-          <timestamp value="2021-10-12T17:33:00+00:00"/>
+          <identifier value="urn:uuid:f4034111-7213-44e3-8f04-8f731d914393"/>
+          <timestamp value="2021-10-12T18:04:43+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -4219,7 +4219,7 @@
         <name value="RegularAlcoholIntake"/>
         <title value="Regular Alcohol Intake"/>
         <status value="active"/>
-        <date value="2021-10-12T17:32:20+00:00"/>
+        <date value="2021-10-12T18:03:57+00:00"/>
         <publisher value="BIH @ Charité"/>
         <contact>
           <name value="BIH @ Charité"/>
@@ -4230,8 +4230,8 @@
         </contact>
         <description value="Frequency of alcoholic beverage intake"/>
         <expansion>
-          <identifier value="urn:uuid:acb11ef2-ad4d-48a5-afa1-670989fdf7da"/>
-          <timestamp value="2021-10-12T17:33:00+00:00"/>
+          <identifier value="urn:uuid:1a9a049d-ec1f-45be-bbad-3d051e544694"/>
+          <timestamp value="2021-10-12T18:04:43+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -4387,7 +4387,7 @@
         <name value="RegularAlcoholIntakeQuantity"/>
         <title value="Regular Alcohol Intake Quantity"/>
         <status value="active"/>
-        <date value="2021-10-12T17:32:20+00:00"/>
+        <date value="2021-10-12T18:03:57+00:00"/>
         <publisher value="BIH @ Charité"/>
         <contact>
           <name value="BIH @ Charité"/>
@@ -4398,8 +4398,8 @@
         </contact>
         <description value="Number of alcoholic beverages per day"/>
         <expansion>
-          <identifier value="urn:uuid:f288280f-fd42-49b1-9a3d-2e09a460cc27"/>
-          <timestamp value="2021-10-12T17:33:01+00:00"/>
+          <identifier value="urn:uuid:06159614-6962-4d3d-a5f9-111cc0f1ce2f"/>
+          <timestamp value="2021-10-12T18:04:43+00:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -4516,7 +4516,7 @@
         <name value="RestrictedEventStatus"/>
         <title value="RestrictedEventStatus"/>
         <status value="active"/>
-        <date value="2021-10-12T17:32:20+00:00"/>
+        <date value="2021-10-12T18:03:57+00:00"/>
         <publisher value="BIH @ Charité"/>
         <contact>
           <name value="BIH @ Charité"/>
@@ -4527,8 +4527,8 @@
         </contact>
         <description value="EventStatus value set restricted to codes not-done, completed and unknown"/>
         <expansion>
-          <identifier value="urn:uuid:676f48ba-101b-4af6-828c-3e04ffa59fda"/>
-          <timestamp value="2021-10-12T17:33:01+00:00"/>
+          <identifier value="urn:uuid:2632c3b2-5619-4e5c-bb1f-51372b7ea5b8"/>
+          <timestamp value="2021-10-12T18:04:43+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -4652,7 +4652,7 @@
         <name value="SARSCov2InfectionCourse"/>
         <title value="SARS-CoV2 Infection Course"/>
         <status value="active"/>
-        <date value="2021-10-12T17:32:20+00:00"/>
+        <date value="2021-10-12T18:03:57+00:00"/>
         <publisher value="BIH @ Charité"/>
         <contact>
           <name value="BIH @ Charité"/>
@@ -4663,8 +4663,8 @@
         </contact>
         <description value="Infection course of SARS-CoV2"/>
         <expansion>
-          <identifier value="urn:uuid:90a32510-dfd0-45be-b3e3-ac41ed4d5dcf"/>
-          <timestamp value="2021-10-12T17:33:01+00:00"/>
+          <identifier value="urn:uuid:8deaffde-d3a9-4f28-9dd5-e344fe974d2e"/>
+          <timestamp value="2021-10-12T18:04:43+00:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -4806,7 +4806,7 @@
         <name value="VaccinationInjectionSiteErythemaSize"/>
         <title value="Vaccination Injection Site Erythema Size"/>
         <status value="active"/>
-        <date value="2021-10-12T17:32:20+00:00"/>
+        <date value="2021-10-12T18:03:57+00:00"/>
         <publisher value="BIH @ Charité"/>
         <contact>
           <name value="BIH @ Charité"/>
@@ -4817,8 +4817,8 @@
         </contact>
         <description value="Erythema size category at vaccine injection site"/>
         <expansion>
-          <identifier value="urn:uuid:0d71792b-7e57-443e-9cd6-661a054be50f"/>
-          <timestamp value="2021-10-12T17:33:01+00:00"/>
+          <identifier value="urn:uuid:9e1516b9-0b36-4d98-bbbf-3652935ed7e2"/>
+          <timestamp value="2021-10-12T18:04:44+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -4951,7 +4951,7 @@
         <name value="VaccinationInjectionSiteSwellingSize"/>
         <title value="Vaccination Injection Site Swelling Size"/>
         <status value="active"/>
-        <date value="2021-10-12T17:32:20+00:00"/>
+        <date value="2021-10-12T18:03:57+00:00"/>
         <publisher value="BIH @ Charité"/>
         <contact>
           <name value="BIH @ Charité"/>
@@ -4962,8 +4962,8 @@
         </contact>
         <description value="Swelling size category at vaccine injection site"/>
         <expansion>
-          <identifier value="urn:uuid:06c1b85b-aa89-4a08-92b5-fdb3ec69d73b"/>
-          <timestamp value="2021-10-12T17:33:01+00:00"/>
+          <identifier value="urn:uuid:3298f24c-ebae-4f28-b6a4-b0387f39fa7f"/>
+          <timestamp value="2021-10-12T18:04:44+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -5087,7 +5087,7 @@
         <name value="VaccinationPainScale"/>
         <title value="Vaccination pain scale"/>
         <status value="active"/>
-        <date value="2021-10-12T17:32:20+00:00"/>
+        <date value="2021-10-12T18:03:57+00:00"/>
         <publisher value="BIH @ Charité"/>
         <contact>
           <name value="BIH @ Charité"/>
@@ -5098,8 +5098,8 @@
         </contact>
         <description value="Pain intensity at vaccine injection site"/>
         <expansion>
-          <identifier value="urn:uuid:67aefe5c-5706-458a-a211-089ae4427746"/>
-          <timestamp value="2021-10-12T17:33:01+00:00"/>
+          <identifier value="urn:uuid:2cb4042f-1699-4b10-87ea-66a24b173c53"/>
+          <timestamp value="2021-10-12T18:04:44+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -5200,7 +5200,7 @@
         <name value="YesNoUnknown"/>
         <title value="Yes No Unknown"/>
         <status value="active"/>
-        <date value="2021-10-12T17:32:20+00:00"/>
+        <date value="2021-10-12T18:03:57+00:00"/>
         <publisher value="BIH @ Charité"/>
         <contact>
           <name value="BIH @ Charité"/>
@@ -5211,8 +5211,8 @@
         </contact>
         <description value="Yes / No / Unknown"/>
         <expansion>
-          <identifier value="urn:uuid:a6c82897-133d-4e76-913b-58c7b6381621"/>
-          <timestamp value="2021-10-12T17:33:02+00:00"/>
+          <identifier value="urn:uuid:4753ea24-1890-43a4-8b61-985b294e5256"/>
+          <timestamp value="2021-10-12T18:04:44+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>

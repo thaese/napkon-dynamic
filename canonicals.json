@@ -168,6 +168,13 @@
     "name": "ComplaintIntensity"
   },
   {
+    "id": "covid-vaccination-codes",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/covid-vaccination-codes",
+    "version": "0.1.0",
+    "name": "CovidVaccinationCodes"
+  },
+  {
     "id": "covid-vaccination-contraindications",
     "type": "ValueSet",
     "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/covid-vaccination-contraindications",
