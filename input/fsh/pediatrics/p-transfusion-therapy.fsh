@@ -1,5 +1,5 @@
 //Author: Sally Brose
-// Berlin Institute of Health | Charité 
+// Berlin Institute of Health | Charité
 
 Profile: TransfusionTherapy
 Parent: Procedure
@@ -13,10 +13,9 @@ Description: "Application of a blood transfusion therapy"
 * category.coding contains sct 1..1
 * category.coding[sct] = $sct#277132007 "Therapeutic procedure (procedure)"
 * code 1..1 MS
-* code from PediatricsBloodTransfusionTherapy (required)
+* code from BloodTransfusionTherapy (required)
 * subject only Reference(Patient)
 * subject MS
-
 
 Instance: TransfusionTherapy
 InstanceOf: transfusion-therapy //sollte das lieber blood-transfuion-therapy heißen?
@@ -26,4 +25,3 @@ Description: "Example an application of a blood transfusion therapy"
 * status = #completed
 * code =  $sct##277132007 "Therapeutic procedure (procedure)"
 * subject = Reference(ExamplePatient)
-

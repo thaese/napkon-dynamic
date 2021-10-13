@@ -1,5 +1,7 @@
 //Author: Sally Brose
-// Berlin Institute of Health | Charité 
+// Berlin Institute of Health | Charité
+
+// GL: commented out because it's unclear what should be included as codes (e.g. medications)
 /*
 Profile: PediatricMedication
 Parent: MedicationStatement

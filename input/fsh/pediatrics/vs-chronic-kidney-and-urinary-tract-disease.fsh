@@ -1,4 +1,4 @@
-// Author: Sally 
+// Author: Sally
 // Berlin Institute of Health | Charité
 
 ValueSet: ChronicKidneyAndUrinaryTractDisease
@@ -8,5 +8,5 @@ Description:  "Medical history linked to congenital disease of the kidney or uri
 * insert napkon-metadata(2021-09-23, #draft, 0.1.0)
 
 // Codes for CHRONIC KIDNEY AND URINARY TRACT DISEASE
-* $sct#82525005 "Congenital cystic kidney disease (disorder)" 
-* $sct#118642009 "Congenital anomaly of the urinary tract proper (disorder)"
+* $sct#82525005 "Congenital cystic kidney disease (disorder)" // TODO: only cystic disease specified in requirements?
+* $sct#118642009 "Congenital anomaly of the urinary tract proper (disorder)" // TODO: what is "tract proper"?

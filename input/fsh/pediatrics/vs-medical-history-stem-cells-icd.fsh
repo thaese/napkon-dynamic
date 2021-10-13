@@ -1,4 +1,4 @@
-// Author: Sally 
+// Author: Sally
 // Berlin Institute of Health | Charité
 
 ValueSet: MedicalHistoryStemCellsICD

@@ -1,7 +1,7 @@
 //Author: Sally Brose
 
 Profile: RadiologyProcedures
-Parent: Procedure 
+Parent: Procedure
 Id: radiology-procedures
 Title: "RadiologyProcedures"
 Description: "Records an application of a radiological imaging procedures performed on the patient (COVID-19 imaging procedures)"
@@ -33,4 +33,3 @@ Description: "Example of a radiology procedure"
 * code = $sct#450436003 "Positron emission tomography with computed tomography (procedure)"
 * bodySite.coding[snomed-heart] = $sct#80891009 "Heart structure (body structure)"
 * subject = Reference(ExamplePatient)
-

@@ -1,5 +1,5 @@
 //Author: Sally Brose
-// Berlin Institute of Health | Charité 
+// Berlin Institute of Health | Charité
 
 Profile: HemostaseologicTherapy
 Parent: Procedure
@@ -11,7 +11,7 @@ Description: "Application of a hemostaseologic therapy"
 * code ^slicing.discriminator[0].path = "$this"
 * code ^slicing.rules = #open
 * code contains sct 1..1
-* code from HemostaseologicTherapyPediatrics (required)
+* code from HemostaseologicTherapy (required)
 * performed[x] 1..1
 * subject only Reference(Patient)
 * subject 1..1
