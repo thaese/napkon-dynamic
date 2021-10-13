@@ -49,8 +49,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"7.10"}
-    h3,h4,h5,h6{--heading-prefix:"7.10"}</style>
+    <style type="text/css">h2{--heading-prefix:"7.33"}
+    h3,h4,h5,h6{--heading-prefix:"7.33"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Left logo - typically the publisher's logo - project or affiliate -->
@@ -208,8 +208,8 @@
 <tr><td>Defining URL:</td><td>https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/restricted-event-status</td></tr>
  <tr><td>Version:</td><td>0.1.0</td></tr>
  <tr><td>Name:</td><td>RestrictedEventStatus</td></tr>
- <tr><td>Status:</td><td>Active as of 2021-10-12T18:15:52+00:00</td></tr>
- <tr><td>Definition:</td><td><p>EventStatus value set restricted to codes not-done, completed and unknown</p>
+ <tr><td>Status:</td><td>Active as of 2021-10-13T21:31:05+00:00</td></tr>
+ <tr><td>Definition:</td><td><p>EventStatus value set restricted to codes not-done, active, completed and unknown</p>
 </td></tr>
  <tr><td>Publisher:</td><td>BIH @ Charité</td></tr>
  <tr><td>Source Resource:</td><td><a href="ValueSet-restricted-event-status.xml.html">XML</a> / <a href="ValueSet-restricted-event-status.json.html">JSON</a> / <a href="ValueSet-restricted-event-status.ttl.html">Turtle</a></td></tr>
@@ -221,7 +221,8 @@
   </p>
   
 <ul>
- <li><a href="StructureDefinition-thoracic-drainage.html">Thoracic Drainge</a></li>
+ <li><a href="StructureDefinition-chemotherapy.html">Chemotherapy</a></li>
+ <li><a href="StructureDefinition-immunomodulatory-therapy.html">Immunomodulatory Therapy</a></li>
 </ul>
 
 
@@ -234,13 +235,13 @@
 
 <!-- Content Logical Definition heading in the fragment -->
   <h3>Logical Definition (CLD)</h3>
-<div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://hl7.org/fhir/R4/codesystem-event-status.html"><code>http://hl7.org/fhir/event-status</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://hl7.org/fhir/R4/codesystem-event-status.html#event-status-not-done">not-done</a></td><td>Not Done</td><td>The event was terminated prior to any activity beyond preparation.  I.e. The 'main' activity has not yet begun.  The boundary between preparatory and the 'main' activity is context-specific.</td></tr><tr><td><a href="http://hl7.org/fhir/R4/codesystem-event-status.html#event-status-completed">completed</a></td><td>Completed</td><td>The event has now concluded.</td></tr><tr><td><a href="http://hl7.org/fhir/R4/codesystem-event-status.html#event-status-unknown">unknown</a></td><td>Unknown</td><td>The authoring/source system does not know which of the status values currently applies for this event.  Note: This concept is not to be used for "other" - one of the listed statuses is presumed to apply,  but the authoring/source system does not know which.</td></tr></table></li></ul></div>
+<div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://hl7.org/fhir/R4/codesystem-event-status.html"><code>http://hl7.org/fhir/event-status</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://hl7.org/fhir/R4/codesystem-event-status.html#event-status-not-done">not-done</a></td><td>Not Done</td><td>The event was terminated prior to any activity beyond preparation.  I.e. The 'main' activity has not yet begun.  The boundary between preparatory and the 'main' activity is context-specific.</td></tr><tr><td><a href="http://hl7.org/fhir/R4/codesystem-event-status.html#event-status-completed">completed</a></td><td>Completed</td><td>The event has now concluded.</td></tr><tr><td><a href="http://hl7.org/fhir/R4/codesystem-event-status.html#event-status-unknown">unknown</a></td><td>Unknown</td><td>The authoring/source system does not know which of the status values currently applies for this event.  Note: This concept is not to be used for "other" - one of the listed statuses is presumed to apply,  but the authoring/source system does not know which.</td></tr><tr><td><a href="http://hl7.org/fhir/R4/codesystem-event-status.html#event-status-in-progress">in-progress</a></td><td>In Progress</td><td>The event is currently occurring.</td></tr></table></li></ul></div>
 
   <p>&#160;</p>
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 3 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="http://hl7.org/fhir/R4/codesystem-event-status.html">EventStatus v4.0.1 (CodeSystem)</a></p><p>All codes in this table are from the system <a href="http://hl7.org/fhir/R4/codesystem-event-status.html"><code>http://hl7.org/fhir/event-status</code></a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-event-status-not-done"> </a><a href="http://hl7.org/fhir/R4/codesystem-event-status.html#event-status-not-done">not-done</a></td><td>Not Done</td><td>The event was terminated prior to any activity beyond preparation.  I.e. The 'main' activity has not yet begun.  The boundary between preparatory and the 'main' activity is context-specific.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-event-status-completed"> </a><a href="http://hl7.org/fhir/R4/codesystem-event-status.html#event-status-completed">completed</a></td><td>Completed</td><td>The event has now concluded.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-event-status-unknown"> </a><a href="http://hl7.org/fhir/R4/codesystem-event-status.html#event-status-unknown">unknown</a></td><td>Unknown</td><td>The authoring/source system does not know which of the status values currently applies for this event.  Note: This concept is not to be used for &quot;other&quot; - one of the listed statuses is presumed to apply,  but the authoring/source system does not know which.</td></tr></table></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 4 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="http://hl7.org/fhir/R4/codesystem-event-status.html">EventStatus v4.0.1 (CodeSystem)</a></p><p>All codes in this table are from the system <a href="http://hl7.org/fhir/R4/codesystem-event-status.html"><code>http://hl7.org/fhir/event-status</code></a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-event-status-not-done"> </a><a href="http://hl7.org/fhir/R4/codesystem-event-status.html#event-status-not-done">not-done</a></td><td>Not Done</td><td>The event was terminated prior to any activity beyond preparation.  I.e. The 'main' activity has not yet begun.  The boundary between preparatory and the 'main' activity is context-specific.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-event-status-completed"> </a><a href="http://hl7.org/fhir/R4/codesystem-event-status.html#event-status-completed">completed</a></td><td>Completed</td><td>The event has now concluded.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-event-status-unknown"> </a><a href="http://hl7.org/fhir/R4/codesystem-event-status.html#event-status-unknown">unknown</a></td><td>Unknown</td><td>The authoring/source system does not know which of the status values currently applies for this event.  Note: This concept is not to be used for &quot;other&quot; - one of the listed statuses is presumed to apply,  but the authoring/source system does not know which.</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-event-status-in-progress"> </a><a href="http://hl7.org/fhir/R4/codesystem-event-status.html#event-status-in-progress">in-progress</a></td><td>In Progress</td><td>The event is currently occurring.</td></tr></table></div>
 
   <hr/>
   <p>
@@ -301,7 +302,7 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a href="https://www.netzwerk-universitaetsmedizin.de">BIH @ Charité</a>.  Package napkon-bih#0.1.0 based on <a href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 12, 2021 18:15+0000">2021-10-12</span>
+          IG &#169; 2021+ <a href="https://www.netzwerk-universitaetsmedizin.de">BIH @ Charité</a>.  Package napkon-bih#0.1.0 based on <a href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 13, 2021 21:31+0000">2021-10-13</span>
           <br/>
           <span style="color: #FFFF77">
             <p style="color: white">

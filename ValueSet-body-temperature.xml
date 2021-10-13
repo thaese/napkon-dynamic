@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="body-temperature"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> version <code>http://snomed.info/sct/900000000000207008/version/20210731</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373068000">373068000</a></td><td>Undetermined (qualifier value)</td></tr></table></li><li>Include these codes as defined in <a href="CodeSystem-napkon-vaccination-module.html"><code>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-7001">7001</a></td><td>Weniger als 37,5 °C</td></tr><tr><td><a href="CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-7002">7002</a></td><td>37,5 °C bis 37,9 °C</td></tr><tr><td><a href="CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-7003">7003</a></td><td>38,0 °C bis 38,4 °C</td></tr><tr><td><a href="CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-7004">7004</a></td><td>38,5 °C bis 38,9 °C</td></tr><tr><td><a href="CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-7005">7005</a></td><td>39,0 °C bis 40,0 °C</td></tr><tr><td><a href="CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-7006">7006</a></td><td>Mehr als 40 °C</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/body-temperature"/>
+  <version value="0.1.0"/>
+  <name value="BodyTemperature"/>
+  <title value="Body Temperature"/>
+  <status value="active"/>
+  <date value="2021-10-13T21:31:05+00:00"/>
+  <publisher value="BIH @ Charité"/>
+  <contact>
+    <name value="BIH @ Charité"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </telecom>
+  </contact>
+  <description value="Body temperature categories"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20210731"/>
+      <concept>
+        <code value="373068000"/>
+        <display value="Undetermined (qualifier value)"/>
+      </concept>
+    </include>
+    <include>
+      <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module"/>
+      <concept>
+        <code value="7001"/>
+        <display value="Weniger als 37,5 °C"/>
+      </concept>
+      <concept>
+        <code value="7002"/>
+        <display value="37,5 °C bis 37,9 °C"/>
+      </concept>
+      <concept>
+        <code value="7003"/>
+        <display value="38,0 °C bis 38,4 °C"/>
+      </concept>
+      <concept>
+        <code value="7004"/>
+        <display value="38,5 °C bis 38,9 °C"/>
+      </concept>
+      <concept>
+        <code value="7005"/>
+        <display value="39,0 °C bis 40,0 °C"/>
+      </concept>
+      <concept>
+        <code value="7006"/>
+        <display value="Mehr als 40 °C"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

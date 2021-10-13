@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="VaccinationInjectionSiteErythema"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vaccination-injection-site-erythema"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 213338000}">Erythema at injection site (disorder)</span></p><p><b>value</b>: <span title="Codes: {https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module 4002}">Zwischen 2,5 und 5 Zentimeter</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20210731"/>
+      <code value="213338000"/>
+      <display value="Erythema at injection site (disorder)"/>
+    </coding>
+  </code>
+  <valueCodeableConcept>
+    <coding>
+      <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module"/>
+      <code value="4002"/>
+      <display value="Zwischen 2,5 und 5 Zentimeter"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="VaccinationInjectionSitePainMovement"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vaccination-injection-site-pain-movement"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module q1008}">Injection site pain with pressure or movement</span></p><p><b>value</b>: <span title="Codes: {https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module 3001}">Leichte Schmerzen, diese stören nicht bei täglichen Aktivitäten</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module"/>
+      <code value="q1008"/>
+      <display value="Injection site pain with pressure or movement"/>
+    </coding>
+  </code>
+  <valueCodeableConcept>
+    <coding>
+      <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module"/>
+      <code value="3001"/>
+      <display value="Leichte Schmerzen, diese stören nicht bei täglichen Aktivitäten"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

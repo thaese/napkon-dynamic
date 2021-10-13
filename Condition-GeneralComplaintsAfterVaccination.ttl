@@ -1,0 +1,58 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/Condition/GeneralComplaintsAfterVaccination> a fhir:Condition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "GeneralComplaintsAfterVaccination"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/general-complaints-after-vaccination";
+       fhir:index 0;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/general-complaints-after-vaccination>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>dueTo</b>: <a href=\"Immunization-CovidVaccinationDone.html\">Generated Summary: status: completed; <span title=\"Codes: {https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module 0001}, {http://snomed.info/sct 1119349007}\">Comirnaty (BioNTech/Pfizer)</span>; occurrence: Oct 1, 2021, 11:06:00 AM; lotNumber: batch-no #2465; <span title=\"Codes: {https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module 2004}\">Weil alle sich impfen lassen</span></a></p><p><b>severity</b>: <span title=\"Codes: {https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module 11003}\">Sehr stark (tägliche Aktivitäten sind nicht mehr möglich)</span></p><p><b>code</b>: <span title=\"Codes: {https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module 10004}\">Neu aufgetretene oder Verstärkung vorbestehender Gelenkschmerzen</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>recordedDate</b>: Feb 19, 2021, 8:30:35 AM</p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/condition-dueTo" ];
+     fhir:Extension.valueReference [
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/Immunization/CovidVaccinationDone>;
+       fhir:Reference.reference [ fhir:value "Immunization/CovidVaccinationDone" ]
+     ]
+  ];
+  fhir:Condition.severity [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module" ];
+       fhir:Coding.code [ fhir:value "11003" ];
+       fhir:Coding.display [ fhir:value "Sehr stark (tägliche Aktivitäten sind nicht mehr möglich)" ]
+     ]
+  ];
+  fhir:Condition.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module" ];
+       fhir:Coding.code [ fhir:value "10004" ];
+       fhir:Coding.display [ fhir:value "Neu aufgetretene oder Verstärkung vorbestehender Gelenkschmerzen" ]
+     ]
+  ];
+  fhir:Condition.subject [
+     fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/Patient/ExamplePatient>;
+     fhir:Reference.reference [ fhir:value "Patient/ExamplePatient" ]
+  ];
+  fhir:Condition.recordedDate [ fhir:value "2021-02-19T09:30:35+01:00"^^xsd:dateTime] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/Condition/GeneralComplaintsAfterVaccination.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

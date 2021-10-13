@@ -1,0 +1,17 @@
+{
+  "resourceType": "Procedure",
+  "id": "Chemotherapy",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chemotherapy"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: not-done</p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p></div>"
+  },
+  "status": "not-done",
+  "subject": {
+    "reference": "Patient/ExamplePatient"
+  }
+}
