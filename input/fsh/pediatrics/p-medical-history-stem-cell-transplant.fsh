@@ -26,7 +26,6 @@ InstanceOf: medical-history-stem-cell-transplant
 Usage: #example
 Title: "medical-history-stem-cell-transplant-instance"
 Description: "This profile describes a stem cell transplant for a pediatric patient."
-* status = #draft
 * code = $sct#77158009 "Structure of transplanted bone marrow (body structure)"
 * code = $icd10-gm#Z94.80 "Zustand nach hämatopoetischer Stammzelltransplantation ohne gegenwärtige Immunsuppression"
 * subject = Reference(ExamplePatient)

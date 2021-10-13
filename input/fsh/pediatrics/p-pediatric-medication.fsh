@@ -1,6 +1,6 @@
 //Author: Sally Brose
 // Berlin Institute of Health | Charité 
-
+/*
 Profile: PediatricMedication
 Parent: MedicationStatement
 Id: pediatric-medication
@@ -24,3 +24,4 @@ Description: "Example of a prescription of a medication or consumption by a pedi
 * status = #draft
 * code = $sct#387458008 "Aspirin (substance)"
 * subject = Reference(ExamplePatient)
+*/
