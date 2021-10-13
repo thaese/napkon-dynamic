@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "14677320-9953-4cba-be8d-7b99ea9bc9e1",
+  "id" : "2620f632-eb85-4a2d-a707-f743d27bba0f",
   "meta" : {
-    "lastUpdated" : "2021-10-13T21:31:05.721+00:00"
+    "lastUpdated" : "2021-10-13T21:39:19.717+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "AnalgesicsAntipyretics",
       "title" : "Analgesics Antipyretics",
       "status" : "active",
-      "date" : "2021-10-13T21:31:05+00:00",
+      "date" : "2021-10-13T21:39:19+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -30,8 +30,8 @@
       }],
       "description" : "Analgetic and antipyretic drugs",
       "expansion" : {
-        "identifier" : "urn:uuid:85add0bf-608c-4ed5-9513-389a3207cad0",
-        "timestamp" : "2021-10-13T21:32:02+00:00",
+        "identifier" : "urn:uuid:dbd72ba1-f266-4618-97f6-a554fb619470",
+        "timestamp" : "2021-10-13T21:40:15+00:00",
         "total" : 194,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1028,7 +1028,7 @@
       "name" : "BodyTemperature",
       "title" : "Body Temperature",
       "status" : "active",
-      "date" : "2021-10-13T21:31:05+00:00",
+      "date" : "2021-10-13T21:39:19+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -1039,8 +1039,8 @@
       }],
       "description" : "Body temperature categories",
       "expansion" : {
-        "identifier" : "urn:uuid:b6dc0072-b767-4433-b0cd-f243da4de853",
-        "timestamp" : "2021-10-13T21:32:02+00:00",
+        "identifier" : "urn:uuid:c7744661-56cb-4fc3-ae72-d6257a244607",
+        "timestamp" : "2021-10-13T21:40:15+00:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1110,7 +1110,7 @@
       "name" : "ComplaintIntensity",
       "title" : "Complaint Intensity",
       "status" : "active",
-      "date" : "2021-10-13T21:31:05+00:00",
+      "date" : "2021-10-13T21:39:19+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -1121,8 +1121,8 @@
       }],
       "description" : "Intensity of general complaints",
       "expansion" : {
-        "identifier" : "urn:uuid:0382c7fb-33c6-4a60-99ab-56824884b98c",
-        "timestamp" : "2021-10-13T21:32:03+00:00",
+        "identifier" : "urn:uuid:45fffd4e-b7f7-4f4a-a183-85248dee7ea6",
+        "timestamp" : "2021-10-13T21:40:15+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1169,7 +1169,7 @@
       "name" : "CovidVaccinationCodes",
       "title" : "CovidVaccinationCodes",
       "status" : "active",
-      "date" : "2021-10-13T21:31:05+00:00",
+      "date" : "2021-10-13T21:39:19+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -1180,8 +1180,8 @@
       }],
       "description" : "COVID-19 vaccines",
       "expansion" : {
-        "identifier" : "urn:uuid:05ef3215-a9e5-4985-b64f-347acf9dd629",
-        "timestamp" : "2021-10-13T21:32:03+00:00",
+        "identifier" : "urn:uuid:89b4eb21-5b36-4870-a930-ed8eaf8027ec",
+        "timestamp" : "2021-10-13T21:40:15+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1228,7 +1228,7 @@
       "name" : "CovidVaccinationContraindications",
       "title" : "covid-vaccination-contraindications",
       "status" : "active",
-      "date" : "2021-10-13T21:31:05+00:00",
+      "date" : "2021-10-13T21:39:19+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -1239,8 +1239,8 @@
       }],
       "description" : "Contraindications precluding COVID-19 vaccination",
       "expansion" : {
-        "identifier" : "urn:uuid:68c31178-f6f7-430c-a57e-4f75363d88fc",
-        "timestamp" : "2021-10-13T21:32:03+00:00",
+        "identifier" : "urn:uuid:8eb9bc2f-2132-4f58-913f-2c20d2b3db50",
+        "timestamp" : "2021-10-13T21:40:16+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1286,7 +1286,7 @@
       "name" : "CovidVaccinationReasons",
       "title" : "Covid Vaccination Reasons",
       "status" : "active",
-      "date" : "2021-10-13T21:31:05+00:00",
+      "date" : "2021-10-13T21:39:19+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -1297,8 +1297,8 @@
       }],
       "description" : "Individual reason for getting vaccinated against COVID-19",
       "expansion" : {
-        "identifier" : "urn:uuid:1633eae7-a859-4605-8701-1d878eec13a3",
-        "timestamp" : "2021-10-13T21:32:03+00:00",
+        "identifier" : "urn:uuid:c95eb604-b2c2-46ad-afc8-15df7035c47c",
+        "timestamp" : "2021-10-13T21:40:16+00:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1372,7 +1372,7 @@
       "name" : "DetectedNotDetectedUnknownUndetermined",
       "title" : "Detected Not Detected Unknown Undetermined",
       "status" : "active",
-      "date" : "2021-10-13T21:31:05+00:00",
+      "date" : "2021-10-13T21:39:19+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -1383,8 +1383,8 @@
       }],
       "description" : "Values for laboratory observations",
       "expansion" : {
-        "identifier" : "urn:uuid:fa168869-26b3-4291-8e82-8c49532dba3e",
-        "timestamp" : "2021-10-13T21:32:03+00:00",
+        "identifier" : "urn:uuid:7c6a3877-d750-466c-a036-1afe39f00eaf",
+        "timestamp" : "2021-10-13T21:40:16+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1435,7 +1435,7 @@
       "name" : "GeneralComplaintsAfterVaccination",
       "title" : "General Complaints After Vaccination",
       "status" : "active",
-      "date" : "2021-10-13T21:31:05+00:00",
+      "date" : "2021-10-13T21:39:19+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -1446,8 +1446,8 @@
       }],
       "description" : "General complaints after vaccination",
       "expansion" : {
-        "identifier" : "urn:uuid:46b3c2cd-e19b-43bd-bb27-bf45c372aa1b",
-        "timestamp" : "2021-10-13T21:32:03+00:00",
+        "identifier" : "urn:uuid:9b3d698c-1579-47a5-bbb0-47e8747cbf41",
+        "timestamp" : "2021-10-13T21:40:16+00:00",
         "total" : 22,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1592,7 +1592,7 @@
       "name" : "ImmunosuppressiveImmunomodulatoryTherapy",
       "title" : "Immunosuppressive Immunomodulatory Therapy",
       "status" : "active",
-      "date" : "2021-10-13T21:31:05+00:00",
+      "date" : "2021-10-13T21:39:19+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -1607,8 +1607,8 @@
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:80a23db6-eb22-4dd2-b054-578fdd527cc6",
-        "timestamp" : "2021-10-13T21:32:04+00:00",
+        "identifier" : "urn:uuid:95888a8d-b7ef-4077-96af-24c90a6da103",
+        "timestamp" : "2021-10-13T21:40:17+00:00",
         "total" : 34,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1813,7 +1813,7 @@
       "name" : "MedicalTreatmentForVaccinationAdverseReaction",
       "title" : "Medical Treatment For Vaccination Adverse Reaction",
       "status" : "active",
-      "date" : "2021-10-13T21:31:05+00:00",
+      "date" : "2021-10-13T21:39:19+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -1824,8 +1824,8 @@
       }],
       "description" : "Types of medical treatments for potential or actual adverse reactions to a vaccination",
       "expansion" : {
-        "identifier" : "urn:uuid:c9f1aa0a-ee6b-4e7e-828f-7fcaf4d34b72",
-        "timestamp" : "2021-10-13T21:32:05+00:00",
+        "identifier" : "urn:uuid:b695413f-4ddd-49e0-828e-c394f78aa68a",
+        "timestamp" : "2021-10-13T21:40:17+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1875,7 +1875,7 @@
       "name" : "PresentNotPresentUndeterminedOther",
       "title" : "Present Not Present Undetermined Other",
       "status" : "active",
-      "date" : "2021-10-13T21:31:05+00:00",
+      "date" : "2021-10-13T21:39:19+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -1886,8 +1886,8 @@
       }],
       "description" : "Values for laboratory observations",
       "expansion" : {
-        "identifier" : "urn:uuid:12bd1f26-3799-434d-a7d4-638687b9d0df",
-        "timestamp" : "2021-10-13T21:32:05+00:00",
+        "identifier" : "urn:uuid:398c82e5-9923-4538-817c-135bd6b5b9c5",
+        "timestamp" : "2021-10-13T21:40:17+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1938,7 +1938,7 @@
       "name" : "RegularAlcoholIntake",
       "title" : "Regular Alcohol Intake",
       "status" : "active",
-      "date" : "2021-10-13T21:31:05+00:00",
+      "date" : "2021-10-13T21:39:19+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -1949,8 +1949,8 @@
       }],
       "description" : "Frequency of alcoholic beverage intake",
       "expansion" : {
-        "identifier" : "urn:uuid:7badb7cf-7e8d-488d-8753-7f4fbcf2ec9a",
-        "timestamp" : "2021-10-13T21:32:05+00:00",
+        "identifier" : "urn:uuid:12dde711-56b7-4dcc-a0e7-d3479ad551fc",
+        "timestamp" : "2021-10-13T21:40:18+00:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -2024,7 +2024,7 @@
       "name" : "RegularAlcoholIntakeQuantity",
       "title" : "Regular Alcohol Intake Quantity",
       "status" : "active",
-      "date" : "2021-10-13T21:31:05+00:00",
+      "date" : "2021-10-13T21:39:19+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -2035,8 +2035,8 @@
       }],
       "description" : "Number of alcoholic beverages per day",
       "expansion" : {
-        "identifier" : "urn:uuid:6ad2bb56-dc4a-4018-aee5-b4baaef98cb8",
-        "timestamp" : "2021-10-13T21:32:05+00:00",
+        "identifier" : "urn:uuid:3843e5c1-f6e0-4eb0-a468-0b2c725603ec",
+        "timestamp" : "2021-10-13T21:40:18+00:00",
         "total" : 6,
         "parameter" : [{
           "name" : "excludeNested",
@@ -2105,7 +2105,7 @@
       "name" : "RestrictedEventStatus",
       "title" : "RestrictedEventStatus",
       "status" : "active",
-      "date" : "2021-10-13T21:31:05+00:00",
+      "date" : "2021-10-13T21:39:19+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -2116,8 +2116,8 @@
       }],
       "description" : "EventStatus value set restricted to codes not-done, active, completed and unknown",
       "expansion" : {
-        "identifier" : "urn:uuid:e94fa7f4-f03d-4556-adf7-2e15c74cbbf8",
-        "timestamp" : "2021-10-13T21:32:06+00:00",
+        "identifier" : "urn:uuid:1d8a8256-d7fe-49d3-98d6-1d2ab54ee41d",
+        "timestamp" : "2021-10-13T21:40:18+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -2164,7 +2164,7 @@
       "name" : "SARSCov2InfectionCourse",
       "title" : "SARS-CoV2 Infection Course",
       "status" : "active",
-      "date" : "2021-10-13T21:31:05+00:00",
+      "date" : "2021-10-13T21:39:19+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -2175,8 +2175,8 @@
       }],
       "description" : "Infection course of SARS-CoV2",
       "expansion" : {
-        "identifier" : "urn:uuid:640def7f-0cd5-4643-85d4-f58a2bf85392",
-        "timestamp" : "2021-10-13T21:32:06+00:00",
+        "identifier" : "urn:uuid:1e96b093-6232-4661-84b1-dee45acaffb2",
+        "timestamp" : "2021-10-13T21:40:18+00:00",
         "total" : 6,
         "parameter" : [{
           "name" : "excludeNested",
@@ -2245,7 +2245,7 @@
       "name" : "VaccinationInjectionSiteErythemaSize",
       "title" : "Vaccination Injection Site Erythema Size",
       "status" : "active",
-      "date" : "2021-10-13T21:31:05+00:00",
+      "date" : "2021-10-13T21:39:19+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -2256,8 +2256,8 @@
       }],
       "description" : "Erythema size category at vaccine injection site",
       "expansion" : {
-        "identifier" : "urn:uuid:10178a9f-226b-49ff-80ca-7ae543464e88",
-        "timestamp" : "2021-10-13T21:32:06+00:00",
+        "identifier" : "urn:uuid:7ce228ce-f711-4cb4-93a4-5855fee259f1",
+        "timestamp" : "2021-10-13T21:40:18+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -2317,7 +2317,7 @@
       "name" : "VaccinationInjectionSiteSwellingSize",
       "title" : "Vaccination Injection Site Swelling Size",
       "status" : "active",
-      "date" : "2021-10-13T21:31:05+00:00",
+      "date" : "2021-10-13T21:39:19+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -2328,8 +2328,8 @@
       }],
       "description" : "Swelling size category at vaccine injection site",
       "expansion" : {
-        "identifier" : "urn:uuid:0ecb8d5f-0526-4065-bd81-c49f1f061e62",
-        "timestamp" : "2021-10-13T21:32:06+00:00",
+        "identifier" : "urn:uuid:c5e1f98f-2c9c-4f24-97f8-d44108b15485",
+        "timestamp" : "2021-10-13T21:40:19+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -2389,7 +2389,7 @@
       "name" : "VaccinationPainScale",
       "title" : "Vaccination pain scale",
       "status" : "active",
-      "date" : "2021-10-13T21:31:05+00:00",
+      "date" : "2021-10-13T21:39:19+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -2400,8 +2400,8 @@
       }],
       "description" : "Pain intensity at vaccine injection site",
       "expansion" : {
-        "identifier" : "urn:uuid:0700d7d6-f823-473e-8e07-58a86980adc5",
-        "timestamp" : "2021-10-13T21:32:06+00:00",
+        "identifier" : "urn:uuid:31463a73-6305-444c-a1b0-143264e95684",
+        "timestamp" : "2021-10-13T21:40:19+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -2456,7 +2456,7 @@
       "name" : "YesNoUnknown",
       "title" : "Yes No Unknown",
       "status" : "active",
-      "date" : "2021-10-13T21:31:05+00:00",
+      "date" : "2021-10-13T21:39:19+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -2467,8 +2467,8 @@
       }],
       "description" : "Yes / No / Unknown",
       "expansion" : {
-        "identifier" : "urn:uuid:ca06d18a-913a-461e-8b6e-f0f2429ef7bf",
-        "timestamp" : "2021-10-13T21:32:07+00:00",
+        "identifier" : "urn:uuid:ae9b4fea-9a0b-4d4b-b295-e805eaef9dfa",
+        "timestamp" : "2021-10-13T21:40:19+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
