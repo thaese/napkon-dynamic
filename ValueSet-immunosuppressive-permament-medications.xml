@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="immunosuppressive-permament-medications"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=116566001">116566001</a></td><td>Steroid (substance)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=416798007">416798007</a></td><td>Substance with calcineurin inhibitor mechanism of action (substance)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=372669002">372669002</a></td><td>Alkylating agent (substance)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=430866006">430866006</a></td><td>Substance with interleukin 1 receptor antagonist mechanism of action (substance)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=784015001">784015001</a></td><td>Substance with interleukin 6 receptor antagonist mechanism of action (substance)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=771592004">771592004</a></td><td>Substance with interleukin 23 receptor antagonist mechanism of action (substance)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=870401008">870401008</a></td><td>Substance with cytotoxic T-lymphocyte-associated protein 4 inhibitor mechanism of action (substance)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=768651008">768651008</a></td><td>Antithymocyte immunoglobulin (substance)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=372917005">372917005</a></td><td>Substance with protein-tyrosine kinase inhibitor mechanism of action (substance)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=48583005">48583005</a></td><td>Immunoglobulin E (substance)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=49327004">49327004</a></td><td>Interferon (substance)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=74964007">74964007</a></td><td>Other (qualifier value)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260413007">260413007</a></td><td>None (qualifier value)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261665006">261665006</a></td><td>Unknown (qualifier value)</td></tr></table></li><li>Include these codes as defined in <code>http://fhir.de/CodeSystem/bfarm/atc</code> version <code>2020</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="?ngen-14?.html#CodeSystemATC2021-L01EG">L01EG</a></td><td>Mammalian target of rapamycin (mTOR)-Kinase-Inhibitoren</td></tr><tr><td><a href="?ngen-14?.html#CodeSystemATC2021-L01B">L01B</a></td><td>ANTIMETABOLITEN</td></tr><tr><td><a href="?ngen-14?.html#CodeSystemATC2021-L04AB">L04AB</a></td><td>Tumornekrosefaktor alpha (TNF-alpha)-Inhibitoren</td></tr><tr><td><a href="?ngen-14?.html#CodeSystemATC2021-L01EJ">L01EJ</a></td><td>Janus-assoziierte Kinase (JAK)-Inhibitoren</td></tr></table></li><li>Include these codes as defined in <code>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-immunosuppresive-medications</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>000001</td><td>Sphingosine analogue (substance)</td></tr><tr><td>000002</td><td>Substance with interleukin 2 receptor antagonist mechanism of action (substance)</td></tr><tr><td>000003</td><td>Substance with interleukin 17 receptor antagonist mechanism of action (substance)</td></tr><tr><td>000004</td><td>Anti-CD20 antibody (substance)</td></tr><tr><td>000005</td><td>Anti-CD52 antibody (substance)</td></tr><tr><td>000006</td><td>Anti-CD3 antibody (substance)</td></tr><tr><td>000007</td><td>Anti-CD3/CD19 antibody (substance)</td></tr><tr><td>000008</td><td>Substance with Integrin inhibitor mechanism of action (substance)</td></tr><tr><td>000009</td><td>Substance with B cell activating factor inhibitor mechanism of action (substance)</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/immunosuppressive-permament-medications"/>
+  <version value="0.1.0"/>
+  <name value="ImmunosuppressivePermanentMedications"/>
+  <title value="Immunosuppressive Permanent Medications"/>
+  <status value="draft"/>
+  <date value="2021-10-05"/>
+  <publisher value="BIH @ Charité"/>
+  <contact>
+    <name value="BIH @ Charité"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </telecom>
+  </contact>
+  <description value="Immunosuppressive medications"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="116566001"/>
+        <display value="Steroid (substance)"/>
+      </concept>
+      <concept>
+        <code value="416798007"/>
+        <display value="Substance with calcineurin inhibitor mechanism of action (substance)"/>
+      </concept>
+      <concept>
+        <code value="372669002"/>
+        <display value="Alkylating agent (substance)"/>
+      </concept>
+      <concept>
+        <code value="430866006"/>
+        <display value="Substance with interleukin 1 receptor antagonist mechanism of action (substance)"/>
+      </concept>
+      <concept>
+        <code value="784015001"/>
+        <display value="Substance with interleukin 6 receptor antagonist mechanism of action (substance)"/>
+      </concept>
+      <concept>
+        <code value="771592004"/>
+        <display value="Substance with interleukin 23 receptor antagonist mechanism of action (substance)"/>
+      </concept>
+      <concept>
+        <code value="870401008"/>
+        <display value="Substance with cytotoxic T-lymphocyte-associated protein 4 inhibitor mechanism of action (substance)"/>
+      </concept>
+      <concept>
+        <code value="768651008"/>
+        <display value="Antithymocyte immunoglobulin (substance)"/>
+      </concept>
+      <concept>
+        <code value="372917005"/>
+        <display value="Substance with protein-tyrosine kinase inhibitor mechanism of action (substance)"/>
+      </concept>
+      <concept>
+        <code value="48583005"/>
+        <display value="Immunoglobulin E (substance)"/>
+      </concept>
+      <concept>
+        <code value="49327004"/>
+        <display value="Interferon (substance)"/>
+      </concept>
+      <concept>
+        <code value="74964007"/>
+        <display value="Other (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="260413007"/>
+        <display value="None (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="261665006"/>
+        <display value="Unknown (qualifier value)"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://fhir.de/CodeSystem/bfarm/atc"/>
+      <version value="2020"/>
+      <concept>
+        <code value="L01EG"/>
+        <display value="Mammalian target of rapamycin (mTOR)-Kinase-Inhibitoren"/>
+      </concept>
+      <concept>
+        <code value="L01B"/>
+        <display value="ANTIMETABOLITEN"/>
+      </concept>
+      <concept>
+        <code value="L04AB"/>
+        <display value="Tumornekrosefaktor alpha (TNF-alpha)-Inhibitoren"/>
+      </concept>
+      <concept>
+        <code value="L01EJ"/>
+        <display value="Janus-assoziierte Kinase (JAK)-Inhibitoren"/>
+      </concept>
+    </include>
+    <include>
+      <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-immunosuppresive-medications"/>
+      <concept>
+        <code value="000001"/>
+        <display value="Sphingosine analogue (substance)"/>
+      </concept>
+      <concept>
+        <code value="000002"/>
+        <display value="Substance with interleukin 2 receptor antagonist mechanism of action (substance)"/>
+      </concept>
+      <concept>
+        <code value="000003"/>
+        <display value="Substance with interleukin 17 receptor antagonist mechanism of action (substance)"/>
+      </concept>
+      <concept>
+        <code value="000004"/>
+        <display value="Anti-CD20 antibody (substance)"/>
+      </concept>
+      <concept>
+        <code value="000005"/>
+        <display value="Anti-CD52 antibody (substance)"/>
+      </concept>
+      <concept>
+        <code value="000006"/>
+        <display value="Anti-CD3 antibody (substance)"/>
+      </concept>
+      <concept>
+        <code value="000007"/>
+        <display value="Anti-CD3/CD19 antibody (substance)"/>
+      </concept>
+      <concept>
+        <code value="000008"/>
+        <display value="Substance with Integrin inhibitor mechanism of action (substance)"/>
+      </concept>
+      <concept>
+        <code value="000009"/>
+        <display value="Substance with B cell activating factor inhibitor mechanism of action (substance)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

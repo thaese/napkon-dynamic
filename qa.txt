@@ -1,21 +1,26 @@
 ﻿NAPKONBIH : Validation Results
 =========================================
 
-err = 8, warn = 23, info = 4
+err = 11, warn = 27, info = 5
 IG Publisher Version: 1.1.82
-Generated Wed Oct 13 21:40:54 UTC 2021. FHIR version 4.0.1 for napkon-bih#0.1.0 (canonical = https://www.netzwerk-universitaetsmedizin.de/fhir)
- Build Errors : 260 / 8 / 1
+Generated Fri Oct 15 12:19:58 UTC 2021. FHIR version 4.0.1 for napkon-bih#0.1.0 (canonical = https://www.netzwerk-universitaetsmedizin.de/fhir)
+ Build Errors : 301 / 8 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-napkon-pediatrics-module : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-napkon-vaccination-module : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Condition-Covid19Complication : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Condition-FungalInfection : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Condition-GeneralComplaintsAfterVaccination : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Immunization-CovidVaccinationDone : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Immunization-CovidVaccinationNotDone : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Immunization-CovidVaccinationNotDoneReasonOther : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-napkon-bih : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/MedicationStatement-AnalgesicAntipyreticIntakeAfterVaccination : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/MedicationStatement-ImmunosuppresivePermanentMedication : 0 / 1 / 2
  /github/workspace/fsh-generated/resources/Observation-AdditionalVaccinationWillingness : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-AllergicReactionToVaccinationInstance : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Observation-AllergicReactionToVaccinationInstanceOther : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Observation-BodyTemperatureAfterVaccination : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-IntensiveCareTreatmentDuration : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-MedicalTreatmentForVaccinationAdverseReaction : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-MedicalTreatmentForVaccinationAdverseReactionAtGP : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-MedicalTreatmentForVaccinationAdverseReactionInHospital : 0 / 0 / 1
@@ -25,6 +30,7 @@ Generated Wed Oct 13 21:40:54 UTC 2021. FHIR version 4.0.1 for napkon-bih#0.1.0 
  /github/workspace/fsh-generated/resources/Observation-SARSCoV2Infection : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-SARSCoV2InfectionCourseInstance : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-SARSCoV2Variant : 1 / 1 / 2
+ /github/workspace/fsh-generated/resources/Observation-TotalLengthOfStay : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-VaccinationInjectionSiteErythema : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Observation-VaccinationInjectionSitePainMovement : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-VaccinationInjectionSitePainRest : 0 / 0 / 1
@@ -33,14 +39,19 @@ Generated Wed Oct 13 21:40:54 UTC 2021. FHIR version 4.0.1 for napkon-bih#0.1.0 
  /github/workspace/fsh-generated/resources/Procedure-Chemotherapy : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Procedure-ImmunomodulatoryTherapy : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Procedure-ImmunomodulatoryTherapyNotDone : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Procedure-ThoracicDrainage : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-additional-vaccination-willingness : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-allergic-reaction-to-vaccination : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-analgesic-antipyretic-intake-after-vaccination : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-body-temperature-after-vaccination : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-chemotherapy : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-covid-vaccination : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-covid19-complication : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-fungal-infection : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-general-complaints-after-vaccination : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-immunomodulatory-therapy : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-immunosuppresive-permanent-medication : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-intensive-care-treatment-duration : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-medical-treatment-for-vaccination-adverse-reaction : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-medical-treatment-reason : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-regular-alcohol-intake : 0 / 0 / 1
@@ -48,6 +59,8 @@ Generated Wed Oct 13 21:40:54 UTC 2021. FHIR version 4.0.1 for napkon-bih#0.1.0 
  /github/workspace/fsh-generated/resources/StructureDefinition-sars-cov2-infection-course-vaccination : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-sars-cov2-infection-vaccination : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-sars-cov2-variant : 0 / 2 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-thoracic-drainage : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-total-length-of-stay : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-vaccination-injection-site-erythema : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-vaccination-injection-site-pain-movement : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-vaccination-injection-site-pain-rest : 0 / 0 / 1
@@ -58,9 +71,12 @@ Generated Wed Oct 13 21:40:54 UTC 2021. FHIR version 4.0.1 for napkon-bih#0.1.0 
  /github/workspace/fsh-generated/resources/ValueSet-covid-vaccination-codes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-covid-vaccination-contraindications : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-covid-vaccination-reasons : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-covid19-complications : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-detected-not-detected-unknown-undetermined : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-fungal-infections : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-general-complaints-after-vaccination : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-immunosuppressive-immunomodulatory-therapy : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-immunosuppressive-permament-medications : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-medical-treatment-for-vaccination-adverse-reaction : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-present-not-present-undetermined-other : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-regular-alcohol-intake : 0 / 0 / 1
@@ -81,6 +97,7 @@ WARNING: ImplementationGuide.dependency[3].url: The canonical URL for an Impleme
 WARNING: ImplementationGuide.dependency[4].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
 WARNING: ImplementationGuide.dependency[5].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
 WARNING: ImplementationGuide.dependency[6].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/CodingOPS could not be resolved
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/ExamplePatient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/CodingICD10GM could not be resolved
 ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/CodingAlphaID could not be resolved
@@ -89,6 +106,8 @@ ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/seitenlokalisat
 ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit could not be resolved
 ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/lebensphase could not be resolved
 ERROR: ?pkp-1?: The reference https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum could not be resolved
+ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum could not be resolved
+ERROR: ?pkp-1?: The reference https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht could not be resolved
 ERROR: /github/workspace/output/StructureDefinition-covid-vaccination-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 411, column 115: The link '' for "VaccinesSNOMED" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-covid-vaccination-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 498, column 115: The link '' for "VaccinesATC" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-covid-vaccination-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 585, column 115: The link '' for "PZN" cannot be resolved
@@ -130,6 +149,19 @@ ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vac
 ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 949, column 1825: The link 'unknown.html' for "?pkp-2?" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1272, column 162: The link '#CodeSystemICD10GM2021-null' for "null" cannot be resolved (valid targets: 359 targets)
 ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1273, column 162: The link '#alpha-id-null' for "null" cannot be resolved (valid targets: 359 targets)
+ERROR: /github/workspace/output/StructureDefinition-immunosuppresive-permanent-medication-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 532, column 151: The link '' for "MII-Reference" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-immunosuppresive-permanent-medication-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 779, column 108: The link 'file://C:\GitHub\hl7.fhir.uv.ips#1.0.0\output/ValueSet-target-site-uv-ips.html' for "Target Site - IPS" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-immunosuppresive-permanent-medication-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 922, column 116: The link 'file://C:\GitHub\hl7.fhir.uv.ips#1.0.0\output/ValueSet-medicine-route-of-administration.html' for "Medicine Route of Administration - IPS" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-immunosuppresive-permanent-medication.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 306, column 44: The link '' for "ProfileMedicationStatementMedikation" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-immunosuppresive-permanent-medication.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 321, column 44: The link '' for "ProfileMedicationStatementMedikation" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-immunosuppresive-permanent-medication.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 392, column 2100: The link 'file://C:\GitHub\hl7.fhir.uv.ips#1.0.0\output/ValueSet-target-site-uv-ips.html' for "Target Site - IPS" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-immunosuppresive-permanent-medication.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 412, column 2228: The link 'file://C:\GitHub\hl7.fhir.uv.ips#1.0.0\output/ValueSet-medicine-route-of-administration.html' for "Medicine Route of Administration - IPS" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-immunosuppresive-permanent-medication.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 638, column 2092: The link 'file://C:\GitHub\hl7.fhir.uv.ips#1.0.0\output/ValueSet-medicine-route-of-administration.html' for "Medicine Route of Administration - IPS" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-immunosuppresive-permanent-medication.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 661, column 44: The link '' for "ProfileMedicationStatementMedikation" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-immunosuppresive-permanent-medication.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 675, column 44: The link '' for "ProfileMedicationStatementMedikation" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-immunosuppresive-permanent-medication.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 746, column 2100: The link 'file://C:\GitHub\hl7.fhir.uv.ips#1.0.0\output/ValueSet-target-site-uv-ips.html' for "Target Site - IPS" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-immunosuppresive-permanent-medication.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 766, column 2228: The link 'file://C:\GitHub\hl7.fhir.uv.ips#1.0.0\output/ValueSet-medicine-route-of-administration.html' for "Medicine Route of Administration - IPS" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-immunosuppresive-permanent-medication.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 984, column 206: The link '#dose-form-null' for "null" cannot be resolved (valid targets: 268 targets)
 ERROR: /github/workspace/output/StructureDefinition-sars-cov2-variant-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 711, column 151: The link '' for "MII-Reference" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-sars-cov2-variant-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1003, column 116: The link 'file://C:\GitHub\hl7.fhir.uv.ips#1.0.0\output/ValueSet-results-laboratory-observations-uv-ips.html' for "Results Laboratory Observation - IPS" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-sars-cov2-variant-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1020, column 151: The link '' for "MII-Reference" cannot be resolved
@@ -144,6 +176,27 @@ ERROR: /github/workspace/output/StructureDefinition-sars-cov2-variant.html#/html
 ERROR: /github/workspace/output/StructureDefinition-sars-cov2-variant.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 881, column 44: The link '' for "ProfileObservationLaboruntersuchung" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-sars-cov2-variant.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 900, column 715: The link 'StructureDefinition-sars-cov2-variant-definitions.html#Observation.effectiveDateTime.extension:dataAbsentReason' for "data-absent-reason" cannot be resolved (valid targets: 219 targets)
 ERROR: /github/workspace/output/StructureDefinition-sars-cov2-variant.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1012, column 1928: The link 'file://C:\GitHub\hl7.fhir.uv.ips#1.0.0\output/ValueSet-results-laboratory-observations-uv-ips.html' for "Results Laboratory Observation - IPS" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 405, column 154: The link '' for "ExtensionProzedurDokumentationsdatum" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 417, column 154: The link '' for "Extension_MII_Durchfuehrungsabsicht" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 561, column 116: The link '' for "ValueSet_MII_SnomedProcedure-Category" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 704, column 115: The link '' for "OpsVS" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 705, column 144: The link '' for "CodingOPS" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 735, column 154: The link '' for "ExtensionSeitenlokalisation" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 746, column 154: The link '' for "ExtensionSeitenlokalisation" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 819, column 115: The link '' for "ValueSet_MII_SnomedProcedureCodes" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 917, column 151: The link '' for "MII-Reference" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 306, column 44: The link '' for "Profile_MII_ProcedureProzedur" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage.html#/html/body/div/div/div/div/div/div/div/div/div/ul/li/a at Line 317, column 7: The link '' for "MII-Reference (https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference)" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 328, column 44: The link '' for "Profile_MII_ProcedureProzedur" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 339, column 1466: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 409, column 1779: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 646, column 1653: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 675, column 44: The link '' for "Profile_MII_ProcedureProzedur" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage.html#/html/body/div/div/div/div/div/div/div/div/div/ul/li/a at Line 685, column 7: The link '' for "MII-Reference (https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference)" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 696, column 44: The link '' for "Profile_MII_ProcedureProzedur" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 707, column 1466: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 777, column 1779: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-thoracic-drainage.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1011, column 157: The link '#CodeSystemOPS2021-8-144' for "8-144" cannot be resolved (valid targets: 285 targets)
 ERROR: /github/workspace/output/ValueSet-analgesics-antipyretics.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 238, column 142: The link '?ngen-14?.html#CodeSystemATC2021-N02' for "N02" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-analgesics-antipyretics.html#/html/body/div/div/div/div/div/div/p/a at Line 244, column 310: The link '?ngen-14?.html' for "http://fhir.de/CodeSystem/bfarm/atc" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-analgesics-antipyretics.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 244, column 636: The link '?ngen-14?.html#CodeSystemATC2021-N02' for "N02" cannot be resolved
@@ -340,9 +393,16 @@ ERROR: /github/workspace/output/ValueSet-analgesics-antipyretics.html#/html/body
 ERROR: /github/workspace/output/ValueSet-analgesics-antipyretics.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 244, column 42100: The link '?ngen-14?.html#CodeSystemATC2021-N02CX63' for "N02CX63" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-analgesics-antipyretics.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 244, column 42322: The link '?ngen-14?.html#CodeSystemATC2021-N02CX64' for "N02CX64" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-analgesics-antipyretics.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 244, column 42539: The link '?ngen-14?.html#CodeSystemATC2021-N02CX69' for "N02CX69" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/ul/li/table/tr/td/a at Line 238, column 2982: The link '?ngen-14?.html#CodeSystemATC2021-L01EG' for "L01EG" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/ul/li/table/tr/td/a at Line 238, column 3122: The link '?ngen-14?.html#CodeSystemATC2021-L01B' for "L01B" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/ul/li/table/tr/td/a at Line 238, column 3220: The link '?ngen-14?.html#CodeSystemATC2021-L04AB' for "L04AB" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/ul/li/table/tr/td/a at Line 238, column 3353: The link '?ngen-14?.html#CodeSystemATC2021-L01EJ' for "L01EJ" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-vaccination-injection-site-erythema-size.html#/html/body/div/div/div/div/div/div/ul/li/table/tr/td/a at Line 238, column 1300: The link 'CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-4005' for "4005" cannot be resolved (valid targets: 73 targets)
 ERROR: /github/workspace/output/ValueSet-vaccination-injection-site-erythema-size.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 244, column 2054: The link 'CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-4005' for "4005" cannot be resolved (valid targets: 73 targets)
+== fsh-generated/resources/CodeSystem-napkon-pediatrics-module.json ==
 == fsh-generated/resources/CodeSystem-napkon-vaccination-module.json ==
+== fsh-generated/resources/Condition-Covid19Complication.json ==
+== fsh-generated/resources/Condition-FungalInfection.json ==
 == fsh-generated/resources/Condition-GeneralComplaintsAfterVaccination.json ==
 == fsh-generated/resources/Immunization-CovidVaccinationDone.json ==
 WARNING: Immunization/CovidVaccinationDone: Immunization.protocolApplied[0].targetDisease[0]: ValueSet https://fhir.kbv.de/ValueSet/KBV_VS_MIO_Vaccination_TargetDisease not found by validator
@@ -352,12 +412,16 @@ WARNING: Immunization/CovidVaccinationNotDone: Immunization.protocolApplied[0].t
 WARNING: Immunization/CovidVaccinationNotDoneReasonOther: Immunization.protocolApplied[0].targetDisease[0]: ValueSet https://fhir.kbv.de/ValueSet/KBV_VS_MIO_Vaccination_TargetDisease not found by validator
 == fsh-generated/resources/ImplementationGuide-napkon-bih.json ==
 == fsh-generated/resources/MedicationStatement-AnalgesicAntipyreticIntakeAfterVaccination.json ==
+== fsh-generated/resources/MedicationStatement-ImmunosuppresivePermanentMedication.json ==
+WARNING: MedicationStatement/ImmunosuppresivePermanentMedication: MedicationStatement.medication.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/immunosuppressive-permament-medications because the value set or a code system it depends on is not known to the validator, Code System URI 'https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-immunosuppresive-medications' is unknown so the code cannot be validated]
+INFORMATION: MedicationStatement/ImmunosuppresivePermanentMedication: MedicationStatement.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-immunosuppresive-medications' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-AdditionalVaccinationWillingness.json ==
 == fsh-generated/resources/Observation-AllergicReactionToVaccinationInstance.json ==
 WARNING: Observation/AllergicReactionToVaccinationInstance: Observation.code.coding[0]: The display "Allergic reaction caused by vaccine (disorder)" is not a valid display for the code {http://snomed.info/sct}15920121000119103 - should be one of ['Allergic reaction caused by vaccine product (disorder)', 'Allergic reaction caused by vaccine product'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#15920121000119103'
 == fsh-generated/resources/Observation-AllergicReactionToVaccinationInstanceOther.json ==
 WARNING: Observation/AllergicReactionToVaccinationInstanceOther: Observation.code.coding[0]: The display "Allergic reaction caused by vaccine (disorder)" is not a valid display for the code {http://snomed.info/sct}15920121000119103 - should be one of ['Allergic reaction caused by vaccine product (disorder)', 'Allergic reaction caused by vaccine product'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#15920121000119103'
 == fsh-generated/resources/Observation-BodyTemperatureAfterVaccination.json ==
+== fsh-generated/resources/Observation-IntensiveCareTreatmentDuration.json ==
 == fsh-generated/resources/Observation-MedicalTreatmentForVaccinationAdverseReaction.json ==
 == fsh-generated/resources/Observation-MedicalTreatmentForVaccinationAdverseReactionAtGP.json ==
 == fsh-generated/resources/Observation-MedicalTreatmentForVaccinationAdverseReactionInHospital.json ==
@@ -370,6 +434,7 @@ WARNING: Observation/AllergicReactionToVaccinationInstanceOther: Observation.cod
 ERROR: Observation/SARSCoV2Variant: Observation.identifier[0].type: Observation.identifier:analyseBefundCode.type.coding:observationInstanceV2: max allowed = 1, but found 2 (from https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov2-variant)
 WARNING: Observation/SARSCoV2Variant: Observation.effective.ofType(dateTime): The value '0001-01-01T00:00:00+00:00' is outside the range of reasonable years - check for data entry error
 INFORMATION: Observation/SARSCoV2Variant: Observation.effective.ofType(dateTime).extension[0]: This element does not match any known slice defined in the profile https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov2-variant
+== fsh-generated/resources/Observation-TotalLengthOfStay.json ==
 == fsh-generated/resources/Observation-VaccinationInjectionSiteErythema.json ==
 WARNING: Observation/VaccinationInjectionSiteErythema: Observation.code.coding[0]: The display "Erythema at injection site (disorder)" is not a valid display for the code {http://snomed.info/sct}213338000 - should be one of ['Erythema at injection site', 'Injection site erythema (disorder)', 'Injection site erythema'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#213338000'
 == fsh-generated/resources/Observation-VaccinationInjectionSitePainMovement.json ==
@@ -379,6 +444,7 @@ WARNING: Observation/VaccinationInjectionSiteErythema: Observation.code.coding[0
 == fsh-generated/resources/Procedure-Chemotherapy.json ==
 == fsh-generated/resources/Procedure-ImmunomodulatoryTherapy.json ==
 == fsh-generated/resources/Procedure-ImmunomodulatoryTherapyNotDone.json ==
+== fsh-generated/resources/Procedure-ThoracicDrainage.json ==
 == fsh-generated/resources/StructureDefinition-additional-vaccination-willingness.json ==
 == fsh-generated/resources/StructureDefinition-allergic-reaction-to-vaccination.json ==
 WARNING: StructureDefinition/allergic-reaction-to-vaccination: StructureDefinition.snapshot.element[18].pattern.ofType(Coding): The display "Allergic reaction caused by vaccine (disorder)" is not a valid display for the code {http://snomed.info/sct}15920121000119103 - should be one of ['Allergic reaction caused by vaccine product (disorder)', 'Allergic reaction caused by vaccine product'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#15920121000119103'
@@ -388,8 +454,12 @@ WARNING: StructureDefinition/allergic-reaction-to-vaccination: StructureDefiniti
 == fsh-generated/resources/StructureDefinition-chemotherapy.json ==
 == fsh-generated/resources/StructureDefinition-covid-vaccination.json ==
 WARNING: StructureDefinition/covid-vaccination: StructureDefinition.snapshot.element[98].binding: The valueSet reference https://fhir.kbv.de/ValueSet/KBV_VS_MIO_Vaccination_TargetDisease on element Immunization.protocolApplied.targetDisease could not be resolved
+== fsh-generated/resources/StructureDefinition-covid19-complication.json ==
+== fsh-generated/resources/StructureDefinition-fungal-infection.json ==
 == fsh-generated/resources/StructureDefinition-general-complaints-after-vaccination.json ==
 == fsh-generated/resources/StructureDefinition-immunomodulatory-therapy.json ==
+== fsh-generated/resources/StructureDefinition-immunosuppresive-permanent-medication.json ==
+== fsh-generated/resources/StructureDefinition-intensive-care-treatment-duration.json ==
 == fsh-generated/resources/StructureDefinition-medical-treatment-for-vaccination-adverse-reaction.json ==
 == fsh-generated/resources/StructureDefinition-medical-treatment-reason.json ==
 == fsh-generated/resources/StructureDefinition-regular-alcohol-intake.json ==
@@ -401,6 +471,8 @@ INFORMATION: StructureDefinition/sars-cov2-variant: StructureDefinition.snapshot
 INFORMATION: StructureDefinition/sars-cov2-variant: StructureDefinition.snapshot.element[59].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 WARNING: StructureDefinition/sars-cov2-variant: StructureDefinition.differential.element[11].binding: The valueSet reference http://loinc.org/vs/LL5768-8 on element Observation.valueCodeableConcept could not be resolved
 WARNING: StructureDefinition/sars-cov2-variant: StructureDefinition.snapshot.element[90].binding: The valueSet reference http://loinc.org/vs/LL5768-8 on element Observation.value[x] could not be resolved
+== fsh-generated/resources/StructureDefinition-thoracic-drainage.json ==
+== fsh-generated/resources/StructureDefinition-total-length-of-stay.json ==
 == fsh-generated/resources/StructureDefinition-vaccination-injection-site-erythema.json ==
 WARNING: StructureDefinition/vaccination-injection-site-erythema: StructureDefinition.snapshot.element[18].pattern.ofType(Coding): The display "Erythema at injection site (disorder)" is not a valid display for the code {http://snomed.info/sct}213338000 - should be one of ['Erythema at injection site', 'Injection site erythema (disorder)', 'Injection site erythema'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#213338000'
 WARNING: StructureDefinition/vaccination-injection-site-erythema: StructureDefinition.differential.element[2].pattern.ofType(Coding): The display "Erythema at injection site (disorder)" is not a valid display for the code {http://snomed.info/sct}213338000 - should be one of ['Erythema at injection site', 'Injection site erythema (disorder)', 'Injection site erythema'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#213338000'
@@ -413,9 +485,15 @@ WARNING: StructureDefinition/vaccination-injection-site-erythema: StructureDefin
 == fsh-generated/resources/ValueSet-covid-vaccination-codes.json ==
 == fsh-generated/resources/ValueSet-covid-vaccination-contraindications.json ==
 == fsh-generated/resources/ValueSet-covid-vaccination-reasons.json ==
+== fsh-generated/resources/ValueSet-covid19-complications.json ==
+WARNING: ValueSet/covid19-complications: ValueSet.compose[0].include[0].concept[8]: The code 11479008 is not valid in the system http://snomed.info/sct
 == fsh-generated/resources/ValueSet-detected-not-detected-unknown-undetermined.json ==
+== fsh-generated/resources/ValueSet-fungal-infections.json ==
 == fsh-generated/resources/ValueSet-general-complaints-after-vaccination.json ==
 == fsh-generated/resources/ValueSet-immunosuppressive-immunomodulatory-therapy.json ==
+== fsh-generated/resources/ValueSet-immunosuppressive-permament-medications.json ==
+WARNING: ValueSet/immunosuppressive-permament-medications: ValueSet.compose[0].include[2]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet.where(id = 'immunosuppressive-permament-medications'): Error from server: Unable to provide support for code system https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-immunosuppresive-medications
 == fsh-generated/resources/ValueSet-medical-treatment-for-vaccination-adverse-reaction.json ==
 == fsh-generated/resources/ValueSet-present-not-present-undetermined-other.json ==
 == fsh-generated/resources/ValueSet-regular-alcohol-intake.json ==

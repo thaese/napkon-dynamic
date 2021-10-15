@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="NAPKONBIH"/>
   <status value="draft"/>
-  <date value="2021-10-13T21:39:19+00:00"/>
+  <date value="2021-10-15T12:18:04+00:00"/>
   <publisher value="BIH @ Charité"/>
   <contact>
     <name value="BIH @ Charité"/>
@@ -269,10 +269,32 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/covid19-complication"/>
+      </reference>
+      <name value="Covid19 complication"/>
+      <description value="Complication due to COVID19"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/covid-vaccination"/>
       </reference>
       <name value="Covid Vaccination"/>
       <description value="COVID-19 vaccination event"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fungal-infection"/>
+      </reference>
+      <name value="Fungal Infection"/>
+      <description value="Occurrence of a fungal infection"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -295,6 +317,28 @@
       </reference>
       <name value="Immunomodulatory Therapy"/>
       <description value="Whether a patient is receiving an immunosuppressive or -modulatory therapy"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/immunosuppresive-permanent-medication"/>
+      </reference>
+      <name value="Immunosuppresive Permanent Medication"/>
+      <description value="Immunosuppresive Permanent Medication"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/intensive-care-treatment-duration"/>
+      </reference>
+      <name value="Intensive care treatment duration"/>
+      <description value="Duration of intensive care treatment"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -379,6 +423,28 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/thoracic-drainage"/>
+      </reference>
+      <name value="Thoracic Drainge"/>
+      <description value="Application of a thoraric drainage"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/total-length-of-stay"/>
+      </reference>
+      <name value="Total length of stay"/>
+      <description value="Total length of stay"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/vaccination-injection-site-erythema"/>
       </reference>
       <name value="Vaccination Injection Site Erythema"/>
@@ -456,6 +522,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/covid19-complications"/>
+      </reference>
+      <name value="Covid19 complications"/>
+      <description value="Complications due to COVID19"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/covid-vaccination-codes"/>
       </reference>
       <name value="CovidVaccinationCodes"/>
@@ -500,6 +577,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/fungal-infections"/>
+      </reference>
+      <name value="Fungal Infections"/>
+      <description value="Value set of fungal infections"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/general-complaints-after-vaccination"/>
       </reference>
       <name value="General Complaints After Vaccination"/>
@@ -515,6 +603,17 @@
       </reference>
       <name value="Immunosuppressive Immunomodulatory Therapy"/>
       <description value="Immunosuppressive and immunomodulatory procedures / therapies codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/immunosuppressive-permament-medications"/>
+      </reference>
+      <name value="Immunosuppressive Permanent Medications"/>
+      <description value="Immunosuppressive medications"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -632,6 +731,17 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/napkon-pediatrics-module"/>
+      </reference>
+      <name value="NapkonPediatricsModule"/>
+      <description value="NAPKON Pediatrics Module Code System - Collection of pediatrics module-specific codes that are missing from common terminologies such as SNOMED CT"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/napkon-vaccination-module"/>
       </reference>
       <name value="NapkonVaccinationModule"/>
@@ -706,6 +816,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/Covid19Complication"/>
+      </reference>
+      <name value="Covid19 Complication"/>
+      <description value="Example of a covid19 complication"/>
+      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/covid19-complication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Immunization"/>
       </extension>
       <reference>
@@ -752,6 +873,17 @@
         <valueString value="Condition"/>
       </extension>
       <reference>
+        <reference value="Condition/FungalInfection"/>
+      </reference>
+      <name value="fungal-infection-instance"/>
+      <description value="Example of a fungal infection"/>
+      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/fungal-infection"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
         <reference value="Condition/GeneralComplaintsAfterVaccination"/>
       </reference>
       <name value="General Complaints After Vaccination"/>
@@ -779,6 +911,28 @@
       <name value="Immunomodulatory Therapy"/>
       <description value="Example of a patient not receiving an immunosuppresive therapy"/>
       <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunomodulatory-therapy"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationStatement"/>
+      </extension>
+      <reference>
+        <reference value="MedicationStatement/ImmunosuppresivePermanentMedication"/>
+      </reference>
+      <name value="Immunosuppresive Permanent Medication"/>
+      <description value="Example of a Immunosuppresive Permanent Medication"/>
+      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunosuppresive-permanent-medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/IntensiveCareTreatmentDuration"/>
+      </reference>
+      <name value="Intensive Care Treatment Duration"/>
+      <description value="Example of an intensive care treatment duration"/>
+      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/intensive-care-treatment-duration"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -878,6 +1032,28 @@
       <name value="SARS CoV2 Variant"/>
       <description value="Example of a SARS CoV2 variant (Pango lineage)"/>
       <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov2-variant"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/ThoracicDrainage"/>
+      </reference>
+      <name value="Thoracic Drainage"/>
+      <description value="Example of a thoracic drainage"/>
+      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/thoracic-drainage"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/TotalLengthOfStay"/>
+      </reference>
+      <name value="Total Length of Stay"/>
+      <description value="Example of an total length of stay"/>
+      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/total-length-of-stay"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

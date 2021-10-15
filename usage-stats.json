@@ -6,32 +6,8 @@
   "profiles": {
     "Observation": [
       {
-        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/medical-treatment-for-vaccination-adverse-reaction",
-        "title": "Medical Treatment For Vaccination Adverse Reaction"
-      },
-      {
-        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/medical-treatment-reason",
-        "title": "Medical Treatment Reason"
-      },
-      {
-        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/regular-alcohol-intake",
-        "title": "Regular Alcohol Intake"
-      },
-      {
-        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/regular-alcohol-intake-quantity",
-        "title": "Regular Alcohol Intake Quantity"
-      },
-      {
-        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov2-infection-course-vaccination",
-        "title": "SARS CoV2 Infection Course"
-      },
-      {
-        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov2-infection-vaccination",
-        "title": "SARS CoV2 Infection"
-      },
-      {
-        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov2-variant",
-        "title": "SARS CoV2 Variant"
+        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/total-length-of-stay",
+        "title": "Total length of stay"
       },
       {
         "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vaccination-injection-site-erythema",
@@ -52,14 +28,14 @@
     ],
     "MedicationStatement": [
       {
-        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/analgesic-antipyretic-intake-after-vaccination",
-        "title": "Analgesic Antipyretic Intake After Vaccination"
+        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunosuppresive-permanent-medication",
+        "title": "Immunosuppresive Permanent Medication"
       }
     ],
     "Procedure": [
       {
-        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunomodulatory-therapy",
-        "title": "Immunomodulatory Therapy"
+        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/thoracic-drainage",
+        "title": "Thoracic Drainge"
       }
     ],
     "Immunization": [
@@ -70,12 +46,23 @@
     ],
     "Condition": [
       {
+        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/covid19-complication",
+        "title": "Covid19 complication"
+      },
+      {
+        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/fungal-infection",
+        "title": "Fungal Infection"
+      },
+      {
         "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/general-complaints-after-vaccination",
         "title": "General Complaints After Vaccination"
       }
     ]
   },
   "usage": {
+    "http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum": [
+      "Procedure"
+    ],
     "http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit": [
       "Condition.code.coding"
     ],
@@ -87,7 +74,8 @@
       "Condition.onset[x].start"
     ],
     "http://fhir.de/StructureDefinition/seitenlokalisation": [
-      "Condition.code.coding"
+      "Condition.code.coding",
+      "Procedure.code.coding"
     ],
     "http://hl7.org/fhir/StructureDefinition/condition-dueTo": [
       "Condition"
@@ -149,6 +137,9 @@
     ],
     "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum": [
       "Observation.effective[x]"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht": [
+      "Procedure"
     ]
   }
 }

@@ -1,5 +1,12 @@
 [
   {
+    "id": "napkon-pediatrics-module",
+    "type": "CodeSystem",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module",
+    "version": "0.1.0",
+    "name": "NapkonPediatricsModule"
+  },
+  {
     "id": "napkon-vaccination-module",
     "type": "CodeSystem",
     "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module",
@@ -56,6 +63,20 @@
     "name": "CovidVaccination"
   },
   {
+    "id": "covid19-complication",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/covid19-complication",
+    "version": "0.1.0",
+    "name": "Covid19Complication"
+  },
+  {
+    "id": "fungal-infection",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/fungal-infection",
+    "version": "0.1.0",
+    "name": "FungalInfection"
+  },
+  {
     "id": "general-complaints-after-vaccination",
     "type": "StructureDefinition",
     "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/general-complaints-after-vaccination",
@@ -68,6 +89,20 @@
     "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunomodulatory-therapy",
     "version": "0.1.0",
     "name": "ImmunomodulatoryTherapy"
+  },
+  {
+    "id": "immunosuppresive-permanent-medication",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunosuppresive-permanent-medication",
+    "version": "0.1.0",
+    "name": "ImmunosuppresivePermanentMedication"
+  },
+  {
+    "id": "intensive-care-treatment-duration",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/intensive-care-treatment-duration",
+    "version": "0.1.0",
+    "name": "IntensiveCareTreatmentDuration"
   },
   {
     "id": "medical-treatment-for-vaccination-adverse-reaction",
@@ -117,6 +152,20 @@
     "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov2-variant",
     "version": "0.1.0",
     "name": "SARSCoV2Variant"
+  },
+  {
+    "id": "thoracic-drainage",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/thoracic-drainage",
+    "version": "0.1.0",
+    "name": "ThoracicDrainage"
+  },
+  {
+    "id": "total-length-of-stay",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/total-length-of-stay",
+    "version": "0.1.0",
+    "name": "TotalLengthOfStay"
   },
   {
     "id": "vaccination-injection-site-erythema",
@@ -189,11 +238,25 @@
     "name": "CovidVaccinationReasons"
   },
   {
+    "id": "covid19-complications",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/covid19-complications",
+    "version": "0.1.0",
+    "name": "Covid19Complications"
+  },
+  {
     "id": "detected-not-detected-unknown-undetermined",
     "type": "ValueSet",
     "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/detected-not-detected-unknown-undetermined",
     "version": "0.1.0",
     "name": "DetectedNotDetectedUnknownUndetermined"
+  },
+  {
+    "id": "fungal-infections",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/fungal-infections",
+    "version": "0.1.0",
+    "name": "FungalInfections"
   },
   {
     "id": "general-complaints-after-vaccination",
@@ -208,6 +271,13 @@
     "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/immunosuppressive-immunomodulatory-therapy",
     "version": "0.1.0",
     "name": "ImmunosuppressiveImmunomodulatoryTherapy"
+  },
+  {
+    "id": "immunosuppressive-permament-medications",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/immunosuppressive-permament-medications",
+    "version": "0.1.0",
+    "name": "ImmunosuppressivePermanentMedications"
   },
   {
     "id": "medical-treatment-for-vaccination-adverse-reaction",
