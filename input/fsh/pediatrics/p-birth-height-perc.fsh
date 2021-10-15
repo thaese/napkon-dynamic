@@ -28,7 +28,7 @@ Description: "Birth Height with unit percentiles in context of Pediatrics"
 * valueQuantity.code 1.. MS
 * valueQuantity.code = #%
 
-//Instance
+//Instance regarding percentiles
 Instance: instance-head-circumference-percentiles
 InstanceOf: birth-height-percentiles
 Usage: #example
