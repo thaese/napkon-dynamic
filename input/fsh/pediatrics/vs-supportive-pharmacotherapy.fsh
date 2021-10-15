@@ -1,27 +1,15 @@
-Alias: §sct = http://snomed.info/sct
+// Author: Thomas Haese
+// Charité – Universitätsmedizin Berlin
 
 ValueSet: SupportivePharmacotherapy
-Id: vs-supportive-pharmacotherapy-pediatrics
+Id: supportive-pharmacotherapy-sct
 Title: "ValuesetSupportivePharmacotherapy"
 Description:  "Supportive pharamcotherapy used in the context of Covid-19 and Pediatrics"
 
-* ^date = "2021-09-13"
-* ^publisher = "Charité"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
+* insert napkon-metadata(2021-09-13, #draft, 0.1.0)
 
-* ^status = #draft
-// Nachfolgende anpassen
-* ^compose.include[0].system = "http://snomed.info/sct"
-* ^compose.include[0].concept[0].code = #127784009
-* ^compose.include[0].concept[0].display = "Inhaled bronchodilator therapy (procedure)"
-* ^compose.include[0].concept[0].designation[0].language = #de-DE
-* ^compose.include[0].concept[0].designation[0].use = #900000000000013009 "Synonym"
-* ^compose.include[0].concept[0].designation[0].value = "Bronchodilatoren"
+* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/supportive-pharmacotherapy-sct"
 
-* ^compose.include[0].system = "http://snomed.info/sct"
-* ^compose.include[0].concept[1].code = #6710000
-* ^compose.include[0].concept[1].display = "Nitric oxide (substance)"
-* ^compose.include[0].concept[1].designation[1].language = #de-DE
-* ^compose.include[0].concept[1].designation[1].use = #900000000000013009 "Synonym"
-* ^compose.include[0].concept[1].designation[1].value = "Inhaltation Stickstoffmonoxid"
+* $sct#127784009 "Inhaled bronchodilator therapy (procedure)"
+* $sct#6710000 "Nitric oxide (substance)"
+
