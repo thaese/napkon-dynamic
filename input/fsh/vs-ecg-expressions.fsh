@@ -7,7 +7,7 @@ ValueSet: ECGExpressions
 Id: ecg-expressions
 Title: "Cardiology ECG Expressions ValueSet"
 Description:  "ValueSet for ECG expressions such as findings, disorders, observable entities etc."
-* insert napkon-metadata(2021-10-01, draft)
+* insert napkon-metadata(2021-10-01, #draft, 0.1.0)
 * ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/EcgCodes"
 
 

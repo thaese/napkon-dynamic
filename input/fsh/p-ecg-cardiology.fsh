@@ -19,7 +19,7 @@ Description: "Defines constraints and extensions on the Cardiology ECG procedure
 * code ^slicing.discriminator[0].path = "$this"
 * code ^slicing.rules = #open
 * code contains sct 1..1
-* code[sct] from $CardiologyImagingCodes (required)
+* code[sct] from CardiologyImagingCodes (required)
 * subject only Reference(Patient)
 
 

@@ -9,6 +9,7 @@ Description: "NAPKON Cardiology Module Code System - Collection of cardiology mo
 WIP - Work in progress
 */
 
+
 // Category: Anamnese / Risikofaktoren (anamnesis and risk factors)
 * #0001 "Leidet der/die Patient*in unter einer chronischen Lungenerkrankung? An welcher chronischen Lungenerkrankung leidet der/die Patient*in?"
 * #0002 "Leidet der/die Patient*in unter einer Herz-Kreislauf-Erkrankung? An welcher Herz-Kreislauf-Erkrankung leidet der/die Patient*in?"
