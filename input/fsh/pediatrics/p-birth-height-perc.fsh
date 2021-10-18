@@ -29,7 +29,7 @@ Description: "Birth Height with unit percentiles in context of Pediatrics"
 * valueQuantity.code = #%
 
 //Instance regarding percentiles
-Instance: instance-head-circumference-percentiles
+Instance: birth-height-circumference-percentiles
 InstanceOf: birth-height-percentiles
 Usage: #example
 Title: "Instance of fhir resource birth height (unit percentiles) in the context of pediatrics"
