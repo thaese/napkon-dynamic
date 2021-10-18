@@ -34,7 +34,7 @@ InstanceOf: chronic-haematologic-diseases
 Usage: #example
 Title: "Instance of fhir resource chronic haematologic diseases in the context of pediatrics"
 Description: "Example of a chronic haematologic diseases"
-* code = $sct#40108008 "Thalassemia (disorder)"
+* code.coding[sct] = $sct#40108008 "Thalassemia (disorder)"
 * subject = Reference(ExamplePatient)
 
 Instance: instance-chronic-haematologic-diseases-icd
@@ -42,8 +42,5 @@ InstanceOf: chronic-haematologic-diseases
 Usage: #example
 Title: "Instance of fhir resource chronic haematologic diseases in the context of pediatrics"
 Description: "Example of a chronic haematologic diseases"
-* code = $icd10-gm#D50.9 "Eisenmangelanämie, nicht näher bezeichnet"
+* code.coding[icd10-gm] = $icd10-gm#D50.9 "Eisenmangelanämie, nicht näher bezeichnet"
 * subject = Reference(ExamplePatient)
-
-
-

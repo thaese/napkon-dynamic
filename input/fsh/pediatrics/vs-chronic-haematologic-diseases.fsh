@@ -10,7 +10,7 @@ Description: "Chronic haematologic diseases the context of pediatrics and Covid-
 
 * ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-haematologic-diseases-sct"
 
-* $sct#61261009 "Hemolytic anemia (disorder)" 
+* $sct#61261009 "Hemolytic anemia (disorder)"
 * $sct#40108008 "Thalassemia (disorder)"
 * $sct#127040003 "Sickle cell-hemoglobin SS disease (disorder)"
 * $sct#62403005 "Glucose-6-phosphate dehydrogenase deficiency anemia (disorder)"
@@ -20,5 +20,4 @@ Description: "Chronic haematologic diseases the context of pediatrics and Covid-
 * $sct#64779008 "Blood coagulation disorder (disorder)"
 
 //Other is missing
-* include codes from system $sct where concept is-a §sct#394803006
-
+* include codes from system $sct where concept is-a #394803006
