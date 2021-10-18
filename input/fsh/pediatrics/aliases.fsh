@@ -15,3 +15,4 @@ Alias: $ChronicHaematologicDiseasesICD = https://www.netzwerk-universitaetsmediz
 Alias: $ChronicHaematologicDiseases = https://www.netzwerk-universitaetsmedizin.de/fhir//ValueSet/chronic-haematologic-diseases-sct
 Alias: $SupportivePharmacotherapy = https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/supportive-pharmacotherapy-sct
 Alias: $VaccineTypeCovid = https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/vaccine-type-sct
+Alias: $eventStatus = http://hl7.org/fhir/event-status
