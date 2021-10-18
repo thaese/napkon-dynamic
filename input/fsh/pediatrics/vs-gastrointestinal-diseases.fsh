@@ -17,4 +17,4 @@ Description: "Gastrointestinal diseases in the context of pediatrics and Covid-1
 * $sct#118926004 "Disorder of bile duct (disorder)"
 
 // Andere //
-* include codes from system $sct where concept is-a §sct#119292006
+* include codes from system $sct where concept is-a #119292006

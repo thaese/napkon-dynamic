@@ -34,7 +34,7 @@ InstanceOf: gastrointestinal-diseases
 Usage: #example
 Title: "Instance of fhir resource sgastrointestinal-diseases in the context of pediatrics"
 Description: "Example of a gastrointestinal disease"
-* code = $sct#236069009 "Chronic constipation (disorder)"
+* code.coding[sct] = $sct#236069009 "Chronic constipation (disorder)"
 * subject = Reference(ExamplePatient)
 
 Instance: instance-gastrointestinal-diseases-icd
@@ -42,5 +42,5 @@ InstanceOf: gastrointestinal-diseases
 Usage: #example
 Title: "Instance of fhir resource sgastrointestinal-diseases in the context of pediatrics"
 Description: "Example of a gastrointestinal disease"
-* code = $icd10-gm#K59.9 "Funktionelle Darmstörung, nicht näher bezeichnet"
+* code.coding[icd10-gm] = $icd10-gm#K59.9 "Funktionelle Darmstörung, nicht näher bezeichnet"
 * subject = Reference(ExamplePatient)
