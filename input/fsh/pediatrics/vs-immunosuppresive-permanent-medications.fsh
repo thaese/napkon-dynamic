@@ -6,34 +6,120 @@ Title: "Immunosuppressive Permanent Medications"
 Description: "Immunosuppressive medications"
 
 * insert napkon-metadata(2021-10-05, #draft, 0.1.0)
+// TODO: Use only ATC DE codes here?
 
-* $sct#116566001 "Steroid (substance)" // Systemische Steroide
-* $sct#416798007 "Substance with calcineurin inhibitor mechanism of action (substance)" // Systemische Calcineurin-Inhibitoren
-* $atcde|2020#L01EG "Mammalian target of rapamycin (mTOR)-Kinase-Inhibitoren" // mTOR-Inhibitoren
-* $nis#000001 "Sphingosine analogue (substance)" // Sphingosin-Analoga
-//* $sct#372785000 "Antimetabolite (substance)" // Antimetabolite
-* $atcde|2020#L01B "ANTIMETABOLITEN"
-* $sct#372669002 "Alkylating agent (substance)" // Alkylantien
-//* $sct#420693002 "Substance with tumor necrosis factor alpha inhibitor mechanism of action (substance)" // TNF-Inhibitoren
-* $atcde|2020#L04AB "Tumornekrosefaktor alpha (TNF-alpha)-Inhibitoren"
-* $sct#430866006 "Substance with interleukin 1 receptor antagonist mechanism of action (substance)" // IL-1-Inhibitoren
-* $nis#000002 "Substance with interleukin 2 receptor antagonist mechanism of action (substance)" // IL-2-Inhibitoren
-* $sct#784015001 "Substance with interleukin 6 receptor antagonist mechanism of action (substance)" // IL-6-Inhibitoren
-* $nis#000003 "Substance with interleukin 17 receptor antagonist mechanism of action (substance)" // IL-17-Inhibitoren
-* $sct#771592004 "Substance with interleukin 23 receptor antagonist mechanism of action (substance)" // IL-23-Inhibitoren
-* $sct#870401008 "Substance with cytotoxic T-lymphocyte-associated protein 4 inhibitor mechanism of action (substance)" // CTLA-4-Antagonisten
-* $nis#000004 "Anti-CD20 antibody (substance)" // CD20-Antikörper
-* $nis#000005 "Anti-CD52 antibody (substance)" // CD52-Antikörper
-* $nis#000006 "Anti-CD3 antibody (substance)" // CD3-Antikörper
-* $nis#000007 "Anti-CD3/CD19 antibody (substance)" // CD3/CD19-Antikörper
-* $sct#768651008 "Antithymocyte immunoglobulin (substance)" // Anti-T-Lymphozytenglobulin
-* $nis#000008 "Substance with Integrin inhibitor mechanism of action (substance)" // Integrin-Inhibitoren
-* $nis#000009 "Substance with B cell activating factor inhibitor mechanism of action (substance)" // BAFF-Inhibitoren
-//* $sct#704312008 "Substance with Janus kinase inhibitor mechanism of action (substance)" // JAK-Inhibitoren
-* $atcde|2020#L01EJ "Janus-assoziierte Kinase (JAK)-Inhibitoren"
-* $sct#372917005 "Substance with protein-tyrosine kinase inhibitor mechanism of action (substance)" // Tyrosinkinase-Inhibitoren
-* $sct#48583005 "Immunoglobulin E (substance)" // IgE-Antikörper
-* $sct#49327004 "Interferon (substance)" // Interferone
+// Systemische Steroide
+* $sct#116566001 "Steroid (substance)"
+    // $atcde|2021#A14A "ANABOLE STEROIDE"
+
+// Systemische Calcineurin-Inhibitoren
+* $sct#416798007 "Substance with calcineurin inhibitor mechanism of action (substance)"
+    // $atcde#L04AD "Calcineurin-Inhibitoren"
+
+// mTOR-Inhibitoren
+* $atcde#L01EG "Mammalian target of rapamycin (mTOR)-Kinase-Inhibitoren"
+
+// Sphingosin-Analoga
+* $nis#000001 "Sphingosine analogue"
+    // zB $atcde#L04AA27 "Fingolimod"
+
+// Antimetabolite
+* $sct#372785000 "Antimetabolite (substance)"
+    //* $atcde#L01B "ANTIMETABOLITEN"
+
+// Alkylantien
+* $sct#372669002 "Alkylating agent (substance)"
+    // $atcde|2021#L01A "ALKYLIERENDE MITTEL"
+
+// TNF-Inhibitoren
+* $sct#420693002 "Substance with tumor necrosis factor alpha inhibitor mechanism of action (substance)"
+    //* $atcde#L04AB "Tumornekrosefaktor alpha (TNF-alpha)-Inhibitoren"
+
+// IL-1-Inhibitoren
+* $sct#430866006 "Substance with interleukin 1 receptor antagonist mechanism of action (substance)"
+    // $atcde#L04AC "Interleukin-Inhibitoren"
+
+ // IL-2-Inhibitoren
+* $nis#000002 "Interleukin 2 receptor antagonist"
+    // $atcde#L04AC "Interleukin-Inhibitoren"
+
+// IL-6-Inhibitoren
+* $sct#784015001 "Substance with interleukin 6 receptor antagonist mechanism of action (substance)"
+    // $atcde#L04AC "Interleukin-Inhibitoren"
+
+// IL-17-Inhibitoren
+* $nis#000003 "Interleukin 17 receptor antagonist"
+    // $atcde#L04AC "Interleukin-Inhibitoren"
+
+// IL-23-Inhibitoren
+* $sct#771592004 "Substance with interleukin 23 receptor antagonist mechanism of action (substance)"
+    // $atcde#L04AC "Interleukin-Inhibitoren"
+
+// CTLA-4-Antagonisten
+* $sct#870401008 "Substance with cytotoxic T-lymphocyte-associated protein 4 inhibitor mechanism of action (substance)"
+    // $atcde#L01XC "Monoklonale Antikörper"
+    // zB $atcde#L01XC11 "Ipilimumab"
+
+// CD20-Antikörper
+* $nis#000004 "Anti-CD20 antibody"
+    // $atcde#L01XC "Monoklonale Antikörper"
+    // zB $atcde#L01XC02 "Rituximab", $atcde#L01XC10 "Ofatumumab", $atcde#L01XC15 "Obinutuzumab"
+
+// CD52-Antikörper
+* $nis#000005 "Anti-CD52 antibody"
+    // $atcde#L01XC "Monoklonale Antikörper"
+    // zB L01XC04 "Alemtuzumab"
+
+// CD3-Antikörper
+* $nis#000006 "Anti-CD3 antibody"
+    // $atcde#L01XC "Monoklonale Antikörper"
+    // zB $atcde#L01XC09 "Catumaxomab"
+    // zB $atcde#L04AA02 "Muromonab-CD3" >> L04AA "Selektive Immunsuppressiva"
+
+
+// CD3/CD19-Antikörper
+* $nis#000007 "Anti-CD3/CD19 antibody"
+    // $atcde#L01XC "Monoklonale Antikörper"
+    // zB $atcde#L01XC19 "Blinatumomab"
+
+// Anti-T-Lymphozytenglobulin
+* $sct#768651008 "Antithymocyte immunoglobulin (substance)"
+    // $atcde#L04AA03 "Antilymphozytäres Immunglobulin (Pferd)"
+    // $atcde#L04AA04 "Antithymozytäres Immunglobulin (Kaninchen)"
+    // Oberkategorie $atcde#L04AA "Selektive Immunsuppressiva"
+
+// Integrin-Inhibitoren
+* $nis#000008 "Integrin inhibitor"
+    // zB $atcde#L04AA33 "Vedolizumab"
+    // Oberkategorie $atcde#L04AA "Selektive Immunsuppressiva"
+
+// BAFF-Inhibitoren
+* $nis#000009 "B cell activating factor inhibitor"
+    // zB $atcde#L04AA26 "Belimumab"
+    // Oberkategorie $atcde#L04AA "Selektive Immunsuppressiva"
+
+// JAK-Inhibitoren
+* $sct#704312008 "Substance with Janus kinase inhibitor mechanism of action (substance)"
+    //* $atcde#L01EJ "Janus-assoziierte Kinase (JAK)-Inhibitoren"
+
+// Tyrosinkinase-Inhibitoren
+* $sct#372917005 "Substance with protein-tyrosine kinase inhibitor mechanism of action (substance)"
+    // $atcde#L01EA "BCR-ABL-Tyrosinkinase-Inhibitoren"
+    // $atcde#L01EB "Epidermaler Wachstumsfaktor-Rezeptor (EGFR)-Tyrosinkinase-Inhibitoren"
+    // $atcde#L01EH "Humaner epidermaler Wachstumsfaktor-Rezeptor 2 (HER2)-Tyrosinkinase-Inhibitoren"
+    // $atcde#L01EK "Vaskulärer endothelialer Wachstumsfaktor-Rezeptor (VEGFR)-Tyrosinkinase-Inhibitoren"
+    // $atcde#L01EL "Bruton-Tyrosinkinase (BTK)-Inhibitoren"
+
+
+// IgE-Antikörper
+* $sct#48583005 "Immunoglobulin E (substance)"
+    // zB  $atcde#R03DX05 "Omalizumab"
+    // Oberkategorie: $atcde#R03DX "Andere Mittel bei obstruktiven Atemwegserkrankungen zur systemischen Anwendung"
+
+// Interferone
+* $sct#49327004 "Interferon (substance)"
+    // $atcde#L03AB "Interferone"
+
 * $sct#74964007 "Other (qualifier value)" // Andere
 * $sct#260413007 "None (qualifier value)" // Keine
 * $sct#261665006 "Unknown (qualifier value)" // Unbekannt

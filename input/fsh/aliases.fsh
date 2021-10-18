@@ -4,6 +4,7 @@ Alias: $loinc = http://loinc.org
 Alias: $snomed = http://snomed.info/sct
 Alias: $sct = http://snomed.info/sct
 Alias: $sctIntl2021 = http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731
+Alias: $ucum = http://unitsofmeasure.org
 
 Alias: $ops = http://fhir.de/CodeSystem/bfarm/ops
 Alias: $atcde = http://fhir.de/CodeSystem/bfarm/atc
@@ -22,8 +23,12 @@ Alias: $loinc-sars-cov2-variants = http://loinc.org/vs/LL5768-8
 Alias: $cardiovascular-diseases-icd = https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/cardiovascular-diseases-icd
 Alias: $cardiovascular-diseases = https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/cardiovascular-diseases
 
-// Resources
+// GECCO resources
 Alias: $gecco-base-condition = https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-base-condition
+// MII resources
+Alias: $mii-medication-statement = https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement
+Alias: $mii-condition = https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose
+Alias: $mii-procedure = https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure
 
 // Own code systems
 Alias: $nis = https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-immunosuppresive-medications

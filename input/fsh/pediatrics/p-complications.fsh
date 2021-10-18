@@ -1,7 +1,7 @@
 // Author: Gregor Lichtner
 // Berlin Institute of Health | Charité
 Profile: Covid19Complication
-Parent: Condition
+Parent: $mii-condition
 Id: covid19-complication
 Title: "Covid19 complication"
 Description: "Complication due to COVID19"
@@ -19,5 +19,5 @@ InstanceOf: covid19-complication
 Usage: #example
 Title: "Covid19 Complication"
 Description: "Example of a covid19 complication"
-* code = $sct#235859005:246112005=386134007 "Liver disorder due to infection where Severity = Significant"
+* code = $sct#235859005 "Liver disorder due to infection"
 * subject = Reference(ExamplePatient)

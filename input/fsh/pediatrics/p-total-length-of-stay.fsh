@@ -20,7 +20,7 @@ Description: "Total length of stay"
 * value[x] MS
 * value[x] only Quantity
 * valueQuantity.system 1.. MS
-* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.system = $ucum
 * valueQuantity.value 1.. MS
 * valueQuantity.unit 1.. MS
 * valueQuantity.unit = "day"

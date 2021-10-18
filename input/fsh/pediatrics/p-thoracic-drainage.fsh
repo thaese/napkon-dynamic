@@ -1,7 +1,7 @@
 // Author: Gregor Lichtner
 // Berlin Institute of Health | Charité
 Profile: ThoracicDrainage
-Parent: Profile-MII-Procedure-Prozedur
+Parent: $mii-procedure
 Id: thoracic-drainage
 Title: "Thoracic Drainge"
 Description: "Application of a thoraric drainage"
