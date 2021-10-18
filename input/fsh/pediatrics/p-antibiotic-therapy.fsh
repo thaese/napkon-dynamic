@@ -12,7 +12,7 @@ Description: "Antibiotic therapy in the context of pediatrics"
 /* 
 Status bzw. Antwortausprägungen direkt aus der FHIR-Ressource.
 VS EventStatus nur auf die erforderlichen eingeschränkt und daher abgewandelt.
-Status verweist auf das entsprechende Value Set.
+Status verweist auf das entsprechend erstellte  Value Set.
 */
 
 * status from RestrictedEventStatus
