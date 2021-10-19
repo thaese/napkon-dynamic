@@ -10,10 +10,10 @@ Description: "Complications due to COVID19"
 * $sct#52702003 "Chronic fatigue syndrome (disorder)"
 * $sct#32398004 "Bronchitis (disorder)"
 * $sct#233981004 "Arterial aneurysm (disorder)"
-* $sct#304252001 "For resuscitation (finding)"
-* $sct#235859005 "Liver disorder due to infection" // severity als Condition.severity statt im Code (Post-coordinated) // TODO: OK so?
+* $sct#304252001 "For resuscitation (finding)" // TODO: finding ok?
+* $sct#235859005 "Liver disorder due to infection (disorder)" // severity als Condition.severity statt im Code (Post-coordinated) // TODO: OK so?
 * $sct#230431001 "Situation-related seizures (disorder)"
-* $sct#271594007 "Syncope (finding)"
+* $sct#271594007 "Syncope (finding)" // TODO: finding ok?
 * $sct#271737000 "Anemia (disorder)"
 * $sct#11479008 "Organic mental disorder (disorder)" //Psychische Störung aufgrund einer körperlichen Krankheit // TODO: OK so?
 * $sct#1119303003 "Post-acute COVID-19 (disorder)"

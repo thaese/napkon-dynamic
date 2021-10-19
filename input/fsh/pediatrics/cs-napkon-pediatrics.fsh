@@ -13,3 +13,4 @@ Description: "NAPKON Pediatrics Module Code System - Collection of pediatrics mo
 * #000007 "Anti-CD3/CD19 antibody"
 * #000008 "Integrin inhibitor"
 * #000009 "B cell activating factor inhibitor"
+* #000010 "Mammalian target of rapamycin (mTOR)-Kinase inhibitor"

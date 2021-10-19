@@ -30,6 +30,7 @@ Alias: $gecco-base-condition = https://www.netzwerk-universitaetsmedizin.de/fhir
 Alias: $mii-medication-statement = https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement
 Alias: $mii-condition = https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose
 Alias: $mii-procedure = https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure
+Alias: $mii-reference = https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference
 
 // Own code systems
 Alias: $nped = https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module
