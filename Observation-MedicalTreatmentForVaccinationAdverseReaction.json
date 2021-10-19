@@ -1,0 +1,33 @@
+{
+  "resourceType": "Observation",
+  "id": "MedicalTreatmentForVaccinationAdverseReaction",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/medical-treatment-for-vaccination-adverse-reaction"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module q1004}\">Medical treatment for actual or potential adverse events</span></p><p><b>value</b>: <span title=\"Codes: {http://snomed.info/sct 373067005}\">No (qualifier value)</span></p></div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module",
+        "code": "q1004",
+        "display": "Medical treatment for actual or potential adverse events"
+      }
+    ]
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20210731",
+        "code": "373067005",
+        "display": "No (qualifier value)"
+      }
+    ]
+  }
+}

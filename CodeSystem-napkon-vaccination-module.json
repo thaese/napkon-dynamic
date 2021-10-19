@@ -1,0 +1,259 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "napkon-vaccination-module",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">q1001<a name=\"napkon-vaccination-module-q1001\"> </a></td><td>Willingness for additional SARS-CoV-2 vaccination if recommended</td></tr><tr><td style=\"white-space:nowrap\">q1004<a name=\"napkon-vaccination-module-q1004\"> </a></td><td>Medical treatment for actual or potential adverse events</td></tr><tr><td style=\"white-space:nowrap\">q1005<a name=\"napkon-vaccination-module-q1005\"> </a></td><td>General complaints after vaccination</td></tr><tr><td style=\"white-space:nowrap\">q1006<a name=\"napkon-vaccination-module-q1006\"> </a></td><td>Course of SARS-CoV-2 Infection</td></tr><tr><td style=\"white-space:nowrap\">q1007<a name=\"napkon-vaccination-module-q1007\"> </a></td><td>Injection site pain at rest</td></tr><tr><td style=\"white-space:nowrap\">q1008<a name=\"napkon-vaccination-module-q1008\"> </a></td><td>Injection site pain with pressure or movement</td></tr><tr><td style=\"white-space:nowrap\">0001<a name=\"napkon-vaccination-module-0001\"> </a></td><td>Comirnaty (BioNTech/Pfizer)</td></tr><tr><td style=\"white-space:nowrap\">0002<a name=\"napkon-vaccination-module-0002\"> </a></td><td>COVID-19 Vaccine Moderna (Moderna Biotech)</td></tr><tr><td style=\"white-space:nowrap\">0003<a name=\"napkon-vaccination-module-0003\"> </a></td><td>Vaxzevria (AstraZeneca AB)</td></tr><tr><td style=\"white-space:nowrap\">0004<a name=\"napkon-vaccination-module-0004\"> </a></td><td>COVID-19 Vaccine Janssen (Janssen-Cilag/Johnson &amp; Johnson)</td></tr><tr><td style=\"white-space:nowrap\">1001<a name=\"napkon-vaccination-module-1001\"> </a></td><td>Nicht erkrankt (keine Symptome)</td></tr><tr><td style=\"white-space:nowrap\">1002<a name=\"napkon-vaccination-module-1002\"> </a></td><td>Erkrankt und zu Hause</td></tr><tr><td style=\"white-space:nowrap\">1003<a name=\"napkon-vaccination-module-1003\"> </a></td><td>Erkrankt und im Krankenhaus ohne Sauerstofftherapie</td></tr><tr><td style=\"white-space:nowrap\">1004<a name=\"napkon-vaccination-module-1004\"> </a></td><td>Erkrankt und im Krankenhaus mit Sauerstofftherapie</td></tr><tr><td style=\"white-space:nowrap\">1005<a name=\"napkon-vaccination-module-1005\"> </a></td><td>Erkrankt und im Krankenhaus auf einer Intensivstation</td></tr><tr><td style=\"white-space:nowrap\">2001<a name=\"napkon-vaccination-module-2001\"> </a></td><td>Um mich vor einer Infektion mit SARS-CoV-2 bzw. vor COVID-19 zu schützen</td></tr><tr><td style=\"white-space:nowrap\">2002<a name=\"napkon-vaccination-module-2002\"> </a></td><td>Um mein privates Umfeld vor einer Infektion mit SARS-CoV-2 bzw. COVID-19 zu schützen</td></tr><tr><td style=\"white-space:nowrap\">2003<a name=\"napkon-vaccination-module-2003\"> </a></td><td>Um mein Arbetsfeld vor einer Infektion mit SARS-CoV-2 bzw. COVID-19 zu schützen</td></tr><tr><td style=\"white-space:nowrap\">2004<a name=\"napkon-vaccination-module-2004\"> </a></td><td>Weil alle sich impfen lassen</td></tr><tr><td style=\"white-space:nowrap\">2005<a name=\"napkon-vaccination-module-2005\"> </a></td><td>Weil ich befürchte aufgrund meines Impfstatus' benachteiligt zu werden (z.B. Reiseverbot, Arbeitsverbot)</td></tr><tr><td style=\"white-space:nowrap\">3001<a name=\"napkon-vaccination-module-3001\"> </a></td><td>Leichte Schmerzen, diese stören nicht bei täglichen Aktivitäten</td></tr><tr><td style=\"white-space:nowrap\">3002<a name=\"napkon-vaccination-module-3002\"> </a></td><td>Mäßige Schmerzen, diese stören bei täglichen Aktivitäten</td></tr><tr><td style=\"white-space:nowrap\">3003<a name=\"napkon-vaccination-module-3003\"> </a></td><td>Sehr starke Schmerzen, die dazu führen, dass täglichen Aktivitäten nicht mehr durchgeführt werden können</td></tr><tr><td style=\"white-space:nowrap\">4001<a name=\"napkon-vaccination-module-4001\"> </a></td><td>Kleiner als 2,5 Zentimeter</td></tr><tr><td style=\"white-space:nowrap\">4002<a name=\"napkon-vaccination-module-4002\"> </a></td><td>Zwischen 2,5 und 5 Zentimeter</td></tr><tr><td style=\"white-space:nowrap\">4003<a name=\"napkon-vaccination-module-4003\"> </a></td><td>Zwischen 5,1 und 10 Zentimeter</td></tr><tr><td style=\"white-space:nowrap\">4004<a name=\"napkon-vaccination-module-4004\"> </a></td><td>Größer als 10 Zentimeter</td></tr><tr><td style=\"white-space:nowrap\">6001<a name=\"napkon-vaccination-module-6001\"> </a></td><td>Ja, Behandlung in Arztpraxis oder Rettungsstelle</td></tr><tr><td style=\"white-space:nowrap\">6002<a name=\"napkon-vaccination-module-6002\"> </a></td><td>Ja, Behandlung mit Aufnahme im Krankenhaus</td></tr><tr><td style=\"white-space:nowrap\">7001<a name=\"napkon-vaccination-module-7001\"> </a></td><td>Weniger als 37,5 °C</td></tr><tr><td style=\"white-space:nowrap\">7002<a name=\"napkon-vaccination-module-7002\"> </a></td><td>37,5 °C bis 37,9 °C</td></tr><tr><td style=\"white-space:nowrap\">7003<a name=\"napkon-vaccination-module-7003\"> </a></td><td>38,0 °C bis 38,4 °C</td></tr><tr><td style=\"white-space:nowrap\">7004<a name=\"napkon-vaccination-module-7004\"> </a></td><td>38,5 °C bis 38,9 °C</td></tr><tr><td style=\"white-space:nowrap\">7005<a name=\"napkon-vaccination-module-7005\"> </a></td><td>39,0 °C bis 40,0 °C</td></tr><tr><td style=\"white-space:nowrap\">7006<a name=\"napkon-vaccination-module-7006\"> </a></td><td>Mehr als 40 °C</td></tr><tr><td style=\"white-space:nowrap\">8001<a name=\"napkon-vaccination-module-8001\"> </a></td><td>Einmal im Monat oder seltener</td></tr><tr><td style=\"white-space:nowrap\">8002<a name=\"napkon-vaccination-module-8002\"> </a></td><td>2-4 Mal im Monat</td></tr><tr><td style=\"white-space:nowrap\">8003<a name=\"napkon-vaccination-module-8003\"> </a></td><td>2-3 Mal pro Woche</td></tr><tr><td style=\"white-space:nowrap\">8004<a name=\"napkon-vaccination-module-8004\"> </a></td><td>4 Mal oder öfter die Woche</td></tr><tr><td style=\"white-space:nowrap\">8005<a name=\"napkon-vaccination-module-8005\"> </a></td><td>Nicht mehr (früher gelegentlich)</td></tr><tr><td style=\"white-space:nowrap\">9001<a name=\"napkon-vaccination-module-9001\"> </a></td><td>0,5 bis 1 alkoholische Getränke pro Tag</td></tr><tr><td style=\"white-space:nowrap\">9002<a name=\"napkon-vaccination-module-9002\"> </a></td><td>1,5 bis 2 alkoholische Getränke pro Tag</td></tr><tr><td style=\"white-space:nowrap\">9003<a name=\"napkon-vaccination-module-9003\"> </a></td><td>2,5 bis 3 alkoholische Getränke pro Tag</td></tr><tr><td style=\"white-space:nowrap\">9004<a name=\"napkon-vaccination-module-9004\"> </a></td><td>3,5 bis 4,5 alkoholische Getränke pro Tag</td></tr><tr><td style=\"white-space:nowrap\">9005<a name=\"napkon-vaccination-module-9005\"> </a></td><td>5 oder mehr alkoholische Getränke pro Tag</td></tr><tr><td style=\"white-space:nowrap\">10001<a name=\"napkon-vaccination-module-10001\"> </a></td><td>Fieber und/oder Schüttelfrost (inkl. sich fiebrig fühlen)</td></tr><tr><td style=\"white-space:nowrap\">10002<a name=\"napkon-vaccination-module-10002\"> </a></td><td>Abgeschlagenheit und/oder vermehrte Müdigkeit</td></tr><tr><td style=\"white-space:nowrap\">10003<a name=\"napkon-vaccination-module-10003\"> </a></td><td>Neu aufgetretene oder Verstärkung vorbestehender Muskelschmerzen</td></tr><tr><td style=\"white-space:nowrap\">10004<a name=\"napkon-vaccination-module-10004\"> </a></td><td>Neu aufgetretene oder Verstärkung vorbestehender Gelenkschmerzen</td></tr><tr><td style=\"white-space:nowrap\">10005<a name=\"napkon-vaccination-module-10005\"> </a></td><td>Schwierigkeiten beim Atmen und/oder Luftnot</td></tr><tr><td style=\"white-space:nowrap\">10006<a name=\"napkon-vaccination-module-10006\"> </a></td><td>Übelkeit und/oder Erbrechen</td></tr><tr><td style=\"white-space:nowrap\">10007<a name=\"napkon-vaccination-module-10007\"> </a></td><td>Durchfall und/oder dünnerer Stuhl</td></tr><tr><td style=\"white-space:nowrap\">10008<a name=\"napkon-vaccination-module-10008\"> </a></td><td>Abgeschlagenheit und/oder vermehrte Müdigkeit</td></tr><tr><td style=\"white-space:nowrap\">11001<a name=\"napkon-vaccination-module-11001\"> </a></td><td>Ein wenig (keine Einschränkung täglicher Aktivitäten)</td></tr><tr><td style=\"white-space:nowrap\">11002<a name=\"napkon-vaccination-module-11002\"> </a></td><td>Mäßig bis stark (Einschränkung täglicher Aktivitäten)</td></tr><tr><td style=\"white-space:nowrap\">11003<a name=\"napkon-vaccination-module-11003\"> </a></td><td>Sehr stark (tägliche Aktivitäten sind nicht mehr möglich)</td></tr><tr><td style=\"white-space:nowrap\">11004<a name=\"napkon-vaccination-module-11004\"> </a></td><td>Potenziell lebensbedrohlich (Behandlung in Rettungsstelle oder Hospitalisierung)</td></tr></table></div>"
+  },
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module",
+  "version": "0.1.0",
+  "name": "NapkonVaccinationModule",
+  "title": "NapkonVaccinationModule",
+  "status": "active",
+  "date": "2021-10-19T22:00:24+00:00",
+  "publisher": "BIH @ Charité",
+  "contact": [
+    {
+      "name": "BIH @ Charité",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.netzwerk-universitaetsmedizin.de"
+        }
+      ]
+    }
+  ],
+  "description": "NAPKON Vaccination Module Code System - Collection of vaccination module-specific codes that are missing from common terminologies such as SNOMED CT",
+  "content": "complete",
+  "count": 57,
+  "concept": [
+    {
+      "code": "q1001",
+      "display": "Willingness for additional SARS-CoV-2 vaccination if recommended"
+    },
+    {
+      "code": "q1004",
+      "display": "Medical treatment for actual or potential adverse events"
+    },
+    {
+      "code": "q1005",
+      "display": "General complaints after vaccination"
+    },
+    {
+      "code": "q1006",
+      "display": "Course of SARS-CoV-2 Infection"
+    },
+    {
+      "code": "q1007",
+      "display": "Injection site pain at rest"
+    },
+    {
+      "code": "q1008",
+      "display": "Injection site pain with pressure or movement"
+    },
+    {
+      "code": "0001",
+      "display": "Comirnaty (BioNTech/Pfizer)"
+    },
+    {
+      "code": "0002",
+      "display": "COVID-19 Vaccine Moderna (Moderna Biotech)"
+    },
+    {
+      "code": "0003",
+      "display": "Vaxzevria (AstraZeneca AB)"
+    },
+    {
+      "code": "0004",
+      "display": "COVID-19 Vaccine Janssen (Janssen-Cilag/Johnson & Johnson)"
+    },
+    {
+      "code": "1001",
+      "display": "Nicht erkrankt (keine Symptome)"
+    },
+    {
+      "code": "1002",
+      "display": "Erkrankt und zu Hause"
+    },
+    {
+      "code": "1003",
+      "display": "Erkrankt und im Krankenhaus ohne Sauerstofftherapie"
+    },
+    {
+      "code": "1004",
+      "display": "Erkrankt und im Krankenhaus mit Sauerstofftherapie"
+    },
+    {
+      "code": "1005",
+      "display": "Erkrankt und im Krankenhaus auf einer Intensivstation"
+    },
+    {
+      "code": "2001",
+      "display": "Um mich vor einer Infektion mit SARS-CoV-2 bzw. vor COVID-19 zu schützen"
+    },
+    {
+      "code": "2002",
+      "display": "Um mein privates Umfeld vor einer Infektion mit SARS-CoV-2 bzw. COVID-19 zu schützen"
+    },
+    {
+      "code": "2003",
+      "display": "Um mein Arbetsfeld vor einer Infektion mit SARS-CoV-2 bzw. COVID-19 zu schützen"
+    },
+    {
+      "code": "2004",
+      "display": "Weil alle sich impfen lassen"
+    },
+    {
+      "code": "2005",
+      "display": "Weil ich befürchte aufgrund meines Impfstatus' benachteiligt zu werden (z.B. Reiseverbot, Arbeitsverbot)"
+    },
+    {
+      "code": "3001",
+      "display": "Leichte Schmerzen, diese stören nicht bei täglichen Aktivitäten"
+    },
+    {
+      "code": "3002",
+      "display": "Mäßige Schmerzen, diese stören bei täglichen Aktivitäten"
+    },
+    {
+      "code": "3003",
+      "display": "Sehr starke Schmerzen, die dazu führen, dass täglichen Aktivitäten nicht mehr durchgeführt werden können"
+    },
+    {
+      "code": "4001",
+      "display": "Kleiner als 2,5 Zentimeter"
+    },
+    {
+      "code": "4002",
+      "display": "Zwischen 2,5 und 5 Zentimeter"
+    },
+    {
+      "code": "4003",
+      "display": "Zwischen 5,1 und 10 Zentimeter"
+    },
+    {
+      "code": "4004",
+      "display": "Größer als 10 Zentimeter"
+    },
+    {
+      "code": "6001",
+      "display": "Ja, Behandlung in Arztpraxis oder Rettungsstelle"
+    },
+    {
+      "code": "6002",
+      "display": "Ja, Behandlung mit Aufnahme im Krankenhaus"
+    },
+    {
+      "code": "7001",
+      "display": "Weniger als 37,5 °C"
+    },
+    {
+      "code": "7002",
+      "display": "37,5 °C bis 37,9 °C"
+    },
+    {
+      "code": "7003",
+      "display": "38,0 °C bis 38,4 °C"
+    },
+    {
+      "code": "7004",
+      "display": "38,5 °C bis 38,9 °C"
+    },
+    {
+      "code": "7005",
+      "display": "39,0 °C bis 40,0 °C"
+    },
+    {
+      "code": "7006",
+      "display": "Mehr als 40 °C"
+    },
+    {
+      "code": "8001",
+      "display": "Einmal im Monat oder seltener"
+    },
+    {
+      "code": "8002",
+      "display": "2-4 Mal im Monat"
+    },
+    {
+      "code": "8003",
+      "display": "2-3 Mal pro Woche"
+    },
+    {
+      "code": "8004",
+      "display": "4 Mal oder öfter die Woche"
+    },
+    {
+      "code": "8005",
+      "display": "Nicht mehr (früher gelegentlich)"
+    },
+    {
+      "code": "9001",
+      "display": "0,5 bis 1 alkoholische Getränke pro Tag"
+    },
+    {
+      "code": "9002",
+      "display": "1,5 bis 2 alkoholische Getränke pro Tag"
+    },
+    {
+      "code": "9003",
+      "display": "2,5 bis 3 alkoholische Getränke pro Tag"
+    },
+    {
+      "code": "9004",
+      "display": "3,5 bis 4,5 alkoholische Getränke pro Tag"
+    },
+    {
+      "code": "9005",
+      "display": "5 oder mehr alkoholische Getränke pro Tag"
+    },
+    {
+      "code": "10001",
+      "display": "Fieber und/oder Schüttelfrost (inkl. sich fiebrig fühlen)"
+    },
+    {
+      "code": "10002",
+      "display": "Abgeschlagenheit und/oder vermehrte Müdigkeit"
+    },
+    {
+      "code": "10003",
+      "display": "Neu aufgetretene oder Verstärkung vorbestehender Muskelschmerzen"
+    },
+    {
+      "code": "10004",
+      "display": "Neu aufgetretene oder Verstärkung vorbestehender Gelenkschmerzen"
+    },
+    {
+      "code": "10005",
+      "display": "Schwierigkeiten beim Atmen und/oder Luftnot"
+    },
+    {
+      "code": "10006",
+      "display": "Übelkeit und/oder Erbrechen"
+    },
+    {
+      "code": "10007",
+      "display": "Durchfall und/oder dünnerer Stuhl"
+    },
+    {
+      "code": "10008",
+      "display": "Abgeschlagenheit und/oder vermehrte Müdigkeit"
+    },
+    {
+      "code": "11001",
+      "display": "Ein wenig (keine Einschränkung täglicher Aktivitäten)"
+    },
+    {
+      "code": "11002",
+      "display": "Mäßig bis stark (Einschränkung täglicher Aktivitäten)"
+    },
+    {
+      "code": "11003",
+      "display": "Sehr stark (tägliche Aktivitäten sind nicht mehr möglich)"
+    },
+    {
+      "code": "11004",
+      "display": "Potenziell lebensbedrohlich (Behandlung in Rettungsstelle oder Hospitalisierung)"
+    }
+  ]
+}
