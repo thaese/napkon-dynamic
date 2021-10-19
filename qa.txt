@@ -1,12 +1,12 @@
 ﻿NAPKONBIH : Validation Results
 =========================================
 
-err = 8, warn = 23, info = 4
+err = 8, warn = 22, info = 1
 IG Publisher Version: 1.1.82
-Generated Tue Oct 19 21:11:29 UTC 2021. FHIR version 4.0.1 for napkon-bih#0.1.0 (canonical = https://www.netzwerk-universitaetsmedizin.de/fhir)
- Build Errors : 260 / 8 / 1
+Generated Tue Oct 19 21:36:38 UTC 2021. FHIR version 4.0.1 for napkon-bih#0.1.0 (canonical = https://www.netzwerk-universitaetsmedizin.de/fhir)
+ Build Errors : 254 / 8 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-napkon-vaccination-module : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Condition-GeneralComplaintsAfterVaccination : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Condition-GeneralComplaintsAfterVaccination : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/Immunization-CovidVaccinationDone : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Immunization-CovidVaccinationNotDone : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Immunization-CovidVaccinationNotDoneReasonOther : 0 / 1 / 1
@@ -24,7 +24,7 @@ Generated Tue Oct 19 21:11:29 UTC 2021. FHIR version 4.0.1 for napkon-bih#0.1.0 
  /github/workspace/fsh-generated/resources/Observation-RegularAlcoholIntakeQuantity : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-SARSCoV2Infection : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-SARSCoV2InfectionCourseInstance : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Observation-SARSCoV2Variant : 1 / 1 / 2
+ /github/workspace/fsh-generated/resources/Observation-SARSCoV2Variant : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-VaccinationInjectionSiteErythema : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Observation-VaccinationInjectionSitePainMovement : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-VaccinationInjectionSitePainRest : 0 / 0 / 1
@@ -47,7 +47,7 @@ Generated Tue Oct 19 21:11:29 UTC 2021. FHIR version 4.0.1 for napkon-bih#0.1.0 
  /github/workspace/fsh-generated/resources/StructureDefinition-regular-alcohol-intake-quantity : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-sars-cov2-infection-course-vaccination : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-sars-cov2-infection-vaccination : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-sars-cov2-variant : 0 / 2 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-sars-cov2-variant : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-vaccination-injection-site-erythema : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-vaccination-injection-site-pain-movement : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-vaccination-injection-site-pain-rest : 0 / 0 / 1
@@ -82,13 +82,13 @@ WARNING: ImplementationGuide.dependency[4].url: The canonical URL for an Impleme
 WARNING: ImplementationGuide.dependency[5].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
 WARNING: ImplementationGuide.dependency[6].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/ExamplePatient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: ?pkp-1?: The reference https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence could not be resolved
 ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/CodingICD10GM could not be resolved
 ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/CodingAlphaID could not be resolved
 ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/icd-10-gm-mehrfachcodierungs-kennzeichen could not be resolved
 ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/seitenlokalisation could not be resolved
 ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit could not be resolved
 ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/lebensphase could not be resolved
-ERROR: ?pkp-1?: The reference https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum could not be resolved
 ERROR: /github/workspace/output/StructureDefinition-covid-vaccination-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 411, column 115: The link '' for "VaccinesSNOMED" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-covid-vaccination-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 498, column 115: The link '' for "VaccinesATC" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-covid-vaccination-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 585, column 115: The link '' for "PZN" cannot be resolved
@@ -106,44 +106,38 @@ ERROR: /github/workspace/output/StructureDefinition-covid-vaccination.html#/html
 ERROR: /github/workspace/output/StructureDefinition-covid-vaccination.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1136, column 197: The link '#CodeSystemATC2021-null' for "null" cannot be resolved (valid targets: 312 targets)
 ERROR: /github/workspace/output/StructureDefinition-covid-vaccination.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1137, column 167: The link '#pzn-null' for "null" cannot be resolved (valid targets: 312 targets)
 ERROR: /github/workspace/output/StructureDefinition-covid-vaccination.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1138, column 191: The link 'file://C:\GitHub\hl7.fhir.uv.ips#1.0.0\output/CodeSystem-absent-unknown-uv-ips.html#absent-unknown-uv-ips-null' for "null" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 652, column 115: The link '' for "ICD10GM" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 653, column 144: The link '' for "CodingICD10GM" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 683, column 154: The link '' for "ExtensionMehrfachcodierungKennzeichen" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 695, column 154: The link '' for "ExtensionSeitenlokalisation" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 707, column 154: The link '' for "ExtensionICD10GMDiagnosesicherheit" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 780, column 115: The link '' for "Alpha-id" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 781, column 144: The link '' for "CodingAlphaID" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 869, column 115: The link '' for "ValueSetSNOMEDDiagnoseCodes" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1204, column 151: The link '' for "MII-Reference" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1218, column 151: The link '' for "MII-Reference" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1296, column 154: The link '' for "ExtensionLebensphase" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1340, column 154: The link '' for "ExtensionLebensphase" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 306, column 44: The link '' for "ProfileConditionDiagnose" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 343, column 44: The link '' for "ProfileConditionDiagnose" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 426, column 1825: The link 'unknown.html' for "?pkp-2?" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 445, column 1825: The link 'unknown.html' for "?pkp-2?" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 765, column 1687: The link 'unknown.html' for "?pkp-2?" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 774, column 1687: The link 'unknown.html' for "?pkp-2?" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 811, column 44: The link '' for "ProfileConditionDiagnose" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 847, column 44: The link '' for "ProfileConditionDiagnose" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 930, column 1825: The link 'unknown.html' for "?pkp-2?" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 949, column 1825: The link 'unknown.html' for "?pkp-2?" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1272, column 162: The link '#CodeSystemICD10GM2021-null' for "null" cannot be resolved (valid targets: 359 targets)
-ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1273, column 162: The link '#alpha-id-null' for "null" cannot be resolved (valid targets: 359 targets)
-ERROR: /github/workspace/output/StructureDefinition-sars-cov2-variant-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 711, column 151: The link '' for "MII-Reference" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-sars-cov2-variant-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1003, column 116: The link 'file://C:\GitHub\hl7.fhir.uv.ips#1.0.0\output/ValueSet-results-laboratory-observations-uv-ips.html' for "Results Laboratory Observation - IPS" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-sars-cov2-variant-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1020, column 151: The link '' for "MII-Reference" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-sars-cov2-variant-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1087, column 154: The link '' for "QuelleKlinischesBezugsdatum" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-sars-cov2-variant-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1135, column 154: The link '' for "QuelleKlinischesBezugsdatum" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-sars-cov2-variant.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 306, column 44: The link '' for "ProfileObservationLaboruntersuchung" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-sars-cov2-variant.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 328, column 44: The link '' for "ProfileObservationLaboruntersuchung" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-sars-cov2-variant.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 347, column 715: The link 'StructureDefinition-sars-cov2-variant-definitions.html#Observation.effectiveDateTime.extension:dataAbsentReason' for "data-absent-reason" cannot be resolved (valid targets: 219 targets)
-ERROR: /github/workspace/output/StructureDefinition-sars-cov2-variant.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 459, column 1928: The link 'file://C:\GitHub\hl7.fhir.uv.ips#1.0.0\output/ValueSet-results-laboratory-observations-uv-ips.html' for "Results Laboratory Observation - IPS" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-sars-cov2-variant.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 820, column 1776: The link 'file://C:\GitHub\hl7.fhir.uv.ips#1.0.0\output/ValueSet-results-laboratory-observations-uv-ips.html' for "Results Laboratory Observation - IPS" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-sars-cov2-variant.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 860, column 44: The link '' for "ProfileObservationLaboruntersuchung" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-sars-cov2-variant.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 881, column 44: The link '' for "ProfileObservationLaboruntersuchung" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-sars-cov2-variant.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 900, column 715: The link 'StructureDefinition-sars-cov2-variant-definitions.html#Observation.effectiveDateTime.extension:dataAbsentReason' for "data-absent-reason" cannot be resolved (valid targets: 219 targets)
-ERROR: /github/workspace/output/StructureDefinition-sars-cov2-variant.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1012, column 1928: The link 'file://C:\GitHub\hl7.fhir.uv.ips#1.0.0\output/ValueSet-results-laboratory-observations-uv-ips.html' for "Results Laboratory Observation - IPS" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 479, column 154: The link '' for "UncertaintyOfPresence" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 646, column 115: The link '' for "ConditionVerificationStatusSNOMED" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 876, column 115: The link '' for "ICD10GM" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 877, column 144: The link '' for "CodingICD10GM" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 907, column 154: The link '' for "ExtensionMehrfachcodierungKennzeichen" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 919, column 154: The link '' for "ExtensionSeitenlokalisation" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 931, column 154: The link '' for "ExtensionICD10GMDiagnosesicherheit" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1004, column 115: The link '' for "Alpha-id" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1005, column 144: The link '' for "CodingAlphaID" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1093, column 115: The link '' for "ValueSetSNOMEDDiagnoseCodes" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1428, column 151: The link '' for "MII-Reference" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1442, column 151: The link '' for "MII-Reference" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1520, column 154: The link '' for "ExtensionLebensphase" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1564, column 154: The link '' for "ExtensionLebensphase" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 306, column 44: The link '' for "GeccoBaseCondition" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 343, column 44: The link '' for "GeccoBaseCondition" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 397, column 1683: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 461, column 1813: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 480, column 1813: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 820, column 1557: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 826, column 1687: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 835, column 1687: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 872, column 44: The link '' for "GeccoBaseCondition" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 908, column 44: The link '' for "GeccoBaseCondition" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 962, column 1683: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1026, column 1813: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1045, column 1813: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1393, column 162: The link '#CodeSystemICD10GM2021-null' for "null" cannot be resolved (valid targets: 407 targets)
+ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1394, column 162: The link '#alpha-id-null' for "null" cannot be resolved (valid targets: 407 targets)
+ERROR: /github/workspace/output/StructureDefinition-sars-cov2-variant-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 485, column 151: The link '' for "MII-Reference" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-sars-cov2-variant.html#/html/body/div/div/div/div/div/div/div/div/div/ul/li/a at Line 317, column 7: The link '' for "MII-Reference (https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference)" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-sars-cov2-variant.html#/html/body/div/div/div/div/div/div/div/div/div/ul/li/a at Line 658, column 7: The link '' for "MII-Reference (https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference)" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-analgesics-antipyretics.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 238, column 142: The link '?ngen-14?.html#CodeSystemATC2021-N02' for "N02" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-analgesics-antipyretics.html#/html/body/div/div/div/div/div/div/p/a at Line 244, column 310: The link '?ngen-14?.html' for "http://fhir.de/CodeSystem/bfarm/atc" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-analgesics-antipyretics.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 244, column 636: The link '?ngen-14?.html#CodeSystemATC2021-N02' for "N02" cannot be resolved
@@ -344,6 +338,7 @@ ERROR: /github/workspace/output/ValueSet-vaccination-injection-site-erythema-siz
 ERROR: /github/workspace/output/ValueSet-vaccination-injection-site-erythema-size.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 244, column 2054: The link 'CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-4005' for "4005" cannot be resolved (valid targets: 73 targets)
 == fsh-generated/resources/CodeSystem-napkon-vaccination-module.json ==
 == fsh-generated/resources/Condition-GeneralComplaintsAfterVaccination.json ==
+ERROR: Condition/GeneralComplaintsAfterVaccination: Condition: unk-1: 'If verificationStatus is present, uncertaintyOfPresence-Extension SHALL NOT be present.' Rule 'If verificationStatus is present, uncertaintyOfPresence-Extension SHALL NOT be present.' Failed
 == fsh-generated/resources/Immunization-CovidVaccinationDone.json ==
 WARNING: Immunization/CovidVaccinationDone: Immunization.protocolApplied[0].targetDisease[0]: ValueSet https://fhir.kbv.de/ValueSet/KBV_VS_MIO_Vaccination_TargetDisease not found by validator
 == fsh-generated/resources/Immunization-CovidVaccinationNotDone.json ==
@@ -367,9 +362,6 @@ WARNING: Observation/AllergicReactionToVaccinationInstanceOther: Observation.cod
 == fsh-generated/resources/Observation-SARSCoV2Infection.json ==
 == fsh-generated/resources/Observation-SARSCoV2InfectionCourseInstance.json ==
 == fsh-generated/resources/Observation-SARSCoV2Variant.json ==
-ERROR: Observation/SARSCoV2Variant: Observation.identifier[0].type: Observation.identifier:analyseBefundCode.type.coding:observationInstanceV2: max allowed = 1, but found 2 (from https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov2-variant)
-WARNING: Observation/SARSCoV2Variant: Observation.effective.ofType(dateTime): The value '0001-01-01T00:00:00+00:00' is outside the range of reasonable years - check for data entry error
-INFORMATION: Observation/SARSCoV2Variant: Observation.effective.ofType(dateTime).extension[0]: This element does not match any known slice defined in the profile https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov2-variant
 == fsh-generated/resources/Observation-VaccinationInjectionSiteErythema.json ==
 WARNING: Observation/VaccinationInjectionSiteErythema: Observation.code.coding[0]: The display "Erythema at injection site (disorder)" is not a valid display for the code {http://snomed.info/sct}213338000 - should be one of ['Erythema at injection site', 'Injection site erythema (disorder)', 'Injection site erythema'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#213338000'
 == fsh-generated/resources/Observation-VaccinationInjectionSitePainMovement.json ==
@@ -397,10 +389,8 @@ WARNING: StructureDefinition/covid-vaccination: StructureDefinition.snapshot.ele
 == fsh-generated/resources/StructureDefinition-sars-cov2-infection-course-vaccination.json ==
 == fsh-generated/resources/StructureDefinition-sars-cov2-infection-vaccination.json ==
 == fsh-generated/resources/StructureDefinition-sars-cov2-variant.json ==
-INFORMATION: StructureDefinition/sars-cov2-variant: StructureDefinition.snapshot.element[45].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-INFORMATION: StructureDefinition/sars-cov2-variant: StructureDefinition.snapshot.element[59].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-WARNING: StructureDefinition/sars-cov2-variant: StructureDefinition.differential.element[11].binding: The valueSet reference http://loinc.org/vs/LL5768-8 on element Observation.valueCodeableConcept could not be resolved
-WARNING: StructureDefinition/sars-cov2-variant: StructureDefinition.snapshot.element[90].binding: The valueSet reference http://loinc.org/vs/LL5768-8 on element Observation.value[x] could not be resolved
+WARNING: StructureDefinition/sars-cov2-variant: StructureDefinition.differential.element[9].binding: The valueSet reference http://loinc.org/vs/LL5768-8 on element Observation.valueCodeableConcept could not be resolved
+WARNING: StructureDefinition/sars-cov2-variant: StructureDefinition.snapshot.element[28].binding: The valueSet reference http://loinc.org/vs/LL5768-8 on element Observation.value[x] could not be resolved
 == fsh-generated/resources/StructureDefinition-vaccination-injection-site-erythema.json ==
 WARNING: StructureDefinition/vaccination-injection-site-erythema: StructureDefinition.snapshot.element[18].pattern.ofType(Coding): The display "Erythema at injection site (disorder)" is not a valid display for the code {http://snomed.info/sct}213338000 - should be one of ['Erythema at injection site', 'Injection site erythema (disorder)', 'Injection site erythema'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#213338000'
 WARNING: StructureDefinition/vaccination-injection-site-erythema: StructureDefinition.differential.element[2].pattern.ofType(Coding): The display "Erythema at injection site (disorder)" is not a valid display for the code {http://snomed.info/sct}213338000 - should be one of ['Erythema at injection site', 'Injection site erythema (disorder)', 'Injection site erythema'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#213338000'
