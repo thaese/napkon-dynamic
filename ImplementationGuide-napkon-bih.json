@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "NAPKONBIH",
   "status": "draft",
-  "date": "2021-10-19T15:41:32+00:00",
+  "date": "2021-10-19T21:05:56+00:00",
   "publisher": "BIH @ Charité",
   "contact": [
     {
@@ -400,38 +400,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/covid19-complication"
-        },
-        "name": "Covid19 complication",
-        "description": "Complication due to COVID19",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
           "reference": "StructureDefinition/covid-vaccination"
         },
         "name": "Covid Vaccination",
         "description": "COVID-19 vaccination event",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/fungal-infection"
-        },
-        "name": "Fungal Infection",
-        "description": "Occurrence of a fungal infection",
         "exampleBoolean": false
       },
       {
@@ -470,34 +442,6 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/immunosuppresive-permanent-medication"
-        },
-        "name": "Immunosuppresive Permanent Medication",
-        "description": "Immunosuppresive Permanent Medication",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/intensive-care-treatment-duration"
-        },
-        "name": "Intensive care treatment duration",
-        "description": "Duration of intensive care treatment",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
           "reference": "StructureDefinition/medical-treatment-for-vaccination-adverse-reaction"
         },
         "name": "Medical Treatment For Vaccination Adverse Reaction",
@@ -516,19 +460,6 @@
         },
         "name": "Medical Treatment Reason",
         "description": "Reason for a medical treatment for a potential or actual adverse reaction to a vaccination event (free text only)",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/preadmission-medications"
-        },
-        "name": "Preadmission Medications",
         "exampleBoolean": false
       },
       {
@@ -599,34 +530,6 @@
         },
         "name": "SARS CoV2 Variant",
         "description": "Variant/strain of detected SARS CoV2 (Pango Cov-lineage)",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/thoracic-drainage"
-        },
-        "name": "Thoracic Drainge",
-        "description": "Application of a thoraric drainage",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/total-length-of-stay"
-        },
-        "name": "Total length of stay",
-        "description": "Total length of stay",
         "exampleBoolean": false
       },
       {
@@ -735,20 +638,6 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/covid19-complications"
-        },
-        "name": "Covid19 complications",
-        "description": "Complications due to COVID19",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
           "reference": "ValueSet/covid-vaccination-codes"
         },
         "name": "CovidVaccinationCodes",
@@ -805,20 +694,6 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/fungal-infections"
-        },
-        "name": "Fungal Infections",
-        "description": "Value set of fungal infections",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
           "reference": "ValueSet/general-complaints-after-vaccination"
         },
         "name": "General Complaints After Vaccination",
@@ -837,34 +712,6 @@
         },
         "name": "Immunosuppressive Immunomodulatory Therapy",
         "description": "Immunosuppressive and immunomodulatory procedures / therapies codes",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/immunosuppressive-permament-medications"
-        },
-        "name": "Immunosuppressive Permanent Medications",
-        "description": "Immunosuppressive medications",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/immunosuppressive-permament-medications-atc"
-        },
-        "name": "Immunosuppressive Permanent Medications ATC",
-        "description": "Immunosuppressive Medications ATC codes",
         "exampleBoolean": false
       },
       {
@@ -1015,20 +862,6 @@
           }
         ],
         "reference": {
-          "reference": "CodeSystem/napkon-pediatrics-module"
-        },
-        "name": "NapkonPediatricsModule",
-        "description": "NAPKON Pediatrics Module Code System - Collection of pediatrics module-specific codes that are missing from common terminologies such as SNOMED CT",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
           "reference": "CodeSystem/napkon-vaccination-module"
         },
         "name": "NapkonVaccinationModule",
@@ -1123,20 +956,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Condition"
-          }
-        ],
-        "reference": {
-          "reference": "Condition/Covid19Complication"
-        },
-        "name": "Covid19 Complication",
-        "description": "Example of a covid19 complication",
-        "exampleCanonical": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/covid19-complication"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Immunization"
           }
         ],
@@ -1196,20 +1015,6 @@
           }
         ],
         "reference": {
-          "reference": "Condition/FungalInfection"
-        },
-        "name": "fungal-infection-instance",
-        "description": "Example of a fungal infection",
-        "exampleCanonical": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/fungal-infection"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Condition"
-          }
-        ],
-        "reference": {
           "reference": "Condition/GeneralComplaintsAfterVaccination"
         },
         "name": "General Complaints After Vaccination",
@@ -1243,34 +1048,6 @@
         "name": "Immunomodulatory Therapy",
         "description": "Example of a patient not receiving an immunosuppresive therapy",
         "exampleCanonical": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunomodulatory-therapy"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationStatement"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationStatement/ImmunosuppresivePermanentMedication"
-        },
-        "name": "Immunosuppresive Permanent Medication",
-        "description": "Example of a Immunosuppresive Permanent Medication",
-        "exampleCanonical": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunosuppresive-permanent-medication"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/IntensiveCareTreatmentDuration"
-        },
-        "name": "Intensive Care Treatment Duration",
-        "description": "Example of an intensive care treatment duration",
-        "exampleCanonical": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/intensive-care-treatment-duration"
       },
       {
         "extension": [
@@ -1402,34 +1179,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Procedure"
-          }
-        ],
-        "reference": {
-          "reference": "Procedure/ThoracicDrainage"
-        },
-        "name": "Thoracic Drainage",
-        "description": "Example of a thoracic drainage",
-        "exampleCanonical": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/thoracic-drainage"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/TotalLengthOfStay"
-        },
-        "name": "Total Length of Stay",
-        "description": "Example of an total length of stay",
-        "exampleCanonical": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/total-length-of-stay"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Observation"
           }
         ],
@@ -1481,19 +1230,6 @@
         "name": "Vaccination Injection Site Swelling Instance",
         "description": "Example of a 5.1-10 cm swelling at a vaccine injection site",
         "exampleCanonical": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vaccination-injection-site-swelling"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "List"
-          }
-        ],
-        "reference": {
-          "reference": "List/preadmission-medications"
-        },
-        "name": "preadmission-medications",
-        "exampleCanonical": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/preadmission-medications"
       }
     ],
     "page": {

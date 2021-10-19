@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "4288058c-3d87-44d3-afd3-e469d7a08653",
+  "id" : "8c648191-4982-4221-b75e-d91a9935be67",
   "meta" : {
-    "lastUpdated" : "2021-10-19T15:41:32.343+00:00"
+    "lastUpdated" : "2021-10-19T21:05:56.048+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "AnalgesicsAntipyretics",
       "title" : "Analgesics Antipyretics",
       "status" : "active",
-      "date" : "2021-10-19T15:41:32+00:00",
+      "date" : "2021-10-19T21:05:56+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -30,8 +30,8 @@
       }],
       "description" : "Analgetic and antipyretic drugs",
       "expansion" : {
-        "identifier" : "urn:uuid:04ac52c7-1b16-4dd5-8648-57dbcd6f5e25",
-        "timestamp" : "2021-10-19T15:42:58+00:00",
+        "identifier" : "urn:uuid:48b96106-2667-46dc-832e-f5950a548b84",
+        "timestamp" : "2021-10-19T21:07:05+00:00",
         "total" : 194,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1028,7 +1028,7 @@
       "name" : "BodyTemperature",
       "title" : "Body Temperature",
       "status" : "active",
-      "date" : "2021-10-19T15:41:32+00:00",
+      "date" : "2021-10-19T21:05:56+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -1039,8 +1039,8 @@
       }],
       "description" : "Body temperature categories",
       "expansion" : {
-        "identifier" : "urn:uuid:8c0730c5-8803-4160-ae39-143549ebb1b9",
-        "timestamp" : "2021-10-19T15:42:58+00:00",
+        "identifier" : "urn:uuid:95db0174-19db-4d6c-bc7b-7c25214a7916",
+        "timestamp" : "2021-10-19T21:07:05+00:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1110,7 +1110,7 @@
       "name" : "ComplaintIntensity",
       "title" : "Complaint Intensity",
       "status" : "active",
-      "date" : "2021-10-19T15:41:32+00:00",
+      "date" : "2021-10-19T21:05:56+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -1121,8 +1121,8 @@
       }],
       "description" : "Intensity of general complaints",
       "expansion" : {
-        "identifier" : "urn:uuid:afe4bc6a-35c7-4828-b26e-0aecd94271a1",
-        "timestamp" : "2021-10-19T15:42:58+00:00",
+        "identifier" : "urn:uuid:5fd33526-3341-48b7-ac70-4199ee86ae98",
+        "timestamp" : "2021-10-19T21:07:05+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1156,114 +1156,6 @@
     }
   },
   {
-    "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/covid19-complications",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "covid19-complications",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 13 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-52702003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=52702003\">52702003</a></td><td>Iceland disease</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-32398004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=32398004\">32398004</a></td><td>Bronchitis</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-233981004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=233981004\">233981004</a></td><td>Arterial aneurysm</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-304252001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=304252001\">304252001</a></td><td>For resuscitation</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-235859005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=235859005\">235859005</a></td><td>Liver disorder due to infection</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-230431001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=230431001\">230431001</a></td><td>Situation-related seizures</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-271594007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=271594007\">271594007</a></td><td>Syncope attack</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-271737000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=271737000\">271737000</a></td><td>Anemia</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-1119303003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1119303003\">1119303003</a></td><td>Post-acute COVID-19</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-64226004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=64226004\">64226004</a></td><td>Colitis</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-52457000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=52457000\">52457000</a></td><td>Ileitis</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-48661000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=48661000\">48661000</a></td><td>Peritonitis</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-389026000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=389026000\">389026000</a></td><td>Ascites (disorder)</td><td/></tr></table></div>"
-      },
-      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/covid19-complications",
-      "version" : "0.1.0",
-      "name" : "Covid19Complications",
-      "title" : "Covid19 complications",
-      "status" : "draft",
-      "date" : "2020-10-05",
-      "publisher" : "BIH @ Charité",
-      "contact" : [{
-        "name" : "BIH @ Charité",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://www.netzwerk-universitaetsmedizin.de"
-        }]
-      }],
-      "description" : "Complications due to COVID19",
-      "expansion" : {
-        "identifier" : "urn:uuid:d4899d37-8289-436f-bca9-de4f49a81674",
-        "timestamp" : "2021-10-19T15:42:58+00:00",
-        "total" : 13,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "limitedExpansion",
-          "valueBoolean" : true
-        },
-        {
-          "name" : "version",
-          "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
-        }],
-        "contains" : [{
-          "system" : "http://snomed.info/sct",
-          "code" : "52702003",
-          "display" : "Iceland disease"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "32398004",
-          "display" : "Bronchitis"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "233981004",
-          "display" : "Arterial aneurysm"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "304252001",
-          "display" : "For resuscitation"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "235859005",
-          "display" : "Liver disorder due to infection"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "230431001",
-          "display" : "Situation-related seizures"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "271594007",
-          "display" : "Syncope attack"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "271737000",
-          "display" : "Anemia"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "1119303003",
-          "display" : "Post-acute COVID-19"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "64226004",
-          "display" : "Colitis"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "52457000",
-          "display" : "Ileitis"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "48661000",
-          "display" : "Peritonitis"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "389026000",
-          "display" : "Ascites (disorder)"
-        }]
-      }
-    }
-  },
-  {
     "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/covid-vaccination-codes",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -1277,7 +1169,7 @@
       "name" : "CovidVaccinationCodes",
       "title" : "CovidVaccinationCodes",
       "status" : "active",
-      "date" : "2021-10-19T15:41:32+00:00",
+      "date" : "2021-10-19T21:05:56+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -1288,8 +1180,8 @@
       }],
       "description" : "COVID-19 vaccines",
       "expansion" : {
-        "identifier" : "urn:uuid:758ad302-02cc-4889-be64-9db4e3f589bb",
-        "timestamp" : "2021-10-19T15:42:59+00:00",
+        "identifier" : "urn:uuid:fac3f056-d2cc-4ee6-adc5-e545092a241f",
+        "timestamp" : "2021-10-19T21:07:05+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1336,7 +1228,7 @@
       "name" : "CovidVaccinationContraindications",
       "title" : "covid-vaccination-contraindications",
       "status" : "active",
-      "date" : "2021-10-19T15:41:32+00:00",
+      "date" : "2021-10-19T21:05:56+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -1347,8 +1239,8 @@
       }],
       "description" : "Contraindications precluding COVID-19 vaccination",
       "expansion" : {
-        "identifier" : "urn:uuid:c9940449-36f3-4405-b6bd-287e2c926d9b",
-        "timestamp" : "2021-10-19T15:42:59+00:00",
+        "identifier" : "urn:uuid:cc294000-5451-448f-a644-2079aad2c415",
+        "timestamp" : "2021-10-19T21:07:05+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1394,7 +1286,7 @@
       "name" : "CovidVaccinationReasons",
       "title" : "Covid Vaccination Reasons",
       "status" : "active",
-      "date" : "2021-10-19T15:41:32+00:00",
+      "date" : "2021-10-19T21:05:56+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -1405,8 +1297,8 @@
       }],
       "description" : "Individual reason for getting vaccinated against COVID-19",
       "expansion" : {
-        "identifier" : "urn:uuid:c338099e-3d3e-444c-ad88-8b39a85d205c",
-        "timestamp" : "2021-10-19T15:42:59+00:00",
+        "identifier" : "urn:uuid:c179fe6b-bdb7-4378-85bc-a18bd940070b",
+        "timestamp" : "2021-10-19T21:07:06+00:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1480,7 +1372,7 @@
       "name" : "DetectedNotDetectedUnknownUndetermined",
       "title" : "Detected Not Detected Unknown Undetermined",
       "status" : "active",
-      "date" : "2021-10-19T15:41:32+00:00",
+      "date" : "2021-10-19T21:05:56+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -1491,8 +1383,8 @@
       }],
       "description" : "Values for laboratory observations",
       "expansion" : {
-        "identifier" : "urn:uuid:6a9d4d91-f40e-4f94-aea9-190f9ff077df",
-        "timestamp" : "2021-10-19T15:42:59+00:00",
+        "identifier" : "urn:uuid:1392bea9-21f4-4d6a-8b25-c8830c2e9556",
+        "timestamp" : "2021-10-19T21:07:06+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1530,64 +1422,6 @@
     }
   },
   {
-    "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/fungal-infections",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "fungal-infections",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-83062006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=83062006\">83062006</a></td><td>Infection by Candida albicans</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-65553006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=65553006\">65553006</a></td><td>Aspergillosis</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-74964007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=74964007\">74964007</a></td><td>Other</td><td/></tr></table></div>"
-      },
-      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/fungal-infections",
-      "version" : "0.1.0",
-      "name" : "FungalInfections",
-      "title" : "Fungal Infections",
-      "status" : "draft",
-      "date" : "2020-10-05",
-      "publisher" : "BIH @ Charité",
-      "contact" : [{
-        "name" : "BIH @ Charité",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://www.netzwerk-universitaetsmedizin.de"
-        }]
-      }],
-      "description" : "Value set of fungal infections",
-      "expansion" : {
-        "identifier" : "urn:uuid:5554ac94-6633-40bf-a8e4-bea1e6dac38b",
-        "timestamp" : "2021-10-19T15:42:59+00:00",
-        "total" : 3,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "limitedExpansion",
-          "valueBoolean" : true
-        },
-        {
-          "name" : "version",
-          "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
-        }],
-        "contains" : [{
-          "system" : "http://snomed.info/sct",
-          "code" : "83062006",
-          "display" : "Infection by Candida albicans"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "65553006",
-          "display" : "Aspergillosis"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "74964007",
-          "display" : "Other"
-        }]
-      }
-    }
-  },
-  {
     "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/general-complaints-after-vaccination",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -1601,7 +1435,7 @@
       "name" : "GeneralComplaintsAfterVaccination",
       "title" : "General Complaints After Vaccination",
       "status" : "active",
-      "date" : "2021-10-19T15:41:32+00:00",
+      "date" : "2021-10-19T21:05:56+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -1612,8 +1446,8 @@
       }],
       "description" : "General complaints after vaccination",
       "expansion" : {
-        "identifier" : "urn:uuid:eab318fe-bc31-4c8b-8cb2-db0392d5e649",
-        "timestamp" : "2021-10-19T15:43:00+00:00",
+        "identifier" : "urn:uuid:e1713a91-fa40-48c1-ac32-558f7a307330",
+        "timestamp" : "2021-10-19T21:07:06+00:00",
         "total" : 22,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1758,7 +1592,7 @@
       "name" : "ImmunosuppressiveImmunomodulatoryTherapy",
       "title" : "Immunosuppressive Immunomodulatory Therapy",
       "status" : "active",
-      "date" : "2021-10-19T15:41:32+00:00",
+      "date" : "2021-10-19T21:05:56+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -1773,8 +1607,8 @@
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:e5fc09c7-6441-4ae2-ab5a-c39957c1f286",
-        "timestamp" : "2021-10-19T15:43:00+00:00",
+        "identifier" : "urn:uuid:03077a0d-90b2-4bd9-87ef-0979dd49aa1f",
+        "timestamp" : "2021-10-19T21:07:06+00:00",
         "total" : 34,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1966,1837 +1800,6 @@
     }
   },
   {
-    "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/immunosuppressive-permament-medications",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "immunosuppressive-permament-medications",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 25 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-napkon-pediatrics-module.html\">NapkonPediatricsModule v0.1.0 (CodeSystem)</a></li><li>SNOMED CT International edition 31-Jul 2021</li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-116566001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=116566001\">116566001</a></td><td>http://snomed.info/sct</td><td>Steroid</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-416798007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=416798007\">416798007</a></td><td>http://snomed.info/sct</td><td>Calcineurin inhibitor</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-372785000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=372785000\">372785000</a></td><td>http://snomed.info/sct</td><td>Antimetabolite (substance)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-372669002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=372669002\">372669002</a></td><td>http://snomed.info/sct</td><td>Alkylating agent (substance)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-420693002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=420693002\">420693002</a></td><td>http://snomed.info/sct</td><td>Tumor necrosis factor alpha inhibitor</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-430866006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=430866006\">430866006</a></td><td>http://snomed.info/sct</td><td>Interleukin 1 receptor antagonist</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-784015001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=784015001\">784015001</a></td><td>http://snomed.info/sct</td><td>Interleukin 6 receptor antagonist</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-771592004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=771592004\">771592004</a></td><td>http://snomed.info/sct</td><td>Substance with interleukin 23 receptor antagonist mechanism of action (substance)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-870401008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=870401008\">870401008</a></td><td>http://snomed.info/sct</td><td>Cytotoxic T-lymphocyte-associated protein 4 inhibitor</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-768651008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=768651008\">768651008</a></td><td>http://snomed.info/sct</td><td>Antithymocyte immunoglobulin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-704312008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=704312008\">704312008</a></td><td>http://snomed.info/sct</td><td>Janus kinase inhibitor</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-372917005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=372917005\">372917005</a></td><td>http://snomed.info/sct</td><td>Protein-tyrosine kinase inhibitor</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-48583005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=48583005\">48583005</a></td><td>http://snomed.info/sct</td><td>Immunoglobulin E</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-49327004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=49327004\">49327004</a></td><td>http://snomed.info/sct</td><td>Interferon</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-74964007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=74964007\">74964007</a></td><td>http://snomed.info/sct</td><td>Other</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-pediatrics-module-000010\"> </a><a href=\"CodeSystem-napkon-pediatrics-module.html#napkon-pediatrics-module-000010\">000010</a></td><td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module</td><td>Mammalian target of rapamycin (mTOR)-Kinase inhibitor</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-pediatrics-module-000001\"> </a><a href=\"CodeSystem-napkon-pediatrics-module.html#napkon-pediatrics-module-000001\">000001</a></td><td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module</td><td>Sphingosine analogue</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-pediatrics-module-000002\"> </a><a href=\"CodeSystem-napkon-pediatrics-module.html#napkon-pediatrics-module-000002\">000002</a></td><td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module</td><td>Interleukin 2 receptor antagonist</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-pediatrics-module-000003\"> </a><a href=\"CodeSystem-napkon-pediatrics-module.html#napkon-pediatrics-module-000003\">000003</a></td><td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module</td><td>Interleukin 17 receptor antagonist</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-pediatrics-module-000004\"> </a><a href=\"CodeSystem-napkon-pediatrics-module.html#napkon-pediatrics-module-000004\">000004</a></td><td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module</td><td>Anti-CD20 antibody</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-pediatrics-module-000005\"> </a><a href=\"CodeSystem-napkon-pediatrics-module.html#napkon-pediatrics-module-000005\">000005</a></td><td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module</td><td>Anti-CD52 antibody</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-pediatrics-module-000006\"> </a><a href=\"CodeSystem-napkon-pediatrics-module.html#napkon-pediatrics-module-000006\">000006</a></td><td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module</td><td>Anti-CD3 antibody</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-pediatrics-module-000007\"> </a><a href=\"CodeSystem-napkon-pediatrics-module.html#napkon-pediatrics-module-000007\">000007</a></td><td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module</td><td>Anti-CD3/CD19 antibody</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-pediatrics-module-000008\"> </a><a href=\"CodeSystem-napkon-pediatrics-module.html#napkon-pediatrics-module-000008\">000008</a></td><td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module</td><td>Integrin inhibitor</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.netzwerk-universitaetsmedizin.de-fhir-CodeSystem-napkon-pediatrics-module-000009\"> </a><a href=\"CodeSystem-napkon-pediatrics-module.html#napkon-pediatrics-module-000009\">000009</a></td><td>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module</td><td>B cell activating factor inhibitor</td><td/></tr></table></div>"
-      },
-      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/immunosuppressive-permament-medications",
-      "version" : "0.1.0",
-      "name" : "ImmunosuppressivePermanentMedications",
-      "title" : "Immunosuppressive Permanent Medications",
-      "status" : "draft",
-      "date" : "2021-10-05",
-      "publisher" : "BIH @ Charité",
-      "contact" : [{
-        "name" : "BIH @ Charité",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://www.netzwerk-universitaetsmedizin.de"
-        }]
-      }],
-      "description" : "Immunosuppressive medications",
-      "expansion" : {
-        "identifier" : "urn:uuid:38b5e463-1b3c-45a7-ac8d-d0eaf10d518b",
-        "timestamp" : "2021-10-19T15:43:00+00:00",
-        "total" : 25,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "limitedExpansion",
-          "valueBoolean" : true
-        },
-        {
-          "name" : "version",
-          "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
-        },
-        {
-          "name" : "version",
-          "valueUri" : "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module|0.1.0"
-        }],
-        "contains" : [{
-          "system" : "http://snomed.info/sct",
-          "code" : "116566001",
-          "display" : "Steroid"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "416798007",
-          "display" : "Calcineurin inhibitor"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "372785000",
-          "display" : "Antimetabolite (substance)"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "372669002",
-          "display" : "Alkylating agent (substance)"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "420693002",
-          "display" : "Tumor necrosis factor alpha inhibitor"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "430866006",
-          "display" : "Interleukin 1 receptor antagonist"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "784015001",
-          "display" : "Interleukin 6 receptor antagonist"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "771592004",
-          "display" : "Substance with interleukin 23 receptor antagonist mechanism of action (substance)"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "870401008",
-          "display" : "Cytotoxic T-lymphocyte-associated protein 4 inhibitor"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "768651008",
-          "display" : "Antithymocyte immunoglobulin"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "704312008",
-          "display" : "Janus kinase inhibitor"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "372917005",
-          "display" : "Protein-tyrosine kinase inhibitor"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "48583005",
-          "display" : "Immunoglobulin E"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "49327004",
-          "display" : "Interferon"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "74964007",
-          "display" : "Other"
-        },
-        {
-          "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module",
-          "code" : "000010",
-          "display" : "Mammalian target of rapamycin (mTOR)-Kinase inhibitor"
-        },
-        {
-          "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module",
-          "code" : "000001",
-          "display" : "Sphingosine analogue"
-        },
-        {
-          "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module",
-          "code" : "000002",
-          "display" : "Interleukin 2 receptor antagonist"
-        },
-        {
-          "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module",
-          "code" : "000003",
-          "display" : "Interleukin 17 receptor antagonist"
-        },
-        {
-          "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module",
-          "code" : "000004",
-          "display" : "Anti-CD20 antibody"
-        },
-        {
-          "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module",
-          "code" : "000005",
-          "display" : "Anti-CD52 antibody"
-        },
-        {
-          "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module",
-          "code" : "000006",
-          "display" : "Anti-CD3 antibody"
-        },
-        {
-          "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module",
-          "code" : "000007",
-          "display" : "Anti-CD3/CD19 antibody"
-        },
-        {
-          "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module",
-          "code" : "000008",
-          "display" : "Integrin inhibitor"
-        },
-        {
-          "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module",
-          "code" : "000009",
-          "display" : "B cell activating factor inhibitor"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/immunosuppressive-permament-medications-atc",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "immunosuppressive-permament-medications-atc",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 324 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on http://fhir.de/CodeSystem/bfarm/atc v2021 (CodeSystem)</p><p>All codes in this table are from the system <a href=\"?ngen-14?.html\"><code>http://fhir.de/CodeSystem/bfarm/atc</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-A14A\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-A14A\">A14A</a></td><td>ANABOLE STEROIDE</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-A14AA\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-A14AA\">A14AA</a></td><td>Androstan-Derivate</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-A14AA01\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-A14AA01\">A14AA01</a></td><td>Androstanolon</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-A14AA02\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-A14AA02\">A14AA02</a></td><td>Stanozolol</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-A14AA03\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-A14AA03\">A14AA03</a></td><td>Metandienon</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-A14AA04\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-A14AA04\">A14AA04</a></td><td>Metenolon</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-A14AA05\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-A14AA05\">A14AA05</a></td><td>Oxymetholon</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-A14AA06\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-A14AA06\">A14AA06</a></td><td>Quinbolon</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-A14AA07\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-A14AA07\">A14AA07</a></td><td>Prasteron</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-A14AA08\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-A14AA08\">A14AA08</a></td><td>Oxandrolon</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-A14AA09\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-A14AA09\">A14AA09</a></td><td>Norethandrolon</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-A14AA10\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-A14AA10\">A14AA10</a></td><td>Chlordehydromethyltestosteron</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-A14AA11\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-A14AA11\">A14AA11</a></td><td>Clostebol</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-A14AA50\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-A14AA50\">A14AA50</a></td><td>Andere Androstan-Derivate, Kombinationen</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-A14AB\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-A14AB\">A14AB</a></td><td>Estren-Derivate</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-A14AB01\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-A14AB01\">A14AB01</a></td><td>Nandrolon</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-A14AB02\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-A14AB02\">A14AB02</a></td><td>Ethylestrenol</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-A14AB03\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-A14AB03\">A14AB03</a></td><td>Oxaboloncipionat</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EG\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EG\">L01EG</a></td><td>Mammalian target of rapamycin (mTOR)-Kinase-Inhibitoren</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EG01\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EG01\">L01EG01</a></td><td>Temsirolimus</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EG02\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EG02\">L01EG02</a></td><td>Everolimus</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EG03\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EG03\">L01EG03</a></td><td>Ridaforolimus</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04\">L04</a></td><td>IMMUNSUPPRESSIVA</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04A\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04A\">L04A</a></td><td>IMMUNSUPPRESSIVA</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA\">L04AA</a></td><td>Selektive Immunsuppressiva</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA02\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA02\">L04AA02</a></td><td>Muromonab-CD3</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA03\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA03\">L04AA03</a></td><td>Antilymphozytäres Immunglobulin (Pferd)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA04\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA04\">L04AA04</a></td><td>Antithymozytäres Immunglobulin (Kaninchen)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA06\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA06\">L04AA06</a></td><td>Mycophenolsäure</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA10\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA10\">L04AA10</a></td><td>Sirolimus</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA13\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA13\">L04AA13</a></td><td>Leflunomid</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA15\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA15\">L04AA15</a></td><td>Alefacept</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA18\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA18\">L04AA18</a></td><td>Everolimus</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA19\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA19\">L04AA19</a></td><td>Gusperimus</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA21\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA21\">L04AA21</a></td><td>Efalizumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA22\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA22\">L04AA22</a></td><td>Abetimus</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA23\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA23\">L04AA23</a></td><td>Natalizumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA24\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA24\">L04AA24</a></td><td>Abatacept</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA25\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA25\">L04AA25</a></td><td>Eculizumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA26\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA26\">L04AA26</a></td><td>Belimumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA27\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA27\">L04AA27</a></td><td>Fingolimod</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA28\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA28\">L04AA28</a></td><td>Belatacept</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA29\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA29\">L04AA29</a></td><td>Tofacitinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA31\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA31\">L04AA31</a></td><td>Teriflunomid</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA32\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA32\">L04AA32</a></td><td>Apremilast</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA33\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA33\">L04AA33</a></td><td>Vedolizumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA34\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA34\">L04AA34</a></td><td>Alemtuzumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA35\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA35\">L04AA35</a></td><td>Begelomab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA36\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA36\">L04AA36</a></td><td>Ocrelizumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA37\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA37\">L04AA37</a></td><td>Baricitinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA38\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA38\">L04AA38</a></td><td>Ozanimod</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA39\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA39\">L04AA39</a></td><td>Emapalumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA40\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA40\">L04AA40</a></td><td>Cladribin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA41\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA41\">L04AA41</a></td><td>Imlifidase</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA42\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA42\">L04AA42</a></td><td>Siponimod</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA43\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA43\">L04AA43</a></td><td>Ravulizumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA44\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA44\">L04AA44</a></td><td>Upadacitinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA45\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA45\">L04AA45</a></td><td>Filgotinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA46\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA46\">L04AA46</a></td><td>Itacitinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA47\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA47\">L04AA47</a></td><td>Inebilizumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA48\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA48\">L04AA48</a></td><td>Belumosudil</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA49\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA49\">L04AA49</a></td><td>Peficitinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA50\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA50\">L04AA50</a></td><td>Ponesimod</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA51\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA51\">L04AA51</a></td><td>Anifrolumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA52\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA52\">L04AA52</a></td><td>Ofatumumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AA53\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AA53\">L04AA53</a></td><td>Teprotumumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AB\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AB\">L04AB</a></td><td>Tumornekrosefaktor alpha (TNF-alpha)-Inhibitoren</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AB01\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AB01\">L04AB01</a></td><td>Etanercept</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AB02\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AB02\">L04AB02</a></td><td>Infliximab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AB03\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AB03\">L04AB03</a></td><td>Afelimomab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AB04\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AB04\">L04AB04</a></td><td>Adalimumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AB05\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AB05\">L04AB05</a></td><td>Certolizumab pegol</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AB06\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AB06\">L04AB06</a></td><td>Golimumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AB07\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AB07\">L04AB07</a></td><td>Opinercept</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AC\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AC\">L04AC</a></td><td>Interleukin-Inhibitoren</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AC01\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AC01\">L04AC01</a></td><td>Daclizumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AC02\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AC02\">L04AC02</a></td><td>Basiliximab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AC03\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AC03\">L04AC03</a></td><td>Anakinra</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AC04\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AC04\">L04AC04</a></td><td>Rilonacept</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AC05\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AC05\">L04AC05</a></td><td>Ustekinumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AC07\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AC07\">L04AC07</a></td><td>Tocilizumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AC08\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AC08\">L04AC08</a></td><td>Canakinumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AC09\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AC09\">L04AC09</a></td><td>Briakinumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AC10\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AC10\">L04AC10</a></td><td>Secukinumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AC11\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AC11\">L04AC11</a></td><td>Siltuximab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AC12\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AC12\">L04AC12</a></td><td>Brodalumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AC13\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AC13\">L04AC13</a></td><td>Ixekizumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AC14\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AC14\">L04AC14</a></td><td>Sarilumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AC15\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AC15\">L04AC15</a></td><td>Sirukumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AC16\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AC16\">L04AC16</a></td><td>Guselkumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AC17\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AC17\">L04AC17</a></td><td>Tildrakizumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AC18\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AC18\">L04AC18</a></td><td>Risankizumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AC19\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AC19\">L04AC19</a></td><td>Satralizumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AC20\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AC20\">L04AC20</a></td><td>Netakimab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AC21\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AC21\">L04AC21</a></td><td>Bimekizumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AD\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AD\">L04AD</a></td><td>Calcineurin-Inhibitoren</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AD01\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AD01\">L04AD01</a></td><td>Ciclosporin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AD02\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AD02\">L04AD02</a></td><td>Tacrolimus</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AD03\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AD03\">L04AD03</a></td><td>Voclosporin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AX\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AX\">L04AX</a></td><td>Andere Immunsuppressiva</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AX01\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AX01\">L04AX01</a></td><td>Azathioprin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AX02\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AX02\">L04AX02</a></td><td>Thalidomid</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AX03\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AX03\">L04AX03</a></td><td>Methotrexat</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AX04\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AX04\">L04AX04</a></td><td>Lenalidomid</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AX05\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AX05\">L04AX05</a></td><td>Pirfenidon</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AX06\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AX06\">L04AX06</a></td><td>Pomalidomid</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AX07\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AX07\">L04AX07</a></td><td>Dimethylfumarat</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AX08\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AX08\">L04AX08</a></td><td>Darvadstrocel</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AX09\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AX09\">L04AX09</a></td><td>Diroximelfumarat</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L04AX18\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AX18\">L04AX18</a></td><td>Humane allogene mesenchymale Stromazellen</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01B\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01B\">L01B</a></td><td>ANTIMETABOLITEN</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01BA\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01BA\">L01BA</a></td><td>Folsäure-Analoga</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01BA01\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01BA01\">L01BA01</a></td><td>Methotrexat</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01BA03\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01BA03\">L01BA03</a></td><td>Raltitrexed</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01BA04\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01BA04\">L01BA04</a></td><td>Pemetrexed</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01BA05\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01BA05\">L01BA05</a></td><td>Pralatrexat</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01BB\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01BB\">L01BB</a></td><td>Purin-Analoga</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01BB02\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01BB02\">L01BB02</a></td><td>Mercaptopurin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01BB03\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01BB03\">L01BB03</a></td><td>Tioguanin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01BB04\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01BB04\">L01BB04</a></td><td>Cladribin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01BB05\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01BB05\">L01BB05</a></td><td>Fludarabin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01BB06\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01BB06\">L01BB06</a></td><td>Clofarabin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01BB07\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01BB07\">L01BB07</a></td><td>Nelarabin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01BC\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01BC\">L01BC</a></td><td>Pyrimidin-Analoga</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01BC01\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01BC01\">L01BC01</a></td><td>Cytarabin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01BC02\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01BC02\">L01BC02</a></td><td>Fluorouracil</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01BC03\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01BC03\">L01BC03</a></td><td>Tegafur</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01BC04\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01BC04\">L01BC04</a></td><td>Carmofur</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01BC05\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01BC05\">L01BC05</a></td><td>Gemcitabin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01BC06\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01BC06\">L01BC06</a></td><td>Capecitabin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01BC07\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01BC07\">L01BC07</a></td><td>Azacitidin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01BC08\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01BC08\">L01BC08</a></td><td>Decitabin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01BC09\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01BC09\">L01BC09</a></td><td>Floxuridin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01BC52\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01BC52\">L01BC52</a></td><td>Fluorouracil, Kombinationen</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01BC53\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01BC53\">L01BC53</a></td><td>Tegafur, Kombinationen</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01BC59\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01BC59\">L01BC59</a></td><td>Trifluridin, Kombinationen</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01BC63\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01BC63\">L01BC63</a></td><td>Tegafur und Uracil</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01BC73\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01BC73\">L01BC73</a></td><td>Tegafur, Gimeracil und Oteracil</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01A\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01A\">L01A</a></td><td>ALKYLIERENDE MITTEL</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01AA\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01AA\">L01AA</a></td><td>Stickstofflost-Analoga</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01AA01\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01AA01\">L01AA01</a></td><td>Cyclophosphamid</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01AA02\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01AA02\">L01AA02</a></td><td>Chlorambucil</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01AA03\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01AA03\">L01AA03</a></td><td>Melphalan</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01AA05\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01AA05\">L01AA05</a></td><td>Chlormethin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01AA06\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01AA06\">L01AA06</a></td><td>Ifosfamid</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01AA07\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01AA07\">L01AA07</a></td><td>Trofosfamid</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01AA08\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01AA08\">L01AA08</a></td><td>Prednimustin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01AA09\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01AA09\">L01AA09</a></td><td>Bendamustin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01AB\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01AB\">L01AB</a></td><td>Alkylsulfonate</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01AB01\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01AB01\">L01AB01</a></td><td>Busulfan</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01AB02\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01AB02\">L01AB02</a></td><td>Treosulfan</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01AB03\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01AB03\">L01AB03</a></td><td>Mannosulfan</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01AC\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01AC\">L01AC</a></td><td>Ethylenimine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01AC01\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01AC01\">L01AC01</a></td><td>Thiotepa</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01AC02\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01AC02\">L01AC02</a></td><td>Triaziquon</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01AC03\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01AC03\">L01AC03</a></td><td>Carboquon</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01AD\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01AD\">L01AD</a></td><td>Nitrosoharnstoffe</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01AD01\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01AD01\">L01AD01</a></td><td>Carmustin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01AD02\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01AD02\">L01AD02</a></td><td>Lomustin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01AD03\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01AD03\">L01AD03</a></td><td>Semustin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01AD04\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01AD04\">L01AD04</a></td><td>Streptozocin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01AD05\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01AD05\">L01AD05</a></td><td>Fotemustin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01AD06\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01AD06\">L01AD06</a></td><td>Nimustin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01AD07\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01AD07\">L01AD07</a></td><td>Ranimustin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01AD08\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01AD08\">L01AD08</a></td><td>Uramustin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01AG\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01AG\">L01AG</a></td><td>Epoxide</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01AG01\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01AG01\">L01AG01</a></td><td>Etoglucid</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01AX\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01AX\">L01AX</a></td><td>Andere alkylierende Mittel</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01AX01\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01AX01\">L01AX01</a></td><td>Mitobronitol</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01AX02\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01AX02\">L01AX02</a></td><td>Pipobroman</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01AX03\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01AX03\">L01AX03</a></td><td>Temozolomid</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01AX04\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01AX04\">L01AX04</a></td><td>Dacarbazin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01XC\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01XC\">L01XC</a></td><td>Monoklonale Antikörper</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01XC01\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01XC01\">L01XC01</a></td><td>Edrecolomab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01XC02\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01XC02\">L01XC02</a></td><td>Rituximab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01XC03\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01XC03\">L01XC03</a></td><td>Trastuzumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01XC04\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01XC04\">L01XC04</a></td><td>Alemtuzumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01XC05\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01XC05\">L01XC05</a></td><td>Gemtuzumab ozogamicin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01XC06\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01XC06\">L01XC06</a></td><td>Cetuximab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01XC07\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01XC07\">L01XC07</a></td><td>Bevacizumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01XC08\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01XC08\">L01XC08</a></td><td>Panitumumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01XC09\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01XC09\">L01XC09</a></td><td>Catumaxomab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01XC10\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01XC10\">L01XC10</a></td><td>Ofatumumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01XC11\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01XC11\">L01XC11</a></td><td>Ipilimumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01XC12\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01XC12\">L01XC12</a></td><td>Brentuximab vedotin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01XC13\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01XC13\">L01XC13</a></td><td>Pertuzumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01XC14\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01XC14\">L01XC14</a></td><td>Trastuzumab emtansin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01XC15\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01XC15\">L01XC15</a></td><td>Obinutuzumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01XC16\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01XC16\">L01XC16</a></td><td>Dinutuximab beta</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01XC17\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01XC17\">L01XC17</a></td><td>Nivolumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01XC18\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01XC18\">L01XC18</a></td><td>Pembrolizumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01XC19\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01XC19\">L01XC19</a></td><td>Blinatumomab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01XC21\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01XC21\">L01XC21</a></td><td>Ramucirumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01XC22\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01XC22\">L01XC22</a></td><td>Necitumumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01XC23\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01XC23\">L01XC23</a></td><td>Elotuzumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01XC24\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01XC24\">L01XC24</a></td><td>Daratumumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01XC25\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01XC25\">L01XC25</a></td><td>Mogamulizumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01XC26\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01XC26\">L01XC26</a></td><td>Inotuzumab ozogamicin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01XC27\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01XC27\">L01XC27</a></td><td>Olaratumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01XC28\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01XC28\">L01XC28</a></td><td>Durvalumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01XC29\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01XC29\">L01XC29</a></td><td>Bermekimab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01XC31\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01XC31\">L01XC31</a></td><td>Avelumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01XC32\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01XC32\">L01XC32</a></td><td>Atezolizumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01XC33\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01XC33\">L01XC33</a></td><td>Cemiplimab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01XC34\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01XC34\">L01XC34</a></td><td>Moxetumomab pasudotox</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01XC35\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01XC35\">L01XC35</a></td><td>Tafasitamab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01XC36\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01XC36\">L01XC36</a></td><td>Enfortumab vedotin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01XC37\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01XC37\">L01XC37</a></td><td>Polatuzumab vedotin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01XC38\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01XC38\">L01XC38</a></td><td>Isatuximab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01XC39\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01XC39\">L01XC39</a></td><td>Belantamab mafodotin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01XC40\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01XC40\">L01XC40</a></td><td>Dostarlimab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01XC41\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01XC41\">L01XC41</a></td><td>Trastuzumab deruxtecan</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01XC42\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01XC42\">L01XC42</a></td><td>Prolgolimab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EJ\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EJ\">L01EJ</a></td><td>Janus-assoziierte Kinase (JAK)-Inhibitoren</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EJ01\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EJ01\">L01EJ01</a></td><td>Ruxolitinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EJ02\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EJ02\">L01EJ02</a></td><td>Fedratinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01E\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01E\">L01E</a></td><td>PROTEINKINASE-INHIBITOREN</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EA\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EA\">L01EA</a></td><td>BCR-ABL-Tyrosinkinase-Inhibitoren</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EA01\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EA01\">L01EA01</a></td><td>Imatinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EA02\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EA02\">L01EA02</a></td><td>Dasatinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EA03\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EA03\">L01EA03</a></td><td>Nilotinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EA04\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EA04\">L01EA04</a></td><td>Bosutinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EA05\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EA05\">L01EA05</a></td><td>Ponatinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EA06\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EA06\">L01EA06</a></td><td>Asciminib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EB\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EB\">L01EB</a></td><td>Epidermaler Wachstumsfaktor-Rezeptor (EGFR)-Tyrosinkinase-Inhibitoren</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EB01\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EB01\">L01EB01</a></td><td>Gefitinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EB02\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EB02\">L01EB02</a></td><td>Erlotinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EB03\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EB03\">L01EB03</a></td><td>Afatinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EB04\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EB04\">L01EB04</a></td><td>Osimertinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EB05\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EB05\">L01EB05</a></td><td>Rociletinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EB06\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EB06\">L01EB06</a></td><td>Olmutinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EB07\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EB07\">L01EB07</a></td><td>Dacomitinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EB08\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EB08\">L01EB08</a></td><td>Icotinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EC\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EC\">L01EC</a></td><td>BRAF-Serin-Threoninkinase-Inhibitoren</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EC01\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EC01\">L01EC01</a></td><td>Vemurafenib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EC02\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EC02\">L01EC02</a></td><td>Dabrafenib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EC03\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EC03\">L01EC03</a></td><td>Encorafenib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01ED\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01ED\">L01ED</a></td><td>Anaplastische Lymphomkinase (ALK)-Inhibitoren</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01ED01\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01ED01\">L01ED01</a></td><td>Crizotinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01ED02\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01ED02\">L01ED02</a></td><td>Ceritinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01ED03\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01ED03\">L01ED03</a></td><td>Alectinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01ED04\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01ED04\">L01ED04</a></td><td>Brigatinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01ED05\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01ED05\">L01ED05</a></td><td>Lorlatinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EE\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EE\">L01EE</a></td><td>Mitogen-aktivierte Proteinkinase (MEK)-Inhibitoren</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EE01\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EE01\">L01EE01</a></td><td>Trametinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EE02\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EE02\">L01EE02</a></td><td>Cobimetinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EE03\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EE03\">L01EE03</a></td><td>Binimetinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EE04\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EE04\">L01EE04</a></td><td>Selumetinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EF\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EF\">L01EF</a></td><td>Cyclin-abhängige Kinasen (CDK)-Inhibitoren</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EF01\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EF01\">L01EF01</a></td><td>Palbociclib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EF02\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EF02\">L01EF02</a></td><td>Ribociclib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EF03\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EF03\">L01EF03</a></td><td>Abemaciclib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EH\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EH\">L01EH</a></td><td>Humaner epidermaler Wachstumsfaktor-Rezeptor 2 (HER2)-Tyrosinkinase-Inhibitoren</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EH01\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EH01\">L01EH01</a></td><td>Lapatinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EH02\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EH02\">L01EH02</a></td><td>Neratinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EH03\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EH03\">L01EH03</a></td><td>Tucatinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EK\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EK\">L01EK</a></td><td>Vaskulärer endothelialer Wachstumsfaktor-Rezeptor (VEGFR)-Tyrosinkinase-Inhibitoren</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EK01\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EK01\">L01EK01</a></td><td>Axitinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EK02\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EK02\">L01EK02</a></td><td>Cediranib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EK03\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EK03\">L01EK03</a></td><td>Tivozanib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EL\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EL\">L01EL</a></td><td>Bruton-Tyrosinkinase (BTK)-Inhibitoren</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EL01\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EL01\">L01EL01</a></td><td>Ibrutinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EL02\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EL02\">L01EL02</a></td><td>Acalabrutinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EL03\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EL03\">L01EL03</a></td><td>Zanubrutinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EM\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EM\">L01EM</a></td><td>Phosphatidylinositol-3-kinase (Pi3K)-Inhibitoren</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EM01\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EM01\">L01EM01</a></td><td>Idelalisib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EM02\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EM02\">L01EM02</a></td><td>Copanlisib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EM03\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EM03\">L01EM03</a></td><td>Alpelisib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EM04\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EM04\">L01EM04</a></td><td>Duvelisib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EX\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EX\">L01EX</a></td><td>Andere Proteinkinase-Inhibitoren</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EX01\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EX01\">L01EX01</a></td><td>Sunitinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EX02\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EX02\">L01EX02</a></td><td>Sorafenib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EX03\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EX03\">L01EX03</a></td><td>Pazopanib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EX04\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EX04\">L01EX04</a></td><td>Vandetanib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EX05\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EX05\">L01EX05</a></td><td>Regorafenib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EX06\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EX06\">L01EX06</a></td><td>Masitinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EX07\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EX07\">L01EX07</a></td><td>Cabozantinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EX08\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EX08\">L01EX08</a></td><td>Lenvatinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EX09\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EX09\">L01EX09</a></td><td>Nintedanib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EX10\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EX10\">L01EX10</a></td><td>Midostaurin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EX11\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EX11\">L01EX11</a></td><td>Quizartinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EX12\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EX12\">L01EX12</a></td><td>Larotrectinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EX13\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EX13\">L01EX13</a></td><td>Gilteritinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EX14\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EX14\">L01EX14</a></td><td>Entrectinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EX15\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EX15\">L01EX15</a></td><td>Pexidartinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EX16\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EX16\">L01EX16</a></td><td>Erdafitinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EX17\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EX17\">L01EX17</a></td><td>Capmatinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EX18\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EX18\">L01EX18</a></td><td>Avapritinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EX19\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EX19\">L01EX19</a></td><td>Ripretinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EX20\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EX20\">L01EX20</a></td><td>Pemigatinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EX21\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EX21\">L01EX21</a></td><td>Tepotinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EX22\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EX22\">L01EX22</a></td><td>Selpercatinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L01EX23\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L01EX23\">L01EX23</a></td><td>Pralsetinib</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-R03DX\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-R03DX\">R03DX</a></td><td>Andere Mittel bei obstruktiven Atemwegserkrankungen zur systemischen Anwendung</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-R03DX01\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-R03DX01\">R03DX01</a></td><td>Amlexanox</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-R03DX02\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-R03DX02\">R03DX02</a></td><td>Eprozinol</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-R03DX03\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-R03DX03\">R03DX03</a></td><td>Fenspirid</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-R03DX05\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-R03DX05\">R03DX05</a></td><td>Omalizumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-R03DX06\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-R03DX06\">R03DX06</a></td><td>Seratrodast</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-R03DX07\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-R03DX07\">R03DX07</a></td><td>Roflumilast</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-R03DX08\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-R03DX08\">R03DX08</a></td><td>Reslizumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-R03DX09\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-R03DX09\">R03DX09</a></td><td>Mepolizumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-R03DX10\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-R03DX10\">R03DX10</a></td><td>Benralizumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-R03DX11\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-R03DX11\">R03DX11</a></td><td>Tezepelumab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-R03DX50\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-R03DX50\">R03DX50</a></td><td>Andere systemische Antiasthmatika, Kombinationen</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L03AB\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L03AB\">L03AB</a></td><td>Interferone</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L03AB01\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L03AB01\">L03AB01</a></td><td>Interferon alfa, natürlich</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L03AB02\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L03AB02\">L03AB02</a></td><td>Interferon beta, natürlich</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L03AB03\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L03AB03\">L03AB03</a></td><td>Interferon gamma</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L03AB04\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L03AB04\">L03AB04</a></td><td>Interferon alfa-2a</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L03AB05\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L03AB05\">L03AB05</a></td><td>Interferon alfa-2b</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L03AB06\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L03AB06\">L03AB06</a></td><td>Interferon alfa-n1</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L03AB07\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L03AB07\">L03AB07</a></td><td>Interferon beta-1a</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L03AB08\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L03AB08\">L03AB08</a></td><td>Interferon beta-1b</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L03AB09\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L03AB09\">L03AB09</a></td><td>Interferon alfacon-1</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L03AB10\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L03AB10\">L03AB10</a></td><td>Peginterferon alfa-2b</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L03AB11\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L03AB11\">L03AB11</a></td><td>Peginterferon alfa-2a</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L03AB12\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L03AB12\">L03AB12</a></td><td>Albinterferon alfa-2b</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L03AB13\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L03AB13\">L03AB13</a></td><td>Peginterferon beta-1a</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L03AB14\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L03AB14\">L03AB14</a></td><td>Cepeginterferon alfa-2b</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L03AB15\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L03AB15\">L03AB15</a></td><td>Ropeginterferon alfa-2b</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L03AB18\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L03AB18\">L03AB18</a></td><td>Interferon gamma-1b</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L03AB60\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L03AB60\">L03AB60</a></td><td>Peginterferon alfa-2b, Kombinationen</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---fhir.de-CodeSystem-bfarm-atc-L03AB61\"> </a><a href=\"?ngen-14?.html#CodeSystemATC2021-L03AB61\">L03AB61</a></td><td>Peginterferon alfa-2a, Kombinationen</td><td/></tr></table></div>"
-      },
-      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/immunosuppressive-permament-medications-atc",
-      "version" : "0.1.0",
-      "name" : "ImmunosuppressivePermanentMedicationsATC",
-      "title" : "Immunosuppressive Permanent Medications ATC",
-      "status" : "draft",
-      "date" : "2021-10-05",
-      "publisher" : "BIH @ Charité",
-      "contact" : [{
-        "name" : "BIH @ Charité",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://www.netzwerk-universitaetsmedizin.de"
-        }]
-      }],
-      "description" : "Immunosuppressive Medications ATC codes",
-      "expansion" : {
-        "identifier" : "urn:uuid:9e631b10-2ec7-4f83-b5f7-fc0961e2ee12",
-        "timestamp" : "2021-10-19T15:43:01+00:00",
-        "total" : 324,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://fhir.de/CodeSystem/bfarm/atc|2021"
-        }],
-        "contains" : [{
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "A14A",
-          "display" : "ANABOLE STEROIDE"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "A14AA",
-          "display" : "Androstan-Derivate"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "A14AA01",
-          "display" : "Androstanolon"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "A14AA02",
-          "display" : "Stanozolol"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "A14AA03",
-          "display" : "Metandienon"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "A14AA04",
-          "display" : "Metenolon"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "A14AA05",
-          "display" : "Oxymetholon"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "A14AA06",
-          "display" : "Quinbolon"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "A14AA07",
-          "display" : "Prasteron"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "A14AA08",
-          "display" : "Oxandrolon"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "A14AA09",
-          "display" : "Norethandrolon"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "A14AA10",
-          "display" : "Chlordehydromethyltestosteron"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "A14AA11",
-          "display" : "Clostebol"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "A14AA50",
-          "display" : "Andere Androstan-Derivate, Kombinationen"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "A14AB",
-          "display" : "Estren-Derivate"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "A14AB01",
-          "display" : "Nandrolon"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "A14AB02",
-          "display" : "Ethylestrenol"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "A14AB03",
-          "display" : "Oxaboloncipionat"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EG",
-          "display" : "Mammalian target of rapamycin (mTOR)-Kinase-Inhibitoren"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EG01",
-          "display" : "Temsirolimus"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EG02",
-          "display" : "Everolimus"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EG03",
-          "display" : "Ridaforolimus"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04",
-          "display" : "IMMUNSUPPRESSIVA"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04A",
-          "display" : "IMMUNSUPPRESSIVA"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA",
-          "display" : "Selektive Immunsuppressiva"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA02",
-          "display" : "Muromonab-CD3"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA03",
-          "display" : "Antilymphozytäres Immunglobulin (Pferd)"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA04",
-          "display" : "Antithymozytäres Immunglobulin (Kaninchen)"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA06",
-          "display" : "Mycophenolsäure"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA10",
-          "display" : "Sirolimus"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA13",
-          "display" : "Leflunomid"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA15",
-          "display" : "Alefacept"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA18",
-          "display" : "Everolimus"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA19",
-          "display" : "Gusperimus"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA21",
-          "display" : "Efalizumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA22",
-          "display" : "Abetimus"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA23",
-          "display" : "Natalizumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA24",
-          "display" : "Abatacept"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA25",
-          "display" : "Eculizumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA26",
-          "display" : "Belimumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA27",
-          "display" : "Fingolimod"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA28",
-          "display" : "Belatacept"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA29",
-          "display" : "Tofacitinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA31",
-          "display" : "Teriflunomid"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA32",
-          "display" : "Apremilast"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA33",
-          "display" : "Vedolizumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA34",
-          "display" : "Alemtuzumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA35",
-          "display" : "Begelomab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA36",
-          "display" : "Ocrelizumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA37",
-          "display" : "Baricitinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA38",
-          "display" : "Ozanimod"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA39",
-          "display" : "Emapalumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA40",
-          "display" : "Cladribin"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA41",
-          "display" : "Imlifidase"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA42",
-          "display" : "Siponimod"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA43",
-          "display" : "Ravulizumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA44",
-          "display" : "Upadacitinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA45",
-          "display" : "Filgotinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA46",
-          "display" : "Itacitinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA47",
-          "display" : "Inebilizumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA48",
-          "display" : "Belumosudil"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA49",
-          "display" : "Peficitinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA50",
-          "display" : "Ponesimod"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA51",
-          "display" : "Anifrolumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA52",
-          "display" : "Ofatumumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AA53",
-          "display" : "Teprotumumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AB",
-          "display" : "Tumornekrosefaktor alpha (TNF-alpha)-Inhibitoren"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AB01",
-          "display" : "Etanercept"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AB02",
-          "display" : "Infliximab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AB03",
-          "display" : "Afelimomab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AB04",
-          "display" : "Adalimumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AB05",
-          "display" : "Certolizumab pegol"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AB06",
-          "display" : "Golimumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AB07",
-          "display" : "Opinercept"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AC",
-          "display" : "Interleukin-Inhibitoren"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AC01",
-          "display" : "Daclizumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AC02",
-          "display" : "Basiliximab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AC03",
-          "display" : "Anakinra"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AC04",
-          "display" : "Rilonacept"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AC05",
-          "display" : "Ustekinumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AC07",
-          "display" : "Tocilizumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AC08",
-          "display" : "Canakinumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AC09",
-          "display" : "Briakinumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AC10",
-          "display" : "Secukinumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AC11",
-          "display" : "Siltuximab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AC12",
-          "display" : "Brodalumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AC13",
-          "display" : "Ixekizumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AC14",
-          "display" : "Sarilumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AC15",
-          "display" : "Sirukumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AC16",
-          "display" : "Guselkumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AC17",
-          "display" : "Tildrakizumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AC18",
-          "display" : "Risankizumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AC19",
-          "display" : "Satralizumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AC20",
-          "display" : "Netakimab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AC21",
-          "display" : "Bimekizumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AD",
-          "display" : "Calcineurin-Inhibitoren"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AD01",
-          "display" : "Ciclosporin"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AD02",
-          "display" : "Tacrolimus"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AD03",
-          "display" : "Voclosporin"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AX",
-          "display" : "Andere Immunsuppressiva"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AX01",
-          "display" : "Azathioprin"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AX02",
-          "display" : "Thalidomid"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AX03",
-          "display" : "Methotrexat"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AX04",
-          "display" : "Lenalidomid"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AX05",
-          "display" : "Pirfenidon"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AX06",
-          "display" : "Pomalidomid"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AX07",
-          "display" : "Dimethylfumarat"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AX08",
-          "display" : "Darvadstrocel"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AX09",
-          "display" : "Diroximelfumarat"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L04AX18",
-          "display" : "Humane allogene mesenchymale Stromazellen"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01B",
-          "display" : "ANTIMETABOLITEN"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01BA",
-          "display" : "Folsäure-Analoga"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01BA01",
-          "display" : "Methotrexat"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01BA03",
-          "display" : "Raltitrexed"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01BA04",
-          "display" : "Pemetrexed"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01BA05",
-          "display" : "Pralatrexat"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01BB",
-          "display" : "Purin-Analoga"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01BB02",
-          "display" : "Mercaptopurin"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01BB03",
-          "display" : "Tioguanin"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01BB04",
-          "display" : "Cladribin"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01BB05",
-          "display" : "Fludarabin"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01BB06",
-          "display" : "Clofarabin"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01BB07",
-          "display" : "Nelarabin"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01BC",
-          "display" : "Pyrimidin-Analoga"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01BC01",
-          "display" : "Cytarabin"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01BC02",
-          "display" : "Fluorouracil"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01BC03",
-          "display" : "Tegafur"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01BC04",
-          "display" : "Carmofur"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01BC05",
-          "display" : "Gemcitabin"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01BC06",
-          "display" : "Capecitabin"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01BC07",
-          "display" : "Azacitidin"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01BC08",
-          "display" : "Decitabin"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01BC09",
-          "display" : "Floxuridin"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01BC52",
-          "display" : "Fluorouracil, Kombinationen"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01BC53",
-          "display" : "Tegafur, Kombinationen"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01BC59",
-          "display" : "Trifluridin, Kombinationen"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01BC63",
-          "display" : "Tegafur und Uracil"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01BC73",
-          "display" : "Tegafur, Gimeracil und Oteracil"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01A",
-          "display" : "ALKYLIERENDE MITTEL"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01AA",
-          "display" : "Stickstofflost-Analoga"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01AA01",
-          "display" : "Cyclophosphamid"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01AA02",
-          "display" : "Chlorambucil"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01AA03",
-          "display" : "Melphalan"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01AA05",
-          "display" : "Chlormethin"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01AA06",
-          "display" : "Ifosfamid"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01AA07",
-          "display" : "Trofosfamid"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01AA08",
-          "display" : "Prednimustin"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01AA09",
-          "display" : "Bendamustin"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01AB",
-          "display" : "Alkylsulfonate"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01AB01",
-          "display" : "Busulfan"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01AB02",
-          "display" : "Treosulfan"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01AB03",
-          "display" : "Mannosulfan"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01AC",
-          "display" : "Ethylenimine"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01AC01",
-          "display" : "Thiotepa"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01AC02",
-          "display" : "Triaziquon"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01AC03",
-          "display" : "Carboquon"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01AD",
-          "display" : "Nitrosoharnstoffe"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01AD01",
-          "display" : "Carmustin"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01AD02",
-          "display" : "Lomustin"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01AD03",
-          "display" : "Semustin"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01AD04",
-          "display" : "Streptozocin"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01AD05",
-          "display" : "Fotemustin"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01AD06",
-          "display" : "Nimustin"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01AD07",
-          "display" : "Ranimustin"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01AD08",
-          "display" : "Uramustin"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01AG",
-          "display" : "Epoxide"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01AG01",
-          "display" : "Etoglucid"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01AX",
-          "display" : "Andere alkylierende Mittel"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01AX01",
-          "display" : "Mitobronitol"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01AX02",
-          "display" : "Pipobroman"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01AX03",
-          "display" : "Temozolomid"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01AX04",
-          "display" : "Dacarbazin"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01XC",
-          "display" : "Monoklonale Antikörper"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01XC01",
-          "display" : "Edrecolomab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01XC02",
-          "display" : "Rituximab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01XC03",
-          "display" : "Trastuzumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01XC04",
-          "display" : "Alemtuzumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01XC05",
-          "display" : "Gemtuzumab ozogamicin"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01XC06",
-          "display" : "Cetuximab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01XC07",
-          "display" : "Bevacizumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01XC08",
-          "display" : "Panitumumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01XC09",
-          "display" : "Catumaxomab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01XC10",
-          "display" : "Ofatumumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01XC11",
-          "display" : "Ipilimumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01XC12",
-          "display" : "Brentuximab vedotin"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01XC13",
-          "display" : "Pertuzumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01XC14",
-          "display" : "Trastuzumab emtansin"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01XC15",
-          "display" : "Obinutuzumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01XC16",
-          "display" : "Dinutuximab beta"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01XC17",
-          "display" : "Nivolumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01XC18",
-          "display" : "Pembrolizumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01XC19",
-          "display" : "Blinatumomab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01XC21",
-          "display" : "Ramucirumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01XC22",
-          "display" : "Necitumumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01XC23",
-          "display" : "Elotuzumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01XC24",
-          "display" : "Daratumumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01XC25",
-          "display" : "Mogamulizumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01XC26",
-          "display" : "Inotuzumab ozogamicin"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01XC27",
-          "display" : "Olaratumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01XC28",
-          "display" : "Durvalumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01XC29",
-          "display" : "Bermekimab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01XC31",
-          "display" : "Avelumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01XC32",
-          "display" : "Atezolizumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01XC33",
-          "display" : "Cemiplimab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01XC34",
-          "display" : "Moxetumomab pasudotox"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01XC35",
-          "display" : "Tafasitamab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01XC36",
-          "display" : "Enfortumab vedotin"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01XC37",
-          "display" : "Polatuzumab vedotin"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01XC38",
-          "display" : "Isatuximab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01XC39",
-          "display" : "Belantamab mafodotin"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01XC40",
-          "display" : "Dostarlimab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01XC41",
-          "display" : "Trastuzumab deruxtecan"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01XC42",
-          "display" : "Prolgolimab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EJ",
-          "display" : "Janus-assoziierte Kinase (JAK)-Inhibitoren"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EJ01",
-          "display" : "Ruxolitinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EJ02",
-          "display" : "Fedratinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01E",
-          "display" : "PROTEINKINASE-INHIBITOREN"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EA",
-          "display" : "BCR-ABL-Tyrosinkinase-Inhibitoren"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EA01",
-          "display" : "Imatinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EA02",
-          "display" : "Dasatinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EA03",
-          "display" : "Nilotinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EA04",
-          "display" : "Bosutinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EA05",
-          "display" : "Ponatinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EA06",
-          "display" : "Asciminib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EB",
-          "display" : "Epidermaler Wachstumsfaktor-Rezeptor (EGFR)-Tyrosinkinase-Inhibitoren"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EB01",
-          "display" : "Gefitinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EB02",
-          "display" : "Erlotinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EB03",
-          "display" : "Afatinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EB04",
-          "display" : "Osimertinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EB05",
-          "display" : "Rociletinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EB06",
-          "display" : "Olmutinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EB07",
-          "display" : "Dacomitinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EB08",
-          "display" : "Icotinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EC",
-          "display" : "BRAF-Serin-Threoninkinase-Inhibitoren"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EC01",
-          "display" : "Vemurafenib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EC02",
-          "display" : "Dabrafenib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EC03",
-          "display" : "Encorafenib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01ED",
-          "display" : "Anaplastische Lymphomkinase (ALK)-Inhibitoren"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01ED01",
-          "display" : "Crizotinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01ED02",
-          "display" : "Ceritinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01ED03",
-          "display" : "Alectinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01ED04",
-          "display" : "Brigatinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01ED05",
-          "display" : "Lorlatinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EE",
-          "display" : "Mitogen-aktivierte Proteinkinase (MEK)-Inhibitoren"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EE01",
-          "display" : "Trametinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EE02",
-          "display" : "Cobimetinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EE03",
-          "display" : "Binimetinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EE04",
-          "display" : "Selumetinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EF",
-          "display" : "Cyclin-abhängige Kinasen (CDK)-Inhibitoren"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EF01",
-          "display" : "Palbociclib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EF02",
-          "display" : "Ribociclib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EF03",
-          "display" : "Abemaciclib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EH",
-          "display" : "Humaner epidermaler Wachstumsfaktor-Rezeptor 2 (HER2)-Tyrosinkinase-Inhibitoren"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EH01",
-          "display" : "Lapatinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EH02",
-          "display" : "Neratinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EH03",
-          "display" : "Tucatinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EK",
-          "display" : "Vaskulärer endothelialer Wachstumsfaktor-Rezeptor (VEGFR)-Tyrosinkinase-Inhibitoren"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EK01",
-          "display" : "Axitinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EK02",
-          "display" : "Cediranib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EK03",
-          "display" : "Tivozanib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EL",
-          "display" : "Bruton-Tyrosinkinase (BTK)-Inhibitoren"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EL01",
-          "display" : "Ibrutinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EL02",
-          "display" : "Acalabrutinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EL03",
-          "display" : "Zanubrutinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EM",
-          "display" : "Phosphatidylinositol-3-kinase (Pi3K)-Inhibitoren"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EM01",
-          "display" : "Idelalisib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EM02",
-          "display" : "Copanlisib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EM03",
-          "display" : "Alpelisib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EM04",
-          "display" : "Duvelisib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EX",
-          "display" : "Andere Proteinkinase-Inhibitoren"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EX01",
-          "display" : "Sunitinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EX02",
-          "display" : "Sorafenib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EX03",
-          "display" : "Pazopanib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EX04",
-          "display" : "Vandetanib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EX05",
-          "display" : "Regorafenib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EX06",
-          "display" : "Masitinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EX07",
-          "display" : "Cabozantinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EX08",
-          "display" : "Lenvatinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EX09",
-          "display" : "Nintedanib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EX10",
-          "display" : "Midostaurin"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EX11",
-          "display" : "Quizartinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EX12",
-          "display" : "Larotrectinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EX13",
-          "display" : "Gilteritinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EX14",
-          "display" : "Entrectinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EX15",
-          "display" : "Pexidartinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EX16",
-          "display" : "Erdafitinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EX17",
-          "display" : "Capmatinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EX18",
-          "display" : "Avapritinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EX19",
-          "display" : "Ripretinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EX20",
-          "display" : "Pemigatinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EX21",
-          "display" : "Tepotinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EX22",
-          "display" : "Selpercatinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L01EX23",
-          "display" : "Pralsetinib"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "R03DX",
-          "display" : "Andere Mittel bei obstruktiven Atemwegserkrankungen zur systemischen Anwendung"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "R03DX01",
-          "display" : "Amlexanox"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "R03DX02",
-          "display" : "Eprozinol"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "R03DX03",
-          "display" : "Fenspirid"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "R03DX05",
-          "display" : "Omalizumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "R03DX06",
-          "display" : "Seratrodast"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "R03DX07",
-          "display" : "Roflumilast"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "R03DX08",
-          "display" : "Reslizumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "R03DX09",
-          "display" : "Mepolizumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "R03DX10",
-          "display" : "Benralizumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "R03DX11",
-          "display" : "Tezepelumab"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "R03DX50",
-          "display" : "Andere systemische Antiasthmatika, Kombinationen"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L03AB",
-          "display" : "Interferone"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L03AB01",
-          "display" : "Interferon alfa, natürlich"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L03AB02",
-          "display" : "Interferon beta, natürlich"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L03AB03",
-          "display" : "Interferon gamma"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L03AB04",
-          "display" : "Interferon alfa-2a"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L03AB05",
-          "display" : "Interferon alfa-2b"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L03AB06",
-          "display" : "Interferon alfa-n1"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L03AB07",
-          "display" : "Interferon beta-1a"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L03AB08",
-          "display" : "Interferon beta-1b"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L03AB09",
-          "display" : "Interferon alfacon-1"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L03AB10",
-          "display" : "Peginterferon alfa-2b"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L03AB11",
-          "display" : "Peginterferon alfa-2a"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L03AB12",
-          "display" : "Albinterferon alfa-2b"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L03AB13",
-          "display" : "Peginterferon beta-1a"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L03AB14",
-          "display" : "Cepeginterferon alfa-2b"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L03AB15",
-          "display" : "Ropeginterferon alfa-2b"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L03AB18",
-          "display" : "Interferon gamma-1b"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L03AB60",
-          "display" : "Peginterferon alfa-2b, Kombinationen"
-        },
-        {
-          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
-          "code" : "L03AB61",
-          "display" : "Peginterferon alfa-2a, Kombinationen"
-        }]
-      }
-    }
-  },
-  {
     "fullUrl" : "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/medical-treatment-for-vaccination-adverse-reaction",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -3810,7 +1813,7 @@
       "name" : "MedicalTreatmentForVaccinationAdverseReaction",
       "title" : "Medical Treatment For Vaccination Adverse Reaction",
       "status" : "active",
-      "date" : "2021-10-19T15:41:32+00:00",
+      "date" : "2021-10-19T21:05:56+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -3821,8 +1824,8 @@
       }],
       "description" : "Types of medical treatments for potential or actual adverse reactions to a vaccination",
       "expansion" : {
-        "identifier" : "urn:uuid:3b6d432e-cc81-486c-b7b0-8d2655bce941",
-        "timestamp" : "2021-10-19T15:43:01+00:00",
+        "identifier" : "urn:uuid:516dbd2b-8acf-47f8-a021-baef94112da1",
+        "timestamp" : "2021-10-19T21:07:07+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -3872,7 +1875,7 @@
       "name" : "PresentNotPresentUndeterminedOther",
       "title" : "Present Not Present Undetermined Other",
       "status" : "active",
-      "date" : "2021-10-19T15:41:32+00:00",
+      "date" : "2021-10-19T21:05:56+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -3883,8 +1886,8 @@
       }],
       "description" : "Values for laboratory observations",
       "expansion" : {
-        "identifier" : "urn:uuid:7b611697-f6dd-46d8-9122-ce3260d404e5",
-        "timestamp" : "2021-10-19T15:43:01+00:00",
+        "identifier" : "urn:uuid:69b13d4d-7480-4bb0-a561-995bedc145af",
+        "timestamp" : "2021-10-19T21:07:07+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -3935,7 +1938,7 @@
       "name" : "RegularAlcoholIntake",
       "title" : "Regular Alcohol Intake",
       "status" : "active",
-      "date" : "2021-10-19T15:41:32+00:00",
+      "date" : "2021-10-19T21:05:56+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -3946,8 +1949,8 @@
       }],
       "description" : "Frequency of alcoholic beverage intake",
       "expansion" : {
-        "identifier" : "urn:uuid:731e6bf4-db7f-47c5-952c-e4561abfcfc8",
-        "timestamp" : "2021-10-19T15:43:01+00:00",
+        "identifier" : "urn:uuid:6b8d4710-1d53-49c7-9326-a1d09310c4d7",
+        "timestamp" : "2021-10-19T21:07:07+00:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -4021,7 +2024,7 @@
       "name" : "RegularAlcoholIntakeQuantity",
       "title" : "Regular Alcohol Intake Quantity",
       "status" : "active",
-      "date" : "2021-10-19T15:41:32+00:00",
+      "date" : "2021-10-19T21:05:56+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -4032,8 +2035,8 @@
       }],
       "description" : "Number of alcoholic beverages per day",
       "expansion" : {
-        "identifier" : "urn:uuid:19471d8a-6d31-4b00-b495-9357b15ae677",
-        "timestamp" : "2021-10-19T15:43:02+00:00",
+        "identifier" : "urn:uuid:27e418b3-613b-4a00-9c08-8af80dc6fa24",
+        "timestamp" : "2021-10-19T21:07:07+00:00",
         "total" : 6,
         "parameter" : [{
           "name" : "excludeNested",
@@ -4102,7 +2105,7 @@
       "name" : "RestrictedEventStatus",
       "title" : "RestrictedEventStatus",
       "status" : "active",
-      "date" : "2021-10-19T15:41:32+00:00",
+      "date" : "2021-10-19T21:05:56+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -4113,8 +2116,8 @@
       }],
       "description" : "EventStatus value set restricted to codes not-done, active, completed and unknown",
       "expansion" : {
-        "identifier" : "urn:uuid:62e12194-cb05-4057-be33-68535759a2c5",
-        "timestamp" : "2021-10-19T15:43:02+00:00",
+        "identifier" : "urn:uuid:05f131d4-d3b6-4fb4-8adc-8313adf27ae1",
+        "timestamp" : "2021-10-19T21:07:08+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -4161,7 +2164,7 @@
       "name" : "SARSCov2InfectionCourse",
       "title" : "SARS-CoV2 Infection Course",
       "status" : "active",
-      "date" : "2021-10-19T15:41:32+00:00",
+      "date" : "2021-10-19T21:05:56+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -4172,8 +2175,8 @@
       }],
       "description" : "Infection course of SARS-CoV2",
       "expansion" : {
-        "identifier" : "urn:uuid:2ad17ab5-6549-47c4-890a-346f78b2105d",
-        "timestamp" : "2021-10-19T15:43:02+00:00",
+        "identifier" : "urn:uuid:af255946-2c53-40e3-bab7-a57b922d76ab",
+        "timestamp" : "2021-10-19T21:07:08+00:00",
         "total" : 6,
         "parameter" : [{
           "name" : "excludeNested",
@@ -4242,7 +2245,7 @@
       "name" : "VaccinationInjectionSiteErythemaSize",
       "title" : "Vaccination Injection Site Erythema Size",
       "status" : "active",
-      "date" : "2021-10-19T15:41:32+00:00",
+      "date" : "2021-10-19T21:05:56+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -4253,8 +2256,8 @@
       }],
       "description" : "Erythema size category at vaccine injection site",
       "expansion" : {
-        "identifier" : "urn:uuid:178ebe47-aba6-429a-bb94-0550eba585a4",
-        "timestamp" : "2021-10-19T15:43:02+00:00",
+        "identifier" : "urn:uuid:e2d14a92-db7a-4aca-a729-e4d56c9ba369",
+        "timestamp" : "2021-10-19T21:07:08+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -4314,7 +2317,7 @@
       "name" : "VaccinationInjectionSiteSwellingSize",
       "title" : "Vaccination Injection Site Swelling Size",
       "status" : "active",
-      "date" : "2021-10-19T15:41:32+00:00",
+      "date" : "2021-10-19T21:05:56+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -4325,8 +2328,8 @@
       }],
       "description" : "Swelling size category at vaccine injection site",
       "expansion" : {
-        "identifier" : "urn:uuid:eb1296e0-cef8-4f98-8a31-1c67607df28e",
-        "timestamp" : "2021-10-19T15:43:02+00:00",
+        "identifier" : "urn:uuid:1dbc7dce-b92f-4162-960c-e61dfffd1e98",
+        "timestamp" : "2021-10-19T21:07:08+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -4386,7 +2389,7 @@
       "name" : "VaccinationPainScale",
       "title" : "Vaccination pain scale",
       "status" : "active",
-      "date" : "2021-10-19T15:41:32+00:00",
+      "date" : "2021-10-19T21:05:56+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -4397,8 +2400,8 @@
       }],
       "description" : "Pain intensity at vaccine injection site",
       "expansion" : {
-        "identifier" : "urn:uuid:54471c92-a14e-426c-b6e3-b8b89fd850f7",
-        "timestamp" : "2021-10-19T15:43:03+00:00",
+        "identifier" : "urn:uuid:4fa69953-20cd-40df-9106-92899130e9ea",
+        "timestamp" : "2021-10-19T21:07:08+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -4453,7 +2456,7 @@
       "name" : "YesNoUnknown",
       "title" : "Yes No Unknown",
       "status" : "active",
-      "date" : "2021-10-19T15:41:32+00:00",
+      "date" : "2021-10-19T21:05:56+00:00",
       "publisher" : "BIH @ Charité",
       "contact" : [{
         "name" : "BIH @ Charité",
@@ -4464,8 +2467,8 @@
       }],
       "description" : "Yes / No / Unknown",
       "expansion" : {
-        "identifier" : "urn:uuid:518a213c-6771-4180-b4fd-097424577cee",
-        "timestamp" : "2021-10-19T15:43:03+00:00",
+        "identifier" : "urn:uuid:c5e4745c-5d9a-46e5-8220-a6f350876021",
+        "timestamp" : "2021-10-19T21:07:09+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
