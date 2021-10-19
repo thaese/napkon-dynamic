@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "NAPKONBIH",
   "status": "draft",
-  "date": "2021-10-19T09:50:53+00:00",
+  "date": "2021-10-19T15:41:32+00:00",
   "publisher": "BIH @ Charité",
   "contact": [
     {
@@ -526,6 +526,19 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/preadmission-medications"
+        },
+        "name": "Preadmission Medications",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/regular-alcohol-intake"
         },
         "name": "Regular Alcohol Intake",
@@ -838,6 +851,20 @@
         },
         "name": "Immunosuppressive Permanent Medications",
         "description": "Immunosuppressive medications",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/immunosuppressive-permament-medications-atc"
+        },
+        "name": "Immunosuppressive Permanent Medications ATC",
+        "description": "Immunosuppressive Medications ATC codes",
         "exampleBoolean": false
       },
       {
@@ -1454,6 +1481,19 @@
         "name": "Vaccination Injection Site Swelling Instance",
         "description": "Example of a 5.1-10 cm swelling at a vaccine injection site",
         "exampleCanonical": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vaccination-injection-site-swelling"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "List"
+          }
+        ],
+        "reference": {
+          "reference": "List/preadmission-medications"
+        },
+        "name": "preadmission-medications",
+        "exampleCanonical": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/preadmission-medications"
       }
     ],
     "page": {

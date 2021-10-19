@@ -57,6 +57,12 @@
         "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/general-complaints-after-vaccination",
         "title": "General Complaints After Vaccination"
       }
+    ],
+    "List": [
+      {
+        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/preadmission-medications",
+        "title": "Preadmission Medications"
+      }
     ]
   },
   "usage": {

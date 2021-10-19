@@ -119,6 +119,13 @@
     "name": "MedicalTreatmentReason"
   },
   {
+    "id": "preadmission-medications",
+    "type": "StructureDefinition",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/preadmission-medications",
+    "version": "0.1.0",
+    "name": "PreadmissionMedications"
+  },
+  {
     "id": "regular-alcohol-intake",
     "type": "StructureDefinition",
     "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/regular-alcohol-intake",
@@ -278,6 +285,13 @@
     "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/immunosuppressive-permament-medications",
     "version": "0.1.0",
     "name": "ImmunosuppressivePermanentMedications"
+  },
+  {
+    "id": "immunosuppressive-permament-medications-atc",
+    "type": "ValueSet",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/immunosuppressive-permament-medications-atc",
+    "version": "0.1.0",
+    "name": "ImmunosuppressivePermanentMedicationsATC"
   },
   {
     "id": "medical-treatment-for-vaccination-adverse-reaction",

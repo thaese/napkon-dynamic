@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="NAPKONBIH"/>
   <status value="draft"/>
-  <date value="2021-10-19T09:50:53+00:00"/>
+  <date value="2021-10-19T15:41:32+00:00"/>
   <publisher value="BIH @ Charité"/>
   <contact>
     <name value="BIH @ Charité"/>
@@ -368,6 +368,16 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/preadmission-medications"/>
+      </reference>
+      <name value="Preadmission Medications"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/regular-alcohol-intake"/>
       </reference>
       <name value="Regular Alcohol Intake"/>
@@ -614,6 +624,17 @@
       </reference>
       <name value="Immunosuppressive Permanent Medications"/>
       <description value="Immunosuppressive medications"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/immunosuppressive-permament-medications-atc"/>
+      </reference>
+      <name value="Immunosuppressive Permanent Medications ATC"/>
+      <description value="Immunosuppressive Medications ATC codes"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1098,6 +1119,16 @@
       <name value="Vaccination Injection Site Swelling Instance"/>
       <description value="Example of a 5.1-10 cm swelling at a vaccine injection site"/>
       <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vaccination-injection-site-swelling"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="List"/>
+      </extension>
+      <reference>
+        <reference value="List/preadmission-medications"/>
+      </reference>
+      <name value="preadmission-medications"/>
+      <exampleCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/preadmission-medications"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

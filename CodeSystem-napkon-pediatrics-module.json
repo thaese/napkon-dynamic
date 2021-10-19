@@ -3,14 +3,14 @@
   "id": "napkon-pediatrics-module",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">000001<a name=\"napkon-pediatrics-module-000001\"> </a></td><td>Sphingosine analogue</td></tr><tr><td style=\"white-space:nowrap\">000002<a name=\"napkon-pediatrics-module-000002\"> </a></td><td>Interleukin 2 receptor antagonist</td></tr><tr><td style=\"white-space:nowrap\">000003<a name=\"napkon-pediatrics-module-000003\"> </a></td><td>Interleukin 17 receptor antagonist</td></tr><tr><td style=\"white-space:nowrap\">000004<a name=\"napkon-pediatrics-module-000004\"> </a></td><td>Anti-CD20 antibody</td></tr><tr><td style=\"white-space:nowrap\">000005<a name=\"napkon-pediatrics-module-000005\"> </a></td><td>Anti-CD52 antibody</td></tr><tr><td style=\"white-space:nowrap\">000006<a name=\"napkon-pediatrics-module-000006\"> </a></td><td>Anti-CD3 antibody</td></tr><tr><td style=\"white-space:nowrap\">000007<a name=\"napkon-pediatrics-module-000007\"> </a></td><td>Anti-CD3/CD19 antibody</td></tr><tr><td style=\"white-space:nowrap\">000008<a name=\"napkon-pediatrics-module-000008\"> </a></td><td>Integrin inhibitor</td></tr><tr><td style=\"white-space:nowrap\">000009<a name=\"napkon-pediatrics-module-000009\"> </a></td><td>B cell activating factor inhibitor</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">000001<a name=\"napkon-pediatrics-module-000001\"> </a></td><td>Sphingosine analogue</td></tr><tr><td style=\"white-space:nowrap\">000002<a name=\"napkon-pediatrics-module-000002\"> </a></td><td>Interleukin 2 receptor antagonist</td></tr><tr><td style=\"white-space:nowrap\">000003<a name=\"napkon-pediatrics-module-000003\"> </a></td><td>Interleukin 17 receptor antagonist</td></tr><tr><td style=\"white-space:nowrap\">000004<a name=\"napkon-pediatrics-module-000004\"> </a></td><td>Anti-CD20 antibody</td></tr><tr><td style=\"white-space:nowrap\">000005<a name=\"napkon-pediatrics-module-000005\"> </a></td><td>Anti-CD52 antibody</td></tr><tr><td style=\"white-space:nowrap\">000006<a name=\"napkon-pediatrics-module-000006\"> </a></td><td>Anti-CD3 antibody</td></tr><tr><td style=\"white-space:nowrap\">000007<a name=\"napkon-pediatrics-module-000007\"> </a></td><td>Anti-CD3/CD19 antibody</td></tr><tr><td style=\"white-space:nowrap\">000008<a name=\"napkon-pediatrics-module-000008\"> </a></td><td>Integrin inhibitor</td></tr><tr><td style=\"white-space:nowrap\">000009<a name=\"napkon-pediatrics-module-000009\"> </a></td><td>B cell activating factor inhibitor</td></tr><tr><td style=\"white-space:nowrap\">000010<a name=\"napkon-pediatrics-module-000010\"> </a></td><td>Mammalian target of rapamycin (mTOR)-Kinase inhibitor</td></tr></table></div>"
   },
   "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module",
   "version": "0.1.0",
   "name": "NapkonPediatricsModule",
   "title": "NapkonPediatricsModule",
   "status": "active",
-  "date": "2021-10-19T09:50:53+00:00",
+  "date": "2021-10-19T15:41:32+00:00",
   "publisher": "BIH @ Charité",
   "contact": [
     {
@@ -25,7 +25,7 @@
   ],
   "description": "NAPKON Pediatrics Module Code System - Collection of pediatrics module-specific codes that are missing from common terminologies such as SNOMED CT",
   "content": "complete",
-  "count": 9,
+  "count": 10,
   "concept": [
     {
       "code": "000001",
@@ -62,6 +62,10 @@
     {
       "code": "000009",
       "display": "B cell activating factor inhibitor"
+    },
+    {
+      "code": "000010",
+      "display": "Mammalian target of rapamycin (mTOR)-Kinase inhibitor"
     }
   ]
 }
