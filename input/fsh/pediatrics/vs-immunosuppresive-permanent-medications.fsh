@@ -6,7 +6,8 @@ Title: "Immunosuppressive Permanent Medications"
 Description: "Immunosuppressive medications"
 
 * insert napkon-metadata(2021-10-05, #draft, 0.1.0)
-// TODO: Use only ATC DE codes here?
+// TODO: 1 VS für ATC, 1 für SCT + eigene
+
 
 // Systemische Steroide
 * $sct#116566001 "Steroid (substance)"
