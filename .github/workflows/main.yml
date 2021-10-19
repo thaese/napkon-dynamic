@@ -26,6 +26,22 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
+      # checkout repository with fhir package snapshots
+      - name: Checkout packages repository
+        uses: actions/checkout@v2
+        with:
+          repository: BIH-CEI/fhir-packages
+          ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          path: fhir-packages
+          lfs: true
+
+      - name: Create symbolic link to package directory
+        uses: docker://hl7fhir/ig-publisher-base:latest
+        with:
+          # Get the latest publisher - don't run the batch script but run the line directly
+          args: ln -s ./fhir-packages/packages packages
+
+
       - name: Update the image to the latest publisher
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
@@ -45,24 +61,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./output
-
-      ## Install .NET runtime
-      #- name: Setup .NET Core SDK
-      #  uses: actions/setup-dotnet@v1.7.2
-      #  with:
-      #    dotnet-version: 3.1.x
-     #
-     # # Install Java runtime (only needed if you want to run the offical HL7 Java validator)
-     # - name: Setup Java JDK
-     #   uses: actions/setup-java@v1.4.3
-     #   with:
-     #     java-version: 1.8
-     #
-     # - name: Firely.Terminal (GitHub Actions)
-     #   uses: FirelyTeam/firely-terminal-pipeline@v0.2.0
-     #   with:
-     #     PATH_TO_CONFORMANCE_RESOURCES: output
-     #     PATH_TO_EXAMPLES: beispiele
-     #     DOTNET_VALIDATION_ENABLED: true
-     #     JAVA_VALIDATION_ENABLED: true
-     #     JAVA_VALIDATION_OPTIONS: -allow-example-urls true
