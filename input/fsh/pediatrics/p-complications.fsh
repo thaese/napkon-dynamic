@@ -21,3 +21,4 @@ Title: "Covid19 Complication"
 Description: "Example of a covid19 complication"
 * code = $sct#235859005 "Liver disorder due to infection"
 * subject = Reference(ExamplePatient)
+* recordedDate = "2021-02-19T09:30:35+01:00"
