@@ -1,16 +1,18 @@
+//Alias: $ViralInfectiousDiseases = https://www.netzwerk-universitaetsmedizin.de/fhir//ValueSet/vs-viral-infect-pediatrics
+
 Profile: ViralInfection
 Parent: Condition
 Id: viral-infection
 Title: "Viral Infection"
 Description: "Occurrence of a viral infection"
-* insert napkon-metadata(2021-09-30, #draft)
+* insert napkon-metadata(2021-10-03, #draft, 0.1.0) 
 * category ^slicing.discriminator[0].type = #pattern
 * category ^slicing.discriminator[0].path = "$this"
 * category ^slicing.rules = #open
 * category contains sct 1..1
 * category[sct] = $sct#34014006 "Viral disease (disorder))"
 * code 1..1 MS
-* code from ViralInfection (required)
+* code from viral-infections (required)
 
 Alias: §sct = http://snomed.info/sct
 
@@ -22,20 +24,6 @@ Description: "Value set of viral infections"
 * ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/viral-infection"
 
 // Q: why exel says double..? same with Areus, and Gruppe Streptokokken --> I skipped these
-
-
-
-* $sct#5735004 "Respiratory syncytial virus infection (disorder)"
-* $sct#6142004 "Influenza (disorder)"
-* $sct#1087141000119106 "Human metapneumovirus infection (disorder)"
-* $sct#41546002 "Disease caused by Rhinovirus (disorder)"
-* $sct#25225006 "Disease caused by Adenovirus (disorder)"
-* $sct#1148698007 "Disease caused by Human bocavirus (disorder)"
-* $sct#27619001 "Disease caused by Coronaviridae (disorder)"
-* $sct#12188008 "Parainfluenza (disorder)"
-
-
-// Q: do not know how to cover 'other viral diesease' -- would not use qualifier value 
 
 
 
