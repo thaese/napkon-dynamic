@@ -20,7 +20,7 @@ Description: "Immunosuppressive medications"
 * $atcde#L01EG "Mammalian target of rapamycin (mTOR)-Kinase-Inhibitoren"
 
 // Sphingosin-Analoga
-* $nis#000001 "Sphingosine analogue"
+* $nped#000001 "Sphingosine analogue"
     // zB $atcde#L04AA27 "Fingolimod"
 
 // Antimetabolite
@@ -40,7 +40,7 @@ Description: "Immunosuppressive medications"
     // $atcde#L04AC "Interleukin-Inhibitoren"
 
  // IL-2-Inhibitoren
-* $nis#000002 "Interleukin 2 receptor antagonist"
+* $nped#000002 "Interleukin 2 receptor antagonist"
     // $atcde#L04AC "Interleukin-Inhibitoren"
 
 // IL-6-Inhibitoren
@@ -48,7 +48,7 @@ Description: "Immunosuppressive medications"
     // $atcde#L04AC "Interleukin-Inhibitoren"
 
 // IL-17-Inhibitoren
-* $nis#000003 "Interleukin 17 receptor antagonist"
+* $nped#000003 "Interleukin 17 receptor antagonist"
     // $atcde#L04AC "Interleukin-Inhibitoren"
 
 // IL-23-Inhibitoren
@@ -61,24 +61,24 @@ Description: "Immunosuppressive medications"
     // zB $atcde#L01XC11 "Ipilimumab"
 
 // CD20-Antikörper
-* $nis#000004 "Anti-CD20 antibody"
+* $nped#000004 "Anti-CD20 antibody"
     // $atcde#L01XC "Monoklonale Antikörper"
     // zB $atcde#L01XC02 "Rituximab", $atcde#L01XC10 "Ofatumumab", $atcde#L01XC15 "Obinutuzumab"
 
 // CD52-Antikörper
-* $nis#000005 "Anti-CD52 antibody"
+* $nped#000005 "Anti-CD52 antibody"
     // $atcde#L01XC "Monoklonale Antikörper"
     // zB L01XC04 "Alemtuzumab"
 
 // CD3-Antikörper
-* $nis#000006 "Anti-CD3 antibody"
+* $nped#000006 "Anti-CD3 antibody"
     // $atcde#L01XC "Monoklonale Antikörper"
     // zB $atcde#L01XC09 "Catumaxomab"
     // zB $atcde#L04AA02 "Muromonab-CD3" >> L04AA "Selektive Immunsuppressiva"
 
 
 // CD3/CD19-Antikörper
-* $nis#000007 "Anti-CD3/CD19 antibody"
+* $nped#000007 "Anti-CD3/CD19 antibody"
     // $atcde#L01XC "Monoklonale Antikörper"
     // zB $atcde#L01XC19 "Blinatumomab"
 
@@ -89,12 +89,12 @@ Description: "Immunosuppressive medications"
     // Oberkategorie $atcde#L04AA "Selektive Immunsuppressiva"
 
 // Integrin-Inhibitoren
-* $nis#000008 "Integrin inhibitor"
+* $nped#000008 "Integrin inhibitor"
     // zB $atcde#L04AA33 "Vedolizumab"
     // Oberkategorie $atcde#L04AA "Selektive Immunsuppressiva"
 
 // BAFF-Inhibitoren
-* $nis#000009 "B cell activating factor inhibitor"
+* $nped#000009 "B cell activating factor inhibitor"
     // zB $atcde#L04AA26 "Belimumab"
     // Oberkategorie $atcde#L04AA "Selektive Immunsuppressiva"
 

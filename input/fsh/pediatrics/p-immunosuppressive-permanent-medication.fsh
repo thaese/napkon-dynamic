@@ -14,6 +14,6 @@ Usage: #example
 Title: "Immunosuppresive Permanent Medication"
 Description: "Example of a Immunosuppresive Permanent Medication"
 * status = #completed
-* medicationCodeableConcept = $nis#000007 "Anti-CD3/CD19 antibody"
+* medicationCodeableConcept = $nped#000007 "Anti-CD3/CD19 antibody"
 * subject = Reference(ExamplePatient)
 * effectiveDateTime = "2021-09-14T13:06:00+02:00"

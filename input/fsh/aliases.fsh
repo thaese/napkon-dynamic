@@ -15,6 +15,7 @@ Alias: $cs-observation-category = http://terminology.hl7.org/CodeSystem/observat
 Alias: $cs-absent-unknown-uv-ips = http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips
 Alias: $cs-condition-category = http://terminology.hl7.org/CodeSystem/condition-category
 Alias: $cs-data-absent-reason = http://terminology.hl7.org/CodeSystem/data-absent-reason
+Alias: $cs-condition-ver-status = http://terminology.hl7.org/CodeSystem/condition-ver-status
 
 // LOINC ValueSets
 Alias: $loinc-sars-cov2-variants = http://loinc.org/vs/LL5768-8
@@ -31,7 +32,7 @@ Alias: $mii-condition = https://www.medizininformatik-initiative.de/fhir/core/mo
 Alias: $mii-procedure = https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure
 
 // Own code systems
-Alias: $nis = https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-immunosuppresive-medications
+Alias: $nped = https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module
 Alias: $nvm = https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module
 
 // Extensions
