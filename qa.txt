@@ -1,21 +1,21 @@
 ﻿NAPKONBIH : Validation Results
 =========================================
 
-err = 14, warn = 27, info = 5
+err = 12, warn = 26, info = 4
 IG Publisher Version: 1.1.82
-Generated Tue Oct 19 07:53:46 UTC 2021. FHIR version 4.0.1 for napkon-bih#0.1.0 (canonical = https://www.netzwerk-universitaetsmedizin.de/fhir)
+Generated Tue Oct 19 09:52:34 UTC 2021. FHIR version 4.0.1 for napkon-bih#0.1.0 (canonical = https://www.netzwerk-universitaetsmedizin.de/fhir)
  Build Errors : 352 / 8 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-napkon-pediatrics-module : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-napkon-vaccination-module : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Condition-Covid19Complication : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Condition-FungalInfection : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/Condition-FungalInfection : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Condition-GeneralComplaintsAfterVaccination : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Immunization-CovidVaccinationDone : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Immunization-CovidVaccinationNotDone : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Immunization-CovidVaccinationNotDoneReasonOther : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-napkon-bih : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/MedicationStatement-AnalgesicAntipyreticIntakeAfterVaccination : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/MedicationStatement-ImmunosuppresivePermanentMedication : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/MedicationStatement-ImmunosuppresivePermanentMedication : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-AdditionalVaccinationWillingness : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-AllergicReactionToVaccinationInstance : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Observation-AllergicReactionToVaccinationInstanceOther : 0 / 1 / 1
@@ -47,7 +47,7 @@ Generated Tue Oct 19 07:53:46 UTC 2021. FHIR version 4.0.1 for napkon-bih#0.1.0 
  /github/workspace/fsh-generated/resources/StructureDefinition-chemotherapy : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-covid-vaccination : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-covid19-complication : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-fungal-infection : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-fungal-infection : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-general-complaints-after-vaccination : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-immunomodulatory-therapy : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-immunosuppresive-permanent-medication : 0 / 0 / 1
@@ -76,7 +76,7 @@ Generated Tue Oct 19 07:53:46 UTC 2021. FHIR version 4.0.1 for napkon-bih#0.1.0 
  /github/workspace/fsh-generated/resources/ValueSet-fungal-infections : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-general-complaints-after-vaccination : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-immunosuppressive-immunomodulatory-therapy : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-immunosuppressive-permament-medications : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-immunosuppressive-permament-medications : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-medical-treatment-for-vaccination-adverse-reaction : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-present-not-present-undetermined-other : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-regular-alcohol-intake : 0 / 0 / 1
@@ -152,33 +152,32 @@ ERROR: /github/workspace/output/StructureDefinition-covid19-complication.html#/h
 ERROR: /github/workspace/output/StructureDefinition-covid19-complication.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1177, column 162: The link '#alpha-id-null' for "null" cannot be resolved (valid targets: 323 targets)
 ERROR: /github/workspace/output/StructureDefinition-fungal-infection-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 432, column 154: The link '' for "UncertaintyOfPresence" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-fungal-infection-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 599, column 115: The link '' for "ConditionVerificationStatusSNOMED" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-fungal-infection-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 815, column 115: The link '' for "ICD10GM" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-fungal-infection-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 816, column 144: The link '' for "CodingICD10GM" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-fungal-infection-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 846, column 154: The link '' for "ExtensionMehrfachcodierungKennzeichen" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-fungal-infection-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 858, column 154: The link '' for "ExtensionSeitenlokalisation" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-fungal-infection-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 870, column 154: The link '' for "ExtensionICD10GMDiagnosesicherheit" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-fungal-infection-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 943, column 115: The link '' for "Alpha-id" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-fungal-infection-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 944, column 144: The link '' for "CodingAlphaID" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-fungal-infection-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1032, column 115: The link '' for "ValueSetSNOMEDDiagnoseCodes" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-fungal-infection-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1353, column 151: The link '' for "MII-Reference" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-fungal-infection-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1367, column 151: The link '' for "MII-Reference" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-fungal-infection-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1445, column 154: The link '' for "ExtensionLebensphase" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-fungal-infection-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1489, column 154: The link '' for "ExtensionLebensphase" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-fungal-infection-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 817, column 115: The link '' for "ICD10GM" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-fungal-infection-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 818, column 144: The link '' for "CodingICD10GM" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-fungal-infection-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 848, column 154: The link '' for "ExtensionMehrfachcodierungKennzeichen" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-fungal-infection-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 860, column 154: The link '' for "ExtensionSeitenlokalisation" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-fungal-infection-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 872, column 154: The link '' for "ExtensionICD10GMDiagnosesicherheit" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-fungal-infection-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 945, column 115: The link '' for "Alpha-id" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-fungal-infection-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 946, column 144: The link '' for "CodingAlphaID" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-fungal-infection-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1355, column 151: The link '' for "MII-Reference" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-fungal-infection-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1369, column 151: The link '' for "MII-Reference" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-fungal-infection-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1447, column 154: The link '' for "ExtensionLebensphase" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-fungal-infection-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1491, column 154: The link '' for "ExtensionLebensphase" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 306, column 44: The link '' for "GeccoBaseCondition" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 328, column 44: The link '' for "GeccoBaseCondition" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 367, column 1662: The link 'unknown.html' for "?pkp-2?" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 423, column 1793: The link 'unknown.html' for "?pkp-2?" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 442, column 1793: The link 'unknown.html' for "?pkp-2?" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 770, column 1525: The link 'unknown.html' for "?pkp-2?" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 775, column 1667: The link 'unknown.html' for "?pkp-2?" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 784, column 1667: The link 'unknown.html' for "?pkp-2?" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 820, column 44: The link '' for "GeccoBaseCondition" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 841, column 44: The link '' for "GeccoBaseCondition" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 880, column 1662: The link 'unknown.html' for "?pkp-2?" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 936, column 1793: The link 'unknown.html' for "?pkp-2?" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 955, column 1793: The link 'unknown.html' for "?pkp-2?" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1292, column 162: The link '#CodeSystemICD10GM2021-null' for "null" cannot be resolved (valid targets: 380 targets)
-ERROR: /github/workspace/output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1293, column 162: The link '#alpha-id-null' for "null" cannot be resolved (valid targets: 380 targets)
+ERROR: /github/workspace/output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 368, column 1662: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 424, column 1793: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 443, column 1793: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 771, column 1525: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 776, column 1667: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 785, column 1667: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 821, column 44: The link '' for "GeccoBaseCondition" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 842, column 44: The link '' for "GeccoBaseCondition" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 882, column 1662: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 938, column 1793: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 957, column 1793: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1294, column 162: The link '#CodeSystemICD10GM2021-null' for "null" cannot be resolved (valid targets: 380 targets)
+ERROR: /github/workspace/output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1295, column 162: The link '#alpha-id-null' for "null" cannot be resolved (valid targets: 380 targets)
 ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 652, column 115: The link '' for "ICD10GM" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 653, column 144: The link '' for "CodingICD10GM" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-general-complaints-after-vaccination-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 683, column 154: The link '' for "ExtensionMehrfachcodierungKennzeichen" cannot be resolved
@@ -448,14 +447,13 @@ ERROR: /github/workspace/output/ValueSet-analgesics-antipyretics.html#/html/body
 ERROR: /github/workspace/output/ValueSet-analgesics-antipyretics.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 244, column 42322: The link '?ngen-14?.html#CodeSystemATC2021-N02CX64' for "N02CX64" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-analgesics-antipyretics.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 244, column 42539: The link '?ngen-14?.html#CodeSystemATC2021-N02CX69' for "N02CX69" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/ul/li/table/tr/td/a at Line 238, column 3507: The link '?ngen-14?.html#CodeSystemATC2021-L01EG' for "L01EG" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 244, column 5120: The link '?ngen-14?.html#CodeSystemATC2021-L01EG' for "L01EG" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-vaccination-injection-site-erythema-size.html#/html/body/div/div/div/div/div/div/ul/li/table/tr/td/a at Line 238, column 1300: The link 'CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-4005' for "4005" cannot be resolved (valid targets: 73 targets)
 ERROR: /github/workspace/output/ValueSet-vaccination-injection-site-erythema-size.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 244, column 2054: The link 'CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-4005' for "4005" cannot be resolved (valid targets: 73 targets)
 == fsh-generated/resources/CodeSystem-napkon-pediatrics-module.json ==
 == fsh-generated/resources/CodeSystem-napkon-vaccination-module.json ==
 == fsh-generated/resources/Condition-Covid19Complication.json ==
 == fsh-generated/resources/Condition-FungalInfection.json ==
-ERROR: Condition/FungalInfection: Condition: unk-1: 'If verificationStatus is present, uncertaintyOfPresence-Extension SHALL NOT be present.' Rule 'If verificationStatus is present, uncertaintyOfPresence-Extension SHALL NOT be present.' Failed
-ERROR: Condition/FungalInfection: Condition.code.coding[0]: The code provided (http://snomed.info/sct#53326005) is not in the value set https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/ValueSet/diagnoses-sct, and a code from this value set is required: The code provided (http://snomed.info/sct#53326005) is not valid in the value set 'ValueSetSNOMEDDiagnoseCodes' (from http://tx.fhir.org/r4)
 == fsh-generated/resources/Condition-GeneralComplaintsAfterVaccination.json ==
 == fsh-generated/resources/Immunization-CovidVaccinationDone.json ==
 WARNING: Immunization/CovidVaccinationDone: Immunization.protocolApplied[0].targetDisease[0]: ValueSet https://fhir.kbv.de/ValueSet/KBV_VS_MIO_Vaccination_TargetDisease not found by validator
@@ -466,8 +464,6 @@ WARNING: Immunization/CovidVaccinationNotDoneReasonOther: Immunization.protocolA
 == fsh-generated/resources/ImplementationGuide-napkon-bih.json ==
 == fsh-generated/resources/MedicationStatement-AnalgesicAntipyreticIntakeAfterVaccination.json ==
 == fsh-generated/resources/MedicationStatement-ImmunosuppresivePermanentMedication.json ==
-WARNING: MedicationStatement/ImmunosuppresivePermanentMedication: MedicationStatement.medication.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/immunosuppressive-permament-medications because the value set or a code system it depends on is not known to the validator, Code System URI 'https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-immunosuppresive-medications' is unknown so the code cannot be validated]
-INFORMATION: MedicationStatement/ImmunosuppresivePermanentMedication: MedicationStatement.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-immunosuppresive-medications' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-AdditionalVaccinationWillingness.json ==
 == fsh-generated/resources/Observation-AllergicReactionToVaccinationInstance.json ==
 WARNING: Observation/AllergicReactionToVaccinationInstance: Observation.code.coding[0]: The display "Allergic reaction caused by vaccine (disorder)" is not a valid display for the code {http://snomed.info/sct}15920121000119103 - should be one of ['Allergic reaction caused by vaccine product (disorder)', 'Allergic reaction caused by vaccine product'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#15920121000119103'
@@ -509,6 +505,8 @@ WARNING: StructureDefinition/allergic-reaction-to-vaccination: StructureDefiniti
 WARNING: StructureDefinition/covid-vaccination: StructureDefinition.snapshot.element[98].binding: The valueSet reference https://fhir.kbv.de/ValueSet/KBV_VS_MIO_Vaccination_TargetDisease on element Immunization.protocolApplied.targetDisease could not be resolved
 == fsh-generated/resources/StructureDefinition-covid19-complication.json ==
 == fsh-generated/resources/StructureDefinition-fungal-infection.json ==
+WARNING: Fungal Infection.coding.Condition.code.coding: Unable to check if https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/fungal-infections is a proper subset of https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/ValueSet/diagnoses-sct - base value set is too large to check
+WARNING: StructureDefinition/fungal-infection: StructureDefinition: Unable to check if https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/fungal-infections is a proper subset of https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/ValueSet/diagnoses-sct - base value set is too large to check
 == fsh-generated/resources/StructureDefinition-general-complaints-after-vaccination.json ==
 == fsh-generated/resources/StructureDefinition-immunomodulatory-therapy.json ==
 == fsh-generated/resources/StructureDefinition-immunosuppresive-permanent-medication.json ==
@@ -545,8 +543,6 @@ WARNING: ValueSet/covid19-complications: ValueSet.compose[0].include[0].concept[
 == fsh-generated/resources/ValueSet-general-complaints-after-vaccination.json ==
 == fsh-generated/resources/ValueSet-immunosuppressive-immunomodulatory-therapy.json ==
 == fsh-generated/resources/ValueSet-immunosuppressive-permament-medications.json ==
-WARNING: ValueSet/immunosuppressive-permament-medications: ValueSet.compose[0].include[2]: Unknown System specified, so Concepts and Filters can''t be checked
-WARNING: ValueSet.where(id = 'immunosuppressive-permament-medications'): Error from server: Unable to provide support for code system https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-immunosuppresive-medications
 == fsh-generated/resources/ValueSet-medical-treatment-for-vaccination-adverse-reaction.json ==
 == fsh-generated/resources/ValueSet-present-not-present-undetermined-other.json ==
 == fsh-generated/resources/ValueSet-regular-alcohol-intake.json ==

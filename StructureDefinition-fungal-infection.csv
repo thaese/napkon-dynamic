@@ -212,7 +212,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","< 272141005 |Severities|","CE/CNE/CWE","PRB-26 / ABS-3","n/a","CD","Can be pre/post-coordinated into value.  Or ./inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=""severity""].value","FiveWs.grade","246112005"
 "Condition.code","","type
 ","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","Identification of the condition, problem or diagnosis","Identification of the condition, problem or diagnosis.","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","0..1 to account for primarily narrative only resources.","","","","","","","",,"required","","https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/fungal-infections","",,,,"Condition.code",0,1,"ele-1
+","Identification of the condition, problem or diagnosis","Identification of the condition, problem or diagnosis.","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","0..1 to account for primarily narrative only resources.","","","","","","","",,"example","Identification of the condition or diagnosis.","http://hl7.org/fhir/ValueSet/condition-code","",,,,"Condition.code",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.code","code 246090004 |Associated finding| (< 404684003 |Clinical finding| MINUS
 << 420134006 |Propensity to adverse reactions| MINUS 
@@ -325,7 +325,7 @@ Hierdurch wird der Tatsache Rechnung getragen, dass jede der jährlich neu ersch
 "Condition.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
-</valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/ValueSet/diagnoses-sct","",,,,"CodeableConcept.coding",0,*,"ele-1
+</valueCoding>","","","",,"required","","https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/fungal-infections","",,,,"CodeableConcept.coding",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","CE/CNE/CWE subset one of the sets of component 1-3 or 4-6","C*E.1-8, C*E.10-22","n/a","CV","union(., ./translation)"
 "Condition.code.coding.id","","","",0,1,"","","","string {[]} {[]}
