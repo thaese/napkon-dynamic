@@ -3,14 +3,14 @@
   "id": "napkon-pediatrics-module",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">000001<a name=\"napkon-pediatrics-module-000001\"> </a></td><td>Sphingosine analogue (substance)</td></tr><tr><td style=\"white-space:nowrap\">000002<a name=\"napkon-pediatrics-module-000002\"> </a></td><td>Substance with interleukin 2 receptor antagonist mechanism of action (substance)</td></tr><tr><td style=\"white-space:nowrap\">000003<a name=\"napkon-pediatrics-module-000003\"> </a></td><td>Substance with interleukin 17 receptor antagonist mechanism of action (substance)</td></tr><tr><td style=\"white-space:nowrap\">000004<a name=\"napkon-pediatrics-module-000004\"> </a></td><td>Anti-CD20 antibody (substance)</td></tr><tr><td style=\"white-space:nowrap\">000005<a name=\"napkon-pediatrics-module-000005\"> </a></td><td>Anti-CD52 antibody (substance)</td></tr><tr><td style=\"white-space:nowrap\">000006<a name=\"napkon-pediatrics-module-000006\"> </a></td><td>Anti-CD3 antibody (substance)</td></tr><tr><td style=\"white-space:nowrap\">000007<a name=\"napkon-pediatrics-module-000007\"> </a></td><td>Anti-CD3/CD19 antibody (substance)</td></tr><tr><td style=\"white-space:nowrap\">000008<a name=\"napkon-pediatrics-module-000008\"> </a></td><td>Substance with Integrin inhibitor mechanism of action (substance)</td></tr><tr><td style=\"white-space:nowrap\">000009<a name=\"napkon-pediatrics-module-000009\"> </a></td><td>Substance with B cell activating factor inhibitor mechanism of action (substance)</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">000001<a name=\"napkon-pediatrics-module-000001\"> </a></td><td>Sphingosine analogue</td></tr><tr><td style=\"white-space:nowrap\">000002<a name=\"napkon-pediatrics-module-000002\"> </a></td><td>Interleukin 2 receptor antagonist</td></tr><tr><td style=\"white-space:nowrap\">000003<a name=\"napkon-pediatrics-module-000003\"> </a></td><td>Interleukin 17 receptor antagonist</td></tr><tr><td style=\"white-space:nowrap\">000004<a name=\"napkon-pediatrics-module-000004\"> </a></td><td>Anti-CD20 antibody</td></tr><tr><td style=\"white-space:nowrap\">000005<a name=\"napkon-pediatrics-module-000005\"> </a></td><td>Anti-CD52 antibody</td></tr><tr><td style=\"white-space:nowrap\">000006<a name=\"napkon-pediatrics-module-000006\"> </a></td><td>Anti-CD3 antibody</td></tr><tr><td style=\"white-space:nowrap\">000007<a name=\"napkon-pediatrics-module-000007\"> </a></td><td>Anti-CD3/CD19 antibody</td></tr><tr><td style=\"white-space:nowrap\">000008<a name=\"napkon-pediatrics-module-000008\"> </a></td><td>Integrin inhibitor</td></tr><tr><td style=\"white-space:nowrap\">000009<a name=\"napkon-pediatrics-module-000009\"> </a></td><td>B cell activating factor inhibitor</td></tr></table></div>"
   },
   "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module",
   "version": "0.1.0",
   "name": "NapkonPediatricsModule",
   "title": "NapkonPediatricsModule",
   "status": "active",
-  "date": "2021-10-15T12:18:04+00:00",
+  "date": "2021-10-19T07:51:56+00:00",
   "publisher": "BIH @ Charité",
   "contact": [
     {
@@ -29,39 +29,39 @@
   "concept": [
     {
       "code": "000001",
-      "display": "Sphingosine analogue (substance)"
+      "display": "Sphingosine analogue"
     },
     {
       "code": "000002",
-      "display": "Substance with interleukin 2 receptor antagonist mechanism of action (substance)"
+      "display": "Interleukin 2 receptor antagonist"
     },
     {
       "code": "000003",
-      "display": "Substance with interleukin 17 receptor antagonist mechanism of action (substance)"
+      "display": "Interleukin 17 receptor antagonist"
     },
     {
       "code": "000004",
-      "display": "Anti-CD20 antibody (substance)"
+      "display": "Anti-CD20 antibody"
     },
     {
       "code": "000005",
-      "display": "Anti-CD52 antibody (substance)"
+      "display": "Anti-CD52 antibody"
     },
     {
       "code": "000006",
-      "display": "Anti-CD3 antibody (substance)"
+      "display": "Anti-CD3 antibody"
     },
     {
       "code": "000007",
-      "display": "Anti-CD3/CD19 antibody (substance)"
+      "display": "Anti-CD3/CD19 antibody"
     },
     {
       "code": "000008",
-      "display": "Substance with Integrin inhibitor mechanism of action (substance)"
+      "display": "Integrin inhibitor"
     },
     {
       "code": "000009",
-      "display": "Substance with B cell activating factor inhibitor mechanism of action (substance)"
+      "display": "B cell activating factor inhibitor"
     }
   ]
 }

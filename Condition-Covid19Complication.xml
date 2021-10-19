@@ -6,16 +6,17 @@
     <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/covid19-complication"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 235859005:246112005=386134007}">Liver disorder due to infection where Severity = Significant</span></p><p><b>subject</b>: <a href="Patient-ExamplePatient.html">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 235859005}">Liver disorder due to infection</span></p><p><b>subject</b>: <a href="Patient-ExamplePatient.html">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>recordedDate</b>: Feb 19, 2021, 8:30:35 AM</p></div>
   </text>
   <code>
     <coding>
       <system value="http://snomed.info/sct"/>
-      <code value="235859005:246112005=386134007"/>
-      <display value="Liver disorder due to infection where Severity = Significant"/>
+      <code value="235859005"/>
+      <display value="Liver disorder due to infection"/>
     </coding>
   </code>
   <subject>
     <reference value="Patient/ExamplePatient"/>
   </subject>
+  <recordedDate value="2021-02-19T09:30:35+01:00"/>
 </Condition>

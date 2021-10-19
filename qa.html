@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 291, errors = 11, warn = 27, info = 5 -->
+<!-- broken links = 341, errors = 14, warn = 27, info = 5 -->
 <head>
   <title>NAPKONBIH : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for NAPKONBIH</h1>
- <p>Generated Fri Oct 15 12:19:57 UTC 2021, FHIR version 4.0.1 for napkon-bih#0.1.0 (canonical = <a href="https://www.netzwerk-universitaetsmedizin.de/fhir">https://www.netzwerk-universitaetsmedizin.de/fhir</a> (<a href="https://www.netzwerk-universitaetsmedizin.de/fhir/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
+ <p>Generated Tue Oct 19 07:53:45 UTC 2021, FHIR version 4.0.1 for napkon-bih#0.1.0 (canonical = <a href="https://www.netzwerk-universitaetsmedizin.de/fhir">https://www.netzwerk-universitaetsmedizin.de/fhir</a> (<a href="https://www.netzwerk-universitaetsmedizin.de/fhir/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.82</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = napkon-bih, Canonical = https://www.netzwerk-universitaetsmedizin.de/fhir</td></tr>
@@ -73,14 +73,14 @@
  <br/><br/>The copyrightYear parameter ('2021+') in the IG resource is good</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at https://www.netzwerk-universitaetsmedizin.de/fhir (Problem #1 with package-list.json at https://www.netzwerk-universitaetsmedizin.de/fhir: https://www.netzwerk-universitaetsmedizin.de/fhir/package-list.json)</td></tr>
- <tr><td>Summary:</td><td> broken links = 291, errors = 11, warn = 27, info = 5</td></tr>
+ <tr><td>Summary:</td><td> broken links = 341, errors = 14, warn = 27, info = 5</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>301</b></td><td><b>8</b></td><td><b>1</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>352</b></td><td><b>8</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-napkon-pediatrics-module"><b>/github/workspace/fsh-generated/resources/CodeSystem-napkon-pediatrics-module</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -91,8 +91,8 @@
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_Condition-Covid19Complication"><b>/github/workspace/fsh-generated/resources/Condition-Covid19Complication</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_github_workspace_fsh-generated_resources_Condition-FungalInfection"><b>/github/workspace/fsh-generated/resources/Condition-FungalInfection</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_Condition-FungalInfection"><b>/github/workspace/fsh-generated/resources/Condition-FungalInfection</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_Condition-GeneralComplaintsAfterVaccination"><b>/github/workspace/fsh-generated/resources/Condition-GeneralComplaintsAfterVaccination</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -383,6 +383,9 @@
      <td><b>?pkp-1?</b></td><td><b>error</b></td><td title=""><b>The reference http://fhir.de/StructureDefinition/lebensphase could not be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
+     <td><b>?pkp-1?</b></td><td><b>error</b></td><td title=""><b>The reference https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
      <td><b>?pkp-1?</b></td><td><b>error</b></td><td title=""><b>The reference https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum could not be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -441,6 +444,165 @@
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="StructureDefinition-covid-vaccination.html#l10027">output/StructureDefinition-covid-vaccination.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1138, column 191</a></b></td><td><b>error</b></td><td><b>The link 'file://C:\GitHub\hl7.fhir.uv.ips#1.0.0\output/CodeSystem-absent-unknown-uv-ips.html#absent-unknown-uv-ips-null' for &quot;null&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-covid19-complication-definitions.html#l2597">output/StructureDefinition-covid19-complication-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 592, column 115</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;ICD10GM&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-covid19-complication-definitions.html#l2606">output/StructureDefinition-covid19-complication-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 593, column 144</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;CodingICD10GM&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-covid19-complication-definitions.html#l2815">output/StructureDefinition-covid19-complication-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 623, column 154</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;ExtensionMehrfachcodierungKennzeichen&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-covid19-complication-definitions.html#l2903">output/StructureDefinition-covid19-complication-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 635, column 154</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;ExtensionSeitenlokalisation&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-covid19-complication-definitions.html#l2991">output/StructureDefinition-covid19-complication-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 647, column 154</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;ExtensionICD10GMDiagnosesicherheit&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-covid19-complication-definitions.html#l3445">output/StructureDefinition-covid19-complication-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 720, column 115</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Alpha-id&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-covid19-complication-definitions.html#l3454">output/StructureDefinition-covid19-complication-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 721, column 144</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;CodingAlphaID&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-covid19-complication-definitions.html#l4009">output/StructureDefinition-covid19-complication-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 809, column 115</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;ValueSetSNOMEDDiagnoseCodes&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-covid19-complication-definitions.html#l6040">output/StructureDefinition-covid19-complication-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1130, column 151</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;MII-Reference&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-covid19-complication-definitions.html#l6143">output/StructureDefinition-covid19-complication-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1144, column 151</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;MII-Reference&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-covid19-complication-definitions.html#l6738">output/StructureDefinition-covid19-complication-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1222, column 154</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;ExtensionLebensphase&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-covid19-complication-definitions.html#l7072">output/StructureDefinition-covid19-complication-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1266, column 154</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;ExtensionLebensphase&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-covid19-complication.html#l465">output/StructureDefinition-covid19-complication.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 306, column 44</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;ProfileConditionDiagnose&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-covid19-complication.html#l513">output/StructureDefinition-covid19-complication.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 328, column 44</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;ProfileConditionDiagnose&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-covid19-complication.html#l1820">output/StructureDefinition-covid19-complication.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 388, column 1807</a></b></td><td><b>error</b></td><td><b>The link 'unknown.html' for &quot;?pkp-2?&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-covid19-complication.html#l2302">output/StructureDefinition-covid19-complication.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 407, column 1807</a></b></td><td><b>error</b></td><td><b>The link 'unknown.html' for &quot;?pkp-2?&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-covid19-complication.html#l5172">output/StructureDefinition-covid19-complication.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 719, column 1659</a></b></td><td><b>error</b></td><td><b>The link 'unknown.html' for &quot;?pkp-2?&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-covid19-complication.html#l5418">output/StructureDefinition-covid19-complication.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 728, column 1659</a></b></td><td><b>error</b></td><td><b>The link 'unknown.html' for &quot;?pkp-2?&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-covid19-complication.html#l6173">output/StructureDefinition-covid19-complication.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 764, column 44</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;ProfileConditionDiagnose&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-covid19-complication.html#l6218">output/StructureDefinition-covid19-complication.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 785, column 44</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;ProfileConditionDiagnose&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-covid19-complication.html#l7525">output/StructureDefinition-covid19-complication.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 845, column 1807</a></b></td><td><b>error</b></td><td><b>The link 'unknown.html' for &quot;?pkp-2?&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-covid19-complication.html#l8007">output/StructureDefinition-covid19-complication.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 864, column 1807</a></b></td><td><b>error</b></td><td><b>The link 'unknown.html' for &quot;?pkp-2?&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-covid19-complication.html#l10599">output/StructureDefinition-covid19-complication.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1176, column 162</a></b></td><td><b>error</b></td><td><b>The link '#CodeSystemICD10GM2021-null' for &quot;null&quot; cannot be resolved (valid targets: 323 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-covid19-complication.html#l10610">output/StructureDefinition-covid19-complication.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1177, column 162</a></b></td><td><b>error</b></td><td><b>The link '#alpha-id-null' for &quot;null&quot; cannot be resolved (valid targets: 323 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-fungal-infection-definitions.html#l1596">output/StructureDefinition-fungal-infection-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 432, column 154</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;UncertaintyOfPresence&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-fungal-infection-definitions.html#l2661">output/StructureDefinition-fungal-infection-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 599, column 115</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;ConditionVerificationStatusSNOMED&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-fungal-infection-definitions.html#l4025">output/StructureDefinition-fungal-infection-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 815, column 115</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;ICD10GM&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-fungal-infection-definitions.html#l4034">output/StructureDefinition-fungal-infection-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 816, column 144</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;CodingICD10GM&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-fungal-infection-definitions.html#l4243">output/StructureDefinition-fungal-infection-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 846, column 154</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;ExtensionMehrfachcodierungKennzeichen&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-fungal-infection-definitions.html#l4331">output/StructureDefinition-fungal-infection-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 858, column 154</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;ExtensionSeitenlokalisation&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-fungal-infection-definitions.html#l4419">output/StructureDefinition-fungal-infection-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 870, column 154</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;ExtensionICD10GMDiagnosesicherheit&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-fungal-infection-definitions.html#l4873">output/StructureDefinition-fungal-infection-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 943, column 115</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Alpha-id&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-fungal-infection-definitions.html#l4882">output/StructureDefinition-fungal-infection-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 944, column 144</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;CodingAlphaID&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-fungal-infection-definitions.html#l5437">output/StructureDefinition-fungal-infection-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1032, column 115</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;ValueSetSNOMEDDiagnoseCodes&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-fungal-infection-definitions.html#l7468">output/StructureDefinition-fungal-infection-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1353, column 151</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;MII-Reference&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-fungal-infection-definitions.html#l7571">output/StructureDefinition-fungal-infection-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1367, column 151</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;MII-Reference&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-fungal-infection-definitions.html#l8166">output/StructureDefinition-fungal-infection-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1445, column 154</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;ExtensionLebensphase&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-fungal-infection-definitions.html#l8500">output/StructureDefinition-fungal-infection-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1489, column 154</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;ExtensionLebensphase&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-fungal-infection.html#l465">output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 306, column 44</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;GeccoBaseCondition&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-fungal-infection.html#l511">output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 328, column 44</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;GeccoBaseCondition&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-fungal-infection.html#l1255">output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 367, column 1662</a></b></td><td><b>error</b></td><td><b>The link 'unknown.html' for &quot;?pkp-2?&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-fungal-infection.html#l2637">output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 423, column 1793</a></b></td><td><b>error</b></td><td><b>The link 'unknown.html' for &quot;?pkp-2?&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-fungal-infection.html#l3119">output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 442, column 1793</a></b></td><td><b>error</b></td><td><b>The link 'unknown.html' for &quot;?pkp-2?&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-fungal-infection.html#l5766">output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 770, column 1525</a></b></td><td><b>error</b></td><td><b>The link 'unknown.html' for &quot;?pkp-2?&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-fungal-infection.html#l5927">output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 775, column 1667</a></b></td><td><b>error</b></td><td><b>The link 'unknown.html' for &quot;?pkp-2?&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-fungal-infection.html#l6173">output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 784, column 1667</a></b></td><td><b>error</b></td><td><b>The link 'unknown.html' for &quot;?pkp-2?&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-fungal-infection.html#l6928">output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 820, column 44</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;GeccoBaseCondition&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-fungal-infection.html#l6971">output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 841, column 44</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;GeccoBaseCondition&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-fungal-infection.html#l7715">output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 880, column 1662</a></b></td><td><b>error</b></td><td><b>The link 'unknown.html' for &quot;?pkp-2?&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-fungal-infection.html#l9097">output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 936, column 1793</a></b></td><td><b>error</b></td><td><b>The link 'unknown.html' for &quot;?pkp-2?&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-fungal-infection.html#l9579">output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 955, column 1793</a></b></td><td><b>error</b></td><td><b>The link 'unknown.html' for &quot;?pkp-2?&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-fungal-infection.html#l12180">output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1292, column 162</a></b></td><td><b>error</b></td><td><b>The link '#CodeSystemICD10GM2021-null' for &quot;null&quot; cannot be resolved (valid targets: 380 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-fungal-infection.html#l12191">output/StructureDefinition-fungal-infection.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1293, column 162</a></b></td><td><b>error</b></td><td><b>The link '#alpha-id-null' for &quot;null&quot; cannot be resolved (valid targets: 380 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="StructureDefinition-general-complaints-after-vaccination-definitions.html#l3092">output/StructureDefinition-general-complaints-after-vaccination-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 652, column 115</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;ICD10GM&quot; cannot be resolved</b></td>
@@ -1247,16 +1409,7 @@
      <td><b><a href="ValueSet-analgesics-antipyretics.html#l2768">output/ValueSet-analgesics-antipyretics.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 244, column 42539</a></b></td><td><b>error</b></td><td><b>The link '?ngen-14?.html#CodeSystemATC2021-N02CX69' for &quot;N02CX69&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-immunosuppressive-permament-medications.html#l522">output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/ul/li/table/tr/td/a at Line 238, column 2982</a></b></td><td><b>error</b></td><td><b>The link '?ngen-14?.html#CodeSystemATC2021-L01EG' for &quot;L01EG&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-immunosuppressive-permament-medications.html#l528">output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/ul/li/table/tr/td/a at Line 238, column 3122</a></b></td><td><b>error</b></td><td><b>The link '?ngen-14?.html#CodeSystemATC2021-L01B' for &quot;L01B&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-immunosuppressive-permament-medications.html#l534">output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/ul/li/table/tr/td/a at Line 238, column 3220</a></b></td><td><b>error</b></td><td><b>The link '?ngen-14?.html#CodeSystemATC2021-L04AB' for &quot;L04AB&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-immunosuppressive-permament-medications.html#l540">output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/ul/li/table/tr/td/a at Line 238, column 3353</a></b></td><td><b>error</b></td><td><b>The link '?ngen-14?.html#CodeSystemATC2021-L01EJ' for &quot;L01EJ&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-immunosuppressive-permament-medications.html#l537">output/ValueSet-immunosuppressive-permament-medications.html#/html/body/div/div/div/div/div/div/ul/li/table/tr/td/a at Line 238, column 3507</a></b></td><td><b>error</b></td><td><b>The link '?ngen-14?.html#CodeSystemATC2021-L01EG' for &quot;L01EG&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="ValueSet-vaccination-injection-site-erythema-size.html#l463">output/ValueSet-vaccination-injection-site-erythema-size.html#/html/body/div/div/div/div/div/div/ul/li/table/tr/td/a at Line 238, column 1300</a></b></td><td><b>error</b></td><td><b>The link 'CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-4005' for &quot;4005&quot; cannot be resolved (valid targets: 73 targets)</b></td>
@@ -1302,7 +1455,13 @@
 </div>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Condition (l1/c2)</b></td><td><b>error</b></td><td title="unk-1: 'If verificationStatus is present, uncertaintyOfPresence-Extension SHALL NOT be present.' Rule 'If verificationStatus is present, uncertaintyOfPresence-Extension SHALL NOT be present.' Failed"><b>unk-1: 'If verificationStatus is present, uncertaintyOfPresence-Extension SHALL NOT be present.' Rule 'If verificationStatus is present, uncertaintyOfPresence-Extension SHALL NOT be present.' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Condition.code.coding[0] (l11/c8)</b></td><td><b>error</b></td><td><b>The code provided (http://snomed.info/sct#53326005) is not in the value set https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/ValueSet/diagnoses-sct, and a code from this value set is required: The code provided (http://snomed.info/sct#53326005) is not valid in the value set 'ValueSetSNOMEDDiagnoseCodes' (from http://tx.fhir.org/r4)</b> (<a href="qa-tx.html#l68">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1541,7 +1700,7 @@
      <td><b>Observation.effective.ofType(dateTime) (l86/c52)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_DateTime_Reasonable"><b>The value '0001-01-01T00:00:00+00:00' is outside the range of reasonable years - check for data entry error</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Observation.effective.ofType(dateTime).extension[0] (l89/c8)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov2-variant</b> <span id="sl319" class="flip" onclick="flip('l319')">Show Reasoning</span><div id="l319" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttps://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov2-variant<ul><li>Observation.effective.ofType(dateTime).extension[0]: discriminator = true and ('https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum' in url)</li></ul></div></td>
+     <td><b><a href="">Observation.effective.ofType(dateTime).extension[0] (l89/c8)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov2-variant</b> <span id="sl372" class="flip" onclick="flip('l372')">Show Reasoning</span><div id="l372" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttps://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov2-variant<ul><li>Observation.effective.ofType(dateTime).extension[0]: discriminator = true and ('https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum' in url)</li></ul></div></td>
    </tr>
 </table>
 <hr/>
@@ -2050,7 +2209,7 @@
      <td><b>ValueSet.compose[0].include[2]</b></td><td><b>warning</b></td><td title=""><b>Unknown System specified, so Concepts and Filters can''t be checked</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'immunosuppressive-permament-medications')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-immunosuppresive-medications</b> (<a href="qa-tx.html#l90">see Tx log</a>)</td>
+     <td><b>ValueSet.where(id = 'immunosuppressive-permament-medications')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-immunosuppresive-medications</b> (<a href="qa-tx.html#l94">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -2206,6 +2365,14 @@
    </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="StructureDefinition-vaccination-injection-site-erythema.html">fsh-generated/resources/StructureDefinition-vaccination-injection-site-erythema.json</a></td><td><b>The display &quot;Erythema at injection site (disorder)&quot; is not a valid display for the code {http://snomed.info/sct}213338000 - should be one of ['Erythema at injection site', 'Injection site erythema (disorder)', 'Injection site erythema'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#213338000'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_Confirm_4a"> </a>
+<h2>Terminology_TX_Confirm_4a</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Condition-FungalInfection.html">fsh-generated/resources/Condition-FungalInfection.json</a></td><td><b>The code provided (http://snomed.info/sct#53326005) is not in the value set https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/ValueSet/diagnoses-sct, and a code from this value set is required: The code provided (http://snomed.info/sct#53326005) is not valid in the value set 'ValueSetSNOMEDDiagnoseCodes' (from http://tx.fhir.org/r4)</b></td>
    </tr>
 </table>
 <hr/>
