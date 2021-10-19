@@ -23,6 +23,14 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Checkout packages repository
+        uses: actions/checkout@v2
+        with:
+          repository: BIH-CEI/fhir-packages
+          ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          path: packages
+          lfs: true
+
       - name: setup python
         uses: actions/setup-python@v2
         with:
@@ -45,7 +53,11 @@ jobs:
         run: npm install && npm install -g fsh-sushi
 
       - name: Untar FHIR packages to package repository
+        working-directory: ./packages
         run: ./packages/untar_packages.sh
+
+      - name: Copy validator
+        run: cp ./packages/validator/validator_cli.jar .
 
       - name: Execute validator
         run: python validate_profile.py --all
