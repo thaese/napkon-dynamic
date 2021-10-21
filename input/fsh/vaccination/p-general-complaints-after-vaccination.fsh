@@ -1,7 +1,7 @@
 // Author: Gregor Lichtner
 // Berlin Institute of Health | Charité
 Profile: GeneralComplaintsAfterVaccination
-Parent: ProfileConditionDiagnose // MII profile instead of GECCO because verificationStatus constraints of GECCO not required
+Parent: $gecco-base-condition
 Id: general-complaints-after-vaccination
 Title: "General Complaints After Vaccination"
 Description: "General complaints after a vaccination event"
@@ -34,3 +34,5 @@ Description: "Example of a chill after a vaccination event"
 * severity = $nvm#11003 "Sehr stark (tägliche Aktivitäten sind nicht mehr möglich)"
 * subject = Reference(ExamplePatient)
 * recordedDate = "2021-02-19T09:30:35+01:00"
+* verificationStatus.coding[conditionVerificationStatus] = $cs-condition-ver-status#confirmed
+* verificationStatus.coding[snomed] = $sct#410605003 "Confirmed present (qualifier value)"
