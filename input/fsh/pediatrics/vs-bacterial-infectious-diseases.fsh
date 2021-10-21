@@ -1,15 +1,14 @@
 // value set has to cover all the different viral infectious diseases
 ValueSet: BacterialInfectiousDiseases
-Id: bacterial-infections-complications
+Id: bacterial-infectious-diseases
+Title: "Bacterial Infectious Diseases"
 Description: "Value set of bacterial infections"
 * insert napkon-metadata(2021-10-04, #draft, 0.1.0)
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/vs-bacterial-infections-complications"
+//* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/vs-bacterial-infections-complications"
 
 // Q: why exel says double..? same with Areus, and Gruppe Streptokokken --> I skipped these
 
-
 // Q: wrong code in excel!!!
-* $sct#91428005 "Haemophilus influenzae infection (disorder)"
 * $sct#77116006 "Infection caused by Bordetella parapertussis (disorder)"
 * $sct#186464008 "Mycoplasma infection (disorder)"
 * $sct#105629000 "Chlamydial infection (disorder)"

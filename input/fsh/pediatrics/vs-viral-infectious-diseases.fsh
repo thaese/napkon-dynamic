@@ -1,9 +1,9 @@
 // value set has to cover all the different viral infectious diseases
-ValueSet: ViralInfections
-Id: viral-infections
+ValueSet: ViralInfectiousDiseases
+Id: viral-infectious-diseases
 
 * insert napkon-metadata(2021-05-28, #draft, 0.1.0)
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/vs-viral-infections"
+//* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/vs-viral-infections"
 
 * $sct#55735004 "Respiratory syncytial virus infection (disorder)"
 * $sct#6142004 "Influenza (disorder)"
@@ -21,3 +21,5 @@ Id: viral-infections
 * $sct#12188008 "Parainfluenza (disorder)"
 
 // Q: do not know how to cover 'other viral diesease' -- would not use qualifier value
+
+* $sct#261665006 "Unknown (qualifier value)"
