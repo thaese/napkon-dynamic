@@ -1,8 +1,7 @@
 //Author: Sally Brose
 // Berlin Institute of Health | Charité
 
-// GL: commented out because it's unclear what should be included as codes (e.g. medications)
-/*
+
 Profile: PediatricMedication
 Parent: MedicationStatement
 Id: pediatric-medication
@@ -10,20 +9,28 @@ Title: "Profile - MedicationStatement - Medikation"
 Description: "Prescription of a medication or consumption by a pediatric patient."
 
 * insert napkon-metadata(2021-09-23, #draft, 0.1.0)
-* status from RestrictedEventStatus //wenn nur einen code dann wie in zeile 15. Mehrere codes: "from ...vs name schreiben"
-* category.coding[sct] = $sct#387458008 "Aspirin (substance)"
-* category.coding[sct] = $sct#387458008 "Aspirin (substance)"
-* category.coding[sct] = $sct#444648007 "Tocilizumab"
-* category.coding[sct] = $sct#385549000 "Anakinra (substance)"
-* code.coding[sct] = codes from system $sct where concept is-a #373213009  "Inotropic agent (substance)"
-* code.coding[sct] = codes from system $sct where concept is-a #870406003 "Vasopressor (substance)"
+* medication[x] only CodeableConcept
+* medication[x] ^slicing.discriminator.type = #type
+* medication[x] ^slicing.discriminator.path = "$this"
+* medication[x] ^slicing.rules = #open
+* medicationCodeableConcept only CodeableConcept
+* medicationCodeableConcept ^sliceName = "medicationCodeableConcept"
+* medicationCodeableConcept.coding 1..
+* medicationCodeableConcept.coding ^slicing.discriminator.type = #pattern
+* medicationCodeableConcept.coding ^slicing.discriminator.path = "$this"
+* medicationCodeableConcept.coding ^slicing.rules = #open
+* medicationCodeableConcept from MedicationPediatrics (required)
+* subject 1..1 MS
+* subject = Reference(ExamplePatient)
+
+
 
 Instance: pediatric-medication-instance
 InstanceOf: pediatric-medication
 Usage: #example
 Title: "pediatric-medication-instance"
-Description: "Example of a prescription of a medication or consumption by a pediatric patient "
-* status = #draft
-* code = $sct#387458008 "Aspirin (substance)"
+Description: "Example prescription of a medication or consumption by a pediatric patient "
+* status = #active
+* medication[x] MS
 * subject = Reference(ExamplePatient)
-*/
+

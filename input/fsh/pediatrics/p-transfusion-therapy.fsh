@@ -14,8 +14,12 @@ Description: "Application of a blood transfusion therapy"
 * category.coding[sct] = $sct#277132007 "Therapeutic procedure (procedure)"
 * code 1..1 MS
 * code from BloodTransfusionTherapy (required)
+* status 1..1 MS
+* status from EventStatus(required)
+* subject 1..1 MS
 * subject only Reference(Patient)
-* subject MS
+* Procedure.focalDevice.manipulated 1..1 MS //was müsste an dieser Stelle hinkommen?
+* Procedure.focalDevice.manipulated only Reference(Device) // kommt hier nach der sct code?
 
 Instance: TransfusionTherapy
 InstanceOf: transfusion-therapy //sollte das lieber blood-transfuion-therapy heißen?
@@ -24,4 +28,5 @@ Title: "transfusion-therapy-instance"
 Description: "Example an application of a blood transfusion therapy"
 * status = #completed
 * code =  $sct##277132007 "Therapeutic procedure (procedure)"
-* subject = Reference(ExamplePatient)
+* subject MS
+* Procedure.focalDevice.manipulated MS

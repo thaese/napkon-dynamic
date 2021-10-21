@@ -23,7 +23,7 @@ Description: "This profile describes a stem cell transplant for a pediatric pati
 * code.coding contains
    icd10-gm 1..1
    and sct 1..1 MS
-* code.coding[idc10-gm] from MedicalHistoryStemCellsICD (required)
+* code.coding[icd10-gm] from MedicalHistoryStemCellsICD (required)
 * code.coding[sct] from MedicalHistoryStemCells (required)
 
 Instance: medical-history-stem-cell-transplant-instance
@@ -32,5 +32,5 @@ Usage: #example
 Title: "medical-history-stem-cell-transplant-instance"
 Description: "This profile describes a stem cell transplant for a pediatric patient."
 * code.coding[sct] = $sct#77158009 "Structure of transplanted bone marrow (body structure)"
-* code.coding[icd10-gm] = $icd10-gm#Z94.80 "Zustand nach hämatopoetischer Stammzelltransplantation ohne gegenwärtige Immunsuppression"
+* code.coding[icd10-gm] = $icd10-gm#Z94.80 "Zustand nach hämatopoetischer Stammzelltransplantation ohne gegenwärtige Immunsuppression" //laut SNOMED 	C42.1
 * subject = Reference(ExamplePatient)
