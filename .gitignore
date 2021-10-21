@@ -25,8 +25,9 @@ Thumbs.db
 ################
 *.bak
 
-# IDE folders
+# IDE folders and files
 .vscode
+*.code-workspace
 
 # nodejs files/directories
 package.json
