@@ -20,17 +20,6 @@ Description: "Whether a patient underwent medical treatment for a potential or a
 * valueCodeableConcept from MedicalTreatmentForVaccinationAdverseReaction (required)
 * derivedFrom only Reference(MedicalTreatmentReason)
 
-// TODO: move to instances.fsh
-Invariant: reason-if-treated
-Description: "If a patient is treated for actual or potential adverse events, a reference to the treatment reason must be supplied"
-Expression: "((valueCodeableConcept.coding.system = 'https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module') and (valueCodeableConcept.coding.code='6001' or valueCodeableConcept.coding.code='6002')) implies derivedFrom.exists()"
-Severity: #error
-
-/*Invariant: codeable-concept-text-present-if-code-other
-Description: "If codeableConcept.coding is set to SNOMED CT 'Other (qualifier value)', a string in codeableConcept.text must be supplied to identify the value of 'other'"
-Expression: "(coding.system = 'http://snomed.info/sct' and coding.code = '74964007') implies text.exists()"
-Severity: #error*/
-
 Instance: MedicalTreatmentForVaccinationAdverseReactionInHospital
 InstanceOf: medical-treatment-for-vaccination-adverse-reaction
 Usage: #example
