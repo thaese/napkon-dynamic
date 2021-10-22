@@ -19,6 +19,11 @@ from datetime import datetime
 import pandas as pd
 from jsonpath_ng import parse
 
+# to raise exception when running the script if the package is not installed (required for saving logs to excel, md)
+import openpyxl
+import tabulate  # type: ignore
+
+
 VALIDATOR_URL = "https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar"
 VALIDATOR_BASENAME = VALIDATOR_URL.split("/")[-1]
 
@@ -497,7 +502,12 @@ def run_validation(
     :param verbose: Print more information
     :return: List of validation result dicts containing validation status, full output and instance and profile names
     """
-    cmd_base = ["java", f"-jar {fname_validator}", "-version 4.0.1"]
+    cmd_base = [
+        "java",
+        f"-jar {fname_validator}",
+        "-version 4.0.1",
+        "-txLog logs/txlog.html",
+    ]
     cmd_base += [f'-ig {dep["packageId"]}#{dep["version"]}' for dep in deps.values()]
 
     cmds = {}
@@ -575,6 +585,9 @@ def execute_validator(
     if isinstance(cmd, list):
         cmd = "  ".join([str(s) for s in cmd])
 
+    if verbose:
+        print(cmd)
+
     popen = subprocess.Popen(  # nosec
         cmd, stdout=subprocess.PIPE, universal_newlines=True, shell=True
     )
@@ -643,6 +656,7 @@ def store_log(results: List[ValidatorStatus], log_path: Path) -> None:
         f.write(output)
 
     df.to_excel(log_path / (log_basename + ".xlsx"), index=False)
+    df.to_markdown(log_path / (log_basename + ".md"), index=False)
 
 
 def run_sushi(path: str) -> None:
@@ -711,6 +725,15 @@ if __name__ == "__main__":
     )
 
     parser.add_argument(
+        "--no-sushi",
+        dest="no_sushi",
+        action="store_true",
+        help="Do not run sushi before validating",
+        required=False,
+        default=False,
+    )
+
+    parser.add_argument(
         "--log-path",
         dest="log_path",
         type=str,
@@ -735,8 +758,9 @@ if __name__ == "__main__":
         print_box("Downloading java validator")
         download_validator(fname_validator.resolve())
 
-    print_box("Running SUSHI")
-    run_sushi(args.base_path)
+    if not args.no_sushi:
+        print_box("Running SUSHI")
+        run_sushi(args.base_path)
 
     if args.all:
         print_box("Validating all FSH files")

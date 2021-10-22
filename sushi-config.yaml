@@ -15,14 +15,23 @@ publisher:
   url: https://www.netzwerk-universitaetsmedizin.de
 dependencies:
   de.medizininformatikinitiative.kerndatensatz.prozedur:
-    id: prozedur
-    uri: https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure
+    uri: https://simplifier.net/guide/medizininformatikinitiative-modulprozeduren-implementationguide
     version: 2.0.0-alpha3
   de.medizininformatikinitiative.kerndatensatz.person:
-    id: person
-    uri: https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient
+    uri: https://simplifier.net/guide/medizininformatikinitiative-modulperson-implementationguide
     version: 2.0.0-alpha3
   de.medizininformatikinitiative.kerndatensatz.medikation:
-    id: medikation
-    uri: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement
+    uri: https://simplifier.net/guide/medizininformatikinitiative-modulmedikation-implementationguide
     version: 1.0.10
+  de.medizininformatikinitiative.kerndatensatz.diagnose:
+    uri: https://simplifier.net/guide/medizininformatikinitiative-moduldiagnosen-implementationguide
+    version: 2.0.0-alpha3
+  de.medizininformatikinitiative.kerndatensatz.laborbefund:
+    uri: https://simplifier.net/guide/laborbefundindermedizininformatik-initiative
+    version: 1.0.6
+  de.gecco:
+    uri: https://simplifier.net/guide/germancoronaconsensusdataset-implementationguide
+    version: 1.0.5
+  de.medizininformatikinitiative.kerndatensatz.meta:
+    uri: https://simplifier.net/guide/medizininformatikinitiative-implementationguide-manteldokument
+    version: 1.0.3
