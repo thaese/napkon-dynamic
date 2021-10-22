@@ -27,13 +27,18 @@ Status verweist auf das entsprechend erstellte Value Set.
 * code.coding ^slicing.rules = #open
 * code.coding contains sct 1..1
 * code.coding[sct] = $sct#281789004	"Antibiotic therapy (procedure)"
+* performed[x] MS
+* performed[x] 1..1
+* performed[x] only dateTime
 * subject MS
+* subject 1..1
 * subject only Reference(Patient)
 
-Instance: AntibioticTherapy
+Instance: instance-antibiotic-therapy
 InstanceOf: antibiotic-therapy
 Usage: #example
 Title: "Instance of fhir resource antibiotic therapy in the context of pediatrics"
 Description: "Example or antibiotic-therapy"
 * status = #completed
 * subject = Reference(ExamplePatient)
+* performedDateTime = "2021-10-18T13:28:17-05:00"
