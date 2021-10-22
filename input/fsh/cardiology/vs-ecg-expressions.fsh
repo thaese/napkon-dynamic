@@ -37,4 +37,4 @@ Description:  "ValueSet for ECG expressions such as findings, disorders, observa
 
 
 // Redundency for Procedures
-* include codes from system sct where concept descendent-of $sct#71388002 "Procedure (procedure)"
+* include codes from system $sct where concept descendent-of #71388002 "Procedure (procedure)"

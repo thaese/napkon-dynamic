@@ -16,7 +16,7 @@ Description: "Defines constraints and methods on imaging procedures performed on
   * coding ^slicing.discriminator[0].path = "$this"
   * coding ^slicing.rules = #open
   * coding contains sct 1..1
-  * coding[sct] from ImagingProcedures (required)
+  * coding[sct] from CardiologyImagingCodes (required)
 
 Instance: imaging-procedure-instance
 InstanceOf: imaging-procedure
@@ -24,5 +24,5 @@ Usage: #example
 Title: "imaging-procedure-instance"
 Description: "Example of a imaging procedure"
 * status = #completed
-* code.coding[sct] = $sct#40701008 "Echocardiography (procedure)"
+* code.coding[sct] = $sct#433236007 "Transthoracic echocardiography (procedure)"
 * subject = Reference(ExamplePatient)

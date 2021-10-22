@@ -32,5 +32,5 @@ Description:  "Imaging procedures related to cardiology"
 * ^compose.include[=].concept[=].designation.use = $sct#900000000000013009 "Synonym"
 * ^compose.include[=].concept[=].designation.value = "Transthorakale Echokardiographie"
 
-* include codes from system sct where concept descendent-of $sct#71388002 "Procedure (procedure)" // redundency for Procedures
+* include codes from system $sct where concept descendent-of #71388002 "Procedure (procedure)" // redundency for Procedures
 

@@ -9,24 +9,21 @@ Description: "Defines constraints and extensions on the Cardiology ECG procedure
 
 * insert napkon-metadata(2021-09-24, #draft, 0.1.0)
 
-* category ^slicing.discriminator[0].type = #pattern
-* category ^slicing.discriminator[0].path = "$this"
-* category ^slicing.rules = #open
-* category contains sct 1..1
-* category[sct] = $sct#276341003 "Cardiovascular investigation (procedure)"
+* category
+  * coding ^slicing.discriminator[0].type = #pattern
+  * coding ^slicing.discriminator[0].path = "$this"
+  * coding ^slicing.rules = #open
+  * coding contains sct 1..1
+  * coding[sct] = $sct#276341003 "Cardiovascular investigation (procedure)"
 
-* code ^slicing.discriminator[0].type = #pattern
-* code ^slicing.discriminator[0].path = "$this"
-* code ^slicing.rules = #open
-* code contains sct 1..1
-* code[sct] from CardiologyImagingCodes (required)
+* code
+  * coding ^slicing.discriminator[0].type = #pattern
+  * coding ^slicing.discriminator[0].path = "$this"
+  * coding ^slicing.rules = #open
+  * coding contains sct 1..1
+  * coding[sct] from CardiologyImagingCodes (required)
 * subject only Reference(Patient)
 
-
-
-
-
-Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
 
 // DEBUG COMPLETE for instance:
 // ERROR: Element Procedure.performed[x] has minimum cardinality 1 but occurs 0 time(s).
@@ -40,8 +37,7 @@ Usage: #example
 Title: "Instance of ECG procedure"
 Description: "Example of an ECG procedure instance"
 * status = #not-done
-* category = $observation-category#procedure "Procedure"
-* code = $sct#276341003 "Cardiovascular investigation (procedure)"
+* code.coding[sct] = $sct#268400002 "12 lead electrocardiogram (procedure)"
 * subject = Reference(ExamplePatient)
 * performedDateTime = "2021-10-01T13:06:00+02:00"
 
